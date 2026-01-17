@@ -74,15 +74,25 @@ Heroes level up crafting skills by crafting:
 
 ### Gaining Crafting XP
 
-| Action | XP Gained |
-|--------|-----------|
-| Craft ⭐ item | 10 |
-| Craft ⭐⭐ item | 25 |
-| Craft ⭐⭐⭐ item | 50 |
-| Craft ⭐⭐⭐⭐ item | 100 |
-| Craft ⭐⭐⭐⭐⭐ item | 200 |
-| Process materials | 5-15 |
-| Exceptional quality | +50% XP |
+Crafting XP is based on item tier and level:
+
+```
+XP = Base × Item Level × 15
+```
+
+| Material Tier | Base XP |
+|---------------|---------|
+| Common (T1) | 10 |
+| Uncommon (T2) | 25 |
+| Rare (T3) | 50 |
+| Epic (T4) | 100 |
+| Legendary (T5) | 200 |
+
+**Examples:**
+- Common item (L5): 10 × 5 × 15 = 750 XP
+- Rare item (L30): 50 × 30 × 15 = 22,500 XP
+
+Exceptional quality crafts give +50% XP.
 
 ---
 

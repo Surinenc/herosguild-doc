@@ -205,19 +205,28 @@ Reputation unlocks better content and more expedition slots.
 | Recruitment | 50-500g | Per hire |
 | Infirmary costs | Variable | Per treatment |
 
-### Weekly Wages
+### Daily Wages
 
-Heroes expect to be paid:
+Heroes expect to be paid based on their level:
 
-| Hero Quality | Weekly Wage |
-|--------------|-------------|
-| Common | 20g |
-| Uncommon | 35g |
-| Rare | 60g |
-| Epic | 100g |
-| Legendary | 200g |
+```
+Daily Wage = (Level - 1) × 3 × Quality Multiplier
+```
 
-**Tip:** Higher quality heroes cost more but are worth it!
+| Hero Quality | Multiplier |
+|--------------|------------|
+| Common | 1.0x |
+| Uncommon | 1.2x |
+| Rare | 1.5x |
+| Epic | 2.0x |
+| Legendary | 3.0x |
+
+**Examples:**
+- Level 10 Common: (10-1) × 3 × 1.0 = 27g/day
+- Level 20 Rare: (20-1) × 3 × 1.5 = 86g/day
+- Level 50 Legendary: (50-1) × 3 × 3.0 = 441g/day
+
+Level 1 heroes are free (no wages).
 
 ### Managing Finances
 
@@ -294,11 +303,11 @@ Heroes form bonds with each other. See [Relationships Guide](relationships.md) f
 
 | Level | Trust | Combat Bonus |
 |-------|-------|--------------|
-| Stranger | 0-19 | None |
-| Acquaintance | 20-39 | Minor |
-| Friend | 40-59 | +5% damage |
-| Close Friend | 60-79 | +10% damage |
-| Best Friend | 80-100 | +15% damage, Intervene |
+| Neutral | 0-19 | None |
+| Friendly | 20-39 | +5% |
+| Friend | 40-59 | +10% |
+| Close Friend | 60-79 | +15% |
+| Best Friend | 80-100 | +20%, Intervene |
 
 ### Special Bonds
 

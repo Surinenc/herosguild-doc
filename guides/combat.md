@@ -62,7 +62,7 @@ Base Damage = Weapon Damage + Stat Scaling
 ### Critical Hits
 
 ```
-Crit Chance = 5% + DEX/20 + LCK/10 + bonuses
+Crit Chance = 5% + (DEX / 20) + (LCK / 10) + bonuses
 Crit Multiplier = 1.5x (base) + bonuses
 ```
 

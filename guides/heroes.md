@@ -14,12 +14,11 @@ The Warrior is your shield against danger. With high health and strength, Warrio
 
 | Stat | Value |
 |------|-------|
-| HP | 120 |
-| STR | 15 |
+| STR | 14 |
 | DEX | 8 |
 | INT | 5 |
 | VIT | 12 |
-| LCK | 8 |
+| LCK | 6 |
 
 **Key Features:**
 - **High Threat** - Generates 1.5x aggro, keeping enemies focused on them
@@ -44,12 +43,11 @@ Mages command the elements to devastate groups of enemies. While fragile, their 
 
 | Stat | Value |
 |------|-------|
-| HP | 70 |
 | STR | 5 |
-| DEX | 8 |
+| DEX | 7 |
 | INT | 15 |
 | VIT | 6 |
-| LCK | 10 |
+| LCK | 7 |
 
 **Key Features:**
 - **Elemental Spells** - Fire, Ice, and Lightning magic
@@ -74,12 +72,11 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 
 | Stat | Value |
 |------|-------|
-| HP | 80 |
-| STR | 10 |
+| STR | 8 |
 | DEX | 15 |
-| INT | 6 |
-| VIT | 8 |
-| LCK | 12 |
+| INT | 7 |
+| VIT | 6 |
+| LCK | 9 |
 
 **Key Features:**
 - **High Crit Chance** - Built for critical strikes
@@ -104,12 +101,11 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 
 | Stat | Value |
 |------|-------|
-| HP | 85 |
-| STR | 10 |
+| STR | 9 |
 | DEX | 14 |
-| INT | 7 |
-| VIT | 9 |
-| LCK | 10 |
+| INT | 6 |
+| VIT | 8 |
+| LCK | 8 |
 
 **Key Features:**
 - **Ranged Attacks** - Fights safely from a distance
@@ -134,11 +130,10 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 
 | Stat | Value |
 |------|-------|
-| HP | 90 |
-| STR | 8 |
+| STR | 7 |
 | DEX | 6 |
 | INT | 12 |
-| VIT | 12 |
+| VIT | 10 |
 | LCK | 8 |
 
 **Key Features:**
@@ -165,12 +160,11 @@ Necromancers command the forces of death, raising minions to fight for them whil
 
 | Stat | Value |
 |------|-------|
-| HP | 75 |
-| STR | 6 |
-| DEX | 7 |
+| STR | 5 |
+| DEX | 6 |
 | INT | 14 |
-| VIT | 8 |
-| LCK | 9 |
+| VIT | 7 |
+| LCK | 8 |
 
 **Key Features:**
 - **Summon Undead** - Creates zombie and skeleton minions
@@ -208,7 +202,7 @@ These are calculated from primary stats:
 | Max HP | 50 + (VIT × 5) + (Level × 10) |
 | Max Mana | 30 + (INT × 5) |
 | Initiative | DEX + 1d10 (random roll at combat start) |
-| Crit Chance | 5% + (DEX / 20) + (LCK / 20) + bonuses |
+| Crit Chance | 5% + (DEX / 20) + (LCK / 10) + bonuses |
 
 ---
 

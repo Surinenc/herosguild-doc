@@ -6,20 +6,22 @@ Heroes form bonds with each other over time. Strong relationships improve combat
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Stranger | 0-19 | Just met |
-| Acquaintance | 20-39 | Know each other |
+| Neutral | 0-19 | Just met |
+| Friendly | 20-39 | Know each other |
 | Friend | 40-59 | Comfortable together |
 | Close Friend | 60-79 | Trust each other |
-| Best Friend | 80-100 | Deep bond |
+| Best Friend | 80-89 | Deep bond |
+| Devoted | 90-100 | Unbreakable loyalty |
 
 ### Negative Relationships
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Dislike | -20 to -1 | Mild friction |
-| Rival | -40 to -21 | Competition |
-| Enemy | -60 to -41 | Open hostility |
-| Nemesis | -100 to -61 | Hatred |
+| Annoyed | -19 to -1 | Mild friction |
+| Dislike | -39 to -20 | Growing tension |
+| Rival | -59 to -40 | Competition |
+| Hostile | -79 to -60 | Active antagonism |
+| Enemy | -100 to -80 | Hatred |
 
 ---
 
@@ -54,21 +56,23 @@ Relationships affect combat performance:
 
 ### Positive Effects
 
-| Relationship | Damage Bonus | Other Effects |
-|--------------|--------------|---------------|
-| Friend | +5% | - |
-| Close Friend | +10% | May intervene |
-| Best Friend | +15% | Likely intervene |
-| Lovers | +20% | Always intervene |
+| Relationship | Damage Modifier |
+|--------------|-----------------|
+| Friendly | +5% |
+| Friend | +10% |
+| Close Friend | +15% |
+| Best Friend | +20% |
+| Devoted | +25% |
 
 ### Negative Effects
 
-| Relationship | Damage Penalty | Other Effects |
-|--------------|----------------|---------------|
-| Dislike | -5% | May not heal |
-| Rival | -10% | May compete |
-| Enemy | -15% | Won't heal |
-| Nemesis | -20% | May sabotage |
+| Relationship | Damage Modifier |
+|--------------|-----------------|
+| Annoyed | -3% |
+| Dislike | -8% |
+| Rival | -12% |
+| Hostile | -18% |
+| Enemy | -25% |
 
 ---
 

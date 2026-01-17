@@ -23,17 +23,17 @@ Each hero has 8 equipment slots:
 
 Items come in seven rarity tiers:
 
-| Rarity | Color | Stat Bonus | Sockets | Drop Rate |
-|--------|-------|------------|---------|-----------|
-| Common | White | Base | 1 | Very Common |
-| Uncommon | Green | +10-20% | 1 | Common |
-| Rare | Blue | +20-35% | 2 | Uncommon |
-| Epic | Purple | +35-50% | 2 | Rare |
-| Legendary | Orange | +50-75% | 3 | Very Rare |
-| Mythic | Red | +75-100% | 3 + Unique | Extremely Rare |
-| Ancestral | Gold | +100%+ | 3 + Powerful Unique | Heroic Only |
+| Rarity | Color | Min Sockets | Max Sockets |
+|--------|-------|-------------|-------------|
+| Common | White | 0 | 1 (5% chance) |
+| Uncommon | Green | 0 | 2 |
+| Rare | Blue | 1 | 3 |
+| Epic | Purple | 1 | 4 |
+| Legendary | Orange | 2 | 5 |
+| Mythic | Red | 3 | 6 |
+| Ancestral | Gold | 4 | 7 |
 
-**Ancestral items** only drop from Heroic Dungeons (100% guaranteed per completion).
+Socket count rolls increase with item level. Higher level items have better chances for maximum sockets.
 
 ---
 

@@ -13,19 +13,16 @@ Create powerful equipment, potions, and consumables for your heroes. Crafting is
 
 ## Crafting Stations
 
-### Available Stations
+### Production Facilities
 
-| Station | Function | Skill Used |
-|---------|----------|------------|
-| **Forge** | Metal weapons & armor | Blacksmithing |
-| **Tannery** | Leather goods, prosthetics | Leatherworking |
-| **Loom** | Cloth items | Tailoring |
-| **Alchemy Lab** | Potions & elixirs | Alchemy |
-| **Enchanting Table** | Magic enhancements | Enchanting |
-| **Jeweler's Bench** | Rings & amulets | Jewelcrafting |
-| **Kitchen** | Food buffs | Cooking |
-| **Smelter** | Process ore to ingots | - |
-| **Lumber Mill** | Process wood | - |
+The guild has 4 main production facilities, each handling multiple crafting types:
+
+| Facility | Crafts | Skills Used |
+|----------|--------|-------------|
+| **Forge** | Metal weapons, armor, ingot processing | Blacksmithing, Armorsmithing |
+| **Workshop** | Leather goods, cloth items, wood processing, prosthetics | Leatherworking, Tailoring |
+| **Alchemy Lab** | Potions, elixirs, food buffs, herbal processing | Alchemy, Cooking |
+| **Enchanting Table** | Magic enhancements, jewelry, accessories | Enchanting, Jewelcrafting |
 
 ### Station Levels
 

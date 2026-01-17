@@ -12,6 +12,8 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Heroes & Classes](guides/heroes.md) - The 6 hero classes and their abilities
 - [Combat System](guides/combat.md) - Turn-based tactical combat explained
 - [Equipment & Items](guides/equipment.md) - Gear, gems, and item rarities
+- [Skill Gems](guides/skills.md) - Active and support gem system
+- [Ascendancy Paths](guides/ascendancy.md) - Hero specializations
 
 ### Guild Management
 - [Guild Overview](guides/guild.md) - Managing your guild and facilities
@@ -38,10 +40,10 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 ### Key Features
 
 - **6 Hero Classes**: Warrior, Mage, Rogue, Ranger, Necromancer, Cleric
-- **20 Ascendancy Paths**: 3-4 specializations per class
+- **14 Ascendancy Paths**: 2-3 specializations per class
 - **Deep Combat System**: Turn-based with initiative, threat, and positioning
 - **Relationship System**: Heroes form bonds, rivalries, and romances
-- **Extensive Crafting**: 5 crafting stations with 100+ recipes
+- **Extensive Crafting**: 4 production facilities with 100+ recipes
 - **Procedural Dungeons**: 7 environments with unique mechanics
 - **Endgame Content**: Heroic Dungeons, Abyssal Spire, World Bosses
 

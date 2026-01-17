@@ -28,10 +28,10 @@ The Warrior is your shield against danger. With high health and strength, Warrio
 
 **Best For:** New players, protecting squishy allies, dungeons with heavy damage
 
-**Ascendancy Paths:**
-- **Guardian** - Ultimate tank specialization with enhanced defenses
-- **Berserker** - Trading defense for raw damage output
-- **Warlord** - Party-wide buffs and leadership abilities
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Champion** - Ultimate tank with enhanced Taunt and Shield Wall
+- **Berserker** - Raw damage, life steal, execute mechanics
+- **Gladiator** - Dual-wielding, multi-strike, criticals
 
 ---
 
@@ -57,10 +57,9 @@ Mages command the elements to devastate groups of enemies. While fragile, their 
 
 **Best For:** Clearing groups, boss burst phases, players who enjoy spellcasting
 
-**Ascendancy Paths:**
-- **Elementalist** - Mastery of destructive magic
-- **Arcanist** - Utility and crowd control focus
-- **Battlemage** - Combines magic with durability
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Elementalist** - Mastery of fire, cold, and lightning
+- **Occultist** - Curses, chaos damage, dark magic
 
 ---
 
@@ -86,10 +85,9 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
-**Ascendancy Paths:**
-- **Shadow** - Stealth and critical damage mastery
-- **Duelist** - Combat speed and precision
-- **Assassin** - Maximum single-target burst
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Assassin** - First strike, execute, instant kills
+- **Trickster** - Poison, debuffs, evasion
 
 ---
 
@@ -115,10 +113,10 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 
 **Best For:** Safe damage dealing, exploration, trap-heavy dungeons
 
-**Ascendancy Paths:**
-- **Beastmaster** - Commands animal companions
-- **Sharpshooter** - Extreme accuracy and damage
-- **Scout** - Enhanced exploration and utility
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Deadeye** - Precision, headshots, critical hits
+- **Raider** - Speed, evasion, multi-hits
+- **Pathfinder** - Potions, buffs, utility
 
 ---
 
@@ -137,18 +135,23 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 | LCK | 8 |
 
 **Key Features:**
-- **Healing** - Restores ally HP (30 + INT×2.5 + Level×3)
+- **Healing** - Restores ally HP (see formula below)
 - **Low Threat** - Healing generates only 0.5x aggro
 - **Anti-Undead** - Bonus damage against undead
-- **Death Save Bonus** - Allies have better survival chances
-- **Divine Favor** - Bonus to their own death saves
+- **Death Save Bonus** - Allies have +15% survival chance
+- **Divine Favor** - +10% bonus to their own death saves
+
+**Healing Formula:**
+```
+Heal Amount = Skill Base Heal + (INT × 0.5) + (Level × 6)
+```
+Modifiers: Mood bonus (±20%), Skill Proficiency, Set bonuses (Crusader 3pc: +25%)
 
 **Best For:** Every party needs one! Essential for longer dungeons
 
-**Ascendancy Paths:**
-- **Priest** - Maximum healing potential
-- **Templar** - Battle cleric with damage and healing
-- **Prophet** - Party-wide buffs and protection
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Guardian** - Maximum healing, shields, protection
+- **Paladin** - Battle cleric with holy damage
 
 ---
 
@@ -174,10 +177,9 @@ Necromancers command the forces of death, raising minions to fight for them whil
 
 **Best For:** Players who like pet classes, attrition strategies, unique playstyles
 
-**Ascendancy Paths:**
-- **Lich** - Personal power and dark magic
-- **Summoner** - Maximum minion count and power
-- **Deathknight** - Melee combat with dark magic
+**Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
+- **Puppeteer** - Minion armies, summon mastery
+- **Lich** - Personal power, life drain, undeath
 
 ---
 
@@ -268,6 +270,28 @@ Injuries occur during combat:
 - **Big Hit** (>50% max HP in one attack): 15% chance
 - **Knocked Out** (HP = 0): 30% chance
 
+### Injury Severity & Recovery
+
+When an injury occurs, a roll determines severity:
+
+| Roll | Severity | Recovery Time |
+|------|----------|---------------|
+| 1-30 | Crippling | 14 days |
+| 31-50 | Severe | 7 days |
+| 51-70 | Moderate | 5 days |
+| 71-85 | Light | 3 days |
+| 86-95 | Scratches | 1 day |
+| 96-100 | None | 0 days |
+
+**Roll Modifiers:**
+- VIT stat: +1 per point
+- Cleric in party: +10 per cleric
+- Infirmary level: +5 per level
+- Supervised mission: +20
+- Hardy trait: +10
+- HP below 25%: -20
+- Cursed trait: -10
+
 ### Body Part States
 
 | State | Efficiency | Description |
@@ -298,6 +322,50 @@ Destroyed parts can be replaced with prosthetics:
 
 ---
 
+## Death Saves
+
+When a hero is reduced to 0 HP, they must make a death save to survive. This determines whether they live with an injury or die permanently.
+
+### Base Survival Chance
+
+```
+Survival Chance = 50% (base)
+```
+
+**Always clamped between 5% and 95%** — there's always a chance to live or die.
+
+### Death Save Modifiers
+
+| Modifier | Bonus |
+|----------|-------|
+| Cleric in party | +15% |
+| Supervised mission | +10% |
+| Is a Cleric (Divine Favor) | +10% |
+| Survival gear equipped | +5% |
+| Lucky trait | +5% |
+| LCK stat | +1% per 5 LCK (max +5%) |
+| VIT stat | +1% per 5 VIT (max +5%) |
+| Cursed trait | -10% |
+
+### Example Calculations
+
+**Level 50 Warrior with 30 VIT, 15 LCK, Cleric in party:**
+```
+50% (base) + 15% (cleric) + 5% (VIT) + 3% (LCK) = 73% survival
+```
+
+**Same hero on a supervised mission:**
+```
+50% + 15% + 10% + 5% + 3% = 83% survival
+```
+
+**Level 30 Cleric with Lucky trait and party cleric:**
+```
+50% + 15% (party cleric) + 10% (Divine Favor) + 5% (Lucky) = 80% survival
+```
+
+---
+
 ## Leveling & Progression
 
 ### Experience
@@ -314,28 +382,80 @@ Heroes gain XP from:
 |-------|--------|
 | 1 | Starting abilities |
 | 5 | First passive tree point |
-| 10 | Ascendancy choice unlocked |
+| 25 | Ascendancy Trial unlocked |
 | 30 | Advanced skills |
-| 50 | Elite content access |
+| 50 | Second Ascendancy point, Elite content access |
+| 75 | Third Ascendancy point |
 | 80 | Heroic dungeon access |
 | 95 | Abyssal Spire access |
-| 100 | Paragon system unlocks |
+| 100 | Fourth Ascendancy point, Paragon system unlocks |
+
+### XP Curves
+
+XP required increases differently at each stage:
+
+| Level Range | Formula | Curve Type |
+|-------------|---------|------------|
+| 1-30 | `15 × level^1.8` | Flatter (faster early game) |
+| 31-60 | Moderate scaling | Level^2.0 transition |
+| 61-90 | `level^2.2` scaling | Steeper grind |
+| 91-100 | Level 90 × multiplier | Brutal endgame |
+
+**Level 91-100 Multipliers:**
+
+| Level | Multiplier |
+|-------|------------|
+| 91 | 1.5× |
+| 92 | 2.0× |
+| 93 | 2.5× |
+| 94 | 3.0× |
+| 95 | 3.5× |
+| 96 | 4.0× |
+| 97 | 4.5× |
+| 98 | 5.0× |
+| 99 | 5.5× |
+| 100 | 6.0× |
+
+### XP Penalties (Levels 95-99)
+
+High-level heroes gain reduced XP from content, slowing the final push:
+
+| Level | XP Retained |
+|-------|-------------|
+| 95 | 90% |
+| 96 | 85% |
+| 97 | 80% |
+| 98 | 75% |
+| 99 | 70% |
+
+**XP Bonuses:**
+- Supervised mission: +25%
+- Mentor in party: +50%
+- Quick Learner trait: +25%
+- Library (per level): +5%
+- Guild XP Banner: +10%
+- Paragon XP allocation: Up to +40%
+- Rest bonus: Accumulated while resting
 
 ### Paragon System (Level 100+)
 
-After reaching level 100, heroes gain Paragon points to further specialize:
+After reaching level 100, heroes gain Paragon points to further specialize.
 
-| Category | Bonus Per Point | Cap |
-|----------|-----------------|-----|
-| Strength | +2 STR | 50 |
-| Crit Chance | +0.5% | 30 |
-| Crit Damage | +2% | 30 |
-| Vitality | +2 VIT | 50 |
-| Bonus HP | +10 HP | 50 |
-| Armor | +5 Armor | 50 |
-| Dexterity | +2 DEX | 50 |
-| Speed | +1% | 30 |
-| XP Gain | +2% | 20 |
+**XP Required:** 400,000 XP per Paragon point (roughly equal to level 99→100)
+
+| Category | Bonus Per Point | Cap | Max Bonus |
+|----------|-----------------|-----|-----------|
+| Strength | +2 STR | 50 | +100 STR |
+| Crit Chance | +0.5% | 30 | +15% |
+| Crit Damage | +2% | 30 | +60% |
+| Vitality | +2 VIT | 50 | +100 VIT |
+| Bonus HP | +10 HP | 50 | +500 HP |
+| Armor | +5 Armor | 50 | +250 Armor |
+| Dexterity | +2 DEX | 50 | +100 DEX |
+| Speed | +1% | 30 | +30% |
+| XP Gain | +2% | 20 | +40% |
+
+**Total Paragon Points:** 360 points to fully max all categories
 
 ---
 

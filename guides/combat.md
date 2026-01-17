@@ -43,12 +43,15 @@ Base Damage = Weapon Damage + Stat Scaling
 ```
 
 **Stat Scaling by Class:**
-- **Warrior:** STR × 1.5
-- **Mage:** INT × 1.7
-- **Rogue:** DEX × 1.5
-- **Cleric:** INT × 1.0 + STR × 0.5
-- **Ranger:** DEX × 2.0
-- **Necromancer:** INT × 3.0
+
+Stats multiply weapon damage. Formula: `Weapon × (1 + StatBonus/100)`
+
+- **Warrior:** STR × 0.15
+- **Mage:** INT × 0.18
+- **Rogue:** DEX × 0.15
+- **Cleric:** INT × 0.1 + STR × 0.05
+- **Ranger:** DEX × 0.15
+- **Necromancer:** INT × 0.18
 
 **Modifiers Applied:**
 - Passive tree bonuses
@@ -239,11 +242,35 @@ Equip skill gems in your weapon sockets for additional abilities. See [Equipment
 
 ### Skill Proficiency
 
-Using skills improves proficiency:
-- +10 XP per use
-- Higher proficiency = more damage
-- Reduced mana costs
-- Lower cooldowns
+Using skills improves proficiency, granting stacking bonuses:
+
+| Bonus Type | Rate | Maximum |
+|------------|------|---------|
+| Damage | +1.5% per level | +30% |
+| Mana Cost Reduction | -1% per level | -20% |
+| Cooldown Reduction | -0.75% per level | -15% |
+
+**Gaining Proficiency XP:**
+- +10 XP per skill use in combat
+- Higher tier content gives more XP
+- Proficiency is tracked per skill per hero
+
+---
+
+## Monster Knowledge
+
+As heroes fight the same enemy types, they learn their weaknesses.
+
+### Knowledge Levels
+
+| Kills | Level | Damage Bonus | Crit Bonus |
+|-------|-------|--------------|------------|
+| 5 | Novice | +5% | - |
+| 20 | Familiar | +10% | - |
+| 50 | Expert | +15% | - |
+| 100 | Slayer | +20% | +5% crit |
+
+Monster knowledge is tracked per hero per enemy type. The Slayer level grants bonus critical hit chance against that enemy.
 
 ---
 

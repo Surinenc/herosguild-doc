@@ -218,12 +218,15 @@ Heroes come in five quality tiers that affect their base stats and trait count:
 | Epic | ⭐⭐⭐⭐ | 1.32x | 2-3 |
 | Legendary | ⭐⭐⭐⭐⭐ | 1.50x | 3 |
 
-**Recruit Rarity:**
-- Common: 60%
-- Uncommon: 25%
-- Rare: 10%
-- Epic: 4%
-- Legendary: 1%
+**Recruit Rarity (varies by Tavern level):**
+
+| Tavern | Common | Uncommon | Rare | Epic | Legendary |
+|--------|--------|----------|------|------|-----------|
+| Level 1 | 100% | - | - | - | - |
+| Level 2 | 70% | 30% | - | - | - |
+| Level 3 | 50% | 35% | 15% | - | - |
+| Level 4 | 30% | 40% | 25% | 5% | - |
+| Level 5 | 15% | 35% | 37% | 10% | 3% |
 
 Higher quality heroes are significantly stronger due to the stat multiplier applying to ALL stats after all bonuses.
 

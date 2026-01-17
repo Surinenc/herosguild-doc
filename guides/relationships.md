@@ -6,47 +6,68 @@ Heroes form bonds with each other over time. Strong relationships improve combat
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Neutral | 0-19 | Just met |
-| Friendly | 20-39 | Know each other |
-| Friend | 40-59 | Comfortable together |
-| Close Friend | 60-79 | Trust each other |
-| Best Friend | 80-89 | Deep bond |
-| Devoted | 90-100 | Unbreakable loyalty |
+| Neutral | -9 to +9 | Just met |
+| Friendly | +10 to +29 | Know each other |
+| Friend | +30 to +59 | Comfortable together |
+| Close Friend | +60 to +79 | Trust each other |
+| Best Friend | +80 to +94 | Deep bond |
+| Devoted | +95 to +100 | Unbreakable loyalty |
 
 ### Negative Relationships
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Annoyed | -19 to -1 | Mild friction |
-| Dislike | -39 to -20 | Growing tension |
-| Rival | -59 to -40 | Competition |
-| Hostile | -79 to -60 | Active antagonism |
-| Enemy | -100 to -80 | Hatred |
+| Annoyed | -10 to -20 | Mild friction |
+| Dislike | -21 to -35 | Growing tension |
+| Rival | -36 to -55 | Competition |
+| Hostile | -56 to -75 | Active antagonism |
+| Enemy | -76 to -100 | Hatred |
 
 ---
 
 ## Building Relationships
 
-### Positive Actions
+### Mission Events (30% Chance per Pair)
 
-| Action | Trust Gained |
+Each hero pair has a 30% chance of a relationship event during missions:
+
+| Event Type | Trust Change |
+|------------|--------------|
+| Fought well together | +3 |
+| Covered each other | +5 |
+| Worked as a team | +6 |
+| Argued over tactics | -3 |
+| Blamed for close call | -5 |
+| Took credit for kill | -4 |
+
+### Social Events
+
+| Action | Trust Change |
 |--------|--------------|
-| Mission together | +3 per hero pair |
-| Combat together | +10 (30% chance) |
-| Intervene save | +30 saved / +15 saver |
-| Shared meals (Tavern) | +5 |
-| Training together | +2 |
-| Gift giving | +5 to +15 |
+| Intervene save (combat) | +30 saved / +15 saver |
+| Shared meal | +2 to +4 |
+| Training together (social) | +2 to +4 |
+| Gift giving | +4 to +6 |
+| Celebration | +5 |
+| Sparring partner | +1/day |
 
-### Negative Actions
+### Tavern Activities
 
-| Action | Trust Lost |
-|--------|------------|
-| Failed mission (blame) | -2 (70% chance) |
-| Ignored in combat | -3 |
+| Activity | Relationship Boost |
+|----------|-------------------|
+| Tactical Retreat Drill | +2 per pair |
+| Battle Reenactment | +3 per pair |
+| Poetry Slam | +1 all pairs |
+| Insurance Planning | +1 all pairs |
+
+### Negative Events
+
+| Event | Trust Lost |
+|-------|------------|
 | Romantic rejection | -10 |
-| Trait conflict | -1 per interaction |
-| Rivalry triggers | Variable |
+| Jealousy attack | -25 to -30 |
+| Insult | -6 |
+| Hogged loot | -4 |
 
 ---
 

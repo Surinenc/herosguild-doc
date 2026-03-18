@@ -28,7 +28,7 @@ The Guild Screen is your home base. Here you can:
 
 ### Key Facilities
 
-As you progress, unlock these essential facilities:
+As you progress, unlock these essential facilities. The Guild Clerk's recommended priority is Barracks first (more heroes), then Forge (better equipment), then Alchemy Lab (potions save lives).
 
 | Facility | Purpose |
 |----------|---------|
@@ -52,13 +52,13 @@ The Guild Clerk has onboarded hundreds of Guild Masters. Every single one has, a
 
 ### Dungeon Exploration
 
-Dungeons consist of multiple rooms connected by corridors. Each room may contain:
+Dungeons consist of multiple rooms connected by corridors. What's behind each door is a surprise — and not always a pleasant one:
 
-- **Enemies** - Combat encounters
-- **Treasure** - Loot chests with items and gold
-- **Events** - Random encounters that may help or hinder
-- **Shops** - Merchants selling supplies
-- **Boss** - Powerful enemies with better rewards
+- **Enemies** - Combat encounters (the main attraction, whether you want it or not)
+- **Treasure** - Loot chests with items and gold (the reason you're here)
+- **Events** - Random encounters that may help or hinder (the universe rolling dice)
+- **Shops** - Merchants selling supplies (at dungeon markup prices)
+- **Boss** - Powerful enemies with better rewards (the thing standing between you and going home)
 
 ### Combat Basics
 
@@ -85,23 +85,29 @@ Upon returning to the guild (assuming they return — the Guild Clerk finds opti
 
 ### Early Game (Levels 1-20)
 
-- Focus on one strong party rather than many weak heroes
+The Guild Clerk has coached hundreds of new Guild Masters through this phase. The ones who listen tend to keep their guilds.
+
+- Focus on one strong party rather than many weak heroes. Four competent heroes outperform eight mediocre ones, and cost half the wages.
 - Complete easy dungeons repeatedly to build resources
 - Upgrade your Forge for better gear
 - Save gold for emergency situations (wages, healing, that moment when three heroes need prosthetics simultaneously)
 
 ### Building Your Guild
 
-- Hire diverse hero classes for flexibility
-- Build relationships between heroes (they fight better together)
+The transition from "small band of adventurers" to "functioning institution" is where most guilds either flourish or discover what bankruptcy looks like.
+
+- Hire diverse hero classes for flexibility — you'll need every class eventually
+- Build relationships between heroes (they fight better together, and the Tavern bills are worth it)
 - Invest in crafting facilities for better equipment
-- Keep backup heroes in case of injuries
+- Keep backup heroes in case of injuries — and there will be injuries
 
 ### Managing Resources
 
-- **Gold** - Pay weekly wages, buy items, construct buildings
-- **Materials** - Craft equipment and consumables
-- **Hero Mood** - Keep heroes happy for better performance
+Three things will make or break your guild. Ignore any one of them and the Guild Clerk will be writing your closure report.
+
+- **Gold** - Pay weekly wages, buy items, construct buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
+- **Materials** - Craft equipment and consumables. Running out of materials mid-craft is the guild equivalent of running out of flour mid-cake.
+- **Hero Mood** - Keep heroes happy for better performance. Unhappy heroes fight poorly, pick fights with each other, and occasionally leave. Happy heroes merely complain about the food.
 
 ## Common Mistakes to Avoid
 

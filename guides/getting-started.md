@@ -85,7 +85,7 @@ Upon returning to the guild:
 
 - Focus on one strong party rather than many weak heroes
 - Complete easy dungeons repeatedly to build resources
-- Upgrade your Blacksmith for better gear
+- Upgrade your Forge for better gear
 - Save gold for emergency situations (wages, healing)
 
 ### Building Your Guild

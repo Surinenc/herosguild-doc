@@ -20,7 +20,7 @@ Skills in Hero's Guild come as gems that can be:
 
 ### Gem Colors
 
-Gems come in four colors, each aligned with different stats:
+Gems come in four colors, each aligned with different stats. The Guild Clerk finds the color-coding system needlessly complicated, but admits it does prevent Warriors from accidentally socketing healing spells.
 
 | Color | Stat | Typical Skills |
 |-------|------|----------------|
@@ -57,8 +57,11 @@ Sockets have colors that determine which gems can be placed:
 - White sockets accept ⚪ any gem color
 
 **Socket Generation:**
+
+The mathematics of socket generation are, in the Guild Clerk's assessment, the sort of thing that keeps certain heroes awake at night.
+
 - Base socket chance: `30% + item level × 2%` (capped at 90%)
-- White socket chance: 3%
+- White socket chance: 3% (rare enough to cause genuine excitement)
 - Link chance: `20% + item level × 1%` (capped at 70%)
 
 ### Linking Sockets
@@ -103,11 +106,13 @@ As gems level up, they become more powerful but also more expensive to use — a
 Mana Cost = Base Mana × (1 + (Level - 1) × 0.02)
 ```
 
-At level 100, skills cost approximately 3× their base mana.
+At level 100, skills cost approximately 3× their base mana. The Guild Clerk has observed that this catches heroes by surprise roughly 100% of the time.
 
 ---
 
 ## Active Gems
+
+Active gems are the skills your heroes actually use in combat. Each one has a mana cost, a color requirement, and varying degrees of "things exploding."
 
 ### Attack Skills (Red)
 
@@ -194,6 +199,8 @@ Support gems modify active skills they're linked to. They make everything better
 
 ### Damage Supports
 
+The "more damage, more mana" school of gem design. The Guild Clerk has seen heroes stack three of these and then wonder why they're dry by turn two.
+
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
 | **Increased Damage** | +% damage | 1.15× |
@@ -209,6 +216,8 @@ Support gems modify active skills they're linked to. They make everything better
 
 ### Utility Supports
 
+Practical effects for practical heroes. The Life Leech gem, in particular, has saved more lives than most Clerics will admit.
+
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
 | **Life Leech** | Gain HP from damage dealt | 1.25× |
@@ -219,6 +228,8 @@ Support gems modify active skills they're linked to. They make everything better
 | **Minion Life** | Minions have more HP (Necromancer) | 1.15× |
 
 ### Defensive Supports
+
+For heroes who've discovered that dying is, on reflection, suboptimal.
 
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|

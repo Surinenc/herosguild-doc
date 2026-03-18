@@ -42,7 +42,7 @@ Each station level reduces crafting time by 10% and unlocks the next material ti
 | 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
 | 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-This formula applies uniformly to all station types (Forge, Alchemy Lab, Workshop, Enchanting Table).
+This formula applies uniformly to all 10 station types (Forge, Armory, Tannery, Loom, Alchemy Lab, Kitchen, Enchanting Table, Jeweler Bench, Lumber Mill, Smelter).
 
 ### Unlocking Stations
 
@@ -122,7 +122,7 @@ Exceptional quality crafts give +50% XP.
 | ⭐⭐ | 6 hours |
 | ⭐⭐⭐ | 1 day |
 | ⭐⭐⭐⭐ | 3 days |
-| ⭐⭐⭐⭐⭐ | 6-7 days (8,640-10,080 min) |
+| ⭐⭐⭐⭐⭐ | 7 days (10,080 min) |
 
 **Time Modifiers:**
 - Station level: -10% per level above 1 (see Station Levels table)

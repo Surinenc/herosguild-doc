@@ -63,7 +63,7 @@ Sockets have colors that determine which gems can be placed:
 
 ### Linking Sockets
 
-Sockets can be **linked** together, shown by a bar connecting them:
+Sockets can be **linked** together, shown by a bar connecting them. The more links, the more powerful your skill setup — and the more time you'll spend staring at equipment trying to find one with the right colors:
 
 ```
 [🔴]—[🟢]  ← These two sockets are linked
@@ -81,14 +81,14 @@ Sockets can be **linked** together, shown by a bar connecting them:
 
 ### Gem XP
 
-Gems gain XP when used in combat:
+Gems gain XP when used in combat. The XP curve is exponential, which means early levels fly by and late levels feel like a personal vendetta from the universe:
 - **+10 XP** per skill use
 - XP requirement scales exponentially: `100 × 1.08^level`
 - Max level: 100
 
 ### Level Scaling
 
-As gems level up:
+As gems level up, they become more powerful but also more expensive to use — a tradeoff the Guild Clerk considers thematically appropriate for the adventuring profession:
 
 | Stat | Scaling |
 |------|---------|
@@ -187,7 +187,7 @@ At level 100, skills cost approximately 3× their base mana.
 
 ## Support Gems
 
-Support gems modify active skills they're linked to. They typically:
+Support gems modify active skills they're linked to. They make everything better — and more expensive. The Guild Clerk has seen heroes socket Multistrike (1.6× mana cost) and then wonder why they're out of mana by turn three. They typically:
 - Increase damage at a mana cost multiplier
 - Add elemental damage
 - Provide utility effects

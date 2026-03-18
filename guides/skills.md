@@ -39,11 +39,14 @@ Different equipment pieces have different socket configurations:
 
 | Equipment | Max Sockets | Typical Links |
 |-----------|-------------|---------------|
-| Weapons | 3-6 | Main skills |
-| Body Armor | 4-6 | Primary skill setup |
-| Helmet | 2-4 | Utility skills |
-| Gloves | 2-4 | Secondary attacks |
-| Boots | 2-4 | Movement, guards |
+| Weapon | 6 | Main skills |
+| Body Armor | 6 | Primary skill setup |
+| Helmet | 4 | Utility skills |
+| Gloves | 4 | Secondary attacks |
+| Boots | 4 | Movement, guards |
+| Off Hand | 3 | Support skills |
+| Amulet | 1 | Single gem |
+| Ring | 1 | Single gem |
 
 ### Socket Colors
 
@@ -52,6 +55,11 @@ Sockets have colors that determine which gems can be placed:
 - Green sockets accept 🟢 green gems
 - Blue sockets accept 🔵 blue gems
 - White sockets accept ⚪ any gem color
+
+**Socket Generation:**
+- Base socket chance: `30% + item level × 2%` (capped at 90%)
+- White socket chance: 3%
+- Link chance: `20% + item level × 1%` (capped at 70%)
 
 ### Linking Sockets
 
@@ -188,33 +196,37 @@ Support gems modify active skills they're linked to. They typically:
 
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
-| **Increased Damage** | +30-50% damage | 1.2× |
-| **Added Fire Damage** | Add fire damage | 1.3× |
-| **Added Cold Damage** | Add cold damage | 1.3× |
-| **Added Lightning Damage** | Add lightning damage | 1.3× |
-| **Added Chaos Damage** | Add chaos damage | 1.4× |
+| **Increased Damage** | +% damage | 1.15× |
+| **Added Fire Damage** | Add fire damage | 1.2× |
+| **Added Cold Damage** | Add cold damage | 1.2× |
+| **Added Lightning Damage** | Add lightning damage | 1.2× |
+| **Increased Critical Strikes** | Higher crit chance | 1.3× |
+| **Increased Critical Damage** | Higher crit multiplier | 1.25× |
+| **Concentrated Effect** | More damage, smaller area | 1.4× |
+| **Multistrike** | Attack multiple times | 1.6× |
+| **Spell Echo** | Cast spells twice | 1.4× |
+| **Melee Splash** | Melee hits nearby enemies | 1.3× |
 
 ### Utility Supports
 
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
-| **Faster Attacks** | Increased attack speed | 1.15× |
-| **Greater Multiple Projectiles** | More projectiles, less damage each | 1.4× |
-| **Life Leech** | Gain HP from damage dealt | 1.2× |
-| **Mana Leech** | Gain mana from damage dealt | 1.15× |
-| **Stun** | Increased stun chance | 1.1× |
+| **Life Leech** | Gain HP from damage dealt | 1.25× |
+| **Mana Leech** | Gain mana from damage dealt | 1.2× |
 | **Increased Duration** | Buffs/debuffs last longer | 1.1× |
-| **Increased Area** | Larger AoE | 1.2× |
+| **Increased Healing** | Stronger healing skills | 1.2× |
+| **Minion Damage** | Minions deal more damage (Necromancer) | 1.3× |
+| **Minion Life** | Minions have more HP (Necromancer) | 1.15× |
 
-### Status Supports
+### Defensive Supports
 
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
-| **Chance to Ignite** | Fire skills ignite more often | 1.15× |
-| **Chance to Freeze** | Cold skills freeze more often | 1.15× |
-| **Chance to Shock** | Lightning skills shock more often | 1.15× |
-| **Poison** | Attacks apply poison | 1.2× |
-| **Bleed** | Attacks cause bleeding | 1.2× |
+| **Armor Reinforcement** | Increased armor | 1.1× |
+| **Evasion Boost** | Increased evasion | 1.1× |
+| **Energy Shield Boost** | Increased energy shield | 1.1× |
+| **Damage Reduction** | Reduced damage taken | 1.1× |
+| **Thorns** | Reflect damage to attackers | 1.1× |
 
 ---
 

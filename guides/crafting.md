@@ -15,24 +15,79 @@ Create powerful equipment, potions, and consumables for your heroes. Crafting is
 
 ### Production Facilities
 
-The guild has 4 main production facilities, each handling multiple crafting types:
+The guild has 10 crafting station types:
 
-| Facility | Crafts | Skills Used |
-|----------|--------|-------------|
-| **Forge** | Metal weapons, armor, ingot processing | Blacksmithing, Armorsmithing |
-| **Workshop** | Leather goods, cloth items, wood processing, prosthetics | Leatherworking, Tailoring |
-| **Alchemy Lab** | Potions, elixirs, food buffs, herbal processing | Alchemy, Cooking |
-| **Enchanting Table** | Magic enhancements, jewelry, accessories | Enchanting, Jewelcrafting |
+| Station | Crafts | Skills Used |
+|---------|--------|-------------|
+| **Forge** | Metal weapons, armor | Blacksmithing |
+| **Armory** | Armor crafting and repair | Armorsmithing |
+| **Tannery** | Leather processing and goods | Leatherworking |
+| **Loom** | Cloth processing and items | Tailoring |
+| **Alchemy Lab** | Potions and elixirs | Alchemy |
+| **Kitchen** | Food buffs and meals | Cooking |
+| **Enchanting Table** | Magic enhancements | Enchanting |
+| **Jeweler Bench** | Jewelry and accessories | Jewelcrafting |
+| **Lumber Mill** | Wood processing, bows, prosthetics | Leatherworking |
+| **Smelter** | Ore processing, ingots | Blacksmithing |
 
-### Station Levels
+### Station Levels (Base)
 
-| Level | Benefit |
-|-------|---------|
-| 1 | Basic function |
-| 2 | +10% speed, ⭐⭐ recipes |
-| 3 | +20% speed, ⭐⭐⭐ recipes |
-| 4 | +30% speed, ⭐⭐⭐⭐ recipes |
-| 5 | +50% speed, ⭐⭐⭐⭐⭐ recipes, quality bonus |
+Each crafting station has an internal level that reduces crafting time by 10% per level and unlocks material tiers:
+
+| Level | Time Modifier | Tier Unlocked | Quality Bonus |
+|-------|---------------|---------------|---------------|
+| 1 | 1.0× (base) | ⭐ Common | - |
+| 2 | 0.9× (-10%) | ⭐⭐ Uncommon | - |
+| 3 | 0.8× (-20%) | ⭐⭐⭐ Rare | - |
+| 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
+| 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
+
+This applies uniformly to all 10 station types.
+
+### Facility Upgrades (Stacking Bonuses)
+
+Guild facility upgrades provide **additional** speed and quality bonuses on top of station-level modifiers. These are separate systems that stack.
+
+**Forge Facility** (metals, weapons, armor):
+
+| Level | Name | Speed | Quality Bonus |
+|-------|------|-------|---------------|
+| 1 | Simple Forge | 1.0× | - |
+| 2 | Blacksmith Forge | 1.15× | - |
+| 3 | Master Forge | 1.3× | +10% |
+| 4 | Dwarven Forge | 1.5× | +20% |
+| 5 | Legendary Forge | 2.0× | +30% |
+
+**Workshop Facility** (leather, cloth, wood — covers Tannery, Loom, Lumber Mill stations):
+
+| Level | Name | Speed | Quality Bonus |
+|-------|------|-------|---------------|
+| 1 | Basic Workshop | 1.0× | - |
+| 2 | Crafting Workshop | 1.2× | +5% |
+| 3 | Artisan Workshop | 1.4× | +10% |
+| 4 | Master Workshop | 1.6× | +15% |
+| 5 | Grand Workshop | 2.0× | +20% |
+| 6 | Mythic Workshop | 2.5× | +30% |
+
+**Alchemy Lab Facility** (potions, elixirs):
+
+| Level | Name | Speed | Potency Bonus |
+|-------|------|-------|---------------|
+| 1 | Brewing Station | 1.0× | - |
+| 2 | Alchemy Corner | 1.2× | - |
+| 3 | Alchemy Lab | 1.4× | +10% |
+| 4 | Grand Laboratory | 1.6× | +20% |
+| 5 | Arcane Laboratory | 2.0× | +30% |
+
+**Enchanting Table Facility** (enchantments, jewelry):
+
+| Level | Name | Enchant Power |
+|-------|------|---------------|
+| 1 | Rune Desk | 1.0× |
+| 2 | Enchanting Altar | 1.2× |
+| 3 | Arcane Workshop | 1.4× |
+| 4 | Mystic Chamber | 1.7× |
+| 5 | Ley Nexus | 2.0× |
 
 ### Unlocking Stations
 
@@ -112,13 +167,12 @@ Exceptional quality crafts give +50% XP.
 | ⭐⭐ | 6 hours |
 | ⭐⭐⭐ | 1 day |
 | ⭐⭐⭐⭐ | 3 days |
-| ⭐⭐⭐⭐⭐ | 7 days |
+| ⭐⭐⭐⭐⭐ | 7 days (10,080 min) |
 
 **Time Modifiers:**
-- Station level: -10% per level above 1
-- Crafter skill: -1% per 5 skill levels
+- Station level: -10% per level above 1 (see Station Levels table)
+- Crafter skill: -1% per 5 skill levels (skill level / 500)
 - Assistant: -20%
-- Efficient trait: -20%
 
 ### Assistants
 
@@ -286,6 +340,25 @@ Cloth → [Loom] → Fine Cloth → [Loom] → Enchanted Cloth
 | Peg Leg | ⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron | Leatherworking 5 |
 | Prosthetic Leg | ⭐⭐ (Standard) | 5 Steel, 2 Hardened Leather | Blacksmithing 10 |
 | Enchanted Leg | ⭐⭐⭐ (Enhanced) | 2 Adamantine, Dragon Bone, 2 Soul Shard | Enchanting 15 |
+
+---
+
+## Item Workshop
+
+The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for improving Rare+ items that have good base stats but poor bonus rolls.
+
+**Requirements:**
+- Item must be Rare rarity or higher
+- Named items cannot be rerolled
+
+**Reroll Cost:**
+```
+Cost = 1,000 × Rarity Tier × 2^(Previous Rerolls)
+```
+
+Costs double each time you reroll the same item. You can preview the new stats and choose to Accept or Reject before committing.
+
+Navigate to: Guild Screen → Item Workshop
 
 ---
 

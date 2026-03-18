@@ -38,49 +38,89 @@ Higher initiative means acting earlier. Turn order is recalculated each round.
 
 ### Hero Damage
 
+**Base Damage Formula:**
+
 ```
-Base Damage = Weapon Damage + Stat Scaling
+Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 ```
 
-**Stat Scaling by Class:**
+**Stat Bonus by Class:**
 
-Stats multiply weapon damage. Formula: `Weapon × (1 + StatBonus/100)`
+| Class | Stat Bonus |
+|-------|------------|
+| Warrior | STR × 0.20 |
+| Rogue | DEX × 0.15 |
+| Ranger | DEX × 0.15 |
+| Cleric | INT × 0.10 + STR × 0.05 |
+| Mage | INT × 0.18 |
+| Necromancer | INT × 0.18 |
+| Paladin (ascendancy) | INT × 0.12 + STR × 0.12 |
 
-- **Warrior:** STR × 0.15
-- **Mage:** INT × 0.18
-- **Rogue:** DEX × 0.15
-- **Cleric:** INT × 0.1 + STR × 0.05
-- **Ranger:** DEX × 0.15
-- **Necromancer:** INT × 0.18
+Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage.
 
-**Modifiers Applied:**
+**Modifiers Applied (multiplicative):**
+- Skill damage percentage (e.g., Power Attack = 150%)
 - Passive tree bonuses
-- Weapon proficiency (0-38% at max)
+- Weapon proficiency (0-38% at max level 20)
+- Skill proficiency (0-30% at max level 20)
 - Monster knowledge (up to +20%)
 - Equipment set bonuses
-- Relationship modifier
-- Mood modifier (±20%)
+- Ascendancy bonuses
+- Relationship modifier (up to ±25%)
+- Mood modifier
 - Damage variance (±10%)
 
 ### Critical Hits
 
 ```
 Crit Chance = 5% + (DEX / 20) + (LCK / 10) + bonuses
-Crit Multiplier = 1.5x (base) + bonuses
+Crit Multiplier = 1.5× (base) + (bonus crit damage% / 100)
 ```
 
-### Enemy Damage
+### Armor and Damage Reduction
 
 ```
-Raw Damage = Enemy Damage × Ability Multiplier
-Defense Reduction = Armor / (Armor + 100)
-Final Damage = Raw Damage × (1 - Defense Reduction)
+Armor Reduction = sqrt(Armor × 2) × 100 / (50 + Enemy Level × 0.5)
 ```
+
+Capped at 95%. Minimum damage dealt is always 1.
 
 **Defense Modifiers:**
 - Defending: 50% damage reduction
 - Shield Wall: 50% damage reduction
-- Minimum damage: 1
+
+### Evasion
+
+Evasion uses an entropy-based system (similar to Path of Exile 2) to ensure consistent dodge patterns rather than pure randomness.
+
+```
+Evasion Rating = DEX + (LCK × 0.5) + flat evasion bonuses
+Evasion Chance = sqrt(Evasion Rating × 2) × 100 / (50 + Enemy Level × 0.5)
+```
+
+Capped at 95%. The entropy system ensures that if you have 50% evasion, you will always evade every other attack rather than getting unlucky streaks.
+
+### Energy Shield
+
+Mages and Necromancers have an energy shield that absorbs damage before HP:
+
+```
+Energy Shield = INT × 5
+```
+
+- Absorbs all damage before HP is touched
+- Recharges 10% of max ES per round if not hit that round
+- Other classes have 0 base energy shield (can gain from gear)
+
+### Life Steal
+
+Life steal has diminishing returns via a square root formula:
+
+```
+Heal Amount = floor(sqrt(Damage × Life Steal% / 100 × 100))
+```
+
+Examples: 100 damage at 10% steal → 10 HP, 500 damage → ~22 HP, 2500 damage → ~50 HP.
 
 ---
 
@@ -118,15 +158,17 @@ Enemies use threat to determine who to attack. Higher threat = more likely to be
 ### Taunt
 
 - **Effect:** Forces ALL enemies to attack the Warrior
-- **Duration:** 2 turns
+- **Duration:** 2 turns (+ ascendancy bonuses)
 - **Threat Bonus:** +200
+- **Cooldown:** 3 turns
 - **Best Used:** When squishy allies are being targeted
 
 ### Shield Wall
 
 - **Effect:** 50% damage reduction
-- **Duration:** 2 turns
+- **Duration:** 2 turns (+ ascendancy bonuses)
 - **Threat Bonus:** +50
+- **Cooldown:** 3 turns
 - **Best Used:** After Taunt, or when expecting heavy damage
 
 **Pro Tip:** Taunt first, then Shield Wall for maximum party protection.
@@ -150,7 +192,7 @@ When a hero would receive a **killing blow**, allies may intervene:
 
 - Ally has positive relationship (30+) with target
 - Ally is alive
-- Ally hasn't intervened yet this combat
+- Ally hasn't intervened yet this combat (unless they have the Double Intervene ascendancy bonus)
 
 ### Intervene Chance
 
@@ -207,34 +249,39 @@ When an ally dies, heroes react based on their relationship:
 ### Default Class Skills
 
 **Warrior:**
-- Taunt - Force enemies to attack
-- Shield Wall - 50% damage reduction
-- Power Attack - 150% damage
+- Strike - 100% damage basic attack
+- Power Attack - 150% damage, 2-turn cooldown
+- Cleave - 80% damage AoE, 3-turn cooldown
+- Taunt - Forces enemies to attack you, 3-turn cooldown
+- Shield Wall - 50% damage reduction, 3-turn cooldown
 
 **Cleric:**
-- Heal - Single target restoration
-- Group Heal - AoE healing
-- Smite - Holy damage
+- Smite - 90% damage holy attack
+- Holy Fire - 110% damage, 2-turn cooldown
+- Heal - Single target restoration, 2-turn cooldown
+- Prayer of Healing - AoE healing, 4-turn cooldown
 
 **Mage:**
-- Fireball - Single target fire
-- Ice Storm - AoE cold
-- Arcane Missile - Quick attack
+- Staff Strike - 60% damage basic attack
+- Fireball - 130% damage with 30% ignite chance, 2-turn cooldown
+- Frost Nova - 60% AoE damage with 25% freeze chance, 3-turn cooldown
 
 **Rogue:**
-- Backstab - High single target
-- Poison Strike - DoT
-- Evasion - Defensive stance
+- Stab - 100% damage basic attack
+- Backstab - 200% damage single target, 3-turn cooldown
+- Fan of Knives - 70% damage AoE, 2-turn cooldown
 
 **Ranger:**
-- Aimed Shot - High accuracy
-- Volley - AoE arrows
-- Hunter's Mark - Enemy debuff
+- Arrow Shot - 100% damage basic attack
+- Multi-Shot - 70% damage AoE, 2-turn cooldown
+- Power Shot - 160% damage single target, 2-turn cooldown
 
 **Necromancer:**
-- Life Drain - Damage + self heal
-- Curse - Enemy debuff
-- Shadow Bolt - Dark damage
+- Dark Touch - 80% damage basic attack
+- Soul Drain - 100% damage with 100% lifesteal, 2-turn cooldown
+- Curse of Weakness - 60% AoE, 80% chance to weaken for 3 turns, 3-turn cooldown
+
+**Note:** Berserker and Gladiator ascendancies lose Taunt and Shield Wall, keeping only Strike, Power Attack, and Cleave. Paladin ascendancy replaces Heal and Prayer of Healing with Divine Strike (120% damage) and Consecrate.
 
 ### Skill Gems
 
@@ -244,16 +291,13 @@ Equip skill gems in your weapon sockets for additional abilities. See [Equipment
 
 Using skills improves proficiency, granting stacking bonuses:
 
-| Bonus Type | Rate | Maximum |
-|------------|------|---------|
+| Bonus Type | Rate | Maximum (Level 20) |
+|------------|------|---------------------|
 | Damage | +1.5% per level | +30% |
 | Mana Cost Reduction | -1% per level | -20% |
 | Cooldown Reduction | -0.75% per level | -15% |
 
-**Gaining Proficiency XP:**
-- +10 XP per skill use in combat
-- Higher tier content gives more XP
-- Proficiency is tracked per skill per hero
+**Proficiency XP Formula:** `50 × (Level + 1)^1.6` XP to next level. Max level 20.
 
 ---
 
@@ -265,8 +309,8 @@ As heroes fight the same enemy types, they learn their weaknesses.
 
 | Kills | Level | Damage Bonus | Crit Bonus |
 |-------|-------|--------------|------------|
-| 5 | Novice | +5% | - |
-| 20 | Familiar | +10% | - |
+| 5 | Known | +5% | - |
+| 20 | Studied | +10% | - |
 | 50 | Expert | +15% | - |
 | 100 | Slayer | +20% | +5% crit |
 
@@ -280,26 +324,29 @@ Monster knowledge is tracked per hero per enemy type. The Slayer level grants bo
 
 | Effect | Duration | Damage |
 |--------|----------|--------|
-| Poison | 3 turns | 5% HP/turn |
-| Burn | 3 turns | 5% HP/turn |
-| Bleed | 4 turns | 5% HP/turn |
+| Poison | 4 turns | % of damage dealt per turn |
+| Burn | 3 turns | Fire damage per turn (30% ignite chance from Fireball) |
+| Bleed | 3 turns | 20% of damage dealt per tick (+ bleed damage bonuses) |
+
+Bleed and poison damage scale from the hit that applied them, not from max HP. Ascendancy bonuses can increase DoT damage significantly.
 
 ### Control Effects
 
 | Effect | Duration | Impact |
 |--------|----------|--------|
 | Stun | 1 turn | Skip turn |
-| Paralyze | 1 turn | Skip turn |
-| Fear | 2 turns | Chance to skip |
-| Slow | 2 turns | Lower initiative |
-| Blind | 2 turns | Reduced accuracy |
+| Freeze | 1 turn | Skip turn (25% chance from Frost Nova) |
+| Shock | 2 turns | Target takes +20% damage |
+| Weaken | 3 turns | Reduced damage dealt |
 
-### Debuffs
+### On-Hit Effects
 
-| Effect | Duration | Impact |
-|--------|----------|--------|
-| Weaken | 3 turns | Reduced damage |
-| Curse | 3 turns | Various penalties |
+Some ascendancy and gear bonuses apply effects on every hit:
+- **Bleed on Hit** - Apply bleed (default 20% of damage per tick, 3 turns)
+- **Poison on Hit** - Apply poison (default 15% of damage per tick, 4 turns)
+- **Burn Spread** - Burns spread to up to 2 nearby unburned enemies
+- **Poison Spread** - Poison spreads to up to 2 nearby unpoisoned enemies
+- **Chain Lightning** - Attacks chain to additional enemies at 50% damage
 
 ---
 
@@ -355,10 +402,21 @@ When a boss drops below a phase threshold:
 
 ### Relationship Bonuses
 
-Heroes fight better alongside friends:
-- Friends: Small combat bonuses
-- Best Friends: Larger bonuses + intervene
-- Lovers: Significant bonuses, but HUGE penalties if partner dies
+Heroes fight better alongside friends. Relationship combat damage modifiers:
+
+| Relationship | Damage Modifier |
+|--------------|-----------------|
+| Devoted (95+) | +25% |
+| Best Friend (80-94) | +20% |
+| Close Friend (60-79) | +15% |
+| Friend (30-59) | +10% |
+| Friendly (10-29) | +5% |
+| Neutral (-9 to 9) | 0% |
+| Annoyed (-10 to -20) | -3% |
+| Dislike (-21 to -35) | -8% |
+| Rival (-36 to -55) | -12% |
+| Hostile (-56 to -75) | -18% |
+| Enemy (-76 to -100) | -25% |
 
 **Warning:** Lovers can go Berserk or Broken if their partner dies. Consider the risk.
 

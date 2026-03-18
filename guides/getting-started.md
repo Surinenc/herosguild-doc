@@ -8,7 +8,7 @@ When you start Hero's Guild for the first time, you'll be greeted with the main 
 
 ### Choosing Your Starting Heroes
 
-You'll begin with a small amount of gold and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
+You'll begin with **500 gold** and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
 
 - **A tank** (Warrior or Cleric) - To absorb damage and protect your team
 - **A damage dealer** (Mage, Rogue, or Ranger) - To eliminate enemies quickly
@@ -32,11 +32,11 @@ As you progress, unlock these essential facilities:
 
 | Facility | Purpose |
 |----------|---------|
-| Barracks | Increases hero capacity |
-| Training Grounds | Heroes gain passive XP |
-| Blacksmith | Craft weapons and armor |
-| Alchemist | Brew potions and elixirs |
-| Enchanter | Add magical properties to items |
+| Barracks | Increases hero capacity, affects mood and rest |
+| Training Yard | Heroes train skills and spar |
+| Forge | Craft metal weapons and armor |
+| Alchemy Lab | Brew potions and elixirs |
+| Enchanting Table | Add magical properties to items |
 
 ## Your First Dungeon
 
@@ -85,7 +85,7 @@ Upon returning to the guild:
 
 - Focus on one strong party rather than many weak heroes
 - Complete easy dungeons repeatedly to build resources
-- Upgrade your Blacksmith for better gear
+- Upgrade your Forge for better gear
 - Save gold for emergency situations (wages, healing)
 
 ### Building Your Guild

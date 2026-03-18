@@ -4,7 +4,7 @@ Proper equipment is crucial for hero survival. This guide covers weapons, armor,
 
 ## Equipment Slots
 
-Each hero has 8 equipment slots:
+Each hero has 10 equipment slots:
 
 | Slot | Types | Notes |
 |------|-------|-------|
@@ -12,6 +12,8 @@ Each hero has 8 equipment slots:
 | **Off Hand** | Shields, Focus, Secondary | Class-restricted |
 | **Armor** | Plate, Mail, Leather, Robes | Class-restricted |
 | **Head** | Helmets, Hoods, Hats | Universal |
+| **Boots** | Boots, Greaves, Shoes | Universal |
+| **Gloves** | Gauntlets, Gloves, Bracers | Universal |
 | **Accessory 1** | Rings, Amulets | Universal |
 | **Accessory 2** | Rings, Amulets | Universal |
 | **Consumable 1** | Potions, Items | Universal |
@@ -31,9 +33,28 @@ Items come in seven rarity tiers:
 | Epic | Purple | 1 | 4 |
 | Legendary | Orange | 2 | 5 |
 | Mythic | Red | 3 | 6 |
-| Ancestral | Gold | 4 | 7 |
+| Ancestral | Blood Red | 4 | 7 |
 
-Socket count rolls increase with item level. Higher level items have better chances for maximum sockets.
+**Bonus Stats by Rarity:** Higher rarity items roll additional random bonus stats:
+
+| Rarity | Bonus Stats | Stat Multiplier |
+|--------|-------------|-----------------|
+| Common-Uncommon | 0 | 1.0× |
+| Rare | 1 | 1.0× |
+| Epic | 2 | 1.2× |
+| Legendary | 3 | 1.5× |
+| Mythic | 4 | 2.0× |
+| Ancestral | 5 | 2.5× |
+
+**Drop Requirements (all conditions must be met):**
+
+| Rarity | Min Level | Min Stars | Min Tier |
+|--------|-----------|-----------|----------|
+| Epic | 40 | 3★ | Any |
+| Legendary | 60 | 4★ | Rare (T3+) |
+| Mythic | 85 | 5★ | Boss (T5) |
+
+Socket count rolls increase with item level. Base chance: `20% + item level × 1%` (capped at 90%).
 
 ---
 
@@ -185,7 +206,7 @@ Amulets focus on HP, Mana, and powerful unique effects.
 
 ## Gem Sockets
 
-Weapons can have 1-3 gem sockets based on rarity. Socketed gems grant additional skills or bonuses.
+Equipment can have gem sockets based on rarity and slot type (see [Skill Gems Guide](skills.md) for full socket details). Socketed gems grant additional skills or bonuses.
 
 ### Socket Colors
 

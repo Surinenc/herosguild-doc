@@ -13,6 +13,8 @@ Heroes unlock their ascendancy through Ascendancy Trials:
 | 75 | Third Trial - Gain third point |
 | 100 | Fourth Trial - Gain fourth point |
 
+**Trial Targets:** Each trial requires reaching a specific tower floor solo — Floor 10, 15, 20, and 25 respectively.
+
 ### Ascendancy Points
 
 Each ascendancy has **10 nodes** in a branching tree:
@@ -33,13 +35,15 @@ Warriors can choose between three paths: tanking, damage, or dual-wielding.
 
 **Focus:** Tanking, Protection, Damage Mitigation
 
+**Starting Bonus:** +100 armor
+
 The Champion retains and enhances the Warrior's defensive abilities (Taunt and Shield Wall).
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Fortify** | Tankiness | +5% max HP, 1% HP regen/turn, +10% damage reduction |
-| **B - Taunt** | Aggro Control | Extended taunt duration, +15% threat, double intervene |
-| **C - Shield** | Blocking | Extended Shield Wall, +10% armor, Shield Wall heals 10% HP |
+| **A - Fortify** | Tankiness | +5% max HP → 1% HP regen/turn → +10% damage reduction |
+| **B - Taunt** | Aggro Control | +1 taunt duration → +15% threat → +1 extra intervene per combat |
+| **C - Shield** | Blocking | +1 Shield Wall duration → +50 armor → Shield Wall heals 10% HP |
 
 **Best For:** Protecting squishy allies, survival-focused content, new players
 
@@ -51,13 +55,15 @@ The Champion retains and enhances the Warrior's defensive abilities (Taunt and S
 
 **Focus:** Raw Damage, Life Steal, Execute
 
-The Berserker **removes Taunt and Shield Wall** for pure offensive power. Gains +50% physical damage and rage scaling (+20% damage per 5% HP missing).
+The Berserker **removes Taunt and Shield Wall** for pure offensive power.
+
+**Starting Bonus:** +120% physical damage, +15% damage, +10% crit, +20% rage damage per 5% HP missing
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Bleed** | DoT Damage | Bleed on hit, +25% bleed damage, +30% damage per bleeding enemy |
-| **B - Leech** | Sustain | 10% life steal, 200% damage reflect, steal 5% enemy HP |
-| **C - Execute** | Burst | +50% damage to low HP enemies, +50% crit vs low HP, 5% instant kill |
+| **A - Bleed** | DoT Damage | 10% bleed on hit → +25% bleed damage → +30% damage per bleeding enemy |
+| **B - Leech** | Sustain | 10% life steal → reflect 200% damage taken → steal 5% enemy current HP |
+| **C - Execute** | Burst | +100% damage below 50% HP → +50% crit below 30% HP → 5% instant kill |
 
 **Best For:** Speed runs, boss DPS, players who like high risk/high reward
 
@@ -69,13 +75,15 @@ The Berserker **removes Taunt and Shield Wall** for pure offensive power. Gains 
 
 **Focus:** Dual Wielding, Multi-Strike, Critical Hits
 
-The Gladiator **removes Taunt and Shield Wall** and allows Warriors to dual wield swords. Gains +50% physical damage.
+The Gladiator **removes Taunt and Shield Wall** for dual-wield offense.
+
+**Starting Bonus:** +75% physical damage, +30% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Multi-Strike** | Attack Speed | 20% double strike, +30% more, 10% triple strike |
-| **B - Counter** | Reactive | 15% counter chance, +50% counter crit damage, counter chains |
-| **C - Critical** | Burst | +25% crit chance, +50% crit damage, offhand deals full damage |
+| **A - Multi-Strike** | Attack Speed | 20% double strike → +30% more (50% total) → 10% triple strike |
+| **B - Dual Wield** | Offhand | +20% damage → +50% crit damage → offhand deals 100% damage |
+| **C - Counter** | Reactive | 50% counter chance → +50% more (100% total) → +300% crit damage on counters |
 
 **Best For:** Fast combat, critical builds, stylish gameplay
 
@@ -89,13 +97,17 @@ Rogues specialize in burst damage through different means.
 
 *"Believes strongly in the efficiency of a well-placed blade. One hit, one kill - anything else is just wasting everyone's time."*
 
-**Focus:** First Strike, Execute, Instant Kills
+**Focus:** Critical Strikes, First Strike, Execute
+
+**Starting Bonus:** +15% crit, +30% physical damage, +15% dexterity
+
+Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Opening** | First Hit | +100% first hit damage, first hit always crits, ignores armor |
-| **B - Execute** | Low HP Targets | +75% damage to low HP, +75% crit chance, 10% instant kill |
-| **C - Crit** | Critical Damage | +30% crit chance, +75% crit damage, crits apply poison |
+| **A - Crit** | Critical Damage | +15% crit (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
+| **B - Ambush** | First Hit | +50% first hit damage → first hit always crits → first hit ignores armor |
+| **C - Execute** | Low HP Targets | +50% damage below 50% HP → +50% crit below 30% HP → 10% instant kill |
 
 **Best For:** Alpha strikes, priority target elimination, speed clears
 
@@ -105,13 +117,17 @@ Rogues specialize in burst damage through different means.
 
 *"There's no such thing as fighting dirty, just fighting effectively."*
 
-**Focus:** Poison, Debuffs, DoT Damage
+**Focus:** Poison, Debuffs, Party Damage Amplification
+
+**Starting Bonus:** +20% crit damage, +60% physical damage, +10% damage, +15% dexterity
+
+Note: Party damage nodes grant team bonuses but increase the Trickster's own damage taken.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Venom** | Poison DoT | Poison on hit, +50% poison damage, +25% damage to poisoned |
-| **B - Debuff** | Enemy Weakness | Enemies take +15% damage, deal -15% damage, -20% armor |
-| **C - Speed** | Evasion | +30% initiative, 15% dodge, 25% multi-attack |
+| **A - Venom** | Poison DoT | 10% poison on hit → +25% poison damage → +30% damage to poisoned enemies |
+| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +10%) → +10% (you take +10%) → +15% (you take +10%) |
+| **C - Weaken** | Enemy Debuffs | Enemies deal -10% damage → -20% damage → enemies lose 10% armor |
 
 **Best For:** Long fights, attrition strategies, party debuff support
 
@@ -125,13 +141,13 @@ Rangers have three distinct paths for different combat styles.
 
 *"Takes aim at the part of the enemy that does the most good when it stops working."*
 
-**Focus:** Precision, Headshots, Critical Hits
+**Focus:** Critical Hits, Headshots
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Precision** | Accuracy | +50% crit damage, 20% headshot chance (2.5x damage) |
-| **B - Marksman** | Ranged Power | +40% ranged damage, +20% vs distant targets |
-| **C - Hunter** | Target Focus | +25% damage to marked, mark spreads on kill |
+| **A - Crit Chance** | Accuracy | +10% crit → +15% crit → +25% crit |
+| **B - Crit Damage** | Precision | +5% crit damage → +5% more → +5% more |
+| **C - Headshot** | Burst | 10% headshot chance (2× damage) → +15% headshot chance → headshots deal 3× damage |
 
 **Best For:** Boss sniping, crit builds, long-range damage
 
@@ -139,33 +155,35 @@ Rangers have three distinct paths for different combat styles.
 
 ### Raider
 
-*"Speed is survival."*
+*"Fortune favors the bold — especially when they check every chest."*
 
-**Focus:** Speed, Evasion, Multi-hits
+**Focus:** Loot, Material Drops, Magic Find
+
+The Raider doesn't improve combat power directly. Instead, it dramatically increases the quality and quantity of loot from dungeons.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Frenzy** | Attack Speed | 30% double attack, +50% more attack chance |
-| **B - Evasion** | Defense | 20% dodge, +25% damage after dodging |
-| **C - Momentum** | Scaling | +5% damage per turn (stacking), kills restore HP/mana |
+| **A - Materials** | Gathering | +25% material drops → +50% → +100% material drops |
+| **B - Item Drops** | Equipment | +10% item drop rate → +20% → +30% item drop rate |
+| **C - Magic Find** | Rarity | +10 magic find → +15 → +20 magic find |
 
-**Best For:** Long encounters, dodge-tanking, ramping damage
+**Best For:** Farming dungeons, gearing up the guild, resource-heavy crafting
 
 ---
 
 ### Pathfinder
 
-*"Always prepared, always equipped."*
+*"Always one step ahead — literally."*
 
-**Focus:** Potions, Buffs, Utility
+**Focus:** Tactical Support, Initiative Control, Party Buffs
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Alchemy** | Potion Power | +50% potion effectiveness, potions affect allies |
-| **B - Nature** | Regeneration | +15% HP regen, +25% resist all elements |
-| **C - Preparation** | Buffs | Start combat with buffs, +30% buff duration |
+| **A - Initiative** | First Strike | Always act first (+10M initiative) → first hit deals 2× damage → mark target (+10% damage taken) |
+| **B - Debuffs** | Enemy Weakness | Enemies deal -10% damage → -20% damage → -20% damage and lose 10% armor |
+| **C - Party** | Team Buffs | Allies +3% damage → +5% damage → +7% damage and +3% crit |
 
-**Best For:** Support roles, exploration, self-sustain
+**Best For:** Support roles, enabling party members, tactical combat
 
 ---
 
@@ -179,11 +197,13 @@ Mages choose between raw elemental power or dark magic.
 
 **Focus:** Elemental Damage, AoE, Status Effects
 
+**Starting Bonus:** +10% crit, +150% damage
+
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Fire** | Burning | +50% fire damage, burn spreads, +25% burn damage |
-| **B - Cold** | Freezing | +50% cold damage, 25% freeze chance, frozen take +50% |
-| **C - Lightning** | Chaining | +50% lightning damage, attacks chain to 2 more enemies |
+| **A - Fire** | Burning | +20% fire damage → +25% burn damage → burns spread to nearby enemies |
+| **B - Lightning** | Chaining | +35% lightning damage → chain to 1 additional enemy → +50% damage to shocked |
+| **C - Ice** | Freezing | +20% cold damage → +25% cold damage → 10% freeze chance |
 
 **Best For:** AoE damage, crowd control, elemental-focused builds
 
@@ -193,13 +213,15 @@ Mages choose between raw elemental power or dark magic.
 
 *"Dabbles in forces better left alone. Considers 'cursed' to be a compliment."*
 
-**Focus:** Curses, Chaos Damage, Debuffs
+**Focus:** Curses, Chaos Damage, Life Drain
+
+**Starting Bonus:** +150% damage, skills apply weaken
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Curse** | Debuffs | +50% curse effectiveness, curses spread on death |
-| **B - Chaos** | Dark Magic | +75% chaos damage, 15% chaos DoT on hit |
-| **C - Void** | Energy Drain | Mana leech, convert damage to chaos, life on spell hit |
+| **A - Weaken** | Debuffs | +2 weaken duration → weakened enemies deal -25% damage → weakened take +20% damage |
+| **B - Chaos** | Dark Magic | +20% chaos damage → +25% chaos damage → +30% chaos damage |
+| **C - Drain** | Sustain | +5% mana regen and 3% life steal → +5% life steal → +7% life steal |
 
 **Best For:** Debuff support, chaos damage builds, sustain mages
 
@@ -213,13 +235,15 @@ Clerics choose between healing mastery or battle cleric.
 
 *"Has perfected the art of the disappointed sigh while casting healing spells."*
 
-**Focus:** Healing, Shields, Protection
+**Focus:** Healing, Shields, Party Protection
+
+**Starting Bonus:** +20% healing effectiveness
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Heal** | Healing Power | +20% heal effectiveness, +25% more, heals apply regen |
-| **B - Shield** | Protection | Heals grant shields, +50% shield absorption, absorb ally damage |
-| **C - Mass** | AoE Healing | Single heals affect all allies, +30% group heal power |
+| **A - Heal** | Healing Power | +25% heal power → heals apply 5% HP/turn regen → heals affect all allies |
+| **B - Party Defense** | Protection | Allies take -10% damage → -15% damage → -25% damage |
+| **C - Shields** | Barriers | Heals grant 10% of heal as shield → Shield Wall lasts +2 turns → shields absorb 50% more |
 
 **Best For:** Primary healer, party survival, defensive content
 
@@ -229,17 +253,19 @@ Clerics choose between healing mastery or battle cleric.
 
 *"Sometimes the best cure for what ails ye is a holy hammer to the face."*
 
-**Focus:** Battle Cleric, Holy Damage, Hybrid
+**Focus:** Battle Cleric, Holy Damage, Damage Absorption
 
-The Paladin **replaces Heal and Prayer** with offensive abilities: Divine Strike and Consecrate.
+The Paladin **replaces Heal and Prayer of Healing** with offensive abilities: Divine Strike (120% damage) and Consecrate.
+
+**Starting Bonus:** +110% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Smite** | Holy Damage | +50% holy damage, smite applies burn, +100% vs undead |
-| **B - Aura** | Party Buffs | Allies gain +15% damage, +10% damage reduction |
-| **C - Judgment** | Burst | +120% damage, heal 50% of damage absorbed, reduce enemy armor 15% |
+| **A - Absorption** | Tank/DPS Hybrid | Take 20% of ally damage (+50% dmg, -5% enemy armor) → 30% ally damage (+100% dmg, -10%) → heal 50% of absorbed (+150% dmg, -15%) |
+| **B - Holy DPS** | Damage | +30% holy damage → +40% → +80% holy damage |
+| **C - Party** | Buffs | Allies +10% damage → enemies take +15% damage → allies +15% crit, enemies -15% damage |
 
-**Best For:** Damage dealers who want utility, undead content, hybrid builds
+**Best For:** Damage dealers who want utility, hybrid tank/DPS, party enabler
 
 ---
 
@@ -253,11 +279,13 @@ Necromancers focus on minions or personal dark power.
 
 **Focus:** Minions, Summons, Army Building
 
+**Starting Bonus:** +1 max minion, +25% minion damage, +100% damage
+
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Horde** | Quantity | +2 max minions, +25% minion damage, minions explode on death |
-| **B - Elite** | Quality | Fewer but stronger minions, +100% minion HP, +75% damage |
-| **C - Command** | Control | Minions taunt, minion healing, synchronized attacks |
+| **A - Minion Damage** | Offense | +30% minion damage → +50% → +200% minion damage |
+| **B - Minion Durability** | Tankiness | +25% minion HP → +50% → +200% minion HP |
+| **C - Minion Count** | Army | +1 max minion → +1 more → +2 more max minions |
 
 **Best For:** Pet builds, passive damage, players who like army management
 
@@ -267,15 +295,19 @@ Necromancers focus on minions or personal dark power.
 
 *"Gave up warmth, sleep, and social invitations for ultimate power. Claims it was worth it."*
 
-**Focus:** Personal Power, Life Drain, Dark Magic
+**Focus:** Chaos Damage, Life Steal, Critical Strikes
+
+**Starting Bonus:** +5% chaos damage, +10% life steal, +5% crit, +35% damage
+
+Note: Life steal nodes increase damage taken as a tradeoff.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Drain** | Life Steal | +25% life drain, drain heals fully, kills grant temp HP |
-| **B - Corruption** | Debuffs | +50% curse damage, curses last forever, victims take +30% |
-| **C - Undeath** | Survival | +30% max HP, regen 3%/turn, death save auto-success once |
+| **A - Chaos** | Dark Damage | +15% chaos damage → +25% → +30% chaos damage |
+| **B - Drain** | Life Steal | +10% life steal (take +10% dmg) → +15% (take +20%) → +25% (take +25%) |
+| **C - Crit** | Critical Strikes | +10% crit and +15% crit damage → +30% crit damage → +50% crit damage |
 
-**Best For:** Solo power, sustain, players who prefer personal strength over minions
+**Best For:** Sustain through damage, chaos/crit hybrid, players who prefer personal strength over minions
 
 ---
 
@@ -291,22 +323,22 @@ Necromancers focus on minions or personal dark power.
 | Rogue | Assassin | Boss killing, burst damage |
 | Rogue | Trickster | Long fights, poison/debuffs |
 | Ranger | Deadeye | Sniping, critical hits |
-| Ranger | Raider | Speed, evasion |
-| Ranger | Pathfinder | Support, utility |
+| Ranger | Raider | Loot farming, material grinding |
+| Ranger | Pathfinder | Tactical support, party buffs |
 | Mage | Elementalist | AoE damage, elements |
 | Mage | Occultist | Curses, chaos damage |
 | Cleric | Guardian | Primary healer |
-| Cleric | Paladin | Damage + utility |
+| Cleric | Paladin | Damage + absorption |
 | Necromancer | Puppeteer | Minion armies |
-| Necromancer | Lich | Personal power |
+| Necromancer | Lich | Chaos/crit personal power |
 
 ### Build Tips
 
 1. **Focus one branch** - Going deep (3 nodes) in one branch is usually stronger than spreading out
 2. **Starting node matters** - Some ascendancies change core abilities (Berserker removes Taunt)
-3. **Synergy with gear** - Choose ascendancies that match your equipment plan
-4. **Party composition** - Consider what roles your party needs covered
-5. **Respec is limited** - Choose carefully; changing ascendancy is expensive
+3. **Tradeoff awareness** - Several nodes grant power but increase damage taken (Assassin Crit, Trickster Party Damage, Lich Drain)
+4. **Synergy with gear** - Choose ascendancies that match your equipment plan
+5. **Party composition** - Consider what roles your party needs covered
 
 ---
 

@@ -6,17 +6,12 @@ Heroes form bonds with each other over time. Strong relationships improve combat
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Neutral | -9 to +9 | Just met |
-| Friendly | +10 to +29 | Know each other |
-| Friend | +30 to +59 | Comfortable together |
-| Close Friend | +60 to +79 | Trust each other |
-| Best Friend | +80 to +94 | Deep bond |
 | Devoted | +95 to +100 | Unbreakable loyalty |
-
-### Negative Relationships
-
-| Level | Trust | Description |
-|-------|-------|-------------|
+| Best Friend | +80 to +94 | Deep bond |
+| Close Friend | +60 to +79 | Trust each other |
+| Friend | +30 to +59 | Comfortable together |
+| Friendly | +10 to +29 | Know each other |
+| Neutral | -9 to +9 | Just met |
 | Annoyed | -10 to -20 | Mild friction |
 | Dislike | -21 to -35 | Growing tension |
 | Rival | -36 to -55 | Competition |
@@ -104,7 +99,7 @@ Beyond simple friendship, heroes can form special bonds:
 ### Lovers / Married
 
 - **How:** High trust + romantic events
-- **Bonus:** +20% combat stats together
+- **Bonus:** +15% combat stats together
 - **Risk:** Huge penalties if partner dies (Berserk, Broken)
 - **Special:** Will always try to intervene
 
@@ -131,6 +126,23 @@ Beyond simple friendship, heroes can form special bonds:
 - **How:** After intervene saves life
 - **Bonus:** +30% intervene chance
 - **Special:** Automatic rescue attempts
+
+### Other Notable Bonds
+
+The game tracks 28 bond types total. Additional important bonds include:
+
+**Positive:**
+- **Drinking Buddies** - Bonded over tavern sessions
+- **Sparring Partners** - Regular training partners
+- **Confidant** - Trusted advisor and emotional support
+- **Oath Sworn** - Sworn allegiance to each other
+- **Siblings** - Family bond
+
+**Negative:**
+- **Nemesis** - Escalated rivalry, deep personal hatred
+- **Blood Feud** - Generational or oath-bound enmity
+- **Ex / Scorned** - Failed romantic relationship
+- **Estranged** - Former bond broken by betrayal
 
 ---
 
@@ -189,11 +201,14 @@ Relationships trigger emotional states:
 | State | Effect | Duration |
 |-------|--------|----------|
 | Inspired | +15% all stats | 3 turns |
-| Enraged | +30% damage, focus target | 2-3 turns |
-| Vengeful | +20% vs killer | 4-6 turns |
-| Berserk | +50% damage, -30% defense | 4-5 turns |
-| Grief | -20% all stats | 2-3 turns |
-| Broken | Cannot act | 4 turns |
+| Enraged | +30% damage, focuses on target | 2-3 turns |
+| Vengeful | +20% damage vs specific enemy | 4-6 turns |
+| Berserk | +50% damage, -30% defense, attacks randomly | 4-5 turns |
+| Grief | -20% all stats, may refuse to heal | 2-3 turns |
+| Broken | Refuses to act, cowers in fear | 4 turns |
+| Panicked | May flee or cower | 2 turns |
+
+Note: "Broken" appears as both a combat emotional state (triggered by trauma during combat) and a mood state (mood 0-9). They are separate systems.
 
 ---
 
@@ -203,13 +218,29 @@ Each hero has mood that affects performance:
 
 ### Mood States
 
-| Mood | Combat Effect |
-|------|---------------|
-| Excellent | +10% all stats |
-| Good | +5% all stats |
-| Neutral | None |
-| Poor | -5% all stats |
-| Terrible | -15% all stats |
+Mood is a 0-100 value mapped to 6 states:
+
+| Mood | Range | Stat Modifier |
+|------|-------|---------------|
+| Broken | 0-9 | -30% all stats |
+| Miserable | 10-29 | -20% all stats |
+| Unhappy | 30-49 | -10% all stats |
+| Content | 50-69 | No modifier |
+| Happy | 70-89 | +10% all stats |
+| Elated | 90-100 | +20% all stats |
+
+### Hero Needs
+
+Heroes have four needs that affect mood:
+
+| Need | Description | Critical Threshold |
+|------|-------------|-------------------|
+| Energy | Physical stamina | Below 20 |
+| Social | Desire for companionship | Below 20 |
+| Recreation | Need for fun/downtime | Below 20 |
+| Comfort | Living conditions | Below 80 |
+
+Needs below their critical threshold actively decrease mood.
 
 ### Affecting Mood
 

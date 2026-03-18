@@ -33,8 +33,9 @@ Each heroic dungeon has one modifier that changes gameplay.
 ### Enrage Timer ⏱️
 **Difficulty:** 3/3
 
-- After turn 15, enemies enrage
-- Reward: +40% gold
+- After turn 15, all enemies gain +100% damage (×2.0)
+- Warning message at turn 12
+- Reward: +40% gold, +50% bonus if average combat finishes before turn 12
 - Visual: Red screen tint, timer UI
 
 ### Elite Swarm 👑
@@ -69,7 +70,7 @@ Each heroic dungeon has one modifier that changes gameplay.
 **Difficulty:** 2/3
 
 - Heroes have -30% armor and resistances
-- Reward: +30% gold
+- Reward: +30% gold, 3× defense gear drop frequency
 
 ### Chaos Incarnate 🌪️
 **Difficulty:** 3/3
@@ -105,6 +106,22 @@ Difficulty bonuses:
 - Overwhelming Force: 1.5 × 1.1 = 1.65x
 - Relentless Assault: 1.0 × 1.2 = 1.2x
 - Chaos Incarnate: 1.75 × 1.2 = 2.1x
+
+---
+
+## Weekly Rotation
+
+Three heroic dungeons are available each week, rotating every Sunday at 00:00 UTC:
+
+| Tier | Stars | Level |
+|------|-------|-------|
+| Heroic Trial | ⭐⭐⭐ | Base level (min 80) |
+| Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 |
+| Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 |
+
+Each tier gets a randomly assigned modifier (Chaos Incarnate is excluded from weekly rotation — it only appears as a standalone modifier). No modifier repeats within the same week.
+
+Access: Mission Board → Heroic filter (🔥). A countdown timer shows time until the next weekly reset.
 
 ---
 

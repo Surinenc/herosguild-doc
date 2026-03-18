@@ -4,19 +4,20 @@ Your guild is your home base. Manage facilities, finances, reputation, and your 
 
 ## Guild Facilities
 
-13 facilities to build and upgrade:
+14 facilities to build and upgrade:
 
 ### Core Facilities
 
 | Facility | Function | Max Level |
 |----------|----------|-----------|
-| **Guild Hall** | Central hub, determines max heroes | 5 |
+| **Guild Hall** | Central hub, determines mission slots | 5 |
 | **Barracks** | Hero housing, rest, mood | 5 |
 | **Tavern** | Recruitment, morale, social | 5 |
 | **Training Yard** | Skill training, sparring | 5 |
 | **Infirmary** | Injury treatment | 5 |
 | **Armory** | Equipment storage | 6 |
 | **Warehouse** | Material & gold storage | 6 |
+| **Shop** | Sell items to customers | 5 |
 
 ### Production Facilities
 
@@ -40,15 +41,15 @@ Your guild is your home base. Manage facilities, finances, reputation, and your 
 
 ### Guild Hall
 
-Your central building. Determines maximum heroes and mission slots.
+Your central building. Determines mission slots (hero capacity is set by Barracks).
 
-| Level | Name | Hero Cap | Mission Slots | Daily Upkeep |
-|-------|------|----------|---------------|--------------|
-| 1 | Modest Hall | 12 | 2 | 5g |
-| 2 | Expanded Hall | 20 | 4 | 25g |
-| 3 | Grand Hall | 30 | 6 | 50g |
-| 4 | Manor Hall | 45 | 8 | 90g |
-| 5 | Legendary Hall | 60 | 10 | 180g |
+| Level | Name | Mission Slots | Daily Upkeep |
+|-------|------|---------------|--------------|
+| 1 | Modest Hall | 2 | 5g |
+| 2 | Expanded Hall | 4 | 25g |
+| 3 | Grand Hall | 6 | 50g |
+| 4 | Manor Hall | 8 (+1 contract) | 1,500g |
+| 5 | Legendary Hall | 10 (+2 contracts) | 4,000g |
 
 ### Barracks
 
@@ -59,20 +60,20 @@ Hero housing affects mood and rest recovery.
 | 1 | 12 | -10% | 0.9x | 2g |
 | 2 | 20 | -5% | 0.95x | 12g |
 | 3 | 30 | +0% | 1.0x | 20g |
-| 4 | 45 | +5% | 1.05x | 35g |
-| 5 | 60 | +10% | 1.1x | 55g |
+| 4 | 45 | +5% | 1.05x | 800g |
+| 5 | 60 | +10% | 1.1x | 2,000g |
 
 ### Tavern
 
 Recruitment hub and morale booster.
 
-| Level | Recruit Quality | Daily Income |
-|-------|-----------------|--------------|
-| 1 | ⭐ only | 10g |
-| 2 | ⭐-⭐⭐ | 25g |
-| 3 | ⭐-⭐⭐⭐ | 50g |
-| 4 | ⭐⭐-⭐⭐⭐⭐ | 80g |
-| 5 | ⭐⭐⭐-⭐⭐⭐⭐⭐ | 120g |
+| Level | Name | Recruits/Day | Daily Income | Daily Upkeep |
+|-------|------|--------------|--------------|--------------|
+| 1 | Rustic Tavern | 1 | 300g | 3g |
+| 2 | Cozy Tavern | 1-2 | 1,000g | 15g |
+| 3 | Popular Tavern | 1-3 | 3,000g | 30g |
+| 4 | Renowned Tavern | 2-4 | 8,000g | 800g |
+| 5 | Legendary Tavern | 3-5 | 20,000g | 1,500g |
 
 **Tavern Activities:**
 
@@ -107,6 +108,19 @@ Treats injured heroes.
 | 4 | 1.75x | Standard prosthetics |
 | 5 | 2.0x | Enchanted prosthetics |
 
+### Armory
+
+Equipment vault — determines how many items your guild can store.
+
+| Level | Name | Equipment Slots | Daily Upkeep |
+|-------|------|-----------------|--------------|
+| 1 | Weapon Rack | 200 | 2g |
+| 2 | Small Armory | 400 | 12g |
+| 3 | Armory | 800 | 25g |
+| 4 | Grand Armory | 1,400 (+ repair) | 45g |
+| 5 | Arsenal | 2,000 (+ repair) | 1,500g |
+| 6 | Legendary Arsenal | 3,000 (+ repair) | 3,000g |
+
 ### Forge
 
 See [Crafting Guide](crafting.md) for details.
@@ -118,6 +132,21 @@ See [Crafting Guide](crafting.md) for details.
 | 3 | 1.3x | ⭐⭐⭐ | +10% |
 | 4 | 1.5x | ⭐⭐⭐⭐ | +20% |
 | 5 | 2.0x | ⭐⭐⭐⭐⭐ | +30% |
+
+### Workshop
+
+Covers all leather, cloth, and wood crafting. The Workshop absorbs the legacy Tannery, Loom, and Lumber Mill stations into a single upgradeable facility.
+
+See [Crafting Guide](crafting.md) for details.
+
+| Level | Name | Process Speed | Quality Bonus | Daily Upkeep |
+|-------|------|---------------|---------------|--------------|
+| 1 | Basic Workshop | 1.0× | - | 8g |
+| 2 | Crafting Workshop | 1.2× | +5% | 15g |
+| 3 | Artisan Workshop | 1.4× | +10% | 25g |
+| 4 | Master Workshop | 1.6× | +15% | 40g |
+| 5 | Grand Workshop | 2.0× | +20% | 1,500g |
+| 6 | Mythic Workshop | 2.5× | +30% | 3,000g |
 
 ### Library
 
@@ -192,7 +221,7 @@ Reputation unlocks better content and more expedition slots.
 | Source | Amount | Notes |
 |--------|--------|-------|
 | Dungeon loot | Variable | Main income |
-| Tavern income | 10-120g/day | Based on level |
+| Tavern income | 300-20,000g/day | Based on level |
 | Item sales | Variable | Sell to merchants |
 
 ### Expenses
@@ -318,6 +347,79 @@ Heroes form bonds with each other. See [Relationships Guide](relationships.md) f
 | Rivals | Combat bonuses when competing |
 | Mentor/Student | XP sharing, unique events |
 | Enemies | Combat penalties, conflicts |
+
+---
+
+## Guild Shop
+
+The guild shop lets you sell items to visiting customers for gold.
+
+| Level | Name | Display Slots | Customers/Day | Daily Upkeep |
+|-------|------|---------------|---------------|--------------|
+| 1 | Market Stall | 8 | 4-7 | 5g |
+| 2 | Small Shop | 16 | 6-10 | 10g |
+| 3 | Merchant Store | 24 | 10-15 | 20g |
+| 4 | Trading Post | 32 | 14-20 | 600g |
+| 5 | Emporium | 48 | 20-30 | 1,500g |
+
+**Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with different budgets and item preferences.
+
+**Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit.
+
+**Market Events:** Random events like Festivals (+30% accessory demand), Wars (+25% weapon/armor demand), or Disease Outbreaks (+50% consumable demand) temporarily shift prices.
+
+---
+
+## Item Workshop
+
+The Item Workshop lets you reroll bonus stats on Rare or higher rarity items for gold. Named items cannot be rerolled.
+
+**Reroll Cost Formula:**
+```
+Cost = 1,000 × Rarity × 2^(Reroll Count)
+```
+
+Costs double with each successive reroll. You can preview the new stats before accepting or rejecting.
+
+Navigate to the Item Workshop from the Guild Screen → Item Workshop button.
+
+---
+
+## Merchant Caravans
+
+Traveling merchants visit your guild periodically, offering items and services.
+
+- **First Arrival:** Day 5
+- **Visit Interval:** Every 3-7 days
+- **Stay Duration:** 2-5 days
+
+**Merchant Types:** Armorer, Alchemist, Jeweler, Exotic Goods, Black Market, Collector, Wanderer, and Master Crafter. Higher guild reputation attracts rarer merchants (Master Crafter at 5,000+ rep, Exotic Goods at 2,000+).
+
+**Services:** Repair equipment, sharpen weapons, identify items, custom brewing, gem socketing, item upgrading, and more — costs vary by merchant type.
+
+---
+
+## Rival Guilds
+
+> **Currently Disabled** — The Rival Guild system exists in the game code but is currently disabled. The information below describes the intended design.
+
+Rival guilds are AI-controlled competing guilds with different personalities (Aggressive, Scheming, Honorable, Desperate, Mercantile). They can interact with your guild through events like hero poaching, reputation attacks, sabotage, trade offers, and challenges.
+
+---
+
+## Guild Chronicle
+
+The Guild Chronicle (Guild Screen → Guild Stats) tracks lifetime statistics for all heroes across two tabs.
+
+**Combat Tab:**
+- Top 3 heroes by: Damage Dealt, Damage Taken, Healing Done, and Kills
+- Sortable table with columns: Hero, Class, Stars, Level, Ascendancy, Power, Damage Out, Damage In, Healing Out, Healing In, Kills, Bosses, DPS, Missions
+
+**Social Tab:**
+- Top 3 heroes by: Most Drinks, Most Days Off, Best Mood, and Most Friends
+- Sortable table with columns: Hero, Mood, Friends, Rivals, Drinks, Days Off, Addiction, Background
+
+Click any column header to sort. Hover on Friends/Rivals columns to see relationship names.
 
 ---
 

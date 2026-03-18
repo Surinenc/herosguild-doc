@@ -53,6 +53,7 @@ Mages command the elements to devastate groups of enemies. While fragile, their 
 - **Elemental Spells** - Fire, Ice, and Lightning magic
 - **AoE Damage** - Can hit multiple enemies at once
 - **Mana-Based** - Uses mana pool for abilities
+- **Energy Shield** - INT × 5 energy shield absorbs damage before HP
 - **Glass Cannon** - High damage but low survivability
 
 **Best For:** Clearing groups, boss burst phases, players who enjoy spellcasting
@@ -115,8 +116,8 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 
 **Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
 - **Deadeye** - Precision, headshots, critical hits
-- **Raider** - Speed, evasion, multi-hits
-- **Pathfinder** - Potions, buffs, utility
+- **Raider** - Loot specialist, increased material and item drops
+- **Pathfinder** - Tactical support, initiative control, party buffs
 
 ---
 
@@ -173,6 +174,7 @@ Necromancers command the forces of death, raising minions to fight for them whil
 - **Summon Undead** - Creates zombie and skeleton minions
 - **Life Drain** - Heals by damaging enemies
 - **Debuffs** - Weakens enemy capabilities
+- **Energy Shield** - INT × 5 energy shield absorbs damage before HP
 - **Dark Magic** - Unique spell school
 
 **Best For:** Players who like pet classes, attrition strategies, unique playstyles
@@ -201,7 +203,7 @@ These are calculated from primary stats:
 
 | Derived Stat | Formula |
 |--------------|---------|
-| Max HP | 50 + (VIT × 5) + (Level × 10) |
+| Max HP | 50 + (VIT × 10) + (Level × 10) |
 | Max Mana | 30 + (INT × 5) |
 | Initiative | DEX + 1d10 (random roll at combat start) |
 | Crit Chance | 5% + (DEX / 20) + (LCK / 10) + bonuses |
@@ -299,8 +301,9 @@ When an injury occurs, a roll determines severity:
 | Healthy | 100% | No damage |
 | Damaged | 50-99% | Partial damage |
 | Destroyed | 0% | Missing/non-functional |
-| Prosthetic | 50-80% | Replaced with artificial part |
-| Enchanted | 125% | Magically enhanced replacement |
+| Prosthetic (Basic) | 50% | Wooden/glass replacements |
+| Prosthetic (Standard) | 80% | Metal mechanical replacements |
+| Prosthetic (Enchanted) | 125% | Magically enhanced, better than original |
 
 ### Fatal Injuries
 
@@ -367,6 +370,23 @@ Survival Chance = 50% (base)
 ---
 
 ## Leveling & Progression
+
+### Stat Points
+
+Heroes gain **3 attribute points per level** to distribute among primary stats. Total points = (Level - 1) × 3.
+
+### Veteran Status
+
+Heroes earn veteran ranks based on completed missions:
+
+| Rank | Missions | Morale Bonus | Rep Multiplier | XP Multiplier | Survival Bonus |
+|------|----------|-------------|----------------|---------------|----------------|
+| Rookie | 0-9 | +0 | 1.0× | 1.0× | 0% |
+| Seasoned | 10-24 | +5 | 1.05× | 1.0× | +2% |
+| Veteran | 25-49 | +10 | 1.1× | 1.05× | +5% |
+| Elite | 50-99 | +15 | 1.2× | 1.1× | +8% |
+| Champion | 100-199 | +25 | 1.3× | 1.15× | +12% |
+| Legend | 200+ | +40 | 1.5× | 1.2× | +15% |
 
 ### Experience
 
@@ -446,16 +466,15 @@ After reaching level 100, heroes gain Paragon points to further specialize.
 | Category | Bonus Per Point | Cap | Max Bonus |
 |----------|-----------------|-----|-----------|
 | Strength | +2 STR | 50 | +100 STR |
-| Crit Chance | +0.5% | 30 | +15% |
-| Crit Damage | +2% | 30 | +60% |
-| Vitality | +2 VIT | 50 | +100 VIT |
-| Bonus HP | +10 HP | 50 | +500 HP |
-| Armor | +5 Armor | 50 | +250 Armor |
 | Dexterity | +2 DEX | 50 | +100 DEX |
-| Speed | +1% | 30 | +30% |
-| XP Gain | +2% | 20 | +40% |
+| Intellect | +2 INT | 50 | +100 INT |
+| Vitality | +4 VIT | 50 | +200 VIT |
+| Crit Chance | +0.5% | 50 | +25% |
+| Crit Damage | +1% | 50 | +50% |
+| Armor | +5 Armor | 50 | +250 Armor |
+| XP Gain | +2% | 50 | +100% |
 
-**Total Paragon Points:** 360 points to fully max all categories
+**Total Paragon Points:** 400 points to fully max all 8 categories
 
 ---
 

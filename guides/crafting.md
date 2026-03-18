@@ -26,13 +26,17 @@ The guild has 4 main production facilities, each handling multiple crafting type
 
 ### Station Levels
 
-| Level | Benefit |
-|-------|---------|
-| 1 | Basic function |
-| 2 | +10% speed, ⭐⭐ recipes |
-| 3 | +20% speed, ⭐⭐⭐ recipes |
-| 4 | +30% speed, ⭐⭐⭐⭐ recipes |
-| 5 | +50% speed, ⭐⭐⭐⭐⭐ recipes, quality bonus |
+Speed bonuses vary by facility:
+
+| Level | Forge | Alchemy Lab | Workshop | Enchanting Table |
+|-------|-------|-------------|----------|------------------|
+| 1 | 1.0× | 1.0× | 1.0× | 1.0× (power) |
+| 2 | 1.15× | 1.2× | 1.2× | 1.2× |
+| 3 | 1.3× (+10% quality) | 1.4× (+10% potency) | 1.4× (+10% quality) | 1.4× |
+| 4 | 1.5× (+20% quality) | 1.6× (+20% potency) | 1.6× (+15% quality) | 1.7× |
+| 5 | 2.0× (+30% quality) | 2.0× (+30% potency) | 2.0× (+20% quality) | 2.0× |
+
+Each level also unlocks the next material tier (Level 1 = Tier 1, Level 5 = Tier 5). Workshop has a 6th level (2.5× speed, +30% quality).
 
 ### Unlocking Stations
 
@@ -286,6 +290,25 @@ Cloth → [Loom] → Fine Cloth → [Loom] → Enchanted Cloth
 | Peg Leg | ⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron | Leatherworking 5 |
 | Prosthetic Leg | ⭐⭐ (Standard) | 5 Steel, 2 Hardened Leather | Blacksmithing 10 |
 | Enchanted Leg | ⭐⭐⭐ (Enhanced) | 2 Adamantine, Dragon Bone, 2 Soul Shard | Enchanting 15 |
+
+---
+
+## Item Workshop
+
+The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for improving Rare+ items that have good base stats but poor bonus rolls.
+
+**Requirements:**
+- Item must be Rare rarity or higher
+- Named items cannot be rerolled
+
+**Reroll Cost:**
+```
+Cost = 1,000 × Rarity Tier × 2^(Previous Rerolls)
+```
+
+Costs double each time you reroll the same item. You can preview the new stats and choose to Accept or Reject before committing.
+
+Navigate to: Guild Screen → Item Workshop
 
 ---
 

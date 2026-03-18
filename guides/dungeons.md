@@ -1,10 +1,10 @@
 # Dungeons & Expeditions
 
-Dungeons are where your heroes prove their worth. This guide covers expedition types, dungeon environments, and how to succeed.
+Dungeons are where your heroes prove their worth — or, more frequently, where they discover the precise limits of their worth. This guide covers expedition types, dungeon environments, and how to improve the odds of everyone coming home.
 
 ## Mission Board
 
-The Mission Board refreshes daily with available contracts. Access it from the Guild Screen.
+The Mission Board refreshes daily with available contracts. Access it from the Guild Screen. Think of it as a job board, except every job involves mortal peril.
 
 ### Mission Types
 
@@ -35,7 +35,7 @@ These never expire and are always ⭐⭐ difficulty.
 
 ## Difficulty System
 
-Dungeons have two independent difficulty factors:
+Dungeons have two independent difficulty factors, because one axis of danger wasn't considered sufficient:
 
 ### Stars (Complexity)
 
@@ -58,7 +58,7 @@ Monster level determines enemy strength:
 
 **Example Combinations:**
 - ⭐ + Level 50: Quick farm run for high-level heroes
-- ⭐⭐⭐⭐⭐ + Level 10: Epic challenge for new heroes
+- ⭐⭐⭐⭐⭐ + Level 10: An ambition that exceeds capacity
 
 ### Reward Scaling
 
@@ -74,7 +74,7 @@ Monster level determines enemy strength:
 
 ## Dungeon Environments
 
-Seven distinct environments, each with unique enemies and hazards:
+Seven distinct environments, each with unique enemies and hazards. The dungeon doesn't care about your party composition — but you should.
 
 ### Forest
 
@@ -102,14 +102,14 @@ Seven distinct environments, each with unique enemies and hazards:
 - **Enemies:** Undead (skeletons, vampires, liches)
 - **Hazards:** Darkness, cursed ground
 - **Loot Focus:** Gold, cursed items
-- **Tips:** Clerics excel here (anti-undead)
+- **Tips:** Clerics excel here (anti-undead). They've been waiting for this.
 
 ### Swamp
 
 - **Enemies:** Beasts, Undead
 - **Hazards:** Poison, difficult terrain, ambushes
 - **Loot Focus:** Rare herbs, exotic materials
-- **Tips:** Bring antidotes and high VIT heroes
+- **Tips:** Bring antidotes and high VIT heroes. Nobody enjoys the swamp.
 
 ### Tower
 
@@ -123,7 +123,7 @@ Seven distinct environments, each with unique enemies and hazards:
 - **Enemies:** Demons, Fire Elementals
 - **Hazards:** Extreme heat, lava
 - **Loot Focus:** Fire materials, demon parts
-- **Tips:** Fire resistance is essential
+- **Tips:** Fire resistance is essential. This seems obvious, yet parties arrive without it every week.
 
 ---
 
@@ -131,7 +131,7 @@ Seven distinct environments, each with unique enemies and hazards:
 
 ### Supervised Expeditions
 
-You watch the dungeon crawl in real-time (one per night).
+You watch the dungeon crawl in real-time (one per night). It's like being there, except you can't be hurt. The ideal management position.
 
 **Benefits:**
 - +25% XP bonus
@@ -156,7 +156,7 @@ Start with 3 CP per floor. Maximum 3 CP.
 
 ### Unsupervised Expeditions
 
-Auto-resolved based on party strength and tactical preset.
+Auto-resolved based on party strength and tactical preset. You send them in, go to bed, and hope for the best — which is, frankly, how most guild management works.
 
 **Tactical Presets:**
 
@@ -188,7 +188,7 @@ Auto-resolved based on party strength and tactical preset.
 ### Relationship Synergy
 
 - **Friends:** +damage and combat bonuses
-- **Enemies:** -damage and may refuse to help
+- **Enemies:** -damage and may refuse to help (awkward)
 - **Lovers:** Big bonuses, but devastating if one dies
 
 ### Pre-Mission Checklist
@@ -228,7 +228,7 @@ Auto-resolved based on party strength and tactical preset.
 
 ## Traps
 
-Rogues with Detect Traps can spot these before triggering:
+Rogues with Detect Traps can spot these before triggering. Everyone else discovers them the traditional way.
 
 | Trap | Damage | Effect |
 |------|--------|--------|
@@ -244,7 +244,7 @@ Rogues with Detect Traps can spot these before triggering:
 
 ## Random Events
 
-Dungeons feature choice-based events:
+Dungeons feature choice-based events. Choose wisely — or at least entertainingly:
 
 | Event | Example Choices |
 |-------|-----------------|
@@ -338,7 +338,7 @@ Upon returning, expeditions provide:
 
 ## Parallel Expeditions
 
-Run multiple expeditions simultaneously:
+Run multiple expeditions simultaneously, because one group of heroes in danger is never quite enough:
 
 | Guild Rank | Slots |
 |------------|-------|
@@ -356,7 +356,7 @@ Only one can be supervised per night.
 
 ## World Boss Raids
 
-When a World Boss spawns, you can organize a multi-party raid from the Guild Screen.
+When a World Boss spawns, you can organize a multi-party raid from the Guild Screen. This is the guild's way of saying "all hands on deck" — and meaning it literally.
 
 **Raid Formation:**
 - 3 party slots (Parties 1-2 required, Party 3 optional)
@@ -419,4 +419,4 @@ Access the weekly rotation from Mission Board → Heroic filter (🔥).
 
 ---
 
-*"Every expedition is a gamble. Stack the odds in your favor."*
+*"Every expedition is a gamble. The trick is convincing the heroes it's a sure thing."*

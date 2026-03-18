@@ -1,6 +1,6 @@
 # Crafting System
 
-Create powerful equipment, potions, and consumables for your heroes. Crafting is a core progression system that lets you gear up without relying on drops.
+Create powerful equipment, potions, and consumables for your heroes — assuming you can spare a hero from dungeon duty long enough to actually craft something. Crafting is a core progression system that lets you gear up without relying on the generous loot drops of monsters (who are, it must be said, not known for their generosity).
 
 ## Core Concepts
 
@@ -203,7 +203,7 @@ When crafting completes, quality is rolled:
 
 ### Crafting Failures
 
-Low skill crafters can fail:
+Low skill crafters can fail, with consequences ranging from "mildly disappointing" to "where did the Forge go?":
 
 | Result | Effect |
 |--------|--------|
@@ -415,4 +415,4 @@ Navigate to: Guild Screen → Item Workshop
 
 ---
 
-*"A well-equipped guild is a successful guild."*
+*"A well-equipped guild is a successful guild. A well-equipped guild that also remembers to pay its crafters is an exceptional one."*

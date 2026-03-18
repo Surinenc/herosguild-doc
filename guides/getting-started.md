@@ -1,6 +1,6 @@
 # Getting Started with Hero's Guild
 
-Welcome to Hero's Guild! This guide will help you get started on your journey to build the greatest guild in the realm.
+Welcome to Hero's Guild! You've just inherited a building, a modest pile of gold, and the vague expectation that you'll fill it with adventurers and somehow make a profit. This guide will help you get started on your journey to build the greatest guild in the realm — or at least one that stays solvent.
 
 ## First Launch
 
@@ -40,7 +40,7 @@ As you progress, unlock these essential facilities:
 
 ## Your First Dungeon
 
-Ready for adventure? Head to the **Mission Board** and select a low-difficulty dungeon (1-2 stars).
+Ready for adventure? (The heroes certainly think they are.) Head to the **Mission Board** and select a low-difficulty dungeon (1-2 stars).
 
 ### Selecting Your Party
 
@@ -120,4 +120,4 @@ Once you're comfortable with the basics:
 
 ---
 
-*Good luck, Guild Master! Your adventure awaits.*
+*Good luck, Guild Master. The heroes are waiting, the dungeons are full, and the Tavern tab is already running. Your adventure — and your accounting — awaits.*

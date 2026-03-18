@@ -1,6 +1,6 @@
 # Hero Relationships
 
-Heroes form bonds with each other over time. Strong relationships improve combat performance, while rivalries can cause problems.
+Heroes form bonds with each other over time, because apparently you can't put people through repeated near-death experiences without them developing opinions about each other. Strong relationships improve combat performance, while rivalries can cause the sort of problems that no amount of Tavern activities will fix.
 
 ## Relationship Levels
 
@@ -262,7 +262,7 @@ Needs below their critical threshold actively decrease mood.
 
 ## Mental Breaks
 
-When mood drops critically low:
+When mood drops critically low, heroes may have what the Guild Clerk's handbook diplomatically refers to as "an episode":
 
 | Break | Effect | Recovery |
 |-------|--------|----------|
@@ -278,7 +278,7 @@ When mood drops critically low:
 
 ## Social Traits
 
-Heroes have personality traits affecting relationships:
+Heroes have personality traits affecting relationships. These traits are, regrettably, permanent:
 
 ### Positive Traits
 
@@ -343,4 +343,4 @@ Heroes have personality traits affecting relationships:
 
 ---
 
-*"The bonds between heroes matter more than their individual strength."*
+*"The bonds between heroes matter more than their individual strength — which is fortunate, because their individual judgment is often questionable."*

@@ -1,10 +1,10 @@
 # Ascendancy System
 
-Ascendancies are powerful sub-class specializations that dramatically change how your heroes play. Each class has access to 2-3 unique ascendancy paths, offering distinct playstyles and strategic options.
+Ascendancies are powerful sub-class specializations that dramatically change how your heroes play — and, in the case of the Berserker, how long they play. Each class has access to 2-3 unique ascendancy paths, offering distinct playstyles and strategic options.
 
 ## Unlocking Ascendancies
 
-Heroes unlock their ascendancy through Ascendancy Trials:
+Heroes unlock their ascendancy through Ascendancy Trials — solo tower challenges that serve as the game's way of asking "are you sure about this specialization?"
 
 | Level | Event |
 |-------|-------|
@@ -350,4 +350,4 @@ Note: Life steal nodes increase damage taken as a tradeoff.
 
 ---
 
-*"An ascendancy isn't just power - it's a philosophy. Choose wisely."*
+*"An ascendancy isn't just power — it's a philosophy. And like most philosophies, it's considerably easier to adopt than to live with."*

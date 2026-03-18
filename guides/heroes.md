@@ -1,16 +1,16 @@
 # Heroes & Classes
 
-Heroes are the core of your guild. Each hero is unique with their own stats, skills, traits, and relationships.
+Heroes are the core of your guild — a collection of unique individuals with their own stats, skills, traits, and opinions about absolutely everything. Managing them is rather like herding cats, if the cats could wield swords and occasionally set things on fire.
 
 ## The Six Classes
 
-Hero's Guild features six distinct hero classes, each with unique roles and playstyles.
+Hero's Guild features six distinct hero classes, each with unique roles and varying degrees of self-preservation instinct.
 
 ### Warrior
 
 **Role:** Tank, Frontline Damage
 
-The Warrior is your shield against danger. With high health and strength, Warriors excel at absorbing damage and keeping enemies focused on them.
+The Warrior is your shield against danger, primarily because someone has to stand in front of the dragon and Warriors are the ones too stubborn to move. With high health and strength, they excel at absorbing damage and keeping enemies focused on them — a job description that, when you think about it, is deeply alarming.
 
 | Stat | Value |
 |------|-------|
@@ -39,7 +39,7 @@ The Warrior is your shield against danger. With high health and strength, Warrio
 
 **Role:** AoE Damage, Burst Damage
 
-Mages command the elements to devastate groups of enemies. While fragile, their damage output is unmatched.
+Mages command the elements to devastate groups of enemies. While possessing all the physical durability of a damp biscuit, their damage output is unmatched — a tradeoff they consider entirely reasonable.
 
 | Stat | Value |
 |------|-------|
@@ -68,7 +68,7 @@ Mages command the elements to devastate groups of enemies. While fragile, their 
 
 **Role:** Single-Target DPS, Utility
 
-Rogues strike from the shadows with devastating critical hits. Their high dexterity makes them excellent at avoiding danger.
+Rogues strike from the shadows with devastating critical hits. Their high dexterity makes them excellent at avoiding danger, which they consider a far more sensible approach to combat than the Warrior's "stand there and take it" methodology.
 
 | Stat | Value |
 |------|-------|
@@ -96,7 +96,7 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 
 **Role:** Ranged DPS, Scouting
 
-Rangers keep their distance while delivering consistent damage. Their keen senses help the party avoid traps and ambushes.
+Rangers keep their distance while delivering consistent damage. Their keen senses help the party avoid traps and ambushes — services that are deeply underappreciated right up until the moment someone steps on a spike trap.
 
 | Stat | Value |
 |------|-------|
@@ -125,7 +125,7 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 
 **Role:** Healer, Support, Anti-Undead
 
-Clerics are the backbone of any party, keeping allies alive through the toughest fights. They also excel against undead enemies.
+Clerics are the backbone of any party, keeping allies alive through the toughest fights while maintaining the quiet, resigned expression of someone who knows they'll be blamed if anyone dies. They also excel against undead enemies, which is convenient given how often parties create them.
 
 | Stat | Value |
 |------|-------|
@@ -148,7 +148,7 @@ Heal Amount = Skill Base Heal + (INT × 0.5) + (Level × 6)
 ```
 Modifiers: Mood bonus (±20%), Skill Proficiency, Set bonuses (Crusader 3pc: +25%)
 
-**Best For:** Every party needs one! Essential for longer dungeons
+**Best For:** Every party needs one! Essential for longer dungeons. Arguably the most important class, a fact they will remind you of at every opportunity.
 
 **Ascendancy Paths:** (See [Ascendancy Guide](ascendancy.md))
 - **Guardian** - Maximum healing, shields, protection
@@ -160,7 +160,7 @@ Modifiers: Mood bonus (±20%), Skill Proficiency, Set bonuses (Crusader 3pc: +25
 
 **Role:** Minions, Dark Magic, Debuffs
 
-Necromancers command the forces of death, raising minions to fight for them while weakening enemies.
+Necromancers command the forces of death, raising minions to fight for them while weakening enemies. Other heroes find them unsettling, which Necromancers consider a professional compliment.
 
 | Stat | Value |
 |------|-------|
@@ -199,7 +199,7 @@ Necromancers command the forces of death, raising minions to fight for them whil
 
 ### Derived Stats
 
-These are calculated from primary stats:
+These are calculated from primary stats, because apparently nothing in this guild can be simple:
 
 | Derived Stat | Formula |
 |--------------|---------|
@@ -212,7 +212,7 @@ These are calculated from primary stats:
 
 ## Hero Quality
 
-Heroes come in five quality tiers that affect their base stats and trait count:
+Heroes come in five quality tiers that affect their base stats and trait count. The difference between a Common hero and a Legendary one is roughly the difference between a butter knife and a siege weapon:
 
 | Quality | Stars | Stat Multiplier | Trait Count |
 |---------|-------|-----------------|-------------|
@@ -238,7 +238,7 @@ Higher quality heroes are significantly stronger due to the stat multiplier appl
 
 ## Hero States
 
-Heroes can be in various states that affect what they can do:
+Heroes can be in various states that affect what they can do. Think of it as a very complicated scheduling problem:
 
 | State | Description | Can Go on Mission? | Can Craft? |
 |-------|-------------|-------------------|------------|
@@ -255,7 +255,7 @@ Heroes can be in various states that affect what they can do:
 
 ## Body & Injury System
 
-Heroes have a detailed body system with 25 body parts that can be damaged, destroyed, or replaced.
+Heroes have a detailed body system with 25 body parts that can be damaged, destroyed, or — in a triumph of guild engineering — replaced with something mechanical. The human body, it turns out, is surprisingly modular.
 
 ### Body Part Categories
 
@@ -274,7 +274,7 @@ Injuries occur during combat:
 
 ### Injury Severity & Recovery
 
-When an injury occurs, a roll determines severity:
+When an injury occurs, a roll determines severity. Higher rolls are better, and a Cleric's presence has never been more appreciated:
 
 | Roll | Severity | Recovery Time |
 |------|----------|---------------|
@@ -307,7 +307,7 @@ When an injury occurs, a roll determines severity:
 
 ### Fatal Injuries
 
-Certain injuries cause instant death:
+Certain injuries cause instant death. There is, regrettably, no prosthetic for these:
 - Heart destroyed
 - Liver destroyed
 - Both Lungs destroyed
@@ -327,7 +327,7 @@ Destroyed parts can be replaced with prosthetics:
 
 ## Death Saves
 
-When a hero is reduced to 0 HP, they must make a death save to survive. This determines whether they live with an injury or die permanently.
+When a hero is reduced to 0 HP, they must make a death save to determine whether they survive with an injury or join the memorial wall permanently. It is, without exaggeration, the most stressful dice roll in the guild.
 
 ### Base Survival Chance
 
@@ -377,7 +377,7 @@ Heroes gain **3 attribute points per level** to distribute among primary stats. 
 
 ### Veteran Status
 
-Heroes earn veteran ranks based on completed missions:
+Heroes earn veteran ranks based on completed missions. The progression from Rookie to Legend is primarily a measure of how many times someone has voluntarily walked into a dungeon:
 
 | Rank | Missions | Morale Bonus | Rep Multiplier | XP Multiplier | Survival Bonus |
 |------|----------|-------------|----------------|---------------|----------------|
@@ -412,7 +412,7 @@ Heroes gain XP from:
 
 ### XP Curves
 
-XP required increases differently at each stage:
+XP required increases differently at each stage, because reaching level 100 is meant to feel like an achievement, not a commute:
 
 | Level Range | Formula | Curve Type |
 |-------------|---------|------------|
@@ -438,7 +438,7 @@ XP required increases differently at each stage:
 
 ### XP Penalties (Levels 95-99)
 
-High-level heroes gain reduced XP from content, slowing the final push:
+High-level heroes gain reduced XP from content, slowing the final push. The universe's way of saying "are you sure about this?"
 
 | Level | XP Retained |
 |-------|-------------|
@@ -459,7 +459,7 @@ High-level heroes gain reduced XP from content, slowing the final push:
 
 ### Paragon System (Level 100+)
 
-After reaching level 100, heroes gain Paragon points to further specialize.
+After reaching level 100, heroes gain Paragon points to further specialize — by which point they've presumably learned that "dodge" is a viable combat strategy.
 
 **XP Required:** 400,000 XP per Paragon point (roughly equal to level 99→100)
 
@@ -480,9 +480,9 @@ After reaching level 100, heroes gain Paragon points to further specialize.
 
 ## Tips for Building Your Roster
 
-1. **Class Diversity** - Have at least one of each class for flexibility
-2. **Quality Matters** - A Legendary hero can outperform several Common heroes
-3. **Backup Heroes** - Keep reserves for when main heroes are injured
+1. **Class Diversity** - Have at least one of each class for flexibility. You never know when you'll need a Necromancer until you really, really need a Necromancer.
+2. **Quality Matters** - A Legendary hero can outperform several Common heroes. It's not fair, but then neither is combat.
+3. **Backup Heroes** - Keep reserves for when main heroes are injured. They will be injured.
 4. **Relationship Synergy** - Heroes with bonds fight better together
 5. **Match to Content** - Some dungeons favor certain classes
 
@@ -497,4 +497,4 @@ After reaching level 100, heroes gain Paragon points to further specialize.
 
 ---
 
-*"A guild is only as strong as its weakest hero."*
+*"A guild is only as strong as its weakest hero — which is why the Guild Clerk keeps a very detailed spreadsheet."*

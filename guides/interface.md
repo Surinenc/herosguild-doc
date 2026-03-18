@@ -1,6 +1,6 @@
 # Interface Overview
 
-A quick guide to the Hero's Guild user interface and controls.
+A quick guide to the Hero's Guild user interface and controls. Everything you need to know about where things are and what they do — which, in a game with this many menus, is no small undertaking.
 
 ## Main Menu
 
@@ -271,4 +271,4 @@ At any crafting station:
 
 ---
 
-*"A well-organized guild starts with knowing your tools."*
+*"A well-organized guild starts with knowing your tools. An exceptionally well-organized guild also reads the documentation — but let's not get ahead of ourselves."*

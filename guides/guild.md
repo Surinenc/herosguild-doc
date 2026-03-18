@@ -1,6 +1,6 @@
 # Guild Management
 
-Your guild is your home base. Manage facilities, finances, reputation, and your roster of heroes to build the ultimate adventurer's guild.
+Your guild is your home base — a collection of buildings, debts, and strong opinions held by people who hit things for a living. Manage facilities, finances, reputation, and your roster of heroes to build something that future historians will either celebrate or use as a cautionary tale.
 
 ## Guild Facilities
 
@@ -41,7 +41,7 @@ Your guild is your home base. Manage facilities, finances, reputation, and your 
 
 ### Guild Hall
 
-Your central building. Determines mission slots (hero capacity is set by Barracks).
+Your central building. The notice board here has seen more drama than most theaters. Determines mission slots (hero capacity is set by Barracks).
 
 | Level | Name | Mission Slots | Daily Upkeep |
 |-------|------|---------------|--------------|
@@ -53,7 +53,7 @@ Your central building. Determines mission slots (hero capacity is set by Barrack
 
 ### Barracks
 
-Hero housing affects mood and rest recovery.
+Hero housing affects mood and rest recovery. The beds have witnessed more reconciliations than any chapel.
 
 | Level | Beds | Mood | Rest Speed | Daily Upkeep |
 |-------|------|------|------------|--------------|
@@ -65,7 +65,7 @@ Hero housing affects mood and rest recovery.
 
 ### Tavern
 
-Recruitment hub and morale booster.
+Recruitment hub, morale booster, and the place where most guild drama begins (and occasionally ends, depending on how the gambling goes).
 
 | Level | Name | Recruits/Day | Daily Income | Daily Upkeep |
 |-------|------|--------------|--------------|--------------|
@@ -86,7 +86,7 @@ Recruitment hub and morale booster.
 
 ### Training Yard
 
-Where heroes train and spar.
+Where heroes train and spar. The sounds of practice combat are indistinguishable from actual combat, which says something about the quality of training.
 
 | Level | Training Speed | Features |
 |-------|----------------|----------|
@@ -98,7 +98,7 @@ Where heroes train and spar.
 
 ### Infirmary
 
-Treats injured heroes.
+Treats injured heroes. The smell of antiseptic potions mingles with the sound of "I told you not to fight the dragon."
 
 | Level | Healing Speed | Features |
 |-------|---------------|----------|
@@ -110,7 +110,7 @@ Treats injured heroes.
 
 ### Armory
 
-Equipment vault — determines how many items your guild can store.
+A carefully organized collection of pointy things, blunt things, and things that go 'boom' when you least expect it. Determines how many items your guild can store.
 
 | Level | Name | Equipment Slots | Daily Upkeep |
 |-------|------|-----------------|--------------|
@@ -123,7 +123,7 @@ Equipment vault — determines how many items your guild can store.
 
 ### Forge
 
-See [Crafting Guide](crafting.md) for details.
+Where raw metal becomes something worth dying over. See [Crafting Guide](crafting.md) for details.
 
 | Level | Craft Speed | Max Tier | Quality Bonus |
 |-------|-------------|----------|---------------|
@@ -135,7 +135,7 @@ See [Crafting Guide](crafting.md) for details.
 
 ### Workshop
 
-Covers all leather, cloth, and wood crafting. The Workshop absorbs the legacy Tannery, Loom, and Lumber Mill stations into a single upgradeable facility.
+Covers all leather, cloth, and wood crafting. The Workshop absorbs the legacy Tannery, Loom, and Lumber Mill stations into a single upgradeable facility. The staff take pride in their work, which mostly involves hitting things with other things until they're useful.
 
 See [Crafting Guide](crafting.md) for details.
 
@@ -150,7 +150,7 @@ See [Crafting Guide](crafting.md) for details.
 
 ### Library
 
-Research new recipes and lore.
+Research new recipes and lore. The librarian insists on silence, which is ambitious given the explosions from the Alchemy Lab next door.
 
 | Level | Research Speed | Max Recipe Tier |
 |-------|----------------|-----------------|
@@ -162,7 +162,7 @@ Research new recipes and lore.
 
 ### Chapel
 
-Provides mood bonuses and funeral services.
+Provides mood bonuses and funeral services — two things that, in the adventuring business, are needed with roughly equal frequency.
 
 | Level | Mood Bonus | Features |
 |-------|------------|----------|
@@ -179,7 +179,7 @@ Provides mood bonuses and funeral services.
 
 ## Guild Reputation
 
-Reputation unlocks better content and more expedition slots.
+Reputation unlocks better content and more expedition slots. Depressingly easy to lose, annoyingly hard to gain.
 
 ### Reputation Ranks
 
@@ -216,6 +216,8 @@ Reputation unlocks better content and more expedition slots.
 
 ## Guild Finances
 
+The eternal struggle between "we need more heroes" and "we need to pay the heroes we have." A guild master's life is, at its core, an accounting problem with swords.
+
 ### Income Sources
 
 | Source | Amount | Notes |
@@ -236,7 +238,7 @@ Reputation unlocks better content and more expedition slots.
 
 ### Daily Wages
 
-Heroes expect to be paid based on their level:
+Heroes expect to be paid based on their level, because apparently risking their lives for the guild's reputation isn't reward enough:
 
 ```
 Daily Wage = (Level - 1) × 3 × Quality Multiplier
@@ -260,10 +262,10 @@ Level 1 heroes are free (no wages).
 ### Managing Finances
 
 1. **Watch your burn rate** - Know weekly expenses
-2. **Don't over-hire** - More heroes = more wages
+2. **Don't over-hire** - More heroes = more wages. This seems obvious, yet guilds go bankrupt every day.
 3. **Sell excess items** - Keep vault clean
 4. **Upgrade Tavern** - Passive income helps
-5. **Build reserves** - Keep 2+ weeks of wages saved
+5. **Build reserves** - Keep 2+ weeks of wages saved. The dungeon will still be there tomorrow.
 
 ---
 
@@ -284,7 +286,7 @@ Level 1 heroes are free (no wages).
 
 ### Hero Mood
 
-Mood affects combat performance:
+Mood affects combat performance. Happy heroes hit harder; miserable heroes hit the tavern:
 
 | Mood | Effect |
 |------|--------|
@@ -310,7 +312,7 @@ Mood affects combat performance:
 
 ### Mental Breaks
 
-When mood drops too low, heroes may have mental breaks:
+When mood drops too low, heroes may have mental breaks. These are, without exception, inconvenient:
 
 | Break | Effect | Duration |
 |-------|--------|----------|
@@ -326,7 +328,7 @@ Prevent breaks by maintaining hero mood above "Poor".
 
 ## Hero Relationships
 
-Heroes form bonds with each other. See [Relationships Guide](relationships.md) for full details.
+Heroes form bonds with each other, for better and frequently for worse. See [Relationships Guide](relationships.md) for full details.
 
 ### Relationship Levels
 
@@ -352,7 +354,7 @@ Heroes form bonds with each other. See [Relationships Guide](relationships.md) f
 
 ## Guild Shop
 
-The guild shop lets you sell items to visiting customers for gold.
+The guild shop lets you sell items to visiting customers for gold — turning your dungeon loot into someone else's problem.
 
 | Level | Name | Display Slots | Customers/Day | Daily Upkeep |
 |-------|------|---------------|---------------|--------------|
@@ -364,7 +366,7 @@ The guild shop lets you sell items to visiting customers for gold.
 
 **Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with different budgets and item preferences.
 
-**Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit.
+**Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit. Finding the sweet spot is an art form that most guild masters discover through expensive trial and error.
 
 **Market Events:** Random events like Festivals (+30% accessory demand), Wars (+25% weapon/armor demand), or Disease Outbreaks (+50% consumable demand) temporarily shift prices.
 
@@ -372,7 +374,7 @@ The guild shop lets you sell items to visiting customers for gold.
 
 ## Item Workshop
 
-The Item Workshop lets you reroll bonus stats on Rare or higher rarity items for gold. Named items cannot be rerolled.
+The Item Workshop lets you reroll bonus stats on Rare or higher rarity items for gold. Named items cannot be rerolled, because some things are sacred (or at least expensive enough to discourage tampering).
 
 **Reroll Cost Formula:**
 ```
@@ -387,7 +389,7 @@ Navigate to the Item Workshop from the Guild Screen → Item Workshop button.
 
 ## Merchant Caravans
 
-Traveling merchants visit your guild periodically, offering items and services.
+Traveling merchants visit your guild periodically, offering items and services. Their arrival is always welcome; their prices, less so.
 
 - **First Arrival:** Day 5
 - **Visit Interval:** Every 3-7 days
@@ -401,7 +403,7 @@ Traveling merchants visit your guild periodically, offering items and services.
 
 ## Rival Guilds
 
-> **Currently Disabled** — The Rival Guild system exists in the game code but is currently disabled. The information below describes the intended design.
+> **Currently Disabled** — The Rival Guild system exists in the game code but is currently disabled. The information below describes the intended design, which is to say, a design that exists in the philosophical sense.
 
 Rival guilds are AI-controlled competing guilds with different personalities (Aggressive, Scheming, Honorable, Desperate, Mercantile). They can interact with your guild through events like hero poaching, reputation attacks, sabotage, trade offers, and challenges.
 
@@ -409,7 +411,7 @@ Rival guilds are AI-controlled competing guilds with different personalities (Ag
 
 ## Guild Chronicle
 
-The Guild Chronicle (Guild Screen → Guild Stats) tracks lifetime statistics for all heroes across two tabs.
+The Guild Chronicle (Guild Screen → Guild Stats) tracks lifetime statistics for all heroes across two tabs. It is, essentially, a permanent record of every decision you've ever made — good and bad.
 
 **Combat Tab:**
 - Top 3 heroes by: Damage Dealt, Damage Taken, Healing Done, and Kills
@@ -458,7 +460,7 @@ Click any column header to sort. Hover on Friends/Rivals columns to see relation
 1. **Guild Hall 2** - More heroes, more missions
 2. **Barracks 2** - Better rest, less mood penalty
 3. **Tavern 2** - Better recruits
-4. **Infirmary 2** - Faster healing
+4. **Infirmary 2** - Faster healing (you'll need it)
 
 ### Mid Game
 
@@ -478,11 +480,11 @@ Click any column header to sort. Hover on Friends/Rivals columns to see relation
 ## Tips for Guild Masters
 
 1. **Balance your roster** - Diversity in classes and levels
-2. **Maintain reserves** - Backup heroes for injuries
-3. **Watch finances** - Don't go bankrupt!
+2. **Maintain reserves** - Backup heroes for injuries (they will get injured)
+3. **Watch finances** - Don't go bankrupt! Bankrupt guilds have a remarkably short shelf life.
 4. **Manage relationships** - Happy heroes fight better
 5. **Upgrade steadily** - Don't neglect any facility
-6. **Use the Tavern** - Morale activities are worth it
+6. **Use the Tavern** - Morale activities are worth it. A happy guild is a functioning guild.
 
 ---
 
@@ -495,4 +497,4 @@ Click any column header to sort. Hover on Friends/Rivals columns to see relation
 
 ---
 
-*"A guild is only as strong as its master's planning."*
+*"Running a guild is easy. It's the heroes, finances, facilities, reputation, morale, injuries, deaths, and interpersonal drama that make it complicated."*

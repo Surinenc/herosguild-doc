@@ -1,6 +1,6 @@
 # Equipment & Items
 
-Proper equipment is crucial for hero survival. This guide covers weapons, armor, accessories, and the gem socket system.
+Proper equipment is crucial for hero survival, in the same way that oxygen is crucial for breathing — technically optional, but the alternatives are universally fatal. This guide covers weapons, armor, accessories, and the gem socket system.
 
 ## Equipment Slots
 
@@ -352,7 +352,7 @@ Add magical properties to equipment at the Enchanter's Table.
 
 ## Forges & Manufacturers
 
-Every piece of equipment has a maker. Heroes have opinions about them!
+Every piece of equipment has a maker, and heroes have opinions about them. Strong opinions. Surprisingly passionate opinions, given that they're talking about a sword.
 
 ### Major Forges
 
@@ -402,4 +402,4 @@ All items go to the central Guild Vault. From there you can:
 
 ---
 
-*"The difference between a dead hero and a legend is often just better equipment."*
+*"The difference between a dead hero and a legend is often just better equipment — and the wisdom to check it's not cursed before putting it on."*

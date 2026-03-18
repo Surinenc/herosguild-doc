@@ -1,12 +1,12 @@
 # Heroic Dungeons
 
-Heroic Dungeons feature special modifiers that add challenge and reward scaling to endgame content.
+Heroic Dungeons feature special modifiers that add challenge and reward scaling to endgame content. They are, essentially, regular dungeons that have decided to take things personally.
 
 ---
 
 ## The 10 Heroic Modifiers
 
-Each heroic dungeon has one modifier that changes gameplay.
+Each heroic dungeon has one modifier that changes gameplay. Think of them as the dungeon's way of saying "you thought this would be straightforward?"
 
 ### Overwhelming Force 💪
 **Difficulty:** 2/3
@@ -129,3 +129,7 @@ Access: Mission Board → Heroic filter (🔥). A countdown timer shows time unt
 
 - [Combat System](combat.md)
 - [Abyssal Spire](tower.md)
+
+---
+
+*"Heroic modifiers exist because someone, somewhere, decided that regular dungeons weren't unfair enough."*

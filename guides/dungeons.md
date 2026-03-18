@@ -144,15 +144,15 @@ You watch the dungeon crawl in real-time (one per night).
 
 | Action | Cost | Effect |
 |--------|------|--------|
-| Use Item | 1 | Apply consumable |
-| Change Tactics | 1 | Shift strategy |
-| Focus Fire | 1 | All attack same target |
-| Defensive Formation | 1 | Reduce damage |
-| Activate Skill | 2 | Trigger hero ability |
-| Search Area | 2 | Find hidden items |
-| Emergency Retreat | 3 | Abort, save party |
+| 🔥 Battle Cry | 1 | +25% party damage for 3 turns |
+| 🛡️ Shield Wall | 1 | -30% damage taken for 3 turns |
+| 💚 Quick Heal | 1 | Heal lowest HP hero for 30% max HP |
+| ✨ Rallying Cry | 2 | Cleanse debuffs + heal all heroes |
+| ⚔️ Heroic Strike | 2 | All party attacks crit next turn |
+| 💎 Treasure Hunt | 3 | +1 bonus item drop this combat |
+| 🚪 Tactical Retreat | 3 | Exit dungeon, keep loot and XP |
 
-Start with 5 CP. Maximum 10 CP. Earn 3 CP per floor cleared.
+Start with 3 CP per floor. Maximum 3 CP.
 
 ### Unsupervised Expeditions
 

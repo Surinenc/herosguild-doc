@@ -32,11 +32,11 @@ As you progress, unlock these essential facilities:
 
 | Facility | Purpose |
 |----------|---------|
-| Barracks | Increases hero capacity |
-| Training Grounds | Heroes gain passive XP |
-| Blacksmith | Craft weapons and armor |
-| Alchemist | Brew potions and elixirs |
-| Enchanter | Add magical properties to items |
+| Barracks | Increases hero capacity, affects mood and rest |
+| Training Yard | Heroes train skills and spar |
+| Forge | Craft metal weapons and armor |
+| Alchemy Lab | Brew potions and elixirs |
+| Enchanting Table | Add magical properties to items |
 
 ## Your First Dungeon
 

@@ -5,10 +5,10 @@ A quick guide to the Hero's Guild user interface and controls.
 ## Main Menu
 
 From the main menu you can:
-- **New Game** - Start a fresh guild
-- **Continue** - Load your saved game
-- **Settings** - Audio, graphics, controls
-- **Quit** - Exit the game
+- **New Game** - Start a fresh guild (plays intro cinematic)
+- **Continue** - Resume your last saved game
+- **Load Game** - Browse and load from multiple save slots
+- **Settings** - Audio, graphics, gameplay options
 
 ---
 
@@ -52,7 +52,7 @@ Context-sensitive information:
 
 ## Mission Board
 
-Access dungeons and contracts here.
+Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. A list view (V1) is available as a fallback in Settings.
 
 ### Mission List
 
@@ -92,7 +92,7 @@ When you select a hero:
 
 ### Equipment Tab
 
-- All 8 equipment slots
+- All 10 equipment slots
 - Drag items to equip
 - View item stats
 - Socket management

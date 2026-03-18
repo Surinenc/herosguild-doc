@@ -318,9 +318,9 @@ Heroes form bonds with each other. See [Relationships Guide](relationships.md) f
 | Level | Trust | Combat Bonus |
 |-------|-------|--------------|
 | Neutral | -9 to +9 | None |
-| Friendly | +10 to +29 | +2% |
-| Friend | +30 to +59 | +5% |
-| Close Friend | +60 to +79 | +10% |
+| Friendly | +10 to +29 | +5% |
+| Friend | +30 to +59 | +10% |
+| Close Friend | +60 to +79 | +15% |
 | Best Friend | +80 to +94 | +20%, Intervene |
 | Devoted | +95 to +100 | +25% |
 

@@ -23,7 +23,7 @@ Each hero has 10 equipment slots:
 
 ## Item Rarity
 
-Items come in seven rarity tiers:
+Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes weep openly upon receiving a Mythic drop, and throw perfectly serviceable Common items into the nearest ravine. Both reactions are, technically, unprofessional.
 
 | Rarity | Color | Min Sockets | Max Sockets |
 |--------|-------|-------------|-------------|
@@ -103,12 +103,12 @@ Socket count rolls increase with item level. Base chance: `20% + item level × 1
 
 ### Armor Types by Class
 
-| Type | Defense | Classes |
-|------|---------|---------|
-| **Plate** | Highest | Warrior |
-| **Mail** | High | Cleric, Ranger |
-| **Leather** | Medium | Rogue, Ranger |
-| **Robes** | Low | Mage, Necromancer |
+| Type | Defense | Classes | Guild Clerk's Notes |
+|------|---------|---------|---------------------|
+| **Plate** | Highest | Warrior | Warriors consider anything less to be "pajamas" |
+| **Mail** | High | Cleric, Ranger | A sensible compromise |
+| **Leather** | Medium | Rogue, Ranger | Rogues insist this is "tactical" |
+| **Robes** | Low | Mage, Necromancer | Mages consider anything heavier "excessive" |
 
 ### Armor Stats
 
@@ -206,7 +206,7 @@ Amulets focus on HP, Mana, and powerful unique effects.
 
 ## Gem Sockets
 
-Equipment can have gem sockets based on rarity and slot type (see [Skill Gems Guide](skills.md) for full socket details). Socketed gems grant additional skills or bonuses.
+Equipment can have gem sockets based on rarity and slot type (see [Skill Gems Guide](skills.md) for full socket details). Socketed gems grant additional skills or bonuses. The Guild Clerk finds the entire gem-linking system needlessly complicated, but acknowledges that heroes who master it are considerably harder to kill.
 
 ### Socket Colors
 
@@ -250,7 +250,7 @@ Multiple sockets can be linked, allowing support gems to enhance skill gems:
 
 ## Equipment Sets
 
-Wearing multiple pieces from the same set grants powerful bonuses.
+Wearing multiple pieces from the same set grants powerful bonuses. The Guild Clerk has filed multiple incident reports about heroes refusing to equip statistically superior items because they'd "break the set." This is, apparently, a matter of principle.
 
 ### Dragonslayer Set (Epic)
 
@@ -296,7 +296,7 @@ Wearing multiple pieces from the same set grants powerful bonuses.
 
 ## Item Quality
 
-Beyond rarity, items have quality ratings that affect their stats:
+Beyond rarity, items have quality ratings that affect their stats. A Masterwork Rare can outperform a Normal Epic — a fact that crafters mention at every possible opportunity:
 
 | Quality | Stat Modifier | Visual |
 |---------|---------------|--------|
@@ -313,7 +313,7 @@ Quality is determined by crafting skill or random drop luck.
 
 ## Enchanting
 
-Add magical properties to equipment at the Enchanter's Table.
+Add magical properties to equipment at the Enchanter's Table. The process involves runes, mana crystals, and a faint but persistent humming that the enchanter insists is "perfectly normal."
 
 ### Weapon Enchantments
 

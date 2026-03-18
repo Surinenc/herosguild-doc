@@ -8,7 +8,7 @@ When you start Hero's Guild for the first time, you'll be greeted with the main 
 
 ### Choosing Your Starting Heroes
 
-You'll begin with a small amount of gold and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
+You'll begin with **500 gold** and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
 
 - **A tank** (Warrior or Cleric) - To absorb damage and protect your team
 - **A damage dealer** (Mage, Rogue, or Ranger) - To eliminate enemies quickly

@@ -26,17 +26,17 @@ The guild has 4 main production facilities, each handling multiple crafting type
 
 ### Station Levels
 
-Speed bonuses vary by facility:
+Each station level reduces crafting time by 10% and unlocks the next material tier:
 
-| Level | Forge | Alchemy Lab | Workshop | Enchanting Table |
-|-------|-------|-------------|----------|------------------|
-| 1 | 1.0× | 1.0× | 1.0× | 1.0× (power) |
-| 2 | 1.15× | 1.2× | 1.2× | 1.2× |
-| 3 | 1.3× (+10% quality) | 1.4× (+10% potency) | 1.4× (+10% quality) | 1.4× |
-| 4 | 1.5× (+20% quality) | 1.6× (+20% potency) | 1.6× (+15% quality) | 1.7× |
-| 5 | 2.0× (+30% quality) | 2.0× (+30% potency) | 2.0× (+20% quality) | 2.0× |
+| Level | Time Modifier | Tier Unlocked | Quality Bonus |
+|-------|---------------|---------------|---------------|
+| 1 | 1.0× (base) | ⭐ Common | - |
+| 2 | 0.9× (-10%) | ⭐⭐ Uncommon | - |
+| 3 | 0.8× (-20%) | ⭐⭐⭐ Rare | - |
+| 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
+| 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-Each level also unlocks the next material tier (Level 1 = Tier 1, Level 5 = Tier 5). Workshop has a 6th level (2.5× speed, +30% quality).
+This formula applies uniformly to all station types (Forge, Alchemy Lab, Workshop, Enchanting Table).
 
 ### Unlocking Stations
 
@@ -116,13 +116,12 @@ Exceptional quality crafts give +50% XP.
 | ⭐⭐ | 6 hours |
 | ⭐⭐⭐ | 1 day |
 | ⭐⭐⭐⭐ | 3 days |
-| ⭐⭐⭐⭐⭐ | 7 days |
+| ⭐⭐⭐⭐⭐ | 6 days (8,640 min) |
 
 **Time Modifiers:**
-- Station level: -10% per level above 1
-- Crafter skill: -1% per 5 skill levels
+- Station level: -10% per level above 1 (see Station Levels table)
+- Crafter skill: -1% per 5 skill levels (skill level / 500)
 - Assistant: -20%
-- Efficient trait: -20%
 
 ### Assistants
 

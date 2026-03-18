@@ -25,7 +25,7 @@ The Guild Screen is your home base — the one screen you'll see more than any o
 
 ### Hero Panel (Left)
 
-Lists all your heroes:
+Your roster at a glance. The Guild Clerk designed this panel to answer the question "who is available and who has an excuse" as quickly as possible.
 - Portrait and name
 - Class icon
 - Level
@@ -36,14 +36,14 @@ Click a hero to see details.
 
 ### Facility Panel (Center)
 
-Shows your guild layout:
+The heart of your guild operations. The Guild Clerk is rather proud of this layout.
 - Click facilities to access them
 - Upgrade indicators show available upgrades
 - Active crafting shows progress
 
 ### Info Panel (Right)
 
-Context-sensitive information:
+Changes based on what you've selected. The Guild Clerk considers this the most useful part of the interface, which is why nobody looks at it.
 - Selected hero details
 - Facility information
 - Mission details
@@ -85,12 +85,16 @@ When you select a hero, you get a comprehensive view of everything they are, eve
 
 ### Gems Tab
 
+Where the real build optimization happens. Heroes have been known to spend more time arranging gems than actually fighting.
+
 - Equipped skill gems and sockets
 - Gem levels and XP progress
 - Skill proficiency levels
 - Socket management (drag gems to sockets)
 
 ### Social Tab
+
+The tab that explains why your Rogue refuses to party with your Warrior. Essential reading before forming expedition teams.
 
 - Relationships with other heroes
 - Mood and needs
@@ -223,7 +227,7 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
-The Guild Clerk is mildly surprised that anyone reads this section, but pleasantly so.
+The Guild Clerk is genuinely surprised that anyone reads this far into the documentation. Your diligence is noted and appreciated.
 
 | Key | Action |
 |-----|--------|
@@ -251,13 +255,13 @@ The Guild Clerk is mildly surprised that anyone reads this section, but pleasant
 
 ### Audio
 
-- Master Volume (0-100)
-- Music Volume (0-100)
-- SFX Volume (0-100)
+- Master Volume (0-100) — controls everything, as the name implies
+- Music Volume (0-100) — the guild ambient music is quite pleasant, in the Guild Clerk's opinion
+- SFX Volume (0-100) — the sounds of swords, spells, and heroes complaining
 
 ### Display
 
-- Resolution (dropdown: 1280×720, 1920×1080, etc.)
+- Resolution (dropdown: 1280×720, 1920×1080, etc.) — bigger screens show more detail, but the goblins are also bigger
 - Fullscreen toggle
 
 ### Gameplay

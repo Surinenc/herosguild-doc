@@ -12,6 +12,8 @@ The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tow
 
 ## Floor Types
 
+Every floor is a fight. The only variety is what kind of fight, and whether there's a shop afterwards to contemplate your dwindling resources.
+
 | Event | Floors |
 |-------|--------|
 | Combat | Every floor |
@@ -29,6 +31,8 @@ The Guild Clerk has watched the Spire leaderboard with morbid fascination. The n
 
 ### Enemy Level
 
+Enemies start at level 100 and climb steadily. By floor 50, they're level 125 — comfortably stronger than most heroes who haven't been grinding Paragon points with religious dedication.
+
 ```
 Enemy Level = 100 + floor(Floor × 0.5)
 ```
@@ -41,6 +45,8 @@ Enemy Level = 100 + floor(Floor × 0.5)
 | 100 | 150 |
 
 ### Difficulty Tier
+
+The tier system ensures that even if you've mastered the early floors, the Spire has something unpleasant in reserve.
 
 | Floor Range | Tier |
 |-------------|------|
@@ -76,7 +82,7 @@ The tower cycles through 5 environments every 20 floors. Heroes universally drea
 | 61-80 | Celestial Heights | Construct, Elemental |
 | 81-100 | Void Sanctum | Demon, Undead, Dragon |
 
-Environments cycle after floor 100.
+Environments cycle after floor 100. The Guild Clerk has noted that parties who survive to the Void Sanctum rarely discuss the experience afterwards. Those who do use words like "never again."
 
 ---
 
@@ -104,11 +110,13 @@ Only drop from major boss floors (25, 50, 75, 100...). Reaching them is the hard
 | Void Crystal | 75 | 30% |
 | Spirebreaker Fragment | 100 | 25% |
 
-Higher tier items are rolled first.
+Higher tier items are rolled first. The Spirebreaker Fragment at floor 100 has a 25% drop chance, which the Guild Clerk considers "stingy, given what it takes to get there."
 
 ---
 
 ## Score Calculation
+
+The Spire keeps score, because even existential dread benefits from a competitive element. The Guild Clerk maintains the leaderboard and has observed that the top scores belong exclusively to parties who brought two Clerics.
 
 ```
 Score = (Floor × 100) + (Enemies Defeated × 10) + (Gold Earned ÷ 100)

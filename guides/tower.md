@@ -25,6 +25,8 @@ Note: Major boss takes precedence over mini-boss (floor 50 is major boss, not mi
 
 ## Enemy Scaling
 
+The Guild Clerk has watched the Spire leaderboard with morbid fascination. The numbers below explain why most runs end in the Chapel.
+
 ### Enemy Level
 
 ```
@@ -49,6 +51,8 @@ Enemy Level = 100 + floor(Floor × 0.5)
 
 ### Enemy Count
 
+The number of enemies per floor increases with depth. The Guild Clerk notes, with concern, that floor 100+ pits your party against up to 7 enemies simultaneously:
+
 | Floor Range | Min | Max | Boss Adds |
 |-------------|-----|-----|-----------|
 | 1-10 | 2 | 3 | 2 |
@@ -62,7 +66,7 @@ Enemy Level = 100 + floor(Floor × 0.5)
 
 ## Environments
 
-The tower cycles through 5 environments every 20 floors:
+The tower cycles through 5 environments every 20 floors. Heroes universally dread the Shadow Depths (undead AND demons), though the Guild Clerk personally considers the Void Sanctum worse:
 
 | Floors | Environment | Enemy Types |
 |--------|-------------|-------------|
@@ -78,7 +82,7 @@ Environments cycle after floor 100.
 
 ## Shop Items
 
-Shops appear after floors 15, 30, 45, etc.
+Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in the Guild Clerk's assessment, "optimistic given the circumstances" — but when you're on floor 47 with three wounded heroes, you'll pay anything.
 
 | Item | Price | Effect |
 |------|-------|--------|
@@ -91,7 +95,7 @@ Shops appear after floors 15, 30, 45, etc.
 
 ## Tower Unique Items
 
-Only drop from major boss floors (25, 50, 75, 100...).
+Only drop from major boss floors (25, 50, 75, 100...). Reaching them is the hard part. The items are the reward for not dying.
 
 | Item | Min Floor | Drop Chance |
 |------|-----------|-------------|

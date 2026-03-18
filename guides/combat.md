@@ -1,6 +1,6 @@
 # Combat System
 
-Hero's Guild features a deep turn-based combat system with threat management, emotional reactions, and dynamic social interactions.
+Hero's Guild features a turn-based combat system of considerable depth, involving threat management, emotional outbursts, and the sort of dynamic social interactions that make you wonder why you sent these people into a dungeon together in the first place.
 
 ## Turn Structure
 
@@ -12,7 +12,7 @@ At the start of each combat round, turn order is determined by initiative:
 Initiative = DEX + Random(1-10)
 ```
 
-Higher initiative means acting earlier. Turn order is recalculated each round.
+Higher initiative means acting earlier, which is particularly useful for heroes who subscribe to the "hit them before they hit you" school of combat philosophy. Turn order is recalculated each round, because consistency is for people who aren't being attacked by goblins.
 
 ### Round Flow
 
@@ -30,7 +30,7 @@ Higher initiative means acting earlier. Turn order is recalculated each round.
 | **Defend** | 50% damage reduction until next turn |
 | **Flee** | Attempt to escape (30% + DEX + LCK/2 chance) |
 
-**Auto-Potions:** If a hero is below 50% HP at the start of their turn, they automatically drink a health potion (if available).
+**Auto-Potions:** If a hero is below 50% HP at the start of their turn, they automatically drink a health potion (if available). This is, admittedly, the only consistently good decision most heroes make without supervision.
 
 ---
 
@@ -56,7 +56,7 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 | Necromancer | INT × 0.18 |
 | Paladin (ascendancy) | INT × 0.12 + STR × 0.12 |
 
-Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage.
+Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage. This is why experienced guild masters invest in training rather than just handing heroes a bigger sword and hoping for the best.
 
 **Modifiers Applied (multiplicative):**
 - Skill damage percentage (e.g., Power Attack = 150%)
@@ -83,7 +83,7 @@ Crit Multiplier = 1.5× (base) + (bonus crit damage% / 100)
 Armor Reduction = sqrt(Armor × 2) × 100 / (50 + Enemy Level × 0.5)
 ```
 
-Capped at 95%. Minimum damage dealt is always 1.
+Capped at 95%. Minimum damage dealt is always 1. The square root in the formula ensures diminishing returns, which is the universe's way of telling Warriors that a third piece of plate armor is not, in fact, the answer to everything.
 
 **Defense Modifiers:**
 - Defending: 50% damage reduction
@@ -91,7 +91,7 @@ Capped at 95%. Minimum damage dealt is always 1.
 
 ### Evasion
 
-Evasion uses an entropy-based system (similar to Path of Exile 2) to ensure consistent dodge patterns rather than pure randomness.
+Evasion uses an entropy-based system (similar to Path of Exile 2) to ensure consistent dodge patterns rather than pure randomness. This means a hero with 50% evasion will reliably dodge every other attack, rather than getting hit seventeen times in a row and writing a strongly-worded complaint to the Guild Clerk's office.
 
 ```
 Evasion Rating = DEX + (LCK × 0.5) + flat evasion bonuses
@@ -102,7 +102,7 @@ Capped at 95%. The entropy system ensures that if you have 50% evasion, you will
 
 ### Energy Shield
 
-Mages and Necromancers have an energy shield that absorbs damage before HP:
+Mages and Necromancers, being too physically fragile to survive combat through conventional means like "having health," instead maintain an energy shield that absorbs damage before HP:
 
 ```
 Energy Shield = INT × 5
@@ -114,7 +114,7 @@ Energy Shield = INT × 5
 
 ### Life Steal
 
-Life steal has diminishing returns via a square root formula:
+Life steal has diminishing returns via a square root formula, because the universe is fundamentally opposed to anyone becoming truly immortal through violence alone:
 
 ```
 Heal Amount = floor(sqrt(Damage × Life Steal% / 100 × 100))
@@ -126,7 +126,7 @@ Examples: 100 damage at 10% steal → 10 HP, 500 damage → ~22 HP, 2500 damage 
 
 ## Threat System
 
-Enemies use threat to determine who to attack. Higher threat = more likely to be targeted.
+Enemies use threat to determine who to attack. Higher threat means more attention from things that want to kill you, which is either the entire point (Warriors) or a catastrophic failure of planning (everyone else).
 
 ### Starting Threat
 
@@ -161,7 +161,7 @@ Enemies use threat to determine who to attack. Higher threat = more likely to be
 - **Duration:** 2 turns (+ ascendancy bonuses)
 - **Threat Bonus:** +200
 - **Cooldown:** 3 turns
-- **Best Used:** When squishy allies are being targeted
+- **Best Used:** When squishy allies are being targeted, which is to say, constantly
 
 ### Shield Wall
 
@@ -169,15 +169,15 @@ Enemies use threat to determine who to attack. Higher threat = more likely to be
 - **Duration:** 2 turns (+ ascendancy bonuses)
 - **Threat Bonus:** +50
 - **Cooldown:** 3 turns
-- **Best Used:** After Taunt, or when expecting heavy damage
+- **Best Used:** After Taunt, or when expecting heavy damage (also constantly)
 
-**Pro Tip:** Taunt first, then Shield Wall for maximum party protection.
+**Pro Tip:** Taunt first, then Shield Wall. The traditional "stand there and get hit" approach, but done professionally.
 
 ---
 
 ## The Intervene Mechanic
 
-One of the most dramatic combat features: heroes can save each other from death!
+One of the most dramatic combat features — and the one responsible for approximately 80% of all post-mission tavern stories. When things go horribly wrong, heroes can save each other from death.
 
 ### How It Works
 
@@ -186,7 +186,7 @@ When a hero would receive a **killing blow**, allies may intervene:
 1. Ally takes 50% of the damage instead
 2. Original target survives with no damage
 3. Massive relationship boost between them
-4. Creates memorable combat moments
+4. Creates the kind of moment that bards write songs about (and that the Guild Clerk writes incident reports about)
 
 ### Requirements
 
@@ -218,7 +218,7 @@ When a hero would receive a **killing blow**, allies may intervene:
 
 ## Emotional States
 
-Combat can trigger powerful emotional reactions based on relationships.
+Combat can trigger powerful emotional reactions based on relationships. This is what happens when you send people who care about each other into mortal danger — they develop feelings about it.
 
 | State | Effect | Duration | Trigger |
 |-------|--------|----------|---------|
@@ -233,7 +233,7 @@ Combat can trigger powerful emotional reactions based on relationships.
 
 ### Death Reactions
 
-When an ally dies, heroes react based on their relationship:
+When an ally dies, heroes react based on their relationship. These reactions are not optional, not controllable, and not particularly convenient:
 
 | Relationship | Possible States |
 |--------------|-----------------|
@@ -289,7 +289,7 @@ Equip skill gems in your weapon sockets for additional abilities. See [Equipment
 
 ### Skill Proficiency
 
-Using skills improves proficiency, granting stacking bonuses:
+Using skills improves proficiency, which is the game's way of rewarding you for doing the same thing over and over (also known as "combat"):
 
 | Bonus Type | Rate | Maximum (Level 20) |
 |------------|------|---------------------|
@@ -303,7 +303,7 @@ Using skills improves proficiency, granting stacking bonuses:
 
 ## Monster Knowledge
 
-As heroes fight the same enemy types, they learn their weaknesses.
+As heroes fight the same enemy types, they gradually learn their weaknesses — a process best described as "educational violence."
 
 ### Knowledge Levels
 
@@ -314,7 +314,7 @@ As heroes fight the same enemy types, they learn their weaknesses.
 | 50 | Expert | +15% | - |
 | 100 | Slayer | +20% | +5% crit |
 
-Monster knowledge is tracked per hero per enemy type. The Slayer level grants bonus critical hit chance against that enemy.
+Monster knowledge is tracked per hero per enemy type. The Slayer level grants bonus critical hit chance against that enemy, which seems fair after you've killed a hundred of them.
 
 ---
 
@@ -328,7 +328,7 @@ Monster knowledge is tracked per hero per enemy type. The Slayer level grants bo
 | Burn | 3 turns | Fire damage per turn (30% ignite chance from Fireball) |
 | Bleed | 3 turns | 20% of damage dealt per tick (+ bleed damage bonuses) |
 
-Bleed and poison damage scale from the hit that applied them, not from max HP. Ascendancy bonuses can increase DoT damage significantly.
+Bleed and poison damage scale from the hit that applied them, not from max HP. Ascendancy bonuses can increase DoT damage significantly — the Berserker's bleed build, in particular, has been described by surviving enemies as "deeply unfair."
 
 ### Control Effects
 
@@ -341,7 +341,7 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 
 ### On-Hit Effects
 
-Some ascendancy and gear bonuses apply effects on every hit:
+Some ascendancy and gear bonuses apply effects on every hit, because merely hitting someone once wasn't considered thorough enough:
 - **Bleed on Hit** - Apply bleed (default 20% of damage per tick, 3 turns)
 - **Poison on Hit** - Apply poison (default 15% of damage per tick, 4 turns)
 - **Burn Spread** - Burns spread to up to 2 nearby unburned enemies
@@ -352,7 +352,7 @@ Some ascendancy and gear bonuses apply effects on every hit:
 
 ## Boss Fights
 
-Boss enemies have multiple phases that activate at HP thresholds.
+Boss enemies have multiple phases that activate at HP thresholds. This is their way of informing you that the fight is not, in fact, nearly over.
 
 ### Phase Transitions
 
@@ -371,7 +371,7 @@ When a boss drops below a phase threshold:
 | Shield | +50% armor permanently |
 | AoE | Devastating attack on all heroes |
 
-**Strategy:** Plan for phase transitions. Save defensive cooldowns for dangerous phases.
+**Strategy:** Plan for phase transitions. Save defensive cooldowns for dangerous phases. If the boss starts glowing, that's generally a sign that things are about to become worse.
 
 ---
 
@@ -379,11 +379,11 @@ When a boss drops below a phase threshold:
 
 ### General Strategies
 
-1. **Protect Your Healer** - Dead clerics mean dead parties
-2. **Control Threat** - Use Warrior Taunt to dictate targeting
-3. **Focus Fire** - Kill one enemy fast rather than wounding many
+1. **Protect Your Healer** - Dead clerics mean dead parties. This is not a suggestion.
+2. **Control Threat** - Use Warrior Taunt to dictate targeting. The Warrior's job is to be hit. They are, one assumes, fine with this.
+3. **Focus Fire** - Kill one enemy fast rather than wounding many. A half-dead goblin is just as dangerous as a fully healthy one, but significantly angrier.
 4. **Watch Initiative** - Know who acts when
-5. **Save Cooldowns** - Don't blow everything turn 1
+5. **Save Cooldowns** - Don't blow everything turn 1. Overconfidence is the leading cause of party wipes, closely followed by underleveled equipment.
 
 ### Party Composition
 
@@ -394,15 +394,15 @@ When a boss drops below a phase threshold:
 
 **Speed Run Party:**
 - 2 Rogues, 2 Mages
-- Kill fast before damage matters
+- Kill fast before damage matters. Also known as "the optimist's formation."
 
 **Survival Party:**
 - 2 Warriors, 2 Clerics
-- Slow but very safe
+- Slow but very safe. Recommended for guild masters who've grown attached to their heroes.
 
 ### Relationship Bonuses
 
-Heroes fight better alongside friends. Relationship combat damage modifiers:
+Heroes fight better alongside friends and worse alongside enemies, because professionalism in the adventuring industry is, at best, aspirational:
 
 | Relationship | Damage Modifier |
 |--------------|-----------------|
@@ -418,13 +418,13 @@ Heroes fight better alongside friends. Relationship combat damage modifiers:
 | Hostile (-56 to -75) | -18% |
 | Enemy (-76 to -100) | -25% |
 
-**Warning:** Lovers can go Berserk or Broken if their partner dies. Consider the risk.
+**Warning:** Lovers can go Berserk or Broken if their partner dies. Consider the risk. Love is a battlefield, and in this case, that's literally true.
 
 ---
 
 ## Ambush Mechanic
 
-Some dungeon encounters start with enemies ambushing your party.
+Some dungeon encounters start with enemies ambushing your party, which is deeply inconsiderate of them.
 
 ### What Happens
 
@@ -469,7 +469,7 @@ All heroes knocked out:
 Successful escape:
 - No rewards
 - Party safely exits
-- Better than a wipe!
+- Better than a wipe! (The Guild Clerk's official position on the matter.)
 
 ---
 
@@ -481,4 +481,4 @@ Successful escape:
 
 ---
 
-*"The difference between victory and defeat often comes down to a single intervene."*
+*"The difference between victory and defeat often comes down to a single intervene — and whether anyone likes each other enough to bother."*

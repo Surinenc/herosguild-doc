@@ -4,9 +4,9 @@ Create powerful equipment, potions, and consumables for your heroes — assuming
 
 ## Core Concepts
 
-- **Heroes Craft** - Your heroes do the crafting, not NPCs
-- **Opportunity Cost** - Crafting heroes can't go on expeditions
-- **Skill-Based Quality** - Higher skill = better items
+- **Heroes Craft** - Your heroes do the crafting, not NPCs. Yes, the same heroes who think "charge the dragon" is a valid strategy.
+- **Opportunity Cost** - Crafting heroes can't go on expeditions. Choose wisely.
+- **Skill-Based Quality** - Higher skill = better items. Lower skill = interesting explosions.
 - **Recipe Discovery** - Find or research new recipes
 
 ---
@@ -32,7 +32,7 @@ The guild has 10 crafting station types:
 
 ### Station Levels (Base)
 
-Each crafting station has an internal level that reduces crafting time by 10% per level and unlocks material tiers:
+Each crafting station has an internal level that reduces crafting time by 10% per level and unlocks material tiers. At level 5, you also get a quality bonus, which is the game's way of rewarding patience — a virtue that, in the Guild Clerk's experience, is in desperately short supply.
 
 | Level | Time Modifier | Tier Unlocked | Quality Bonus |
 |-------|---------------|---------------|---------------|
@@ -100,7 +100,7 @@ Some stations require facility unlock missions (see [Dungeons Guide](dungeons.md
 
 ## Hero Crafting Skills
 
-Heroes level up crafting skills by crafting:
+Heroes level up crafting skills by crafting. There is no shortcut, no cheat, and no amount of motivational speeches that will substitute for actually making things:
 
 | Skill | Max Level | Governs |
 |-------|-----------|---------|
@@ -177,8 +177,10 @@ Exceptional quality crafts give +50% XP.
 ### Assistants
 
 Each station can have:
-- 1 primary crafter (full XP)
-- 1 assistant (+20% speed, 50% XP)
+- 1 primary crafter (full XP, does the actual work)
+- 1 assistant (+20% speed, 50% XP, does whatever the primary crafter doesn't want to do)
+
+The assistant system is, in the Guild Clerk's opinion, an excellent way to keep idle heroes out of the Tavern.
 
 ---
 
@@ -279,10 +281,11 @@ Research new recipes at the Library:
 **Tier 5 - Legendary (⭐⭐⭐⭐⭐)**
 - Primordial Essence, God Tear, Eternity Shard
 - Source: World bosses, Level 70+
+- The sort of materials that make the Forge glow ominously when you bring them inside
 
 ### Processing Materials
 
-Raw materials must be processed:
+Raw materials must be processed before use. The Guild Clerk has lost count of the number of heroes who've tried to craft a sword from unprocessed ore. It doesn't work. It has never worked.
 
 **Metal Chain:**
 ```
@@ -345,7 +348,7 @@ Cloth → [Loom] → Fine Cloth → [Loom] → Enchanted Cloth
 
 ## Item Workshop
 
-The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for improving Rare+ items that have good base stats but poor bonus rolls.
+The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for improving Rare+ items that have good base stats but poor bonus rolls — a situation that occurs with frustrating regularity.
 
 **Requirements:**
 - Item must be Rare rarity or higher
@@ -366,7 +369,7 @@ Navigate to: Guild Screen → Item Workshop
 
 ### Early Game
 
-1. **Focus One Crafter** - Level one hero's crafting skill fast
+1. **Focus One Crafter** - Level one hero's crafting skill fast. A jack-of-all-trades crafter is a master of none, and a producer of Poor-quality swords.
 2. **Process Materials** - Keep raw materials processed
 3. **Unlock Stations Early** - Do facility missions ASAP
 4. **Research Basic Recipes** - Library is worth the investment

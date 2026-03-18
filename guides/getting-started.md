@@ -14,7 +14,7 @@ You'll begin with **500 gold** and the ability to recruit your first heroes. Vis
 - **A damage dealer** (Mage, Rogue, or Ranger) - To eliminate enemies quickly
 - **A healer** (Cleric) - To keep your party alive
 
-Starting with 2-3 heroes is recommended. You can always recruit more as you earn gold.
+Starting with 2-3 heroes is recommended. You can always recruit more as you earn gold — though you'll quickly discover that "earning gold" and "spending gold on hero wages" exist in a delicate and somewhat adversarial relationship.
 
 ## The Guild Screen
 
@@ -44,6 +44,8 @@ Ready for adventure? (The heroes certainly think they are.) Head to the **Missio
 
 ### Selecting Your Party
 
+The Guild Clerk has onboarded hundreds of Guild Masters. Every single one has, at some point, sent a party of four damage dealers into a dungeon with no healer. Don't be that Guild Master.
+
 - Choose 3-4 heroes for your expedition
 - Balance your team with tank, damage, and support roles
 - Check that heroes are healthy (not injured or exhausted)
@@ -67,11 +69,11 @@ Combat is turn-based with these key mechanics:
 3. **Defend** - Reduce incoming damage
 4. **Skills** - Powerful abilities with various effects
 
-Target weaker enemies first, use your tank to draw aggro (threat), and keep your healer ready.
+Target weaker enemies first, use your tank to draw aggro (threat), and keep your healer ready. If this sounds simple, the Guild Clerk assures you it will feel considerably less simple when three goblins are hitting your Mage.
 
 ## After the Dungeon
 
-Upon returning to the guild:
+Upon returning to the guild (assuming they return — the Guild Clerk finds optimism useful but not guaranteed):
 
 1. **Collect rewards** - Gold, items, and experience
 2. **Heal injuries** - Injured heroes need rest or medical attention
@@ -86,7 +88,7 @@ Upon returning to the guild:
 - Focus on one strong party rather than many weak heroes
 - Complete easy dungeons repeatedly to build resources
 - Upgrade your Forge for better gear
-- Save gold for emergency situations (wages, healing)
+- Save gold for emergency situations (wages, healing, that moment when three heroes need prosthetics simultaneously)
 
 ### Building Your Guild
 
@@ -103,11 +105,13 @@ Upon returning to the guild:
 
 ## Common Mistakes to Avoid
 
-1. **Overextending** - Don't tackle dungeons beyond your level
-2. **Ignoring injuries** - Injured heroes perform poorly and may die
-3. **No reserves** - Always have backup heroes ready
-4. **Hoarding gold** - Invest in facilities and equipment
-5. **Neglecting relationships** - Heroes with bonds fight better together
+The Guild Clerk has seen every one of these mistakes. Multiple times. Sometimes in the same week.
+
+1. **Overextending** - Don't tackle dungeons beyond your level. The dungeon doesn't care about your ambition.
+2. **Ignoring injuries** - Injured heroes perform poorly and may die. The Infirmary exists for a reason.
+3. **No reserves** - Always have backup heroes ready. Injuries happen. Deaths happen. Planning prevents panic.
+4. **Hoarding gold** - Invest in facilities and equipment. Gold in the vault doesn't fight dragons.
+5. **Neglecting relationships** - Heroes with bonds fight better together. Heroes who hate each other fight worse — and occasionally fight each other.
 
 ## Next Steps
 

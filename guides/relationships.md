@@ -17,11 +17,9 @@ Heroes form bonds with each other over time. Strong relationships improve combat
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Annoyed | -10 to -20 | Mild friction |
-| Dislike | -21 to -35 | Growing tension |
-| Rival | -36 to -55 | Competition |
-| Hostile | -56 to -75 | Active antagonism |
-| Enemy | -76 to -100 | Hatred |
+| Dislike | -10 to -29 | Growing tension |
+| Rival | -30 to -59 | Active competition |
+| Enemy | -60 or lower | Hatred |
 
 ---
 
@@ -79,21 +77,19 @@ Relationships affect combat performance:
 
 | Relationship | Damage Modifier |
 |--------------|-----------------|
-| Friendly | +5% |
-| Friend | +10% |
-| Close Friend | +15% |
-| Best Friend | +20% |
-| Devoted | +25% |
+| Friendly (+10 to +29) | +2% |
+| Friend (+30 to +59) | +5% |
+| Close Friend (+60 to +79) | +10% |
+| Best Friend (+80 to +94) | +20% |
+| Devoted (+95+) | +25% |
 
 ### Negative Effects
 
 | Relationship | Damage Modifier |
 |--------------|-----------------|
-| Annoyed | -3% |
-| Dislike | -8% |
-| Rival | -12% |
-| Hostile | -18% |
-| Enemy | -25% |
+| Dislike (-10 to -29) | -5% |
+| Rival (-30 to -59) | -10% |
+| Enemy (-60 or lower) | -25% |
 
 ---
 
@@ -203,13 +199,30 @@ Each hero has mood that affects performance:
 
 ### Mood States
 
-| Mood | Combat Effect |
-|------|---------------|
-| Excellent | +10% all stats |
-| Good | +5% all stats |
-| Neutral | None |
-| Poor | -5% all stats |
-| Terrible | -15% all stats |
+Mood is a 0-100 value mapped to these labels:
+
+| Mood | Threshold | Description |
+|------|-----------|-------------|
+| Terrible | ≤20 | Severe penalties, mental break risk |
+| Bad | ≤35 | Significant penalties |
+| Poor | ≤45 | Minor penalties |
+| Neutral | ≤55 | No modifier |
+| Good | ≤70 | Minor bonuses |
+| Great | ≤85 | Good bonuses |
+| Excellent | >85 | Best performance |
+
+### Hero Needs
+
+Heroes have four needs that affect mood:
+
+| Need | Description | Critical Threshold |
+|------|-------------|-------------------|
+| Energy | Physical stamina | Below 20 |
+| Social | Desire for companionship | Below 20 |
+| Recreation | Need for fun/downtime | Below 20 |
+| Comfort | Living conditions | Below 80 |
+
+Needs below their critical threshold actively decrease mood.
 
 ### Affecting Mood
 

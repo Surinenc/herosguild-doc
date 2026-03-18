@@ -15,14 +15,20 @@ Create powerful equipment, potions, and consumables for your heroes. Crafting is
 
 ### Production Facilities
 
-The guild has 4 main production facilities, each handling multiple crafting types:
+The guild has 10 crafting station types:
 
-| Facility | Crafts | Skills Used |
-|----------|--------|-------------|
-| **Forge** | Metal weapons, armor, ingot processing | Blacksmithing, Armorsmithing |
-| **Workshop** | Leather goods, cloth items, wood processing, prosthetics | Leatherworking, Tailoring |
-| **Alchemy Lab** | Potions, elixirs, food buffs, herbal processing | Alchemy, Cooking |
-| **Enchanting Table** | Magic enhancements, jewelry, accessories | Enchanting, Jewelcrafting |
+| Station | Crafts | Skills Used |
+|---------|--------|-------------|
+| **Forge** | Metal weapons, armor | Blacksmithing |
+| **Armory** | Armor crafting and repair | Armorsmithing |
+| **Tannery** | Leather processing and goods | Leatherworking |
+| **Loom** | Cloth processing and items | Tailoring |
+| **Alchemy Lab** | Potions and elixirs | Alchemy |
+| **Kitchen** | Food buffs and meals | Cooking |
+| **Enchanting Table** | Magic enhancements | Enchanting |
+| **Jeweler Bench** | Jewelry and accessories | Jewelcrafting |
+| **Lumber Mill** | Wood processing, bows, prosthetics | Leatherworking |
+| **Smelter** | Ore processing, ingots | Blacksmithing |
 
 ### Station Levels
 
@@ -116,7 +122,7 @@ Exceptional quality crafts give +50% XP.
 | ⭐⭐ | 6 hours |
 | ⭐⭐⭐ | 1 day |
 | ⭐⭐⭐⭐ | 3 days |
-| ⭐⭐⭐⭐⭐ | 6 days (8,640 min) |
+| ⭐⭐⭐⭐⭐ | 6-7 days (8,640-10,080 min) |
 
 **Time Modifiers:**
 - Station level: -10% per level above 1 (see Station Levels table)

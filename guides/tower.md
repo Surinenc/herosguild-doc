@@ -1,6 +1,6 @@
 # Abyssal Spire (Tower)
 
-The Abyssal Spire is an endless dungeon challenge with scaling enemies.
+The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tower that exists solely to answer the question "how far can your heroes go before the universe objects?"
 
 ---
 
@@ -116,3 +116,7 @@ Score = (Floor × 100) + (Enemies Defeated × 10) + (Gold Earned ÷ 100)
 
 - [Heroic Dungeons](heroic-dungeons.md)
 - [Combat System](combat.md)
+
+---
+
+*"The Spire doesn't end. You do."*

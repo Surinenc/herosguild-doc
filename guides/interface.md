@@ -83,40 +83,26 @@ Access dungeons and contracts here. The Mission Board defaults to a **World Map*
 
 When you select a hero:
 
-### Stats Tab
+### Gems Tab
 
-- Base stats (STR, DEX, INT, VIT, LCK)
-- Derived stats (HP, Mana, Initiative)
-- Level and XP bar
-- Paragon points (if level 100+)
-
-### Equipment Tab
-
-- All 10 equipment slots
-- Drag items to equip
-- View item stats
-- Socket management
-
-### Skills Tab
-
-- Active skills
-- Passive tree
-- Skill gem management
-- Proficiency levels
+- Equipped skill gems and sockets
+- Gem levels and XP progress
+- Skill proficiency levels
+- Socket management (drag gems to sockets)
 
 ### Social Tab
 
 - Relationships with other heroes
 - Mood and needs
-- Traits
-- Recent events
+- Traits and personality
+- Recent social events
 
-### Body Tab 🦴
+### Career Tab
 
-- Body part status
-- Injuries
-- Prosthetics
-- Efficiency calculations
+- Mission history and statistics
+- Veteran rank and progress
+- Monster knowledge levels
+- Combat lifetime stats
 
 ---
 
@@ -259,26 +245,21 @@ At any crafting station:
 
 ## Settings
 
-### Graphics
-
-- Resolution
-- Fullscreen toggle
-- Quality presets
-- Particle effects
-
 ### Audio
 
-- Master volume
-- Music volume
-- SFX volume
-- Voice volume
+- Master Volume (0-100)
+- Music Volume (0-100)
+- SFX Volume (0-100)
+
+### Display
+
+- Resolution (dropdown: 1280×720, 1920×1080, etc.)
+- Fullscreen toggle
 
 ### Gameplay
 
-- Auto-save frequency
-- Combat speed
-- Tooltip delay
-- Confirmation prompts
+- Skip Intro (skip opening cinematic on New Game)
+- Show Advisor Tips (Quillsworth provides tips as you discover game systems)
 
 ---
 

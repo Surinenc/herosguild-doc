@@ -28,15 +28,15 @@ Note: Major boss takes precedence over mini-boss (floor 50 is major boss, not mi
 ### Enemy Level
 
 ```
-Enemy Level = 100 + floor(Floor × 0.75)
+Enemy Level = 100 + floor(Floor × 0.5)
 ```
 
 | Floor | Enemy Level |
 |-------|-------------|
 | 1 | 100 |
-| 10 | 107 |
-| 50 | 137 |
-| 100 | 175 |
+| 10 | 105 |
+| 50 | 125 |
+| 100 | 150 |
 
 ### Difficulty Tier
 

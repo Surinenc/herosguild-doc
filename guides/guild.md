@@ -133,6 +133,21 @@ See [Crafting Guide](crafting.md) for details.
 | 4 | 1.5x | ⭐⭐⭐⭐ | +20% |
 | 5 | 2.0x | ⭐⭐⭐⭐⭐ | +30% |
 
+### Workshop
+
+Covers all leather, cloth, and wood crafting. The Workshop absorbs the legacy Tannery, Loom, and Lumber Mill stations into a single upgradeable facility.
+
+See [Crafting Guide](crafting.md) for details.
+
+| Level | Name | Process Speed | Quality Bonus | Daily Upkeep |
+|-------|------|---------------|---------------|--------------|
+| 1 | Basic Workshop | 1.0× | - | 8g |
+| 2 | Crafting Workshop | 1.2× | +5% | 15g |
+| 3 | Artisan Workshop | 1.4× | +10% | 25g |
+| 4 | Master Workshop | 1.6× | +15% | 40g |
+| 5 | Grand Workshop | 2.0× | +20% | 1,500g |
+| 6 | Mythic Workshop | 2.5× | +30% | 3,000g |
+
 ### Library
 
 Research new recipes and lore.

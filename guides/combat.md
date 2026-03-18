@@ -408,13 +408,15 @@ Heroes fight better alongside friends. Relationship combat damage modifiers:
 |--------------|-----------------|
 | Devoted (95+) | +25% |
 | Best Friend (80-94) | +20% |
-| Close Friend (60-79) | +10% |
-| Friend (30-59) | +5% |
-| Friendly (10-29) | +2% |
+| Close Friend (60-79) | +15% |
+| Friend (30-59) | +10% |
+| Friendly (10-29) | +5% |
 | Neutral (-9 to 9) | 0% |
-| Dislike (-10 to -29) | -5% |
-| Rival (-30 to -59) | -10% |
-| Enemy (-60+) | -25% |
+| Annoyed (-10 to -20) | -3% |
+| Dislike (-21 to -35) | -8% |
+| Rival (-36 to -55) | -12% |
+| Hostile (-56 to -75) | -18% |
+| Enemy (-76 to -100) | -25% |
 
 **Warning:** Lovers can go Berserk or Broken if their partner dies. Consider the risk.
 

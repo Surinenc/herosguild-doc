@@ -152,7 +152,7 @@ You watch the dungeon crawl in real-time (one per night).
 | Search Area | 2 | Find hidden items |
 | Emergency Retreat | 3 | Abort, save party |
 
-Start with 5 + stars. Regenerate 1 per room cleared.
+Start with 5 CP. Maximum 10 CP. Earn 3 CP per floor cleared.
 
 ### Unsupervised Expeditions
 
@@ -285,27 +285,31 @@ Your choices can help or hinder your expedition!
 
 ### When Heroes Hit 0 HP
 
-A **death save** determines survival:
+A **death save** determines survival (see [Heroes Guide](heroes.md) for full details):
 
 ```
-Base: 50%
-+ VIT × 1%
-+ LCK × 0.5%
-+ Supervised: +20%
-+ Cleric in party: +10% each
-+ Ally intervene: May take hit instead
+Base: 50% (clamped 5-95%)
++ Cleric in party: +15%
++ Supervised mission: +10%
++ Is a Cleric (Divine Favor): +10%
++ Lucky trait: +5%
++ VIT: +1% per 5 VIT (max +5%)
++ LCK: +1% per 5 LCK (max +5%)
+- Cursed trait: -10%
 ```
 
 ### Injury Severity
 
-| Severity | Duration | Penalty |
-|----------|----------|---------|
-| Minor | 1-3 days | -5% stats |
-| Moderate | 3-10 days | -10% stats |
-| Severe | 10-30 days | -20% stats |
-| Critical | 10+ days | -30% stats |
+| Roll | Severity | Recovery |
+|------|----------|----------|
+| 1-30 | Crippling | 14 days |
+| 31-50 | Severe | 7 days |
+| 51-70 | Moderate | 5 days |
+| 71-85 | Light | 3 days |
+| 86-95 | Scratches | 1 day |
+| 96-100 | None | 0 days |
 
-Injuries require rest or medical treatment at the Infirmary.
+Roll is modified by VIT, Cleric presence, Infirmary level, and traits. See [Heroes Guide](heroes.md) for full modifiers.
 
 ---
 
@@ -347,6 +351,37 @@ Run multiple expeditions simultaneously:
 | S | 8 |
 
 Only one can be supervised per night.
+
+---
+
+## World Boss Raids
+
+When a World Boss spawns, you can organize a multi-party raid from the Guild Screen.
+
+**Raid Formation:**
+- 3 party slots (Parties 1-2 required, Party 3 optional)
+- 4-8 heroes per party, minimum 12 heroes total
+- Parties rotate every 4 turns
+- Inactive parties heal 5% HP per turn while benched
+- No permadeath — defeated heroes go to Infirmary (1-3 days recovery)
+
+Boss HP carries over between party rotations. Coordinate your parties to sustain damage through the fight.
+
+---
+
+## Weekly Heroic Rotation
+
+Three heroic dungeons rotate weekly (resets Sunday 00:00 UTC):
+
+| Tier | Stars | Level Offset | Name |
+|------|-------|-------------|------|
+| Heroic Trial | ⭐⭐⭐ | Base level | Entry-level heroic |
+| Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 | Mid-tier heroic |
+| Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 | Top-tier heroic |
+
+Each tier has a randomly selected heroic modifier and environment. Base level scales with your highest hero level (minimum 80). See [Heroic Dungeons Guide](heroic-dungeons.md) for modifier details.
+
+Access the weekly rotation from Mission Board → Heroic filter (🔥).
 
 ---
 

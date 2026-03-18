@@ -14,7 +14,7 @@ From the main menu you can:
 
 ## Guild Screen
 
-The Guild Screen is your home base. It's divided into several areas:
+The Guild Screen is your home base — the one screen you'll see more than any other, and the one the Guild Clerk spent considerable effort organizing. It's divided into several areas:
 
 ### Top Bar
 
@@ -81,7 +81,7 @@ Access dungeons and contracts here. The Mission Board defaults to a **World Map*
 
 ## Hero Details
 
-When you select a hero:
+When you select a hero, you get a comprehensive view of everything they are, everything they own, and everything they've done. It is, in the Guild Clerk's opinion, the most informative screen in the game:
 
 ### Gems Tab
 
@@ -98,6 +98,8 @@ When you select a hero:
 - Recent social events
 
 ### Career Tab
+
+The Career tab exists because the Guild Clerk wanted receipts.
 
 - Mission history and statistics
 - Veteran rank and progress
@@ -221,6 +223,8 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
+The Guild Clerk is mildly surprised that anyone reads this section, but pleasantly so.
+
 | Key | Action |
 |-----|--------|
 | **Space** | Pause/Resume (combat) |
@@ -258,8 +262,8 @@ At any crafting station:
 
 ### Gameplay
 
-- Skip Intro (skip opening cinematic on New Game)
-- Show Advisor Tips (Quillsworth provides tips as you discover game systems)
+- Skip Intro (skip opening cinematic on New Game — the Guild Clerk takes no position on this, but does note that the intro was expensive to produce)
+- Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
 
 ---
 

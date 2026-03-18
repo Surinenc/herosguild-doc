@@ -30,9 +30,9 @@ The guild has 10 crafting station types:
 | **Lumber Mill** | Wood processing, bows, prosthetics | Leatherworking |
 | **Smelter** | Ore processing, ingots | Blacksmithing |
 
-### Station Levels
+### Station Levels (Base)
 
-Each station level reduces crafting time by 10% and unlocks the next material tier:
+Each crafting station has an internal level that reduces crafting time by 10% per level and unlocks material tiers:
 
 | Level | Time Modifier | Tier Unlocked | Quality Bonus |
 |-------|---------------|---------------|---------------|
@@ -42,7 +42,52 @@ Each station level reduces crafting time by 10% and unlocks the next material ti
 | 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
 | 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-This formula applies uniformly to all 10 station types (Forge, Armory, Tannery, Loom, Alchemy Lab, Kitchen, Enchanting Table, Jeweler Bench, Lumber Mill, Smelter).
+This applies uniformly to all 10 station types.
+
+### Facility Upgrades (Stacking Bonuses)
+
+Guild facility upgrades provide **additional** speed and quality bonuses on top of station-level modifiers. These are separate systems that stack.
+
+**Forge Facility** (metals, weapons, armor):
+
+| Level | Name | Speed | Quality Bonus |
+|-------|------|-------|---------------|
+| 1 | Simple Forge | 1.0× | - |
+| 2 | Blacksmith Forge | 1.15× | - |
+| 3 | Master Forge | 1.3× | +10% |
+| 4 | Dwarven Forge | 1.5× | +20% |
+| 5 | Legendary Forge | 2.0× | +30% |
+
+**Workshop Facility** (leather, cloth, wood — covers Tannery, Loom, Lumber Mill stations):
+
+| Level | Name | Speed | Quality Bonus |
+|-------|------|-------|---------------|
+| 1 | Basic Workshop | 1.0× | - |
+| 2 | Crafting Workshop | 1.2× | +5% |
+| 3 | Artisan Workshop | 1.4× | +10% |
+| 4 | Master Workshop | 1.6× | +15% |
+| 5 | Grand Workshop | 2.0× | +20% |
+| 6 | Mythic Workshop | 2.5× | +30% |
+
+**Alchemy Lab Facility** (potions, elixirs):
+
+| Level | Name | Speed | Potency Bonus |
+|-------|------|-------|---------------|
+| 1 | Brewing Station | 1.0× | - |
+| 2 | Alchemy Corner | 1.2× | - |
+| 3 | Alchemy Lab | 1.4× | +10% |
+| 4 | Grand Laboratory | 1.6× | +20% |
+| 5 | Arcane Laboratory | 2.0× | +30% |
+
+**Enchanting Table Facility** (enchantments, jewelry):
+
+| Level | Name | Enchant Power |
+|-------|------|---------------|
+| 1 | Rune Desk | 1.0× |
+| 2 | Enchanting Altar | 1.2× |
+| 3 | Arcane Workshop | 1.4× |
+| 4 | Mystic Chamber | 1.7× |
+| 5 | Ley Nexus | 2.0× |
 
 ### Unlocking Stations
 

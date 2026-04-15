@@ -84,6 +84,45 @@ Recruitment hub, morale booster, and the place where most guild drama begins (an
 | Gambling | Variable | +5 (win) / -3 (loss) | None |
 | Bard Night | 100g | +8 mood | 3 days |
 
+#### Nightly Decisions (Tavern Decision Engine)
+
+Each night, the Tavern presents 6-8 situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Note: there is no history log for tavern decisions — once the night passes, the outcomes are final and unrecorded.
+
+**Attention Points per Night:**
+
+| Tavern Level | Points |
+|-------------|--------|
+| 1-2 | 3 |
+| 3-4 | 4 |
+| 5+ | 5 |
+
+Each decision costs 1-2 points. You won't have enough to address everything — prioritisation is the point.
+
+**Decision Types:**
+
+| Decision | Cost | Trigger | Outcome (Success) | Skip Penalty |
+|----------|------|---------|-------------------|-------------|
+| Counsel Hero | 2 | Hero mood < 35 or social need < 40 | +6 mood | -3 mood |
+| Mediate Conflict | 2 | Two heroes are rivals or worse | +3 mood each, +5 relationship | -3 relationship |
+| Break Up Fight | 2 | Rivals with relationship < -50 | +3 relationship | -3 relationship |
+| Calm Volatile | 2 | Volatile hero with mood < 40 | +5 mood | -4 mood |
+| Comfort Injured | 2 | Hero recovering from injuries | +6 mood, -1 day recovery | -2 mood |
+| Mentor Session | 2 | Veteran (50+) and rookie (< 20) present | XP for student, +3 mood for mentor | None |
+| Host Feast | 2 | Gold available | +5 mood (all heroes) | None |
+| Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
+| Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
+| Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | -2 relationship |
+| Celebrate Romance | 1 | Lovers/married with recent milestone | +5 mood, +5 relationship | -2 mood |
+| Welcome Recruit | 1 | Hero joined < 7 days ago | +5 mood, +2 relationship (all) | -3 mood |
+| Drinking Buddy | 1 | Two drinking buddies present | +3 mood, +4 relationship | None |
+| Training Partners | 1 | Two heroes both training | +2 mood, +5 training progress | None |
+| Address Gossip | 1 | Hero with Gossip trait | Gossip stopped, -1 mood (reprimand) | -3 random relationship |
+| Share Loot | 1 | Guild has > 5,000g (costs 500g) | +3 mood (all heroes) | None |
+| Tell War Stories | 1 | Always available | +10 XP for low-level heroes | None |
+| Eavesdrop | 1 | Always available | Reveals social intel | None |
+
+**Cooldowns:** Each specific hero-situation combination has a 3-night cooldown, so you won't see the same problem with the same heroes every night — just similar problems with different heroes.
+
 ### Training Yard
 
 Where heroes train and spar. The sounds of practice combat are indistinguishable from actual combat, which says something about the quality of training.
@@ -174,6 +213,78 @@ Provides mood bonuses and funeral services — two things that, in the adventuri
 - Memorial services for fallen heroes
 - Daily mood bonus for all heroes
 - Blessing buffs before expeditions
+
+---
+
+## Guild Identity & Moral Events
+
+Your guild develops a moral identity over time, shaped by the decisions you make when events arise. This isn't cosmetic — your guild's moral stance affects hero morale, shop prices, and which heroes approve or disapprove of your leadership.
+
+### Moral Axes
+
+Three axes define your guild's character, each ranging from -100 to +100:
+
+| Axis | Positive (+) | Negative (-) |
+|------|-------------|-------------|
+| **Valor / Cunning** | Brave, direct, honourable | Pragmatic, deceptive, strategic |
+| **Wealth / Glory** | Profit-driven, mercantile | Fame-seeking, generous |
+| **Order / Freedom** | Disciplined, structured | Independent, chaotic |
+
+Your position on each axis shifts based on event decisions. There is no right answer — every position has trade-offs.
+
+### Moral Events
+
+Starting from day 10, moral events appear randomly (roughly every 5-7 days). You'll see up to 3 pending events at once. Each presents a situation with multiple options, and each option shifts your moral axes and carries consequences.
+
+**Event Categories:**
+
+| Category | Theme |
+|----------|-------|
+| Guild Dilemmas | Internal policy decisions |
+| Hero Conflicts | Interpersonal disputes requiring judgement |
+| Mission Moral | Ethical choices arising from missions |
+| Resource Decisions | How to spend or allocate guild resources |
+| External Threats | Outside forces demanding a response |
+
+Events have deadlines — ignore them and the default option resolves automatically. Same events won't repeat for 10 days.
+
+**Viewing Events:** Open the Guild Events screen to see two tabs — **Active** (pending events awaiting your decision) and **History** (a log of all past decisions). The history shows the day, your chosen option, which heroes were involved, axis shifts with colour-coded badges, gold changes, and whether the event was auto-resolved because you ignored it.
+
+### Hero Reactions
+
+Heroes react to your moral decisions based on their personality traits:
+
+| Trait | Approves | Disapproves |
+|-------|----------|-------------|
+| Kind | Valor shifts | Cunning shifts |
+| Psychopath | Cunning shifts | Valor shifts |
+| Greedy | Wealth shifts | Glory shifts |
+| Empathic | Glory shifts | Wealth shifts |
+| Loyal | Order shifts | Freedom shifts |
+| Volatile | Freedom shifts | Order shifts |
+
+Approving heroes gain mood; disapproving heroes lose it. The mood change scales with the size of the axis shift (roughly 1 mood per 3 axis points).
+
+### Consequences
+
+Event options can trigger a range of effects:
+
+- **Gold changes** — gain or lose gold
+- **Reputation changes** — guild reputation shifts
+- **Hero effects** — promote, heal, or grant items to specific heroes
+- **Facility boosts** — bonus XP or levels to a facility
+- **Recruit heroes** — new heroes join the guild
+- **Chain events** — some decisions trigger follow-up events days later
+
+### Shop Discounts
+
+A guild strongly aligned with Wealth earns shop discounts:
+
+| Wealth Axis | Price Modifier |
+|------------|---------------|
+| 60+ | 10% discount |
+| 30+ | 5% discount |
+| Below 30 | Standard prices |
 
 ---
 
@@ -422,6 +533,30 @@ The Guild Chronicle (Guild Screen → Guild Stats) tracks lifetime statistics fo
 - Sortable table with columns: Hero, Mood, Friends, Rivals, Drinks, Days Off, Addiction, Background
 
 Click any column header to sort. Hover on Friends/Rivals columns to see relationship names.
+
+### Guild Hero Ranks
+
+Each hero holds a guild rank that advances automatically based on time served and missions completed:
+
+| Rank | Days in Guild | Missions Completed |
+|------|--------------|-------------------|
+| Recruit | 0 | 0 |
+| Member | 50 | 25 |
+| Senior | 150 | 75 |
+| Officer | 300 | 200 |
+| Leader | 500 | 400 |
+
+Both thresholds must be met for promotion. A hero who has completed 400 missions but only served 200 days remains an Officer until day 500.
+
+### Chronicle Entries
+
+The chronicle tracks 14 event subtypes across three categories:
+
+- **Combat:** First kill, boss kill, biggest crit, near-death, intervene save, worst injury
+- **Social:** Bond formed, bond lost, romantic milestone, mental break
+- **Guild:** Mission milestone, crafting masterwork, facility contribution, rank promotion, ascendancy trial
+
+Accumulating 50+ entries earns the **Legend** title (+3 to all stats). See [Chronicle Titles](heroes.md#chronicle-titles) for all title bonuses.
 
 ---
 

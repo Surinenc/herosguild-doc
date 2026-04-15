@@ -31,18 +31,18 @@ The Guild Clerk has watched the Spire leaderboard with morbid fascination. The n
 
 ### Enemy Level
 
-Enemies start at level 100 and climb steadily. By floor 50, they're level 125 — comfortably stronger than most heroes who haven't been grinding Paragon points with religious dedication.
+Enemies start at level 100 and climb steadily. By floor 50, they're level 137 — comfortably stronger than most heroes who haven't been grinding Paragon points with religious dedication.
 
 ```
-Enemy Level = 100 + floor(Floor × 0.5)
+Enemy Level = 100 + floor(Floor × 0.75)
 ```
 
 | Floor | Enemy Level |
 |-------|-------------|
 | 1 | 100 |
-| 10 | 105 |
-| 50 | 125 |
-| 100 | 150 |
+| 10 | 107 |
+| 50 | 137 |
+| 100 | 175 |
 
 ### Difficulty Tier
 

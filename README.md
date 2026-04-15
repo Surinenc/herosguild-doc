@@ -13,6 +13,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Combat System](guides/combat.md) - Turn-based tactical combat explained
 - [Equipment & Items](guides/equipment.md) - Gear, gems, and item rarities
 - [Skill Gems](guides/skills.md) - Active and support gem system
+- [Passive Tree](guides/passive-tree.md) - The 354-node passive progression system
 - [Ascendancy Paths](guides/ascendancy.md) - Hero specializations
 
 ### Guild Management

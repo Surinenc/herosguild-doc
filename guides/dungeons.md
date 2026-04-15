@@ -354,6 +354,34 @@ Only one can be supervised per night.
 
 ---
 
+## Prestige Missions
+
+Once your guild reaches level 50 and 2,000 reputation, Prestige Missions begin appearing on the mission board. These are the endgame's way of rewarding guilds that have earned the right to be taken seriously — and punishing those that overestimate themselves.
+
+The system only offers the **highest tier** your guild qualifies for, so you can't grind easy prestige missions with an overpowered roster.
+
+| Tier | Type | Min Level | Min Reputation | Rep Multiplier | Gold Multiplier | Duration |
+|------|------|-----------|---------------|---------------|----------------|----------|
+| 1 | Guild Contract | 50 | 2,000 | 3x | 2.5x | 3 days |
+| 2 | Legendary Hunt | 60 | 5,000 | 5x | 4x | 5 days |
+| 3 | World Threat | 70 | 10,000 | 8x | 5x | 7 days |
+| 4 | Championship | 80 | 15,000 | 6x | 3x | 2 days |
+| 5 | Ancient Secret | 90 | 25,000 | 10x | 6x | 10 days |
+
+**Guild Contract** — High-value contracts from prestigious clients. The pay is excellent and the reputation boost respectable.
+
+**Legendary Hunt** — Tracking mythical creatures. Names like "Hunt the Elder Dragon" and "Slay the Lich Emperor" should give you an idea of the difficulty.
+
+**World Threat** — The fate-of-the-realm missions. Demon invasions, void rifts, that sort of thing. The reputation multiplier (8x) reflects the stakes.
+
+**Championship** — Tournament-style challenges. Shorter than other prestige missions (2 days) but with strict level requirements.
+
+**Ancient Secret** — The rarest and most rewarding prestige missions. Exploration-type missions to uncover lost knowledge, with a 10x reputation multiplier. You'll need level 90 heroes and 25,000 reputation to even see these.
+
+Each prestige mission also rewards 5 guaranteed materials, with tier scaling based on hero level.
+
+---
+
 ## World Boss Raids
 
 When a World Boss spawns, you can organize a multi-party raid from the Guild Screen. This is the guild's way of saying "all hands on deck" — and meaning it literally.

@@ -388,6 +388,25 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 | Champion | 100-199 | +25 | 1.3× | 1.15× | +12% |
 | Legend | 200+ | +40 | 1.5× | 1.2× | +15% |
 
+### Chronicle Titles
+
+Heroes earn titles by achieving specific milestones tracked in their Chronicle. Unlike veteran ranks, titles are permanent achievements with concrete gameplay bonuses — the game's way of rewarding heroes who have survived long enough to have a story worth telling.
+
+| Title | Trigger | Bonus |
+|-------|---------|-------|
+| **Dragonslayer** | Kill a dragon-type boss | +10% damage vs Dragons |
+| **Heartbroken** | Lose a partner to death | +8% all damage |
+| **Veteran** | Complete 100 missions | +5% XP to lower-level allies |
+| **Ironhide** | Survive 5 near-death experiences | +50 max HP |
+| **Oathbound** | Form an OathSworn bond | +8% damage with oath partner |
+| **Master Artisan** | Craft 3 Masterwork items | +10 crafting quality |
+| **Shield Brother** | Save 10 allies via Intervene | +15% Intervene chance |
+| **Nemesis Hunter** | End a Blood Feud | +10% damage vs Humanoids |
+| **Survivor** | Recover from a mental break | -20% negative mood impact |
+| **Legend** | Accumulate 50+ chronicle entries | +3 to all stats |
+
+Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+3 all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it.
+
 ### Experience
 
 Heroes gain XP from:
@@ -401,7 +420,7 @@ Heroes gain XP from:
 | Level | Unlock |
 |-------|--------|
 | 1 | Starting abilities |
-| 5 | First passive tree point |
+| 5 | First passive tree point (see [Passive Tree](passive-tree.md)) |
 | 25 | Ascendancy Trial unlocked |
 | 30 | Advanced skills |
 | 50 | Second Ascendancy point, Elite content access |
@@ -459,9 +478,9 @@ High-level heroes gain reduced XP from content, slowing the final push. The univ
 
 ### Paragon System (Level 100+)
 
-After reaching level 100, heroes gain Paragon points to further specialize — by which point they've presumably learned that "dodge" is a viable combat strategy.
+After reaching level 100, heroes stop levelling and start earning Paragon points instead. This is the endgame progression system — slower, deliberate, and the difference between a hero who can survive the Abyssal Spire and one who decorates its floors.
 
-**XP Required:** 400,000 XP per Paragon point (roughly equal to level 99→100)
+Each Paragon point costs **400,000 XP** (roughly equivalent to level 99→100). Points are allocated into 8 categories, each capped at 50 investments:
 
 | Category | Bonus Per Point | Cap | Max Bonus |
 |----------|-----------------|-----|-----------|
@@ -474,7 +493,14 @@ After reaching level 100, heroes gain Paragon points to further specialize — b
 | Armor | +5 Armor | 50 | +250 Armor |
 | XP Gain | +2% | 50 | +100% |
 
-**Total Paragon Points:** 400 points to fully max all 8 categories
+**Total Paragon Points:** 400 points to fully max all 8 categories.
+
+**Strategy Notes:**
+- **XP Gain first** — investing early in XP Gain (up to +100%) dramatically accelerates all future Paragon point acquisition. The maths is compelling.
+- **Primary stat second** — dump into your class's primary stat (STR for Warriors, DEX for Rogues/Rangers, INT for Mages/Clerics/Necromancers) for immediate combat impact.
+- **Vitality for Spire pushers** — +200 VIT at max is the difference between surviving floor 100+ and not. The Spire scales enemies to level 175 at floor 100; your heroes need the health pool.
+- **Crit for damage dealers** — +25% crit chance and +50% crit damage together create multiplicative scaling that outperforms flat stat investment at high gear levels.
+- **Armor is situational** — +250 armor matters most for frontline heroes absorbing hits; backline heroes benefit more from offensive stats.
 
 ---
 

@@ -60,7 +60,7 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 
 **Modifiers Applied (multiplicative):**
 - Skill damage percentage (e.g., Power Attack = 150%)
-- Passive tree bonuses
+- [Passive tree](passive-tree.md) bonuses
 - Weapon proficiency (0-38% at max level 20)
 - Skill proficiency (0-30% at max level 20)
 - Monster knowledge (up to +20%)
@@ -111,6 +111,17 @@ Energy Shield = INT × 5
 - Absorbs all damage before HP is touched
 - Recharges 10% of max ES per round if not hit that round
 - Other classes have 0 base energy shield (can gain from gear)
+
+### Guardian Shield
+
+Certain ascendancy and passive tree effects grant the **Heal Grants Shield** bonus — when a hero heals an ally, a percentage of the heal amount is applied as a temporary shield (bonus HP that absorbs damage before the hero's actual health is touched).
+
+- Stacks with multiple heals
+- Absorbed damage is reduced before reaching HP or Energy Shield
+- The `shieldAbsorbBonus` stat makes shields absorb more efficiently (shields take less damage per point absorbed)
+- Separate from Energy Shield — Guardian Shield comes from healing, Energy Shield comes from INT
+
+This is primarily a Cleric mechanic (Prophet and Paladin ascendancy paths), and the reason well-supported parties survive significantly longer than ones that consider healing optional.
 
 ### Life Steal
 
@@ -338,6 +349,18 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 | Freeze | 1 turn | Skip turn (25% chance from Frost Nova) |
 | Shock | 2 turns | Target takes +20% damage |
 | Weaken | 3 turns | Reduced damage dealt |
+
+### Elemental Procs
+
+Skills with elemental damage types have a chance to trigger corresponding status effects. The proc chance comes from gear, passive tree, and ascendancy bonuses:
+
+| Damage Type | Proc Effect | What It Does |
+|------------|-------------|-------------|
+| **Fire** | Ignite | Applies Burn (10 fire damage/turn for 3 turns) |
+| **Cold** | Freeze | Applies Stun for 1 turn |
+| **Lightning** | Shock | Target takes +20% increased damage for 2 turns |
+
+A fire skill with 30% ignite chance will proc Burn roughly every third hit. Freeze chance stacks from gear and ascendancy sources (the `freezeChance` combat effect). These procs are separate from on-hit effects — a fire skill can both ignite and trigger on-hit bleed if you have both stats.
 
 ### On-Hit Effects
 

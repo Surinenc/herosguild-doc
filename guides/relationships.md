@@ -262,17 +262,49 @@ Needs below their critical threshold actively decrease mood.
 
 ## Mental Breaks
 
-When mood drops critically low, heroes may have what the Guild Clerk's handbook diplomatically refers to as "an episode":
+When mood drops critically low, heroes may have what the Guild Clerk's handbook diplomatically refers to as "an episode." The game tracks 8 break types, each with different severity and duration.
 
-| Break | Effect | Recovery |
-|-------|--------|----------|
-| Tantrum | May damage property | 1 day |
-| Hiding | Won't work | 2 days |
-| Berserk | May fight allies | Until calmed |
-| Catatonic | Cannot function | 3+ days |
-| Breakdown | Leaves guild | Permanent |
+### Trigger Conditions
 
-**Prevention:** Keep mood above "Poor"!
+Mental breaks can only occur when mood drops below **30** (critical zone). The chance increases with:
+
+| Factor | Effect on Break Chance |
+|--------|----------------------|
+| Base chance | 5% |
+| Per day at low mood | +3% per day |
+| Mood below 20 | +10% |
+| Mood below 10 | +20% |
+| Recently lost loved one | +15% |
+| Per close friend | -2% (protective) |
+
+Break chance is capped at 80%. Keep mood above 30 to prevent breaks entirely.
+
+### Break Types
+
+| Break | Duration | Weight | Effect |
+|-------|----------|--------|--------|
+| Desertion | Permanent | 15% | Hero leaves the guild |
+| Berserk | 1 day | 10% | Attacks random allies in combat |
+| Catatonic | 3-7 days | 15% | Cannot function, loses turns in combat |
+| Binge | 2-4 days | 15% | Goes on a drinking spree |
+| Insulting | 1-2 days | 15% | Insults other heroes, damages relationships |
+| Hiding | 2-5 days | 10% | Refuses to leave quarters |
+| Wandering | 1-3 days | 10% | Wanders off, unavailable |
+| Confession | Instant | 10% | Blurts out a secret, one-time relationship impact |
+
+### Combat Impact
+
+Mental breaks affect heroes mid-combat:
+- **Berserk** heroes attack random allies for full damage
+- **Catatonic** heroes freeze and lose their turn completely
+- Other break types primarily affect availability outside of combat
+
+### Prevention
+
+- Keep mood above 30 — this is the absolute threshold
+- Assign close friends to the same guild activities (each friend reduces break chance by 2%)
+- Address low mood quickly — the chance compounds at +3% per day
+- Watch for risk factors: recent loss of a loved one adds +15% break chance
 
 ---
 
@@ -305,6 +337,189 @@ Heroes have personality traits affecting relationships. These traits are, regret
 | Romantic | More likely to form couples |
 | Competitive | Forms rivalries easily |
 | Independent | Fewer social interactions |
+
+---
+
+## Equipment Attachment
+
+Heroes develop emotional bonds with their equipment over time. The longer they wear something, the less enthusiastic they'll be about giving it up. This is, from a management perspective, inconvenient.
+
+### Attachment Levels
+
+| Level | Time Required | Rarity Shortcut | Mood on Removal | Mood While Worn |
+|-------|--------------|----------------|----------------|----------------|
+| None | < 3 days | — | 0 | 0 |
+| Comfortable | 3+ days | Rare+ | -5 | 0 |
+| Favorite | 14+ days | Epic+ | -10 | +3 |
+| Prized | 30+ days | Legendary | -20 | +5 |
+| Soulbound | Sentimental only | — | -35 | +8 |
+
+Attachment builds through two paths: **time equipped** and **item rarity**. A Legendary weapon is instantly Prized; an Epic item starts as a Favorite. The highest of the two paths wins.
+
+### Sentimental Items
+
+Some items become Soulbound through events rather than time:
+
+- **Gift** — received from a romantic partner or close friend
+- **Memorial** — belonged to a fallen guild member
+- **First Kill** — used to slay a significant boss
+- **Saved Life** — the hero survived a near-death thanks to this item
+- **Family Heirloom** — brought from their background
+
+Soulbound items cannot be removed without severe mood penalties (-35). Heroes will actively resist, and their complaints about it will be memorable.
+
+### Trait Effects
+
+- **Greedy** heroes attach at 2x speed (14 days = Prized instead of Favorite)
+- **Ascetic** heroes never form attachments — swap their gear freely
+
+### Removal Mood Effects
+
+Removing a Favorite or higher item causes a lingering mood penalty:
+
+| Lost Level | Mood Penalty | Duration |
+|-----------|-------------|---------|
+| Favorite | -8 | 3 days |
+| Prized | -12 | 5 days |
+| Soulbound | -35 (immediate) | — |
+
+Heroes also complain about equipment they find aesthetically displeasing (-5 mood while worn).
+
+---
+
+## Alcohol & Addiction
+
+The Tavern serves drinks. Heroes drink them. Sometimes, they drink too many of them. The game tracks intoxication, tolerance, addiction, and hangovers with the kind of detail that suggests the developers have Opinions about pub culture.
+
+### Drunk Levels
+
+Intoxication is tracked on a 0-100 scale:
+
+| Level | Range | Can Mission? | Social | Accuracy | Description |
+|-------|-------|-------------|--------|----------|-------------|
+| Sober | 0-20 | Yes | +0 | +0 | Clear-headed |
+| Tipsy | 21-40 | Yes | +10 | -5 | Pleasantly relaxed |
+| Drunk | 41-60 | Yes | +15 | -15 | Confident, poor judgement |
+| Hammered | 61-80 | **No** | +5 | -40 | Trouble with basic motor functions |
+| Blackout | 81-100 | **No** | -20 | -80 | Will remember nothing tomorrow |
+
+Heroes who are Hammered or Blacked Out cannot be sent on missions. A Tipsy hero has better social interactions but slightly worse aim — a trade-off the game considers fair.
+
+### Drinks
+
+| Drink | Intoxication | Addiction Risk | Price | Notes |
+|-------|-------------|---------------|-------|-------|
+| Tavern Ale | +10 | 2 | 2g | Reliable, affordable |
+| Honey Mead | +12 | 2 | 4g | Sweet enough to trick you |
+| House Wine | +15 | 3 | 5g | Supposedly from grapes |
+| Dwarven Stout | +25 | 5 | 8g | Could dissolve a spoon |
+| The Mystery Special | +35 | 8 | 10g | Contents unknown |
+| Lord's Brandy | +30 | 6 | 15g | Drunk and pretentious |
+| Goblin's Regret | +50 | 12 | 20g | Named for the inventor's last words |
+
+### Tolerance
+
+Tolerance builds with drinking — higher tolerance means it takes more to get drunk, but also produces worse hangovers:
+
+| Level | Effect |
+|-------|--------|
+| Lightweight | Gets drunk easily, clears fast |
+| Normal | Standard processing |
+| Seasoned | Takes more to get drunk, longer hangovers |
+| Ironclad | Legendary tolerance, massive hangovers |
+
+### Hangovers
+
+The morning after. Hangovers affect mood, accuracy, energy, and — at higher levels — may cause vomiting in combat.
+
+| Level | Mood | Accuracy | Energy Drain | Vomit Risk |
+|-------|------|----------|-------------|-----------|
+| Mild | -3 | -5 | -10 | 0% |
+| Moderate | -8 | -15 | -25 | 5% |
+| Severe | -15 | -25 | -40 | 20% |
+| Death's Embrace | -25 | -40 | -60 | 50% |
+
+### Addiction
+
+Repeated drinking builds addiction (0-100 scale). Without alcohol, addicted heroes suffer withdrawal:
+
+| Level | Mood Penalty | Shakes (Accuracy) | Days to Recover | Mission Refusal Chance |
+|-------|-------------|-------------------|----------------|----------------------|
+| Dabbler | -2 | 0 | 3 | 0% |
+| Regular | -5 | -5 | 7 | 5% |
+| Heavy | -12 | -15 | 14 | 15% |
+| Addicted | -25 | -30 | 30 | 40% |
+
+Recovery requires going without drinks for the listed number of days. An Addicted hero needs a full month of sobriety — during which they'll be miserable, shaking, and may refuse to work 40% of the time.
+
+### Blackout Events
+
+Heroes who reach Blackout may experience random events they won't remember: losing gold, gaining or losing items, forming unexpected bonds, or doing things they'll later be embarrassed about. The details are revealed the next morning.
+
+---
+
+## Unavailability & Refusal
+
+Heroes are not, despite what the roster screen implies, available at all times. They have personal lives, grudges, hangovers, and occasional existential crises. The game tracks three systems: **unavailability** (can't go), **refusal** (won't go), and **insistence** (determined to go whether you like it or not).
+
+### Unavailability
+
+A hero may be temporarily unavailable for social or personal reasons. Some can be overridden by the Guild Master — at a mood cost.
+
+| Reason | Description |
+|--------|-------------|
+| Personal Day | Needs a day off. For reasons. |
+| Romantic Escape | Gone off with their partner |
+| Sulking | After a rejection, breakup, or insult |
+| Hangover | Drank too much last night |
+| Bender | Extended drinking episode (addiction-related) |
+| Pilgrimage | Religious observance |
+| Mourning | Lost someone close |
+| Family Business | Vague "family matters" |
+| Runaway | Temporarily left the guild |
+| Mental Health | Recovering from trauma |
+
+Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty. Some reasons — like Mourning or Mental Health — cannot be overridden at all.
+
+### Mission Refusal
+
+Even available heroes may refuse specific missions:
+
+| Reason | Trigger | Severity |
+|--------|---------|----------|
+| Rival Conflict | Rival is on the team | Soft |
+| Ex Conflict | Ex-partner is on the team | Soft |
+| Enemy Conflict | Someone they hate is assigned | Hard |
+| Too Exhausted | Energy critically low | Soft |
+| Too Drunk | Currently intoxicated | Hard |
+| Location Trauma | Bad memories of this dungeon type | Hard |
+| Coward + Danger | Coward trait facing high-difficulty mission | Soft |
+| Mourning | Still grieving | Hard |
+| Low Mood | Mood too low to function | Soft |
+| Equipment Missing | Favourite or required gear unavailable | Soft |
+
+**Soft** refusals can be overridden with a mood penalty. **Hard** refusals cannot — the hero simply will not go.
+
+### Location Trauma
+
+Heroes who experience traumatic events in specific dungeon types (a party wipe in Crypts, a near-death in Caves) develop location trauma. They will refuse missions to those dungeon types until the trauma fades. Trauma has a severity scale of 1-10, with higher severity meaning longer recovery.
+
+### Insistence
+
+The opposite of refusal — sometimes heroes *insist* on joining a mission, and removing them costs mood:
+
+| Reason | Trigger |
+|--------|---------|
+| Vendetta | Enemy killed their friend |
+| Protective | Partner or best friend is assigned |
+| Best Friend in Danger | Best friend is going |
+| Prove Themselves | Recent humiliation, wants glory |
+| Revenge | Personal grudge against enemy type |
+| Rival Showing | Rival is going — must outshine them |
+| Favourite Activity | Mission type they enjoy |
+| Treasure Hunter | High-loot mission + Greedy trait |
+
+An insistent hero removed from the party suffers a mood penalty. Sometimes it's easier to just let them come.
 
 ---
 

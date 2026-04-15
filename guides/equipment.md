@@ -10,7 +10,7 @@ Each hero has 10 equipment slots:
 |------|-------|-------|
 | **Main Hand** | Weapons | Class-restricted |
 | **Off Hand** | Shields, Focus, Secondary | Class-restricted |
-| **Armor** | Plate, Mail, Leather, Robes | Class-restricted |
+| **Armor** | Plate, Mail, Leather, Cloth | Class-restricted |
 | **Head** | Helmets, Hoods, Hats | Universal |
 | **Boots** | Boots, Greaves, Shoes | Universal |
 | **Gloves** | Gauntlets, Gloves, Bracers | Universal |
@@ -71,6 +71,8 @@ Socket count rolls increase with item level. Base chance: `20% + item level × 1
 | Ranger | Bows, Crossbows, Spears |
 | Necromancer | Staves, Wands, Daggers |
 
+Heroes without a weapon equipped fight **Unarmed** (1-3 base damage). This is not recommended for anything except proving a point.
+
 ### Weapon Stats
 
 | Stat | Description |
@@ -108,7 +110,7 @@ Socket count rolls increase with item level. Base chance: `20% + item level × 1
 | **Plate** | Highest | Warrior | Warriors consider anything less to be "pajamas" |
 | **Mail** | High | Cleric, Ranger | A sensible compromise |
 | **Leather** | Medium | Rogue, Ranger | Rogues insist this is "tactical" |
-| **Robes** | Low | Mage, Necromancer | Mages consider anything heavier "excessive" |
+| **Cloth** | Low | Mage, Necromancer | Mages consider anything heavier "excessive" |
 
 ### Armor Stats
 

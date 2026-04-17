@@ -480,7 +480,7 @@ High-level heroes gain reduced XP from content, slowing the final push. The univ
 
 After reaching level 100, heroes stop levelling and start earning Paragon points instead. This is the endgame progression system — slower, deliberate, and the difference between a hero who can survive the Abyssal Spire and one who decorates its floors.
 
-Each Paragon point costs **400,000 XP** (roughly equivalent to level 99→100). Points are allocated into 8 categories, each capped at 50 investments:
+Each Paragon point costs **192,109 XP**. Points are allocated into 8 categories, each capped at 50 investments:
 
 | Category | Bonus Per Point | Cap | Max Bonus |
 |----------|-----------------|-----|-----------|

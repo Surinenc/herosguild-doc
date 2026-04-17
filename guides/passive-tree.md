@@ -106,11 +106,11 @@ Keystones are the tree's most dramatic nodes. Every keystone grants a powerful b
 |----------|---------|---------|
 | Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
 | Berserker Mastery (Warrior) | +19% Physical Damage, +30% Life Leech | -20% Max Life |
-| Sharpshooter Mastery (Ranger) | +57% Projectile Damage, +30% Crit Chance | -25% Melee Damage |
+| Sharpshooter Mastery (Ranger) | +57% Projectile Damage, +30% Crit Chance | -20% Max Life |
 | Lich Mastery (Necromancer) | +49% Chaos Damage, +39% Spell Damage | -25% Max Life |
-| Summoner Mastery (Necromancer) | +66% Minion Damage | -30% Spell Damage |
-| Frost Mastery (Mage) | +57% Spell Damage, +30 INT | -20% Max Life |
-| Inquisitor Mastery (Cleric) | +33% Holy Damage, +30% Crit Chance | -20% Max Life |
+| Summoner Mastery (Necromancer) | +66% Minion Damage, +33% Minion Life | -25% Damage |
+| Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |
+| Inquisitor Mastery (Cleric) | +33% Holy Damage, +30% Crit Chance | -15% Damage |
 
 Each class has two keystones per branch — one at the end of each branch path. You'll notice that many keystones trade max life for damage. The Spire leaderboard reflects this design philosophy: the top entries are all glass cannons, and the second page is full of cautionary tales.
 

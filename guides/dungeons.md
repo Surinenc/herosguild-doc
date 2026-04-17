@@ -175,7 +175,7 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 ### Party Size
 
 - **Minimum:** 1 hero (dangerous!)
-- **Maximum:** 8 heroes
+- **Maximum:** 6 heroes
 - **Recommended:** Stars + 2 (e.g., ⭐⭐⭐ = 5 heroes)
 
 ### Building a Good Party
@@ -242,19 +242,68 @@ Rogues with Detect Traps can spot these before triggering. Everyone else discove
 
 ---
 
-## Random Events
+## In-Dungeon Moral Events
 
-Dungeons feature choice-based events. Choose wisely — or at least entertainingly:
+Dungeons are full of choices. Not the comfortable kind, where both options are acceptable and failure is theoretical. The other kind — where you have to decide who you actually are, while something is bleeding nearby.
 
-| Event | Example Choices |
-|-------|-----------------|
-| **Ancient Shrine** | Pray (buff), Loot (gold + curse), Leave |
-| **Wounded Adventurer** | Help (info), Rob (gold), Ask (hint) |
-| **Suspicious Chest** | Open carefully, Smash, Leave |
-| **Magic Fountain** | Drink (heal), Fill flask (item) |
-| **Wandering Merchant** | Buy, Sell, Decline |
+There are 145+ moral events in the game, spread across seven environments. Each event presents three options with distinct tones: **benevolent**, **neutral**, and **aggressive**. The right choice depends on your build, your relationship with your heroes, and how much you care about the consequences lasting longer than the dungeon.
 
-Your choices can help or hinder your expedition!
+### How Events Work
+
+Events trigger in specific rooms based on:
+
+- **Environment** — each of the 7 dungeon types (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano) has its own event pool
+- **Difficulty** — some events only appear in harder dungeons
+- **Hero conditions** — trait-gated, mood-gated, bond-gated, and chronicle-title-gated events fire only when the right hero is present
+
+Each event offers three options. Consequences are immediate or persistent:
+
+| Consequence Type | Effect |
+|-----------------|--------|
+| **Heal / Damage** | Modifies a specific hero's HP |
+| **Spawn Enemies** | Adds combat encounter to the room |
+| **Grant Loot** | Awards items of common to epic rarity |
+| **Buff** | Applies a combat buff lasting N remaining rooms |
+| **Reveal Map** | Uncovers upcoming rooms |
+| **Mood Change** | Adjusts a hero's mood |
+| **Chronicle Entry** | Adds a permanent line to the hero's history |
+| **Axis Shift** | Changes your guild's position on the Valor/Wealth/Order axes (see Guild Identity) |
+| **Consequence Chain** | Schedules a follow-up event 5–30 dungeons later |
+
+### Hero-Specific Events
+
+Some events only fire when a particular hero is present. Triggers include:
+
+- **Trait-gated** — *Kind* heroes can negotiate; the event simply doesn't appear for anyone else
+- **Mood-gated** — Heroes with mood below 25 may trigger a Breaking Point event, requiring the party's support
+- **Bond-gated** — Rival pairs spark Argument events at forks; the guild master must pick a side
+- **Chronicle title-gated** — A *Dragonslayer* encountering dragon eggs faces a different decision than someone who just earned the title last week
+
+These events are personal. The text uses the hero's name, their title, their specific relationship with the party. Ignoring them is always an option. Not recommended.
+
+### Sacrifice Events
+
+The rarest event type. Sacrifice events (`minDifficulty: 4`) present situations where one hero can save the party by dying permanently. The confirmation dialogue requires two deliberate choices — the game will not let you do this accidentally.
+
+The alternative options deal significant damage to all heroes or carry their own risk. Sacrifice events are not a puzzle with a correct answer. They are exactly what they look like.
+
+### Environment Event Examples
+
+| Environment | Example Event | Stakes |
+|-------------|---------------|--------|
+| **Forest** | Wounded Traveler — help, rob, or leave | Heal or loot; axis shift |
+| **Cave** | Underground River — wade, bridge, find path | Take damage to scout ahead |
+| **Ruins** | Scholar's Ghost — help, banish, or listen | Knowledge buff or combat |
+| **Crypt** | Sealed Coffin — open, reinforce chains, steal silver | Epic loot or peace of mind |
+| **Swamp** | Witch's Hut — trade, burn, decline politely | Consequence chain if you annoy her |
+| **Tower** | Imprisoned Mage — free, leave caged, extract payment | Possible ally or possible betrayal |
+| **Volcano** | Fire Shrine — offer blood, offer gold, desecrate | Powerful buff at personal cost |
+
+### Persistent Consequences
+
+Choices made in dungeons echo outward. A hero who burned a witch's home has that in their chronicle. Freeing an imprisoned mage may trigger a follow-up event ten dungeons later — gratitude or revenge, depending on variables you've forgotten you set.
+
+Axis shifts accumulate. A guild that consistently chooses aggressive options drifts toward Chaos and Greed. Guild events, NPC reactions, and shop discounts reflect where you've landed. The dungeon isn't separate from the guild — it's where the guild gets built.
 
 ---
 

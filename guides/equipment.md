@@ -46,7 +46,7 @@ Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes wee
 | Mythic | 4 | 2.0× |
 | Ancestral | 5 | 2.5× |
 
-**Drop Requirements (all conditions must be met):**
+**Drop Requirements:** Higher-rarity items only appear when the content is difficult enough to justify them. The game takes the position that the equipment should be earned:
 
 | Rarity | Min Level | Min Stars | Min Tier |
 |--------|-----------|-----------|----------|
@@ -140,7 +140,7 @@ Armor trades mobility for survival. Warriors consider this an excellent trade. M
 
 ### Rings
 
-Rings provide stat bonuses and special effects. You can equip 2 rings.
+Two ring slots per hero, both treated as a personality statement. The Guild Clerk views them as stat bonuses.
 
 | Example | Rarity | Effect |
 |---------|--------|--------|
@@ -152,7 +152,7 @@ Rings provide stat bonuses and special effects. You can equip 2 rings.
 
 ### Amulets
 
-Amulets focus on HP, Mana, and powerful unique effects.
+Amulets focus on HP, Mana, and powerful unique effects — the equipment category that tends to matter most when the fight stops going to plan.
 
 | Example | Rarity | Effect |
 |---------|--------|--------|
@@ -175,6 +175,8 @@ Amulets focus on HP, Mana, and powerful unique effects.
 ---
 
 ## Consumables
+
+Items heroes use mid-combat when the situation has become urgent — which, in the Guild Clerk's experience, it always does. Pack them. Heroes who forget consumables tend to generate paperwork.
 
 ### Health Potions
 
@@ -238,7 +240,7 @@ Skill gems add new abilities to your hero when socketed:
 
 ### Socket Links
 
-Multiple sockets can be linked, allowing support gems to enhance skill gems:
+Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point:
 
 | Link | Effect |
 |------|--------|
@@ -319,7 +321,7 @@ Quality is determined by crafting skill or random drop luck.
 
 ## Enchanting
 
-Add magical properties to equipment at the Enchanter's Table. The process involves runes, mana crystals, and a faint but persistent humming that the enchanter insists is "perfectly normal."
+Add magical properties to equipment at the Enchanting Table. The process involves runes, mana crystals, and a faint but persistent humming that the enchanter insists is "perfectly normal." Items can only hold one enchantment per slot — choose deliberately, because replacing an enchantment discards the previous one.
 
 ### Weapon Enchantments
 
@@ -391,10 +393,10 @@ All items go to the central Guild Vault. From there you can:
 
 ### Tips
 
-1. **Match to Role** - Tank gear for Warriors, crit gear for Rogues
+1. **Match to Role** - Equipment built for a class performs better in that class's hands. This seems obvious until you see how heroes shop unattended.
 2. **Complete Sets** - Set bonuses are very powerful
 3. **Socket Skills** - Skill gems dramatically increase power
-4. **Upgrade Often** - Don't hoard low-level gear
+4. **Upgrade Often** - Sentimentality about old gear is the leading cause of preventable injuries
 5. **Check Quality** - A Superior Rare may beat a Normal Epic
 
 ---

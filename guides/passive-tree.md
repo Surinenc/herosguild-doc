@@ -22,7 +22,7 @@ The tree contains five types of nodes, listed here in ascending order of how exc
 
 ## Passive Points
 
-Heroes earn **1 passive point per level**, starting at level 1. The first point is automatically spent on your class starting node.
+Heroes earn **1 passive point per level**, starting at level 1. The first point is spent automatically on the class starting node, which is the tree's way of ensuring everyone begins with at least one correct decision.
 
 | Level | Total Points | Freely Allocatable |
 |-------|-------------|-------------------|
@@ -39,6 +39,8 @@ The tree is divided into six class regions arranged in a hexagonal layout. Each 
 
 ### Starting Node Bonuses
 
+Every hero begins on their class node. It cannot be removed, which saves considerable trouble later.
+
 | Class | Starting Stats |
 |-------|---------------|
 | **Warrior** | +50 STR, +50 Damage, +20% Physical Damage |
@@ -52,42 +54,42 @@ The tree is divided into six class regions arranged in a hexagonal layout. Each 
 
 Each class has three branches, offering distinct playstyles. You won't have the points to fully invest in all three — the tree demands commitment, or at least a convincing impression of it.
 
-**Warrior**
+**Warrior** — Three opinions on what a Warrior should be doing. They all involve hitting things; they disagree on whether to survive it.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Tank | Defensive mastery | Armor, max life, damage reduction |
 | Berserker | Aggressive sustain | Physical damage, life leech, crit |
 | Warlord | Combat leadership | Melee damage, attack power, strength |
 
-**Mage**
+**Mage** — Three schools of destruction, each convinced theirs is the correct element.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Fire | Destructive magic | Spell damage, intelligence |
 | Frost | Controlled power | Spell damage, survivability trade-offs |
 | Arcane | Mana mastery | Spell scaling, mana mechanics |
 
-**Rogue**
+**Rogue** — Three definitions of 'efficient'. They differ mainly on whether the target sees it coming.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Assassin | Precision killing | Critical strike chance and damage |
 | Shadow | Dark arts | Chaos damage, life leech |
 | Trickster | Agile combat | Damage, dexterity |
 
-**Ranger**
+**Ranger** — Three applications of the central Ranger philosophy: damage from somewhere safe.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Sharpshooter | Ranged dominance | Projectile damage, crit (reduced melee) |
 | Beast Master | Companion synergy | Minion damage and life |
 | Trapper | Tactical control | Damage, dexterity |
 
-**Cleric**
+**Cleric** — Three interpretations of divine power: protective, supportive, and the one that hits unexpectedly hard.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Paladin | Holy warrior | Holy damage, armor |
 | Prophet | Divine channeller | Mana regen, maximum mana |
 | Inquisitor | Righteous fury | Holy damage, critical strikes |
 
-**Necromancer**
+**Necromancer** — Three professional arrangements with death, ranked by how personally the hero gets involved.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Lich | Death magic | Chaos & spell damage (reduced max life) |
@@ -134,12 +136,12 @@ The six class regions are connected by diamond-shaped bridge paths — chains of
 
 | Bridge | Connects |
 |--------|----------|
-| Warrior ↔ Mage | Physical and magical synergy |
-| Mage ↔ Rogue | Spell and stealth hybridization |
-| Rogue ↔ Cleric | Shadow and holy combinations |
-| Cleric ↔ Ranger | Support and ranged fusion |
-| Ranger ↔ Necromancer | Beast and undead mastery |
-| Necromancer ↔ Warrior | Dark warrior builds |
+| Warrior ↔ Mage | A fighter who casts, or a caster who can absorb a hit — either direction is unusual, both are effective |
+| Mage ↔ Rogue | Arcane precision and close-range application; philosophical differences, shared disinterest in being seen |
+| Rogue ↔ Cleric | Shadow and holy — theologically awkward, mechanically effective |
+| Cleric ↔ Ranger | Divine support from a distance, which the Cleric finds professionally humbling |
+| Ranger ↔ Necromancer | Arrows and minions — more complementary than they appear, less explicable than they should be |
+| Necromancer ↔ Warrior | For heroes who want to destroy things and then make professional use of the remains |
 
 Crossing into another class's region costs travel points (you're spending nodes on connectors rather than stats), but unlocks access to their notable and keystone nodes. A Warrior who bridges into Mage territory can pick up spell damage nodes — unorthodox, effective, and precisely the sort of thing that makes build theorycrafting worth the time.
 
@@ -147,7 +149,7 @@ Crossing into another class's region costs travel points (you're spending nodes 
 
 ## Stat Modifier Stacking
 
-Passive tree bonuses stack using three distinct modifier types:
+Passive tree bonuses don't all stack the same way. Three modifier types govern how bonuses combine — a distinction that matters considerably more than it initially looks:
 
 | Type | Behaviour | Example |
 |------|-----------|---------|

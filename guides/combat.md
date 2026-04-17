@@ -16,6 +16,8 @@ Higher initiative means acting earlier, which is particularly useful for heroes 
 
 ### Round Flow
 
+Every round resolves in the same four phases, in the same order, without exception, regardless of hero preference:
+
 1. **Start of Turn** - Mana regenerates (5% of max mana)
 2. **Cooldown Tick** - All skill cooldowns decrease by 1
 3. **Actions** - Each combatant acts in initiative order
@@ -25,10 +27,10 @@ Higher initiative means acting earlier, which is particularly useful for heroes 
 
 | Action | Description |
 |--------|-------------|
-| **Attack** | Basic weapon attack against an enemy |
-| **Skill** | Use an equipped skill gem or class ability |
-| **Defend** | 50% damage reduction until next turn |
-| **Flee** | Attempt to escape (30% + DEX + LCK/2 chance) |
+| **Attack** | Basic weapon attack — the fallback when nothing more sophisticated is available, or when the Warrior decides nothing more sophisticated is necessary |
+| **Skill** | Use an equipped skill gem or class ability; the reason heroes carry skill gems in the first place |
+| **Defend** | 50% damage reduction until next turn; some heroes call this cowardice, others call it still being alive |
+| **Flee** | Attempt to escape (30% + DEX + LCK/2 chance); feels lower than it sounds when you're actually trying it |
 
 **Auto-Potions:** If a hero is below 50% HP at the start of their turn, they automatically drink a health potion (if available). This is, admittedly, the only consistently good decision most heroes make without supervision.
 
@@ -71,6 +73,8 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 - Damage variance (±10%)
 
 ### Critical Hits
+
+When the numbers align, attacks deal significantly more damage. The numbers do not always align:
 
 ```
 Crit Chance = 5% + (DEX / 20) + (LCK / 10) + bonuses
@@ -390,11 +394,11 @@ When a boss drops below a phase threshold:
 
 | Effect | Description |
 |--------|-------------|
-| Heal | Regenerate 10% HP |
-| Enrage | +20% damage permanently |
-| Summon | Spawn minion reinforcements |
-| Shield | +50% armor permanently |
-| AoE | Devastating attack on all heroes |
+| Heal | Recovers 10% HP. The boss is, in other words, not finished. |
+| Enrage | +20% damage, permanently. It does not calm down. |
+| Summon | Reinforcements arrive — the dungeon's way of noting the fight has not concluded |
+| Shield | +50% armor, permanently. The approach that was working needs adjusting. |
+| AoE | All heroes take significant damage simultaneously. This is the warning. |
 
 **Strategy:** Plan for phase transitions. Save defensive cooldowns for dangerous phases. If the boss starts glowing, that's generally a sign that things are about to become worse.
 
@@ -475,7 +479,7 @@ Some dungeon encounters start with enemies ambushing your party, which is deeply
 
 ### Victory
 
-All enemies defeated:
+All enemies defeated. The part everyone came for:
 - Gain gold drops
 - Gain XP (split among alive heroes)
 - Loot rolled per enemy
@@ -483,7 +487,7 @@ All enemies defeated:
 
 ### Defeat
 
-All heroes knocked out:
+All heroes knocked out. The dungeon has, in the technical sense, won:
 - Dungeon failed
 - Heroes may have injuries
 - Death saves rolled for 0 HP heroes
@@ -491,10 +495,10 @@ All heroes knocked out:
 
 ### Fled
 
-Successful escape:
+Successful escape — the tactical decision the Guild Clerk officially discourages and quietly recommends:
 - No rewards
 - Party safely exits
-- Better than a wipe! (The Guild Clerk's official position on the matter.)
+- Better than a wipe
 
 ---
 

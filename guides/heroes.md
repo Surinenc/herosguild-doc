@@ -22,7 +22,7 @@ The Warrior is your shield against danger, primarily because someone has to stan
 
 **Key Features:**
 - **High Threat** - Generates 1.5x aggro, keeping enemies focused on them
-- **Shield Wall** - Can reduce incoming damage by 50%
+- **Shield Wall** - Reduces incoming damage by 50%, which is still quite a lot of incoming damage
 - **Taunt** - Forces enemies to attack the Warrior
 - **Heavy Armor** - Wears plate for maximum protection
 
@@ -51,8 +51,8 @@ Mages command the elements to devastate groups of enemies. While possessing all 
 
 **Key Features:**
 - **Elemental Spells** - Fire, Ice, and Lightning magic
-- **AoE Damage** - Can hit multiple enemies at once
-- **Mana-Based** - Uses mana pool for abilities
+- **AoE Damage** - Can hit multiple enemies simultaneously, which is the most efficient use of a single spell and the most dangerous thing to do with friendly fire disabled
+- **Mana-Based** - Uses a mana pool for abilities; runs out at the worst possible moment
 - **Energy Shield** - INT × 5 energy shield absorbs damage before HP
 - **Glass Cannon** - High damage but low survivability
 
@@ -79,10 +79,10 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 | LCK | 9 |
 
 **Key Features:**
-- **High Crit Chance** - Built for critical strikes
-- **Backstab Bonus** - Extra damage from positioning
-- **Evasion** - Can dodge incoming attacks
-- **Stealth** - Access to stealth-based abilities
+- **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
+- **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
+- **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
+- **Stealth** - Access to stealth-based abilities; the combat log will look confusing to anyone watching
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
@@ -109,8 +109,8 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 **Key Features:**
 - **Ranged Attacks** - Fights safely from a distance
 - **Trap Detection** - Bonus to finding hidden dangers
-- **Consistent DPS** - Reliable damage output
-- **Versatile** - Can adapt to various situations
+- **Consistent DPS** - Reliable output from positions that arrows can reach and enemies cannot
+- **Versatile** - Adapts to most situations, primarily by remaining in the back of them
 
 **Best For:** Safe damage dealing, exploration, trap-heavy dungeons
 
@@ -142,7 +142,7 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 - **Death Save Bonus** - Allies have +15% survival chance
 - **Divine Favor** - +10% bonus to their own death saves
 
-**Healing Formula:**
+**Healing Formula:** For those who find it reassuring to know exactly how much someone else's suffering is worth in numbers:
 ```
 Heal Amount = Skill Base Heal + (INT × 0.5) + (Level × 6)
 ```
@@ -171,11 +171,11 @@ Necromancers command the forces of death, raising minions to fight for them whil
 | LCK | 8 |
 
 **Key Features:**
-- **Summon Undead** - Creates zombie and skeleton minions
-- **Life Drain** - Heals by damaging enemies
-- **Debuffs** - Weakens enemy capabilities
+- **Summon Undead** - Raises the fallen to fight again, which solves the enemy problem and the body problem simultaneously
+- **Life Drain** - Heals by dealing damage; the Necromancer considers this efficient
+- **Debuffs** - Arrives to encounters having already done some of the work
 - **Energy Shield** - INT × 5 energy shield absorbs damage before HP
-- **Dark Magic** - Unique spell school
+- **Dark Magic** - A spell school other heroes avoid discussing over dinner
 
 **Best For:** Players who like pet classes, attrition strategies, unique playstyles
 
@@ -418,6 +418,8 @@ Heroes gain XP from:
 - Training Yard (passive, slower)
 
 ### Level Milestones
+
+Most levels are just numbers. These ones come with something attached:
 
 | Level | Unlock |
 |-------|--------|

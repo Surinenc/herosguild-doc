@@ -24,7 +24,7 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 
 ### Mission Events (30% Chance per Pair)
 
-Each hero pair has a 30% chance of a relationship event during missions:
+Every mission is also a social experiment. Each hero pair has a 30% chance of a relationship event — the dungeon, it turns out, has strong opinions about who ends up getting along:
 
 | Event Type | Trust Change |
 |------------|--------------|
@@ -68,7 +68,7 @@ Each hero pair has a 30% chance of a relationship event during missions:
 
 ## Combat Bonuses
 
-Relationships affect combat performance:
+Relationships affect combat performance in both directions. Heroes who like each other fight better; heroes who don't fight worse; and heroes who actively hate each other make the entire enterprise measurably more dangerous:
 
 ### Positive Effects
 
@@ -94,38 +94,38 @@ Relationships affect combat performance:
 
 ## Special Bonds
 
-Beyond simple friendship, heroes can form special bonds:
+Beyond simple friendship, heroes can form special bonds — deeper entanglements with their own mechanics, bonuses, and, in some cases, spectacular failure modes:
 
 ### Lovers / Married
 
 - **How:** High trust + romantic events
 - **Bonus:** +15% combat stats together
-- **Risk:** Huge penalties if partner dies (Berserk, Broken)
+- **Risk:** Huge penalties if partner dies (Berserk, Broken); the guild does not recommend falling in love as a combat strategy
 - **Special:** Will always try to intervene
 
 ### Mentor / Student
 
 - **How:** Level gap + training together
-- **Bonus:** Student learns faster, mentor shares XP
+- **Bonus:** Student learns faster; mentor shares XP — the most reliable form of productivity in the guild
 - **Special:** Vengeful state if one dies
 
 ### Battle Brothers/Sisters
 
 - **How:** Many combats survived together
 - **Bonus:** +15% when adjacent, enhanced intervene
-- **Special:** Mutual protection
+- **Special:** Mutual protection — the kind forged by people who have seen each other at their worst and kept showing up
 
 ### Rivals
 
 - **How:** Similar achievements, competitive traits
-- **Bonus:** +10% when competing
+- **Bonus:** +10% when competing, which is always
 - **Risk:** May conflict over leadership
 
 ### Life Debt
 
 - **How:** After intervene saves life
 - **Bonus:** +30% intervene chance
-- **Special:** Automatic rescue attempts
+- **Special:** Automatic rescue attempts; the saved hero takes the concept seriously in a way that occasionally causes logistical problems
 
 ### Other Notable Bonds
 
@@ -148,12 +148,13 @@ The game tracks 28 bond types total. Additional important bonds include:
 
 ## The Intervene Mechanic
 
-When a hero would die, allies may intervene to save them.
+When a hero would die, allies may intervene to save them — a mechanic responsible for the most dramatic moments in the guild and the most dramatic entries in the Guild Clerk's incident reports.
 
 ### Requirements
 
+An intervene attempt requires all of the following, because goodwill alone is not enough:
 - Ally has trust 30+ with target
-- Ally is alive
+- Ally is alive (this requirement eliminates more candidates than expected)
 - Ally hasn't intervened this combat
 
 ### Intervene Chance
@@ -178,14 +179,14 @@ When a hero would die, allies may intervene to save them.
 
 1. Intervener takes 50% of killing blow damage
 2. Original target survives unharmed
-3. Massive trust boost
-4. Creates memorable moment
+3. Massive trust boost — the sort that tends to outlast everything else
+4. Creates the kind of moment that ends up in the Combat Log and, eventually, the Tavern stories
 
 ---
 
 ## Emotional Reactions in Combat
 
-Relationships trigger emotional states:
+Relationships trigger emotional states during combat — uncontrollable, unscheduled, and occasionally devastating. When someone important dies, the remaining heroes do not simply continue their turn:
 
 ### On Ally Death
 
@@ -214,7 +215,7 @@ Note: "Broken" appears as both a combat emotional state (triggered by trauma dur
 
 ## Mood System
 
-Each hero has mood that affects performance:
+Each hero has a mood value (0-100) that quietly applies a multiplier to everything they do. Happy heroes fight better, earn more, and complain less. Miserable heroes do the reverse — and occasionally leave:
 
 ### Mood States
 
@@ -244,19 +245,19 @@ Needs below their critical threshold actively decrease mood.
 
 ### Affecting Mood
 
-**Improve:**
-- Tavern activities
-- Successful missions
-- Good relationships
-- Comfortable barracks
-- Chapel bonus
+**Improve:** Things that remind heroes why they're here.
+- Tavern activities — the Guild Clerk considers these an investment, not an expense
+- Successful missions — nothing improves morale like surviving
+- Good relationships — heroes who like each other perform better, and feel better about performing
+- Comfortable barracks — adequate conditions are underrated until they're absent
+- Chapel bonus — spiritual morale boost; the Chapel does not provide guidance on why the mission went badly
 
-**Worsen:**
-- Failed missions
-- Ally deaths
-- Relationship conflicts
-- Overwork
-- Poor living conditions
+**Worsen:** Things that are harder to avoid than you'd think.
+- Failed missions — the consequences compound
+- Ally deaths — particularly if anyone liked the deceased
+- Relationship conflicts — stress leaks into performance
+- Overwork — heroes sent on back-to-back missions with no rest will eventually stop asking nicely
+- Poor living conditions — the barracks complaint is the one they never stop making
 
 ---
 
@@ -310,33 +311,33 @@ Mental breaks affect heroes mid-combat:
 
 ## Social Traits
 
-Heroes have personality traits affecting relationships. These traits are, regrettably, permanent:
+Heroes have personality traits that affect relationships. These traits are, regrettably, permanent — the guild does not offer a service for replacing personality:
 
 ### Positive Traits
 
 | Trait | Effect |
 |-------|--------|
-| Friendly | +2 trust per interaction |
-| Kind | Easier to form positive bonds |
-| Brave | Combat bonuses, inspirational |
-| Loyal | Won't betray relationships |
+| Friendly | +2 trust per interaction; most heroes consider this overachievement |
+| Kind | Easier to form positive bonds; not everyone finds this useful |
+| Brave | Combat bonuses, inspirational; the trait the Warrior has already explained to you |
+| Loyal | Won't betray relationships; a lower bar than it sounds |
 
 ### Negative Traits
 
 | Trait | Effect |
 |-------|--------|
-| Antisocial | -1 trust per interaction |
-| Jealous | May sabotage rivals |
-| Coward | May flee, lower morale |
-| Cruel | Others dislike them |
+| Antisocial | -1 trust per interaction; they are not trying, and it shows |
+| Jealous | May sabotage rivals; productive only from a very specific angle |
+| Coward | May flee, lower morale; consistent at least |
+| Cruel | Others dislike them; they consider this neutral information |
 
 ### Neutral Traits
 
 | Trait | Effect |
 |-------|--------|
-| Romantic | More likely to form couples |
-| Competitive | Forms rivalries easily |
-| Independent | Fewer social interactions |
+| Romantic | More likely to form couples; this goes well until it doesn't |
+| Competitive | Forms rivalries easily; also the source of the +10% rival bonus, which is cold comfort |
+| Independent | Fewer social interactions; harder to build bonds, easier to avoid drama |
 
 ---
 
@@ -593,26 +594,28 @@ Social events are logged with the hero's name and a description. The logs don't 
 
 ### Tips
 
-1. **Party together** - Bonds form in combat
-2. **Watch for conflicts** - Separate enemies
-3. **Use the Tavern** - Shared activities build trust
-4. **Check compatibility** - Trait conflicts hurt
-5. **Leverage bonds** - Best friends excel together
+1. **Party together** - Bonds form in combat; put people through the same danger and they'll form opinions about each other, which eventually become opinions about each other
+2. **Watch for conflicts** - Separate enemies before the situation resolves itself through violence
+3. **Use the Tavern** - Shared activities build trust; it's cheaper than the alternative
+4. **Check compatibility** - Trait conflicts erode trust passively, even when nothing specific goes wrong
+5. **Leverage bonds** - Best friends fighting together apply their relationship bonus simultaneously; plan accordingly
 
 ### Warning Signs
 
-- Multiple heroes dislike someone
-- Trust declining rapidly
-- Mood consistently poor
-- Conflicts in combat
+- Multiple heroes dislike the same person — at some point this becomes a consensus
+- Trust declining rapidly without obvious cause — check the social log
+- Mood consistently poor — the performance penalty compounds
+- Conflicts triggering in combat — the worst possible time to discover someone has enemies
 
 ### Building Dream Teams
 
-1. Start with compatible traits
-2. Run missions together consistently
-3. Use Tavern activities
-4. Let relationships form naturally
-5. Don't force incompatible pairs
+The goal is a roster where people fight better together than they do alone — which requires treating the social feed as seriously as the stat sheet:
+
+1. Start with compatible traits — Antisocial and Jealous heroes require more management than they're worth in most party compositions
+2. Run missions together consistently — bonds form through sustained shared experience, not single events
+3. Use Tavern activities — the nightly routines quietly accumulate trust at no cost except the time
+4. Let relationships form naturally — manufactured bonds are weaker than earned ones
+5. Don't force incompatible pairs — some heroes simply will not get along, and a party's performance suffers if two of its members are at -50 trust
 
 ---
 

@@ -120,11 +120,11 @@ Each class has two keystones per branch — one at the end of each branch path. 
 
 ## Travel Nodes & Stat Choices
 
-Travel nodes are the connective tissue of the tree. When you allocate a travel node, you choose which stat it grants:
+Travel nodes are the connective tissue of the tree. When you allocate a travel node, you choose which stat it grants — a small decision made dozens of times, with cumulative consequences:
 
-- **Strength** (+5 flat)
-- **Dexterity** (+5 flat)
-- **Intelligence** (+5 flat)
+- **Strength** (+5 flat) — the choice for physical fighters and anyone playing a Warrior who hasn't read the other options
+- **Dexterity** (+5 flat) — useful for speed, dodge, and critical chance; Rogues and Rangers pick this by reflex
+- **Intelligence** (+5 flat) — spell damage and mana scaling; Mages consider any other choice a waste of a perfectly good node
 
 With 176 travel nodes in the tree, these choices add up. A Warrior routing through 40 travel nodes and picking Strength each time gains +200 STR before even counting minor and notable nodes.
 
@@ -169,10 +169,12 @@ Heroes can fully respec their passive tree at any time. A full respec deallocate
 
 ## Pathing Rules
 
-1. **Start from your class node** — every allocation must connect back to it
-2. **Adjacent nodes only** — you can only allocate nodes connected to at least one already-allocated node
-3. **No orphans** — deallocating a node that would disconnect other nodes from the start is blocked
-4. **One tree per hero** — each hero has their own independent passive tree allocation
+Four rules govern what you can and can't do. They are not complex. They become important the moment you try to violate them:
+
+1. **Start from your class node** — every allocation must connect back to it; the tree is radial, not open
+2. **Adjacent nodes only** — you can only allocate nodes connected to at least one already-allocated node; there is no teleportation
+3. **No orphans** — deallocating a node that would disconnect other nodes from the start is blocked; the tree enforces its own topology
+4. **One tree per hero** — each hero has their own independent passive tree; what your Warrior puts into Defence does not affect your Mage's Frost build
 
 ---
 

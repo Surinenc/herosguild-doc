@@ -152,12 +152,14 @@ Exceptional quality crafts give +50% XP.
 
 ### Step by Step
 
-1. **Select Recipe** - Must have recipe unlocked
-2. **Assign Crafter** - Hero with appropriate skill
-3. **Check Materials** - Must be in guild vault
-4. **Queue Craft** - Production begins
-5. **Wait** - Time based on item tier
-6. **Completion** - Quality rolled, item created
+Crafting follows six steps in sequence. Missing any of them produces results ranging from nothing happening to an expensive pile of unusable materials:
+
+1. **Select Recipe** - Must have the recipe unlocked; wanting the item is not sufficient
+2. **Assign Crafter** - A hero with the appropriate skill who is not currently doing something else
+3. **Check Materials** - Everything must be in the guild vault; the station does not improvise
+4. **Queue Craft** - Production begins; the crafter is now unavailable for anything more urgent
+5. **Wait** - Duration based on item tier ranging from hours to an entire week for Legendary items
+6. **Completion** - Quality is rolled, the item is created, and you find out whether the wait was worth it
 
 ### Crafting Time
 
@@ -169,10 +171,10 @@ Exceptional quality crafts give +50% XP.
 | ⭐⭐⭐⭐ | 3 days |
 | ⭐⭐⭐⭐⭐ | 7 days (10,080 min) |
 
-**Time Modifiers:**
+**Time Modifiers:** Everything that can be done to reduce that 7-day Legendary wait:
 - Station level: -10% per level above 1 (see Station Levels table)
-- Crafter skill: -1% per 5 skill levels (skill level / 500)
-- Assistant: -20%
+- Crafter skill: -1% per 5 skill levels (skill level / 500); a level 100 crafter saves 20% before anything else
+- Assistant: -20%; a second hero making themselves useful
 
 ### Assistants
 
@@ -233,13 +235,13 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 
 ### Library Research
 
-Research new recipes at the Library:
+Research new recipes at the Library — slower than finding them in the field, but considerably safer than the alternative of running Epic dungeons hoping for drops:
 
-**Requirements:**
-- Library facility (level determines max tier)
-- Hero assigned as researcher
-- Research materials
-- Time
+**Requirements:** All four are non-negotiable.
+- Library facility (level determines max tier — you cannot research what the Library can't reach)
+- Hero assigned as researcher (someone has to read the books; this is not a popular rotation)
+- Research materials (consumed in the process, whether successful or not)
+- Time (the Library is not fast; the Guild Clerk considers this a feature)
 
 | Library Level | Max Research Tier | Speed Bonus |
 |---------------|-------------------|-------------|
@@ -369,44 +371,46 @@ Navigate to: Guild Screen → Item Workshop
 
 ### Early Game
 
-1. **Focus One Crafter** - Level one hero's crafting skill fast. A jack-of-all-trades crafter is a master of none, and a producer of Poor-quality swords.
-2. **Process Materials** - Keep raw materials processed
-3. **Unlock Stations Early** - Do facility missions ASAP
-4. **Research Basic Recipes** - Library is worth the investment
+1. **Focus One Crafter** - Level one hero's crafting skill fast; a generalist who's mediocre at everything produces consistently mediocre items
+2. **Process Materials** - Keep raw materials processed and ready; unprocessed ore can't be crafted into anything useful, regardless of how much you have
+3. **Unlock Stations Early** - Facility missions are worth prioritizing; you cannot craft what you don't have a station for
+4. **Research Basic Recipes** - Library investment pays off quickly with access to Tier 2 recipes before you'd find them in the field
 
 ### Mid Game
 
-1. **Specialize Heroes** - Different heroes for different skills
-2. **Use Assistants** - Speed bonus adds up
-3. **Hunt for Recipes** - Boss dungeons for better blueprints
-4. **Quality Matters** - Wait for high-skill crafters
+1. **Specialize Heroes** - Different heroes for different skills; a Blacksmithing 80 and an Alchemy 80 outperform two heroes who are both at 40 in both
+2. **Use Assistants** - The speed bonus compounds with other modifiers; a full crafting team is meaningfully faster
+3. **Hunt for Recipes** - Boss dungeons drop blueprint tiers you cannot research; plan expeditions with this in mind
+4. **Quality Matters** - A Superior-quality item from a skilled crafter beats a Normal-quality item from the same recipe; wait for the crafter, not just the materials
 
 ### Late Game
 
-1. **Masterwork Crafters** - Level 100 for guaranteed quality
-2. **Farm World Bosses** - Legendary recipe sources
-3. **Enchant Everything** - Max out your gear
-4. **Prosthetics** - Replace destroyed body parts
+1. **Masterwork Crafters** - Skill level 100 guarantees quality rolls of 50+, which eliminates Poor and Normal outcomes entirely
+2. **Farm World Bosses** - The only reliable source of ⭐⭐⭐⭐⭐ recipes; no Library level substitutes for this
+3. **Enchant Everything** - Bare high-tier gear is leaving performance on the table
+4. **Prosthetics** - Enchanted prosthetics at 125% efficiency outperform the original body part; this is, technically, a reason to be optimistic
 
 ---
 
 ## Crafting Station Recommendations
 
+The honest answer to "which stations should I build" is "all of them eventually." These are the starting priorities while "eventually" is still a long way off:
+
 ### Per Hero Count
 
 | Heroes | Priority Stations |
 |--------|-------------------|
-| 3-5 | Forge, Alchemy Lab |
-| 6-10 | + Tannery, Kitchen |
-| 10+ | + Enchanting, Jeweler |
+| 3-5 | Forge, Alchemy Lab — equipment and potions cover the basics |
+| 6-10 | + Tannery, Kitchen — more heroes means more healing needed and more leather |
+| 10+ | + Enchanting, Jeweler — at this point, accessories and enhancement become the limiting factor |
 
 ### Per Guild Focus
 
 | Focus | Priority |
 |-------|----------|
-| Combat | Forge, Alchemy Lab |
-| Exploration | Kitchen, Alchemy Lab |
-| Crafting Empire | All stations maxed |
+| Combat | Forge, Alchemy Lab — weapons, armor, and something to drink when it goes wrong |
+| Exploration | Kitchen, Alchemy Lab — sustained dungeons require sustained consumables |
+| Crafting Empire | All stations maxed — the goal is self-sufficiency, and it requires everything |
 
 ---
 

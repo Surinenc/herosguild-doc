@@ -17,11 +17,11 @@ Heroes unlock their ascendancy through Ascendancy Trials — solo tower challeng
 
 ### Ascendancy Points
 
-Each ascendancy has **10 nodes** in a branching tree:
-- 1 Starting node (defines the path)
+Each ascendancy has **10 nodes** in a branching tree — more options than you'll ever fill, which is the design's way of ensuring choices matter:
+- 1 Starting node (defines the path and is mandatory)
 - 3 Branches (A, B, C) with 3 nodes each
 
-You earn **4 points total** (one per trial), so you'll choose 4 of 10 nodes. This creates meaningful build diversity.
+You earn **4 points total** (one per trial), so you'll choose 4 of 10 nodes. Depth wins over breadth.
 
 ---
 
@@ -334,11 +334,11 @@ Note: Life steal nodes increase damage taken as a tradeoff.
 
 ### Build Tips
 
-1. **Focus one branch** - Going deep (3 nodes) in one branch is usually stronger than spreading out
-2. **Starting node matters** - Some ascendancies change core abilities (Berserker removes Taunt)
-3. **Tradeoff awareness** - Several nodes grant power but increase damage taken (Assassin Crit, Trickster Party Damage, Lich Drain)
-4. **Synergy with gear** - Choose ascendancies that match your equipment plan
-5. **Party composition** - Consider what roles your party needs covered
+1. **Focus one branch** - Three nodes deep in one branch is almost always stronger than four surface investments spread across the tree
+2. **Starting node matters** - Some ascendancies remove core class abilities (Berserker removes Taunt; Gladiator removes Shield Wall); commit to this before the Trial
+3. **Tradeoff awareness** - Several nodes grant power but increase damage taken; Assassin Crit, Trickster Party Damage, and Lich Drain all function as a bargain with consequences
+4. **Synergy with gear** - An ascendancy that doesn't match what the hero is wearing produces disappointing numbers; plan both together
+5. **Party composition** - A second Berserker is a choice; a Berserker with no Cleric in the party is a different, worse choice
 
 ---
 

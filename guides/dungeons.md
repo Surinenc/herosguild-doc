@@ -78,52 +78,52 @@ Seven distinct environments, each with unique enemies and hazards. The dungeon d
 
 ### Forest
 
-- **Enemies:** Beasts, Humanoids (bandits, goblins)
-- **Hazards:** Overgrowth, wild animal ambushes
+- **Enemies:** Beasts, Humanoids (bandits, goblins) — things that live here and consider your presence an intrusion
+- **Hazards:** Overgrowth, wild animal ambushes; the trees make sightlines difficult and loudness inadvisable
 - **Loot Focus:** Herbs, leather, wood
-- **Tips:** Bring a Ranger for tracking
+- **Tips:** Bring a Ranger for tracking — the Forest rewards preparation and punishes being surprised by the third ambush in a row
 
 ### Cave
 
 - **Enemies:** Beasts, Humanoids (orcs, trolls)
-- **Hazards:** Darkness, cramped spaces
+- **Hazards:** Darkness, cramped spaces — the fighting is fine; the claustrophobia is the other problem
 - **Loot Focus:** Ore, gems
-- **Tips:** Need light sources or suffer penalties
+- **Tips:** Need light sources or suffer penalties; the enemies have adapted to the dark and do not share your disadvantage
 
 ### Ruins
 
 - **Enemies:** Undead, Constructs
-- **Hazards:** Traps, unstable structures
+- **Hazards:** Traps, unstable structures; the people who built these places anticipated visitors and took appropriate measures
 - **Loot Focus:** Artifacts, ancient items
-- **Tips:** Bring a Rogue for trap detection
+- **Tips:** Bring a Rogue for trap detection — the traps remain functional long after everything else has crumbled
 
 ### Crypt
 
-- **Enemies:** Undead (skeletons, vampires, liches)
+- **Enemies:** Undead (skeletons, vampires, liches) — concentrated, organized, and entirely opposed to your presence
 - **Hazards:** Darkness, cursed ground
-- **Loot Focus:** Gold, cursed items
-- **Tips:** Clerics excel here (anti-undead). They've been waiting for this.
+- **Loot Focus:** Gold, cursed items (inspect before equipping)
+- **Tips:** Clerics excel here. The anti-undead bonus they've been mentioning since recruitment day has finally arrived.
 
 ### Swamp
 
 - **Enemies:** Beasts, Undead
-- **Hazards:** Poison, difficult terrain, ambushes
+- **Hazards:** Poison, difficult terrain, ambushes; the swamp considers all three standard hospitality
 - **Loot Focus:** Rare herbs, exotic materials
-- **Tips:** Bring antidotes and high VIT heroes. Nobody enjoys the swamp.
+- **Tips:** Bring antidotes and high VIT heroes; nobody enjoys the swamp, but heroes without VIT enjoy it measurably less
 
 ### Tower
 
 - **Enemies:** Constructs, Elementals
-- **Hazards:** Magic traps, arcane puzzles
+- **Hazards:** Magic traps, arcane puzzles — the tower's original occupants considered security through complexity, and were correct
 - **Loot Focus:** Magic items, arcane materials
-- **Tips:** High INT helps with puzzles
+- **Tips:** High INT helps with puzzles; low INT heroes get through eventually, through persistence and collateral damage
 
 ### Volcano
 
 - **Enemies:** Demons, Fire Elementals
-- **Hazards:** Extreme heat, lava
+- **Hazards:** Extreme heat, lava; both will hurt you, and the lava does not require warning signs
 - **Loot Focus:** Fire materials, demon parts
-- **Tips:** Fire resistance is essential. This seems obvious, yet parties arrive without it every week.
+- **Tips:** Fire resistance is essential. This seems obvious. Parties arrive without it every week.
 
 ---
 
@@ -133,12 +133,12 @@ Seven distinct environments, each with unique enemies and hazards. The dungeon d
 
 You watch the dungeon crawl in real-time (one per night). It's like being there, except you can't be hurt. The ideal management position.
 
-**Benefits:**
+**Benefits:** The advantages of watching things go wrong in real time rather than reading about it afterwards:
 - +25% XP bonus
 - +20% loot quality
 - +20 to injury rolls (safer)
-- Can order retreat to save heroes
-- Use Command Points for interventions
+- Can order retreat to save heroes — the option that no unsupervised preset provides
+- Use Command Points for interventions when the heroes' own judgment proves insufficient
 
 **Command Points:**
 
@@ -180,23 +180,27 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 
 ### Building a Good Party
 
-1. **Tank** - Warrior or Cleric to absorb damage
-2. **Healer** - Cleric to keep everyone alive
-3. **DPS** - Mage, Rogue, Ranger for damage
-4. **Utility** - Rogue for traps, Ranger for scouting
+A party is not just a list of heroes. It's a system that either covers its gaps or is destroyed by them:
+
+1. **Tank** - Warrior or Cleric to absorb damage; someone needs to stand between the enemies and everyone else, and Warriors have accepted this as their purpose
+2. **Healer** - Cleric to keep everyone alive; the party will express its appreciation by blaming them when someone dies
+3. **DPS** - Mage, Rogue, Ranger for damage; the ones who end fights rather than merely surviving them
+4. **Utility** - Rogue for traps, Ranger for scouting; the contributions that are invisible until the moment they're absent
 
 ### Relationship Synergy
 
-- **Friends:** +damage and combat bonuses
-- **Enemies:** -damage and may refuse to help (awkward)
-- **Lovers:** Big bonuses, but devastating if one dies
+- **Friends:** +damage and combat bonuses — combat goes better when you're not doing it next to someone you hate
+- **Enemies:** -damage, and may refuse to help at critical moments (the most awkward possible time to discover someone has an enemy)
+- **Lovers:** Large bonuses, but devastating if one dies; the guild does not recommend love as a strategic variable
 
 ### Pre-Mission Checklist
 
+Worth reviewing before committing to any dungeon. The Guild Clerk has drafted incident reports that began "nobody checked if—":
+
 - [ ] Heroes are Ready (not injured/crafting)
-- [ ] Mood is good (not exhausted/angry)
-- [ ] Equipment is appropriate level
-- [ ] Consumables equipped (potions!)
+- [ ] Mood is acceptable (not exhausted/angry)
+- [ ] Equipment is appropriate for hero level
+- [ ] Consumables equipped (potions); heroes who forget these generate the most paperwork
 - [ ] Class balance (tank, heal, dps)
 
 ---
@@ -219,10 +223,11 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 
 ### Fog of War
 
-- Only entrance visible at start
-- Rooms reveal as you explore
-- Creates tension and discovery
-- Supervised mode helps scouting
+The dungeon doesn't open itself up for inspection. Knowledge costs movement:
+- Only the entrance is visible at start; the rest is dark until you go there
+- Rooms reveal as you explore, which is both discovery and commitment
+- Creates tension and the occasional navigational dispute
+- Supervised mode helps scouting; Rangers help more
 
 ---
 
@@ -375,13 +380,13 @@ Roll is modified by VIT, Cleric presence, Infirmary level, and traits. See [Hero
 
 ### What You Earn
 
-Upon returning, expeditions provide:
-- Gold from enemies and chests
-- XP for surviving heroes
-- Reputation for the guild
-- Materials for crafting
-- Equipment drops
-- Relationship changes
+Upon returning, expeditions provide everything the dungeon had and the heroes didn't carry in:
+- Gold from enemies and chests — the reason the mission board exists
+- XP for surviving heroes — note the qualifier
+- Reputation for the guild — scales with mission difficulty and result
+- Materials for crafting — collected from enemies, chests, and environments
+- Equipment drops — quality depends on monster level and loot luck
+- Relationship changes — for better or worse; the dungeon has opinions about teams
 
 ---
 
@@ -466,24 +471,24 @@ Access the weekly rotation from Mission Board → Heroic filter (🔥).
 
 ### Early Game
 
-- Start with ⭐ and ⭐⭐ dungeons
-- Always bring a healer
-- Complete facility unlock missions early
-- Build relationships in combat
+- Start with ⭐ and ⭐⭐ dungeons — the mission board will offer harder options immediately; ignore them
+- Always bring a healer; this advice is given at character creation, in this guide, and by surviving veterans; it is still ignored regularly
+- Complete facility unlock missions early — the stations they unlock are required for mid-game progression
+- Build relationships in combat — the dungeon is the fastest trust-building environment available; use it
 
 ### Mid Game
 
-- Match hero level to monster level
-- Use supervised mode for difficult runs
-- Save command points for emergencies
-- Farm specific environments for materials
+- Match hero level to monster level; sending level 20 heroes into level 40 monsters is an advanced topic in injury management
+- Use supervised mode for difficult runs — the +25% XP and retreat option are worth one night's focus
+- Save command points for emergencies; spending all three on the first encounter is a decision with consequences by the third floor
+- Farm specific environments for materials — the dungeon type determines what you bring home
 
 ### Late Game
 
-- Tackle ⭐⭐⭐⭐⭐ dungeons for best rewards
-- Use parallel expeditions to maximize resources
-- Build specialized teams for environments
-- Prepare for Heroic Dungeons (see [Endgame Guide](tower.md))
+- Tackle ⭐⭐⭐⭐⭐ dungeons for best rewards; the risk scales with the stars, and so do the returns
+- Use parallel expeditions to maximize resources — every unsupervised slot running overnight compounds Guild income
+- Build specialized teams for environments — fire resistance teams for Volcano, Cleric-heavy teams for Crypts, Rogue-forward teams for Ruins
+- Prepare for Heroic Dungeons (see [Endgame Guide](tower.md)); the modifiers require specific builds, and finding out mid-dungeon is the educational approach
 
 ---
 

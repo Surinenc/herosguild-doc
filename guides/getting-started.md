@@ -18,13 +18,13 @@ Starting with 2-3 heroes is recommended. You can always recruit more as you earn
 
 ## The Guild Screen
 
-The Guild Screen is your home base. Here you can:
+The Guild Screen is your home base — the single screen you'll spend most of your career staring at with either satisfaction or mounting concern. From here:
 
-- **View your heroes** - See all recruited heroes, their stats, and equipment
-- **Manage facilities** - Build and upgrade guild buildings
-- **Access the tavern** - Recruit new heroes
-- **Check the mission board** - Find dungeons to explore
-- **Open the shop** - Buy and sell items
+- **View your heroes** - See all recruited heroes, their stats, and current state of health (physical and emotional)
+- **Manage facilities** - Build and upgrade guild buildings, each of which costs more than you'd like
+- **Access the tavern** - Recruit new heroes, who will immediately start costing you money
+- **Check the mission board** - Find dungeons to explore and contracts to accept
+- **Open the shop** - Buy and sell items; the prices are not negotiable, but the regret is optional
 
 ### Key Facilities
 

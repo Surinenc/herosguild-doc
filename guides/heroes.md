@@ -23,8 +23,8 @@ The Warrior is your shield against danger, primarily because someone has to stan
 **Key Features:**
 - **High Threat** - Generates 1.5x aggro, keeping enemies focused on them
 - **Shield Wall** - Reduces incoming damage by 50%, which is still quite a lot of incoming damage
-- **Taunt** - Forces enemies to attack the Warrior
-- **Heavy Armor** - Wears plate for maximum protection
+- **Taunt** - Forces all enemies to redirect their attention to the Warrior, who volunteered for this
+- **Heavy Armor** - Wears plate, which absorbs damage the way Warriors absorb criticism: completely
 
 **Best For:** New players, protecting squishy allies, dungeons with heavy damage
 
@@ -50,11 +50,11 @@ Mages command the elements to devastate groups of enemies. While possessing all 
 | LCK | 7 |
 
 **Key Features:**
-- **Elemental Spells** - Fire, Ice, and Lightning magic
+- **Elemental Spells** - Fire, Ice, and Lightning magic; the Mage considers these three arguments for staying out of reach
 - **AoE Damage** - Can hit multiple enemies simultaneously, which is the most efficient use of a single spell and the most dangerous thing to do with friendly fire disabled
 - **Mana-Based** - Uses a mana pool for abilities; runs out at the worst possible moment
-- **Energy Shield** - INT × 5 energy shield absorbs damage before HP
-- **Glass Cannon** - High damage but low survivability
+- **Energy Shield** - INT × 5 energy shield absorbs damage before HP; the Mage's substitute for having health
+- **Glass Cannon** - High damage, low survivability; a tradeoff the Mage finds entirely acceptable from behind someone else
 
 **Best For:** Clearing groups, boss burst phases, players who enjoy spellcasting
 
@@ -107,8 +107,8 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 | LCK | 8 |
 
 **Key Features:**
-- **Ranged Attacks** - Fights safely from a distance
-- **Trap Detection** - Bonus to finding hidden dangers
+- **Ranged Attacks** - Fights from a distance, where the enemies are not
+- **Trap Detection** - Bonus to finding hidden dangers before they find the party
 - **Consistent DPS** - Reliable output from positions that arrows can reach and enemies cannot
 - **Versatile** - Adapts to most situations, primarily by remaining in the back of them
 
@@ -136,11 +136,11 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 | LCK | 8 |
 
 **Key Features:**
-- **Healing** - Restores ally HP (see formula below)
-- **Low Threat** - Healing generates only 0.5x aggro
-- **Anti-Undead** - Bonus damage against undead
-- **Death Save Bonus** - Allies have +15% survival chance
-- **Divine Favor** - +10% bonus to their own death saves
+- **Healing** - Restores ally HP; the reason they get blamed when someone dies
+- **Low Threat** - Healing generates only 0.5x aggro, which is small comfort when the Warrior is down
+- **Anti-Undead** - Bonus damage against undead enemies, who tend to take it personally
+- **Death Save Bonus** - Allies have +15% survival chance when a Cleric is present, which is why you always bring one
+- **Divine Favor** - +10% bonus to their own death saves; the guild makes no comment on whether this is fair
 
 **Healing Formula:** For those who find it reassuring to know exactly how much someone else's suffering is worth in numbers:
 ```
@@ -174,7 +174,7 @@ Necromancers command the forces of death, raising minions to fight for them whil
 - **Summon Undead** - Raises the fallen to fight again, which solves the enemy problem and the body problem simultaneously
 - **Life Drain** - Heals by dealing damage; the Necromancer considers this efficient
 - **Debuffs** - Arrives to encounters having already done some of the work
-- **Energy Shield** - INT × 5 energy shield absorbs damage before HP
+- **Energy Shield** - INT × 5 energy shield absorbs damage before HP; the Necromancer's substitute for having a body that cares about being hit
 - **Dark Magic** - A spell school other heroes avoid discussing over dinner
 
 **Best For:** Players who like pet classes, attrition strategies, unique playstyles
@@ -411,11 +411,11 @@ Titles stack — a hero can hold multiple titles simultaneously. The Legend titl
 
 ### Experience
 
-Heroes gain XP from:
-- Completing dungeons
-- Defeating enemies
-- Mission completion bonuses
-- Training Yard (passive, slower)
+Heroes gain XP from the following, in descending order of excitement:
+- Completing dungeons — the main source, and the main reason dungeons exist
+- Defeating enemies — each one contributes a small amount to the total
+- Mission completion bonuses — for finishing, not just surviving
+- Training Yard (passive, slower) — for heroes who prefer to learn without anyone actively trying to kill them
 
 ### Level Milestones
 

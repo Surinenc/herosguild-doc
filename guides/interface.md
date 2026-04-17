@@ -5,10 +5,10 @@ A quick guide to the Hero's Guild user interface and controls. Everything you ne
 ## Main Menu
 
 From the main menu you can:
-- **New Game** - Start a fresh guild (plays intro cinematic)
-- **Continue** - Resume your last saved game
+- **New Game** - Start a fresh guild, along with a fresh set of financial anxieties
+- **Continue** - Resume your last saved game from where you left off, which may or may not be a comfortable place
 - **Load Game** - Browse and load from multiple save slots
-- **Settings** - Audio, graphics, gameplay options
+- **Settings** - Audio, graphics, and gameplay options; the Guild Clerk recommends reviewing these before your first expedition
 
 ---
 
@@ -18,19 +18,20 @@ The Guild Screen is your home base — the one screen you'll see more than any o
 
 ### Top Bar
 
-- **Gold** - Your current funds
-- **Day** - Current game day
-- **Guild Rank** - Your reputation rank (F-S)
+The top bar answers the three questions you are always asking: how much money you have, what day it is, and how badly you are regarded:
+- **Gold** - Your current funds; the number that determines everything
+- **Day** - Current game day; the number that determines how long you have been getting into trouble
+- **Guild Rank** - Your reputation rank (F through S); the number that determines what trouble is available
 - **Settings** - Access options
 
 ### Hero Panel (Left)
 
 Your roster at a glance. The Guild Clerk designed this panel to answer the question "who is available and who has an excuse" as quickly as possible.
-- Portrait and name
-- Class icon
-- Level
-- Current state (Ready, Injured, etc.)
-- Mood indicator
+- Portrait and name — the essentials
+- Class icon — so you remember what they're supposed to be doing
+- Level — so you remember what they're capable of
+- Current state (Ready, Injured, Resting, etc.) — the honest answer to whether they can go
+- Mood indicator — the honest answer to whether they want to
 
 Click a hero to see details.
 
@@ -56,18 +57,19 @@ Access dungeons and contracts here. The Mission Board defaults to a **World Map*
 
 ### Mission List
 
+Each mission entry shows what you're getting into — before you commit to getting into it:
 - Mission name and type
-- Star rating (difficulty)
-- Monster level
-- Reward preview
+- Star rating (the dungeon's opinion of its own difficulty)
+- Monster level (the dungeon's opinion of yours)
+- Reward preview (the reason for all of this)
 - Time limit (if any)
 
 ### Filters
 
-- **All** - Show everything
-- **Standard** - Regular missions
-- **Heroic** 🔥 - Heroic dungeons (if unlocked)
-- **Unlock** 🔓 - Facility unlock missions
+- **All** - Show everything on the board, which is occasionally overwhelming
+- **Standard** - Regular missions, the bread and butter of guild operations
+- **Heroic** 🔥 - Heroic dungeons, for guilds that have run out of interesting problems
+- **Unlock** 🔓 - Facility unlock missions; do these early
 
 ### Starting a Mission
 
@@ -114,34 +116,37 @@ The Career tab exists because the Guild Clerk wanted receipts.
 
 ## Combat Screen
 
-During supervised expeditions:
+During supervised expeditions, everything important is visible at once. The Guild Clerk designed this screen on the assumption that things would be happening quickly, and was correct.
 
 ### Turn Order (Top)
 
-Shows initiative order:
+Shows who acts next, which is the most important question in any combat:
 - Current actor highlighted
-- Heroes vs enemies
-- Status effects visible
+- Heroes vs enemies — the two factions, with their relative health
+- Status effects visible; the icons are small but the effects are not
 
 ### Battle Area (Center)
 
+The fight itself, laid out clearly so there are no excuses:
 - Your party on left
 - Enemies on right
-- Health bars above each
-- Status effect icons
+- Health bars above each combatant — watch these
+- Status effect icons below health bars
 
 ### Action Bar (Bottom)
 
+What your currently selected hero can do, and the cost of doing it:
 - Available actions (Attack, Skills, Defend, Flee)
-- Skill cooldowns shown
-- Mana costs displayed
+- Skill cooldowns shown — grey means not yet
+- Mana costs displayed — plan accordingly
 
 ### Combat Log (Side)
 
+A record of what just happened, in case you weren't watching closely enough:
 - Damage numbers
 - Skill usage
-- Status effects
-- Hero dialogue
+- Status effects applied
+- Hero dialogue, which is occasionally informative and frequently theatrical
 
 ### Command Points
 
@@ -240,11 +245,13 @@ The Guild Clerk is genuinely surprised that anyone reads this far into the docum
 
 ## Quick Tips
 
-1. **Hover for tooltips** - Most elements have explanations
-2. **Right-click for options** - Context menus on items/heroes
-3. **Drag and drop** - Equipment, party formation
-4. **Watch the log** - Combat details, events
-5. **Check notifications** - Red dots indicate attention needed
+Small things that make a significant difference, provided for heroes who prefer to learn from documentation rather than experience:
+
+1. **Hover for tooltips** - Most elements have explanations; the game assumes you will use this
+2. **Right-click for options** - Context menus on items and heroes reveal more than you'd expect
+3. **Drag and drop** - Equipment, party formation, and gem management all support this
+4. **Watch the log** - Combat details and events scroll past quickly; the important ones scroll past quickest
+5. **Check notifications** - Red dots indicate something needs attention; they do not go away on their own
 
 ---
 

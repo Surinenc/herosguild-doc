@@ -255,9 +255,9 @@ Provides mood bonuses and funeral services — two things that, in the adventuri
 | 3 | +10 | Holy crafts |
 
 **Special Features:**
-- Memorial services for fallen heroes
-- Daily mood bonus for all heroes
-- Blessing buffs before expeditions
+- Memorial services for fallen heroes — the Chapel exists for many reasons, but this is the one it gets used for most
+- Daily mood bonus for all heroes; the only passive benefit that doesn't require anyone to do anything dangerous
+- Blessing buffs before expeditions — optional, but the Guild Clerk has noticed that heroes who skip the blessing tend to become memorial cases
 
 ---
 
@@ -312,14 +312,14 @@ Approving heroes gain mood; disapproving heroes lose it. The mood change scales 
 
 ### Consequences
 
-Event options can trigger a range of effects:
+Event options can trigger a range of effects — sometimes immediately, sometimes several days later when you've forgotten what you decided:
 
-- **Gold changes** — gain or lose gold
-- **Reputation changes** — guild reputation shifts
-- **Hero effects** — promote, heal, or grant items to specific heroes
+- **Gold changes** — gain or lose gold, depending on whether your choice was the generous one
+- **Reputation changes** — guild reputation shifts; the realm notices how you handle difficult situations
+- **Hero effects** — promote, heal, or grant items to specific heroes involved in the event
 - **Facility boosts** — bonus XP or levels to a facility
-- **Recruit heroes** — new heroes join the guild
-- **Chain events** — some decisions trigger follow-up events days later
+- **Recruit heroes** — new heroes join the guild, occasionally as a direct consequence of your having a reputation for being worth joining
+- **Chain events** — some decisions trigger follow-up events days later; the game has written the next chapter regardless of whether you were paying attention
 
 ### Shop Discounts
 
@@ -497,19 +497,19 @@ Mood affects combat performance. Happy heroes hit harder; miserable heroes hit t
 | Poor | -5% all stats |
 | Terrible | -15% all stats |
 
-**Improving Mood:**
-- Tavern activities (Buy Rounds, Feast)
-- Comfortable Barracks
-- Chapel bonus
-- Successful missions
-- Good relationships
+**Improving Mood:** The things worth investing in.
+- Tavern activities (Buy Rounds, Feast) — the Guild Clerk considers these mandatory expenses
+- Comfortable Barracks — the baseline everyone notices when it falls below acceptable
+- Chapel bonus — passive, daily, and the easiest improvement in the game to arrange
+- Successful missions — nothing lifts morale like coming back
+- Good relationships — heroes who like each other perform better, which in turn keeps morale higher
 
-**Decreasing Mood:**
-- Failed missions
-- Ally deaths
-- Poor Barracks
-- Overwork
-- Relationship conflicts
+**Decreasing Mood:** The things that happen anyway.
+- Failed missions — the performance penalty and mood penalty compound together
+- Ally deaths — difficult to prevent, impossible to ignore
+- Poor Barracks — the complaint that never stops
+- Overwork — unchecked, it turns capable heroes into liabilities
+- Relationship conflicts — stress is contagious in small, armed groups
 
 ### Mental Breaks
 
@@ -654,62 +654,70 @@ Accumulating 50+ entries earns the **Legend** title (+3 to all stats). See [Chro
 
 ### Daily Cycle
 
-1. **Dawn** - Expeditions return, process results
-2. **Morning** - Check injuries, assign treatment
-3. **Day** - Craft, train, prepare missions
-4. **Evening** - Launch supervised expedition
-5. **Night** - Unsupervised expeditions run
+The day proceeds in five phases, with or without your attention — though your attention is recommended:
+
+1. **Dawn** - Expeditions return and process results; this is when you find out how last night went
+2. **Morning** - Check injuries, assign treatment; the infirmary does not operate on optimism alone
+3. **Day** - Craft, train, prepare missions; the most productive part of the cycle, which is also the easiest to skip
+4. **Evening** - Launch supervised expedition; typically the one you've been planning since morning
+5. **Night** - Unsupervised expeditions run; you've made your choices and can no longer help
 
 ### Weekly Cycle
 
-- **Day 1** - Wages paid
-- **Daily** - Facility upkeep charged
-- **Variable** - Mission board refreshes
+- **Day 1** - Wages paid; the number that reminds you what "burn rate" means
+- **Daily** - Facility upkeep charged; small individually, significant collectively
+- **Variable** - Mission board refreshes; new opportunities, some of which are genuinely dangerous
 
 ### Recommended Daily Routine
 
-1. Check expedition results
-2. Heal injured heroes
-3. Manage mood (Tavern activities)
-4. Assign crafters
-5. Review mission board
-6. Form expedition parties
-7. Launch nightly missions
+Not strictly required. Heroes are capable of functioning without micromanagement — they simply function worse. The Guild Clerk recommends this order:
+
+1. Check expedition results — find out what happened while you were unavailable
+2. Heal injured heroes — the Infirmary addresses problems that sympathy cannot
+3. Manage mood (Tavern activities) — preemptive morale investment, cheaper than recovery
+4. Assign crafters — idle crafting stations are missed resources
+5. Review mission board — evaluate options before committing to them
+6. Form expedition parties — check compatibility, not just stats
+7. Launch nightly missions — the guild's primary source of income, experience, and incident reports
 
 ---
 
 ## Upgrade Priority
 
+The Guild Clerk's recommendations, based on extensive observation of which guilds survive their first year and which don't:
+
 ### Early Game
 
-1. **Guild Hall 2** - More heroes, more missions
-2. **Barracks 2** - Better rest, less mood penalty
-3. **Tavern 2** - Better recruits
-4. **Infirmary 2** - Faster healing (you'll need it)
+1. **Guild Hall 2** - More mission slots means more income; this is the foundational upgrade
+2. **Barracks 2** - A mood penalty from overcrowding compounds daily; fix it early
+3. **Tavern 2** - Better recruits start arriving, which is the entire point of having a Tavern
+4. **Infirmary 2** - Faster healing means heroes are back on roster sooner; you will need this immediately
 
 ### Mid Game
 
-1. **Forge 3** - Better equipment
-2. **Training Yard 3** - Faster leveling
-3. **Library 3** - Research recipes
-4. **Warehouse 3** - More storage
+1. **Forge 3** - Better equipment tier unlocked; the quality jump at level 3 is significant
+2. **Training Yard 3** - Faster leveling for heroes who aren't the ones dying; invest in the ones who survive
+3. **Library 3** - Research unlocks recipes that cannot be obtained any other way
+4. **Warehouse 3** - More storage means less forced selling of materials you'll want later
 
 ### Late Game
 
-1. **All facilities to max** - Every bonus counts
-2. **Chapel 3** - Mood management
-3. **Arsenal** - Equipment maintenance
+1. **All facilities to max** - Every bonus counts at high levels; there are no unimportant upgrades at this point
+2. **Chapel 3** - Mood management becomes critical as the roster grows and the drama multiplies
+3. **Arsenal** - Equipment maintenance becomes a real consideration when heroes are carrying Legendary gear
 
 ---
 
 ## Tips for Guild Masters
 
-1. **Balance your roster** - Diversity in classes and levels
-2. **Maintain reserves** - Backup heroes for injuries (they will get injured)
-3. **Watch finances** - Don't go bankrupt! Bankrupt guilds have a remarkably short shelf life.
-4. **Manage relationships** - Happy heroes fight better
-5. **Upgrade steadily** - Don't neglect any facility
-6. **Use the Tavern** - Morale activities are worth it. A happy guild is a functioning guild.
+The Guild Clerk has watched enough guilds fail to identify the patterns. These are the lessons that tend to arrive too late when learned by experience:
+
+1. **Balance your roster** - Diversity in classes and levels prevents the specific kind of catastrophe where you really need a Cleric and don't have one
+2. **Maintain reserves** - Backup heroes exist to replace heroes who are injured, which they will be; the backup heroes will also get injured eventually
+3. **Watch finances** - Bankrupt guilds close, and closed guilds do not make comebacks; know your weekly burn rate before it exceeds your weekly income
+4. **Manage relationships** - Happy heroes fight better, and heroes who like each other fight better still; the social tab is not optional reading
+5. **Upgrade steadily** - No facility is unimportant; the one you neglect will be the one you needed
+6. **Use the Tavern** - Morale activities are the cheapest productivity investment in the guild; the comparison is to replacing heroes who leave due to low morale
 
 ---
 

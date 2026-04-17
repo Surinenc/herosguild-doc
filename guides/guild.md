@@ -123,6 +123,51 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 
 **Cooldowns:** Each specific hero-situation combination has a 3-night cooldown, so you won't see the same problem with the same heroes every night — just similar problems with different heroes.
 
+#### Tavern Background Events
+
+While you're busy spending Attention Points on the Tonight tab, the rest of the tavern is busy running itself. **Background events** fire automatically whenever heroes are gathered — they don't ask for your approval, spend your points, or warn you in advance. They simply happen, get logged in the social feed, and leave consequences for you to manage in the morning.
+
+There are 22 background events sorted into three types:
+
+**Positive (6 events)**
+
+| Event | What Happens |
+|-------|-------------|
+| Impromptu Party | Someone declares it a party. Mood up for everyone present. |
+| Drinking Contest | Heroes compete. Winner gets mood boost; loser gets a hangover. |
+| Bardic Performance | A bard performs. Mood boost for all. |
+| Heart to Heart | Two heroes have an honest conversation. Relationship improves significantly. |
+| Lucky Streak | A gambling run goes well. Gold gained, mood up. |
+| Toast to the Fallen | Heroes remember someone lost. Shared grief, modest mood boost. |
+
+**Negative (9 events)**
+
+| Event | What Happens |
+|-------|-------------|
+| Bar Fight | Heroes come to blows. Injuries possible, relationships damaged. |
+| Drunk Confession | A hero says something they shouldn't have. Variable relationship impact. |
+| Gambling Loss | Poor dice. Gold lost, mood down. |
+| Jealous Outburst | A hero acts on jealousy. Relationship hit for those involved. |
+| Vomit Incident | Self-explanatory. Mood penalty for the hero and nearby witnesses. |
+| Broken Heirloom | Something sentimental gets smashed. Mood penalty plus a grief thought. |
+| Drunken Insult | A hero insults another. Relationship damage proportional to severity. |
+| Cheating Accusation | Someone accuses someone of cheating at cards. Trust takes a hit. |
+| Stealing Suspicion | A hero is suspected of theft. Relationship and mood penalties. |
+
+**Dramatic (7 events)**
+
+| Event | What Happens |
+|-------|-------------|
+| Love Triangle | Two heroes competing for a third. Tension generated; relationships shift. |
+| Old Flame Appears | A hero's past arrives unexpectedly. Mood effects vary by how that ended. |
+| The Challenge | A formal duel or contest is issued. Outcome shifts mood and reputation. |
+| Secret Revealed | Something private becomes public. Consequences depend on what the secret was. |
+| Marriage Proposal | A hero proposes to their Lovers-bonded partner (relationship ≥ 80 required). Creates a Married bond on acceptance. |
+| Dramatic Exit | A hero storms out. Unavailable for a period; relationship affected. |
+| Lovers Getaway | A paired couple disappears for a few days. Both heroes become unavailable for 2 days. |
+
+Background events are **weighted** — dramatic events are rarer than positive ones, and positive events are less common than negative ones, because this is a tavern, not a spa. The exact mix depends on which heroes are present, what bonds exist between them, and what relationship scores are in play.
+
 ### Training Yard
 
 Where heroes train and spar. The sounds of practice combat are indistinguishable from actual combat, which says something about the quality of training.
@@ -285,6 +330,51 @@ A guild strongly aligned with Wealth earns shop discounts:
 | 60+ | 10% discount |
 | 30+ | 5% discount |
 | Below 30 | Standard prices |
+
+---
+
+## Context-Aware Guild Events
+
+The guild moral events described above are triggered by your position on the moral axes and arrive on a schedule. Context-aware events are different: they are triggered by your heroes.
+
+The game continuously scans your roster for specific conditions — a rivalry at boiling point, a hero with dangerously low mood, a veteran who hasn't been acknowledged, a Psychopath with unchecked authority — and when it finds a match, it generates an event tailored to those specific heroes. The event uses their names. The options reflect their history. Ignoring it is a decision with its own consequences.
+
+There are 100+ events in five categories. Each event has a deadline (typically 3–5 days). If the deadline passes without a decision, the game picks the default option for you. The default is never the worst option, but it is rarely the best one.
+
+### Categories
+
+**Hero Conflict** — disputes between specific heroes: rival feuds, love triangles, veterans bullying recruits, jealousy over promotions. Triggered by bond states, relationship scores, and mission counts.
+
+**Guild Dilemma** — internal structural tensions: a hero requesting promotion, a problematic personality threatening group cohesion, a near-death hero questioning whether to continue. Some options can result in a hero permanently leaving the guild.
+
+**Mission Moral** — ethical situations arising from what you've been doing in the field: a town asking for help after your dungeon runs, the cost of taking on difficult work, the guild's reputation in the wider world.
+
+**Resource Decision** — choices about guild resources and external appeals: a hero with the Kind trait who wants to shelter refugees (costs 300g to shelter, 100g for temporary help, 0g to refuse), supply shortages, economic trade-offs.
+
+**External Threat** — relationships with outside forces: rival guild alliance offers (requiring Valor ≥ 20 to negotiate on equal footing), bounties, external political pressure.
+
+### How Events are Matched
+
+Each event specifies **hero slots** (typically 1–2 heroes) and a set of **preconditions**. The precondition engine checks every hero against those conditions and fills the slots with matching heroes. Precondition types include:
+
+| Precondition | Example |
+|---|---|
+| Bond exists between heroes | Rival bond, Lovers bond, Attracted |
+| Mood below threshold | Mood < 20 for a low-morale event |
+| Stat above threshold | 100+ missions for veteran events |
+| Days in guild minimum | Minimum tenure for loyalty-related events |
+| Trait present | Psychopath, Kind, Volatile |
+| Hero count minimum | At least 4 heroes in guild |
+
+If no heroes match the preconditions, the event doesn't fire. Some events are common (rival disputes are a reliable feature of any active guild); others may never appear in a given playthrough if your heroes never develop the required conditions.
+
+### Consequence Chains
+
+Some events specify a **consequence chain** — a follow-up event scheduled 5–30 days later that reflects the choice made. A rival dispute resolved through compromise generates a different follow-up than the same dispute resolved by siding with one party. Consequence chains can themselves trigger further chains. The game has a long memory for these.
+
+### Axis Effects
+
+Context-aware events shift the guild's moral axes (Valor/Wealth/Order) just as standard guild events do, but the scale is typically smaller. Refusing a plea for help doesn't move the needle as far as a formal guild-wide decision — but it still moves it.
 
 ---
 

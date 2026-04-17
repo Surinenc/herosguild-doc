@@ -523,6 +523,72 @@ An insistent hero removed from the party suffers a mood penalty. Sometimes it's 
 
 ---
 
+## Hero Social Events
+
+Beyond the Tonight tab and the tavern's background chaos, heroes generate a third layer of social activity: **ambient social events** that fire automatically between themselves, without any interface, any tab, or any prompting on your part.
+
+These events appear in the social feed. They cost you nothing. They cannot be prevented. The relationship scores you built — or didn't build — are the only variable.
+
+There are 30+ event types sorted into four groups:
+
+### Positive (Ambient Bonding)
+
+| Event | What It Does |
+|-------|-------------|
+| Good Conversation | Two heroes talk; relationship and mood both improve modestly |
+| Shared Meal | Heroes eat together; small mood boost and relationship improvement |
+| Gift Giving | One hero gives another a gift; significant relationship gain for recipient |
+| Training Together | Heroes spar or train; relationship improves, small mood boost |
+| Saved by Ally | Dungeon callback: a hero acknowledges being saved; large relationship gain |
+| Romantic Confession | An Attracted hero confesses feelings; relationship outcome depends on the target |
+| Celebration | Hero celebrates something good; mood and relationship boost for those nearby |
+| Mentorship Offer | Veteran offers to mentor a junior hero; relationship benefit for both |
+| Oath of Friendship | Two high-relationship heroes formalise their bond; may trigger a Best Friends bond |
+
+### Negative (Ambient Conflict)
+
+| Event | What It Does |
+|-------|-------------|
+| Argument | Heroes disagree; relationship hit, mood hit for both |
+| Insult | One hero insults another; relationship damage based on severity |
+| Theft | A hero steals from another (Greedy trait relevant); trust hit, relationship down |
+| Fight | Physical altercation; relationship damage, possible mood and injury effects |
+| Blame | A hero blames another for a failure; relationship damage |
+| Jealousy | A hero acts on jealousy over another's success or relationship; relationship hit |
+| Romantic Rejection | A confession that doesn't go well; significant relationship hit for the confessor |
+| Rumor Spreading | A hero spreads gossip; relationship damage for the subject, possible wider effects |
+| Betrayal | A serious breach of trust; large relationship damage, potential bond dissolution |
+
+### Mission-Based (Post-Dungeon Reactions)
+
+These fire after dungeon runs based on what happened in the field:
+
+| Event | Trigger |
+|-------|---------|
+| Saved Life | A hero saved another's life during the mission |
+| Fought Back to Back | Heroes fought alongside each other throughout |
+| Cowered | A hero failed to engage when allies needed help |
+| Left Behind | A hero was left in a difficult position by another |
+| Shared Loot | Heroes split loot fairly |
+| Hoarded Loot | A hero kept more than their share |
+| Blamed for Trap | A hero is blamed for walking into a trap |
+| Brilliant Strategy | A hero's tactic turned the fight |
+
+Mission-based events are among the most powerful relationship movers in the game. Getting saved tends to create lasting gratitude. Getting left behind tends to create lasting resentment.
+
+### Tavern (Social Context)
+
+| Event | What It Does |
+|-------|-------------|
+| Tavern Drinking | Heroes drink together; relationship improvement, drunk level rises |
+| Tavern Gambling | Heroes gamble together; outcome-dependent relationship and mood effects |
+| Tavern Feast | Heroes share a meal at the tavern; mood and relationship boost for participants |
+| Secret Shared | One hero confides something private in another; significant relationship gain |
+
+Social events are logged with the hero's name and a description. The logs don't go away — if you want to understand why two heroes have the relationship they have, the social feed is the record.
+
+---
+
 ## Managing Relationships
 
 ### Tips

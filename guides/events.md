@@ -1,6 +1,6 @@
 # Events Overview
 
-Hero's Guild runs on decisions. Not the kind that live on a menu and wait patiently — the kind that appear unexpectedly, demand an answer, and leave a mark whether you act or not. There are three distinct event systems, each operating in a different part of the game, each feeding back into the others.
+Hero's Guild runs on decisions. Not the kind that live on a menu and wait patiently — the kind that appear unexpectedly, demand an answer, and leave a mark whether you act or not. There are six distinct event systems, each operating in a different part of the game, each feeding back into the others.
 
 ---
 
@@ -16,6 +16,16 @@ There is no history log for tavern decisions. What happens in the tavern stays i
 
 ---
 
+## Tavern Background Events
+
+While you're spending Attention Points on the Tonight tab, the rest of the tavern proceeds without you. **Background events** fire automatically whenever heroes are gathered — 22 events across three types (Positive, Negative, Dramatic) that can affect mood, relationships, gold, bonds, and even hero availability. These are not decisions. They are consequences.
+
+Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occasional Marriage Proposal (requires the Lovers bond and a relationship score of 80 or higher).
+
+→ **Full details:** [Guild Management — Tavern Background Events](guild.md#tavern-background-events)
+
+---
+
 ## Guild Moral Events
 
 The guild itself has a moral identity, tracked across three axes: **Valor**, **Wealth**, and **Order**. Every significant decision — in dungeons, in the tavern, in how you treat your heroes — nudges these axes in one direction or another.
@@ -25,6 +35,26 @@ As your position on each axis shifts, the guild attracts different kinds of even
 These events have consequences. They shape your chronicle, affect your heroes, and occasionally offer choices that will move the axes further — or try to correct course.
 
 → **Full details:** [Guild Management — Guild Identity & Moral Events](guild.md#guild-identity--moral-events)
+
+---
+
+## Context-Aware Guild Events
+
+Separate from axis-triggered events, the game scans your roster continuously for specific conditions and generates events tailored to the heroes it finds. A rivalry at boiling point. A veteran who's never been acknowledged. A near-death hero questioning retirement. The events use your heroes' names, reflect their history, and have deadlines.
+
+There are 100+ events across five categories — Hero Conflict, Guild Dilemma, Mission Moral, Resource Decision, and External Threat — each with preconditions, options, axis effects, and some with consequence chains that resolve days or weeks later.
+
+→ **Full details:** [Guild Management — Context-Aware Guild Events](guild.md#context-aware-guild-events)
+
+---
+
+## Hero Social Events
+
+Heroes don't wait for your permission to have relationships. **Ambient social events** fire automatically between heroes throughout the day — 30+ event types covering ambient bonding (Good Conversation, Gift Giving, Mentorship Offer), ambient conflict (Argument, Betrayal, Rumor Spreading), post-dungeon reactions (Saved Life, Left Behind, Brilliant Strategy), and tavern interactions (Tavern Drinking, Secret Shared).
+
+These events appear in the social feed. They cannot be intercepted. The relationship scores and bonds your heroes currently have are what determine whether the feed reads like a found family or a workplace incident report.
+
+→ **Full details:** [Hero Relationships — Hero Social Events](relationships.md#hero-social-events)
 
 ---
 
@@ -42,8 +72,8 @@ Choices here affect the dungeon run directly (damage, healing, loot, enemy spawn
 
 ## How the Systems Connect
 
-The three systems are not independent.
+The six systems are not independent.
 
-Dungeon choices shift the guild's moral axes. Axis position determines which guild events appear. Guild events can alter hero relationships and moods. Hero moods and relationships affect which tavern events fire each night. Tavern decisions shape bonds and rivalries. Bonds and rivalries are what determine which hero-specific dungeon events trigger.
+Dungeon choices shift the guild's moral axes. Axis position determines which guild moral events appear. Context-aware events fire based on what your heroes have become. Guild events alter hero relationships and moods. Hero moods and relationships feed back into ambient social events and what the background events in the tavern look like. Tavern nightly decisions shape bonds and rivalries — and those bonds and rivalries determine which hero-specific dungeon events trigger in the first place.
 
 A guild that consistently burns shrines and robs travelers will, eventually, attract events suited to that kind of guild. The game pays attention to what you are.

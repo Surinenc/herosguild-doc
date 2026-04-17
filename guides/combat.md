@@ -366,7 +366,7 @@ Skills with elemental damage types have a chance to trigger corresponding status
 | **Cold** | Freeze | Applies Stun for 1 turn |
 | **Lightning** | Shock | Target takes +20% increased damage for 2 turns |
 
-A fire skill with 30% ignite chance will proc Burn roughly every third hit. Freeze chance stacks from gear and ascendancy sources (the `freezeChance` combat effect). These procs are separate from on-hit effects — a fire skill can both ignite and trigger on-hit bleed if you have both stats.
+A fire skill with 30% ignite chance will proc Burn roughly every third hit. Freeze chance stacks from gear and ascendancy sources. These procs are separate from on-hit effects — a fire skill can both ignite and trigger on-hit bleed if you have both stats.
 
 ### On-Hit Effects
 

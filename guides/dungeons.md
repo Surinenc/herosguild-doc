@@ -288,7 +288,7 @@ These events are personal. The text uses the hero's name, their title, their spe
 
 ### Sacrifice Events
 
-The rarest event type. Sacrifice events (`minDifficulty: 4`) present situations where one hero can save the party by dying permanently. The confirmation dialogue requires two deliberate choices — the game will not let you do this accidentally.
+The rarest event type. Sacrifice events only appear in higher-difficulty dungeons and present situations where one hero can save the party by dying permanently. The confirmation dialogue requires two deliberate choices — the game will not let you do this accidentally.
 
 The alternative options deal significant damage to all heroes or carry their own risk. Sacrifice events are not a puzzle with a correct answer. They are exactly what they look like.
 

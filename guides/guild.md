@@ -164,7 +164,7 @@ While you're busy spending Attention Points on the Tonight tab, the rest of the 
 | Dramatic Exit | A hero decides they've had enough and leaves. Unavailable for a period; the relationship with whoever provoked this is affected. |
 | Lovers Getaway | A paired couple slips away for a few days. Both heroes become unavailable for 2 days. Whether they told anyone before leaving is unclear. |
 
-Background events are **weighted** — dramatic events are rarer than positive ones, and positive events are less common than negative ones, because this is a tavern, not a spa. The exact mix depends on which heroes are present, what bonds exist between them, and what relationship scores are in play.
+Background events skew negative — the tavern is not a spa, and the system knows it. The exact mix depends on which heroes are present, what bonds exist between them, and what relationship scores are in play.
 
 ### Training Yard
 
@@ -277,7 +277,7 @@ Your position on each axis shifts based on event decisions. There is no right an
 
 ### Moral Events
 
-Starting from day 10, moral events appear randomly (roughly every 5-7 days). You'll see up to 3 pending events at once. Each presents a situation with multiple options, and each option shifts your moral axes and carries consequences.
+Starting from day 10, moral events appear periodically. You'll see up to 3 pending events at once. Each presents a situation with multiple options, and each option shifts your moral axes and carries consequences.
 
 **Event Categories:**
 

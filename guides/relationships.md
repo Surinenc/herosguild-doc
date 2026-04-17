@@ -536,11 +536,11 @@ There are 30+ event types sorted into four groups:
 | Event | What It Does |
 |-------|-------------|
 | Good Conversation | Two heroes talk and discover compatibility, which is rarer than it sounds. Relationship and mood both improve. |
-| Shared Meal | Heroes eat together. Conversation follows. It's difficult to genuinely dislike someone who shares your bread, which is why it still happens. Modest mood and relationship improvement. |
+| Shared Meal | Heroes eat together. It's difficult to genuinely dislike someone who shares your bread. This does not always stop them. Modest mood and relationship improvement. |
 | Gift Giving | One hero gives another a gift. The recipient is touched regardless of the giver's motives, which the game charitably does not investigate. Significant relationship gain. |
-| Training Together | Heroes spar or train. Competition conducted without malice turns out to be good for both parties. Relationship up, small mood boost. |
+| Training Together | Heroes compete without actively trying to harm each other, which turns out to be good for the relationship. Small mood boost, meaningful relationship gain. |
 | Saved by Ally | A hero reflects on being pulled out of a bad situation by someone who didn't have to. The resulting relationship gain is large and tends to stick. |
-| Romantic Confession | An Attracted hero says what they've been thinking. The outcome depends entirely on how the target feels about that, which varies. |
+| Romantic Confession | An Attracted hero says what they've been thinking. The outcome depends entirely on what the target has been thinking, which is not information the game provides in advance. |
 | Celebration | A hero has something worth celebrating and shares it with whoever's nearby. Mood and relationship boost for participants. |
 | Mentorship Offer | A veteran offers to help a junior hero improve — voluntarily, without being asked. Relationship benefit for both; the junior feels seen, the veteran feels useful. |
 | Oath of Friendship | Two heroes who have spent enough time together make it formal. May trigger a Best Friends bond. |
@@ -553,9 +553,9 @@ There are 30+ event types sorted into four groups:
 | Insult | One hero says something about another that they may or may not have meant. The target treats it as intentional either way. Relationship damage varies with severity. |
 | Theft | A hero takes something that wasn't offered. Greedy trait makes this more likely. Trust takes the damage, and trust is slow to rebuild. |
 | Fight | Words escalated past their natural limit. Relationship damage, potential mood effects, possible injury. |
-| Blame | A hero assigns responsibility for a failure to someone else. The someone else notices. Relationship damage follows. |
+| Blame | A hero nominates someone else to be responsible for a failure. The nominee notices. Relationship damage follows. |
 | Jealousy | A hero finds another's success or relationships difficult to tolerate and makes this apparent. Relationship hit for everyone involved. |
-| Romantic Rejection | A confession that went the wrong way. The relationship between confessor and recipient takes a significant hit, because these things always do. |
+| Romantic Rejection | A confession the target wasn't ready to hear. The relationship takes a significant hit — this outcome is, statistically, more common than it should be. |
 | Rumor Spreading | A hero shares information about another hero that wasn't theirs to share. The subject suffers for it; the wider social fabric suffers more quietly. |
 | Betrayal | A hero does something to another that cannot be explained as an accident or misunderstanding. Large relationship damage. Bonds do not survive this easily. |
 

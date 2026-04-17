@@ -145,12 +145,12 @@ There are 22 background events sorted into three types:
 | Event | What Happens |
 |-------|-------------|
 | Bar Fight | At some point, words were insufficient. Injuries possible, relationships damaged, furniture probably not improved. |
-| Drunk Confession | A hero says something they've been keeping to themselves. Whether this improves or damages their relationship depends entirely on what it was. |
-| Gambling Loss | The dice did not cooperate. Gold lost, mood down, and a new understanding of why the house always wins. |
+| Drunk Confession | A hero says something they've been keeping to themselves. The relationship outcome depends on what it was, which the game knows and is not telling you in advance. |
+| Gambling Loss | The dice did not cooperate. Gold lost, mood down, and a renewed conviction that next time will be different. |
 | Jealous Outburst | A hero makes their feelings about someone else's success loudly clear. Relationship hit for those involved; dignity hit for the outburst-haver. |
 | Vomit Incident | This happened. Mood penalty for the hero; additional penalty for everyone who witnessed it. |
 | Broken Heirloom | Something irreplaceable met an avoidable end. Mood penalty plus a grief thought that will linger for days. |
-| Drunken Insult | A hero says what they actually think of someone. Relationship damage scales with how accurate the insult was. |
+| Drunken Insult | A hero says what they actually think of someone. The damage scales, with uncomfortable accuracy, with how true it was. |
 | Cheating Accusation | Someone accuses someone of cheating at cards. The cards are probably not at fault. Trust takes a hit regardless. |
 | Stealing Suspicion | A hero is suspected of pocketing more than their share. This may or may not be true, but suspicion does its damage either way. |
 
@@ -161,7 +161,7 @@ There are 22 background events sorted into three types:
 | Love Triangle | Two heroes discover they are competing for the same third hero. Nobody handles this gracefully. Relationships shift; tension is efficiently generated. |
 | Old Flame Appears | A hero's romantic history walks through the door. Mood effects depend entirely on how that particular history ended. |
 | The Challenge | Someone issues a formal duel or contest. The outcome — not merely the result, but how each party behaves — shifts mood and reputation. |
-| Secret Revealed | Something private becomes public. The precise consequences depend on what the secret was, which varies considerably. |
+| Secret Revealed | Something private becomes public. The consequences span a wide range, depending on what the secret was — and some of them were considerable secrets. |
 | Marriage Proposal | A hero proposes to their Lovers-bonded partner. Requires relationship ≥ 80. Creates a Married bond on acceptance; creates a different kind of evening on refusal. |
 | Dramatic Exit | A hero decides they've had enough and leaves. Unavailable for a period; the relationship with whoever provoked this is affected. |
 | Lovers Getaway | A paired couple slips away for a few days. Both heroes become unavailable for 2 days. Whether they told anyone before leaving is unclear. |

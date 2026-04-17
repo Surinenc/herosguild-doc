@@ -19,6 +19,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 ### Guild Management
 - [Guild Overview](guides/guild.md) - Managing your guild and facilities
 - [Hero Relationships](guides/relationships.md) - Social bonds and mood system
+- [Events Overview](guides/events.md) - Tavern, guild, and dungeon event systems
 - [Crafting](guides/crafting.md) - Blacksmithing, alchemy, and more
 
 ### Progression

@@ -133,38 +133,38 @@ There are 22 background events sorted into three types:
 
 | Event | What Happens |
 |-------|-------------|
-| Impromptu Party | Someone declares it a party. Mood up for everyone present. |
-| Drinking Contest | Heroes compete. Winner gets mood boost; loser gets a hangover. |
-| Bardic Performance | A bard performs. Mood boost for all. |
-| Heart to Heart | Two heroes have an honest conversation. Relationship improves significantly. |
-| Lucky Streak | A gambling run goes well. Gold gained, mood up. |
-| Toast to the Fallen | Heroes remember someone lost. Shared grief, modest mood boost. |
+| Impromptu Party | Someone decides the evening calls for celebration. It might not, but no one argues. Mood up for everyone present. |
+| Drinking Contest | Heroes compete, because heroes always compete. Winner gets a mood boost; loser gets a hangover and a valuable lesson about pride. |
+| Bardic Performance | A bard performs. Heroes who didn't ask for music enjoy it anyway. Mood boost for all. |
+| Heart to Heart | Two heroes have an honest conversation, possibly by accident. Relationship improves significantly. |
+| Lucky Streak | The dice go the right way for once. Gold gained, mood up, briefly inflated confidence about gambling in general. |
+| Toast to the Fallen | Heroes raise a glass to someone no longer with them. Shared grief, and the modest mood boost that comes from not grieving alone. |
 
 **Negative (9 events)**
 
 | Event | What Happens |
 |-------|-------------|
-| Bar Fight | Heroes come to blows. Injuries possible, relationships damaged. |
-| Drunk Confession | A hero says something they shouldn't have. Variable relationship impact. |
-| Gambling Loss | Poor dice. Gold lost, mood down. |
-| Jealous Outburst | A hero acts on jealousy. Relationship hit for those involved. |
-| Vomit Incident | Self-explanatory. Mood penalty for the hero and nearby witnesses. |
-| Broken Heirloom | Something sentimental gets smashed. Mood penalty plus a grief thought. |
-| Drunken Insult | A hero insults another. Relationship damage proportional to severity. |
-| Cheating Accusation | Someone accuses someone of cheating at cards. Trust takes a hit. |
-| Stealing Suspicion | A hero is suspected of theft. Relationship and mood penalties. |
+| Bar Fight | At some point, words were insufficient. Injuries possible, relationships damaged, furniture probably not improved. |
+| Drunk Confession | A hero says something they've been keeping to themselves. Whether this improves or damages their relationship depends entirely on what it was. |
+| Gambling Loss | The dice did not cooperate. Gold lost, mood down, and a new understanding of why the house always wins. |
+| Jealous Outburst | A hero makes their feelings about someone else's success loudly clear. Relationship hit for those involved; dignity hit for the outburst-haver. |
+| Vomit Incident | This happened. Mood penalty for the hero; additional penalty for everyone who witnessed it. |
+| Broken Heirloom | Something irreplaceable met an avoidable end. Mood penalty plus a grief thought that will linger for days. |
+| Drunken Insult | A hero says what they actually think of someone. Relationship damage scales with how accurate the insult was. |
+| Cheating Accusation | Someone accuses someone of cheating at cards. The cards are probably not at fault. Trust takes a hit regardless. |
+| Stealing Suspicion | A hero is suspected of pocketing more than their share. This may or may not be true, but suspicion does its damage either way. |
 
 **Dramatic (7 events)**
 
 | Event | What Happens |
 |-------|-------------|
-| Love Triangle | Two heroes competing for a third. Tension generated; relationships shift. |
-| Old Flame Appears | A hero's past arrives unexpectedly. Mood effects vary by how that ended. |
-| The Challenge | A formal duel or contest is issued. Outcome shifts mood and reputation. |
-| Secret Revealed | Something private becomes public. Consequences depend on what the secret was. |
-| Marriage Proposal | A hero proposes to their Lovers-bonded partner (relationship ≥ 80 required). Creates a Married bond on acceptance. |
-| Dramatic Exit | A hero storms out. Unavailable for a period; relationship affected. |
-| Lovers Getaway | A paired couple disappears for a few days. Both heroes become unavailable for 2 days. |
+| Love Triangle | Two heroes discover they are competing for the same third hero. Nobody handles this gracefully. Relationships shift; tension is efficiently generated. |
+| Old Flame Appears | A hero's romantic history walks through the door. Mood effects depend entirely on how that particular history ended. |
+| The Challenge | Someone issues a formal duel or contest. The outcome — not merely the result, but how each party behaves — shifts mood and reputation. |
+| Secret Revealed | Something private becomes public. The precise consequences depend on what the secret was, which varies considerably. |
+| Marriage Proposal | A hero proposes to their Lovers-bonded partner. Requires relationship ≥ 80. Creates a Married bond on acceptance; creates a different kind of evening on refusal. |
+| Dramatic Exit | A hero decides they've had enough and leaves. Unavailable for a period; the relationship with whoever provoked this is affected. |
+| Lovers Getaway | A paired couple slips away for a few days. Both heroes become unavailable for 2 days. Whether they told anyone before leaving is unclear. |
 
 Background events are **weighted** — dramatic events are rarer than positive ones, and positive events are less common than negative ones, because this is a tavern, not a spa. The exact mix depends on which heroes are present, what bonds exist between them, and what relationship scores are in play.
 
@@ -343,15 +343,15 @@ There are 100+ events in five categories. Each event has a deadline (typically 3
 
 ### Categories
 
-**Hero Conflict** — disputes between specific heroes: rival feuds, love triangles, veterans bullying recruits, jealousy over promotions. Triggered by bond states, relationship scores, and mission counts.
+**Hero Conflict** — what happens when you put strong personalities in close quarters and give them reasons to compete. Rival feuds, love triangles, veterans using recruits as a means of expressing their opinions about recruits, jealousy over promotions. These events are triggered by bond states, relationship scores, and mission counts — which, when you think about it, are just ways of tracking resentment numerically.
 
-**Guild Dilemma** — internal structural tensions: a hero requesting promotion, a problematic personality threatening group cohesion, a near-death hero questioning whether to continue. Some options can result in a hero permanently leaving the guild.
+**Guild Dilemma** — structural tensions that require a decision before they make one for you. A hero requesting the promotion they've arguably earned. A problematic personality whose continued presence is becoming expensive. A near-death hero who has decided that mortality is a reason to reconsider. Some options result in a hero permanently leaving the guild. The game will tell you this in advance, which is courtesy of a kind the situation itself rarely offers.
 
-**Mission Moral** — ethical situations arising from what you've been doing in the field: a town asking for help after your dungeon runs, the cost of taking on difficult work, the guild's reputation in the wider world.
+**Mission Moral** — the bill that arrives after the dungeon run. A town you've been carving through sends someone to ask for help. The work you've taken on has a reputation attached to it. The wider world has noticed what kind of guild you're running. Whether this represents opportunity or accountability depends on your recent choices.
 
-**Resource Decision** — choices about guild resources and external appeals: a hero with the Kind trait who wants to shelter refugees (costs 300g to shelter, 100g for temporary help, 0g to refuse), supply shortages, economic trade-offs.
+**Resource Decision** — the moments when gold and principle have to sit down together and negotiate. A hero with the Kind trait wants to shelter refugees (300g to shelter, 100g for temporary help, 0g to decline). Supply shortages arrive at inopportune times, as they tend to. Money-versus-values is, historically, an undefeated category.
 
-**External Threat** — relationships with outside forces: rival guild alliance offers (requiring Valor ≥ 20 to negotiate on equal footing), bounties, external political pressure.
+**External Threat** — outside forces making their interest in your guild known. Rival guild alliance offers surface when you have enough Valor to negotiate without looking desperate (≥ 20). Bounties and political pressure arrive when you've attracted the wrong kind of attention. Whether any of this is welcome depends on which direction you've been pushing the axes.
 
 ### How Events are Matched
 

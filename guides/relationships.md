@@ -535,44 +535,44 @@ There are 30+ event types sorted into four groups:
 
 | Event | What It Does |
 |-------|-------------|
-| Good Conversation | Two heroes talk; relationship and mood both improve modestly |
-| Shared Meal | Heroes eat together; small mood boost and relationship improvement |
-| Gift Giving | One hero gives another a gift; significant relationship gain for recipient |
-| Training Together | Heroes spar or train; relationship improves, small mood boost |
-| Saved by Ally | Dungeon callback: a hero acknowledges being saved; large relationship gain |
-| Romantic Confession | An Attracted hero confesses feelings; relationship outcome depends on the target |
-| Celebration | Hero celebrates something good; mood and relationship boost for those nearby |
-| Mentorship Offer | Veteran offers to mentor a junior hero; relationship benefit for both |
-| Oath of Friendship | Two high-relationship heroes formalise their bond; may trigger a Best Friends bond |
+| Good Conversation | Two heroes talk and discover compatibility, which is rarer than it sounds. Relationship and mood both improve. |
+| Shared Meal | Heroes eat together. Conversation follows. It's difficult to genuinely dislike someone who shares your bread, which is why it still happens. Modest mood and relationship improvement. |
+| Gift Giving | One hero gives another a gift. The recipient is touched regardless of the giver's motives, which the game charitably does not investigate. Significant relationship gain. |
+| Training Together | Heroes spar or train. Competition conducted without malice turns out to be good for both parties. Relationship up, small mood boost. |
+| Saved by Ally | A hero reflects on being pulled out of a bad situation by someone who didn't have to. The resulting relationship gain is large and tends to stick. |
+| Romantic Confession | An Attracted hero says what they've been thinking. The outcome depends entirely on how the target feels about that, which varies. |
+| Celebration | A hero has something worth celebrating and shares it with whoever's nearby. Mood and relationship boost for participants. |
+| Mentorship Offer | A veteran offers to help a junior hero improve — voluntarily, without being asked. Relationship benefit for both; the junior feels seen, the veteran feels useful. |
+| Oath of Friendship | Two heroes who have spent enough time together make it formal. May trigger a Best Friends bond. |
 
 ### Negative (Ambient Conflict)
 
 | Event | What It Does |
 |-------|-------------|
-| Argument | Heroes disagree; relationship hit, mood hit for both |
-| Insult | One hero insults another; relationship damage based on severity |
-| Theft | A hero steals from another (Greedy trait relevant); trust hit, relationship down |
-| Fight | Physical altercation; relationship damage, possible mood and injury effects |
-| Blame | A hero blames another for a failure; relationship damage |
-| Jealousy | A hero acts on jealousy over another's success or relationship; relationship hit |
-| Romantic Rejection | A confession that doesn't go well; significant relationship hit for the confessor |
-| Rumor Spreading | A hero spreads gossip; relationship damage for the subject, possible wider effects |
-| Betrayal | A serious breach of trust; large relationship damage, potential bond dissolution |
+| Argument | Heroes disagree and neither backs down. Relationship hit and mood hit for both — the twin costs of being right and winning nothing. |
+| Insult | One hero says something about another that they may or may not have meant. The target treats it as intentional either way. Relationship damage varies with severity. |
+| Theft | A hero takes something that wasn't offered. Greedy trait makes this more likely. Trust takes the damage, and trust is slow to rebuild. |
+| Fight | Words escalated past their natural limit. Relationship damage, potential mood effects, possible injury. |
+| Blame | A hero assigns responsibility for a failure to someone else. The someone else notices. Relationship damage follows. |
+| Jealousy | A hero finds another's success or relationships difficult to tolerate and makes this apparent. Relationship hit for everyone involved. |
+| Romantic Rejection | A confession that went the wrong way. The relationship between confessor and recipient takes a significant hit, because these things always do. |
+| Rumor Spreading | A hero shares information about another hero that wasn't theirs to share. The subject suffers for it; the wider social fabric suffers more quietly. |
+| Betrayal | A hero does something to another that cannot be explained as an accident or misunderstanding. Large relationship damage. Bonds do not survive this easily. |
 
 ### Mission-Based (Post-Dungeon Reactions)
 
-These fire after dungeon runs based on what happened in the field:
+These fire after dungeon runs based on what happened in the field. The dungeon ends; the accounting begins.
 
-| Event | Trigger |
+| Event | What It Does |
 |-------|---------|
-| Saved Life | A hero saved another's life during the mission |
-| Fought Back to Back | Heroes fought alongside each other throughout |
-| Cowered | A hero failed to engage when allies needed help |
-| Left Behind | A hero was left in a difficult position by another |
-| Shared Loot | Heroes split loot fairly |
-| Hoarded Loot | A hero kept more than their share |
-| Blamed for Trap | A hero is blamed for walking into a trap |
-| Brilliant Strategy | A hero's tactic turned the fight |
+| Saved Life | A hero pulled another back from the edge. The relationship gain is large — the kind that tends to persist through subsequent arguments. |
+| Fought Back to Back | Heroes who relied on each other throughout come out of it closer. Sustained mutual dependence is good for trust. |
+| Cowered | A hero failed to act when action was needed. The heroes who noticed this do not forget. Relationship drops with those who witnessed it. |
+| Left Behind | A hero was put in a dangerous position by another's choice. The resulting resentment is proportional to how bad it got. |
+| Shared Loot | Heroes divided rewards fairly. Small positive relationship signal — the baseline decent behavior that tends to be taken for granted until it stops happening. |
+| Hoarded Loot | A hero kept more than their share. The others notice. Relationship damage with the rest of the party. |
+| Blamed for Trap | A hero is held responsible for a trap that caught someone. Fair or not, the accused takes a relationship hit with whoever was caught. |
+| Brilliant Strategy | A hero's thinking turned the fight. The rest of the party is prepared to acknowledge this. Mood and relationship boost. |
 
 Mission-based events are among the most powerful relationship movers in the game. Getting saved tends to create lasting gratitude. Getting left behind tends to create lasting resentment.
 
@@ -580,10 +580,10 @@ Mission-based events are among the most powerful relationship movers in the game
 
 | Event | What It Does |
 |-------|-------------|
-| Tavern Drinking | Heroes drink together; relationship improvement, drunk level rises |
-| Tavern Gambling | Heroes gamble together; outcome-dependent relationship and mood effects |
-| Tavern Feast | Heroes share a meal at the tavern; mood and relationship boost for participants |
-| Secret Shared | One hero confides something private in another; significant relationship gain |
+| Tavern Drinking | Heroes drink together. Conversation gets easier as the evening progresses. Relationship improves; drunk levels rise as a natural consequence. |
+| Tavern Gambling | Heroes gamble together. The relationship effects depend on the outcome — shared loss is more bonding than it has any right to be, but winning at someone's expense is not. |
+| Tavern Feast | Heroes share a proper meal together rather than eating alone. Mood and relationship improve for participants. |
+| Secret Shared | One hero tells another something they've told no one else. Whether this was wisdom or alcohol is not recorded. The relationship gain is significant either way. |
 
 Social events are logged with the hero's name and a description. The logs don't go away — if you want to understand why two heroes have the relationship they have, the social feed is the record.
 

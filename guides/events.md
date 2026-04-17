@@ -28,11 +28,11 @@ Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occa
 
 ## Guild Moral Events
 
-The guild itself has a moral identity, tracked across three axes: **Valor**, **Wealth**, and **Order**. Every significant decision — in dungeons, in the tavern, in how you treat your heroes — nudges these axes in one direction or another.
+The guild develops a personality, whether you intend it to or not. Three axes — **Valor**, **Wealth**, and **Order** — track this with the patience of a very thorough accountant. Every significant decision nudges them: dungeons, the tavern, how you treat your heroes, what you do when no one is watching.
 
-As your position on each axis shifts, the guild attracts different kinds of events. A guild deep in the Wealth axis will find merchants at its door and morally flexible propositions in its inbox. A guild at the Order extreme will face tests of principle it may not be equipped to pass. There are 96+ event templates across five categories, and which ones appear depends on where you've been pushing.
+A guild that hoards gold attracts merchants, and merchants bring temptations sized accordingly. A guild deep in Wealth will find morally flexible propositions arriving with increasing regularity. A guild fixated on Order will eventually attract problems that Order alone cannot solve. There are 96+ event templates across five categories — roughly as many complications as there are directions a guild can drift — and which ones appear depends entirely on where you've been pushing.
 
-These events have consequences. They shape your chronicle, affect your heroes, and occasionally offer choices that will move the axes further — or try to correct course.
+These events have consequences. They shift the axes further. Occasionally, they offer choices that might correct course before you've gone somewhere difficult to come back from.
 
 → **Full details:** [Guild Management — Guild Identity & Moral Events](guild.md#guild-identity--moral-events)
 

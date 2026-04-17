@@ -18,9 +18,9 @@ There is no history log for tavern decisions. What happens in the tavern stays i
 
 ## Tavern Background Events
 
-While you're spending Attention Points on the Tonight tab, the rest of the tavern proceeds without you. **Background events** fire automatically whenever heroes are gathered — 22 events across three types (Positive, Negative, Dramatic) that can affect mood, relationships, gold, bonds, and even hero availability. These are not decisions. They are consequences.
+While you're busy allocating Attention Points, the rest of the tavern is getting on with things without you. **Background events** fire automatically — 22 of them across three types — affecting mood, relationships, gold, bonds, and sometimes whether a specific hero is available tomorrow morning. You don't authorize them. You discover them. These are not decisions. They are consequences.
 
-Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occasional Marriage Proposal (requires the Lovers bond and a relationship score of 80 or higher).
+Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occasional Marriage Proposal. Some resolve quietly. Others require a certain amount of explaining.
 
 → **Full details:** [Guild Management — Tavern Background Events](guild.md#tavern-background-events)
 
@@ -40,9 +40,9 @@ These events have consequences. They shift the axes further. Occasionally, they 
 
 ## Context-Aware Guild Events
 
-Separate from axis-triggered events, the game scans your roster continuously for specific conditions and generates events tailored to the heroes it finds. A rivalry at boiling point. A veteran who's never been acknowledged. A near-death hero questioning retirement. The events use your heroes' names, reflect their history, and have deadlines.
+The game pays close attention to your heroes. Not as a general principle — it scans your roster continuously for specific conditions and produces events built around whoever it finds. A rivalry at boiling point. A veteran who has gone unacknowledged for too long. A near-death hero quietly reconsidering their career choices. The events use their names. The options reflect what has actually happened between them. They have deadlines.
 
-There are 100+ events across five categories — Hero Conflict, Guild Dilemma, Mission Moral, Resource Decision, and External Threat — each with preconditions, options, axis effects, and some with consequence chains that resolve days or weeks later.
+There are 100+ events across five categories: Hero Conflict, Guild Dilemma, Mission Moral, Resource Decision, and External Threat. If the deadline passes without your input, the game resolves it for you — defaulting, generally, to the least interesting option available.
 
 → **Full details:** [Guild Management — Context-Aware Guild Events](guild.md#context-aware-guild-events)
 

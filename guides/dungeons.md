@@ -251,7 +251,7 @@ Rogues with Detect Traps can spot these before triggering. Everyone else discove
 
 Dungeons are full of choices. Not the comfortable kind, where both options are acceptable and failure is theoretical. The other kind — where you have to decide who you actually are, while something is bleeding nearby.
 
-There are 145+ moral events in the game, spread across seven environments. Each event presents three options with distinct tones: **benevolent**, **neutral**, and **aggressive**. The right choice depends on your build, your relationship with your heroes, and how much you care about the consequences lasting longer than the dungeon.
+Moral events are spread across all seven environments. Each event presents three options with distinct tones: **benevolent**, **neutral**, and **aggressive**. The right choice depends on your build, your relationship with your heroes, and how much you care about the consequences lasting longer than the dungeon.
 
 ### How Events Work
 

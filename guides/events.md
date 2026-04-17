@@ -30,7 +30,7 @@ Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occa
 
 The guild develops a personality, whether you intend it to or not. Three axes — **Valor**, **Wealth**, and **Order** — track this with the patience of a very thorough accountant. Every significant decision nudges them: dungeons, the tavern, how you treat your heroes, what you do when no one is watching.
 
-A guild that hoards gold attracts merchants, and merchants bring temptations sized accordingly. A guild deep in Wealth will find morally flexible propositions arriving with increasing regularity. A guild fixated on Order will eventually attract problems that Order alone cannot solve. There are 96+ event templates across five categories — roughly as many complications as there are directions a guild can drift — and which ones appear depends entirely on where you've been pushing.
+A guild that hoards gold attracts merchants, and merchants bring temptations sized accordingly. A guild deep in Wealth will find morally flexible propositions arriving with increasing regularity. A guild fixated on Order will eventually attract problems that Order alone cannot solve. Which events appear depends entirely on where you've been pushing.
 
 These events have consequences. They shift the axes further. Occasionally, they offer choices that might correct course before you've gone somewhere difficult to come back from.
 
@@ -40,9 +40,7 @@ These events have consequences. They shift the axes further. Occasionally, they 
 
 ## Context-Aware Guild Events
 
-The game pays close attention to your heroes. Not as a general principle — it scans your roster continuously for specific conditions and produces events built around whoever it finds. A rivalry at boiling point. A veteran who has gone unacknowledged for too long. A near-death hero quietly reconsidering their career choices. The events use their names. The options reflect what has actually happened between them. They have deadlines.
-
-There are 100+ events across five categories: Hero Conflict, Guild Dilemma, Mission Moral, Resource Decision, and External Threat. If the deadline passes without your input, the game resolves it for you — defaulting, generally, to the least interesting option available.
+The game pays close attention to your heroes. Not as a general principle — it scans your roster continuously for specific conditions and produces events built around whoever it finds. A rivalry at boiling point. A veteran who has gone unacknowledged for too long. A near-death hero quietly reconsidering their career choices. The events use their names. The options reflect what has actually happened between them. They have deadlines. If the deadline passes without your input, the game resolves it for you — defaulting, generally, to the least interesting option available.
 
 → **Full details:** [Guild Management — Context-Aware Guild Events](guild.md#context-aware-guild-events)
 
@@ -50,7 +48,7 @@ There are 100+ events across five categories: Hero Conflict, Guild Dilemma, Miss
 
 ## Hero Social Events
 
-Heroes don't wait for your permission to have relationships. **Ambient social events** fire automatically between heroes throughout the day — 30+ event types covering ambient bonding (Good Conversation, Gift Giving, Mentorship Offer), ambient conflict (Argument, Betrayal, Rumor Spreading), post-dungeon reactions (Saved Life, Left Behind, Brilliant Strategy), and tavern interactions (Tavern Drinking, Secret Shared).
+Heroes don't wait for your permission to have relationships. **Ambient social events** fire automatically between heroes throughout the day — covering ambient bonding (Good Conversation, Gift Giving, Mentorship Offer), ambient conflict (Argument, Betrayal, Rumor Spreading), post-dungeon reactions (Saved Life, Left Behind, Brilliant Strategy), and tavern interactions (Tavern Drinking, Secret Shared).
 
 These events appear in the social feed. They cannot be intercepted. The relationship scores and bonds your heroes currently have are what determine whether the feed reads like a found family or a workplace incident report.
 

@@ -127,9 +127,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 
 While you're busy spending Attention Points on the Tonight tab, the rest of the tavern is busy running itself. **Background events** fire automatically whenever heroes are gathered — they don't ask for your approval, spend your points, or warn you in advance. They simply happen, get logged in the social feed, and leave consequences for you to manage in the morning.
 
-There are 22 background events sorted into three types:
-
-**Positive (6 events)**
+**Positive**
 
 | Event | What Happens |
 |-------|-------------|
@@ -140,7 +138,7 @@ There are 22 background events sorted into three types:
 | Lucky Streak | The dice go the right way for once. Gold gained, mood up, briefly inflated confidence about gambling in general. |
 | Toast to the Fallen | Heroes raise a glass to someone no longer with them. Shared grief, and the modest mood boost that comes from not grieving alone. |
 
-**Negative (9 events)**
+**Negative**
 
 | Event | What Happens |
 |-------|-------------|
@@ -154,7 +152,7 @@ There are 22 background events sorted into three types:
 | Cheating Accusation | Someone accuses someone of cheating at cards. The cards are probably not at fault. Trust takes a hit regardless. |
 | Stealing Suspicion | A hero is suspected of pocketing more than their share. This may or may not be true, but suspicion does its damage either way. |
 
-**Dramatic (7 events)**
+**Dramatic**
 
 | Event | What Happens |
 |-------|-------------|
@@ -339,7 +337,7 @@ The guild moral events described above are triggered by your position on the mor
 
 The game continuously scans your roster for specific conditions — a rivalry at boiling point, a hero with dangerously low mood, a veteran who hasn't been acknowledged, a Psychopath with unchecked authority — and when it finds a match, it generates an event tailored to those specific heroes. The event uses their names. The options reflect their history. Ignoring it is a decision with its own consequences.
 
-There are 100+ events in five categories. Each event has a deadline (typically 3–5 days). If the deadline passes without a decision, the game picks the default option for you. The default is never the worst option, but it is rarely the best one.
+There are events in five categories. Each event has a deadline (typically 3–5 days). If the deadline passes without a decision, the game picks the default option for you. The default is never the worst option, but it is rarely the best one.
 
 ### Categories
 
@@ -640,7 +638,7 @@ Both thresholds must be met for promotion. A hero who has completed 400 missions
 
 ### Chronicle Entries
 
-The chronicle tracks 14 event subtypes across three categories:
+The chronicle tracks events across three categories:
 
 - **Combat:** First kill, boss kill, biggest crit, near-death, intervene save, worst injury
 - **Social:** Bond formed, bond lost, romantic milestone, mental break

@@ -129,7 +129,7 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 
 ### Other Notable Bonds
 
-The game tracks 28 bond types total. Additional important bonds include:
+Additional bonds include:
 
 **Positive:**
 - **Drinking Buddies** - Bonded over tavern sessions
@@ -263,7 +263,7 @@ Needs below their critical threshold actively decrease mood.
 
 ## Mental Breaks
 
-When mood drops critically low, heroes may have what the Guild Clerk's handbook diplomatically refers to as "an episode." The game tracks 8 break types, each with different severity and duration.
+When mood drops critically low, heroes may have what the Guild Clerk's handbook diplomatically refers to as "an episode." Each break type has different severity and duration.
 
 ### Trigger Conditions
 
@@ -530,7 +530,7 @@ Beyond the Tonight tab and the tavern's background chaos, heroes generate a thir
 
 These events appear in the social feed. They cost you nothing. They cannot be prevented. The relationship scores you built — or didn't build — are the only variable.
 
-There are 30+ event types sorted into four groups:
+Events are sorted into four groups:
 
 ### Positive (Ambient Bonding)
 

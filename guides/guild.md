@@ -546,10 +546,10 @@ Heroes form bonds with each other, for better and frequently for worse. See [Rel
 
 | Bond | Effect |
 |------|--------|
-| Lovers | Large bonuses, huge penalties if partner dies |
-| Rivals | Combat bonuses when competing |
-| Mentor/Student | XP sharing, unique events |
-| Enemies | Combat penalties, conflicts |
+| Lovers | The most powerful bond in the game. Also the most expensive to lose. |
+| Rivals | Both fight harder when the other is watching. Neither admits this. |
+| Mentor/Student | The veteran improves the rookie. The rookie reminds the veteran how annoying they used to be. |
+| Enemies | Active mutual resentment with measurable stat consequences. |
 
 ---
 

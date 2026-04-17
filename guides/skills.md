@@ -116,6 +116,8 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 
 ### Attack Skills (Red)
 
+For heroes who prefer to resolve disagreements through direct physical contact.
+
 | Gem | Type | Description |
 |-----|------|-------------|
 | **Greater Cleave** | AoE Melee | Swing weapon in arc, hitting all enemies |
@@ -126,6 +128,8 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 
 ### Ranged Skills (Red/Green)
 
+For heroes who prefer to resolve disagreements from a safer distance.
+
 | Gem | Type | Description |
 |-----|------|-------------|
 | **Split Arrow** | AoE | Fire arrows that split to hit multiple targets |
@@ -133,6 +137,8 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 | **Tornado Shot** | AoE | Arrows spiral outward after impact |
 
 ### Spell Skills (Blue)
+
+Fire, lightning, ice, and chaos — the Mage's preferred vocabulary.
 
 | Gem | Type | Description |
 |-----|------|-------------|
@@ -143,12 +149,16 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 
 ### Minion Skills (Blue)
 
+The Necromancer's solution to being outnumbered: stop being outnumbered.
+
 | Gem | Type | Description |
 |-----|------|-------------|
 | **Raise Zombie** | Summon | Raise a zombie from enemy corpse |
 | **Summon Skeleton** | Summon | Summon a skeleton warrior |
 
 ### Healing Skills (Green)
+
+The skills that make the rest of the party's recklessness survivable.
 
 | Gem | Type | Description |
 |-----|------|-------------|
@@ -157,6 +167,8 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 | **Divine Shield** | Shield | Grant temporary damage absorption |
 
 ### Guard Skills (Green)
+
+Defensive skills, mostly for heroes who've learned what happens without them.
 
 | Gem | Type | Description |
 |-----|------|-------------|
@@ -173,6 +185,8 @@ Active gems are the skills your heroes actually use in combat. Each one has a ma
 | **Rallying Cry** | Party | Buff nearby allies' damage |
 
 ### Movement Skills (Green)
+
+For tactical repositioning. Also for leaving approximately as fast as possible.
 
 | Gem | Type | Description |
 |-----|------|-------------|

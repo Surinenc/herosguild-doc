@@ -75,6 +75,8 @@ Heroes without a weapon equipped fight **Unarmed** (1-3 base damage). This is no
 
 ### Weapon Stats
 
+Every weapon reduces to five numbers. Heroes who understand these numbers do better than heroes who simply pick up whatever looks most threatening, though both approaches are represented in the guild.
+
 | Stat | Description |
 |------|-------------|
 | **Damage** | Base attack damage range |
@@ -113,6 +115,8 @@ Heroes without a weapon equipped fight **Unarmed** (1-3 base damage). This is no
 | **Cloth** | Low | Mage, Necromancer | Mages consider anything heavier "excessive" |
 
 ### Armor Stats
+
+Armor trades mobility for survival. Warriors consider this an excellent trade. Mages consider it a personal affront.
 
 | Stat | Description |
 |------|-------------|

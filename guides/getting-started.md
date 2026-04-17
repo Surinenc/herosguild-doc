@@ -10,9 +10,9 @@ When you start Hero's Guild for the first time, you'll be greeted with the main 
 
 You'll begin with **500 gold** and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
 
-- **A tank** (Warrior or Cleric) - To absorb damage and protect your team
-- **A damage dealer** (Mage, Rogue, or Ranger) - To eliminate enemies quickly
-- **A healer** (Cleric) - To keep your party alive
+- **A tank** (Warrior or Cleric) — someone to be hit, repeatedly, on purpose
+- **A damage dealer** (Mage, Rogue, or Ranger) — someone to deal with the things doing the hitting
+- **A healer** (Cleric) — someone who will spend every fight wishing they'd chosen a quieter profession
 
 Starting with 2-3 heroes is recommended. You can always recruit more as you earn gold — though you'll quickly discover that "earning gold" and "spending gold on hero wages" exist in a delicate and somewhat adversarial relationship.
 

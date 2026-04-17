@@ -6,17 +6,17 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 
 | Level | Trust | Description |
 |-------|-------|-------------|
-| Devoted | +95 to +100 | Unbreakable loyalty |
-| Best Friend | +80 to +94 | Deep bond |
-| Close Friend | +60 to +79 | Trust each other |
-| Friend | +30 to +59 | Comfortable together |
-| Friendly | +10 to +29 | Know each other |
-| Neutral | -9 to +9 | Just met |
-| Annoyed | -10 to -20 | Mild friction |
-| Dislike | -21 to -35 | Growing tension |
-| Rival | -36 to -55 | Competition |
-| Hostile | -56 to -75 | Active antagonism |
-| Enemy | -76 to -100 | Hatred |
+| Devoted | +95 to +100 | Would follow into a volcano. Has probably done so. |
+| Best Friend | +80 to +94 | The sort of bond that forms under repeated pressure and holds. |
+| Close Friend | +60 to +79 | Will fight alongside without needing to be asked twice. |
+| Friend | +30 to +59 | Know each other well enough to tell the truth occasionally. |
+| Friendly | +10 to +29 | Can name each other. Some progress. |
+| Neutral | -9 to +9 | Indifferent. This is the beginning, one way or the other. |
+| Annoyed | -10 to -20 | A small quantity of resentment, not yet organized. |
+| Dislike | -21 to -35 | Have noticed things about each other that cannot be unnoticed. |
+| Rival | -36 to -55 | Actively competing. Neither takes losses gracefully. |
+| Hostile | -56 to -75 | Requires active management. Or physical separation. |
+| Enemy | -76 to -100 | Puts considerable effort into this. It shows in the combat stats. |
 
 ---
 

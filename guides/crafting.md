@@ -15,7 +15,7 @@ Create powerful equipment, potions, and consumables for your heroes — assuming
 
 ### Production Facilities
 
-The guild has 10 crafting station types:
+Ten crafting station types, each requiring a hero who could otherwise be doing something more immediately dangerous:
 
 | Station | Crafts | Skills Used |
 |---------|--------|-------------|

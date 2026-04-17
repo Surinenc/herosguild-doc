@@ -10,11 +10,11 @@ The Mission Board refreshes daily with available contracts. Access it from the G
 
 | Type | Icon | Description | Reward Focus |
 |------|------|-------------|--------------|
-| **Combat** | ⚔️ | Clear enemies | Gold, Materials |
-| **Boss Hunt** | 💀 | Kill specific boss | Rare Loot, Reputation |
-| **Escort** | 🛡️ | Protect NPC | Gold, Reputation |
-| **Retrieval** | 📦 | Recover an item | Specific Item |
-| **Exploration** | 🗺️ | Map new area | Intel, Unlocks |
+| **Combat** | ⚔️ | Everything in there is a problem; you resolve all of them | Gold, Materials |
+| **Boss Hunt** | 💀 | A specific monster with a reputation and a personal ending | Rare Loot, Reputation |
+| **Escort** | 🛡️ | Someone important enough to pay for protection, not important enough to provide it themselves | Gold, Reputation |
+| **Retrieval** | 📦 | An item ended up somewhere dangerous — hence your involvement | Specific Item |
+| **Exploration** | 🗺️ | Maps new territory. Pays in knowledge rather than blood, until it doesn't | Intel, Unlocks |
 
 ### Facility Unlock Missions
 

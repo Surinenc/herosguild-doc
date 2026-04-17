@@ -259,35 +259,37 @@ When an ally dies, heroes react based on their relationship. These reactions are
 
 ### Default Class Skills
 
-**Warrior:**
+Every hero starts with a set of class skills before any gem customization. These represent each class's foundational combat identity — which is a polite way of saying "what they do when no one has given them anything more interesting."
+
+**Warrior:** *Stand there and get hit, professionally.*
 - Strike - 100% damage basic attack
 - Power Attack - 150% damage, 2-turn cooldown
 - Cleave - 80% damage AoE, 3-turn cooldown
 - Taunt - Forces enemies to attack you, 3-turn cooldown
 - Shield Wall - 50% damage reduction, 3-turn cooldown
 
-**Cleric:**
+**Cleric:** *Split their effort between hurting enemies and repairing heroes, with variable success.*
 - Smite - 90% damage holy attack
 - Holy Fire - 110% damage, 2-turn cooldown
 - Heal - Single target restoration, 2-turn cooldown
 - Prayer of Healing - AoE healing, 4-turn cooldown
 
-**Mage:**
+**Mage:** *Prefers not to be touched while working.*
 - Staff Strike - 60% damage basic attack
 - Fireball - 130% damage with 30% ignite chance, 2-turn cooldown
 - Frost Nova - 60% AoE damage with 25% freeze chance, 3-turn cooldown
 
-**Rogue:**
+**Rogue:** *Every attack is described as a precision strike. Some of them are.*
 - Stab - 100% damage basic attack
 - Backstab - 200% damage single target, 3-turn cooldown
 - Fan of Knives - 70% damage AoE, 2-turn cooldown
 
-**Ranger:**
+**Ranger:** *Attacks from a distance, where things cannot hit back. A sensible policy.*
 - Arrow Shot - 100% damage basic attack
 - Multi-Shot - 70% damage AoE, 2-turn cooldown
 - Power Shot - 160% damage single target, 2-turn cooldown
 
-**Necromancer:**
+**Necromancer:** *Makes death work for them rather than against them, which is the principal advantage their colleagues lack.*
 - Dark Touch - 80% damage basic attack
 - Soul Drain - 100% damage with 100% lifesteal, 2-turn cooldown
 - Curse of Weakness - 60% AoE, 80% chance to weaken for 3 turns, 3-turn cooldown

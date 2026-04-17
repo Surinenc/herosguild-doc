@@ -189,13 +189,15 @@ Necromancers command the forces of death, raising minions to fight for them whil
 
 ### Primary Stats
 
-| Stat | Abbreviation | Description |
-|------|--------------|-------------|
-| **Strength** | STR | Physical damage, carry capacity |
-| **Dexterity** | DEX | Speed, crit chance, dodge, initiative |
-| **Intelligence** | INT | Magic damage, skill power, mana |
-| **Vitality** | VIT | Defense, HP, injury resistance |
-| **Luck** | LCK | Loot find, death saves, crit chance |
+Five stats govern everything a hero can do. Heroes have opinions about which one matters most. Those opinions correlate suspiciously with their class.
+
+| Stat | Abbr | What It Affects | Notable Opinions |
+|------|------|-----------------|-----------------|
+| **Strength** | STR | Physical damage, carry capacity | Warriors consider this the only stat. They are wrong, but not entirely. |
+| **Dexterity** | DEX | Speed, crit chance, dodge, initiative | Rogues treat their DEX score as a personal achievement. |
+| **Intelligence** | INT | Magic damage, skill power, mana | Mages regard low INT in others as a character failing. |
+| **Vitality** | VIT | Defense, HP, injury resistance | The stat nobody invests in until they need it urgently. |
+| **Luck** | LCK | Loot find, death saves, crit chance | The Guild Clerk takes no official position on whether this works. |
 
 ### Derived Stats
 

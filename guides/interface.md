@@ -165,19 +165,19 @@ When exploring dungeons:
 
 ### Room Types
 
-| Icon | Type |
-|------|------|
-| 🚪 | Entrance |
-| ⚔️ | Combat |
-| 💎 | Treasure |
-| ⚠️ | Trap |
-| 🏕️ | Rest |
-| ❓ | Event |
-| 🏪 | Shop |
-| 👹 | Boss |
-| 🔍 | Secret |
-| ⬇️ | Stairs |
-| 🏁 | Exit |
+| Icon | Type | Notes |
+|------|------|-------|
+| 🚪 | Entrance | Where optimism is at its peak |
+| ⚔️ | Combat | The main attraction, whether you wanted it or not |
+| 💎 | Treasure | The reason anyone's here |
+| ⚠️ | Trap | The reason anyone's limping |
+| 🏕️ | Rest | Popular after the trap |
+| ❓ | Event | Something other than combat. Could be better. Could easily be worse. |
+| 🏪 | Shop | A merchant who got here somehow and considers this a normal place to work |
+| 👹 | Boss | The thing guarding the good loot |
+| 🔍 | Secret | Not on the map. Finding it is half the reward. |
+| ⬇️ | Stairs | Progress, or the illusion of it |
+| 🏁 | Exit | The room everyone is looking for |
 
 ---
 
@@ -185,14 +185,11 @@ When exploring dungeons:
 
 ### Guild Vault
 
-Central storage for all items:
-- Categories (Weapons, Armor, etc.)
-- Sort options (Rarity, Type, Level)
-- Search function
+Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. Features categories, sort options, and a search function.
 
 ### Item Actions
 
-- **Equip** - Assign to hero
+- **Equip** - Assign to hero (can also be done by dragging, which heroes always manage to do accidentally)
 - **Sell** - Convert to gold
 - **Salvage** - Get materials
 - **Enchant** - Add magic

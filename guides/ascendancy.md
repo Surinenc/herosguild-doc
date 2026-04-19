@@ -126,7 +126,7 @@ Note: Party damage nodes grant team bonuses but increase the Trickster's own dam
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Venom** | Poison DoT | 10% poison on hit → +25% poison damage → +30% damage to poisoned enemies |
-| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +10%) → +10% (you take +10%) → +15% (you take +10%) |
+| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +10%) → +10% (you take +10%) → +12% (you take +10%) |
 | **C - Weaken** | Enemy Debuffs | Enemies deal -10% damage → -20% damage → enemies lose 10% armor |
 
 **Best For:** Long fights, attrition strategies, party debuff support

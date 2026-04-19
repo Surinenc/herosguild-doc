@@ -416,17 +416,17 @@ When a boss drops below a phase threshold:
 
 ### Party Composition
 
-**Balanced Party (Recommended):**
-- 1 Warrior (Tank)
-- 1 Cleric (Healer)
-- 2 DPS (any combination)
+**Balanced Party (Recommended, 4-6 heroes):**
+- 1-2 Warriors (Tank)
+- 1-2 Clerics (Healer)
+- 2-3 DPS (any combination)
 
 **Speed Run Party:**
-- 2 Rogues, 2 Mages
+- 2-3 Rogues, 2-3 Mages
 - Kill fast before damage matters. Also known as "the optimist's formation."
 
 **Survival Party:**
-- 2 Warriors, 2 Clerics
+- 2 Warriors, 2 Clerics, 2 DPS
 - Slow but very safe. Recommended for guild masters who've grown attached to their heroes.
 
 ### Relationship Bonuses

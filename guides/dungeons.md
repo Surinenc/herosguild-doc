@@ -177,6 +177,7 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 - **Minimum:** 1 hero (dangerous!)
 - **Maximum:** 6 heroes
 - **Recommended:** Stars + 2 (e.g., ⭐⭐⭐ = 5 heroes)
+- **Rating Bonus:** +5 party rating per hero beyond the 3rd (a 6-hero party gets +15 rating)
 
 ### Building a Good Party
 

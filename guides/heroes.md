@@ -381,14 +381,14 @@ Heroes gain **3 attribute points per level** to distribute among primary stats. 
 
 Heroes earn veteran ranks based on completed missions. The progression from Rookie to Legend is primarily a measure of how many times someone has voluntarily walked into a dungeon:
 
-| Rank | Missions | Morale Bonus | Rep Multiplier | XP Multiplier | Survival Bonus |
-|------|----------|-------------|----------------|---------------|----------------|
-| Rookie | 0-9 | +0 | 1.0× | 1.0× | 0% |
-| Seasoned | 10-24 | +5 | 1.05× | 1.0× | +2% |
-| Veteran | 25-49 | +10 | 1.1× | 1.05× | +5% |
-| Elite | 50-99 | +15 | 1.2× | 1.1× | +8% |
-| Champion | 100-199 | +25 | 1.3× | 1.15× | +12% |
-| Legend | 200+ | +40 | 1.5× | 1.2× | +15% |
+| Rank | Missions | Morale Bonus | Rep Multiplier | XP Multiplier | Damage Multiplier | Survival Bonus |
+|------|----------|-------------|----------------|---------------|-------------------|----------------|
+| Rookie | 0-9 | +0 | 1.0× | 1.0× | 1.0× | 0% |
+| Seasoned | 10-24 | +5 | 1.05× | 1.0× | 1.0× | +2% |
+| Veteran | 25-49 | +10 | 1.1× | 1.05× | 1.02× | +5% |
+| Elite | 50-99 | +15 | 1.2× | 1.1× | 1.04× | +8% |
+| Champion | 100-199 | +25 | 1.3× | 1.15× | 1.06× | +12% |
+| Legend | 200+ | +40 | 1.5× | 1.2× | 1.08× | +15% |
 
 ### Chronicle Titles
 
@@ -399,15 +399,15 @@ Heroes earn titles by achieving specific milestones tracked in their Chronicle. 
 | **Dragonslayer** | Kill a dragon-type boss | +10% damage vs Dragons |
 | **Heartbroken** | Lose a partner to death | +8% all damage |
 | **Veteran** | Complete 100 missions | +5% XP to lower-level allies |
-| **Ironhide** | Survive 5 near-death experiences | +50 max HP |
+| **Ironhide** | Survive 5 near-death experiences | +10% max HP |
 | **Oathbound** | Form an OathSworn bond | +8% damage with oath partner |
 | **Master Artisan** | Craft 3 Masterwork items | +10 crafting quality |
 | **Shield Brother** | Save 10 allies via Intervene | +15% Intervene chance |
 | **Nemesis Hunter** | End a Blood Feud | +10% damage vs Humanoids |
 | **Survivor** | Recover from a mental break | -20% negative mood impact |
-| **Legend** | Accumulate 50+ chronicle entries | +3 to all stats |
+| **Legend** | Accumulate 50+ chronicle entries | +8% to all stats |
 
-Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+3 all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it.
+Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it.
 
 ### Experience
 

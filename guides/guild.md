@@ -429,7 +429,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 
 | Expense | Amount | When |
 |---------|--------|------|
-| Hero wages | Per hero/week | Weekly |
+| Hero wages | Per hero/day | Daily |
 | Facility upkeep | Per facility/day | Daily |
 | Crafting materials | Variable | On craft |
 | Recruitment | 50-500g | Per hire |
@@ -440,7 +440,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 Heroes expect to be paid based on their level, because apparently risking their lives for the guild's reputation isn't reward enough:
 
 ```
-Daily Wage = (Level - 1) × 3 × Quality Multiplier
+Daily Wage = floor((Level - 1)^1.5 × 3) × Quality Multiplier
 ```
 
 | Hero Quality | Multiplier |
@@ -452,11 +452,12 @@ Daily Wage = (Level - 1) × 3 × Quality Multiplier
 | Legendary | 3.0x |
 
 **Examples:**
-- Level 10 Common: (10-1) × 3 × 1.0 = 27g/day
-- Level 20 Rare: (20-1) × 3 × 1.5 = 86g/day
-- Level 50 Legendary: (50-1) × 3 × 3.0 = 441g/day
+- Level 10 Common: 85g/day
+- Level 50 Common: 2,079g/day
+- Level 100 Common: 8,850g/day
+- Level 100 Legendary: 26,550g/day
 
-Level 1 heroes are free (no wages).
+Level 1 heroes are free (no wages). The exponential scaling means high-level heroes cost significantly more — a full roster of level 100 Legendaries will test even the wealthiest guild's finances.
 
 ### Managing Finances
 
@@ -662,8 +663,7 @@ The day proceeds in five phases, with or without your attention — though your 
 
 ### Weekly Cycle
 
-- **Day 1** - Wages paid; the number that reminds you what "burn rate" means
-- **Daily** - Facility upkeep charged; small individually, significant collectively
+- **Daily** - Hero wages and facility upkeep charged; the number that reminds you what "burn rate" means
 - **Variable** - Mission board refreshes; new opportunities, some of which are genuinely dangerous
 
 ### Recommended Daily Routine

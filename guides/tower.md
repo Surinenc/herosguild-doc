@@ -6,7 +6,9 @@ The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tow
 
 ## Unlocking the Spire
 
-**Requirement:** At least one hero at level 95+
+**Requirements:**
+- At least one hero at level 95+
+- Party size: **maximum 4 heroes** (unlike regular dungeons, which allow up to 6)
 
 ---
 

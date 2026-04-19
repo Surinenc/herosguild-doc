@@ -80,7 +80,7 @@ Each class has three branches, offering distinct playstyles. You won't have the 
 |--------|-------|-------|
 | Sharpshooter | Ranged dominance | Projectile damage, crit (reduced melee) |
 | Beast Master | Companion synergy | Minion damage and life |
-| Trapper | Tactical control | Damage, dexterity |
+| Trapper | Tactical control | Damage, evasion, dexterity |
 
 **Cleric** — Three interpretations of divine power: protective, supportive, and the one that hits unexpectedly hard.
 | Branch | Theme | Focus |
@@ -102,19 +102,31 @@ Each class has three branches, offering distinct playstyles. You won't have the 
 
 Keystones are the tree's most dramatic nodes. Every keystone grants a powerful bonus alongside at least one significant penalty. Allocating one is less of a decision and more of a personality test.
 
+### Bypass Paths
+
+Eleven mid-path keystones now have bypass paths — adjacent non-keystone nodes connect to create parallel routes around them. A keystone's tradeoff is genuinely optional: you can skip it for 0–1 extra points. The tree no longer forces you to accept a drawback just to reach the nodes behind it.
+
+### Class-Appropriate Penalties
+
+Keystone penalties are designed around each class's defensive profile:
+
+- **Warrior / Cleric** keystones penalize damage or crit — never armor, since armor is their primary defense
+- **Mage / Necromancer** keystones penalize armor or max life — they rely on energy shield, not plate
+- **Rogue / Ranger** keystones penalize armor or max life — evasion is their survival layer
+
 ### Example Keystones
 
 | Keystone | Bonuses | Penalty |
 |----------|---------|---------|
 | Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
 | Berserker Mastery (Warrior) | +19% Physical Damage, +30% Life Leech | -20% Max Life |
-| Sharpshooter Mastery (Ranger) | +57% Projectile Damage, +30% Crit Chance | -20% Max Life |
+| Sharpshooter Mastery (Ranger) | +30% Projectile Damage, +25% Crit Chance | -20% Max Life |
 | Lich Mastery (Necromancer) | +49% Chaos Damage, +39% Spell Damage | -25% Max Life |
 | Summoner Mastery (Necromancer) | +66% Minion Damage, +33% Minion Life | -25% Damage |
 | Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Holy Damage, +30% Crit Chance | -15% Damage |
 
-Each class has two keystones per branch — one at the end of each branch path. You'll notice that many keystones trade max life for damage. The Spire leaderboard reflects this design philosophy: the top entries are all glass cannons, and the second page is full of cautionary tales.
+Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. The Spire leaderboard reflects this design philosophy: the top entries are all glass cannons, and the second page is full of cautionary tales.
 
 ---
 

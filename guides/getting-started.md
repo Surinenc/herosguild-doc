@@ -33,10 +33,12 @@ As you progress, unlock these essential facilities. The Guild Clerk's recommende
 | Facility | Purpose |
 |----------|---------|
 | Barracks | Increases hero capacity, affects mood and rest |
+| Quarters | Private rooms for heroes — morale bonuses, decorations, adjacency effects |
 | Training Yard | Heroes train skills and spar |
 | Forge | Craft metal weapons and armor |
 | Alchemy Lab | Brew potions and elixirs |
 | Enchanting Table | Add magical properties to items |
+| Materials Market | Buy and sell crafting materials with dynamic pricing |
 
 ## Your First Dungeon
 

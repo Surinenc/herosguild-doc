@@ -18,6 +18,8 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 | **Armory** | Equipment storage | 6 |
 | **Warehouse** | Material & gold storage | 6 |
 | **Shop** | Sell items to customers | 5 |
+| **Quarters** | Private hero housing (6 floors) | — |
+| **Materials Market** | Buy/sell crafting materials | — |
 
 ### Production Facilities
 
@@ -62,6 +64,92 @@ Hero housing affects mood and rest recovery. The beds have witnessed more reconc
 | 3 | 30 | +0% | 1.0x | 20g |
 | 4 | 45 | +5% | 1.05x | 800g |
 | 5 | 60 | +10% | 1.1x | 2,000g |
+
+### Hero Quarters
+
+The Quarters system lets you move heroes out of the communal Barracks and into private rooms across up to 6 buildable floors. Private rooms provide morale bonuses, decoration slots, and adjacency effects — the Barracks provides complaints about the snoring.
+
+Heroes not assigned to a private room remain in the Barracks (Floor 0), which is free but applies a morale penalty to higher-level heroes who have grown accustomed to better.
+
+#### Barracks Penalty
+
+| Hero Level | Morale Penalty |
+|------------|----------------|
+| 1-49 | None |
+| 50-79 | -5 |
+| 80-99 | -10 |
+| 100+ | -15 |
+
+#### Floor Construction
+
+Floors must be built in order. Each floor contains 12 private rooms. Once built, floors are permanent.
+
+| Floor | Build Cost |
+|-------|-----------|
+| 1 | 50,000g |
+| 2 | 150,000g |
+| 3 | 400,000g |
+| 4 | 800,000g |
+| 5 | 1,500,000g |
+| 6 | 3,000,000g |
+
+Total capacity: 72 private rooms across all 6 floors.
+
+#### Room Tiers
+
+Rooms start at Tier 1 and can be upgraded sequentially. Higher tiers provide better morale bonuses and more decoration slots.
+
+| Tier | Name | Upgrade Cost | Daily Upkeep | Deco Slots | Morale |
+|------|------|-------------|-------------|------------|--------|
+| 1 | Basic Room | — | 30g | 1 | +5 |
+| 2 | Furnished Room | 10,000g | 80g | 2 | +10 |
+| 3 | Private Suite | 50,000g | 200g | 3 | +15 |
+| 4 | Luxury Suite | 200,000g | 500g | 4 | +20 |
+| 5 | Royal Chamber | 500,000g | 1,000g | 5 | +30 |
+
+Only occupied rooms cost daily upkeep. Empty rooms are free.
+
+#### Decorations
+
+Each room can hold one decoration per category. Decorations provide stat bonuses to the assigned hero and persist in the room if the hero is reassigned. Sell decorations for 50% refund.
+
+| Category | Best Item | Cost | Effect |
+|----------|-----------|------|--------|
+| **Furniture** | Royal Bed | 100,000g | +25% HP recovery speed |
+| **Lighting** | Magic Orb | 80,000g | +12 morale |
+| **Trophies** | Legendary Banner | 150,000g | +3% damage |
+| **Comfort** | Hot Spring | 120,000g | +8 morale, +15% HP recovery |
+| **Luxury** | Gold Statue | 200,000g | +2% all stats |
+
+Each category also has cheaper options (1,000g–60,000g) with proportionally smaller bonuses.
+
+**Class Preferences:** Heroes gain +3 morale when their room contains a decoration matching their class preference — Warriors prefer Trophies and Furniture, Clerics prefer Comfort and Furniture, Mages prefer Luxury and Trophies, Rogues prefer Luxury and Lighting, Rangers prefer Comfort and Lighting, Necromancers prefer Trophies and Lighting.
+
+#### Adjacency System
+
+Each floor arranges its 12 rooms around a central hallway. Adjacent rooms share a wall, and the relationship between neighboring heroes affects both their morale:
+
+| Relationship | Morale Effect |
+|-------------|---------------|
+| Best Friend | +10 |
+| Friend | +5 |
+| Neutral | 0 |
+| Rival | -5 |
+| Enemy | -10 |
+
+Each room has 1-2 neighbors. Place friends together and enemies apart.
+
+#### Quarters Morale Effects
+
+The total quarters morale (room tier + decorations + class preferences + adjacency) translates into combat bonuses:
+
+| Quarters Morale | Effect |
+|----------------|--------|
+| Above 40 | +2% damage, +3% XP gain |
+| Above 20 | +1% damage, +1% XP gain |
+| 0 to 20 | No effect |
+| -5 to 0 | -1% XP gain |
+| Below -5 | -1% damage, -2% XP gain |
 
 ### Tavern
 
@@ -431,6 +519,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 |---------|--------|------|
 | Hero wages | Per hero/day | Daily |
 | Facility upkeep | Per facility/day | Daily |
+| Quarters upkeep | 30-1,000g per occupied room | Daily |
 | Crafting materials | Variable | On craft |
 | Recruitment | 50-500g | Per hire |
 | Infirmary costs | Variable | Per treatment |
@@ -498,6 +587,7 @@ Mood affects combat performance. Happy heroes hit harder; miserable heroes hit t
 
 **Improving Mood:** The things worth investing in.
 - Tavern activities (Buy Rounds, Feast) — the Guild Clerk considers these mandatory expenses
+- Private Quarters — room tier, decorations, and good neighbors all contribute; see [Hero Quarters](#hero-quarters)
 - Comfortable Barracks — the baseline everyone notices when it falls below acceptable
 - Chapel bonus — passive, daily, and the easiest improvement in the game to arrange
 - Successful missions — nothing lifts morale like coming back
@@ -569,6 +659,75 @@ The guild shop lets you sell items to visiting customers for gold — turning yo
 **Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit. Finding the sweet spot is an art form that most guild masters discover through expensive trial and error.
 
 **Market Events:** Random events like Festivals (+30% accessory demand), Wars (+25% weapon/armor demand), or Disease Outbreaks (+50% consumable demand) temporarily shift prices.
+
+---
+
+## Materials Market
+
+The Materials Market lets you buy and sell crafting materials directly, rather than relying entirely on dungeon drops and the generosity of merchants who consider "fair" a relative term. Access it from the Shop.
+
+### Pricing
+
+Prices are dynamic. Every transaction shifts the price — buying drives it up, selling drives it down.
+
+```
+Effective Price = Base Price × Player Multiplier × Event Modifier(s)
+```
+
+**Base Prices by Tier:**
+
+| Tier | Base Price |
+|------|-----------|
+| Common | 100g |
+| Uncommon | 1,000g |
+| Rare | 10,000g |
+| Epic | 100,000g |
+
+Legendary materials cannot be bought or sold. Monster parts (dragon scales, bones, venom glands, etc.) are also excluded — the market has standards, or at least pretends to.
+
+**Player Multiplier:** Starts at 1.0×. Each unit bought adds +0.05, each unit sold subtracts -0.05. Clamped between 0.5× and 10.0×. Buying 10 Mithril Ore in one go pushes its multiplier to 1.50× — and drops the price of cheaper metals in the same category by -0.01 per unit. The market rewards diversified shopping.
+
+### Stock & Restock
+
+The market restocks daily with fixed quotas per material. Stock is set to the quota each day, not added to the remainder.
+
+| Material Tier | Daily Restock |
+|--------------|--------------|
+| Common basics (Wood, Iron, Cloth, etc.) | 5 units |
+| Food (Meat, Fish, Eggs, etc.) | 20 units |
+| Uncommon | 4 units |
+| Rare | 1 unit |
+| Epic | 1 unit, weekly only |
+
+Transactions are limited to Buy 1 / Buy 10 and Sell 1 / Sell 10 per click, but there's no daily transaction cap.
+
+### Market Events
+
+The market has a 5% daily chance of generating a random event (up to 3 concurrent). Events last 3–10 days and modify prices for affected categories.
+
+**Price Spikes** — when supply tightens:
+
+| Event | Affected | Effect | Duration |
+|-------|----------|--------|----------|
+| Caravan Ambushed | All categories | +30% | 4 days |
+| Mine Collapse | Metal | +50% | 6 days |
+| Dragon Attacks Tanneries | Leather | +75% | 5 days |
+| Drought | Herbs | +40% | 7 days |
+| War Declared | Metal + Leather | +40% | 10 days |
+| Royal Commission | Gold & Mithril only | +100% | 5 days |
+
+**Price Drops** — when supply floods in:
+
+| Event | Affected | Effect | Duration |
+|-------|----------|--------|----------|
+| Dwarven Trade Agreement | Metal | -30% | 10 days |
+| Bumper Harvest | Herbs | -40% | 7 days |
+| Foreign Traders | All categories | -20% | 3 days |
+| Festival Leftovers | Misc/Food | -50% | 4 days |
+| Silk Road Opens | Cloth | -35% | 8 days |
+| Alchemy Breakthrough | Herbs + Essence | -25% | 8 days |
+
+Event modifiers stack on top of the player multiplier and are not clamped — a Royal Commission on already-expensive Mithril can push prices well past 10×. The Guild Clerk recommends stockpiling before wars and selling during surpluses. This is the sort of advice that sounds obvious and is consistently ignored.
 
 ---
 

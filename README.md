@@ -18,6 +18,8 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 
 ### Guild Management
 - [Guild Overview](guides/guild.md) - Managing your guild and facilities
+- [Hero Quarters](guides/guild.md#hero-quarters) - Private rooms, decorations, and adjacency bonuses
+- [Materials Market](guides/guild.md#materials-market) - Buy/sell crafting materials with dynamic pricing
 - [Hero Relationships](guides/relationships.md) - Social bonds and mood system
 - [Events Overview](guides/events.md) - Tavern, guild, and dungeon event systems
 - [Crafting](guides/crafting.md) - Blacksmithing, alchemy, and more

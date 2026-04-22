@@ -689,17 +689,17 @@ Legendary materials cannot be bought or sold. Monster parts (dragon scales, bone
 
 ### Stock & Restock
 
-The market restocks daily with fixed quotas per material. Stock is set to the quota each day, not added to the remainder.
+The market restocks daily up to its quota. Stock can exceed the daily quota — selling materials to the market adds them to stock, up to a maximum of 20× the daily restock amount.
 
-| Material Tier | Daily Restock |
-|--------------|--------------|
-| Common basics (Wood, Iron, Cloth, etc.) | 5 units |
-| Food (Meat, Fish, Eggs, etc.) | 20 units |
-| Uncommon | 4 units |
-| Rare | 1 unit |
-| Epic | 1 unit, weekly only |
+| Material Tier | Daily Restock | Max Stock |
+|--------------|--------------|-----------|
+| Common basics (Wood, Iron, Cloth, etc.) | 5 units | 100 |
+| Food (Meat, Fish, Eggs, etc.) | 20 units | 400 |
+| Uncommon | 4 units | 80 |
+| Rare | 1 unit | 20 |
+| Epic | 1 unit, weekly only | 20 |
 
-Transactions are limited to Buy 1 / Buy 10 and Sell 1 / Sell 10 per click, but there's no daily transaction cap.
+If stock is below the daily quota at restock time, it's refilled to that quota. If stock is above the quota (from player sells), it stays — the market doesn't discard inventory. Transactions are limited to Buy 1 / Buy 10 and Sell 1 / Sell 10 per click, but there's no daily transaction cap.
 
 ### Market Events
 

@@ -71,6 +71,10 @@ Each mission entry shows what you're getting into — before you commit to getti
 - **Heroic** 🔥 - Heroic dungeons, for guilds that have run out of interesting problems
 - **Unlock** 🔓 - Facility unlock missions; do these early
 
+### Chain Step Badge
+
+Missions belonging to a [quest chain](quest-chains.md) carry a **📜 badge** and a tooltip naming the chain and the step (e.g., *"The Goblin Menace — Step 1/4"*). They behave like regular missions on the board — same dispatch flow, same success/failure rules — but completing them advances the chain and unlocks the next step for tomorrow's board.
+
 ### Starting a Mission
 
 1. Select a mission
@@ -78,6 +82,22 @@ Each mission entry shows what you're getting into — before you commit to getti
 3. Choose supervised/unsupervised
 4. Set tactical preset (if unsupervised)
 5. Launch expedition
+
+---
+
+## Quest Log
+
+The **📜 Quest Log** button in the Guild Scene sidebar is visible from day one. It tracks every story chain, class chain, and weekly bounty — locked, active, or completed — so you always know what's available, what's in progress, and what's gating the next chain.
+
+### Tabs
+
+- **Story** - Five long-form campaigns gated by guild rank (F → B)
+- **Class** - Six class chains, one per class, gated by rank E + a level-25 hero of that class
+- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown
+
+Locked chains show their unlock requirements. Active chains show the current step, step-level rewards, and a preview of the finale reward. Completed chains are archived for the record.
+
+→ **Full details:** [Quest Chains](quest-chains.md)
 
 ---
 

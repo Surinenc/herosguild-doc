@@ -26,6 +26,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 
 ### Progression
 - [Dungeons](guides/dungeons.md) - Exploring and conquering dungeons
+- [Quest Chains](guides/quest-chains.md) - Story chains, class chains, and weekly bounties
 - [Heroic Dungeons](guides/heroic-dungeons.md) - Weekly endgame challenges
 - [Abyssal Spire](guides/tower.md) - The endless tower challenge
 

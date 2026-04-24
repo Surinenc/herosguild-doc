@@ -824,6 +824,7 @@ The day proceeds in five phases, with or without your attention — though your 
 
 - **Daily** - Hero wages and facility upkeep charged; the number that reminds you what "burn rate" means
 - **Variable** - Mission board refreshes; new opportunities, some of which are genuinely dangerous
+- **Every 7 days** - A new weekly bounty rolls into the Quest Log with a 7-day timer; see [Quest Chains](quest-chains.md)
 
 ### Recommended Daily Routine
 

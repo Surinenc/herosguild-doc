@@ -24,6 +24,7 @@ The Guild Screen is your home base — the single screen you'll spend most of yo
 - **Manage facilities** - Build and upgrade guild buildings, each of which costs more than you'd like
 - **Access the tavern** - Recruit new heroes, who will immediately start costing you money
 - **Check the mission board** - Find dungeons to explore and contracts to accept
+- **Open the quest log** - Track story chains, class chains, and your current weekly bounty — the Weekly tab has a bounty active from day one
 - **Open the shop** - Buy and sell items; the prices are not negotiable, but the regret is optional
 
 ### Key Facilities
@@ -42,7 +43,7 @@ As you progress, unlock these essential facilities. The Guild Clerk's recommende
 
 ## Your First Dungeon
 
-Ready for adventure? (The heroes certainly think they are.) Head to the **Mission Board** and select a low-difficulty dungeon (1-2 stars).
+Ready for adventure? (The heroes certainly think they are.) Head to the **Mission Board** and select a low-difficulty dungeon (1-2 stars). If a mission is marked with a **📜 badge**, it's the first step of a [quest chain](quest-chains.md) — completing it unlocks the next step on tomorrow's board.
 
 ### Selecting Your Party
 

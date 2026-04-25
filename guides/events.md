@@ -68,6 +68,14 @@ Choices here affect the dungeon run directly (damage, healing, loot, enemy spawn
 
 ---
 
+## What Hazards Are Not
+
+Environmental hazards (toxic gas, magic seals, collapsing ceilings) are sometimes mistaken for an event system. They aren't. Hazards are deterministic obstacles resolved by **class composition**, not by player choice — there's no menu, no three-option decision, no axis-shifting moral dilemma. Bring the right class and the hazard resolves cleanly. Bring the wrong party and you push through.
+
+→ **Full details:** [Dungeons — Environmental Hazards](dungeons.md#environmental-hazards)
+
+---
+
 ## How the Systems Connect
 
 The six systems are not independent.

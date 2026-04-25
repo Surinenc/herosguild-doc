@@ -31,6 +31,10 @@ Special missions marked with 🔓 unlock guild facilities:
 
 These never expire and are always ⭐⭐ difficulty.
 
+### Hazard Warnings
+
+Contracts at 2★ and above can carry [environmental hazards](#environmental-hazards) — situations that need the right class to resolve cleanly. Hazards appear on the Mission Board card with an orange ⚠️ badge naming the hazard and the class(es) that handle it (e.g., *"⚠️ Toxic Gas Cloud — Cleric"*). Read these before forming a party.
+
 ---
 
 ## Difficulty System
@@ -74,54 +78,54 @@ Monster level determines enemy strength:
 
 ## Dungeon Environments
 
-Seven distinct environments, each with unique enemies and hazards. The dungeon doesn't care about your party composition — but you should.
+Seven distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. (The structured class-resolved [Environmental Hazards](#environmental-hazards) system is environment-agnostic — any hazard can roll on any 2★+ dungeon.)
 
 ### Forest
 
 - **Enemies:** Beasts, Humanoids (bandits, goblins) — things that live here and consider your presence an intrusion
-- **Hazards:** Overgrowth, wild animal ambushes; the trees make sightlines difficult and loudness inadvisable
+- **Atmosphere:** Overgrowth, wild animal ambushes; the trees make sightlines difficult and loudness inadvisable
 - **Loot Focus:** Herbs, leather, wood
 - **Tips:** Bring a Ranger for tracking — the Forest rewards preparation and punishes being surprised by the third ambush in a row
 
 ### Cave
 
 - **Enemies:** Beasts, Humanoids (orcs, trolls)
-- **Hazards:** Darkness, cramped spaces — the fighting is fine; the claustrophobia is the other problem
+- **Atmosphere:** Darkness, cramped spaces — the fighting is fine; the claustrophobia is the other problem
 - **Loot Focus:** Ore, gems
 - **Tips:** Need light sources or suffer penalties; the enemies have adapted to the dark and do not share your disadvantage
 
 ### Ruins
 
 - **Enemies:** Undead, Constructs
-- **Hazards:** Traps, unstable structures; the people who built these places anticipated visitors and took appropriate measures
+- **Atmosphere:** Traps, unstable structures; the people who built these places anticipated visitors and took appropriate measures
 - **Loot Focus:** Artifacts, ancient items
 - **Tips:** Bring a Rogue for trap detection — the traps remain functional long after everything else has crumbled
 
 ### Crypt
 
 - **Enemies:** Undead (skeletons, vampires, liches) — concentrated, organized, and entirely opposed to your presence
-- **Hazards:** Darkness, cursed ground
+- **Atmosphere:** Darkness, cursed ground
 - **Loot Focus:** Gold, cursed items (inspect before equipping)
 - **Tips:** Clerics excel here. The anti-undead bonus they've been mentioning since recruitment day has finally arrived.
 
 ### Swamp
 
 - **Enemies:** Beasts, Undead
-- **Hazards:** Poison, difficult terrain, ambushes; the swamp considers all three standard hospitality
+- **Atmosphere:** Poison, difficult terrain, ambushes; the swamp considers all three standard hospitality
 - **Loot Focus:** Rare herbs, exotic materials
 - **Tips:** Bring antidotes and high VIT heroes; nobody enjoys the swamp, but heroes without VIT enjoy it measurably less
 
 ### Tower
 
 - **Enemies:** Constructs, Elementals
-- **Hazards:** Magic traps, arcane puzzles — the tower's original occupants considered security through complexity, and were correct
+- **Atmosphere:** Magic traps, arcane puzzles — the tower's original occupants considered security through complexity, and were correct
 - **Loot Focus:** Magic items, arcane materials
 - **Tips:** High INT helps with puzzles; low INT heroes get through eventually, through persistence and collateral damage
 
 ### Volcano
 
 - **Enemies:** Demons, Fire Elementals
-- **Hazards:** Extreme heat, lava; both will hurt you, and the lava does not require warning signs
+- **Atmosphere:** Extreme heat, lava; both will hurt you, and the lava does not require warning signs
 - **Loot Focus:** Fire materials, demon parts
 - **Tips:** Fire resistance is essential. This seems obvious. Parties arrive without it every week.
 
@@ -203,6 +207,7 @@ Worth reviewing before committing to any dungeon. The Guild Clerk has drafted in
 - [ ] Equipment is appropriate for hero level
 - [ ] Consumables equipped (potions); heroes who forget these generate the most paperwork
 - [ ] Class balance (tank, heal, dps)
+- [ ] Required class for any listed [hazard](#environmental-hazards) is in the party (2★+ contracts only)
 
 ---
 
@@ -245,6 +250,76 @@ Rogues with Detect Traps can spot these before triggering. Everyone else discove
 | Tripwire Alarm | 0 | Alerts enemies |
 | Crushing Ceiling | 40 | - |
 | Arcane Glyph | 30 | Mana drain |
+
+---
+
+## Environmental Hazards
+
+Some obstacles aren't traps and they aren't enemies — they're situations. A toxic mist filling a corridor. A magical seal across a doorway. A ceiling that has decided today is the day. Hazards are environmental problems that the right hero handles cleanly, and the wrong party walks through and pays for.
+
+Unlike traps (which are sprung) or events (which are chosen), hazards are **resolved by class**. Bring the right class and the hazard barely registers. Bring the wrong party and you push through anyway — the mission still succeeds, but it costs you.
+
+### Where Hazards Appear
+
+- **2★ and higher missions only** — 1★ contracts are hazard-free, so new guilds don't get blindsided
+- **On the Mission Board** — hazards are listed on the contract card *before* you commit, alongside the difficulty stars
+- **In dungeon rooms** — combat rooms can carry a hazard; you find out on entry, before combat begins
+
+A 2★ dungeon carries roughly one hazard. Higher-star dungeons can carry several, distributed across qualifying rooms. Boss rooms, rest stops, shops, and event rooms never host hazards.
+
+### Hazard Types
+
+Six hazard types ship at launch. Each names the class (or pair of classes) that resolves it cleanly:
+
+| Hazard | Resolved By |
+|--------|-------------|
+| **Toxic Gas Cloud** | Cleric |
+| **Magic Seal** | Mage |
+| **Collapsing Ceiling** | Ranger |
+| **Cursed Altar** | Warrior or Cleric |
+| **Pitch-Dark Corridor** | Ranger or Warrior |
+| **Icy or Flooded Passage** | Mage or Ranger |
+
+Hazards are **not environment-themed** — any hazard can roll on any 2★+ dungeon, regardless of whether it's a Forest, Crypt, or Volcano.
+
+### Clean Resolution vs. Pushing Through
+
+When a hazard fires, the engine looks at your party for the required class:
+
+**Clean resolution** — at least one matching hero is present:
+- One hero of the required class handles it (the first matching hero in party order, if you have multiple)
+- That hero takes a small mood dip (-4 to -8); no HP loss
+- Rewards stay full
+- A green narrative line appears in the mission report (e.g., *"Brother Aldric purified the toxic gas before it reached the others"*)
+
+**Pushing through** — no matching hero:
+- Every party member loses 10–15% of max HP (clamped to 1 HP minimum — hazards never kill anyone outright)
+- Mission rewards are reduced by 15–20%
+- The mission still completes as a Success — hazards don't fail missions
+- An orange narrative line appears in the mission report
+
+### Mitigation
+
+Hazards are deterministic, not random — there is no skill check, dice roll, or RNG. Your only mitigation lever is **party composition**:
+
+- Read the hazard warnings on the Mission Board before dispatch
+- If a 2★+ contract lists a hazard you can't cover, either swap a hero into the party or let the contract roll off tomorrow
+- A party with all six classes covered (Warrior, Mage, Cleric, Rogue, Ranger, Necromancer) handles every current hazard cleanly
+
+Items, skills, equipment, and traits do not bypass hazards. Detection-style abilities (the Rogue's Detect Traps, etc.) also do not apply — hazards are distinct from traps.
+
+### Hazards & Guild Identity
+
+Each hazard you face nudges the guild's moral axes:
+
+- **Clean resolution** — small **+Order** nudge (caution rewarded)
+- **Pushing through** — small **+Freedom** nudge (risk tolerated)
+
+These add up over many dungeons. A guild that consistently dispatches well-balanced parties drifts toward Order; a guild that "we'll just send the party we have" drifts toward Freedom.
+
+### Persistence
+
+A resolved hazard stays resolved. If you save and reload mid-dungeon, hazard rooms you've already cleared do not re-fire. Hazards are tied to the dungeon instance, not to the room template.
 
 ---
 

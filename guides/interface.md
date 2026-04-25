@@ -75,6 +75,10 @@ Each mission entry shows what you're getting into — before you commit to getti
 
 Missions belonging to a [quest chain](quest-chains.md) carry a **📜 badge** and a tooltip naming the chain and the step (e.g., *"The Goblin Menace — Step 1/4"*). They behave like regular missions on the board — same dispatch flow, same success/failure rules — but completing them advances the chain and unlocks the next step for tomorrow's board.
 
+### Hazard Badge
+
+Missions at 2★ and higher can carry an **orange ⚠️ badge** naming an [environmental hazard](dungeons.md#environmental-hazards) and the class(es) that resolve it cleanly (e.g., *"⚠️ Toxic Gas Cloud — Cleric"*). The badge appears beside the difficulty stars on the contract card. Bring the named class to handle the hazard cleanly; otherwise the party pushes through and pays for it.
+
 ### Starting a Mission
 
 1. Select a mission

@@ -231,28 +231,30 @@ Skill gems add new abilities to your hero when socketed:
 
 | Gem | Type | Effect |
 |-----|------|--------|
-| Fireball | Damage | AoE fire attack |
-| Ice Nova | Damage/Control | AoE cold + slow |
-| Life Leech | Utility | Heal on damage dealt |
-| Power Strike | Damage | High single-target |
-| Multi-Shot | Damage | Hit multiple targets |
-| Battle Heal | Support | Heal ally in combat |
+| Pyroblast | Spell | Single-target fire spell |
+| Freezing Pulse | Spell | Cold spell with freeze chance |
+| Heavy Strike | Attack | High single-target physical hit |
+| Greater Cleave | Attack | AoE melee swing |
+| Split Arrow | Ranged | Bow attack hitting multiple targets |
+| Healing Light | Support | Heals an ally in combat |
 
 ### Socket Links
 
-Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point:
+Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point. Weapon and body-armor slots can support up to 6-link chains; smaller slots cap lower (see [Skill Gems](skills.md#socket-links)).
 
 | Link | Effect |
 |------|--------|
 | **1-Link** | Skill gem only |
 | **2-Link** | Skill + 1 support |
 | **3-Link** | Skill + 2 supports |
+| **4–6-Link** | Skill + 3–5 supports (weapon / body armor only) |
 
 **Support Gem Examples:**
-- **Added Fire** - Adds fire damage to linked skill
-- **Faster Casting** - Reduces skill cast time
-- **Multiple Projectiles** - Skill hits additional targets
-- **Life Gain on Hit** - Heal when skill hits
+- **Added Fire Damage** - Adds fire damage to linked skill
+- **Multistrike** - Skill repeats additional times
+- **Spell Echo** - Spell casts twice
+- **Life Leech** - Heal a percentage of damage dealt
+- **Concentrated Effect** - More damage at the cost of AoE radius
 
 ---
 

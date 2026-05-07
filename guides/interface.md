@@ -53,7 +53,7 @@ Changes based on what you've selected. The Guild Clerk considers this the most u
 
 ## Mission Board
 
-Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. A list view (V1) is available as a fallback in Settings.
+Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. A legacy list view (V1) is still wired up but only reachable via the URL parameter `?missionV1=true` — it is not exposed in Settings.
 
 ### Mission List
 
@@ -66,10 +66,10 @@ Each mission entry shows what you're getting into — before you commit to getti
 
 ### Filters
 
-- **All** - Show everything on the board, which is occasionally overwhelming
-- **Standard** - Regular missions, the bread and butter of guild operations
+The Mission Board has a single Normal/Heroic toggle:
+
+- **Normal** - Regular missions, the bread and butter of guild operations
 - **Heroic** 🔥 - Heroic dungeons, for guilds that have run out of interesting problems
-- **Unlock** 🔓 - Facility unlock missions; do these early
 
 ### Chain Step Badge
 
@@ -82,10 +82,10 @@ Missions at 2★ and higher can carry an **orange ⚠️ badge** naming an [envi
 ### Starting a Mission
 
 1. Select a mission
-2. Form your party (drag heroes)
-3. Choose supervised/unsupervised
-4. Set tactical preset (if unsupervised)
-5. Launch expedition
+2. Form your party (drag heroes onto the slots)
+3. Press **Dispatch**
+
+The unsupervised/supervised distinction (and Command Point spending) is set on the dungeon-menu side of expedition launches, not on the Mission Board itself.
 
 ---
 
@@ -97,7 +97,7 @@ The **📜 Quest Log** button in the Guild Scene sidebar is visible from day one
 
 - **Story** - Five long-form campaigns gated by guild rank (F → B)
 - **Class** - Six class chains, one per class, gated by rank E + a level-25 hero of that class
-- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown
+- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown (the first bounty rolls on your first day-advance, not on day 1)
 
 Locked chains show their unlock requirements. Active chains show the current step, step-level rewards, and a preview of the finale reward. Completed chains are archived for the record.
 
@@ -122,10 +122,10 @@ Where the real build optimization happens. Heroes have been known to spend more 
 
 The tab that explains why your Rogue refuses to party with your Warrior. Essential reading before forming expedition teams.
 
-- Relationships with other heroes
-- Mood and needs
-- Traits and personality
-- Recent social events
+- Relationships with other heroes (per-hero trust, bond labels, current modifier)
+- Active thoughts (mood-affecting reactions to recent events)
+
+Mood, traits, and needs are surfaced on the main hero panel rather than this tab.
 
 ### Career Tab
 
@@ -135,6 +135,10 @@ The Career tab exists because the Guild Clerk wanted receipts.
 - Veteran rank and progress
 - Monster knowledge levels
 - Combat lifetime stats
+
+### Chronicle Tab
+
+The hero's life events, in order. Major fights, lost friends, milestones, titles earned — the entries that decide which titles unlock. The tab carries an unread badge when a new entry has arrived since you last looked.
 
 ---
 
@@ -159,10 +163,11 @@ The fight itself, laid out clearly so there are no excuses:
 
 ### Action Bar (Bottom)
 
-What your currently selected hero can do, and the cost of doing it:
-- Available actions (Attack, Skills, Defend, Flee)
-- Skill cooldowns shown — grey means not yet
-- Mana costs displayed — plan accordingly
+What your currently selected hero can do:
+- ⚔️ Attack
+- ✨ Skill
+- 🛡️ Defend
+- 🏃 Flee
 
 ### Combat Log (Side)
 
@@ -174,10 +179,7 @@ A record of what just happened, in case you weren't watching closely enough:
 
 ### Command Points
 
-In supervised mode:
-- Command point display
-- Available interventions
-- Emergency retreat option
+Command Points are a dungeon-exploration resource (visible on the Dungeon screen, not the Combat screen) that the Guild Master spends to issue interventions during a supervised expedition. They do not appear on the per-fight combat panel.
 
 ---
 
@@ -214,14 +216,15 @@ When exploring dungeons:
 
 ### Guild Vault
 
-Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. Features categories, sort options, and a search function.
+Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers type filters (All / Wpn / Arm / Hlm / Shd / Bts / Glv / Acc / Material / etc.) and bulk actions.
 
 ### Item Actions
 
 - **Equip** - Assign to hero (can also be done by dragging, which heroes always manage to do accidentally)
-- **Sell** - Convert to gold
-- **Salvage** - Get materials
-- **Enchant** - Add magic
+- **Sell** - Convert to gold (also available as a bulk-mode toggle)
+- **Salvage** - Get materials (also available as a bulk-mode toggle)
+
+Enchanting is not a per-item vault action — it lives in the Workshop (Enchanting Table facility). Open the workshop and bring the item there.
 
 ---
 
@@ -253,17 +256,13 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
-The Guild Clerk is genuinely surprised that anyone reads this far into the documentation. Your diligence is noted and appreciated.
+The interface is mouse-first. The only globally bound key is:
 
 | Key | Action |
 |-----|--------|
-| **Space** | Pause/Resume (combat) |
-| **Esc** | Menu / Cancel |
-| **Tab** | Cycle heroes |
-| **1-8** | Quick skill slots |
-| **M** | Toggle map |
-| **I** | Inventory |
-| **C** | Character sheet |
+| **Esc** | Close the current menu/dialog (Settings, Achievements, Beta Chat, etc.) |
+
+A few scenes wire up niche right-click handlers (Mission Board, Passive Tree, Dungeon Menu); see those scenes for specifics.
 
 ---
 
@@ -272,7 +271,7 @@ The Guild Clerk is genuinely surprised that anyone reads this far into the docum
 Small things that make a significant difference, provided for heroes who prefer to learn from documentation rather than experience:
 
 1. **Hover for tooltips** - Most elements have explanations; the game assumes you will use this
-2. **Right-click for options** - Context menus on items and heroes reveal more than you'd expect
+2. **Watch for right-click handlers in specific scenes** - The Mission Board, Passive Tree, and Dungeon Menu use right-click for niche shortcuts; the rest of the UI is left-click only
 3. **Drag and drop** - Equipment, party formation, and gem management all support this
 4. **Watch the log** - Combat details and events scroll past quickly; the important ones scroll past quickest
 5. **Check notifications** - Red dots indicate something needs attention; they do not go away on their own
@@ -289,13 +288,14 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 ### Display
 
-- Resolution (dropdown: 1280×720, 1920×1080, etc.) — bigger screens show more detail, but the goblins are also bigger
+- Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — bigger screens show more detail, but the goblins are also bigger. The dropdown is only available in the Electron desktop build.
 - Fullscreen toggle
 
 ### Gameplay
 
-- Skip Intro (skip opening cinematic on New Game — the Guild Clerk takes no position on this, but does note that the intro was expensive to produce)
+- Skip Intro Video (skip the opening cinematic on New Game — the Guild Clerk takes no position on this, but does note that the intro was expensive to produce)
 - Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
+- Online Features (sends leaderboard stats and unlocks community dungeons)
 
 ---
 

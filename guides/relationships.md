@@ -112,13 +112,13 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 ### Battle Brothers/Sisters
 
 - **How:** Many combats survived together
-- **Bonus:** +15% when adjacent, enhanced intervene
+- **Bonus:** +15% combat damage while the bond is active, enhanced intervene
 - **Special:** Mutual protection — the kind forged by people who have seen each other at their worst and kept showing up
 
 ### Rivals
 
 - **How:** Similar achievements, competitive traits
-- **Bonus:** +10% when competing, which is always
+- **Penalty:** -15% combat damage when both are in the same party — the bond is corrosive in practice. Rivals also refuse to party together once the bond locks in.
 - **Risk:** May conflict over leadership
 
 ### Life Debt
@@ -177,7 +177,7 @@ An intervene attempt requires all of the following, because goodwill alone is no
 
 ### What Happens
 
-1. Intervener takes 50% of killing blow damage
+1. Intervener takes 50% of the killing blow damage, further reduced by their own armor
 2. Original target survives unharmed
 3. Massive trust boost — the sort that tends to outlast everything else
 4. Creates the kind of moment that ends up in the Combat Log and, eventually, the Tavern stories

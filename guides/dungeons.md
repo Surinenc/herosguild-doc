@@ -294,7 +294,7 @@ When a hazard fires, the engine looks at your party for the required class:
 
 **Pushing through** — no matching hero:
 - Every party member loses 10–15% of max HP (clamped to 1 HP minimum — hazards never kill anyone outright)
-- Mission rewards are reduced by 15–20%
+- Mission rewards are reduced by 10–20%
 - The mission still completes as a Success — hazards don't fail missions
 - An orange narrative line appears in the mission report
 
@@ -349,14 +349,14 @@ Each event offers three options. Consequences are immediate or persistent:
 | **Mood Change** | Adjusts a hero's mood |
 | **Chronicle Entry** | Adds a permanent line to the hero's history |
 | **Axis Shift** | Changes your guild's position on the Valor/Wealth/Order axes (see Guild Identity) |
-| **Consequence Chain** | Schedules a follow-up event 5–30 dungeons later |
+| **Consequence Chain** | Schedules a follow-up event 2–30 dungeons later (per-event range) |
 
 ### Hero-Specific Events
 
 Some events only fire when a particular hero is present. Triggers include:
 
 - **Trait-gated** — *Kind* heroes can negotiate; the event simply doesn't appear for anyone else
-- **Mood-gated** — Heroes with mood below 25 may trigger a Breaking Point event, requiring the party's support
+- **Mood-gated** — Heroes with low mood (per-event thresholds, typically 25–50) may trigger a Breaking Point event, requiring the party's support
 - **Bond-gated** — Rival pairs spark Argument events at forks; the guild master must pick a side
 - **Chronicle title-gated** — A *Dragonslayer* encountering dragon eggs faces a different decision than someone who just earned the title last week
 
@@ -384,7 +384,7 @@ The alternative options deal significant damage to all heroes or carry their own
 
 Choices made in dungeons echo outward. A hero who burned a witch's home has that in their chronicle. Freeing an imprisoned mage may trigger a follow-up event ten dungeons later — gratitude or revenge, depending on variables you've forgotten you set.
 
-Axis shifts accumulate. A guild that consistently chooses aggressive options drifts toward Chaos and Greed. Guild events, NPC reactions, and shop discounts reflect where you've landed. The dungeon isn't separate from the guild — it's where the guild gets built.
+Axis shifts accumulate along three axes — Valor ↔ Cunning, Wealth ↔ Glory, and Order ↔ Freedom. A guild that consistently chooses aggressive options drifts toward Cunning and Freedom. Guild events, NPC reactions, and shop discounts reflect where you've landed. The dungeon isn't separate from the guild — it's where the guild gets built.
 
 ---
 
@@ -468,19 +468,14 @@ Upon returning, expeditions provide everything the dungeon had and the heroes di
 
 ## Parallel Expeditions
 
-Run multiple expeditions simultaneously, because one group of heroes in danger is never quite enough:
+Run multiple expeditions simultaneously, because one group of heroes in danger is never quite enough.
 
-| Guild Rank | Slots |
-|------------|-------|
-| F | 1 |
-| E | 2 |
-| D | 3 |
-| C | 4 |
-| B | 5 |
-| A | 6 |
-| S | 8 |
+Mission slots come from two sources:
 
-Only one can be supervised per night.
+- **Guild Hall level** — L1=2 slots, L2=4, L3=6, L4=8, L5=10
+- **Guild rank bonus** — F/E=+0, D/C=+1, B/A=+2, S=+3
+
+Add the two together to get your slot count. So a rank C guild with a level 3 Guild Hall has 6 + 1 = 7 slots; a rank S guild with a level 5 Manor/Legendary Hall caps out at 10 + 3 = 13. Only one expedition can be supervised per night regardless of slot count.
 
 ---
 
@@ -564,7 +559,7 @@ Access the weekly rotation from Mission Board → Heroic filter (🔥).
 - Tackle ⭐⭐⭐⭐⭐ dungeons for best rewards; the risk scales with the stars, and so do the returns
 - Use parallel expeditions to maximize resources — every unsupervised slot running overnight compounds Guild income
 - Build specialized teams for environments — fire resistance teams for Volcano, Cleric-heavy teams for Crypts, Rogue-forward teams for Ruins
-- Prepare for Heroic Dungeons (see [Endgame Guide](tower.md)); the modifiers require specific builds, and finding out mid-dungeon is the educational approach
+- Prepare for Heroic Dungeons (see [Heroic Dungeons Guide](heroic-dungeons.md)); the modifiers require specific builds, and finding out mid-dungeon is the educational approach
 
 ---
 

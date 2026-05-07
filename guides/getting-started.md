@@ -6,15 +6,17 @@ Welcome to Hero's Guild! You've just inherited a building, a modest pile of gold
 
 When you start Hero's Guild for the first time, you'll be greeted with the main menu. Select **New Game** to begin your adventure.
 
-### Choosing Your Starting Heroes
+### Your Starting Roster
 
-You'll begin with **500 gold** and the ability to recruit your first heroes. Visit the **Tavern** to see available heroes for hire. Consider recruiting:
+You begin with **500 gold** and three pre-recruited heroes already on the books — a Warrior, a Mage, and a Cleric. The Warrior and Mage arrive with starter weapons; the Cleric arrives armed with optimism.
 
-- **A tank** (Warrior or Cleric) — someone to be hit, repeatedly, on purpose
-- **A damage dealer** (Mage, Rogue, or Ranger) — someone to deal with the things doing the hitting
-- **A healer** (Cleric) — someone who will spend every fight wishing they'd chosen a quieter profession
+This baseline gives you a tank/DPS/healer triangle from day one. Visit the **Tavern** to expand your roster. When you do, consider whether you need:
 
-Starting with 2-3 heroes is recommended. You can always recruit more as you earn gold — though you'll quickly discover that "earning gold" and "spending gold on hero wages" exist in a delicate and somewhat adversarial relationship.
+- **A second damage dealer** (Rogue or Ranger) — to share the workload, or take risks the Mage shouldn't
+- **A Necromancer** — minion-based playstyle for players who like passive damage
+- **A second Cleric** — redundancy is rarely a luxury when injuries pile up
+
+Recruiting more heroes is always possible as you earn gold — though you'll quickly discover that "earning gold" and "spending gold on hero wages" exist in a delicate and somewhat adversarial relationship.
 
 ## The Guild Screen
 
@@ -24,7 +26,7 @@ The Guild Screen is your home base — the single screen you'll spend most of yo
 - **Manage facilities** - Build and upgrade guild buildings, each of which costs more than you'd like
 - **Access the tavern** - Recruit new heroes, who will immediately start costing you money
 - **Check the mission board** - Find dungeons to explore and contracts to accept
-- **Open the quest log** - Track story chains, class chains, and your current weekly bounty — the Weekly tab has a bounty active from day one
+- **Open the quest log** - Track story chains, class chains, and weekly bounties (a new bounty rolls every 7 days; the first one appears after your first day-advance)
 - **Open the shop** - Buy and sell items; the prices are not negotiable, but the regret is optional
 
 ### Key Facilities
@@ -34,12 +36,12 @@ As you progress, unlock these essential facilities. The Guild Clerk's recommende
 | Facility | Purpose |
 |----------|---------|
 | Barracks | Increases hero capacity, affects mood and rest |
-| Quarters | Private rooms for heroes — morale bonuses, decorations, adjacency effects |
 | Training Yard | Heroes train skills and spar |
 | Forge | Craft metal weapons and armor |
 | Alchemy Lab | Brew potions and elixirs |
 | Enchanting Table | Add magical properties to items |
-| Materials Market | Buy and sell crafting materials with dynamic pricing |
+
+The Facilities screen also has buttons that lead into two related sub-systems — **Hero Quarters** (private rooms, decorations, adjacency bonuses) and the **Materials Market** (buy and sell crafting materials with dynamic pricing). They're not part of the upgrade ladder, but you'll spend time in both.
 
 ## Your First Dungeon
 

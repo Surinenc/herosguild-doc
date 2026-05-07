@@ -57,13 +57,13 @@ The Champion retains and enhances the Warrior's defensive abilities (Taunt and S
 
 The Berserker **removes Taunt and Shield Wall** for pure offensive power.
 
-**Starting Bonus:** +120% physical damage, +15% damage, +10% crit, +20% rage damage per 5% HP missing
+**Starting Bonus:** +86% physical damage, +15% damage, +10% crit, +20% rage damage per 5% HP missing
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Bleed** | DoT Damage | 10% bleed on hit → +25% bleed damage → +30% damage per bleeding enemy |
 | **B - Leech** | Sustain | 10% life steal → reflect 200% damage taken → steal 5% enemy current HP |
-| **C - Execute** | Burst | +100% damage below 50% HP → +50% crit below 30% HP → 5% instant kill |
+| **C - Execute** | Burst | +50% damage below 50% HP → +30% crit and +40% crit damage below 30% HP → 5% instant kill |
 
 **Best For:** Speed runs, boss DPS, players who like high risk/high reward
 
@@ -77,11 +77,11 @@ The Berserker **removes Taunt and Shield Wall** for pure offensive power.
 
 The Gladiator **removes Taunt and Shield Wall** for dual-wield offense.
 
-**Starting Bonus:** +75% physical damage, +30% damage
+**Starting Bonus:** +69% physical damage, +29% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Multi-Strike** | Attack Speed | 20% double strike → +30% more (50% total) → 10% triple strike |
+| **A - Multi-Strike** | Attack Speed | 15% double strike → +20% more (35% total) → 10% triple strike |
 | **B - Dual Wield** | Offhand | +20% damage → +50% crit damage → offhand deals 100% damage |
 | **C - Counter** | Reactive | 50% counter chance → +50% more (100% total) → +300% crit damage on counters |
 
@@ -99,7 +99,7 @@ Rogues specialize in burst damage through different means.
 
 **Focus:** Critical Strikes, First Strike, Execute
 
-**Starting Bonus:** +15% crit, +30% physical damage, +15% dexterity
+**Starting Bonus:** +20% crit, +45% physical damage, +15% dexterity
 
 Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
@@ -119,7 +119,7 @@ Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
 **Focus:** Poison, Debuffs, Party Damage Amplification
 
-**Starting Bonus:** +20% crit damage, +60% physical damage, +10% damage, +15% dexterity
+**Starting Bonus:** +10% crit damage, +40% physical damage, +10% damage, +15% dexterity
 
 Note: Party damage nodes grant team bonuses but increase the Trickster's own damage taken.
 
@@ -215,7 +215,7 @@ Mages choose between raw elemental power or dark magic.
 
 **Focus:** Curses, Chaos Damage, Life Drain
 
-**Starting Bonus:** +150% damage, skills apply weaken
+**Starting Bonus:** +180% damage, skills apply weaken
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -257,7 +257,7 @@ Clerics choose between healing mastery or battle cleric.
 
 The Paladin **replaces Heal and Prayer of Healing** with offensive abilities: Divine Strike (120% damage) and Consecrate.
 
-**Starting Bonus:** +110% damage
+**Starting Bonus:** +60% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -279,7 +279,7 @@ Necromancers focus on minions or personal dark power.
 
 **Focus:** Minions, Summons, Army Building
 
-**Starting Bonus:** +1 max minion, +25% minion damage, +100% damage
+**Starting Bonus:** +1 max minion, +30% minion damage, +120% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -297,14 +297,12 @@ Necromancers focus on minions or personal dark power.
 
 **Focus:** Chaos Damage, Life Steal, Critical Strikes
 
-**Starting Bonus:** +5% chaos damage, +10% life steal, +5% crit, +35% damage
-
-Note: Life steal nodes increase damage taken as a tradeoff.
+**Starting Bonus:** +6% chaos damage, +10% life steal, +6% crit, +42% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Chaos** | Dark Damage | +15% chaos damage → +25% → +30% chaos damage |
-| **B - Drain** | Life Steal | +10% life steal (take +10% dmg) → +15% (take +20%) → +25% (take +25%) |
+| **B - Drain** | Life Steal | +10% life steal and +10% damage reduction → +15% life steal and +20% damage reduction → +25% life steal and +25% damage reduction |
 | **C - Crit** | Critical Strikes | +10% crit and +15% crit damage → +30% crit damage → +50% crit damage |
 
 **Best For:** Sustain through damage, chaos/crit hybrid, players who prefer personal strength over minions
@@ -335,8 +333,8 @@ Note: Life steal nodes increase damage taken as a tradeoff.
 ### Build Tips
 
 1. **Focus one branch** - Three nodes deep in one branch is almost always stronger than four surface investments spread across the tree
-2. **Starting node matters** - Some ascendancies remove core class abilities (Berserker removes Taunt; Gladiator removes Shield Wall); commit to this before the Trial
-3. **Tradeoff awareness** - Several nodes grant power but increase damage taken; Assassin Crit, Trickster Party Damage, and Lich Drain all function as a bargain with consequences
+2. **Starting node matters** - Some ascendancies remove core class abilities (both Berserker and Gladiator remove Taunt and Shield Wall); commit to this before the Trial
+3. **Tradeoff awareness** - Several nodes grant power but increase damage taken; Assassin Crit and Trickster Party Damage both function as a bargain with consequences
 4. **Synergy with gear** - An ascendancy that doesn't match what the hero is wearing produces disappointing numbers; plan both together
 5. **Party composition** - A second Berserker is a choice; a Berserker with no Cleric in the party is a different, worse choice
 

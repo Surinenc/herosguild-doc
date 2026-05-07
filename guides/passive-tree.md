@@ -120,7 +120,7 @@ Keystone penalties are designed around each class's defensive profile:
 |----------|---------|---------|
 | Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
 | Berserker Mastery (Warrior) | +19% Physical Damage, +30% Life Leech | -20% Max Life |
-| Sharpshooter Mastery (Ranger) | +30% Projectile Damage, +25% Crit Chance | -20% Max Life |
+| Sharpshooter Mastery (Ranger) | +57% Projectile Damage, +30% Crit Chance | -20% Max Life |
 | Lich Mastery (Necromancer) | +49% Chaos Damage, +39% Spell Damage | -25% Max Life |
 | Summoner Mastery (Necromancer) | +66% Minion Damage, +33% Minion Life | -25% Damage |
 | Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |

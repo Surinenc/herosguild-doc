@@ -381,14 +381,14 @@ Heroes gain **3 attribute points per level** to distribute among primary stats. 
 
 Heroes earn veteran ranks based on completed missions. The progression from Rookie to Legend is primarily a measure of how many times someone has voluntarily walked into a dungeon:
 
-| Rank | Missions | Morale Bonus | Rep Multiplier | XP Multiplier | Damage Multiplier | Survival Bonus |
-|------|----------|-------------|----------------|---------------|-------------------|----------------|
-| Rookie | 0-9 | +0 | 1.0× | 1.0× | 1.0× | 0% |
-| Seasoned | 10-24 | +5 | 1.05× | 1.0× | 1.0× | +2% |
-| Veteran | 25-49 | +10 | 1.1× | 1.05× | 1.02× | +5% |
-| Elite | 50-99 | +15 | 1.2× | 1.1× | 1.04× | +8% |
-| Champion | 100-199 | +25 | 1.3× | 1.15× | 1.06× | +12% |
-| Legend | 200+ | +40 | 1.5× | 1.2× | 1.08× | +15% |
+| Rank | Missions | Morale Bonus | Rep Multiplier | Damage Multiplier | Survival Bonus |
+|------|----------|-------------|----------------|-------------------|----------------|
+| Rookie | 0-9 | +0 | 1.0× | 1.0× | 0% |
+| Seasoned | 10-24 | +5 | 1.05× | 1.0× | +2% |
+| Veteran | 25-49 | +10 | 1.1× | 1.02× | +5% |
+| Elite | 50-99 | +15 | 1.2× | 1.04× | +8% |
+| Champion | 100-199 | +25 | 1.3× | 1.06× | +12% |
+| Legend | 200+ | +40 | 1.5× | 1.08× | +15% |
 
 ### Chronicle Titles
 
@@ -423,8 +423,7 @@ Most levels are just numbers. These ones come with something attached:
 
 | Level | Unlock |
 |-------|--------|
-| 1 | Starting abilities |
-| 5 | First passive tree point (see [Passive Tree](passive-tree.md)) |
+| 1 | Starting abilities, first passive tree point on the class start node (see [Passive Tree](passive-tree.md)) |
 | 25 | Ascendancy Trial unlocked |
 | 30 | Advanced skills |
 | 50 | Second Ascendancy point, Elite content access |
@@ -433,31 +432,9 @@ Most levels are just numbers. These ones come with something attached:
 | 95 | Abyssal Spire access |
 | 100 | Fourth Ascendancy point, Paragon system unlocks |
 
-### XP Curves
+### XP Curve
 
-XP required increases differently at each stage, because reaching level 100 is meant to feel like an achievement, not a commute:
-
-| Level Range | Formula | Curve Type |
-|-------------|---------|------------|
-| 1-30 | `15 × level^1.8` | Flatter (faster early game) |
-| 31-60 | Moderate scaling | Level^2.0 transition |
-| 61-90 | `level^2.2` scaling | Steeper grind |
-| 91-100 | Level 90 × multiplier | Brutal endgame |
-
-**Level 91-100 Multipliers:**
-
-| Level | Multiplier |
-|-------|------------|
-| 91 | 1.5× |
-| 92 | 2.0× |
-| 93 | 2.5× |
-| 94 | 3.0× |
-| 95 | 3.5× |
-| 96 | 4.0× |
-| 97 | 4.5× |
-| 98 | 5.0× |
-| 99 | 5.5× |
-| 100 | 6.0× |
+XP required uses a single power-law formula: `ceil(2.5 × level^2.5)`. Reaching level 100 is meant to feel like an achievement, not a commute, and `level^2.5` makes sure of it — early levels go quickly, the mid-game stretches, and the last ten levels are the kind of climb that makes you read the patch notes.
 
 ### XP Penalties (Levels 95-99)
 
@@ -477,7 +454,7 @@ High-level heroes gain reduced XP from content, slowing the final push. The univ
 - Quick Learner trait: +25%
 - Library (per level): +5%
 - Guild XP Banner: +10%
-- Paragon XP allocation: Up to +40%
+- Paragon XP allocation: Up to +100% (50 points × +2%)
 - Rest bonus: Accumulated while resting
 
 ### Paragon System (Level 100+)

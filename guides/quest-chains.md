@@ -42,7 +42,7 @@ Twelve rotating templates. No unlock requirement — every guild sees one from d
 - **3 steps** per bounty
 - **7-day timer** — starts when the bounty rolls; if unfinished by day 7, the chain closes silently and a new one rolls
 - The game never rolls the same bounty two weeks running
-- **Finale reward:** one random Epic-or-better item scaled to your highest hero's level, plus a meaningful gold bonus (roughly 1,500–5,000g)
+- **Finale reward:** one random Epic-or-better item scaled to your highest hero's level, plus a meaningful gold bonus (roughly 1,800–4,200g)
 
 Weekly bounties are the game's weekly check-in. They don't have a grand narrative; they have a deadline and a very specific kind of monster to deal with.
 
@@ -90,7 +90,7 @@ Locked chains list the condition needed to unlock them — a specific guild rank
 | Reward Type | Story | Class | Weekly |
 |---|:-:|:-:|:-:|
 | Gold (per step + finale) | ✓ | ✓ | ✓ |
-| Reputation | ✓ | Step only | Step only |
+| Reputation | Finale only | — | — |
 | Materials | ✓ | ✓ | ✓ |
 | Named item (finale) | ✓ | ✓ | — |
 | Crafting recipe (finale) | Some | ✓ | — |
@@ -141,7 +141,7 @@ The Guild Clerk notes that heroes who leave this way are not angry, exactly. The
 - **Check the Quest Log before dispatching parties** — if a chain step is on tomorrow's board, you may want to hold a strong party for it
 - **Don't stress weekly bounties you can't finish** — missing one costs nothing except the reward. The next Monday brings a different one
 - **Class chains are efficient** — three missions for a named item, a recipe, and two gems is the best reward-per-mission ratio in the game
-- **Plan Barracks space before completing "The Undead Plague" or "The Shadow Market"** — if you know a special hero is on the finale, having a bed ready avoids the countdown entirely
+- **Plan Barracks space before completing "The Undead Plague" or "The Rival's Gambit"** — if you know a special hero is on the finale, having a bed ready avoids the countdown entirely
 - **Chain steps don't stack** — each chain has at most one active step on the board at a time, but multiple chains can have steps active simultaneously
 
 ---

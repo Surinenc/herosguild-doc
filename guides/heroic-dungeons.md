@@ -42,8 +42,7 @@ Self-healing enemies. The Guild Clerk finds this deeply unfair and has filed a f
 A clock that punishes dawdling. The Guild Clerk has strong feelings about heroes who stop to loot mid-combat.
 
 - After turn 15, all enemies gain +100% damage (×2.0)
-- Warning message at turn 12
-- Reward: +40% gold, +50% bonus if average combat finishes before turn 12
+- Reward: +40% gold
 - Visual: Red screen tint, timer UI
 
 ### Elite Swarm 👑
@@ -60,7 +59,7 @@ Every enemy gets a promotion. Nobody asked for this.
 
 The dungeon rearranges itself while you're inside it. The map you made three rooms ago is now decorative fiction.
 
-- Room connections randomize
+- Room connections randomize every 3 rooms
 - Reward: +30% gold
 - Visual: Reality glitch particles, warped floor overlay
 
@@ -139,7 +138,7 @@ Three heroic dungeons are available each week, rotating every Sunday at 00:00 UT
 | Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 |
 | Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 |
 
-Each tier gets a randomly assigned modifier (Chaos Incarnate is excluded from weekly rotation — it only appears as a standalone modifier). No modifier repeats within the same week.
+Each tier gets a randomly assigned modifier. Chaos Incarnate is excluded from the weekly rotation entirely. No modifier repeats within the same week.
 
 Access: Mission Board → Heroic filter (🔥). A countdown timer shows time until the next weekly reset.
 

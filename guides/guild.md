@@ -145,11 +145,11 @@ The total quarters morale (room tier + decorations + class preferences + adjacen
 
 | Quarters Morale | Effect |
 |----------------|--------|
-| Above 40 | +2% damage, +3% XP gain |
-| Above 20 | +1% damage, +1% XP gain |
-| 0 to 20 | No effect |
-| -5 to 0 | -1% XP gain |
-| Below -5 | -1% damage, -2% XP gain |
+| Above 20 | +3% damage, +5% XP gain |
+| Above 10 | +1% damage, +2% XP gain |
+| 0 to 10 | No effect |
+| -5 to 0 | -2% XP gain |
+| Below -5 | -3% damage, -5% XP gain |
 
 ### Tavern
 
@@ -165,12 +165,14 @@ Recruitment hub, morale booster, and the place where most guild drama begins (an
 
 **Tavern Activities:**
 
+Costs scale with the total level of heroes present (Σ hero levels). Mood effects are listed per hero participating.
+
 | Activity | Cost | Mood Effect | Cooldown |
 |----------|------|-------------|----------|
-| Buy Rounds | 50g | +3 mood | 1 day |
-| Grand Feast | 200g | +10 mood | 3 days |
-| Gambling | Variable | +5 (win) / -3 (loss) | None |
-| Bard Night | 100g | +8 mood | 3 days |
+| Buy Rounds | 10g × Σ hero levels | +3 mood | None (blackout risk daily) |
+| Grand Feast | 100g + 20g × Σ hero levels | +10 mood | 1 day |
+| Gambling | Bet 50–500g | +5 mood (win or lose) | None |
+| Bard Night | 15g × Σ hero levels | +8 mood | 3 days |
 
 #### Nightly Decisions (Tavern Decision Engine)
 
@@ -195,7 +197,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Break Up Fight | 2 | Rivals with relationship < -50 | +3 relationship | -3 relationship |
 | Calm Volatile | 2 | Volatile hero with mood < 40 | +5 mood | -4 mood |
 | Comfort Injured | 2 | Hero recovering from injuries | +6 mood, -1 day recovery | -2 mood |
-| Mentor Session | 2 | Veteran (50+) and rookie (< 20) present | XP for student, +3 mood for mentor | None |
+| Mentor Session | 2 | Veteran (51+) and rookie (under 20) present | XP for student, +3 mood for mentor | None |
 | Host Feast | 2 | Gold available | +5 mood (all heroes) | None |
 | Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
 | Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
@@ -521,7 +523,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Facility upkeep | Per facility/day | Daily |
 | Quarters upkeep | 30-1,000g per occupied room | Daily |
 | Crafting materials | Variable | On craft |
-| Recruitment | 50-500g | Per hire |
+| Recruitment | Scales with level and quality (50g – 100,000g+) | Per hire |
 | Infirmary costs | Variable | Per treatment |
 
 ### Daily Wages
@@ -577,13 +579,14 @@ Level 1 heroes are free (no wages). The exponential scaling means high-level her
 
 Mood affects combat performance. Happy heroes hit harder; miserable heroes hit the tavern:
 
-| Mood | Effect |
-|------|--------|
-| Excellent | +10% all stats |
-| Good | +5% all stats |
-| Neutral | No modifier |
-| Poor | -5% all stats |
-| Terrible | -15% all stats |
+| Mood | Range | Effect |
+|------|-------|--------|
+| Elated | 90-100 | +20% all stats |
+| Happy | 70-89 | +10% all stats |
+| Content | 50-69 | No modifier |
+| Unhappy | 30-49 | -10% all stats |
+| Miserable | 10-29 | -20% all stats |
+| Broken | 0-9 | -30% all stats |
 
 **Improving Mood:** The things worth investing in.
 - Tavern activities (Buy Rounds, Feast) — the Guild Clerk considers these mandatory expenses
@@ -602,17 +605,18 @@ Mood affects combat performance. Happy heroes hit harder; miserable heroes hit t
 
 ### Mental Breaks
 
-When mood drops too low, heroes may have mental breaks. These are, without exception, inconvenient:
+When mood drops too low, heroes may have mental breaks. The mental break system has eight possible outcomes — see the [Relationships Guide](relationships.md#mental-breaks) for the full table. In short:
 
-| Break | Effect | Duration |
-|-------|--------|----------|
-| Tantrum | May damage property | 1 day |
-| Hiding | Won't work | 2 days |
-| Berserk | May fight allies | Until calmed |
-| Catatonic | Cannot function | 3+ days |
-| Breakdown | Leaves guild | Permanent |
+- **Desertion** — the hero abandons the guild
+- **Berserk** — attacks allies
+- **Catatonic** — refuses to act at all
+- **Binge** — disappears into drink for days
+- **Insulting** — picks fights with anyone in earshot
+- **Hiding** — won't show up for missions
+- **Wandering** — leaves the guild grounds aimlessly
+- **Confession** — blurts out a secret, usually one someone wanted kept
 
-Prevent breaks by maintaining hero mood above "Poor".
+Prevent breaks by keeping mood above the Unhappy threshold (50+).
 
 ---
 
@@ -648,11 +652,11 @@ The guild shop lets you sell items to visiting customers for gold — turning yo
 
 | Level | Name | Display Slots | Customers/Day | Daily Upkeep |
 |-------|------|---------------|---------------|--------------|
-| 1 | Market Stall | 8 | 4-7 | 5g |
-| 2 | Small Shop | 16 | 6-10 | 10g |
-| 3 | Merchant Store | 24 | 10-15 | 20g |
-| 4 | Trading Post | 32 | 14-20 | 600g |
-| 5 | Emporium | 48 | 20-30 | 1,500g |
+| 1 | Market Stall | 8 | 3-5 | 5g |
+| 2 | Small Shop | 16 | 5-8 | 10g |
+| 3 | Merchant Store | 24 | 8-12 | 20g |
+| 4 | Trading Post | 32 | 12-16 | 600g |
+| 5 | Emporium | 48 | 16-24 | 1,500g |
 
 **Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with different budgets and item preferences.
 
@@ -804,7 +808,7 @@ The chronicle tracks events across three categories:
 - **Social:** Bond formed, bond lost, romantic milestone, mental break
 - **Guild:** Mission milestone, crafting masterwork, facility contribution, rank promotion, ascendancy trial
 
-Accumulating 50+ entries earns the **Legend** title (+3 to all stats). See [Chronicle Titles](heroes.md#chronicle-titles) for all title bonuses.
+Accumulating 50+ entries earns the **Legend** title (+8% to all stats). See [Chronicle Titles](heroes.md#chronicle-titles) for all title bonuses.
 
 ---
 

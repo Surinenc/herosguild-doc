@@ -246,8 +246,8 @@ Research new recipes at the Library — slower than finding them in the field, b
 | Library Level | Max Research Tier | Speed Bonus |
 |---------------|-------------------|-------------|
 | 1 | ⭐ | +0% |
-| 2 | ⭐⭐ | +10% |
-| 3 | ⭐⭐⭐ | +20% |
+| 2 | ⭐⭐ | +25% |
+| 3 | ⭐⭐⭐ | +50% |
 
 ### Boss Recipe Drops
 
@@ -303,8 +303,8 @@ Leather Scraps → [Tannery] → Leather → [Tannery] → Hardened Leather
 
 **Cloth Chain:**
 ```
-Cloth → [Loom] → Fine Cloth → [Loom] → Enchanted Cloth
-  3 cloth = 1 fine         2 fine + 1 essence = 1 enchanted
+Cloth → [Loom] → Fine Cloth
+  3 cloth = 1 fine
 ```
 
 ---
@@ -316,35 +316,35 @@ Cloth → [Loom] → Fine Cloth → [Loom] → Enchanted Cloth
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
 | Iron Sword | ⭐ | 3 Iron Ingot, 1 Wood | 1 |
-| Steel Sword | ⭐⭐ | 4 Steel, 2 Hardwood | 25 |
-| Mithril Blade | ⭐⭐⭐ | 5 Mithril, 2 Quality Wood | 50 |
-| Dragonslayer | ⭐⭐⭐⭐ | Dragon Heart, 8 Adamantine | 75 |
+| Steel Sword | ⭐⭐ | 4 Steel Ingot, 2 Hardwood | 25 |
+| Mithril Blade | ⭐⭐⭐ | 5 Mithril Ingot, 2 Ironwood | 50 |
+| Adamantine Edge | ⭐⭐⭐⭐ | 4 Adamantine Ingot, 2 Dragon Fang | 75 |
+| Dragonslayer Axe | ⭐⭐⭐⭐⭐ | 3 Dragonscale, 2 Adamantine Ingot, 1 Dragon Heart | 100 |
 
 ### Armor
 
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
 | Iron Plate | ⭐ | 5 Iron Ingot | 1 |
-| Steel Plate | ⭐⭐ | 6 Steel Ingot | 25 |
-| Mithril Mail | ⭐⭐⭐ | 8 Mithril, 4 Leather | 50 |
-| Dragonplate | ⭐⭐⭐⭐ | 3 Dragonhide, 6 Adamantine | 75 |
+| Steel Plate | ⭐⭐ | 6 Steel Ingot, 3 Leather | 25 |
+| Mithril Mail | ⭐⭐⭐ | 5 Mithril Ingot, 3 Quality Leather | 50 |
+| Dragonplate | ⭐⭐⭐⭐ | 4 Adamantine Ingot, 4 Dragonscale | 75 |
 
 ### Potions
 
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
 | Minor Health Potion | ⭐ | 2 Herbs, 1 Water | 1 |
-| Health Potion | ⭐⭐ | 3 Rare Herbs, 1 Vial | 25 |
-| Greater Health Potion | ⭐⭐⭐ | 5 Alchemical Essence | 50 |
-| Superior Health Potion | ⭐⭐⭐⭐ | 3 Void Crystal, Phoenix Feather | 75 |
+| Health Potion | ⭐⭐ | 2 Herb Extract, 1 Blood | 25 |
+| Greater Health Potion | ⭐⭐⭐ | 2 Herb Concentrate, 1 Rare Herbs | 50 |
 
 ### Prosthetics
 
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
-| Peg Leg | ⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron | Leatherworking 5 |
-| Prosthetic Leg | ⭐⭐ (Standard) | 5 Steel, 2 Hardened Leather | Blacksmithing 10 |
-| Enchanted Leg | ⭐⭐⭐ (Enhanced) | 2 Adamantine, Dragon Bone, 2 Soul Shard | Enchanting 15 |
+| Peg Leg | ⭐⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron Ingot | Leatherworking 5 |
+| Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Mithril Ingot | Blacksmithing 10 |
+| Enchanted Leg | ⭐⭐⭐⭐ (Enhanced) | 2 Adamantine Ingot, 1 Dragon Bone, 2 Soul Shard, 1 Arcane Dust | Enchanting 15 |
 
 ---
 

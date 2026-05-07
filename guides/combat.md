@@ -135,7 +135,7 @@ Life steal has diminishing returns via a square root formula, because the univer
 Heal Amount = floor(sqrt(Damage × Life Steal% / 100 × 100))
 ```
 
-Examples: 100 damage at 10% steal → 10 HP, 500 damage → ~22 HP, 2500 damage → ~50 HP.
+Examples: 100 damage at 10% steal → 31 HP, 500 damage → ~70 HP, 2500 damage → ~158 HP.
 
 ---
 

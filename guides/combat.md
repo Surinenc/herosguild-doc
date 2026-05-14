@@ -61,6 +61,8 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage. This is why experienced guild masters invest in training rather than just handing heroes a bigger sword and hoping for the best.
 
 **Modifiers Applied (multiplicative):**
+- **Class damage multiplier** — Mage/Necromancer ×1.25, Rogue/Ranger ×0.80, Warrior/Cleric ×1.00. Applied at every hero-source damage point as a top-level cap on relative class power.
+- **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a small `damage` multiplier applied on top of everything else.
 - Skill damage percentage (e.g., Power Attack = 150%)
 - [Passive tree](passive-tree.md) bonuses
 - Weapon proficiency (0-38% at max level 20)
@@ -71,6 +73,8 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 - Relationship modifier (up to ±25%)
 - Mood modifier
 - Damage variance (±10%)
+
+The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get +25% in the same direction. The Guild Clerk considers this fair. The Rogues do not.
 
 ### Critical Hits
 

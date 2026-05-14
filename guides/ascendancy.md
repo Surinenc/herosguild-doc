@@ -106,7 +106,7 @@ Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Crit** | Critical Damage | +15% crit (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
-| **B - Ambush** | First Hit | +50% first hit damage → first hit always crits → first hit ignores armor |
+| **B - Ambush** | First Hit | +50% first hit damage and +30% always-on → first hit always crits → first hit ignores armor |
 | **C - Execute** | Low HP Targets | +50% damage below 50% HP → +50% crit below 30% HP → 10% instant kill |
 
 **Best For:** Alpha strikes, priority target elimination, speed clears
@@ -147,7 +147,7 @@ Rangers have three distinct paths for different combat styles.
 |--------|-------|---------------|
 | **A - Crit Chance** | Accuracy | +10% crit → +15% crit → +25% crit |
 | **B - Crit Damage** | Precision | +5% crit damage → +5% more → +5% more |
-| **C - Headshot** | Burst | 10% headshot chance (2× damage) → +15% headshot chance → headshots deal 3× damage |
+| **C - Headshot** | Burst | 10% headshot chance (2× damage) → +15% headshot chance (25% total) → headshots deal 2.5× damage |
 
 **Best For:** Boss sniping, crit builds, long-range damage
 
@@ -177,11 +177,15 @@ The Raider doesn't improve combat power directly. Instead, it dramatically incre
 
 **Focus:** Tactical Support, Initiative Control, Party Buffs
 
+**Starting Bonus:** Allies gain +30% crit damage
+
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Initiative** | First Strike | Always act first (+10M initiative) → first hit deals 2× damage → mark target (+10% damage taken) |
+| **A - Initiative** | First Strike | Always act first (+10M initiative) → first hit deals 1.5× damage → Hunter's Mark (+10% ally crit damage) |
 | **B - Debuffs** | Enemy Weakness | Enemies deal -10% damage → -20% damage → -20% damage and lose 10% armor |
 | **C - Party** | Team Buffs | Allies +3% damage → +5% damage → +7% damage and +3% crit |
+
+Path A's start node + Hunter's Mark stack the ally crit damage to **+40% total** for the whole party — Pathfinder's signature is multiplying everyone else's hits, not landing its own.
 
 **Best For:** Support roles, enabling party members, tactical combat
 

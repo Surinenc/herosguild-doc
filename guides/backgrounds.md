@@ -52,7 +52,7 @@ Every event carries an optional set of `{ stat, multiplier }` pairs. The stats c
 - `hp` — applied to effective max HP after passives, ascendancy, body efficiency, and titles
 - `str`, `dex`, `int`, `vit`, `lck` — applied as the final multiplicative pass on effective stats
 
-Modifiers from all four events compound. So do modifiers from any **lifecycle-granted traits** (see below). Contradictions are allowed and intentional — a hero with `sickly` × 0.90 hp and `iron-constitution` × 1.10 hp ends up at ×0.99, both narrative paragraphs intact and the math politely netting out.
+Modifiers from all four events compound. So do modifiers from any **lifecycle-granted traits** (see below). Contradictions are allowed and intentional — a hero with one event that left them sickly and another that hardened them carries both, with the math politely netting out somewhere in the middle, and both narrative paragraphs intact on the CV.
 
 The numbers themselves are never shown in the UI. You see the prose. The engine sees the multiplier. The discrepancy between "what they tell you happened" and "what their stats now insist is true" is, in the Guild Clerk's opinion, the most realistic part of the entire system.
 
@@ -68,9 +68,9 @@ Some events leave the hero with a **body flaw**: a damaged or destroyed body par
 
 Brain, jaw, heart, fingers, and faces are explicitly out of scope. The catalog validator hard-rejects events that try to flaw those.
 
-A flaw applies once per slot, even if multiple events touch the same body part — the second narrative paragraph still appears in the CV; the engine just doesn't double-count the damage. Flaws under 100% damage land as **Damaged**; flaws at 100% land as **Destroyed**.
+A flaw applies once per slot, even if multiple events touch the same body part — the second narrative paragraph still appears in the CV; the engine just doesn't double-count the damage. Minor flaws land as **Damaged**; severe ones land as **Destroyed**.
 
-Lifecycle flaws compose cleanly with the [Prosthetic system](crafting.md#prosthetics): fitting a prosthetic at the Infirmary lifts the body-part efficiency back up (basic 50%, standard 80%, enchanted 125%), but the lifecycle's direct stat penalty (e.g. `dex × 0.93` on a cart-foot event) remains. The body-part axis can be over-restored with an enchanted prosthetic; the stat penalty is permanent.
+Lifecycle flaws compose cleanly with the [Prosthetic system](crafting.md#prosthetics): fitting a prosthetic at the Infirmary restores body-part efficiency to varying degrees depending on the tier you can craft. The accompanying stat penalty from the event, however, is permanent — the body part can be mended, but the wider toll of whatever happened is part of who the hero is now.
 
 ---
 

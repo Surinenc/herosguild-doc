@@ -138,7 +138,18 @@ The Career tab exists because the Guild Clerk wanted receipts.
 
 ### Chronicle Tab
 
-The hero's life events, in order. Major fights, lost friends, milestones, titles earned — the entries that decide which titles unlock. The tab carries an unread badge when a new entry has arrived since you last looked.
+The hero's running history. Major fights, lost friends, milestones, titles earned — the entries that decide which titles unlock. The tab carries an unread badge when a new entry has arrived since you last looked.
+
+### Background Tab
+
+The hero's static identity — the four life paragraphs and the modifiers attached to them. See [Hero Backgrounds](backgrounds.md) for the full system.
+
+- **Origin** — the hero's background tag and its mechanical effect
+- **Life paragraphs** — childhood, adolescence, young adulthood, before the guild
+- **Marks of a Life** — body flaws from lifecycle events
+- **Traits** — lifecycle-granted named traits
+
+The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above for heroes at level 100+ and ascendancy-eligible heroes respectively.
 
 ---
 

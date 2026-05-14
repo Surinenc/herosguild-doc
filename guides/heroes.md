@@ -236,6 +236,12 @@ Heroes come in five quality tiers that affect their base stats and trait count. 
 
 Higher quality heroes are significantly stronger due to the stat multiplier applying to ALL stats after all bonuses.
 
+### Background & Life History
+
+Beyond quality and class, every hero arrives with a **background tag** (one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander) and a **four-paragraph life history** rolled from a 120-event catalog. Both feed multiplicative modifiers into the damage chain and the effective-stats pass — sometimes a small lift, sometimes a small drag, occasionally a body flaw that needs a [prosthetic](crafting.md#prosthetics) to mend.
+
+The CV is visible on the Details modal at the Tavern (before hire) and on the Background tab in Hero Details (after hire). See [Hero Backgrounds](backgrounds.md) for the full system.
+
 ---
 
 ## Hero States

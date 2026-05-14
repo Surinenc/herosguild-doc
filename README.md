@@ -10,6 +10,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 
 ### Core Systems
 - [Heroes & Classes](guides/heroes.md) - The 6 hero classes and their abilities
+- [Hero Backgrounds](guides/backgrounds.md) - The 8 backgrounds and the 4-stage life history every hero carries
 - [Combat System](guides/combat.md) - Turn-based tactical combat explained
 - [Equipment & Items](guides/equipment.md) - Gear, gems, and item rarities
 - [Skill Gems](guides/skills.md) - Active and support gem system

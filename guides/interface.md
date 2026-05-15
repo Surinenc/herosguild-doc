@@ -142,14 +142,14 @@ The hero's running history. Major fights, lost friends, milestones, titles earne
 
 ### Background Tab
 
-The hero's static identity — the four life paragraphs and the modifiers attached to them. See [Hero Backgrounds](backgrounds.md) for the full system.
+The hero's static identity — who this person is, before any of the bonds, achievements, or unfortunate encounters with the dungeon system got involved. The tab holds the four life paragraphs and the modifiers quietly attached to them; the Chronicle handles the running record, the Background handles the origin. See [Hero Backgrounds](backgrounds.md) for the full system.
 
 - **Origin** — the hero's background tag and its mechanical effect
 - **Life paragraphs** — childhood, adolescence, young adulthood, before the guild
-- **Marks of a Life** — body flaws from lifecycle events
-- **Traits** — lifecycle-granted named traits
+- **Marks of a Life** — body flaws picked up along the way
+- **Traits** — named traits the lifecycle gave them (Duelist, Sickly, and the rest of that family)
 
-The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above for heroes at level 100+ and ascendancy-eligible heroes respectively.
+The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above for heroes at level 100+ and heroes eligible for an ascendancy trial, respectively. The Guild Clerk maintains that fitting all of this onto a single screen is a polite fiction and that anyone who reads everything before issuing orders is doing the job properly.
 
 ---
 

@@ -238,9 +238,9 @@ Higher quality heroes are significantly stronger due to the stat multiplier appl
 
 ### Background & Life History
 
-Beyond quality and class, every hero arrives with a **background tag** (one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander) and a **four-paragraph life history** rolled from a 120-event catalog. Both feed multiplicative modifiers into the damage chain and the effective-stats pass — sometimes a small lift, sometimes a small drag, occasionally a body flaw that needs a [prosthetic](crafting.md#prosthetics) to mend.
+Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from a catalog of a hundred and twenty events. Both feed multiplicative modifiers into the damage chain and the effective-stats pass, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that previously the heroes were starting to look interchangeable.
 
-The CV is visible on the Details modal at the Tavern (before hire) and on the Background tab in Hero Details (after hire). See [Hero Backgrounds](backgrounds.md) for the full system.
+The CV shows up on the Details modal at the Tavern (before you hire) and on the Background tab in Hero Details (after you do). See [Hero Backgrounds](backgrounds.md) for the full system.
 
 ---
 

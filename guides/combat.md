@@ -62,7 +62,7 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 
 **Modifiers Applied (multiplicative):**
 - **Class damage multiplier** — Mage/Necromancer ×1.25, Rogue/Ranger ×0.80, Warrior/Cleric ×1.00. Applied at every hero-source damage point as a top-level cap on relative class power.
-- **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a small `damage` multiplier applied on top of everything else.
+- **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a per-hero `damage` multiplier applied on top of everything else. This is the reason two heroes with identical class, level, and equipment will not hit for the same numbers: their pasts disagree about what their hands are capable of.
 - Skill damage percentage (e.g., Power Attack = 150%)
 - [Passive tree](passive-tree.md) bonuses
 - Weapon proficiency (0-38% at max level 20)
@@ -74,7 +74,7 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 - Mood modifier
 - Damage variance (±10%)
 
-The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get +25% in the same direction. The Guild Clerk considers this fair. The Rogues do not.
+The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get the lift in the same direction. The Guild Clerk considers this fair. The Rogues do not, but the Rogues have never considered anything fair, and this is itself part of the design.
 
 ### Critical Hits
 

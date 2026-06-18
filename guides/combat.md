@@ -87,6 +87,29 @@ Crit Multiplier = 1.5× (base) + (bonus crit damage% / 100)
 
 Socketed skill gems contribute their own `critical_strike_multiplier` to the crit damage on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup.
 
+### Enemy Weaknesses
+
+Most enemies have one or two **damage type weaknesses** declared in their template. Hitting an enemy with damage of a type they're weak to multiplies the damage by **1.5× before armor** — the difference between "this fight is a slog" and "this fight is over."
+
+A representative sample:
+
+| Enemy Family | Weaknesses |
+|--------------|------------|
+| Wolves, Spiders, Bears | Fire |
+| Wyverns, Young Dragons | Ice, Lightning |
+| Drakes, Fire Whelps, Adult Dragons | Ice |
+| Skeletons, Zombies | Holy, Fire |
+| Ghosts, Wraiths | Holy |
+| Vampires | Holy, Fire (Dark-resistant) |
+| Imps, Hellhounds | Holy, Ice |
+| Animated Armor, Stone Golems | Lightning |
+| Iron Golems | Lightning (Physical/Fire/Ice resistant) |
+| Elder Dragons | Ice, Dragonslayer (Fire/Physical resistant) |
+
+The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
+
+Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — five kills, roughly. Until then you're guessing, which is part of the early-game character.
+
 ### Armor and Damage Reduction
 
 ```
@@ -98,6 +121,31 @@ Capped at 95%. Minimum damage dealt is always 1. The square root in the formula 
 **Defense Modifiers:**
 - Defending: 50% damage reduction
 - Shield Wall: 50% damage reduction
+
+### Resistances
+
+Armor handles physical damage. For elemental damage — **Fire, Cold/Ice, Lightning, Holy, and Dark/Chaos** — heroes use resistances, summed from equipment, food buffs, and other non-food buffs and converted through a saturation curve:
+
+```
+Effective Resistance % = Raw Resistance / (Raw Resistance + 100) × 100
+```
+
+| Raw Resistance | Effective % Mitigation |
+|---------------:|------------------------:|
+| 25 | 20% |
+| 50 | 33% |
+| 75 | 43% |
+| 100 | 50% |
+| 150 | 60% |
+| 200 | 67% |
+| 400 | 80% |
+| 1000 | 91% |
+
+The asymptote is 100%. You cannot reach it. The Guild Clerk considers this a feature — full elemental immunity would, in the Clerk's view, "make the Dragon's Tithe optional," and the Dragon disagrees.
+
+Physical damage has no resistance stat. Stacking armor handles it instead.
+
+The curve is hero-side only. **Enemies use a flat 50% reduction** per matching resistance tag — a simpler ledger, since enemies don't go shopping for jewellery.
 
 ### Evasion
 

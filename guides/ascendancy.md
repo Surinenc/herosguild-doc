@@ -99,7 +99,7 @@ Rogues specialize in burst damage through different means.
 
 **Focus:** Critical Strikes, First Strike, Execute
 
-**Starting Bonus:** +20% crit, +45% physical damage, +15% dexterity
+**Starting Bonus:** +20% crit, +50% physical damage, +15% dexterity
 
 Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
@@ -119,7 +119,7 @@ Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
 **Focus:** Poison, Debuffs, Party Damage Amplification
 
-**Starting Bonus:** +10% crit damage, +40% physical damage, +10% damage, +15% dexterity
+**Starting Bonus:** +10% crit damage, +45% physical damage, +10% damage, +15% dexterity
 
 Note: Party damage nodes grant team bonuses but increase the Trickster's own damage taken.
 

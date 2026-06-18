@@ -172,6 +172,17 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 | Charm of Fortune | +20% loot find |
 | Signet of Command | +10% all party stats |
 
+### Mana Sustain Affixes
+
+Two random-roll affixes feed the [mana economy](combat.md#mana-economy):
+
+| Affix | Rolls On | Effect |
+|-------|----------|--------|
+| `manaRegen` | Accessory 1, Accessory 2 | Flat mana regen per turn; stacks with passive tree and class baseline |
+| `manaCostReduction` | Accessory 1, Accessory 2, weapons | Percent reduction to skill mana costs; additive with proficiency, passives, set bonuses, and ascendancy, capped at 75% total |
+
+Both use continuous scaling — a rare ring at L50 will roll something modest, the same affix on a mythic at L100 considerably less so. They can coexist on the same accessory, which is the combination experienced builders look for first.
+
 ---
 
 ## Consumables
@@ -198,6 +209,18 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 | Mana Potion | Uncommon | 80 | 10 |
 | Greater Mana Potion | Rare | 200 | 5 |
 | Superior Mana Potion | Epic | 500 | 5 |
+
+### Mana Flasks
+
+A higher-tier line of mana consumables for heroes who've gone past the "occasionally run dry" stage and into the "regularly spend a 6-link's mana in one turn" tier. Combat tactical logic auto-uses these when mana drops below threshold and a flask is in either Consumable slot.
+
+| Name | Rarity | Mana | Min Level | Stack |
+|------|--------|------|-----------|-------|
+| Lesser Mana Flask | Uncommon | 120 | 20 | 5 |
+| Mana Flask | Rare | 250 | 40 | 5 |
+| Greater Mana Flask | Epic | 500 | 60 | 5 |
+
+Craftable at the alchemy bench. The recipes are short. The alchemist's commentary on them, less so.
 
 ### Buff Potions
 

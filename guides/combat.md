@@ -18,7 +18,7 @@ Higher initiative means acting earlier, which is particularly useful for heroes 
 
 Every round resolves in the same four phases, in the same order, without exception, regardless of hero preference:
 
-1. **Start of Turn** - Mana regenerates (5% of max mana)
+1. **Start of Turn** - Mana regenerates (see [Mana Economy](#mana-economy) — flat base + percent of max, tuned by class)
 2. **Cooldown Tick** - All skill cooldowns decrease by 1
 3. **Actions** - Each combatant acts in initiative order
 4. **End of Turn** - Buffs/debuffs tick down
@@ -61,7 +61,7 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage. This is why experienced guild masters invest in training rather than just handing heroes a bigger sword and hoping for the best.
 
 **Modifiers Applied (multiplicative):**
-- **Class damage multiplier** — Mage/Necromancer ×1.25, Rogue/Ranger ×0.80, Warrior/Cleric ×1.00. Applied at every hero-source damage point as a top-level cap on relative class power.
+- **Class damage multiplier** — Mage/Necromancer ×1.25, Cleric/Warrior ×1.00, Rogue ×0.85, Ranger ×0.80. Applied at every hero-source damage point as a top-level cap on relative class power.
 - **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a per-hero `damage` multiplier applied on top of everything else. This is the reason two heroes with identical class, level, and equipment will not hit for the same numbers: their pasts disagree about what their hands are capable of.
 - Skill damage percentage (e.g., Power Attack = 150%)
 - [Passive tree](passive-tree.md) bonuses
@@ -74,7 +74,7 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 - Mood modifier
 - Damage variance (±10%)
 
-The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get the lift in the same direction. The Guild Clerk considers this fair. The Rogues do not, but the Rogues have never considered anything fair, and this is itself part of the design.
+The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get the lift in the same direction. The Guild Clerk considers this fair. The Rogues do not, but the Rogues have never considered anything fair, and this is itself part of the design. (Rogues were quietly nudged from ×0.80 to ×0.85 in a later pass. They have not yet acknowledged this.)
 
 ### Critical Hits
 
@@ -84,6 +84,8 @@ When the numbers align, attacks deal significantly more damage. The numbers do n
 Crit Chance = 5% + (DEX / 20) + (LCK / 10) + bonuses
 Crit Multiplier = 1.5× (base) + (bonus crit damage% / 100)
 ```
+
+Socketed skill gems contribute their own `critical_strike_multiplier` to the crit damage on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup.
 
 ### Armor and Damage Reduction
 
@@ -141,9 +143,52 @@ Heal Amount = floor(sqrt(Damage × Life Steal% / 100 × 100))
 
 Examples: 100 damage at 10% steal → 31 HP, 500 damage → ~70 HP, 2500 damage → ~158 HP.
 
+The **Life Leech** support gem grants `life_leech_percent` directly to its linked skill (2% baseline, scaling up by an additional ~3% across 100 levels). The Guild Clerk notes that linking it to a 6-link burst skill has saved more Berserkers than the Berserkers themselves are willing to admit.
+
 ---
 
-## Threat System
+## Mana Economy
+
+Mana is the gate on how often a hero can fire their socketed skills. Run out and the hero falls back to basic attacks — a fate that the Mage finds particularly humiliating. Sustain comes from five separate sources, deliberately, so that "I want to cast my big skill more often" is a build decision and not a matter of waiting for the level-up screen.
+
+### Regeneration Formula
+
+At the start of every hero turn:
+
+```
+Mana Regen = 20 (flat base)
+           + floor(Max Mana × Total Regen% / 100 × Class Coefficient)
+           + Equipment Flat Regen
+```
+
+Where **Total Regen%** = 3% baseline + passive tree `mana_regen` + ascendancy `mana_regen`.
+
+### Class Coefficients
+
+The per-class coefficient is the lever that makes a Mage feel "casty" and a Warrior feel "hoarding." It compensates for the INT-driven gap in max mana — Rangers and casters get more of their percent-based regen back, Warriors get less:
+
+| Class | Coefficient | Feel |
+|-------|------------|------|
+| Ranger | 1.1× | The strongest sustain in the roster. The Rangers, who spent years complaining about mana drought, now refuse to discuss it. |
+| Mage, Necromancer, Cleric | 1.0× | Casters as the baseline. |
+| Rogue | 0.95× | Slightly under baseline; Rogues still spike-shaped, but cast more often than before. |
+| Warrior | 0.7× | Lowest of all. Big swings spaced out by basic attacks. As intended. |
+
+### Cost Reduction
+
+A new stat — `mana_cost_reduction` — exists on equipment affixes, passive tree nodes, set bonuses, ascendancy paths, and (additively) skill proficiency. All sources stack, with a hard cap of **75% reduction**. The cap prevents free skills, on the principle that anyone casting Meteor twice a turn for free has wandered out of the design space and into someone else's problem.
+
+### Sustain Levers
+
+In ascending order of how much of a build you need to spend on it:
+
+1. **Equipment affixes** — `mana_regen` rolls on accessories only (Accessory 1 and Accessory 2); `mana_cost_reduction` rolls on accessories and weapons. Both use continuous scaling and can appear on the same accessory.
+2. **Mana Flasks** — consumables in the two Consumable slots that instantly restore a fixed amount (120 / 250 / 500). See [Equipment](equipment.md#consumables).
+3. **Passive tree Core Hub** — the inner ring's six even-numbered slots now grant alternating `mana_regen` / `mana_cost_reduction`, each with a stronger outward tail node. See [Passive Tree](passive-tree.md#core-hub-mana-cluster).
+4. **Class coefficient** — the regen formula itself. Not allocatable; the choice of class is the choice of sustain shape.
+5. **Ascendancy** — Occultist branch C grants `mana_regen` directly as part of its drain package.
+
+Investing across all five is what turns a 6-link burst skill from a once-per-fight finisher into a sustained main attack.
 
 Enemies use threat to determine who to attack. Higher threat means more attention from things that want to kill you, which is either the entire point (Warriors) or a catastrophic failure of planning (everyone else).
 

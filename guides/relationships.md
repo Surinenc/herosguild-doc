@@ -135,14 +135,92 @@ Additional bonds include:
 - **Drinking Buddies** - Bonded over tavern sessions
 - **Sparring Partners** - Regular training partners
 - **Confidant** - Trusted advisor and emotional support
-- **Oath Sworn** - Sworn allegiance to each other
+- **Oath Sworn** - Sworn allegiance to each other. A pair of Oath Sworn heroes assigned to the same mission grants **+5% party damage** for that mission. The bonus applies once regardless of how many Oath Sworn pairs are in the party — the realm rewards the dramatic gesture, not the inventory
 - **Siblings** - Family bond
 
 **Negative:**
 - **Nemesis** - Escalated rivalry, deep personal hatred
-- **Blood Feud** - Generational or oath-bound enmity
+- **Blood Feud** - Sworn enemies. Heroes in a Blood Feud bond **refuse to deploy on the same mission together** — a hard refusal that cannot be overridden, even at a mood cost. You will have to send one of them, or neither
 - **Ex / Scorned** - Failed romantic relationship
 - **Estranged** - Former bond broken by betrayal
+
+---
+
+## Story Arcs
+
+Some relationships develop their own plotlines. When two heroes have spent enough time around each other under the right conditions, the realm proposes a **Story Arc** — a queued moral event with three branches, each of which permanently changes the bond between them.
+
+The Guild Clerk has filed arcs as a separate category from bonds because arcs *create* bonds (or destroy them), rather than being bonds themselves. There are four arc archetypes, and only one arc can be in flight per hero at a time. The realm checks them in a fixed priority: **Romance → Mentorship → Rivalry → Honor Debt.**
+
+### Common Rules
+
+All arcs share:
+- Both heroes must be at least **level 5**
+- A per-pair **cooldown of 200 days** after any arc resolves — the realm does not allow the same two heroes to keep restarting
+- Only **one arc in flight per hero** at any time
+- The arc opens with a Chronicle **spark** entry, then a delayed **modal event** in Guild Events (3-day deadline; the default if you let it expire is usually "refuse")
+- The crisis system has the right of way: if a [crisis](crisis.md) is active, the arc step is deferred by a day
+
+### The Four Arc Archetypes
+
+#### Romance
+
+**Triggers:** the pair has an Attracted bond, relationship tier ≥ Friendly, and shared combat within the last 10 days.
+
+**Choices at the modal:**
+- **Encourage** — both heroes gain the **Lovers** bond. If either was already in a Lovers or Dating relationship, it auto-upgrades to **Married**.
+- **Play it cool** — nothing happens. The realm files it away. Reroll is possible after the cooldown.
+- **Break it off** — both heroes gain the **Scorned** bond and take a 30-day mood penalty. The Guild Clerk recommends only doing this if you have a very good reason and a very strong sense of theatre.
+
+#### Mentorship
+
+**Triggers:** the two heroes share a class, the veteran is level 30+, the rookie is below level 10, and they've completed at least 2 missions together.
+
+**Choices at the modal:**
+- **Formalize** — the rookie gains the **Student** bond, the veteran gains **Mentor.** A small valor boost for both.
+- **Casual** — a small mood bonus for 60 days; no bond change.
+- **Dismiss** — nothing happens.
+
+The Guild Clerk approves of Mentorship arcs more than the others, because they tend to resolve quietly and rarely involve anyone getting Scorned.
+
+#### Rivalry
+
+**Triggers:** the pair's relationship tier is at or below Dislike, they have at least one contested kill on record, and they've shared combat within the last 5 days.
+
+**Choices at the modal:**
+- **Tavern** — relationship value improves by 15. A drink does what years of strained professionalism could not.
+- **Duel** — relationship value improves by 10, but the lower-level hero takes a **−2 STR debuff for 30 days.** The Guild Clerk regards organised duelling as "structured violence with better paperwork."
+- **Fester** — both heroes gain the **Blood Feud** bond. They will refuse to deploy on the same mission until something dramatic resolves it.
+
+#### Honor Debt
+
+**Triggers:** one hero performed an intervene save on the other within the last 5 days — specifically, a save that would otherwise have been a kill.
+
+**Choices at the modal:**
+- **Oath** — both heroes gain the **Oath Sworn** bond (and its +5% party damage when deployed together).
+- **Even debt** — the saved hero gains the **Life Debt** bond toward the saviour. Asymmetric: only the saved hero carries it.
+- **Refuse** — relationship value drops by 15. The realm files this under "ingratitude."
+
+### How You Encounter an Arc
+
+The lifecycle plays out like this:
+
+1. The arc **sparks** silently in the background when the conditions are met. Both heroes get a Chronicle entry; you can read about it but cannot yet act on it.
+2. A few days later (3 to 7 days depending on archetype), the **modal event** appears in Guild Events. You pick one of three options.
+3. The outcome resolves immediately: bonds are granted or removed, mood and stat effects apply, and a Chronicle entry is written for both heroes.
+4. The per-pair 200-day cooldown begins.
+
+If one of the heroes dies before the modal resolves, the arc is swept clean with a `relationship_arc_resolved` Chronicle entry on the survivor flagged as a permadeath resolution. The cooldown still applies.
+
+### Where Arcs Are Tracked
+
+Arcs surface in three places:
+
+- **Guild Events** — the modal for the active step
+- **The Chronicle** — every hero's Chronicle shows arc sparks and resolutions tagged as Social entries, with metadata fields for which archetype, which branch, and whether the arc ended in permadeath
+- **Pending Consequences** — the queue of upcoming arc modals lives on the relationship arc state, and the deadline for each is visible on the event card
+
+The Guild Clerk has, on three separate occasions, suggested adding an "Active Arcs" panel to the Social tab. The suggestion is being considered, in the way that ledger items are considered when nobody has decided who owns them.
 
 ---
 

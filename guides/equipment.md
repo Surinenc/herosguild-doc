@@ -432,6 +432,7 @@ All items go to the central Guild Vault. From there you can:
 - [Crafting](crafting.md) - Creating equipment
 - [Skills & Abilities](skills.md) - Skill gem details
 - [Combat System](combat.md) - How equipment affects combat
+- [World Boss Raids](raids.md) - Tier sets and offhand mythics available at the Raid Token vendor
 
 ---
 

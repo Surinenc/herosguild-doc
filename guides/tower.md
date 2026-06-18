@@ -129,6 +129,7 @@ Score = (Floor × 100) + (Enemies Defeated × 10) + (Gold Earned ÷ 100)
 ## Related Guides
 
 - [Heroic Dungeons](heroic-dungeons.md)
+- [World Boss Raids](raids.md)
 - [Combat System](combat.md)
 
 ---

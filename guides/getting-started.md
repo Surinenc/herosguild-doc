@@ -133,6 +133,12 @@ Once you're comfortable with the basics:
 - [Equipment & Items](equipment.md) - Understand gear and gems
 - [Guild Management](guild.md) - Optimize your guild operations
 
+Endgame, when you get there:
+
+- [Heroic Dungeons](heroic-dungeons.md) - Weekly modifier-laden challenges
+- [Abyssal Spire](tower.md) - The endless tower, for parties with at least one level-95 hero
+- [World Boss Raids](raids.md) - 15-hero raid fights, unlocked at 5000 guild reputation and a level-50 hero
+
 ---
 
 *Good luck, Guild Master. The heroes are waiting, the dungeons are full, and the Tavern tab is already running. Your adventure — and your accounting — awaits.*

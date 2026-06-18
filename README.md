@@ -30,6 +30,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Quest Chains](guides/quest-chains.md) - Story chains, class chains, and weekly bounties
 - [Heroic Dungeons](guides/heroic-dungeons.md) - Weekly endgame challenges
 - [Abyssal Spire](guides/tower.md) - The endless tower challenge
+- [World Boss Raids](guides/raids.md) - 15-hero raids against the realm's largest threats
 
 ---
 

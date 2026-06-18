@@ -148,6 +148,7 @@ Access: Mission Board → Heroic filter (🔥). A countdown timer shows time unt
 
 - [Combat System](combat.md)
 - [Abyssal Spire](tower.md)
+- [World Boss Raids](raids.md)
 
 ---
 

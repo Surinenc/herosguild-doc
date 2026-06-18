@@ -82,7 +82,6 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 - **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
 - **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
 - **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
-- **Stealth** - Access to stealth-based abilities; the combat log will look confusing to anyone watching
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
@@ -144,9 +143,9 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 
 **Healing Formula:** For those who find it reassuring to know exactly how much someone else's suffering is worth in numbers:
 ```
-Heal Amount = Skill Base Heal + (INT × 0.5) + (Level × 6)
+Base Heal = Skill Base Heal + INT + (Level + sqrt(Level)) + Max HP × 0.015
 ```
-Modifiers: Mood bonus (±20%), Skill Proficiency, Set bonuses (Crusader 3pc: +25%)
+Then the realm applies, in order: mood modifier (±20%), skill proficiency, the **Cleric magical damage bonus** at half-rate (`× 1 + magicDamage% / 200`), heal-effectiveness from gem supports, ascendancy healing-% nodes, and set bonuses — Crusader 3-piece (×1.25) and Paladin 3-piece (×1.30). A fully-supported endgame Cleric heals for several times what the base formula suggests, which is the difference between the party surviving and the Guild Clerk filing more paperwork than usual.
 
 **Best For:** Every party needs one! Essential for longer dungeons. Arguably the most important class, a fact they will remind you of at every opportunity.
 

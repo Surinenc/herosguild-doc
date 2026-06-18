@@ -25,12 +25,18 @@ You launch the raid from the Guild screen, where the active world boss appears a
 
 A raid is a single fight on a tactical grid. The board is **5 rows × 5 columns** plus a dedicated **Boss Arena** zone, and the rows run from F (front, nearest the boss) through M, U, L, to B (back, furthest away). Most ranged abilities pay attention to columns; most movement happens in rows; the boss reaches you when you reach the front.
 
-- **Up to 15 heroes deployed** across **up to 5 groups**
-- **4 heroes per zone maximum** — stacking is punished by cleaves
+- **Up to 15 heroes deployed total** (enforced cap, `MAX_HEROES_TOTAL = 15` in `RaidSetup.tsx`)
+- **Groups are organisational, not capped** — the live setup UI lets you build as many or as few groups as you like as long as total deployed heroes stay at or under 15. The realm proposes **five default anchor zones** (F3, M3, U3, L3, B3); you can use them, ignore them, or build your roster a different way
 - **No rotation, no rest** — everyone you bring fights for the entire raid
 - **Orders are issued per group, not per hero**
 
 A group is the unit you actually pilot during the raid. Each group is assigned a home zone, a role (Standard or Add Hunters), and a composition. Heroes inside a group take their own actions in initiative order, but you tell them where to be and what to do at the group level.
+
+<!-- TODO: verify - "4 heroes per zone maximum" claim removed pending verification against current code; the zone-cap behaviour needs to be re-confirmed -->
+<!-- TODO: verify - "Role (Standard / Add Hunters)" needs verification against current RaidSetup options -->
+<!-- TODO: verify - the "Boss Arena" zone needs verification against RaidBoard.ts -->
+<!-- TODO: verify - row letters F/M/U/L/B need verification against RaidBoard.ts -->
+<!-- TODO: verify - the boss-melee-at-front-row claim needs verification -->
 
 ---
 
@@ -170,15 +176,27 @@ Standing orders are the lever for boss patterns you've seen before: the second t
 
 ## The Turn Loop
 
-You read the board, the queued telegraphs, and the threat list. You issue up to five orders. You press end-turn. The orchestrator resolves the turn. You read the new state. Repeat.
+**Raids run in real time.** There is no End Turn button and no Pause button — both were removed in spec 130. Turns auto-resolve on a **6-second base tick** (`BASE_TICK_MS = 6000` in `RaidStateProvider.tsx`), and the player controls pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds.
+
+The loop, in practice:
+
+1. The current turn starts. You see the board state, the queued telegraphs, the threat list, and your group order panel.
+2. You queue orders during the tick window — up to 5 points worth, per the budget above.
+3. When the tick timer hits zero (or sooner if you've already queued all the orders you intend), the orchestrator auto-resolves the turn — moves, attacks, telegraphs that came due, and the boss's own actions.
+4. The next turn begins, and you do it again.
 
 A few things worth knowing about the cadence:
 
-- **Turn 0 is setup-only.** Movement is allowed; combat is not. Use it to place groups before the boss starts swinging.
 - **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
-- **Add waves arrive on a cadence.** Baseline is roughly one minor add per three turns, plus the boss's scripted waves (the Lich's are particularly enthusiastic).
+- **Add waves arrive on a cadence.** Boss-scripted waves are documented above; default wave timing needs separate verification.
 - **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
-- **The order points you don't spend don't carry over.** Use them or lose them.
+- **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
+
+The speed selector is the lever for actually surviving the harder fights — speeding up trivial turns and slowing down to read telegraphs and queue intricate group orders during the dangerous ones.
+
+<!-- TODO: verify - the Call Retreat button location and behaviour needs verification -->
+<!-- TODO: verify - the "Turn 0 setup-only" claim was previously documented; re-verify against current orchestrator -->
+<!-- TODO: verify - the add wave cadence "~1 per 3 turns" claim needs verification -->
 
 ---
 

@@ -166,11 +166,11 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 
 | Name | Effect |
 |------|--------|
-| Ring of Shadows | +30% stealth duration |
-| Amulet of the Phoenix | Once/mission: Resurrect at 50% HP |
-| Band of Haste | +25% attack speed |
-| Charm of Fortune | +20% loot find |
-| Signet of Command | +10% all party stats |
+| Ring of Shadows | <!-- TODO: verify - no stealth mechanic exists in code --> |
+| Amulet of the Phoenix | <!-- TODO: verify --> Once/mission: Resurrect at 50% HP |
+| Band of Haste | <!-- TODO: verify --> +25% attack speed |
+| Charm of Fortune | <!-- TODO: verify --> +20% loot find |
+| Signet of Command | <!-- TODO: verify --> +10% all party stats |
 
 ### Mana Sustain Affixes
 
@@ -297,13 +297,15 @@ Wearing multiple pieces from the same set grants powerful bonuses. The Guild Cle
 
 ### Shadow Assassin Set (Epic)
 
+<!-- TODO: verify - 3pc and 4pc bonuses claim a "stealth" mechanic that does not exist in code. The 2pc Crit Damage bonus also needs verification against the actual set definition. -->
+
 | Pieces | Bonus |
 |--------|-------|
-| 2 | +15% Crit Damage |
-| 3 | +50% Stealth Duration |
-| 4 | First stealth attack always crits |
+| 2 | <!-- TODO: verify --> +15% Crit Damage |
+| 3 | <!-- TODO: verify - stealth mechanic does not exist in code --> |
+| 4 | <!-- TODO: verify - stealth mechanic does not exist in code --> |
 
-**Pieces:** Shadowblade, Nightstalker Armor, Hood of Shadows, Ring of Shadows
+**Pieces:** <!-- TODO: verify --> Shadowblade, Nightstalker Armor, Hood of Shadows, Ring of Shadows
 
 ### Archmage's Regalia (Legendary)
 

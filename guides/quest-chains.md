@@ -12,17 +12,19 @@ There are three kinds of chain, each unlocked differently and rewarding differen
 
 ### Story Chains
 
-Five long-form campaigns that track the shape of your guild's career. Each one unlocks at a specific **guild rank**, starting at rank F and opening up as you climb.
+Seven long-form campaigns that track the shape of your guild's career. Each one unlocks at a specific **guild rank**, starting at rank F and opening up as you climb.
 
-- **4–5 steps** per chain
+- **3–5 steps** per chain
 - **No time limit** — the chain waits as long as it needs to
 - **Finale rewards:** a named legendary item, a substantial reputation grant, and in two cases a **special hero** who joins your roster at the level of your highest-level hero, pre-equipped and pre-specced
 
 Story chains are where the game's narrative lives. Each step comes with flavor text; each completion advances a small arc that the world quietly remembers.
 
+The two most recently added are **The Founding Blade** (rank D, retrieves the realm's *first guild sword*) and **The World Tree Pact** (rank D, brokers the realm's accord with the Fae and rewards a named bow called *Nature's Embrace*). Both ship as full three-step chains with the usual finale-item-plus-recipe-plus-two-gems payload.
+
 ### Class Chains
 
-One chain per hero class — six in total. Unlocking them requires two things simultaneously:
+One chain per class for most of them — **seven chains across six classes**, since the Mage now has two. Unlocking any of them requires two things simultaneously:
 
 - Guild rank **E or higher**, and
 - At least **one hero of that class at level 25+**
@@ -33,7 +35,9 @@ The Guild Clerk notes that this is the game's way of saying "prove you're commit
 - **No time limit**
 - **Finale rewards:** a class-restricted named item, a crafting recipe, and two skill gems
 
-You can pursue multiple class chains in parallel — qualifying a Warrior doesn't close the door on the Mage chain.
+The Mage's second chain, **The Archmage's Thesis**, unlocks at level 40 (one rank higher than the standard Class Chain gate) and rewards the *Archmage Robes* — for Mages who have moved past the "first major item" tier and want something explicitly archmage-flavoured.
+
+You can pursue multiple class chains in parallel — qualifying a Warrior doesn't close the door on the Mage chain, and qualifying the Mage's first chain doesn't close the door on the Thesis.
 
 ### Weekly Bounties
 

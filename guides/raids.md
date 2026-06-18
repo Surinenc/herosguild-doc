@@ -102,7 +102,24 @@ This is the fight where standing orders pay for themselves, because manual movem
 
 ### Enrage
 
-All three bosses share a hard enrage threshold at **turn 250**. The damage multiplier ramps with stacks accumulated past that point, climbing to roughly 2.5× — the message being that raids are not endurance contests. If you are not winning by turn 250, you are losing on turn 251.
+All three bosses share a hard enrage threshold at **turn 250**. From that point on, the boss's base damage scales by **+10% per turn past 250, additive, with no cap.** At turn 275, base damage is ×3.5. At turn 300, it's ×6.0. At turn 350 it's the kind of number the Guild Clerk will not write down for fear of jinxing whatever happens next.
+
+The shape is linear, not compounding — but the practical message is the same: raids are not endurance contests. If you are not winning by turn 250, you are losing on turn 251.
+
+### Wounded — The Cleave Tax
+
+Every time a hero is in the affected zone of a dodgeable cleave (Cone, Row Sweep, or Column Sweep) when it resolves, they take the damage *and* gain a **Wounded** stack. Wounded does two unpleasant things:
+
+- **+20% damage on the next telegraph hit** to that hero
+- **+30% to all damage taken** by that hero, permanently for the fight
+
+Both effects stack with additional Wounded marks. Both reset between attempts; both are permanent within an attempt — no decay, no time-out, no priest can cleanse them.
+
+The avoidance check is **deterministic and positional.** A hero who moved out of the telegraphed zone before resolution takes no damage and gains no Wounded stack. A hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
+
+SpotSoak and Spread telegraphs do not apply Wounded. The risk is specifically in the column- and row-shaped cleaves.
+
+### Normal vs Heroic
 
 ### Normal vs Heroic
 

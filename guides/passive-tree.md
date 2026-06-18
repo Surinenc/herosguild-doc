@@ -43,12 +43,14 @@ Every hero begins on their class node. It cannot be removed, which saves conside
 
 | Class | Starting Stats |
 |-------|---------------|
-| **Warrior** | +50 STR, +50 Damage, +20% Physical Damage |
+| **Warrior** | +50 STR, +100 Damage, +20% Physical Damage |
 | **Mage** | +50 INT, +50 Damage, +20% Spell Damage |
-| **Rogue** | +50 DEX, +50 Damage, +20% Physical Damage |
+| **Rogue** | +50 DEX, +80 Damage, +20% Physical Damage |
 | **Ranger** | +50 DEX, +50 Damage, +20% Projectile Damage |
-| **Cleric** | +40 INT, +40 STR, +50 Damage, +20% Holy Damage |
+| **Cleric** | +40 INT, +40 STR, +50 Damage, +20% Spell Damage |
 | **Necromancer** | +50 INT, +50 Damage, +20% Chaos Damage |
+
+Warrior and Rogue starting nodes carry extra flat damage — Warrior gets the largest bump because plate-and-stubbornness was the slowest archetype to come online in the early game; Rogue gets a smaller bump because daggers are already pointy.
 
 ### Branch Specializations
 
@@ -156,6 +158,45 @@ The six class regions are connected by diamond-shaped bridge paths — chains of
 | Necromancer ↔ Warrior | For heroes who want to destroy things and then make professional use of the remains |
 
 Crossing into another class's region costs travel points (you're spending nodes on connectors rather than stats), but unlocks access to their notable and keystone nodes. A Warrior who bridges into Mage territory can pick up spell damage nodes — unorthodox, effective, and precisely the sort of thing that makes build theorycrafting worth the time.
+
+---
+
+## Core Hub Mana Cluster
+
+At the very centre of the tree sits the Core Hub — a ring of twelve slots equidistant from every class. Six of those slots are now mana stat nodes; each has an outward "tail" notable behind it, and beyond those a second outer tier of stronger notables. Sustain has gone from "what your INT happens to give you" to "what you pathed to."
+
+### Hub Ring (six minor stats, alternating)
+
+Walking through the ring grants one of two flavours, depending on which slot you reach first:
+
+| Slot | Node | Stat |
+|------|------|------|
+| 2, 6, 10 of 12 | **Mana Wellspring** | +mana regen % (5 levels) |
+| 4, 8, 12 of 12 | **Mana Efficiency** | -mana cost % (5 levels) |
+
+The flavours alternate around the ring, so any class can reach either kind without doubling back.
+
+### Inner Tails (six notables, one per hub)
+
+Each repurposed hub slot has a single notable connected outward — a stronger version of its parent's flavour:
+
+| Parent Hub | Tail Notable | Effect |
+|------------|--------------|--------|
+| Regen hubs | **Deep Wellspring** | Greater mana regen + flat max mana |
+| Cost hubs | **Practiced Casting** | Greater mana cost reduction |
+
+### Outer Tails (six notables, deeper investment)
+
+A second outward ring of notables sits beyond the inner tails — for builds willing to commit a longer travel:
+
+| Parent | Outer Notable | Effect |
+|--------|---------------|--------|
+| Regen line | **Vast Reservoir** | Significant mana regen + larger flat max mana |
+| Cost line | **Arcane Mastery** | Master-level cost reduction |
+
+### Why This Matters
+
+The hub gives every class a deliberate sustain path that competes with damage branches for the same points. Allocating a full mana lane (hub → inner tail → outer tail) is roughly seven points; spent on a damage branch those same points buy a notable cluster instead. The choice is the point. Pathfinders, Occultists, and anyone running a high-cost 6-link skill will find the detour pays for itself; pure burst builds may decide the damage path is worth the thirst.
 
 ---
 

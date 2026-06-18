@@ -134,7 +134,7 @@ For heroes who prefer to resolve disagreements from a safer distance.
 |-----|------|-------------|
 | **Split Arrow** | AoE | Fire arrows that split to hit multiple targets |
 | **Barrage** | Multi-hit | Rapid fire multiple arrows at one target |
-| **Tornado Shot** | AoE | Arrows spiral outward after impact |
+| **Tornado Shot** | AoE | Primary shot plus one secondary projectile that spirals outward; lower per-hit damage than a single-target equivalent in exchange for the extra hit |
 
 ### Spell Skills (Blue)
 
@@ -146,6 +146,8 @@ Fire, lightning, ice, and chaos — the Mage's preferred vocabulary.
 | **Arc** | Chain | Lightning chains between enemies |
 | **Freezing Pulse** | AoE | Cold wave that can freeze targets |
 | **Essence Drain** | DoT | Chaos damage over time, heals caster |
+
+Spell gems share the same damage pipeline as attack gems — they scale off the linked weapon's base damage via `base_damage_percent`, plus their own flat damage. Gems that fire secondary projectiles take a per-projectile damage penalty so that "more projectiles" stays a tradeoff rather than a free multiplier.
 
 ### Minion Skills (Blue)
 
@@ -165,6 +167,7 @@ The skills that make the rest of the party's recklessness survivable.
 | **Healing Light** | Single | Restore HP to lowest-health ally |
 | **Rejuvenation** | HoT | Apply healing over time effect |
 | **Divine Shield** | Shield | Grant temporary damage absorption |
+| **Life Tap** | Self HoT (Necromancer) | Sustained percent-life regen for 5 turns. Free to cast — the cost is having to be a Necromancer. |
 
 ### Guard Skills (Green)
 
@@ -183,6 +186,8 @@ Defensive skills, mostly for heroes who've learned what happens without them.
 |-----|------|-------------|
 | **Enduring Cry** | Self | Restore HP, generate endurance charges |
 | **Rallying Cry** | Party | Buff nearby allies' damage |
+| **Steady Aim** | Self HoT (Ranger) | Grants life regen while active; the Ranger's quiet 4-turn promise that they are about to do something competent |
+| **Unholy Vigor** | Self HoT (Necromancer) | Sustained life regen via dark vitality; "darkness is surprisingly nurturing if you ask nicely" |
 
 ### Movement Skills (Green)
 
@@ -191,7 +196,7 @@ For tactical repositioning. Also for leaving approximately as fast as possible.
 | Gem | Type | Description |
 |-----|------|-------------|
 | **Evasive Roll** | Self | Dodge and reposition |
-| **Smoke Bomb** | AoE | Create concealment, chance to evade |
+| **Smoke Bomb** | Guard / AoE | Swirling cloak of smoke absorbs a percentage of incoming damage; visibility ruined for both parties, only one minds |
 | **Shadow Step** | Teleport | Instant teleport behind enemy |
 
 ### Holy Skills (Red/Green)
@@ -234,7 +239,7 @@ Practical effects for practical heroes. The Life Leech gem, in particular, has s
 
 | Gem | Effect | Mana Multiplier |
 |-----|--------|-----------------|
-| **Life Leech** | Gain HP from damage dealt | 1.25× |
+| **Life Leech** | Gain HP from damage dealt (2% baseline, scales with gem level) | 1.25× |
 | **Mana Leech** | Gain mana from damage dealt | 1.2× |
 | **Increased Duration** | Buffs/debuffs last longer | 1.1× |
 | **Increased Healing** | Stronger healing skills | 1.2× |

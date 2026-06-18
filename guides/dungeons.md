@@ -562,6 +562,7 @@ Access the weekly rotation from Mission Board → Heroic filter (🔥).
 - [Heroes & Classes](heroes.md) - Party composition
 - [Heroic Dungeons](heroic-dungeons.md) - Endgame challenge
 - [Abyssal Spire](tower.md) - Endless tower
+- [Custom Dungeons](custom-dungeons.md) - Design your own dungeons and raid the community's
 
 ---
 

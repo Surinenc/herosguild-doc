@@ -243,6 +243,7 @@ The board stage also swaps the music. You'll notice.
 - [Heroic Dungeons](heroic-dungeons.md)
 - [Abyssal Spire](tower.md)
 - [Equipment & Items](equipment.md) — for the tier sets the vendor stocks
+- [Custom Dungeons](custom-dungeons.md) — a different "raid" system that runs player-built dungeons
 
 ---
 

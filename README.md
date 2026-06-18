@@ -31,6 +31,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Heroic Dungeons](guides/heroic-dungeons.md) - Weekly endgame challenges
 - [Abyssal Spire](guides/tower.md) - The endless tower challenge
 - [World Boss Raids](guides/raids.md) - 15-hero raids against the realm's largest threats
+- [Custom Dungeons](guides/custom-dungeons.md) - Design and publish your own dungeons, raid the community's
 
 ---
 

@@ -377,6 +377,30 @@ Survival Chance = 50% (base)
 
 ---
 
+## Memorial and Departed
+
+A hero can leave the guild in two distinctly different ways, and the realm keeps separate records for each.
+
+### The Chapel Memorial — for heroes who died
+
+Heroes killed in combat get a memorial in the Chapel. When a hero dies, the realm:
+
+- Generates an **obituary** — a short, Chronicle-flavoured three-paragraph piece drawn from the hero's background, career, relationships, and the manner of their death. The Guild Clerk has standing instructions not to read these aloud at staff meetings, having tried it once
+- Preserves any **earned titles** the hero held; the memorial card shows the first two as title chips with a `+N` overflow indicator
+- Marks the hero as `Dead` and removes them from the active roster permanently
+
+Memorial cards are visible from the Chapel screen. The cards persist indefinitely; the realm does not forget. The Guild Clerk, asked whether the memorial should ever be cleared, has replied only "no" on each of the seven occasions the question has come up.
+
+### The Departed Archive — for heroes who left alive
+
+Not every hero who leaves the guild dies. Some are banished after disgracing themselves. Some desert after a particularly bad mission. Some are sent off on a permanent quest. Some are released because the guild has overrun its barracks capacity and the realm has decided which name to draw out of the metaphorical hat.
+
+These heroes go to the **Departed archive**, a separate record from the Chapel memorial. They are not dead — they are simply no longer with the guild — and they retain their titles and chronicle entries in the archive. The realm keeps the record so that, should any of them ever return, the guild has a paper trail to consult. The current build's UI for browsing the Departed archive is still under construction; the data is preserved regardless.
+
+The distinction matters: a hero killed in combat is mourned in the Chapel. A hero who walks out alive is filed in the archive. The Guild Clerk insists that mixing these two categories would be "professionally embarrassing."
+
+---
+
 ## Leveling & Progression
 
 ### Stat Points
@@ -412,8 +436,14 @@ Heroes earn titles by achieving specific milestones tracked in their Chronicle. 
 | **Nemesis Hunter** | End a Blood Feud | +10% damage vs Humanoids |
 | **Survivor** | Recover from a mental break | -20% negative mood impact |
 | **Legend** | Accumulate 50+ chronicle entries | +8% to all stats |
+| **Trial-Master** | Complete all 4 ascendancy trials | +5% to all stats |
+| **Old Guard** | Serve 500 days in the Guild | +5% XP aura to nearby allies |
+| **Whisperer** | Maintain bonds with 5 different heroes | +5% damage when partied with a bonded ally |
+| **Phoenix** | Recover from 3 mental breaks | -25% negative mood impact |
 
-Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it.
+Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it. Trial-Master is the only title that requires the [Ascendancy](ascendancy.md) trial path; Old Guard rewards heroes who simply refuse to retire.
+
+When a hero dies, their earned titles are preserved on their **Chapel memorial card** — the Guild Clerk considers this the minimum decency the realm can offer.
 
 ### Experience
 

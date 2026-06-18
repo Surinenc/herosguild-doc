@@ -556,6 +556,7 @@ Successful escape — the tactical decision the Guild Clerk officially discourag
 - [Heroes & Classes](heroes.md) - Class abilities and stats
 - [Equipment & Items](equipment.md) - Weapons and skill gems
 - [Relationships](relationships.md) - How bonds affect combat
+- [Crises](crisis.md) - Active crises apply damage-type and enemy-category multipliers on top of the formulas above
 
 ---
 

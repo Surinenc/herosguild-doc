@@ -507,6 +507,7 @@ Each Paragon point costs **192,109 XP**. Points are allocated into 8 categories,
 - [Equipment & Items](equipment.md) - Gearing your heroes
 - [Ascendancy](ascendancy.md) - Specialization paths
 - [Relationships](relationships.md) - Social bonds
+- [Crises](crisis.md) - Three named crises can kill a hero outright via Critical-severity moral events
 
 ---
 

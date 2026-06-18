@@ -890,6 +890,7 @@ The Guild Clerk has watched enough guilds fail to identify the patterns. These a
 - [Dungeons](dungeons.md) - Expedition management
 - [Relationships](relationships.md) - Social system
 - [Custom Dungeons](custom-dungeons.md) - The other Workshop — the one with dungeons in it
+- [Crises](crisis.md) - Four crises damage facilities if left to resolve at Ignored
 
 ---
 

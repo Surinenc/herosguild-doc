@@ -83,3 +83,11 @@ The six systems are not independent.
 Dungeon choices shift the guild's moral axes. Axis position determines which guild moral events appear. Context-aware events fire based on what your heroes have become. Guild events alter hero relationships and moods. Hero moods and relationships feed back into ambient social events and what the background events in the tavern look like. Tavern nightly decisions shape bonds and rivalries — and those bonds and rivalries determine which hero-specific dungeon events trigger in the first place.
 
 A guild that consistently burns shrines and robs travelers will, eventually, attract events suited to that kind of guild. The game pays attention to what you are.
+
+---
+
+## Related Guides
+
+- [Crises](crisis.md) - Three crises (Cult of the Unseen, Heretic Schism, plus the permadeath crises) inject extra moral events into the daily queue
+- [Relationships](relationships.md) - Story Arcs queue their own moral events tied to specific hero pairs
+- [Dungeons](dungeons.md) - In-dungeon moral events, the other major source of choice prompts

@@ -509,16 +509,9 @@ Each prestige mission also rewards 5 guaranteed materials, with tier scaling bas
 
 ## World Boss Raids
 
-When a World Boss spawns, you can organize a multi-party raid from the Guild Screen. This is the guild's way of saying "all hands on deck" — and meaning it literally.
+When a World Boss appears in the realm, the Guild can mount a raid against it from the Guild screen — a single fight with up to 15 heroes across 5 groups on a tactical board. The mechanics, rewards, and the surprisingly forgiving wipe rules are all covered in their own guide.
 
-**Raid Formation:**
-- 3 party slots (Parties 1-2 required, Party 3 optional)
-- 4-8 heroes per party, minimum 12 heroes total
-- Parties rotate every 4 turns
-- Inactive parties heal 5% HP per turn while benched
-- No permadeath — defeated heroes go to Infirmary (1-3 days recovery)
-
-Boss HP carries over between party rotations. Coordinate your parties to sustain damage through the fight.
+See [**World Boss Raids**](raids.md).
 
 ---
 

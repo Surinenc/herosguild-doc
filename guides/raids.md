@@ -1,0 +1,249 @@
+# World Boss Raids
+
+When a World Boss appears in the realm, the Guild gets an entry on the notice board, the Guild Clerk reaches for a fresh ledger, and somebody — usually the Warrior — says "right, then" in a tone that nobody finds reassuring. A raid is the largest, slowest, most cooperative fight the Guild can put together: up to fifteen heroes, organised into groups, deployed across a tactical board against a single creature that has decided its existence is a problem worth solving in person.
+
+This guide covers how raids are unlocked, how they are fought, and what they pay out for surviving them.
+
+---
+
+## Unlocking a Raid
+
+Raids do not appear on demand. The realm spawns them on its own schedule, and the Guild Clerk has stopped explaining this to people who ask whether it can be hurried up.
+
+**Requirements:**
+- **Guild Reputation:** 5000 or higher
+- **Heroes:** at least one hero at level 50+
+- **Spawn chance:** 5% per day, rising to 10% if it has been 30+ days since the last boss
+
+When a boss spawns, the Guild gets an event notification (*"A World Boss has appeared…"*) and the boss persists for **7 days** before retreating back into whatever it came from. The same boss won't be picked two spawns in a row — the realm draws from a pool of three and avoids the last two picks, which is its way of varying the menu.
+
+You launch the raid from the Guild screen, where the active world boss appears as a card. Pressing it opens the raid setup screen.
+
+---
+
+## What a Raid Looks Like
+
+A raid is a single fight on a tactical grid. The board is **5 rows × 5 columns** plus a dedicated **Boss Arena** zone, and the rows run from F (front, nearest the boss) through M, U, L, to B (back, furthest away). Most ranged abilities pay attention to columns; most movement happens in rows; the boss reaches you when you reach the front.
+
+- **Up to 15 heroes deployed** across **up to 5 groups**
+- **4 heroes per zone maximum** — stacking is punished by cleaves
+- **No rotation, no rest** — everyone you bring fights for the entire raid
+- **Orders are issued per group, not per hero**
+
+A group is the unit you actually pilot during the raid. Each group is assigned a home zone, a role (Standard or Add Hunters), and a composition. Heroes inside a group take their own actions in initiative order, but you tell them where to be and what to do at the group level.
+
+---
+
+## The Three Bosses
+
+The realm rotates between three bosses, each with its own pattern of pain. The Guild Clerk has prepared a brief on each, mostly out of self-defence.
+
+### Ancient Dragon
+
+A traditional sort of monster. Front-row pressure, sweeping area attacks, and a passive understanding that any hero who hasn't ducked yet is volunteering.
+
+**Phases:**
+- **Enraged** (100 → 75% HP) — opening posture
+- **Flying** (75 → 50% HP) — gains positioning advantage
+- **Dying Rage** (50% → 0% HP) — the polite phase ends here
+
+**Signature mechanics:**
+- **Dragon Claw** — strikes a hero, with cleave that spills 50% damage onto every other hero in the same zone. The simplest argument against zone-stacking ever made.
+- **Dragon Bite** — heavy single-target damage on a front-row hero.
+- **Fire Bolt** — ranged hit with a burning DoT attached.
+- **Fire Breath** (Cone telegraph) — front-row sweep.
+- **Tail Sweep** (Row telegraph) — clears the row directly in front of the boss.
+- **Wing Buffet** (Column telegraph) — empties a column down the centre.
+- **Inferno Wave** (Spread telegraph) — multiple scattered impacts; spread your groups out.
+
+**Resistances:** fire-resistant, ice-weak. Bring cold.
+
+### Lich King
+
+The interrupt fight. Damage from the Lich is manageable. Damage from the Lich *and* its undead retinue *and* the spell you didn't interrupt is not.
+
+**Phases:**
+- **Animator** (opening) — summons risen champions
+- **Vampiric** (mid-fight) — sustains itself on hero damage
+- **Mass Resurrection** (≤25% HP) — raises wraiths in bulk; the fight gets dense
+
+**Signature mechanics:**
+- **Frost Lance** — slowing strike on the front row.
+- **Frost Bolt** (Spread telegraph) — scattered ranged hits.
+- **Ice Tomb** (SpotSoak telegraph) — drops a hazard zone; move out.
+- **Frost Volley** — heavy column-pattern damage.
+- **Death Touch** — single-target burst.
+- **Heal Steal** (CRITICAL — interrupt required) — restores the Lich's HP. If the cast lands, it heals roughly a quarter of its missing health. This is the single biggest reason raids end on enrage instead of victory.
+- **Risen Champion + Wraith adds** — periodic add waves that need to die quickly.
+
+**Heal Steal interrupt:** the interrupt order on the appropriate group rolls **INT + DEX vs DC 14** on Normal, **DC 20** on Heroic. First success cancels the cast; failures stack as "didn't make it." A casting Lich is a problem only if it finishes casting.
+
+**Resistances:** high magic resistance — physical damage carries this fight.
+
+### Void Titan
+
+The forced-movement fight. The Titan does not want you where you are, and the Titan has opinions about that.
+
+**Phases:**
+- **Gaze** (opening) — ranged spread pressure
+- **Fractured Mind** (mid-fight) — forced movement every 3 turns; your groups won't stay where you put them
+- **Spatial Phase** — board geometry pressure intensifies
+- **Void Implosion** (≤40% HP) — the closing sequence
+
+**Signature mechanics:**
+- **Void Bolt** — baseline ranged hits.
+- **Void Lash** — fires every turn. The fight's metronome.
+- **Mind Flay** (SpotSoak telegraph) — single-tile soak; move out.
+- **Reality Tear** (Column telegraph) — empties a column.
+- **Fractured Mind** (Spread telegraph) — scattered impacts that hit harder the more clustered you are.
+- **Void Implosion** (Stack telegraph) — the fight's signature mechanic. Converge on the indicated zone, *or die.* No second draft of this.
+
+This is the fight where standing orders pay for themselves, because manual movement against the forced-relocation cadence wastes order points you don't have.
+
+### Enrage
+
+All three bosses share a hard enrage threshold at **turn 250**. The damage multiplier ramps with stacks accumulated past that point, climbing to roughly 2.5× — the message being that raids are not endurance contests. If you are not winning by turn 250, you are losing on turn 251.
+
+### Normal vs Heroic
+
+Selected at setup. Heroic raises HP and damage substantially across the board, raises interrupt DCs (notably the Lich's Heal Steal from DC 14 to DC 20), and is intended for parties who've already cleared the Normal version and want to know what it's like when the boss is taking it seriously.
+
+---
+
+## Groups and the Board
+
+Each group occupies a home zone and operates from it. By default, the realm proposes anchor zones:
+
+| Group | Default Anchor | Role |
+|-------|----------------|------|
+| Group 1 | F3 (front centre) | Tank line |
+| Group 2 | M3 (middle centre) | Mid-line |
+| Group 3 | U3 (upper centre) | Mid-line |
+| Group 4 | L3 (lower centre) | Mid-line |
+| Group 5 | B3 (back centre) | Rear / specialist |
+
+You can override the anchor at setup, along with each group's role (Standard / Add Hunters) and composition. The boss treats anything in the F-row as **melee distance**, which is useful information for both the heroes you want there and the ones you don't.
+
+---
+
+## Orders and the Five-Budget
+
+You command groups by issuing orders. Each turn you have **5 order points** to spend across all your groups, and most orders cost 1 point.
+
+| Order | Cost | Effect |
+|-------|------|--------|
+| Move Group | 0 | Reposition a group to an adjacent zone. Free, but the hero moving spends their action on the move. |
+| Hold | 0 | The group stays put and defends. |
+| Engage | 1 | Press the attack on the nearest valid target. |
+| Taunt | 1 | Warrior-only. Forces nearby enemies onto the Warrior. Range: 1 zone (chebyshev). Fizzles out of range. |
+| Interrupt | 1 | The group rolls to interrupt a casting enemy. First success cancels. Roll: INT + DEX vs DC. |
+| Disengage | 1 | Pull back from melee. |
+| Burst | 1 | Mage/Necromancer only. Channel a high-cost spell now. |
+| Standing Order | 1 (to set) | Set a default behaviour that persists across turns until changed. Setting it costs 1; it costs nothing to keep. |
+| Call Retreat | 0 | End the raid immediately. The Guild Clerk records this without comment, but expressively. |
+
+**Per-group rules:**
+- One order per group per turn.
+- If you issue two orders to the same group, the **latest wins**.
+- Movement consumes that hero's action — moving groups don't also attack the same turn.
+
+Standing orders are the lever for boss patterns you've seen before: the second time you fight the Void Titan, "Standing Order: Converge on the Stack telegraph" is two points well spent.
+
+---
+
+## The Turn Loop
+
+You read the board, the queued telegraphs, and the threat list. You issue up to five orders. You press end-turn. The orchestrator resolves the turn. You read the new state. Repeat.
+
+A few things worth knowing about the cadence:
+
+- **Turn 0 is setup-only.** Movement is allowed; combat is not. Use it to place groups before the boss starts swinging.
+- **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
+- **Add waves arrive on a cadence.** Baseline is roughly one minor add per three turns, plus the boss's scripted waves (the Lich's are particularly enthusiastic).
+- **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
+- **The order points you don't spend don't carry over.** Use them or lose them.
+
+---
+
+## Outcomes
+
+A raid ends in one of three ways.
+
+**Victory** — the boss reaches 0 HP. Loot, gold, raid tokens, and (if it's the first kill of that boss) a recipe unlock land in the Guild vault. The boss slot clears and the realm rolls for the next spawn on its usual schedule.
+
+**Wipe** — every deployed hero reaches 0 HP. The raid ends; the boss does not.
+
+**Retreat** — you press Call Retreat. The raid ends; the boss does not.
+
+### What Happens to Fallen Heroes
+
+Nothing, in the way the Guild Clerk finds most surprising. Unlike regular dungeon defeats — which trigger death-saves, injury rolls, and Infirmary stays — raids have no wipe handler. Heroes who fall come out of the fight at **0 HP, in Ready state, with no injury, no infirmary time, and no permadeath risk.** Rest them at the Guild and they recover normally.
+
+Equipment is not lost. The raid is, in this one specific sense, oddly forgiving.
+
+### Retries
+
+A wipe or retreat **does not clear the boss.** The boss persists until its 7-day timer expires, and you can re-launch the raid from the Guild screen as many times as you like in that window. Each attempt builds a fresh orchestrator with freshly-rolled add waves and telegraphs, so the second attempt is not the first attempt replayed.
+
+The Guild Clerk considers this the sporting thing to do. The Warrior considers it the sensible thing to do. They are, for once, in agreement.
+
+### Rewards (on victory)
+
+| Boss | Gold | Raid Tokens | Guaranteed Material |
+|------|------|-------------|---------------------|
+| Ancient Dragon | 8,000 – 12,000 | 5 – 10 | Ancient Dragon Scale |
+| Lich King | 10,000 – 15,000 | 6 – 12 | Phylactery Shard |
+| Void Titan | 12,000 – 18,000 | 8 – 14 | Reality Fragment |
+
+Each boss also drops a set of guaranteed items, plus chance-rolled mythic items from its loot table. The first kill of each boss unlocks a recipe at the appropriate crafting facility — the kind of recipe the alchemist won't shut up about.
+
+---
+
+## The Raid Token Vendor
+
+Raid tokens are spent at the **Market → Raid Tokens** tab, which appears after your first raid token lands in the vault. The vendor stocks 21 items across five sections:
+
+| Section | Items | Token Price |
+|---------|-------|-------------|
+| **Wyrmscale Regalia** (Dragon tier-set) | 5 | 8 tokens each |
+| **Litany of Bones** (Lich tier-set) | 5 | 10 tokens each |
+| **Cosmic Discord** (Void Titan tier-set) | 5 | 12 tokens each |
+| **OffHand Mythics** | 3 | 10 / 12 / 14 tokens |
+| **Raid Materials** | 3 | 3 / 4 / 5 tokens |
+
+Each tier-set covers a coordinated set of slots and grants a set bonus when worn in sufficient quantity. The bosses that drop the matching tokens are the bosses whose tier-set you'd most expect — the Dragon funds Wyrmscale, the Lich funds Litany of Bones, and the Void Titan funds Cosmic Discord. The Guild Clerk notes that the cheapest set is the Dragon's, which is consistent with the Dragon also being the most polite about being killed.
+
+---
+
+## The Raid Interface
+
+The raid plays out in three stages:
+
+1. **Setup** — pick your groups, their anchor zones, their roles, and the difficulty.
+2. **Board** — the tactical screen where the raid is actually fought.
+3. **Results** — the aftermath, with the loot panel and a summary of who survived.
+
+The board layout, from top to bottom: a status bar at the top, the groups roster on the left, the tactical board in the centre, the threat queue and combat log on the right, and the group chips, order panel, and keyboard legend along the bottom.
+
+**Keyboard:**
+- **Q / W / E / R / T / Y** — order shortcuts
+- **1 / 2 / 3** — select group
+- **Space** — pause
+- **Esc** — cancel
+
+A trio of view tabs in the phase header switches the central panel between **Live** (the fight as it stands), **Telegraphs** (a reference card for what the queued symbols mean), and **Storyboards** (a tactical preview of the boss's known patterns). The Telegraphs tab is worth opening every time you face a new boss; the Storyboards tab is worth opening every time you face a familiar one.
+
+The board stage also swaps the music. You'll notice.
+
+---
+
+## Related Guides
+
+- [Combat System](combat.md)
+- [Heroic Dungeons](heroic-dungeons.md)
+- [Abyssal Spire](tower.md)
+- [Equipment & Items](equipment.md) — for the tier sets the vendor stocks
+
+---
+
+*"You don't beat a raid. You convince it to leave."*

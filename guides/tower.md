@@ -116,6 +116,33 @@ Higher tier items are rolled first. The Spirebreaker Fragment at floor 100 has a
 
 ---
 
+## Tower Set Items
+
+Three two-piece sets drop only from Spire major-boss floors. Each set grants a baseline two-piece bonus that applies everywhere, plus a **tower-only bonus** that activates only while you are inside the Abyssal Spire — the realm's way of giving the Spire its own metagame without breaking the wider game's economy.
+
+| Item | Slot | Set | Drop Floor |
+|------|------|-----|------------|
+| Spirebreaker Helm | Head | Spirebreaker | 25 |
+| Spirebreaker Aegis | Armor | Spirebreaker | 50 |
+| Voidtouched Cloak | Armor (Mage/Necromancer) | Voidtouched | 50 |
+| Voidtouched Focus | Accessory (Mage/Necromancer) | Voidtouched | 75 |
+| Abyssal Boots | Boots | Abyssal | 75 |
+| Abyssal Mask | Head | Abyssal | 100 |
+
+**Set bonuses:**
+
+| Set | Two-Piece (Always) | Two-Piece (Tower Only) |
+|-----|--------------------|------------------------|
+| Spirebreaker | +50 armor, +20 VIT, +200 HP | +75 armor, +400 HP |
+| Voidtouched | +35 INT, +150 mana, +20 crit damage | +25 INT, +20% mana cost reduction, +150 mana |
+| Abyssal | +6 crit chance, +20 DEX, +12 LCK | +10 crit chance, +35 crit damage, +15 DEX |
+
+The tower-only halves are gated by an `isTowerCombat` flag the Spire run sets at the start of each fight. The Guild Clerk notes that the gating exists "so that an Abyssal Mask doesn't trivialise the rest of the game," which it would.
+
+Each set takes both pieces to activate. Single-piece set items grant the base item stats but no set bonus — which is why most Spire-bound Guild Masters either run a full Spirebreaker tank or commit to none of it.
+
+---
+
 ## Score Calculation
 
 The Spire keeps score, because even existential dread benefits from a competitive element. The Guild Clerk maintains the leaderboard and has observed that the top scores belong exclusively to parties who brought two Clerics.

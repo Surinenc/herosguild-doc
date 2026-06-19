@@ -43,18 +43,19 @@ The realm rotates between three bosses, each with its own pattern of pain. The G
 
 A traditional sort of monster. Front-row pressure, sweeping area attacks, and a passive understanding that any hero who hasn't ducked yet is volunteering.
 
-**Phases:**
-- **Enraged** (100 → 75% HP) — opening posture
-- **Flying** (75 → 50% HP) — gains positioning advantage
-- **Dying Rage** (50% → 0% HP) — the polite phase ends here
+**Phases:** (thresholds from `AncientDragon.ts:107,114,121`)
+- **Grounded** (100 → 75% HP) — opening posture
+- **Enraged** (75 → 50% HP) — phase transition at 75% HP
+- **Flying** (50 → 25% HP) — phase transition at 50% HP
+- **Dying Rage** (≤25% HP) — the polite phase ends here
 
 **Signature mechanics:**
 - **Dragon Claw** — strikes a hero, with cleave that spills 50% damage onto every other hero in the same zone. The simplest argument against zone-stacking ever made.
-- **Dragon Bite** — heavy single-target damage on a front-row hero.
+- **Dragon Bite** — heavy single-target damage.
 - **Fire Bolt** — ranged hit with a burning DoT attached.
 - **Fire Breath** (Cone telegraph) — front-row sweep.
-- **Tail Sweep** (Row telegraph) — clears the row directly in front of the boss.
-- **Wing Buffet** (Column telegraph) — empties a column down the centre.
+- **Tail Sweep** (Row telegraph) — strikes a random occupied row (F/M/U/L).
+- **Wing Buffet** (Column telegraph) — strikes a random occupied column (1–5).
 - **Inferno Wave** (Spread telegraph) — multiple scattered impacts; spread your groups out.
 
 **Resistances:** fire-resistant, ice-weak. Bring cold.
@@ -63,23 +64,25 @@ A traditional sort of monster. Front-row pressure, sweeping area attacks, and a 
 
 The interrupt fight. Damage from the Lich is manageable. Damage from the Lich *and* its undead retinue *and* the spell you didn't interrupt is not.
 
-**Phases:**
-- **Animator** (opening) — summons risen champions
-- **Vampiric** (mid-fight) — sustains itself on hero damage
-- **Mass Resurrection** (≤25% HP) — raises wraiths in bulk; the fight gets dense
+**Phases:** (thresholds from `SkeletalLich.ts:77,84,91`)
+- **Base State** (100 → 75% HP) — opening posture
+- **Animator** (75 → 50% HP) — periodic Risen Champion summons every 8 turns
+- **Vampiric** (50 → 25% HP) — Heal Steal channel queued every 7 turns
+- **Mass Resurrection** (≤25% HP) — raises wraiths in bulk on hero deaths; the fight gets dense
 
 **Signature mechanics:**
-- **Frost Lance** — slowing strike on the front row.
+- **Frost Lance** — single-target slowing strike.
 - **Frost Bolt** (Spread telegraph) — scattered ranged hits.
 - **Ice Tomb** (SpotSoak telegraph) — drops a hazard zone; move out.
 - **Frost Volley** — heavy column-pattern damage.
-- **Death Touch** — single-target burst.
-- **Heal Steal** (CRITICAL — interrupt required) — restores the Lich's HP. If the cast lands, it heals roughly a quarter of its missing health. This is the single biggest reason raids end on enrage instead of victory.
-- **Risen Champion + Wraith adds** — periodic add waves that need to die quickly.
+- **Death Touch** — single-target SpotSoak telegraph (dodgeable; missDamage 0).
+- **Heal Steal** (CRITICAL — interrupt required) — heals the Lich for **25% of MAX HP** on success (`bossTuning.ts:328`, Heroic raises this further). This is the single biggest reason raids end on enrage instead of victory.
+- **Risen Champion** — periodic add wave (every 8 turns in Phase 1+).
+- **Wraith adds** — spawn event-driven when a hero dies in the Mass Resurrection phase.
 
 **Heal Steal interrupt:** the interrupt order on the appropriate group rolls **INT + DEX vs DC 14** on Normal, **DC 20** on Heroic. First success cancels the cast; failures stack as "didn't make it." A casting Lich is a problem only if it finishes casting.
 
-**Resistances:** high magic resistance — physical damage carries this fight.
+**Resistances:** higher magic resist than armor (60 vs 40), plus elemental — resists ice and dark, weak to fire and holy. Pick your damage types accordingly.
 
 ### Void Titan
 
@@ -87,8 +90,8 @@ The forced-movement fight. The Titan does not want you where you are, and the Ti
 
 **Phases:**
 - **Gaze** (opening) — ranged spread pressure
-- **Fractured Mind** (mid-fight) — forced movement every 3 turns; your groups won't stay where you put them
-- **Spatial Phase** — board geometry pressure intensifies
+- **Fractured Mind** — cluster-amplifying Spread telegraphs; punishes group stacking
+- **Spatial Phase** — **forced movement every 3 turns** (`VoidTitan.ts:43-46`, this is the relocation-cadence phase, not Fractured Mind)
 - **Void Implosion** (≤40% HP) — the closing sequence
 
 **Signature mechanics:**
@@ -111,7 +114,7 @@ The shape is linear, not compounding — but the practical message is the same: 
 
 Every time a hero is in the affected zone of a dodgeable cleave (Cone, Row Sweep, or Column Sweep) when it resolves, they take the damage *and* gain a **Wounded** stack. Wounded does two unpleasant things:
 
-- **+20% damage on the next telegraph hit** to that hero
+- **+20% damage on every subsequent telegraph hit** to that hero (the multiplier compounds: at N stacks, the next telegraph deals `× (1 + 0.2 × N)`)
 - **+30% to all damage taken** by that hero, permanently for the fight
 
 Both effects stack with additional Wounded marks. Both reset between attempts; both are permanent within an attempt — no decay, no time-out, no priest can cleanse them.
@@ -119,8 +122,6 @@ Both effects stack with additional Wounded marks. Both reset between attempts; b
 The avoidance check is **deterministic and positional.** A hero who moved out of the telegraphed zone before resolution takes no damage and gains no Wounded stack. A hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
 
 SpotSoak and Spread telegraphs do not apply Wounded. The risk is specifically in the column- and row-shaped cleaves.
-
-### Normal vs Heroic
 
 ### Normal vs Heroic
 
@@ -171,7 +172,7 @@ Standing orders are the lever for boss patterns you've seen before: the second t
 
 ## The Turn Loop
 
-**Raids run in real time.** There is no End Turn button and no Pause button — both were removed in spec 130. Turns auto-resolve on a **6-second base tick** (`BASE_TICK_MS = 6000` in `RaidStateProvider.tsx`), and the player controls pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds.
+**Raids run in real time.** The End Turn button was removed in spec 130 — turns auto-resolve on a **6-second base tick** (`BASE_TICK_MS = 6000` in `RaidStateProvider.tsx`), and the player controls pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds. A **Pause** button still exists in the raid phase header (`RaidPhaseHeader.tsx:285`, `data-test-id="raid-pause-toggle"`) and is also bound to the **Space** key — useful when you need to read a queued telegraph or queue a complex set of orders without the tick eating the window.
 
 The loop, in practice:
 
@@ -184,7 +185,7 @@ A few things worth knowing about the cadence:
 
 - **Turn 0 is setup-only.** The orchestrator at `RaidOrchestrator.ts:690-694` returns immediately on turn 0 with no combat, telegraphs, spawns, or status ticks. Use it to position groups before the boss starts swinging.
 - **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
-- **Add waves run on a default 3-turn cadence.** One goblin every three turns starting on turn 3 (`RaidOrchestrator.ts:1069, 2005`), plus the boss's scripted waves layered on top — the Lich's are particularly enthusiastic.
+- **Add waves run on a default 3-turn cadence, but the unit varies by boss.** Per `BOSS_ADD_CONFIG` at `RaidOrchestrator.ts:2019-2024`: the Ancient Dragon spawns 3 Fire Whelps per wave, the Lich King spawns 2 Skeletons, and the Void Titan spawns 2 Wraiths. A bare Goblin is the fallback only when no boss config matches. Boss-scripted waves (e.g. the Lich's add-summon abilities) layer on top of this cadence.
 - **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
 - **Call Retreat** has its own button (`data-test-id="call-retreat-btn"` in `RaidTurnControl.tsx`) outside the order budget; pressing it ends the raid immediately.

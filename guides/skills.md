@@ -229,8 +229,8 @@ The "more damage, more mana" school of gem design. The Guild Clerk has seen hero
 | **Increased Critical Strikes** | Higher crit chance | 1.3× |
 | **Increased Critical Damage** | Higher crit multiplier | 1.25× |
 | **Concentrated Effect** | More damage, smaller area | 1.4× |
-| **Multistrike** | Attack multiple times | 1.6× |
-| **Spell Echo** | Cast spells twice | 1.4× |
+| **Multistrike** | Chance for an extra attack (probability-based — `extra_attack_chance`) | 1.6× |
+| **Spell Echo** | Chance for an extra cast (probability-based — `extra_cast_chance`) | 1.4× |
 | **Melee Splash** | Melee hits nearby enemies | 1.3× |
 
 ### Utility Supports

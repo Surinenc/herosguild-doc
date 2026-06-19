@@ -519,7 +519,7 @@ See [**World Boss Raids**](raids.md).
 
 ## Weekly Heroic Rotation
 
-Three heroic dungeons rotate weekly (resets Sunday 00:00 UTC):
+Three heroic dungeons rotate weekly (resets Thursday 00:00 UTC):
 
 | Tier | Stars | Level Offset | Name |
 |------|-------|-------------|------|

@@ -35,14 +35,16 @@ Warriors can choose between three paths: tanking, damage, or dual-wielding.
 
 **Focus:** Tanking, Protection, Damage Mitigation
 
-**Starting Bonus:** +100 armor
+**Starting Bonus:** +100 armor, **+1000% threat generation**
 
-The Champion retains and enhances the Warrior's defensive abilities (Taunt and Shield Wall).
+The starting node ("Defender's Stance") makes the Champion the realm's designated boss-aggro holder — the +1000% threat baseline applies regardless of which branch you pick, so every Champion locks down the highest-priority enemy on the board. This is the post-spec-158 rework: the threat baseline lives on the starting node, and Branch B was repurposed as a counter-attack tree.
+
+The Champion also retains and enhances the Warrior's Taunt and Shield Wall abilities.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Fortify** | Tankiness | +5% max HP → 1% HP regen/turn → +10% damage reduction |
-| **B - Taunt** | Aggro Control | +1 taunt duration → +15% threat → +1 extra intervene per combat |
+| **B - Riposte** | Counter-Attack | +1 taunt duration → **100% chance to counter-attack on every hit taken** → +1 extra intervene per combat |
 | **C - Shield** | Blocking | +1 Shield Wall duration → +50 armor → Shield Wall heals 10% HP |
 
 **Best For:** Protecting squishy allies, survival-focused content, new players
@@ -105,7 +107,7 @@ Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Crit** | Critical Damage | +15% crit (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
+| **A - Crit** | Critical Damage | +15% crit and **-10% enemy armor** (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
 | **B - Ambush** | First Hit | +50% first hit damage and +30% always-on → first hit always crits → first hit ignores armor |
 | **C - Execute** | Low HP Targets | +50% damage below 50% HP → +50% crit below 30% HP → 10% instant kill |
 
@@ -159,7 +161,7 @@ Rangers have three distinct paths for different combat styles.
 
 **Focus:** Loot, Material Drops, Magic Find
 
-The Raider doesn't improve combat power directly. Instead, it dramatically increases the quality and quantity of loot from dungeons.
+The Raider's starting node ("Professionally Nosy") grants **+35% damage and +14% physical damage**, so the loot-focused branches are layered on top of a substantial direct combat-power buff rather than replacing it. Branches A, B, and C then dramatically increase the quality and quantity of loot from dungeons.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -225,7 +227,7 @@ Mages choose between raw elemental power or dark magic.
 |--------|-------|---------------|
 | **A - Weaken** | Debuffs | +2 weaken duration → weakened enemies deal -25% damage → weakened take +20% damage |
 | **B - Chaos** | Dark Magic | +20% chaos damage → +25% chaos damage → +30% chaos damage |
-| **C - Drain** | Sustain | +5% mana regen and 3% life steal → +5% life steal → +7% life steal |
+| **C - Drain** | Sustain | +10% mana regen and 3% life steal → +5% life steal → +7% life steal |
 
 **Best For:** Debuff support, chaos damage builds, sustain mages
 
@@ -245,7 +247,7 @@ Clerics choose between healing mastery or battle cleric.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Heal** | Healing Power | +25% heal power → heals apply 5% HP/turn regen → heals affect all allies |
+| **A - Heal** | Healing Power | +25% heal power → heals apply 5% HP/turn regen → **single-target heals bounce once to the next-most-wounded ally (Chain of Grace)** |
 | **B - Party Defense** | Protection | Allies take -10% damage → -15% damage → -25% damage |
 | **C - Shields** | Barriers | Heals grant 10% of heal as shield → Shield Wall lasts +2 turns → shields absorb 50% more |
 
@@ -265,7 +267,7 @@ The Paladin **replaces Heal and Prayer of Healing** with offensive abilities: Di
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Absorption** | Tank/DPS Hybrid | Take 20% of ally damage (+50% dmg, -5% enemy armor) → 30% ally damage (+100% dmg, -10%) → heal 50% of absorbed (+150% dmg, -15%) |
+| **A - Absorption** | Tank/DPS Hybrid | Take 20% of ally damage (+20% dmg, -5% enemy armor) → 30% ally damage (+40% dmg, -10%) → heal 50% of absorbed (+60% dmg, -15%) |
 | **B - Holy DPS** | Damage | +30% holy damage → +40% → +80% holy damage |
 | **C - Party** | Buffs | Allies +10% damage → enemies take +15% damage → allies +15% crit, enemies -15% damage |
 
@@ -306,7 +308,7 @@ Necromancers focus on minions or personal dark power.
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Chaos** | Dark Damage | +15% chaos damage → +25% → +30% chaos damage |
-| **B - Drain** | Life Steal | +10% life steal and +10% damage reduction → +15% life steal and +20% damage reduction → +25% life steal and +25% damage reduction |
+| **B - Drain** | Life Steal | +10% life steal, +10% damage reduction, +10% damage → +15% life steal, +20% damage reduction, +10% damage → +25% life steal, +25% damage reduction, +10% damage |
 | **C - Crit** | Critical Strikes | +10% crit and +15% crit damage → +30% crit damage → +50% crit damage |
 
 **Best For:** Sustain through damage, chaos/crit hybrid, players who prefer personal strength over minions

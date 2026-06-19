@@ -22,18 +22,16 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 
 ## Building Relationships
 
-### Mission Events (30% Chance per Pair)
+### Mission Events
 
-Every mission is also a social experiment. Each hero pair has a 30% chance of a relationship event — the dungeon, it turns out, has strong opinions about who ends up getting along:
+Every mission is a social experiment as much as a combat one. Each pair of mission-mates rolls separately on a small set of independent outcomes (`SocialEventGenerator.generateMissionEvents` at `SocialEventGenerator.ts:836-928`):
 
-| Event Type | Trust Change |
-|------------|--------------|
-| Fought well together | +3 |
-| Covered each other | +5 |
-| Worked as a team | +6 |
-| Argued over tactics | -3 |
-| Blamed for close call | -5 |
-| Took credit for kill | -4 |
+| Outcome | Chance | Trust Change |
+|---------|--------|--------------|
+| Mission failure blame (Blame, Cowered, LeftBehind, HoardedLoot) — on a failed mission | 40% (on failure) | varies |
+| Personality clash (Argument / Cowered / LeftBehind / HoardedLoot) | 25% | −2 to −6 |
+| Combat bonding (FoughtBackToBack / BrilliantStrategy) — requires the mission had combat | 15% | +3 |
+| Success bonding (SharedMeal / SharedLoot) — requires success | 10% | +2 |
 
 ### Social Events
 
@@ -59,10 +57,10 @@ Every mission is also a social experiment. Each hero pair has a 30% chance of a 
 
 | Event | Trust Lost |
 |-------|------------|
-| Romantic rejection | -10 |
-| Jealousy attack | -25 to -30 |
-| Insult | -6 |
-| Hogged loot | -4 |
+| Romantic rejection | −6 (`SocialEventGenerator.ts:673`) |
+| Jealousy | −2 (mood penalty −4 is the larger sting; `SocialEventGenerator.ts:546-547`) |
+| Insult | −3 to −5 (`SocialEventGenerator.ts:541`) |
+| Hogged loot | −2 to −6 (sub-variant of the personality-clash mission event; `SocialEventGenerator.ts:858-887`) |
 
 ---
 
@@ -101,7 +99,7 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 - **How:** High trust + romantic events
 - **Bonus:** +15% combat stats together
 - **Risk:** Huge penalties if partner dies (Berserk, Broken); the guild does not recommend falling in love as a combat strategy
-- **Special:** Will always try to intervene
+- **Special:** +25% intervene chance modifier (`Combat.ts:5656-5660`). Not an always-trigger — the overall intervene chance still caps at 90%
 
 ### Mentor / Student
 
@@ -158,7 +156,7 @@ All arcs share:
 - Both heroes must be at least **level 5**
 - A per-pair **cooldown of 200 days** after any arc resolves — the realm does not allow the same two heroes to keep restarting
 - Only **one arc in flight per hero** at any time
-- The arc opens with a Chronicle **spark** entry, then a delayed **modal event** in Guild Events (3-day deadline; the default if you let it expire is usually "refuse")
+- The arc opens with a Chronicle **spark** entry, then a delayed **modal event** in Guild Events with a **3-day deadline**. The default-on-expiry varies by archetype (`arcDefinitions.ts:58,82,107,131`): Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
 - The crisis system has the right of way: if a [crisis](crisis.md) is active, the arc step is deferred by a day
 
 ### The Four Arc Archetypes
@@ -317,7 +315,7 @@ Heroes have four needs that affect mood:
 | Energy | Physical stamina | Below 20 |
 | Social | Desire for companionship | Below 20 |
 | Recreation | Need for fun/downtime | Below 20 |
-| Comfort | Living conditions | Below 80 |
+| Comfort | Living conditions | Below 20 |
 
 Needs below their critical threshold actively decrease mood.
 
@@ -374,7 +372,7 @@ Break chance is capped at 80%. Keep mood above 30 to prevent breaks entirely.
 ### Combat Impact
 
 Mental breaks affect heroes mid-combat:
-- **Berserk** heroes attack random allies for full damage
+- **Berserk** heroes attack a random target from a pool that includes both allies *and* enemies (`Combat.ts:6859-6941`). The damage passes through the full defensive pipeline (evasion, armor, ascendancy reduction, elemental resists, energy shield) — not "full damage" in the unmitigated sense
 - **Catatonic** heroes freeze and lose their turn completely
 - Other break types primarily affect availability outside of combat
 

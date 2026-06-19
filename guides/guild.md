@@ -472,34 +472,34 @@ Reputation unlocks better content and more expedition slots. Depressingly easy t
 
 ### Reputation Ranks
 
-| Rank | Rep Required | Slots | Benefits |
-|------|--------------|-------|----------|
-| F | 0 | 1 | Starting rank |
-| E | 500 | 2 | Workshop unlock, better missions |
-| D | 1,500 | 3 | Good recruits |
-| C | 4,000 | 4 | Elite missions |
-| B | 10,000 | 5 | Rare recruits, Heroic access |
-| A | 25,000 | 6 | Legendary missions |
-| S | 60,000 | 8 | Best of everything |
+The Reputation Rank table from `GuildFacilities.ts:579-586` gives the thresholds; the **Bonus Slots** column is what each rank adds *on top of* the Guild Hall's mission slots, per `GUILD_RANK_SLOT_BONUS` at `GuildFacilities.ts:607-615`. Total mission slots = Guild Hall base (2–10 across L1–L5) + this rank bonus.
+
+| Rank | Rep Required | Bonus Slots | Notes |
+|------|--------------|-------------|-------|
+| F | 0 | +0 | Starting rank |
+| E | 500 | +0 | Quality-recruit floor |
+| D | 1,500 | +1 | Improved logistics |
+| C | 4,000 | +1 | Efficient operations |
+| B | 10,000 | +2 | Expert coordination |
+| A | 25,000 | +2 | Elite management |
+| S | 60,000 | +3 | Legendary efficiency |
+
+The **Workshop** facility is NOT a rank-E unlock — it is gated by `unlockRequirements: { questUnlock: true }` (`GuildFacilities.ts:333`), meaning it unlocks via a quest reward, not by reaching any specific reputation rank.
 
 ### Earning Reputation
 
 | Action | Reputation |
 |--------|------------|
-| Complete mission | +5 to +50 |
-| Kill boss | +10 to +100 |
-| Rescue NPC | +20 |
-| Hero reaches Champion | +10 |
-| Hero reaches Legend | +25 |
+| Complete mission | scales with mission `reputationBase × reputationMultiplier` |
+
+<!-- TODO: verify - 'Kill boss +10 to +100', 'Rescue NPC +20', 'Hero reaches Champion +10', and 'Hero reaches Legend +25' were not found as explicit reputation hooks in code. The mission completion path is the main confirmed source. -->
 
 ### Losing Reputation
 
-| Action | Reputation |
-|--------|------------|
-| Fail mission | -10 to -30 |
-| Abandon mission | -20 |
-| Hero death (public) | -5 |
-| Total party wipe | -50 |
+The previous reputation-loss table (fail mission -10 to -30, abandon -20, hero death -5, party wipe -50) has **no implementation in code**. `GameState.ts:4702-4708` explicitly notes that failure pays zero reputation and that the failure-penalty path is out of scope. No abandon penalty, no per-hero-death penalty, and no -50 TPK penalty exist on the reputation hook. Treat reputation as effectively a one-way ratchet from mission successes — failures and wipes leave it where it stood.
+
+<!-- TODO: verify - re-document this section when a reputation-penalty path actually ships. -->
+
 
 ---
 
@@ -816,13 +816,13 @@ Accumulating 50+ entries earns the **Legend** title (+8% to all stats). See [Chr
 
 ### Daily Cycle
 
-The day proceeds in five phases, with or without your attention — though your attention is recommended:
+The day proceeds in five phases, with or without your attention — though your attention is recommended. Phase names from `GameState.ts:337-343`:
 
-1. **Dawn** - Expeditions return and process results; this is when you find out how last night went
-2. **Morning** - Check injuries, assign treatment; the infirmary does not operate on optimism alone
-3. **Day** - Craft, train, prepare missions; the most productive part of the cycle, which is also the easiest to skip
-4. **Evening** - Launch supervised expedition; typically the one you've been planning since morning
-5. **Night** - Unsupervised expeditions run; you've made your choices and can no longer help
+1. **Dawn** - Expedition results return; loot distributed, injuries and deaths resolved
+2. **Morning** - Guild management, healing, social events, recruitment at the Tavern
+3. **Midday** - Mission board refreshes, merchants arrive, the shop opens to customers
+4. **Afternoon** - Form parties, equip heroes, assign tactics, choose which expedition to supervise
+5. **Night** - All expeditions run; supervised = full control, unsupervised = auto-resolved
 
 ### Weekly Cycle
 

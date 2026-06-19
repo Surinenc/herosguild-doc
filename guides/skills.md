@@ -8,7 +8,7 @@ Hero's Guild uses a Path of Exile-inspired skill gem system, because apparently 
 
 Skills in Hero's Guild come as gems that can be:
 - **Socketed** into equipment with matching socket colors
-- **Leveled up** through combat use (max level 100)
+- **Leveled up** by gaining gem XP — gems get **10% of the hero's earned XP** every time the hero levels (`Hero.ts:1497-1508`). Gems do not level per skill use; they level as the hero levels. Max gem level 100.
 - **Linked** with support gems to enhance their effects
 
 ### Gem Types
@@ -20,14 +20,16 @@ Skills in Hero's Guild come as gems that can be:
 
 ### Gem Colors
 
-Gems come in four colors, each aligned with different stats. The Guild Clerk finds the color-coding system needlessly complicated, but admits it does prevent Warriors from accidentally socketing healing spells.
+Gems come in colors that determine which sockets they can be slotted into. Color does **not** strictly map to stat in the way other ARPGs use it — colors gate socket compatibility, while each gem's actual stat requirement (STR / DEX / INT) is on the gem itself.
 
-| Color | Stat | Typical Skills |
-|-------|------|----------------|
-| 🔴 **Red** | STR | Melee attacks, heavy strikes, physical damage |
-| 🟢 **Green** | DEX | Defensive skills, guards, mobility, healing |
-| 🔵 **Blue** | INT | Spells, magic damage, minions |
-| ⚪ **White** | Any | Rare gems usable by any class |
+| Color | Socket gate | Notes |
+|-------|-------------|-------|
+| 🔴 **Red** | Slots into red sockets | All active attack gems, spell gems, minion gems, holy gems, and ranged-DEX gems are stored under the `RED_ACTIVE_GEMS` catalogue regardless of stat requirement — that's why a Pyroblast spell (needs INT) and a Heavy Strike (needs STR) are both red |
+| 🟢 **Green** | Slots into green sockets | The `GREEN_ACTIVE_GEMS` catalogue covers defensive guards, warcries, movement, healing, and several utility spells — stat requirements vary (Healing Light needs INT; Smoke Bomb needs DEX; Enduring Cry needs STR) |
+| 🔵 **Blue** | Slots into blue sockets | `BLUE_ACTIVE_GEMS` is currently empty — there are no active blue gems. Blue sockets exist for the **blue variants of support gems** (Increased Damage, Life Leech, etc. come in red/green/blue tri-color variants, with the blue variant requiring INT) |
+| ⚪ **White** | Any color | Wild slots that accept any gem; rolled at 3% per socket |
+
+Effectively: a gem's **color** tells you which socket it fits into, and its **requirements field** tells you what stat the hero needs to use it. The two are decoupled.
 
 ---
 
@@ -84,8 +86,8 @@ Sockets can be **linked** together, shown by a bar connecting them. The more lin
 
 ### Gem XP
 
-Gems gain XP when used in combat. The XP curve is exponential, which means early levels fly by and late levels feel like a personal vendetta from the universe:
-- **+10 XP** per skill use
+Gems do not gain XP per skill use. Each time the hero earns XP, **every equipped gem receives 10% of that XP** — gems level up alongside their wearer rather than through any particular usage pattern (`Hero.ts:1497-1508`). The XP curve is exponential, which means early levels fly by and late levels feel like a personal vendetta from the universe:
+- **10% of hero XP** per hero XP gain, distributed to every equipped gem
 - XP requirement scales exponentially: `100 × 1.08^level`
 - Max level: 100
 
@@ -136,9 +138,9 @@ For heroes who prefer to resolve disagreements from a safer distance.
 | **Barrage** | Multi-hit | Rapid fire multiple arrows at one target |
 | **Tornado Shot** | AoE | Primary shot plus one secondary projectile that spirals outward; lower per-hit damage than a single-target equivalent in exchange for the extra hit |
 
-### Spell Skills (Blue)
+### Spell Skills (Red)
 
-Fire, lightning, ice, and chaos — the Mage's preferred vocabulary.
+Fire, lightning, ice, and chaos — the Mage's preferred vocabulary. These all live in the red `RED_ACTIVE_GEMS` catalogue even though they require INT — color is socket-gating, not stat-mapping (see the Gem Colors section).
 
 | Gem | Type | Description |
 |-----|------|-------------|
@@ -149,9 +151,9 @@ Fire, lightning, ice, and chaos — the Mage's preferred vocabulary.
 
 Spell gems share the same damage pipeline as attack gems — they scale off the linked weapon's base damage via `base_damage_percent`, plus their own flat damage. Gems that fire secondary projectiles take a per-projectile damage penalty so that "more projectiles" stays a tradeoff rather than a free multiplier.
 
-### Minion Skills (Blue)
+### Minion Skills (Red)
 
-The Necromancer's solution to being outnumbered: stop being outnumbered.
+The Necromancer's solution to being outnumbered: stop being outnumbered. Raise Zombie and Summon Skeleton are red-color gems requiring INT.
 
 | Gem | Type | Description |
 |-----|------|-------------|
@@ -164,7 +166,7 @@ The skills that make the rest of the party's recklessness survivable.
 
 | Gem | Type | Description |
 |-----|------|-------------|
-| **Healing Light** | Single | Restore HP to lowest-health ally |
+| **Healing Light** | AoE | Restore HP to **all allies** — the gem carries the `aoe` tag, so the AoE pattern is baked in at Cleric level 1; the Guardian ascendancy does not need to convert it |
 | **Rejuvenation** | HoT | Apply healing over time effect |
 | **Divine Shield** | Shield | Grant temporary damage absorption |
 | **Life Tap** | Self HoT (Necromancer) | Sustained percent-life regen for 5 turns. Free to cast — the cost is having to be a Necromancer. |
@@ -199,7 +201,7 @@ For tactical repositioning. Also for leaving approximately as fast as possible.
 | **Smoke Bomb** | Guard / AoE | Swirling cloak of smoke absorbs a percentage of incoming damage; visibility ruined for both parties, only one minds |
 | **Shadow Step** | Teleport | Instant teleport behind enemy |
 
-### Holy Skills (Red/Green)
+### Holy Skills (Red)
 
 | Gem | Type | Description |
 |-----|------|-------------|

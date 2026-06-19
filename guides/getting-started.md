@@ -26,7 +26,7 @@ The Guild Screen is your home base — the single screen you'll spend most of yo
 - **Manage facilities** - Build and upgrade guild buildings, each of which costs more than you'd like
 - **Access the tavern** - Recruit new heroes, who will immediately start costing you money
 - **Check the mission board** - Find dungeons to explore and contracts to accept
-- **Open the quest log** - Track story chains, class chains, and weekly bounties (a new bounty rolls every 7 days; the first one appears after your first day-advance)
+- **Open the quest log** - Track story chains, class chains, and weekly bounties (a new bounty rolls every 7 days; the first one appears on **day 1** per `QuestChain.test.ts:794-809`)
 - **Open the shop** - Buy and sell items; the prices are not negotiable, but the regret is optional
 
 ### Key Facilities
@@ -110,7 +110,7 @@ The transition from "small band of adventurers" to "functioning institution" is 
 
 Three things will make or break your guild. Ignore any one of them and the Guild Clerk will be writing your closure report.
 
-- **Gold** - Pay weekly wages, buy items, construct buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
+- **Gold** - Pay **daily** hero wages (`calculateHeroWages` runs every day-advance via `GameState.ts:3284`), buy items, construct buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
 - **Materials** - Craft equipment and consumables. Running out of materials mid-craft is the guild equivalent of running out of flour mid-cake.
 - **Hero Mood** - Keep heroes happy for better performance. Unhappy heroes fight poorly, pick fights with each other, and occasionally leave. Happy heroes merely complain about the food.
 

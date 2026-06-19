@@ -180,9 +180,9 @@ Crafting follows six steps in sequence. Missing any of them produces results ran
 
 Each station can have:
 - 1 primary crafter (full XP, does the actual work)
-- 1 assistant (+20% speed, 50% XP, does whatever the primary crafter doesn't want to do)
+- 1 assistant (+20% speed, **no XP**, does whatever the primary crafter doesn't want to do)
 
-The assistant system is, in the Guild Clerk's opinion, an excellent way to keep idle heroes out of the Tavern.
+The assistant accelerates the craft but does not currently earn skill XP for the work — only the primary crafter levels up. An in-code comment notes that per-skill assistant XP tracking would need to be added before this changes; until then, the assistant role is purely a speed lever, not a training rotation. The Guild Clerk still considers it an excellent way to keep idle heroes out of the Tavern.
 
 ---
 
@@ -199,11 +199,12 @@ When crafting completes, quality is rolled:
 | 86-95 | Exceptional | +30% |
 | 96-100 | Masterwork | +50% |
 
-**Roll Modifiers:**
-- Higher skill level adds to roll
-- Better station adds to roll
-- Masterwork skill (100) guarantees 50+ roll
-- Assistant adds +5
+**Roll Modifiers (Combat.ts:2528):**
+- Skill level adds directly to the roll
+- Station quality bonus adds to the roll
+- Masterwork skill (100) guarantees a 50+ roll
+- `extraQualityBonus` slot: the **Master Artisan title** adds +10 to this slot; it is the only consumer in current code
+- *(No assistant quality bonus is currently applied.)*
 
 ### Crafting Failures
 
@@ -211,10 +212,12 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 
 | Result | Effect |
 |--------|--------|
-| Success | Item created |
-| Partial Fail | Item at -1 quality tier |
-| Full Fail | 50% materials lost |
+| Success | Item created at rolled quality |
+| Partial Fail | **No item created.** 100% of materials refunded. 50% XP granted to the crafter — a learning experience with no inventory cost |
+| Full Fail | **No item created.** 50% of materials refunded (50% lost) |
 | Critical Fail | All materials lost, station damaged |
+
+The wiki previously claimed a Partial Fail produced an item at -1 quality tier; the current code path returns success:false with no item at all. The 50% XP grant on partial fail is the only consolation prize.
 
 ---
 
@@ -222,41 +225,23 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 
 ### Recipe Sources
 
-| Source | Recipe Tiers | How to Get |
-|--------|--------------|------------|
-| Starting | ⭐ basic | Begin with these |
-| Library Research | ⭐ to ⭐⭐⭐ | Research time + materials |
-| Merchant Purchase | ⭐ to ⭐⭐⭐ | Buy from traders |
-| Mission Rewards | ⭐⭐ to ⭐⭐⭐⭐ | Quest completion |
-| Boss Drops | ⭐⭐⭐ to ⭐⭐⭐⭐ | Kill bosses |
-| World Boss Drops | ⭐⭐⭐⭐⭐ | Kill world bosses |
+Recipes enter your inventory through two confirmed code paths: the **starter set** that ships with a new guild, and **quest chain rewards** via `QuestChain.unlockRecipe()`. Other sources may exist as content in specific encounters, but no general recipe-acquisition table is wired in code.
 
-**Important:** ⭐⭐⭐⭐ and ⭐⭐⭐⭐⭐ recipes CANNOT be researched - they must be found!
+| Source | Status |
+|--------|--------|
+| Starting set | Confirmed — shipped with a new guild |
+| Quest chain rewards | Confirmed — `QuestChain.unlockRecipe()` is the production hook |
+| Merchant purchase | <!-- TODO: verify - no merchant recipe table found in code --> |
+| Mission rewards | <!-- TODO: verify - no general mission recipe drop table found --> |
+| Boss drops | <!-- TODO: verify - no per-boss-tier recipe drop table found --> |
 
 ### Library Research
 
-Research new recipes at the Library — slower than finding them in the field, but considerably safer than the alternative of running Epic dungeons hoping for drops:
+<!-- TODO: verify - the Library research workflow (researcher hero assignment, research materials, research timer) is not implemented in production code. The Library facility carries `maxRecipeTier` and `researchSpeed` metadata, but the research workflow itself has no startResearch / researcher / timer logic in current code. Treat this section as documented intent rather than a currently-usable system. -->
 
-**Requirements:** All four are non-negotiable.
-- Library facility (level determines max tier — you cannot research what the Library can't reach)
-- Hero assigned as researcher (someone has to read the books; this is not a popular rotation)
-- Research materials (consumed in the process, whether successful or not)
-- Time (the Library is not fast; the Guild Clerk considers this a feature)
+The Library facility tracks a `maxRecipeTier` cap (3 at maximum facility level) and a `researchSpeed` modifier, but the workflow for *using* the Library to research a recipe — assigning a hero, consuming materials, waiting for a timer — has no implementation in production code. The system appears to have been planned but not wired up.
 
-| Library Level | Max Research Tier | Speed Bonus |
-|---------------|-------------------|-------------|
-| 1 | ⭐ | +0% |
-| 2 | ⭐⭐ | +25% |
-| 3 | ⭐⭐⭐ | +50% |
-
-### Boss Recipe Drops
-
-| Boss Type | Recipe Tier | Drop Chance |
-|-----------|-------------|-------------|
-| Dungeon Boss | ⭐⭐⭐ | 30% |
-| Elite Boss | ⭐⭐⭐ to ⭐⭐⭐⭐ | 50% |
-| Raid Boss | ⭐⭐⭐⭐ | 75% |
-| World Boss | ⭐⭐⭐⭐⭐ | 100% unique |
+If you need recipes beyond the starter set, the production path is **quest chains** and **content unlocks**, not Library research.
 
 ---
 
@@ -350,11 +335,9 @@ Cloth → [Loom] → Fine Cloth
 
 ## Item Workshop
 
-The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for improving Rare+ items that have good base stats but poor bonus rolls — a situation that occurs with frustrating regularity.
+The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for items that have good base stats but poor bonus rolls — a situation that occurs with frustrating regularity.
 
-**Requirements:**
-- Item must be Rare rarity or higher
-- Named items cannot be rerolled
+**Requirements:** the Workshop UI itself does not currently gate rerolls by rarity or by named status — the rarity filter offers a "common-uncommon (C/U)" option, and `handleReroll` has no `isNamed` check. In practice you can reroll any item the Workshop will display, including named ones.
 
 **Reroll Cost:**
 ```
@@ -363,7 +346,7 @@ Cost = 1,000 × Rarity Tier × 2^(Previous Rerolls)
 
 Costs double each time you reroll the same item. You can preview the new stats and choose to Accept or Reject before committing.
 
-Navigate to: Guild Screen → Item Workshop
+**Navigate to:** the **Workshop** (⚙) button in the bottom navigation — it is a peer of Guild and Market, not a sub-screen of the Guild Hall.
 
 ---
 

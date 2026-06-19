@@ -82,6 +82,7 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 - **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
 - **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
 - **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
+- **Trap Detection & Lockpicking** - Rogues (or heroes with the KeenEyes / NimbleFingers traits) handle traps and locks the rest of the party would fail at — `Expedition.ts:221, 224`
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
@@ -107,7 +108,6 @@ Rangers keep their distance while delivering consistent damage. Their keen sense
 
 **Key Features:**
 - **Ranged Attacks** - Fights from a distance, where the enemies are not
-- **Trap Detection** - Bonus to finding hidden dangers before they find the party
 - **Consistent DPS** - Reliable output from positions that arrows can reach and enemies cannot
 - **Versatile** - Adapts to most situations, primarily by remaining in the back of them
 

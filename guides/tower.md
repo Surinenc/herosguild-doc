@@ -8,7 +8,7 @@ The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tow
 
 **Requirements:**
 - At least one hero at level 95+
-- Party size: **maximum 4 heroes** (unlike regular dungeons, which allow up to 6)
+- Party size: **maximum 6 heroes** (`selectedIds.size < 6` in `TowerMenu.tsx`)
 
 ---
 
@@ -98,21 +98,6 @@ Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in t
 | Greater Healing Potion | 60g | Restore 100 HP to one hero |
 | Elixir of Vigor | 40g | Restore 25% HP to all heroes |
 | Antidote | 15g | Cure poison, restore 10 HP |
-
----
-
-## Tower Unique Items
-
-Only drop from major boss floors (25, 50, 75, 100...). Reaching them is the hard part. The items are the reward for not dying.
-
-| Item | Min Floor | Drop Chance |
-|------|-----------|-------------|
-| Sigil of the Spire | 25 | 50% |
-| Abyssal Shard | 50 | 40% |
-| Void Crystal | 75 | 30% |
-| Spirebreaker Fragment | 100 | 25% |
-
-Higher tier items are rolled first. The Spirebreaker Fragment at floor 100 has a 25% drop chance, which the Guild Clerk considers "stingy, given what it takes to get there."
 
 ---
 

@@ -20,7 +20,7 @@ Seven long-form campaigns that track the shape of your guild's career. Each one 
 
 Story chains are where the game's narrative lives. Each step comes with flavor text; each completion advances a small arc that the world quietly remembers.
 
-The two most recently added are **The Founding Blade** (rank D, retrieves the realm's *first guild sword*) and **The World Tree Pact** (rank D, brokers the realm's accord with the Fae and rewards a named bow called *Nature's Embrace*). Both ship as full three-step chains with the usual finale-item-plus-recipe-plus-two-gems payload.
+The two most recently added are **The Founding Blade** (rank D, retrieves the realm's *first guild sword*) and **The World Tree Pact** (rank D, brokers the realm's accord with the Fae and rewards *Nature's Embrace* — a Legendary leather chest piece for Ranger/Cleric, not a bow per `NamedItems.ts:331-341`). Both ship as full three-step chains with a finale of named item + recipe + two skill gems.
 
 ### Class Chains
 
@@ -35,7 +35,7 @@ The Guild Clerk notes that this is the game's way of saying "prove you're commit
 - **No time limit**
 - **Finale rewards:** a class-restricted named item, a crafting recipe, and two skill gems
 
-The Mage's second chain, **The Archmage's Thesis**, unlocks at level 40 (one rank higher than the standard Class Chain gate) and rewards the *Archmage Robes* — for Mages who have moved past the "first major item" tier and want something explicitly archmage-flavoured.
+The Mage's second chain, **The Archmage's Thesis**, unlocks at level 40 and **rank C** (the standard Class Chain gate is rank E, so the Thesis is two ranks higher, not one — `ClassChains.ts:148`). It rewards the *Archmage Robes* — for Mages who have moved past the "first major item" tier and want something explicitly archmage-flavoured.
 
 You can pursue multiple class chains in parallel — qualifying a Warrior doesn't close the door on the Mage chain, and qualifying the Mage's first chain doesn't close the door on the Thesis.
 
@@ -77,15 +77,15 @@ If a weekly bounty's 7-day expiry hits while your party is already dispatched on
 
 ## The Quest Log
 
-The **📜 Quest Log** button sits in the Guild Scene's sidebar and is visible from day one, even before anything has unlocked. It has three tabs:
+The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the other icon buttons (`TopBar.tsx:134`) and is visible from day one. It has three tabs:
 
 | Tab | What it shows |
 |-----|---------------|
-| **Story** | All 5 story chains — locked (with unlock requirement), active (with current step and finale preview), or completed |
-| **Class** | All 6 class chains, organised the same way |
+| **Story** | Active, available, expiring, and completed story chains (7 chains total in the catalog) |
+| **Class** | Active, available, expiring, and completed class chains (7 chains across 6 classes — the Mage has two) |
 | **Weekly** | The current bounty (with its ⏰ countdown), plus a history of completed bounties |
 
-Locked chains list the condition needed to unlock them — a specific guild rank, a class + level combination, and so on. Active chains show your current step, a summary of step-level rewards, and a preview of the finale reward.
+The Quest Log UI does **not** enumerate locked chains with their unlock conditions (`QuestLog.tsx:113-148`); the panel only renders chains that have entered the player's `questChainState.chains`. When no chain of a type is unlocked yet, the tab shows empty-state flavor copy rather than a list of locked chains. Active chains show your current step, a summary of step-level rewards, and a preview of the finale reward.
 
 ---
 

@@ -166,11 +166,11 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 
 | Name | Effect |
 |------|--------|
-| Ring of Shadows | <!-- TODO: verify - no stealth mechanic exists in code --> |
-| Amulet of the Phoenix | <!-- TODO: verify --> Once/mission: Resurrect at 50% HP |
-| Band of Haste | <!-- TODO: verify --> +25% attack speed |
-| Charm of Fortune | <!-- TODO: verify --> +20% loot find |
-| Signet of Command | <!-- TODO: verify --> +10% all party stats |
+| Ring of Shadows | +15 DEX, +8% crit chance (Rogue, L30 Rare, part of the Shadow Assassin Set) |
+| Amulet of the Phoenix | +80 HP, +30 Fire Resist (L50 Epic, part of the Phoenix set) |
+| Band of Haste | +15 DEX (L50 Epic — the "haste" is flavor; the stat is DEX) |
+| Charm of Fortune | +35 LCK, +30% Gold Find, +20% Magic Find (L50 Legendary) |
+| Signet of Command | +15 to STR/DEX/INT/VIT/LCK (L60 Legendary — a flat +15 across all five primary stats) |
 
 ### Mana Sustain Affixes
 
@@ -297,15 +297,13 @@ Wearing multiple pieces from the same set grants powerful bonuses. The Guild Cle
 
 ### Shadow Assassin Set (Epic)
 
-<!-- TODO: verify - 3pc and 4pc bonuses claim a "stealth" mechanic that does not exist in code. The 2pc Crit Damage bonus also needs verification against the actual set definition. -->
-
 | Pieces | Bonus |
 |--------|-------|
-| 2 | <!-- TODO: verify --> +15% Crit Damage |
-| 3 | <!-- TODO: verify - stealth mechanic does not exist in code --> |
-| 4 | <!-- TODO: verify - stealth mechanic does not exist in code --> |
+| 2 | +15% Crit Damage |
+| 3 | +20% Crit Chance |
+| 4 | First attack in combat always crits (`assassin_ambush`) |
 
-**Pieces:** <!-- TODO: verify --> Shadowblade, Nightstalker Armor, Hood of Shadows, Ring of Shadows
+**Pieces:** Shadowblade, Nightstalker Armor, Hood of Shadows, Ring of Shadows
 
 ### Archmage's Regalia (Legendary)
 

@@ -88,6 +88,6 @@ A guild that consistently burns shrines and robs travelers will, eventually, att
 
 ## Related Guides
 
-- [Crises](crisis.md) - Three crises (Cult of the Unseen, Heretic Schism, plus the permadeath crises) inject extra moral events into the daily queue
+- [Crises](crisis.md) - Of the 14 crisis types, **Cult of the Unseen** injects three moral events at Moderate+, **Heretic Schism** injects one per severity escalation (per-escalation cadence), and Plague / Cult of the Unseen / Dragon's Tithe additionally fire **permadeath** moral events at Critical severity
 - [Relationships](relationships.md) - Story Arcs queue their own moral events tied to specific hero pairs
 - [Dungeons](dungeons.md) - In-dungeon moral events, the other major source of choice prompts

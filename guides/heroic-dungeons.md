@@ -130,7 +130,7 @@ Difficulty bonuses:
 
 ## Weekly Rotation
 
-Three heroic dungeons are available each week, rotating every Sunday at 00:00 UTC. The Guild Clerk is responsible for posting the rotation on the notice board and, despite years of service, has never once been thanked.
+Three heroic dungeons are available each week, rotating every **Thursday at 00:00 UTC** (the rotation epoch is 2026-01-01, a Thursday, and the window steps forward in 7-day increments — `WeeklyRotation.ts:24`). The Guild Clerk is responsible for posting the rotation on the notice board and, despite years of service, has never once been thanked.
 
 | Tier | Stars | Level |
 |------|-------|-------|

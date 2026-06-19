@@ -80,22 +80,22 @@ Each class has three branches, offering distinct playstyles. You won't have the 
 **Ranger** — Three applications of the central Ranger philosophy: damage from somewhere safe.
 | Branch | Theme | Focus |
 |--------|-------|-------|
-| Sharpshooter | Ranged dominance | Projectile damage, crit (reduced melee) |
+| Sharpshooter | Ranged dominance | Projectile damage, crit (max-life/armor tradeoff) |
 | Beast Master | Companion synergy | Minion damage and life |
-| Trapper | Tactical control | Damage, evasion, dexterity |
+| Trapper | Tactical control | Damage, dexterity, spell damage |
 
 **Cleric** — Three interpretations of divine power: protective, supportive, and the one that hits unexpectedly hard.
 | Branch | Theme | Focus |
 |--------|-------|-------|
-| Paladin | Holy warrior | Holy damage, armor |
+| Paladin | Holy warrior | Spell damage, armor (no `holy_damage` stat exists in the passive tree — Cleric branches all scale with `spell_damage`) |
 | Prophet | Divine channeller | Mana regen, maximum mana |
-| Inquisitor | Righteous fury | Holy damage, critical strikes |
+| Inquisitor | Righteous fury | Spell damage, critical strikes |
 
 **Necromancer** — Three professional arrangements with death, ranked by how personally the hero gets involved.
 | Branch | Theme | Focus |
 |--------|-------|-------|
 | Lich | Death magic | Chaos & spell damage (reduced max life) |
-| Summoner | Minion master | Minion damage & life (reduced spell damage) |
+| Summoner | Minion master | Minion damage & life (keystones penalize damage and armor) |
 | Death Knight | Dark warrior | Chaos damage, life leech, armor |
 
 ---
@@ -126,7 +126,7 @@ Keystone penalties are designed around each class's defensive profile:
 | Lich Mastery (Necromancer) | +49% Chaos Damage, +39% Spell Damage | -25% Max Life |
 | Summoner Mastery (Necromancer) | +66% Minion Damage, +33% Minion Life | -25% Damage |
 | Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |
-| Inquisitor Mastery (Cleric) | +33% Holy Damage, +30% Crit Chance | -15% Damage |
+| Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
 
 Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. The Spire leaderboard reflects this design philosophy: the top entries are all glass cannons, and the second page is full of cautionary tales.
 

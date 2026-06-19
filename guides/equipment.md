@@ -66,8 +66,8 @@ Socket count rolls increase with item level. Base chance: `20% + item level × 1
 |-------|-------------------|
 | Warrior | Swords, Axes, Maces, Spears |
 | Mage | Staves, Wands |
-| Rogue | Daggers, Short Swords, Crossbows |
-| Cleric | Maces, Staves, Wands |
+| Rogue | Daggers, Swords, Crossbows |
+| Cleric | Maces, Staves, Swords |
 | Ranger | Bows, Crossbows, Spears |
 | Necromancer | Staves, Wands, Daggers |
 
@@ -90,16 +90,17 @@ Every weapon reduces to five numbers. Heroes who understand these numbers do bet
 **Swords (Warrior/Rogue):**
 - Iron Sword (Common): 8-12 damage
 - Steel Sword (Uncommon): 14-20 damage, +2% crit
-- Mithril Blade (Rare): 25-35 damage, +5% crit
-- Dragonslayer (Epic): 40-55 damage, +20% vs Dragons
-- Worldsplitter (Legendary): 70-95 damage, cleave all enemies
+- Mithril Blade (Rare): 25-35 damage, +8% crit, +10 STR
+- Dragonslayer (Epic): 40-55 damage (the +20% vs Dragons comes from the Dragonslayer 2-piece **set bonus**, not the weapon itself)
+- Worldsplitter (Legendary): 70-95 damage, +15% crit, +50% crit damage (the "cleave all enemies" claim has no template-level support; that effect would belong to a linked support gem like Melee Splash)
 
 **Staves (Mage/Cleric/Necromancer):**
 - Wooden Staff (Common): 5-8 damage, +10 Mana
-- Oak Staff (Uncommon): 10-15 damage, +25 Mana
 - Arcane Staff (Rare): 18-28 damage, +50 Mana
-- Staff of Elements (Epic): 32-48 damage, +80 Mana
-- Staff of Eternity (Legendary): 55-80 damage, +150 Mana, no cooldowns
+- Staff of Eternity (Legendary): 55-80 damage, +150 Mana, +int (the "-20% cooldowns" claim is the **Archmage's Regalia 3-piece set bonus**, not a weapon stat)
+
+<!-- TODO: verify - 'Oak Staff' and 'Staff of Elements' templates were not found in code. -->
+<!-- TODO: verify - 'Mithril Mail' template was not found in ArmorTemplates.ts. -->
 
 ---
 
@@ -130,9 +131,8 @@ Armor trades mobility for survival. Warriors consider this an excellent trade. M
 **Heavy Armor (Warrior):**
 - Iron Plate: 15 armor, +20 HP
 - Steel Plate: 30 armor, +40 HP
-- Mithril Mail: 50 armor, +70 HP, no speed penalty
-- Dragonplate: 80 armor, +120 HP, 50% Fire Resist
-- Immortal Bastion: 150 armor, +200 HP, 5% regen/turn
+- Dragonplate: 80 armor, +120 HP, 50% Fire Resist (the Fire Resist actually comes from the Dragonslayer 3-piece set bonus)
+- **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists (`ArmorTemplates.ts:260-274`). No HP regen mechanic — the wiki previously claimed 150 armor + 5% regen/turn, both invented.
 
 ---
 
@@ -146,9 +146,10 @@ Two ring slots per hero, both treated as a personality statement. The Guild Cler
 |---------|--------|--------|
 | Iron Band | Common | +3 to STR or DEX |
 | Silver Ring | Uncommon | +6 to stat, +5% resist |
-| Gold Ring | Rare | +12 to stat, +1 random bonus |
-| Enchanted Band | Epic | +20 to stat, significant special |
-| Ring of Power | Legendary | +35 to stat, legendary effect |
+| Gold Ring | Rare | +12 INT, +20 Mana |
+| **Ring of Power** | Legendary, L60 | +25 to **all four** primary stats (STR/DEX/INT/VIT). No single "legendary effect" beyond the across-the-board stat boost |
+
+<!-- TODO: verify - 'Enchanted Band' template was not found in AccessoryTemplates.ts. -->
 
 ### Amulets
 
@@ -156,10 +157,11 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 
 | Example | Rarity | Effect |
 |---------|--------|--------|
-| Bone Charm | Common | +10 HP or +5 Mana |
-| Crystal Pendant | Uncommon | +25 HP or +15 Mana |
-| Enchanted Amulet | Rare | +50 HP, +30 Mana, +effect |
-| Medallion of Power | Epic | +80 HP, +50 Mana, major effect |
+| Bone Charm | Common | +10 HP |
+| Crystal Pendant | Uncommon | +25 HP **and** +15 Mana |
+| **Heart of the World** | Legendary, L70 | +150 HP, +100 Mana, **+10% Life Steal** (the wiki previously claimed auto-resurrect — that mechanic does not exist on this template) |
+
+<!-- TODO: verify - 'Enchanted Amulet' and 'Medallion of Power' templates were not found in AccessoryTemplates.ts. -->
 | Heart of the World | Legendary | +150 HP, +100 Mana, auto-resurrect |
 
 ### Notable Unique Accessories
@@ -196,10 +198,10 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 | Minor Health Potion | Common | 50 HP | 10 |
 | Health Potion | Uncommon | 150 HP | 10 |
 | Greater Health Potion | Rare | 400 HP | 5 |
-| Superior Health Potion | Epic | 800 HP | 5 |
-| Elixir of Life | Legendary | Full heal + Resurrect | 1 |
 
 **Auto-Use:** Heroes automatically drink health potions when below 50% HP.
+
+<!-- TODO: verify - 'Superior Health Potion' and 'Elixir of Life' templates were not found in ConsumableTemplates.ts. -->
 
 ### Mana Potions
 
@@ -207,8 +209,8 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 |------|--------|------|-------|
 | Minor Mana Potion | Common | 30 | 10 |
 | Mana Potion | Uncommon | 80 | 10 |
-| Greater Mana Potion | Rare | 200 | 5 |
-| Superior Mana Potion | Epic | 500 | 5 |
+
+(For Rare and Epic tier mana consumables, see **Mana Flasks** below — the wiki previously listed "Greater Mana Potion" (Rare, 200 mana) and "Superior Mana Potion" (Epic, 500 mana) as separate items, but those exact named templates don't exist; the live Rare/Epic mana consumables are Mana Flask (Rare, 250 mana) and Greater Mana Flask (Epic, 500 mana).)
 
 ### Mana Flasks
 
@@ -227,11 +229,10 @@ Craftable at the alchemy bench. The recipes are short. The alchemist's commentar
 | Name | Effect | Duration |
 |------|--------|----------|
 | Strength Tonic | +15 STR | 1 combat |
-| Ironflesh Elixir | +30 Armor | 1 combat |
+| Defense Potion | +25 Armor | 1 combat |
 | Haste Potion | +50% Speed | 1 combat |
-| Giant's Strength | +50% Damage | 1 combat |
-| Berserker Brew | +75% Damage, -25% Defense | 1 combat |
-| Invulnerability | Immune to damage | 3 turns |
+
+<!-- TODO: verify - 'Ironflesh Elixir', "Giant's Strength", 'Berserker Brew', and 'Invulnerability' templates were not found in ConsumableTemplates.ts. The Defense Potion (Rare, +25 Armor) is the closest real item to the wiki's removed Ironflesh entry. -->
 
 ---
 
@@ -241,12 +242,14 @@ Equipment can have gem sockets based on rarity and slot type (see [Skill Gems Gu
 
 ### Socket Colors
 
-| Color | Gem Type | Example Effect |
-|-------|----------|----------------|
-| **Red** | Damage | +Fire damage, +Physical damage |
-| **Blue** | Magic/Mana | +Spell power, +Mana |
-| **Green** | Utility | +Crit, +Speed |
-| **White** | Flexible | Accepts any gem type |
+Socket colors gate **gem compatibility** — they do not map cleanly to a damage/magic/utility split. See the full color discussion in the [Skills guide](skills.md#gem-colors); briefly:
+
+| Color | Accepts | Where it shows up |
+|-------|---------|-------------------|
+| **Red** | Red gems | All active attack, spell, minion, holy, and many ranged gems are red regardless of their stat requirement |
+| **Green** | Green gems | Defensive guards, warcries, healing, movement and some utility actives |
+| **Blue** | Blue gems | Currently no active blue gems exist; blue sockets accept the **blue variants of support gems**, which require INT |
+| **White** | Any color | Wild slot, rolled at ~3% per socket |
 
 ### Skill Gems
 
@@ -346,40 +349,10 @@ Quality is determined by crafting skill or random drop luck.
 
 ## Enchanting
 
-Add magical properties to equipment at the Enchanting Table. The process involves runes, mana crystals, and a faint but persistent humming that the enchanter insists is "perfectly normal." Items can only hold one enchantment per slot — choose deliberately, because replacing an enchantment discards the previous one.
+Items can hold enchantments in their **`maxEnchantSlots`** (a per-template field, typically 1–3 depending on slot and rarity), filled at the Enchanting Table facility.
 
-### Weapon Enchantments
+<!-- TODO: verify - The named-enchantment registry the wiki previously listed (Sharpness +10% Damage, Flaming +Fire DoT, Frost +Ice Damage Slow, Lightning Chain to 2 enemies, Vampiric 5% Life Steal, Vorpal +15% Crit +50% Crit Damage, Holy +100% vs Undead/Demons; armor enchants Fortified/Resilient/Resistant/Thorns/Regeneration/Warding; accessory enchants Luck/Swiftness/Wisdom/Wealth/Survival) has no corresponding code data structure — Item.enchantments is currently typed as string[] with no canonical effect-by-name table found in the templates or models. The Enchanting Table facility exists; the named enchant catalogue described in earlier wiki versions appears to be aspirational or pre-implementation. Section pruned pending re-verification against an enchantment registry once one ships. -->
 
-| Enchant | Effect |
-|---------|--------|
-| Sharpness | +10% Damage |
-| Flaming | +Fire DoT |
-| Frost | +Ice Damage, Slow |
-| Lightning | Chain to 2 enemies |
-| Vampiric | 5% Life Steal |
-| Vorpal | +15% Crit, +50% Crit Damage |
-| Holy | +100% vs Undead/Demons |
-
-### Armor Enchantments
-
-| Enchant | Effect |
-|---------|--------|
-| Fortified | +15 Armor |
-| Resilient | +30 HP |
-| Resistant | +30% Element Resist |
-| Thorns | Reflect 10% damage |
-| Regeneration | Heal 2%/turn |
-| Warding | +20% Magic Resist |
-
-### Accessory Enchantments
-
-| Enchant | Effect |
-|---------|--------|
-| Luck | +10 LCK |
-| Swiftness | +15% Speed |
-| Wisdom | +15% XP Gain |
-| Wealth | +20% Gold Find |
-| Survival | +10% Death Save |
 
 ---
 

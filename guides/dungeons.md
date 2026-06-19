@@ -179,9 +179,9 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 ### Party Size
 
 - **Minimum:** 1 hero (dangerous!)
-- **Maximum:** 6 heroes
+- **Maximum:** scales with stars — `Math.min(3 + stars, 8)` → 1★=4, 2★=5, 3★=6, 4★=7, 5★=8 (`Mission.ts:354`)
 - **Recommended:** Stars + 2 (e.g., ⭐⭐⭐ = 5 heroes)
-- **Rating Bonus:** +5 party rating per hero beyond the 3rd (a 6-hero party gets +15 rating)
+- **Rating Bonus:** +5 party rating per hero beyond the 3rd
 
 ### Building a Good Party
 
@@ -269,7 +269,7 @@ A 2★ dungeon carries roughly one hazard. Higher-star dungeons can carry severa
 
 ### Hazard Types
 
-Six hazard types ship at launch. Each names the class (or pair of classes) that resolves it cleanly:
+Eight hazard types currently ship (`HazardCatalog.ts`). Each names the class (or pair of classes) that resolves it cleanly:
 
 | Hazard | Resolved By |
 |--------|-------------|
@@ -279,6 +279,8 @@ Six hazard types ship at launch. Each names the class (or pair of classes) that 
 | **Cursed Altar** | Warrior or Cleric |
 | **Pitch-Dark Corridor** | Ranger or Warrior |
 | **Icy or Flooded Passage** | Mage or Ranger |
+| **Pressure Plate** | Rogue |
+| **Alarm Bell** | Rogue or Ranger |
 
 Hazards are **not environment-themed** — any hazard can roll on any 2★+ dungeon, regardless of whether it's a Forest, Crypt, or Volcano.
 
@@ -288,13 +290,13 @@ When a hazard fires, the engine looks at your party for the required class:
 
 **Clean resolution** — at least one matching hero is present:
 - One hero of the required class handles it (the first matching hero in party order, if you have multiple)
-- That hero takes a small mood dip (-4 to -8); no HP loss
+- That hero takes a small mood dip (-3 to -8 depending on hazard); no HP loss
 - Rewards stay full
 - A green narrative line appears in the mission report (e.g., *"Brother Aldric purified the toxic gas before it reached the others"*)
 
 **Pushing through** — no matching hero:
-- Every party member loses 10–15% of max HP (clamped to 1 HP minimum — hazards never kill anyone outright)
-- Mission rewards are reduced by 10–20%
+- Every party member loses 5–15% of max HP depending on hazard (clamped to 1 HP minimum — hazards never kill anyone outright)
+- Mission rewards are reduced 5–20%
 - The mission still completes as a Success — hazards don't fail missions
 - An orange narrative line appears in the mission report
 

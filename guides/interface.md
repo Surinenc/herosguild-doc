@@ -53,7 +53,7 @@ Changes based on what you've selected. The Guild Clerk considers this the most u
 
 ## Mission Board
 
-Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. A legacy list view (V1) is still wired up but only reachable via the URL parameter `?missionV1=true` — it is not exposed in Settings.
+Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. The legacy list view (V1) is gated by the `useMissionBoardV2` boolean in `GameSettings` (defaults to true, read at `GuildLedgerApp.tsx:607`) — there is no in-game UI or URL parameter to toggle it; you would need to edit the save flag directly.
 
 ### Mission List
 
@@ -66,8 +66,9 @@ Each mission entry shows what you're getting into — before you commit to getti
 
 ### Filters
 
-The Mission Board has a single Normal/Heroic toggle:
+The Mission Board has a three-button filter strip (`MissionBoard.tsx:390-392`):
 
+- **All** - Both regular and heroic missions
 - **Normal** - Regular missions, the bread and butter of guild operations
 - **Heroic** 🔥 - Heroic dungeons, for guilds that have run out of interesting problems
 
@@ -77,7 +78,7 @@ Missions belonging to a [quest chain](quest-chains.md) carry a **📜 badge** an
 
 ### Hazard Badge
 
-Missions at 2★ and higher can carry an **orange ⚠️ badge** naming an [environmental hazard](dungeons.md#environmental-hazards) and the class(es) that resolve it cleanly (e.g., *"⚠️ Toxic Gas Cloud — Cleric"*). The badge appears beside the difficulty stars on the contract card. Bring the named class to handle the hazard cleanly; otherwise the party pushes through and pays for it.
+Missions at 2★ and higher can carry an **environmental hazard** ([Environmental Hazards](dungeons.md#environmental-hazards)) naming the class(es) that resolve it cleanly (e.g., *"Toxic Gas Cloud — Cleric"*). Hazards are rendered in the **Contract Details side panel** below the description and requirements (`MissionBoard.tsx:826-840`) — the world-map pins themselves only carry chain (📜) and heroic (🔥) badges, not hazard badges. Bring the named class to handle the hazard cleanly; otherwise the party pushes through and pays for it.
 
 ### Starting a Mission
 
@@ -91,15 +92,15 @@ The unsupervised/supervised distinction (and Command Point spending) is set on t
 
 ## Quest Log
 
-The **📜 Quest Log** button in the Guild Scene sidebar is visible from day one. It tracks every story chain, class chain, and weekly bounty — locked, active, or completed — so you always know what's available, what's in progress, and what's gating the next chain.
+The **Quest Log** button (glyph **❡** per `TopBar.tsx:134`) sits in the **Top Bar** alongside the other icon buttons — not in a sidebar — and is visible from day one. It tracks every story chain, class chain, and weekly bounty that is currently *active, available, expiring, or completed*.
 
 ### Tabs
 
-- **Story** - Five long-form campaigns gated by guild rank (F → B)
-- **Class** - Six class chains, one per class, gated by rank E + a level-25 hero of that class
-- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown (the first bounty rolls on your first day-advance, not on day 1)
+- **Story** - **Seven** long-form campaigns gated by guild rank (F → B)
+- **Class** - **Seven** class chains across the six classes (Mage has two: The Arcane Thesis at rank E + level 25, and The Archmage's Thesis at rank C + level 40)
+- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown (the first bounty rolls on **day 1**, per `QuestChain.test.ts:794-809`)
 
-Locked chains show their unlock requirements. Active chains show the current step, step-level rewards, and a preview of the finale reward. Completed chains are archived for the record.
+The Quest Log UI only enumerates **unlocked** chains — locked chains do not appear with their unlock requirements; if no chain of a type is unlocked, the panel falls back to an empty-state message (`QuestLog.tsx:113-148`). Active chains show the current step and finale reward. Completed chains are archived for the record.
 
 → **Full details:** [Quest Chains](quest-chains.md)
 
@@ -149,7 +150,7 @@ The hero's static identity — who this person is, before any of the bonds, achi
 - **Marks of a Life** — body flaws picked up along the way
 - **Traits** — named traits the lifecycle gave them (Duelist, Sickly, and the rest of that family)
 
-The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above for heroes at level 100+ and heroes eligible for an ascendancy trial, respectively. The Guild Clerk maintains that fitting all of this onto a single screen is a polite fiction and that anyone who reads everything before issuing orders is doing the job properly.
+The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above. Both tabs are rendered unconditionally for every hero (`HeroDetails.tsx:741-756`) — there is no level-100 gate on Paragon nor an ascendancy-eligibility gate on Trials at the tab-strip level; the contents inside each tab will tell you whether the hero qualifies. The Guild Clerk maintains that fitting all of this onto a single screen is a polite fiction and that anyone who reads everything before issuing orders is doing the job properly.
 
 ---
 
@@ -172,13 +173,9 @@ The fight itself, laid out clearly so there are no excuses:
 - Health bars above each combatant — watch these
 - Status effect icons below health bars
 
-### Action Bar (Bottom)
+### Combat is AI-driven
 
-What your currently selected hero can do:
-- ⚔️ Attack
-- ✨ Skill
-- 🛡️ Defend
-- 🏃 Flee
+Hero's Guild combat does not expose per-hero Attack / Skill / Defend / Flee buttons during a fight. Skill selection runs through `Combat.selectBestSkill` driven by each hero's tactical preset and the engine's AI; the player's pre-fight choices (party composition, equipment, tactics, supervision) are what shapes the outcome. The CombatActionType enum (`Attack`, `Skill`, `Defend`, `Item`, `Flee`) exists in the engine but is consumed by the AI, not by player clicks. The closest player-visible "action bar" is the Hero Details bottom bar (Passive Tree / Spec / Body / Food / Rest / Dismiss), which is a hero-management strip, not a combat control.
 
 ### Combat Log (Side)
 
@@ -227,7 +224,7 @@ When exploring dungeons:
 
 ### Guild Vault
 
-Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers type filters (All / Wpn / Arm / Hlm / Shd / Bts / Glv / Acc / Material / etc.) and bulk actions.
+Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers six type filters (`Vault.tsx:75-82`): **All / Weapons / Armor / Accessory / Consumables / Materials**, plus bulk actions.
 
 ### Item Actions
 
@@ -267,13 +264,9 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
-The interface is mouse-first. The only globally bound key is:
+The interface is mouse-first. There is **no global Esc-closes-current-menu handler** in the ui-next codebase. Escape is scoped to a few specific contexts only: the Raid Test Sandbox (cancel pending order), the RaidSetupV2 group rename input, and the Custom Dungeon editor. Settings, Achievements, and Beta Chat must be closed by clicking their close buttons.
 
-| Key | Action |
-|-----|--------|
-| **Esc** | Close the current menu/dialog (Settings, Achievements, Beta Chat, etc.) |
-
-A few scenes wire up niche right-click handlers (Mission Board, Passive Tree, Dungeon Menu); see those scenes for specifics.
+The raid screen has its own dedicated hotkey set documented in [World Boss Raids](raids.md#the-raid-interface). A few other scenes wire up niche right-click handlers (Mission Board, Passive Tree, Dungeon Menu); see those scenes for specifics.
 
 ---
 

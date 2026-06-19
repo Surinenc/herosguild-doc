@@ -20,7 +20,7 @@ Ten crafting station types, each requiring a hero who could otherwise be doing s
 | Station | Crafts | Skills Used |
 |---------|--------|-------------|
 | **Forge** | Metal weapons, armor | Blacksmithing |
-| **Armory** | Armor crafting and repair | Armorsmithing |
+| **Armory** | Armor crafting | Armorsmithing |
 | **Tannery** | Leather processing and goods | Leatherworking |
 | **Loom** | Cloth processing and items | Tailoring |
 | **Alchemy Lab** | Potions and elixirs | Alchemy |
@@ -199,7 +199,7 @@ When crafting completes, quality is rolled:
 | 86-95 | Exceptional | +30% |
 | 96-100 | Masterwork | +50% |
 
-**Roll Modifiers (Combat.ts:2528):**
+**Roll Modifiers (`Crafting.ts:2528`):**
 - Skill level adds directly to the roll
 - Station quality bonus adds to the roll
 - Masterwork skill (100) guarantees a 50+ roll

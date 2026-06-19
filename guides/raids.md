@@ -263,6 +263,22 @@ A trio of view tabs in the phase header switches the central panel between **Liv
 
 The board stage also swaps the music. You'll notice.
 
+### The Aggro-Switch Warning
+
+When the boss flips its target from one hero to another mid-fight, a transient banner slides in at the top of the board area — dark-red panel, ⚠ glyph, uppercase text reading **"Aggro → {hero name}"**. The banner auto-dismisses after 3 seconds, restarting the timer if another switch fires inside the window. It is detected entirely client-side from the combat log (`RaidStateProvider.tsx:457`); the stdout log also emits a grep-friendly `[AggroSwitch] T<turn> <bossName>: <prev> → <new>` line for post-mortems. The first time the boss locks on (no prior target) does not fire the banner.
+
+---
+
+## Raid Leaderboard
+
+Cleared raids submit to a global cloud leaderboard. The Raid tab lives inside the **Leaderboard** screen (not inside the raid view itself) — six boards stacked in a fixed order, **Dragon / Lich / Void Titan × Normal / Heroic**, each ranking the top 25 players by fewest turns (tiebreakers: lower wallclock seconds, earlier occurrence). Columns: `# | Player | Turns | Time | Survivors | Version`. Your own row is highlighted gold and tagged "(you)". Per spec 167, each board now supports **per-boss tabs and sortable columns**, with an **Attempts** column added to show how many times you've launched against each boss/difficulty combo.
+
+**Submit-on-victory.** When `handleRaidEnd('victory')` fires, `Raid.tsx` calls `submitRaidVictory` with `{ boss, difficulty, turns, wallClockSec, survivors, partySize, appVersion, gitCommitSha, occurredAtUtc }` plus the new raidAttempts count. Wipes and retreats are not submitted. The server keeps **one row per (player, boss, difficulty)** and only replaces it if the new run is strictly faster in turns — slower clears are silently kept off the leaderboard for that combo. The cloud endpoint runs the same IP rate limiter as the regular Leaderboard.
+
+**raidAttempts.** Each launch increments a per-save `raidAttempts[bossDifficulty]` counter on `GameState` (`GameState.ts:1122`), persisted in saves. This is what the Attempts column displays. Forfeits and wipes still count toward the attempts total — the column is "how many times have you stepped up to this fight," not "how many times you've cleared it."
+
+The boards have **no time filter** (no this-week / all-time toggle); they are perpetual per-player bests.
+
 ---
 
 ## Related Guides

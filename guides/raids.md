@@ -27,16 +27,11 @@ A raid is a single fight on a tactical grid. The board is **5 rows × 5 columns*
 
 - **Up to 15 heroes deployed total** (enforced cap, `MAX_HEROES_TOTAL = 15` in `RaidSetup.tsx`)
 - **Groups are organisational, not capped** — the live setup UI lets you build as many or as few groups as you like as long as total deployed heroes stay at or under 15. The realm proposes **five default anchor zones** (F3, M3, U3, L3, B3); you can use them, ignore them, or build your roster a different way
+- **4 heroes per zone maximum** (`ZONE_HERO_CAPACITY = 4` in `RaidBoard.ts`). Boss-melee zones (F1–F5) are where the boss reaches you
 - **No rotation, no rest** — everyone you bring fights for the entire raid
 - **Orders are issued per group, not per hero**
 
-A group is the unit you actually pilot during the raid. Each group is assigned a home zone, a role (Standard or Add Hunters), and a composition. Heroes inside a group take their own actions in initiative order, but you tell them where to be and what to do at the group level.
-
-<!-- TODO: verify - "4 heroes per zone maximum" claim removed pending verification against current code; the zone-cap behaviour needs to be re-confirmed -->
-<!-- TODO: verify - "Role (Standard / Add Hunters)" needs verification against current RaidSetup options -->
-<!-- TODO: verify - the "Boss Arena" zone needs verification against RaidBoard.ts -->
-<!-- TODO: verify - row letters F/M/U/L/B need verification against RaidBoard.ts -->
-<!-- TODO: verify - the boss-melee-at-front-row claim needs verification -->
+A group is the unit you actually pilot during the raid. Each group is assigned a home zone, a **role** (Standard or Add DPS — `'standard' | 'add_dps'` in the code), and a composition. Standard groups stay focused on the boss; Add DPS groups break off to handle adds as they spawn. Heroes inside a group take their own actions in initiative order, but you tell them where to be and what to do at the group level.
 
 ---
 
@@ -145,7 +140,7 @@ Each group occupies a home zone and operates from it. By default, the realm prop
 | Group 4 | L3 (lower centre) | Mid-line |
 | Group 5 | B3 (back centre) | Rear / specialist |
 
-You can override the anchor at setup, along with each group's role (Standard / Add Hunters) and composition. The boss treats anything in the F-row as **melee distance**, which is useful information for both the heroes you want there and the ones you don't.
+You can override the anchor at setup, along with each group's role (Standard / Add DPS, `'standard' | 'add_dps'` in code) and composition. Standard groups stay focused on the boss; Add DPS groups break off to engage adds as they appear. The boss treats anything in the F-row (F1–F5, the `BOSS_MELEE_ZONES`) as **melee distance**, which is useful information for both the heroes you want there and the ones you don't.
 
 ---
 
@@ -187,16 +182,14 @@ The loop, in practice:
 
 A few things worth knowing about the cadence:
 
+- **Turn 0 is setup-only.** The orchestrator at `RaidOrchestrator.ts:690-694` returns immediately on turn 0 with no combat, telegraphs, spawns, or status ticks. Use it to position groups before the boss starts swinging.
 - **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
-- **Add waves arrive on a cadence.** Boss-scripted waves are documented above; default wave timing needs separate verification.
+- **Add waves run on a default 3-turn cadence.** One goblin every three turns starting on turn 3 (`RaidOrchestrator.ts:1069, 2005`), plus the boss's scripted waves layered on top — the Lich's are particularly enthusiastic.
 - **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
+- **Call Retreat** has its own button (`data-test-id="call-retreat-btn"` in `RaidTurnControl.tsx`) outside the order budget; pressing it ends the raid immediately.
 
 The speed selector is the lever for actually surviving the harder fights — speeding up trivial turns and slowing down to read telegraphs and queue intricate group orders during the dangerous ones.
-
-<!-- TODO: verify - the Call Retreat button location and behaviour needs verification -->
-<!-- TODO: verify - the "Turn 0 setup-only" claim was previously documented; re-verify against current orchestrator -->
-<!-- TODO: verify - the add wave cadence "~1 per 3 turns" claim needs verification -->
 
 ---
 
@@ -260,11 +253,10 @@ The raid plays out in three stages:
 
 The board layout, from top to bottom: a status bar at the top, the groups roster on the left, the tactical board in the centre, the threat queue and combat log on the right, and the group chips, order panel, and keyboard legend along the bottom.
 
-**Keyboard:**
-- **Q / W / E / R / T / Y** — order shortcuts
+**Keyboard** (verified from the hotkey legend at `RaidOrderBar.tsx:279`):
+- **M / H / B / T / I / E** — issue order (Move, Hold, Burst, Taunt, Interrupt, Engage)
 - **1 / 2 / 3** — select group
-- **Space** — pause
-- **Esc** — cancel
+- **Space** — pause · **Esc** — cancel
 
 A trio of view tabs in the phase header switches the central panel between **Live** (the fight as it stands), **Telegraphs** (a reference card for what the queued symbols mean), and **Storyboards** (a tactical preview of the boss's known patterns). The Telegraphs tab is worth opening every time you face a new boss; the Storyboards tab is worth opening every time you face a familiar one.
 

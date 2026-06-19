@@ -64,8 +64,11 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 
 | Crisis | Icon | Duration | Effect |
 |--------|------|----------|--------|
-| **The Dragon's Tithe** | 🐉 | 8–12 | Tribute demand: **25% of vault gold.** Pay it and the crisis ends immediately. Ignore it and the dragon damages your highest non-Barracks facility by 2 levels |
-| **The Royal Levy** | 👑 | 8–12 | Tribute demand: **15% of vault gold, capped at 20,000.** A smaller tax with a more official letter |
+| **The Dragon's Tithe** | 🐉 | 8–12 | Tribute moral event (currently a **flat -500 gold** in production code; the 25% vault-percentage config is present but the production tribute handler that would read it is not wired up). Ignore the crisis and the dragon damages your highest non-Barracks facility by 2 levels |
+| **The Royal Levy** | 👑 | 8–12 | Tribute moral event (configured for 15% of vault capped at 20,000 in the data layer, but the production handler is **not wired up** — the current moral event uses a sentinel gold cost rather than the percentage). A smaller tax with a more official letter |
+
+<!-- TODO: verify - The Dragon's Tithe and Royal Levy specialEffect configs (25% of vault, 15% of vault capped 20k) live in crisisDefinitions.ts but the production tribute handler that would consume them does not appear to exist. The moral events use flat gold values instead. Re-verify whether a tribute handler exists in a code path the audit missed, or remove the percentage framing entirely. -->
+
 
 ### Supernatural
 
@@ -84,12 +87,14 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 
 Four crises chain into other crises. If you let a chaining crisis end with an **Ignored** outcome, its successor fires earlier than the normal cooldown would allow — and starts at **Moderate** severity instead of Mild.
 
-| Parent Crisis | Chains To | Cooldown Reduction |
-|---------------|-----------|---------------------|
-| The Creeping Plague | The Great Famine | 15 days |
-| The Guild Wars | The Bandit Raids | 12 days |
-| The Cult of the Unseen | The Heretic Schism | 10 days |
-| The Dragon's Tithe | The Royal Levy | 10 days |
+| Parent Crisis | Chains To | Cooldown Reduction (Ignored / Engaged) | Partial Outcome |
+|---------------|-----------|----------------------------------------|-----------------|
+| The Creeping Plague | The Great Famine | 15 days | 8 days |
+| The Guild Wars | The Bandit Raids | 12 days | 6 days |
+| The Cult of the Unseen | The Heretic Schism | 10 days | 5 days |
+| The Dragon's Tithe | The Royal Levy | 10 days | 5 days |
+
+A **Partial** outcome (some resolution missions completed but not enough to fully resolve) **halves the cooldown reduction** — the chained successor still fires sooner than normal, but you bought yourself roughly half the delay back compared to an outright Ignored result. The realm rewards partial competence with partial mercy.
 
 A chain is announced in the Chronicle with a 🔗 log event. The Guild Clerk has filed papers, more than once, suggesting that the realm not be allowed to combo crises. The papers have been ignored.
 
@@ -105,7 +110,7 @@ The three crises with permadeath events are:
 
 | Crisis | Event Title | Hero Selection |
 |--------|-------------|----------------|
-| The Creeping Plague | Healer's Sacrifice | Your **best** healer-paragon — highest morale, most bonds, highest level |
+| The Creeping Plague | Healer's Sacrifice | Highest morale → most bonds → highest level (any class — the narrative implies a healer, but mechanically no class filter is applied) |
 | The Cult of the Unseen | Inquisition's Demand | Your **most disposable** hero — lowest morale, fewest bonds, lowest level |
 | The Dragon's Tithe | Hero Tribute | Legendary-quality hero if any exist; otherwise lowest morale, fewest bonds, lowest level |
 

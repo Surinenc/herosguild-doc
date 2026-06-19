@@ -108,7 +108,7 @@ A representative sample:
 
 The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
 
-Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — five kills, roughly. Until then you're guessing, which is part of the early-game character.
+Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — **20 kills** (the first tier, Known, is reached at 5 kills and grants a small damage bonus but no resistance display). Until Studied, you're guessing, which is part of the early-game character.
 
 ### Armor and Damage Reduction
 
@@ -253,7 +253,7 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 |--------|------------------|
 | Dealing Damage | Amount × 1.0 (Warriors: × 1.5) |
 | Healing | Amount × 0.5 |
-| Taunt | +200 |
+| Taunt | +100,000 (`TAUNT_THREAT_BOOST`) |
 | Shield Wall | +50 |
 
 ### Enemy Targeting Logic
@@ -271,7 +271,7 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 
 - **Effect:** Forces ALL enemies to attack the Warrior
 - **Duration:** 2 turns (+ ascendancy bonuses)
-- **Threat Bonus:** +200
+- **Threat Bonus:** +100,000 (raised from 200 in spec 158 because the old 200 was eclipsed by a single Ranger crit and the tank lost aggro the instant the taunt window closed)
 - **Cooldown:** 3 turns
 - **Best Used:** When squishy allies are being targeted, which is to say, constantly
 
@@ -459,7 +459,7 @@ Skills with elemental damage types have a chance to trigger corresponding status
 
 | Damage Type | Proc Effect | What It Does |
 |------------|-------------|-------------|
-| **Fire** | Ignite | Applies Burn (10 fire damage/turn for 3 turns) |
+| **Fire** | Ignite | Applies Burn — **15% of the hit as damage per turn**, duration from the skill's effect (e.g. Fireball burns for 2 turns) |
 | **Cold** | Freeze | Applies Stun for 1 turn |
 | **Lightning** | Shock | Target takes +20% increased damage for 2 turns |
 

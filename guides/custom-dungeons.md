@@ -98,13 +98,13 @@ Each card shows the dungeon's name, the architect's name (or "Anonymous"), the e
 
 ### Picking a Party
 
-The raid runtime opens with a party picker. You assemble a deployment from your available, uninjured heroes the same way you would for a regular dungeon. Eligibility checks for level and class restrictions apply. Heroes already locked elsewhere — narrating a published dungeon of their own, for instance — are unavailable.
+The raid runtime opens with a party picker. The only eligibility rule is **`hero.state === HeroState.Ready`** (`raidEligibility.ts:24`) — any alive, unassigned, uninjured, untraining, uncrafting, unscheduled hero can be picked. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
 
 ### The Run
 
 The raid orchestrator is a 9-state machine: the party enters, traverses rooms, encounters hazards and combat and the dungeon's bespoke moral events, collects loot, and either clears the exit or doesn't. Telegraphs and combat draw on the same systems you know from regular dungeon runs, but the room order, hazards, and events are entirely the architect's doing.
 
-**Wipe rewind.** Custom Dungeon raids include a rewind mechanic: when a wipe condition triggers, you may roll back to the start of the room and try again, at the cost of a small accumulated penalty. The Guild Clerk considers this a generous concession to architects whose dungeons turned out to be slightly more lethal than intended. The accumulated penalty applies to your scoring at the end of the run; it does not prevent the rewind itself.
+**Wipe rewind.** Custom Dungeon raids include a finite-token rewind mechanic (`RewindTokens { remaining, max }`, default starts at 2 remaining out of 3 max — `cdRaidData.ts:182,220`). When the party reaches a wipe condition you may spend a token to roll the run back to a previously-explored node in the saga tree and continue from there. Tokens do not refill within a run; once `remaining` hits 0, the next wipe is final. There is no per-rewind scoring penalty — the cost is the token count itself.
 
 ### Raid Runtime Mechanics
 
@@ -120,7 +120,7 @@ Each class brings a session-scoped raid ability with limited charges. Charges re
 | Cleric | **Purify** | 2 | Permanently disables a **cursed hazard** (e.g. Toxic Gas Cloud, Cursed Altar) |
 | Rogue | **Disable** | 3 | The general-purpose hazard removal — applies to any hazard the Rogue can solve. **+1 charge per living Ranger in the party** |
 | Necromancer | **Clear** | 2 | Temporarily clears every hazard in the current room. Each cleared hazard re-arms after 3 turns |
-| Necromancer | **Send Undead** | 2 | Sends a minion to scout a target room. If the minion survives, all hazards in that room are permanently cleared |
+| Necromancer | **Send Undead** | 2 | Sends a minion to a **directly adjacent** target room. If the minion isn't destroyed by a patrol in or adjacent to the target, the target is sighted and all its hazards are permanently cleared. If a patrol is in threat-zone, the minion is destroyed, the room is still sighted, and that patrol redirects toward your party |
 | Ranger | **Perception** (passive) | — | Extends the party's sight pool by +1 hop while at least one Ranger is alive. Not a charge — just being a Ranger does it |
 | Warrior | — | — | Warriors solve hazards by being warriors at them. The Guild Clerk has stopped trying to write this up |
 
@@ -152,7 +152,9 @@ Combat in a room also broadcasts noise. Patrols within a configurable BFS range 
 
 ### Rewards (for the raider)
 
-Successfully clearing a community dungeon awards loot, gold, and — if you were the first to clear at the current difficulty — a place on the leaderboard. The reward scale is independent of the regular dungeon economy; the Custom Dungeon system has its own loot tables tuned to the dungeon's observed difficulty and your party's level.
+Custom Dungeon rewards are concentrated in the **first clear**: when you clear a community dungeon for the first time, the realm pays out gold + XP via `computeFirstClearGold` / `computeFirstClearXp` (`cdRaidRewards.ts:64-77`), where the gold range is the regular **`MISSION_GOLD_RANGES`** for the dungeon's observed difficulty stars, scaled by average party level. Subsequent clears of the same dungeon do **not** repeat the first-clear payout — they still record your run for League standings and personal best, but no fresh gold drop.
+
+There is no separate Custom Dungeon loot economy or bespoke loot table — gold reuses the regular mission economy. Leaderboard placement is **not** gated by first-clear status; the leaderboard tracks each player's best cleared session for the dungeon and ranks the top 10.
 
 ---
 
@@ -164,21 +166,21 @@ Every published dungeon carries an **elegance score** computed from its layout �
 
 ### The League
 
-A weekly League rotates through three competitive metrics:
+The League rotates through three competitive metrics on a **monthly cadence** (the server indexes by `leagueMonth`; the client `leagueMetricForWeek` helper is the offline-only approximation). The metric scoring is unrelated to the per-dungeon elegance display:
 
-| Week | Metric | Winning condition |
-|------|--------|-------------------|
-| Elegance | Highest elegance score on a successful run | Layout-quality contest |
-| Efficiency | Best clear with the lightest party | Resource-management contest |
-| Speed | Lowest turn count to clear | Speedrun contest |
+| Metric | What it scores | Better when |
+|--------|----------------|-------------|
+| **Elegance** | **Decisions taken** on a cleared run (`r.decisions`) | Fewer is better — the contest is about clearing a dungeon with the fewest choice-prompts handled |
+| **Efficiency** | **Attempts** until first clear (`r.attempts`) | Fewer is better — rewards getting it right early |
+| **Speed** | **Turns** on a cleared run (`r.turns`) | Fewer is better — straight speedrun |
 
-The League panel shows the current week's metric, your standing, and the top performers. The metric rotates on a fixed cadence; the Guild Clerk keeps a running calendar that the Mage refuses to consult.
+Source: `cdLeague.ts:128-138`. The League panel shows the current month's metric, your standing, and the top performers. (Note: this is distinct from the per-dungeon **elegance score** described above, which is a layout-quality display number — the League's Elegance metric measures *decision frugality*, not layout cleanliness.)
 
 ### Seasons & The Watcher
 
-The **Seasons** page tracks longer-running content cycles — themed dungeon rotations, special events, and seasonal leaderboards.
+The **Seasons** page (`CdSeasonsPage.tsx`) shows the rolling monthly league standings, the Hall of Notorious, and a legacy-league archive. It does not currently expose themed dungeon rotations or special events — those are aspirational labels.
 
-The **Watcher Journal** is the realm's record-keeper. It tracks notable architect achievements, milestone runs, and the Guild Master's own custom-dungeons history. Most Guild Masters consult it only when they want to remember how their last attempt went; some keep it open for motivational purposes.
+The **Watcher Journal** (`CdWatcherPage.tsx`) is a log browser: your raids plus raids of your published dungeons, sortable by date / attempts / outcome / depth, with a scrubbable timeline. It is closer to a chronological log viewer than an achievements page.
 
 ---
 
@@ -196,9 +198,8 @@ When other Guild Masters across the realm clear *your* published dungeon, the re
 **What does not:**
 - Wipes by raiders — your dungeon paying you for killing other people's parties would create perverse incentives
 - Your own test-runs of your own dungeon
-- Runs by your own narrator hero — the hero is on tour, not raiding
 
-**Fame decay.** Pending architect rewards diminish over time on the realm's server. The longer a clear sits unclaimed in the queue, the less it pays out — which is the realm's way of saying that the only sensible time to log in is now. The exact decay curve is handled server-side; the client just claims whatever's currently pending.
+**Fame Decay (Dungeon Archival).** "Fame Decay" in this system is a **dungeon-archival** mechanic in `cdObservedDifficulty.ts`, not a rewards-shrinking one: a published dungeon that goes 60 days without being raided is archived out of the main browse list (`cdObservedDifficulty.ts:103-118`). Pending architect rewards themselves are not time-scaled by the client — the server returns the full accumulated `claimedGold` and `claimedReputation` at the time of claim. To keep a dungeon visible and earning, it has to keep being run.
 
 The **Architect Page** shows your published dungeons, lifetime architect rewards earned, recent clears with raider names and outcomes, and your seasonal standing. Most architects discover that one specific dungeon outearns all their others combined, and respond by quietly trying to figure out which feature of that dungeon is doing the work.
 

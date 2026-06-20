@@ -110,13 +110,14 @@ Class chains are the game's main reliable source of class-restricted named gear 
 
 Two story chains grant a **special hero** as part of their finale — a named, pre-built adventurer who joins your guild immediately at the level of your current highest-level hero. They arrive with equipment and a built skill setup.
 
-If your Barracks is already at capacity when this happens, the hero joins anyway. Your roster goes **over cap** (e.g., 13/12), and the Guild Scene header turns red with a warning. A **14-day grace timer** starts:
+If your Barracks is already at capacity when this happens, the hero joins anyway. Your roster goes **over cap** (e.g., 13/12), and the Guild Scene header turns red with a warning. A **14-day grace timer** starts (`QuestChain.ts:746-766`):
 
 | Days Remaining | Warning Color |
 |----------------|---------------|
-| 14 → 8 | Yellow |
-| 7 → 4 | Orange |
-| 3 → 1 | Red |
+| 14 → 8 | Yellow (`elapsed` 0–6) |
+| 7 → 3 | Orange (`elapsed` 7–11) |
+| 2 | Orange + Day-13 modal naming the hero to remove (`elapsed` 12) |
+| 1 | Red (`elapsed` 13; auto-removal fires next tick) |
 
 Your options during the grace period:
 
@@ -133,10 +134,10 @@ The Guild Clerk notes that heroes who leave this way are not angry, exactly. The
 | Unlock | When |
 |--------|------|
 | First Weekly Bounty | Day 1 of any new save (and every 7 days thereafter) |
-| Quest Log icon | Visible from day 1 (shows locked chains with requirements) |
+| Quest Log icon | Visible from day 1 (renders only unlocked chains; locked chains do not enumerate with requirements) |
 | First Story chain | At guild rank F |
-| Later Story chains | At ranks E, D, C, B |
-| Class chain (per class) | Rank E + one hero of that class at level 25+ |
+| Later Story chains | At ranks E, D, D, D, C, B (three chains share rank D after the spec-119 additions — Founding Blade and World Tree Pact) |
+| Class chains | Rank E + a level-25 hero of that class for the six baseline chains; rank C + a level-40 Mage for the Archmage's Thesis |
 
 ---
 

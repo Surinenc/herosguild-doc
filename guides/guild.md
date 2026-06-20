@@ -155,13 +155,15 @@ The total quarters morale (room tier + decorations + class preferences + adjacen
 
 Recruitment hub, morale booster, and the place where most guild drama begins (and occasionally ends, depending on how the gambling goes).
 
-| Level | Name | Recruits/Day | Daily Income | Daily Upkeep |
-|-------|------|--------------|--------------|--------------|
+| Level | Name | Recruit Quality (min–max) | Daily Income | Daily Upkeep |
+|-------|------|---------------------------|--------------|--------------|
 | 1 | Rustic Tavern | 1 | 300g | 3g |
-| 2 | Cozy Tavern | 1-2 | 1,000g | 15g |
-| 3 | Popular Tavern | 1-3 | 3,000g | 30g |
-| 4 | Renowned Tavern | 2-4 | 8,000g | 800g |
-| 5 | Legendary Tavern | 3-5 | 20,000g | 1,500g |
+| 2 | Cozy Tavern | 1–2 | 1,000g | 15g |
+| 3 | Popular Tavern | 1–3 | 3,000g | 30g |
+| 4 | Renowned Tavern | 2–4 | 8,000g | 800g |
+| 5 | Legendary Tavern | 3–5 | 20,000g | 1,500g |
+
+The number column is the **quality range** (`recruitQualityMin`/`recruitQualityMax` per `GuildFacilities.ts:190-194`), not the recruit count per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day.
 
 **Tavern Activities:**
 

@@ -207,7 +207,8 @@ These are calculated from primary stats, because apparently nothing in this guil
 | Max HP | 50 + (VIT × 10) + (Level × 10) |
 | Max Mana | 30 + (INT × 5) |
 | Initiative | DEX + 1d10 (random roll at combat start) |
-| Crit Chance | 5% + (DEX / 20) + (LCK / 10) + bonuses |
+| Crit Chance | 5% + (DEX / 20) + (LCK / 20) + bonuses (UI / stat display path, `Hero.ts:2778`) |
+| Crit Chance (combat) | 5% + (DEX / 20) + (LCK / 10) + bonuses (in-fight roll, `Balance.ts:625`) |
 
 ---
 

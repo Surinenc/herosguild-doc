@@ -274,15 +274,15 @@ Result: Heavy single-target attack with fire damage and sustain.
 
 **Mage AoE (5-link):**
 ```
-[Arc]—[Added Lightning]—[Increased Area]—[Stun]—[Mana Leech]
+[Arc]—[Added Lightning]—[Concentrated Effect]—[Increased Critical Strikes]—[Mana Leech]
 ```
-Result: Chaining lightning with wider area, stuns, and mana sustain.
+Result: Chaining lightning that hits harder per target, with raised crit chance and mana sustain. (`Concentrated Effect` replaces the old `Increased Area` template, which was removed; there is no `Stun` support template in code.)
 
 **Cleric Healing (3-link):**
 ```
-[Healing Light]—[Increased Duration]—[Increased Area]
+[Healing Light]—[Increased Healing]—[Increased Duration]
 ```
-Result: AoE healing with extended duration (if Guardian ascendancy).
+Result: AoE healing (Healing Light is already AoE at the gem level — see the gem note in the Spell Skills section) made stronger by Increased Healing and held longer by Increased Duration.
 
 ### Tips
 

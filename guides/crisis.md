@@ -67,8 +67,6 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 | **The Dragon's Tithe** | 🐉 | 8–12 | Tribute moral event (currently a **flat -500 gold** in production code; the 25% vault-percentage config is present but the production tribute handler that would read it is not wired up). Ignore the crisis and the dragon damages your highest non-Barracks facility by 2 levels |
 | **The Royal Levy** | 👑 | 8–12 | Tribute moral event (configured for 15% of vault capped at 20,000 in the data layer, but the production handler is **not wired up** — the current moral event uses a sentinel gold cost rather than the percentage). A smaller tax with a more official letter |
 
-<!-- TODO: verify - The Dragon's Tithe and Royal Levy specialEffect configs (25% of vault, 15% of vault capped 20k) live in crisisDefinitions.ts but the production tribute handler that would consume them does not appear to exist. The moral events use flat gold values instead. Re-verify whether a tribute handler exists in a code path the audit missed, or remove the percentage framing entirely. -->
-
 
 ### Supernatural
 

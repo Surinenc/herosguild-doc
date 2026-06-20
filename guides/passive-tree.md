@@ -106,15 +106,15 @@ Keystones are the tree's most dramatic nodes. Every keystone grants a powerful b
 
 ### Bypass Paths
 
-Eleven mid-path keystones now have bypass paths — adjacent non-keystone nodes connect to create parallel routes around them. A keystone's tradeoff is genuinely optional: you can skip it for 0–1 extra points. The tree no longer forces you to accept a drawback just to reach the nodes behind it.
+Mid-path keystones have **bypass paths** — adjacent non-keystone nodes connect to create parallel routes around them. A keystone's tradeoff is genuinely optional: you can skip it for 0–1 extra points. The tree does not force you to accept a drawback just to reach the nodes behind it. (The exact number of bypass-equipped keystones isn't a code constant; the `_d` suffix appears on 54 detour-helper nodes spread across the 18 branches.)
 
-### Class-Appropriate Penalties
+### Penalty Patterns
 
-Keystone penalties are designed around each class's defensive profile:
+Keystone penalties tend to track each class's defensive profile, with **notable exceptions** — the pattern is a tendency, not a guarantee:
 
-- **Warrior / Cleric** keystones penalize damage or crit — never armor, since armor is their primary defense
-- **Mage / Necromancer** keystones penalize armor or max life — they rely on energy shield, not plate
-- **Rogue / Ranger** keystones penalize armor or max life — evasion is their survival layer
+- **Warrior / Cleric** keystones usually penalize damage or crit (armor is their primary defense). Exception: Berserker Mastery penalizes max life
+- **Mage / Necromancer** keystones usually penalize armor or max life (they rely on flat HP and energy shield rather than plate). Exception: Frost Mastery penalizes crit chance
+- **Rogue / Ranger** keystones usually penalize armor or max life (evasion is the survival layer). Exception: Trickster Mastery penalizes crit chance / crit multiplier instead
 
 ### Example Keystones
 

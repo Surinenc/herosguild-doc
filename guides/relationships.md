@@ -37,7 +37,7 @@ Every mission is a social experiment as much as a combat one. Each pair of missi
 
 | Action | Trust Change |
 |--------|--------------|
-| Intervene save (combat) | +30 saved / +15 saver |
+| Intervene save (combat) | +30 saved / +15 saver during combat (`Combat.ts:5260-5261`) PLUS a post-mission **Saved Life** event that adds +20 saved / +15 saver (`SocialEventGenerator.ts:958-959`) — both fire on a successful intervene |
 | Shared meal | +2 to +4 |
 | Training together (social) | +2 to +4 |
 | Gift giving | +4 to +6 |
@@ -447,7 +447,7 @@ Soulbound items cannot be removed without severe mood penalties (-35). Heroes wi
 
 ### Trait Effects
 
-- **Greedy** heroes attach at 2x speed (14 days = Prized instead of Favorite)
+- **Greedy** heroes attach at 2× speed (`equipment.ts:204`). Effective days are doubled, so an item reaches **Prized at 15 actual days** (effectiveDays ≥ 30 per `ATTACHMENT_THRESHOLDS[Prized] = 30`). 14 actual days still lands at Favorite (effectiveDays 28, below the 30 threshold)
 - **Ascetic** heroes never form attachments — swap their gear freely
 
 ### Removal Mood Effects

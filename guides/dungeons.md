@@ -230,7 +230,7 @@ Worth reviewing before committing to any dungeon. The Guild Clerk has drafted in
 ### Fog of War
 
 The dungeon doesn't open itself up for inspection. Knowledge costs movement:
-- Only the entrance is visible at start; the rest is dark until you go there
+- At start, the entrance and all rooms **directly connected to the entrance** are revealed (`Dungeon.ts:1000-1008`); rooms beyond that one-hop radius stay dark until you reach them
 - Rooms reveal as you explore, which is both discovery and commitment
 - Creates tension and the occasional navigational dispute
 - Supervised mode helps scouting; Rangers help more

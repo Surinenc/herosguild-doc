@@ -335,13 +335,15 @@ Combat can trigger powerful emotional reactions based on relationships. This is 
 | State | Effect | Duration | Trigger |
 |-------|--------|----------|---------|
 | **Normal** | None | - | Default |
-| **Inspired** | +15% all stats | 3 turns | Saved by ally |
-| **Panicked** | 40% skip turn | 2 turns | Coward trait + ally death |
-| **Grief** | -20% all stats | 2-3 turns | Friend dies |
-| **Enraged** | +30% damage, focuses target | 2-3 turns | Close friend dies |
-| **Vengeful** | +20% vs specific enemy | 4-6 turns | Mentor/student dies |
-| **Berserk** | +50% damage, -30% defense, random target | 4-5 turns | Lover dies |
-| **Broken** | Cannot act | 4 turns | Extreme trauma |
+| **Inspired** | Behavior flag set; the damage modifier referenced in enum docs is not currently applied in the live damage path | 3 turns | Saved by ally |
+| **Panicked** | 40% chance to skip the turn (`Combat.ts:7411`) | 2 turns | Coward trait + ally death |
+| **Grief** | Behavior flag set; comment says "handled in damage modifiers" but the actual modifier path is not present in code (`Combat.ts:7451`) | 2-3 turns | Friend dies |
+| **Enraged** | **Forces aggressive AI + locks target to the killer** if known (`Combat.ts:7442-7450`). The +30% damage in the enum doc is not currently applied | 2-3 turns | Close friend / student dies |
+| **Vengeful** | **Forces aggressive AI + locks target to the killer** (`Combat.ts:7442-7450`). The +20% damage in the enum doc is not currently applied | 4-6 turns | Mentor / lover dies |
+| **Berserk** | **Forces aggressive AI + targets random enemy or ally** (`Combat.ts:7438, 6859-6941`). Damage runs through the full defensive pipeline. The +50% damage / -30% defense in the enum doc are not currently applied | 4-5 turns | Lover dies |
+| **Broken** | Cannot act (`Combat.ts:7398`) | 4 turns | Extreme trauma |
+
+<!-- TODO: verify - the enum-doc damage modifiers for Inspired (+15% stats), Grief (-20% stats), Enraged (+30% dmg), Vengeful (+20% vs target), and Berserk (+50%/-30%) appear in Combat.ts:183-189 as comments but no code paths apply them to damage. Either re-wire the modifier table or remove the numbers from the docs when the design intent is settled. -->
 
 ### Death Reactions
 

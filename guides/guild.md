@@ -490,17 +490,22 @@ The **Workshop** facility is NOT a rank-E unlock — it is gated by `unlockRequi
 
 ### Earning Reputation
 
+Reputation is granted only through these confirmed code paths:
+
 | Action | Reputation |
 |--------|------------|
-| Complete mission | scales with mission `reputationBase × reputationMultiplier` |
+| Complete mission | scales with mission `reputationBase × reputationMultiplier` (`GameState.ts:4707`) |
+| Quest chain step + finale rewards | `reward.reputation` value on the step (`QuestChain.ts:465`) |
+| Moral event consequences (Guild Identity + Crisis) | per-consequence `reputationDelta` (`GuildIdentity.ts:243`, `MoralEventResolver.ts:72`) |
+| Custom Dungeon architect rewards | claimed on login from the server-side queue (`architectRewards.ts:56`) |
 
-<!-- TODO: verify - 'Kill boss +10 to +100', 'Rescue NPC +20', 'Hero reaches Champion +10', and 'Hero reaches Legend +25' were not found as explicit reputation hooks in code. The mission completion path is the main confirmed source. -->
+There is no explicit reputation hook for boss kills outside the mission reward path, no rescue-NPC bonus, no veteran-rank promotion reward, and no other ambient reputation grant. Earning reputation is a function of *what missions and events you finish*, not a list of separate achievements.
 
 ### Losing Reputation
 
-The previous reputation-loss table (fail mission -10 to -30, abandon -20, hero death -5, party wipe -50) has **no implementation in code**. `GameState.ts:4702-4708` explicitly notes that failure pays zero reputation and that the failure-penalty path is out of scope. No abandon penalty, no per-hero-death penalty, and no -50 TPK penalty exist on the reputation hook. Treat reputation as effectively a one-way ratchet from mission successes — failures and wipes leave it where it stood.
+There is no reputation-loss path in current code. `GameState.ts:4702-4708` explicitly notes that failure pays zero reputation and that the failure-penalty path is out of scope. No abandon penalty, no per-hero-death penalty, no party-wipe penalty exist on the reputation hook. Reputation is a one-way ratchet — failures and wipes leave it where it stood.
 
-<!-- TODO: verify - re-document this section when a reputation-penalty path actually ships. -->
+(Moral event consequences with negative `reputationDelta` can subtract, in principle, but the consequence data is event-specific rather than a generic "you lost a hero" hook.)
 
 
 ---

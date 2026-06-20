@@ -225,21 +225,18 @@ The wiki previously claimed a Partial Fail produced an item at -1 quality tier; 
 
 ### Recipe Sources
 
-Recipes enter your inventory through two confirmed code paths: the **starter set** that ships with a new guild, and **quest chain rewards** via `QuestChain.unlockRecipe()`. Other sources may exist as content in specific encounters, but no general recipe-acquisition table is wired in code.
+Recipes enter your inventory through two confirmed code paths:
 
-| Source | Status |
-|--------|--------|
-| Starting set | Confirmed — shipped with a new guild |
-| Quest chain rewards | Confirmed — `QuestChain.unlockRecipe()` is the production hook |
-| Merchant purchase | <!-- TODO: verify - no merchant recipe table found in code --> |
-| Mission rewards | <!-- TODO: verify - no general mission recipe drop table found --> |
-| Boss drops | <!-- TODO: verify - no per-boss-tier recipe drop table found --> |
+| Source | How it works |
+|--------|--------------|
+| Starting set | Shipped with a new guild |
+| Quest chain rewards | `QuestChain.unlockRecipe()` is the only production hook (`Crafting.ts:2287`, called from `QuestChain.ts:493`) |
+
+There is no merchant-purchase recipe table, no general mission-reward recipe drop table, and no per-boss-tier recipe drop table in current code. If a future content patch adds these paths they will appear here.
 
 ### Library Research
 
-<!-- TODO: verify - the Library research workflow (researcher hero assignment, research materials, research timer) is not implemented in production code. The Library facility carries `maxRecipeTier` and `researchSpeed` metadata, but the research workflow itself has no startResearch / researcher / timer logic in current code. Treat this section as documented intent rather than a currently-usable system. -->
-
-The Library facility tracks a `maxRecipeTier` cap (3 at maximum facility level) and a `researchSpeed` modifier, but the workflow for *using* the Library to research a recipe — assigning a hero, consuming materials, waiting for a timer — has no implementation in production code. The system appears to have been planned but not wired up.
+The Library facility carries `maxRecipeTier` (capped at 3 at maximum facility level) and `researchSpeed` metadata, but the workflow for *using* the Library to research a recipe — assigning a researcher hero, consuming materials, waiting for a timer — has no implementation in production code. There is no `startResearch` function, no researcher assignment, no research timer.
 
 If you need recipes beyond the starter set, the production path is **quest chains** and **content unlocks**, not Library research.
 

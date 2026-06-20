@@ -343,8 +343,6 @@ Combat can trigger powerful emotional reactions based on relationships. This is 
 | **Berserk** | **Forces aggressive AI + targets random enemy or ally** (`Combat.ts:7438, 6859-6941`). Damage runs through the full defensive pipeline. The +50% damage / -30% defense in the enum doc are not currently applied | 4-5 turns | Lover dies |
 | **Broken** | Cannot act (`Combat.ts:7398`) | 4 turns | Extreme trauma |
 
-<!-- TODO: verify - the enum-doc damage modifiers for Inspired (+15% stats), Grief (-20% stats), Enraged (+30% dmg), Vengeful (+20% vs target), and Berserk (+50%/-30%) appear in Combat.ts:183-189 as comments but no code paths apply them to damage. Either re-wire the modifier table or remove the numbers from the docs when the design intent is settled. -->
-
 ### Death Reactions
 
 When an ally dies, heroes react based on their relationship. These reactions are not optional, not controllable, and not particularly convenient:

@@ -99,9 +99,6 @@ Every weapon reduces to five numbers. Heroes who understand these numbers do bet
 - Arcane Staff (Rare): 18-28 damage, +50 Mana
 - Staff of Eternity (Legendary): 55-80 damage, +150 Mana, +int (the "-20% cooldowns" claim is the **Archmage's Regalia 3-piece set bonus**, not a weapon stat)
 
-<!-- TODO: verify - 'Oak Staff' and 'Staff of Elements' templates were not found in code. -->
-<!-- TODO: verify - 'Mithril Mail' template was not found in ArmorTemplates.ts. -->
-
 ---
 
 ## Armor
@@ -149,8 +146,6 @@ Two ring slots per hero, both treated as a personality statement. The Guild Cler
 | Gold Ring | Rare | +12 INT, +20 Mana |
 | **Ring of Power** | Legendary, L60 | +25 to **all four** primary stats (STR/DEX/INT/VIT). No single "legendary effect" beyond the across-the-board stat boost |
 
-<!-- TODO: verify - 'Enchanted Band' template was not found in AccessoryTemplates.ts. -->
-
 ### Amulets
 
 Amulets focus on HP, Mana, and powerful unique effects — the equipment category that tends to matter most when the fight stops going to plan.
@@ -161,8 +156,6 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 | Crystal Pendant | Uncommon | +25 HP **and** +15 Mana |
 | **Heart of the World** | Legendary, L70 | +150 HP, +100 Mana, **+10% Life Steal** (the wiki previously claimed auto-resurrect — that mechanic does not exist on this template) |
 
-<!-- TODO: verify - 'Enchanted Amulet' and 'Medallion of Power' templates were not found in AccessoryTemplates.ts. -->
-| Heart of the World | Legendary | +150 HP, +100 Mana, auto-resurrect |
 
 ### Notable Unique Accessories
 
@@ -201,8 +194,6 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 
 **Auto-Use:** Heroes automatically drink health potions when below 50% HP.
 
-<!-- TODO: verify - 'Superior Health Potion' and 'Elixir of Life' templates were not found in ConsumableTemplates.ts. -->
-
 ### Mana Potions
 
 | Name | Rarity | Mana | Stack |
@@ -231,8 +222,6 @@ Craftable at the alchemy bench. The recipes are short. The alchemist's commentar
 | Strength Tonic | +15 STR | 1 combat |
 | Defense Potion | +25 Armor | 1 combat |
 | Haste Potion | +50% Speed | 1 combat |
-
-<!-- TODO: verify - 'Ironflesh Elixir', "Giant's Strength", 'Berserker Brew', and 'Invulnerability' templates were not found in ConsumableTemplates.ts. The Defense Potion (Rare, +25 Armor) is the closest real item to the wiki's removed Ironflesh entry. -->
 
 ---
 
@@ -349,9 +338,9 @@ Quality is determined by crafting skill or random drop luck.
 
 ## Enchanting
 
-Items can hold enchantments in their **`maxEnchantSlots`** (a per-template field, typically 1–3 depending on slot and rarity), filled at the Enchanting Table facility.
+Items can hold enchantments up to their **`maxEnchantSlots`** (a per-template field, typically 1–3 depending on slot and rarity), applied at the Enchanting Table facility. The Enchanting Table itself scales by level: Rune Desk → Enchanting Altar → Arcane Workshop → Mystic Chamber → Ley Nexus, with `enchantPower` rising from 1.0× to 2.0× and `maxTier` rising 1 → 5 (`GuildFacilities.ts:309-313`).
 
-<!-- TODO: verify - The named-enchantment registry the wiki previously listed (Sharpness +10% Damage, Flaming +Fire DoT, Frost +Ice Damage Slow, Lightning Chain to 2 enemies, Vampiric 5% Life Steal, Vorpal +15% Crit +50% Crit Damage, Holy +100% vs Undead/Demons; armor enchants Fortified/Resilient/Resistant/Thorns/Regeneration/Warding; accessory enchants Luck/Swiftness/Wisdom/Wealth/Survival) has no corresponding code data structure — Item.enchantments is currently typed as string[] with no canonical effect-by-name table found in the templates or models. The Enchanting Table facility exists; the named enchant catalogue described in earlier wiki versions appears to be aspirational or pre-implementation. Section pruned pending re-verification against an enchantment registry once one ships. -->
+The named enchantment catalogue some earlier wiki versions listed (Sharpness / Flaming / Vorpal / Fortified / Resilient / Luck / Swiftness / etc.) has no corresponding effect-by-name table in current code — `Item.enchantments` is a `string[]` and only the Enchanting Table facility data and a couple of "check enchantments for survival effects" branches reference it. Treat enchantments as a real slot system whose specific named catalogue is not currently shipped.
 
 
 ---

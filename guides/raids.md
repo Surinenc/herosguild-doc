@@ -27,7 +27,7 @@ A raid is a single fight on a tactical grid. The board is **5 rows × 5 columns*
 
 - **Up to 15 heroes deployed total** (enforced cap, `MAX_HEROES_TOTAL = 15` in `RaidSetup.tsx`)
 - **Groups are organisational, not capped** — the live setup UI lets you build as many or as few groups as you like as long as total deployed heroes stay at or under 15. The realm proposes **five default anchor zones** (F3, M3, U3, L3, B3); you can use them, ignore them, or build your roster a different way
-- **4 heroes per zone maximum** (`ZONE_HERO_CAPACITY = 4` in `RaidBoard.ts`). Boss-melee zones (F1–F5) are where the boss reaches you
+- **5 heroes per zone maximum** (`ZONE_HERO_CAPACITY = 5` in `RaidBoard.ts`). Boss-melee zones (F1–F5) are where the boss reaches you
 - **No rotation, no rest** — everyone you bring fights for the entire raid
 - **Orders are issued per group, not per hero**
 
@@ -88,27 +88,27 @@ The interrupt fight. Damage from the Lich is manageable. Damage from the Lich *a
 
 The forced-movement fight. The Titan does not want you where you are, and the Titan has opinions about that.
 
-**Phases:**
-- **Gaze** (opening) — ranged spread pressure
-- **Fractured Mind** — cluster-amplifying Spread telegraphs; punishes group stacking
-- **Spatial Phase** — **forced movement every 3 turns** (`VoidTitan.ts:43-46`, this is the relocation-cadence phase, not Fractured Mind)
-- **Void Implosion** (≤40% HP) — the closing sequence
+**Phases:** (thresholds from `VoidTitan.ts:99,105,116`)
+- **Gaze** (100 → 75% HP) — opening posture, ranged spread pressure
+- **Fractured Mind** (75 → 50% HP) — cluster-amplifying Spread telegraphs; punishes group stacking
+- **Spatial Phase** (50 → 40% HP) — **forced movement every 3 turns**, direction rotates S → W → N → E
+- **Void Implosion** (≤40% HP) — the closing sequence; Stack telegraph fires via the ability roller (`bossTuning.ts:551`, cd 7 in Phase 3)
 
 **Signature mechanics:**
 - **Void Bolt** — baseline ranged hits.
 - **Void Lash** — fires every turn. The fight's metronome.
 - **Mind Flay** (SpotSoak telegraph) — single-tile soak; move out.
 - **Reality Tear** (Column telegraph) — empties a column.
-- **Fractured Mind** (Spread telegraph) — scattered impacts that hit harder the more clustered you are.
-- **Void Implosion** (Stack telegraph) — the fight's signature mechanic. Converge on the indicated zone, *or die.* No second draft of this.
+- **Fractured Mind** (Spread telegraph) — scattered impacts that hit harder the more clustered you are. On Heroic, every shared-zone hit also stacks **Voidmarked** on the affected heroes (see below), turning the cluster from a one-cycle problem into a fight-long one.
+- **Void Implosion** (Stack telegraph) — the fight's signature mechanic. The safe zone is **fixed at the M-row centre triplet — M2, M3, M4** (`VoidTitan.ts:239-241`, spec 181). Converge there, *or die.* Every hero caught outside the safe zone takes the damage *and* gains a **Voidmarked** stack. No second draft of this.
 
 This is the fight where standing orders pay for themselves, because manual movement against the forced-relocation cadence wastes order points you don't have.
 
 ### Enrage
 
-All three bosses share a hard enrage threshold at **turn 250**. From that point on, the boss's base damage scales by **+10% per turn past 250, additive, with no cap.** At turn 275, base damage is ×3.5. At turn 300, it's ×6.0. At turn 350 it's the kind of number the Guild Clerk will not write down for fear of jinxing whatever happens next.
+The Dragon and the Lich share a hard enrage threshold at **turn 250** (`bossTuning.ts:92,257`); the Void Titan's threshold is **turn 300** (`bossTuning.ts:443`, raised in spec 183 because the Void Titan's mechanic-heavy fight runs longer than the other two and was being decided by enrage rather than by the encounter). From that point on, the boss's base damage scales by **+10% per turn past the threshold, additive, with no cap.** At threshold + 25, base damage is ×3.5; at threshold + 50, it's ×6.0; past that, it's the kind of number the Guild Clerk will not write down for fear of jinxing whatever happens next.
 
-The shape is linear, not compounding — but the practical message is the same: raids are not endurance contests. If you are not winning by turn 250, you are losing on turn 251.
+The shape is linear, not compounding — but the practical message is the same: raids are not endurance contests. If you are not winning before the enrage turn, you are losing on the one after.
 
 ### Wounded — The Cleave Tax
 
@@ -122,6 +122,21 @@ Both effects stack with additional Wounded marks. Both reset between attempts; b
 The avoidance check is **deterministic and positional.** A hero who moved out of the telegraphed zone before resolution takes no damage and gains no Wounded stack. A hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
 
 SpotSoak and Spread telegraphs do not apply Wounded. The risk is specifically in the column- and row-shaped cleaves.
+
+### Voidmarked — The Void Titan Tax
+
+A parallel debuff system to Wounded, exclusive to the Void Titan. Heroes caught outside the Void Implosion safe zone gain a **Voidmarked** stack along with the damage. On Heroic, heroes sharing a zone when Fractured Mind resolves also pick up a stack — because the shared-zone amplification is the punishment vector, and marking the same heroes lets it cascade into the next Implosion (`RaidOrchestrator.ts:1949-1958, 2033-2037`).
+
+Each stack does one unpleasant thing, but does it relentlessly:
+
+- **+15% damage taken** per stack on every subsequent hit (additive, via the buff system's `damageTaken` modifier — `VoidmarkedStacks.ts:27`)
+- **No stack ceiling** — stacks accumulate without bound (spec 186 removed the cap)
+- **Permanent within the attempt** — no decay, no time-out (spec 172 disabled decay entirely)
+- **Cleared on attempt reset** (`clearAllVoidmarked` at `VoidmarkedStacks.ts:90`) — a wipe and retry resets the slate
+
+The avoidance check, like Wounded, is positional and deterministic. A hero who reached the M-row centre triplet before Void Implosion resolved takes no damage and gains no stack. A hero who did not gets both, and the next Implosion will hit them 15% harder, and the one after that 30%, and so on, until the Void Titan stops being a fight and starts being a budget.
+
+On Normal, only Void Implosion applies Voidmarked; the Fractured Mind shared-zone trigger requires the amplification to exceed 1.0×, which it does only on Heroic (`bossTuning.ts:497,676`). The Guild Clerk has filed this under "things that get worse when you select Heroic," a category she now keeps a dedicated drawer for.
 
 ### Normal vs Heroic
 

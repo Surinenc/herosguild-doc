@@ -666,6 +666,38 @@ Social events are logged with the hero's name and a description. The logs don't 
 
 ---
 
+## Keepsakes
+
+Heroes accumulate sentimental mementos — non-item tokens stored on their social data (`HeroSocial.ts`). A keepsake is not equipment; it cannot be traded, sold, or dropped. It sits in the hero's record and applies a small permanent bonus, which is the game's way of saying that sentiment has mechanical weight.
+
+### How Keepsakes Are Acquired
+
+| Source | Trigger | Cooldown |
+|--------|---------|----------|
+| **Gift** | A Gift Giving social event fires between two bonded heroes | 100 days per giver–receiver pair |
+| **Heirloom** | 10% chance at recruit time, drawn from the hero's background pool | Once (at recruitment) |
+| **Memorial** | A hero dies; their closest surviving guild-mate receives a memento | On death of any hero with bonds |
+
+Gift names are drawn from per-class pools — Warriors give battle-worn hilts and campaign coins; Mages give rune-etched pebbles and crystallised mana shards; Rogues give trick coins and marked playing cards. Heirloom names depend on background. Memorial keepsakes are named "Memento of {fallen hero}" and carry a mood-floor bonus.
+
+### Keepsake Bonuses
+
+Each keepsake carries exactly one bonus from a discriminated union (`KeepsakeBonus` in `HeroSocial.ts`):
+
+| Kind | Effect | Example |
+|------|--------|---------|
+| `mood_floor` | Permanent mood modifier (adds to mood baseline) | +3 mood floor |
+| `combat` | Percent bonus to crit chance, dodge, or life steal | +3% crit chance |
+| `resist` | Percent resistance to a damage type (fire, cold, lightning, or general) | +5% fire resist |
+
+Bonuses are applied as buffs via `applyKeepsakeBonus` (`GameState.ts:118`) — combat and resist bonuses become `BuffSource.Keepsake` entries visible in the hero's Active Effects panel; mood-floor bonuses are applied as long-lived mood modifiers on the social system.
+
+### Limits
+
+There is no cap on the number of keepsakes a hero can hold. A hero who lives long enough and maintains strong bonds will accumulate several — each one small, but collectively meaningful. The Guild Clerk finds this thematically appropriate: sentiment accrues.
+
+---
+
 ## Managing Relationships
 
 ### Tips

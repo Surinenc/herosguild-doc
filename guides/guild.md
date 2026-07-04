@@ -157,11 +157,11 @@ Recruitment hub, morale booster, and the place where most guild drama begins (an
 
 | Level | Name | Recruit Quality (min–max) | Daily Income | Daily Upkeep |
 |-------|------|---------------------------|--------------|--------------|
-| 1 | Rustic Tavern | 1 | 300g | 3g |
-| 2 | Cozy Tavern | 1–2 | 1,000g | 15g |
-| 3 | Popular Tavern | 1–3 | 3,000g | 30g |
-| 4 | Renowned Tavern | 2–4 | 8,000g | 800g |
-| 5 | Legendary Tavern | 3–5 | 20,000g | 1,500g |
+| 1 | Rustic Tavern | 1 | 150g | 3g |
+| 2 | Cozy Tavern | 1–2 | 500g | 15g |
+| 3 | Popular Tavern | 1–3 | 1,500g | 30g |
+| 4 | Renowned Tavern | 2–4 | 4,000g | 800g |
+| 5 | Legendary Tavern | 3–5 | 10,000g | 1,500g |
 
 The number column is the **quality range** (`recruitQualityMin`/`recruitQualityMax` per `GuildFacilities.ts:190-194`), not the recruit count per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day.
 
@@ -519,7 +519,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Source | Amount | Notes |
 |--------|--------|-------|
 | Dungeon loot | Variable | Main income |
-| Tavern income | 300-20,000g/day | Based on level |
+| Tavern income | 150–10,000g/day | Based on level |
 | Item sales | Variable | Sell to merchants |
 
 ### Expenses

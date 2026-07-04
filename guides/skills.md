@@ -80,6 +80,16 @@ Sockets can be **linked** together, shown by a bar connecting them. The more lin
 - More links = more supports = stronger skills
 - A 6-linked item is extremely valuable
 
+### Socket Placement Rules
+
+The system enforces a strict placement hierarchy (`ItemForge.ts:canSocketGemIntoGroup`):
+
+- **Active gems require an empty group.** You cannot place an active skill into a link group that already has any gem socketed — clear the group first.
+- **Supports must be tag-compatible.** Once a link group has an active gem, any new support must pass the active's `canBeSupported` check (matching tags). Incompatible supports are greyed out in the UI.
+- **Class-lock gate.** Gems with an `allowedClasses` restriction cannot be socketed by heroes of the wrong class — the Guild is strict about it.
+- **Cascade unsocket.** Removing an active gem from a group also unsockets every support in that group, since a support group with no active is inert. All ejected gems return to the hero's gem inventory.
+- **Duplicate supports stack.** You can socket two copies of the same support gem into one group — they stack additively rather than being deduplicated.
+
 ---
 
 ## Gem Progression

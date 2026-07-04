@@ -142,6 +142,15 @@ On Normal, only Void Implosion applies Voidmarked; the Fractured Mind shared-zon
 
 Selected at setup. Heroic raises HP and damage substantially across the board, raises interrupt DCs (notably the Lich's Heal Steal from DC 14 to DC 20), and is intended for parties who've already cleared the Normal version and want to know what it's like when the boss is taking it seriously.
 
+**Heroic loot bonuses** (`lootTables.ts:380-456`):
+
+- **2× raid tokens** — the base token roll is doubled (`HEROIC_TOKEN_MULTIPLIER = 2`).
+- **2× guaranteed materials** — material quantities are doubled (`HEROIC_MATERIAL_MULTIPLIER = 2`). Dragon scales go from 2–4 to 4–8, Phylactery shards 2–4 → 4–8, Reality fragments 1–3 → 2–6.
+- **Bonus item-roll pass** — after the normal chance-roll pass, Heroic runs a second independent roll against every item in the boss's loot table. Items already awarded from the first pass are skipped (deduped by template), so a single clear cannot mint two of the same named item. An 8% named drop lands at roughly 15% effective on Heroic — exciting, not guaranteed.
+- **Gold unchanged** — the extra reward is in tokens, materials, and drops.
+
+The net effect: roughly 1.65× named-item yield and 1.28× total-item yield per clear, plus the doubled materials and tokens. The Guild Clerk considers this adequate compensation for the substantially increased risk of everyone dying.
+
 ---
 
 ## Groups and the Board
@@ -239,23 +248,33 @@ The Guild Clerk considers this the sporting thing to do. The Warrior considers i
 | Lich King | 10,000 – 15,000 | 6 – 12 | Phylactery Shard |
 | Void Titan | 12,000 – 18,000 | 8 – 14 | Reality Fragment |
 
-Each boss also drops a set of guaranteed items, plus chance-rolled mythic items from its loot table. The first kill of each boss unlocks a recipe at the appropriate crafting facility — the kind of recipe the alchemist won't shut up about.
+Each boss also drops a set of guaranteed items, plus chance-rolled named items from its loot table (Ancestral-rarity tier-set pieces at 20% per roll, alongside other named drops at varying chances). The first kill of each boss unlocks a recipe at the appropriate crafting facility — the kind of recipe the alchemist won't shut up about.
 
 ---
 
 ## The Raid Token Vendor
 
-Raid tokens are spent at the **Market → Raid Tokens** tab, which appears after your first raid token lands in the vault. The vendor stocks 21 items across five sections:
+Raid tokens are spent at the **Market → Raid Tokens** tab, which appears after your first raid token lands in the vault. The vendor stocks 26 items across six sections — all tier-set pieces are **Ancestral** rarity (the highest gear tier, matching Heroic Dungeon drops but with set bonuses on top):
 
 | Section | Items | Token Price |
 |---------|-------|-------------|
-| **Wyrmscale Regalia** (Dragon tier-set) | 5 | 8 tokens each |
-| **Litany of Bones** (Lich tier-set) | 5 | 10 tokens each |
-| **Cosmic Discord** (Void Titan tier-set) | 5 | 12 tokens each |
+| **Wyrmscale Regalia** (Ranger DEX set) | 5 | 8 tokens each |
+| **Litany of Bones** (Rogue/Necromancer INT-DEX set) | 5 | 10 tokens each |
+| **Cosmic Discord** (Mage INT set) | 5 | 12 tokens each |
+| **Titanslayer Regalia** (Warrior STR set) | 5 | 8 / 8 / 10 / 10 / 12 tokens |
 | **OffHand Mythics** | 3 | 10 / 12 / 14 tokens |
 | **Raid Materials** | 3 | 3 / 4 / 5 tokens |
 
-Each tier-set covers a coordinated set of slots and grants a set bonus when worn in sufficient quantity. The bosses that drop the matching tokens are the bosses whose tier-set you'd most expect — the Dragon funds Wyrmscale, the Lich funds Litany of Bones, and the Void Titan funds Cosmic Discord. The Guild Clerk notes that the cheapest set is the Dragon's, which is consistent with the Dragon also being the most polite about being killed.
+Each tier-set covers a coordinated set of slots and grants set bonuses at 2, 4, and 5 pieces. The bosses that drop the matching tokens are the bosses whose tier-set you'd most expect — the Dragon funds Wyrmscale, the Lich funds Litany of Bones, and the Void Titan funds Cosmic Discord. Titanslayer draws pieces from all three bosses (weapon and helm from Dragon, armor and accessory from Lich, sigil from Void Titan), which the Guild Clerk considers a reasonable incentive to kill everything at least once.
+
+**Set Bonuses** (`EquipmentSets.ts`):
+
+| Set | 2-piece | 4-piece | 5-piece |
+|-----|---------|---------|---------|
+| Wyrmscale | +40 DEX, +30 Fire Resist | +40 Fire Damage, +8% Crit Chance | +100 Fire Resist, +200 HP, +30 DEX |
+| Litany of Bones | +40 INT, +30 Dark Resist | +50 Magic Damage, +200 Mana | +25 Life Steal, +100 Dark Resist, +30 INT |
+| Cosmic Discord | +40 INT, +30 Dark Resist | +50 Crit Damage, +25 Mana Regen | +40 Magic Damage, +8% Crit Chance, +75 Crit Damage |
+| Titanslayer | +40 STR, +200 HP | +100 Armor, +40 Crit Damage | +60 STR, +400 HP, +10% Crit Chance, +80 Crit Damage |
 
 ---
 

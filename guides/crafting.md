@@ -262,20 +262,54 @@ Material cost is calculated using the sell anchor per tier: Common 100g, Uncommo
 
 ### Recipe Availability
 
-Most recipes are available from the start — if you have the right station, the skill tier to match, and the materials, you can craft it. The explicit unlock gate that used to block most of the catalog has been removed; recipes now gate on four things only:
+Recipes must be **unlocked** before you can craft them. If a recipe shows up in the UI but the craft button refuses to cooperate, the unlock gate is why — the error message will say as much, with the weary patience of a system that has explained this before.
 
-| Gate | How it works |
-|------|--------------|
-| Station type | The recipe's station must exist in your guild |
-| Skill tier | Your crafter's skill level must meet the recipe's tier requirement |
-| Materials | All required materials must be in the vault |
-| Boss-defeat | A handful of recipes require a specific raid boss's first kill (unlocked via `recordRaidVictory` in `GameState.ts`) |
+Every new guild starts with all **Common-tier** recipes unlocked — enough to get the forges warm and the alchemist's eyebrows singed without any research investment. Everything above Common requires either research or a fortunate drop:
 
-Quest chains can still formally unlock recipes via `QuestChain.unlockRecipe()` (`crafting/system.ts:462`), and the `unlockedRecipes` tracking is preserved for a planned research/discovery system — but the gate no longer blocks crafting.
+| Tier | How to unlock |
+|------|---------------|
+| Common | Auto-unlocked at guild creation |
+| Uncommon | Research at the Workshop |
+| Rare | Research at the Workshop |
+| Epic | **Drop-only** — heroic dungeons (8%), raids (15%) |
+| Legendary | **Drop-only** — heroic dungeons (2%), raids (5%), world bosses (8%) |
 
-### Library Research
+A handful of recipes also require a specific **raid boss's first kill** — defeating that boss unlocks every recipe gated behind it (`GameState.ts`). Quest chains can still formally unlock recipes via `QuestChain.unlockRecipe()` (`crafting/system.ts:462`).
 
-The Library facility carries `maxRecipeTier` (capped at 3 at maximum facility level) and `researchSpeed` metadata, but the workflow for *using* the Library to research a recipe — assigning a researcher hero, consuming materials, waiting for a timer — has no implementation in production code. There is no `startResearch` function, no researcher assignment, no research timer.
+### Recipe Drops
+
+Epic and Legendary recipes cannot be researched — they drop from endgame content as recipe scrolls. Each completion rolls two independent Bernoulli trials (one for Epic, one for Legendary), so a single clear can yield zero, one, or — for the improbably lucky — two recipes.
+
+| Source | Epic (per clear) | Legendary (per clear) |
+|--------|-------------------|-----------------------|
+| Heroic Dungeons | 8% | 2% |
+| Raids | 15% | 5% |
+| World Bosses | — | 8% |
+
+Drops exclude recipes you've already unlocked and boss-gated recipes whose boss hasn't been beaten yet. If a winning roll draws a recipe you already own, it converts to gold instead — 10,000g for an Epic duplicate, 100,000g for a Legendary. The Guild Clerk considers this "a consolation prize in the loosest possible sense of both words."
+
+### Research
+
+Research is how Uncommon and Rare recipes enter your collection — a process involving gold, materials, and the kind of patience the Guild Clerk considers character-building.
+
+**Slots:** You get one research slot per Workshop level, up to 10 concurrent projects at Workshop L10. Each slot works independently.
+
+**Cost per project:**
+
+| Tier | Gold | Materials | Duration |
+|------|------|-----------|----------|
+| Uncommon | 5,000g | 50% of recipe's materials (rounded up) | 2 days |
+| Rare | 50,000g | 50% of recipe's materials (rounded up) | 5 days |
+
+Common recipes don't need research (already unlocked). Epic and Legendary recipes return "drop-only and cannot be researched" — `getResearchCost` returns `null` for tier 4+ (`formulas.ts:200`).
+
+**Cancellation:** You can cancel a research project at any time. Half the materials come back (rounded down); gold does not. The Guild Clerk notes that this refund policy is "consistent with every other refund policy the guild has ever offered, which is to say: partial, grudging, and non-negotiable."
+
+**XP:** Completed research grants 50% of the equivalent craft XP (floored) to the hero with the highest level in the relevant crafting skill. No hero assignment required — the guild's best crafter for that skill absorbs the knowledge automatically, which is the game's quiet concession that research montages don't need micromanagement.
+
+### Library
+
+The Library facility declares `researchSpeed` and `maxRecipeTier` metadata in its level templates, but neither value is currently consumed by the research system — research slots come from the **Workshop** and research duration is fixed per tier. The Library's actual runtime effects are +5% mission XP per level and unlocking Meditation training at L3.
 
 ---
 

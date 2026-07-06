@@ -128,6 +128,43 @@ Each set takes both pieces to activate. Single-piece set items grant the base it
 
 ---
 
+## Currency Drops
+
+Each floor cleared rolls for [crafting currencies](crafting.md#crafting-currencies) — independent Bernoulli trials per currency, so a single floor can drop several. The Spire is the only content source that awards currencies on *every* floor rather than per-completion, which makes deep runs a meaningful farming path for the rarer items.
+
+| Currency | Drop Rate (per floor) |
+|----------|-----------------------|
+| Powder of First Enchantment | 10% |
+| Powder of Erasure | 8% |
+| Salt of Renewal | 3% |
+| Ichor of Reshaping / Empowerment | 1% each |
+| Ichor of Sealing | 2% |
+| Salt of Cleansing | 1% |
+| Portent of the Weighing | 2% |
+| Portent of Kinship | 1.5% |
+| Cursed Sigil | 0.5% baseline (soft pity) |
+
+### Cursed Sigil Soft Pity
+
+The Cursed Sigil's 0.5% base rate on Abyssal floors ramps up if you go long enough without seeing one. The counter tracks floors cleared since the last Sigil dropped from *any* source — raids, world bosses, and heroic dungeons all reset it.
+
+```
+Rate = min(15%, 0.5% + max(0, floors_since_last − 50) × 0.05%)
+```
+
+| Floors Since Last Sigil | Drop Rate |
+|-------------------------|-----------|
+| 1–50 | 0.5% (flat) |
+| 75 | 1.75% |
+| 100 | 3.0% |
+| 150 | 5.5% |
+| 250 | 10.5% |
+| 340+ | 15% (cap) |
+
+The pity ramp is the Spire's quiet concession that running 340 floors without a Legendary drop would test even the Guild Clerk's commitment to accurate recordkeeping.
+
+---
+
 ## Score Calculation
 
 The Spire keeps score, because even existential dread benefits from a competitive element. The Guild Clerk maintains the leaderboard and has observed that the top scores belong exclusively to parties who brought two Clerics.

@@ -260,22 +260,22 @@ Material cost is calculated using the sell anchor per tier: Common 100g, Uncommo
 
 ## Recipes
 
-### Recipe Sources
+### Recipe Availability
 
-Recipes enter your inventory through two confirmed code paths:
+Most recipes are available from the start — if you have the right station, the skill tier to match, and the materials, you can craft it. The explicit unlock gate that used to block most of the catalog has been removed; recipes now gate on four things only:
 
-| Source | How it works |
-|--------|--------------|
-| Starting set | Shipped with a new guild |
-| Quest chain rewards | `QuestChain.unlockRecipe()` is the only production hook (`crafting/system.ts:462`, called from `QuestChain.ts:493`) |
+| Gate | How it works |
+|------|--------------|
+| Station type | The recipe's station must exist in your guild |
+| Skill tier | Your crafter's skill level must meet the recipe's tier requirement |
+| Materials | All required materials must be in the vault |
+| Boss-defeat | A handful of recipes require a specific raid boss's first kill (unlocked via `recordRaidVictory` in `GameState.ts`) |
 
-There is no merchant-purchase recipe table, no general mission-reward recipe drop table, and no per-boss-tier recipe drop table in current code. If a future content patch adds these paths they will appear here.
+Quest chains can still formally unlock recipes via `QuestChain.unlockRecipe()` (`crafting/system.ts:462`), and the `unlockedRecipes` tracking is preserved for a planned research/discovery system — but the gate no longer blocks crafting.
 
 ### Library Research
 
 The Library facility carries `maxRecipeTier` (capped at 3 at maximum facility level) and `researchSpeed` metadata, but the workflow for *using* the Library to research a recipe — assigning a researcher hero, consuming materials, waiting for a timer — has no implementation in production code. There is no `startResearch` function, no researcher assignment, no research timer.
-
-If you need recipes beyond the starter set, the production path is **quest chains** and **content unlocks**, not Library research.
 
 ---
 
@@ -431,11 +431,13 @@ Everything Rare and above is drop-only, awarded from content completion:
 
 | Source | Drops |
 |--------|-------|
-| Regular Dungeons | Common Powders (10–15% per clear) |
-| Heroic Dungeons | Common–Rare currencies, Portents, Cursed Sigil (~1%) |
-| Abyssal Spire | Common–Rare currencies, Portents, Cursed Sigil (0.5% + soft pity) |
+| Regular Dungeons | Common Powders (10–15%), Ichors (0.5–1.5%), Salt of Cleansing (1%), Portents (1–1.5%) |
+| Heroic Dungeons | Full range including Cursed Sigil (~1%) |
+| Abyssal Spire | Full range, Cursed Sigil (0.5% + soft pity) |
 | Raids | Rare currencies, Portents, Cursed Sigil (3%) |
 | World Bosses | Cursed Sigil only (5%) |
+
+Regular dungeons drop Rare+ currencies at roughly half the heroic rate — early- and mid-game players see Ichors and Portents without needing endgame content. Only the Cursed Sigil remains gated to heroic dungeons, the Abyssal Spire, raids, and world bosses.
 
 Each currency is an independent Bernoulli roll per clear — you can receive multiple currencies from a single run. The Cursed Sigil has a soft-pity ramp on Abyssal floors: after 50 floors without one, the drop chance increases by +0.05% per floor, capping at 15%.
 

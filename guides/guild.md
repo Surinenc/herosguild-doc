@@ -26,7 +26,7 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 | Facility | Function | Max Level |
 |----------|----------|-----------|
 | **Forge** | Metal weapons/armor | 5 |
-| **Workshop** | Leather, cloth, wood | 6 |
+| **Workshop** | Leather, cloth, wood | 10 |
 | **Alchemy Lab** | Potions & elixirs | 5 |
 | **Enchanting Table** | Magic enhancement | 5 |
 
@@ -35,7 +35,7 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 | Facility | Function | Max Level |
 |----------|----------|-----------|
 | **Library** | Research & recipes | 5 |
-| **Chapel** | Morale, blessings, funerals | 3 |
+| **Chapel** | Morale, blessings, funerals | 5 |
 
 ---
 
@@ -321,6 +321,12 @@ See [Crafting Guide](crafting.md) for details.
 | 4 | Master Workshop | 1.6× | +15% | 40g |
 | 5 | Grand Workshop | 2.0× | +20% | 1,500g |
 | 6 | Mythic Workshop | 2.5× | +30% | 3,000g |
+| 7 | Aetherforge | 2.8× | +35% | 5,000g |
+| 8 | Crucible Sanctum | 3.0× | +40% | 8,000g |
+| 9 | Reality Anvil | 3.5× | +50% | 12,000g |
+| 10 | Apotheosis Workshop | 4.0× | +60% | 15,000g |
+
+Levels 7–10 also unlock a crafting currency discount — 10% per level above 1, up to 90% at level 10 — on the gold fee for using currencies on equipment. See [Crafting Guide](crafting.md#workshop-currency-discount).
 
 ### Library
 
@@ -338,11 +344,13 @@ Research new recipes and lore. The librarian insists on silence, which is ambiti
 
 Provides mood bonuses and funeral services — two things that, in the adventuring business, are needed with roughly equal frequency.
 
-| Level | Mood Bonus | Features |
-|-------|------------|----------|
-| 1 | +3 | Basic services |
-| 2 | +6 | Blessings |
-| 3 | +10 | Holy crafts |
+| Level | Name | Mood Bonus | Features |
+|-------|------|------------|----------|
+| 1 | Small Shrine | +3 | Basic services |
+| 2 | Chapel | +6 | Blessings |
+| 3 | Temple | +10 | Holy crafts |
+| 4 | Grand Chapel | +15 | Expanded blessings |
+| 5 | Divine Sanctum | +22 | Full divine services |
 
 **Special Features:**
 - Memorial services for fallen heroes — the Chapel exists for many reasons, but this is the one it gets used for most
@@ -872,7 +880,7 @@ The Guild Clerk's recommendations, based on extensive observation of which guild
 ### Late Game
 
 1. **All facilities to max** - Every bonus counts at high levels; there are no unimportant upgrades at this point
-2. **Chapel 3** - Mood management becomes critical as the roster grows and the drama multiplies
+2. **Chapel 5** - The +22 mood bonus at Divine Sanctum level makes mood management dramatically easier as the roster grows
 3. **Arsenal** - Equipment maintenance becomes a real consideration when heroes are carrying Legendary gear
 
 ---

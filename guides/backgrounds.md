@@ -68,7 +68,7 @@ Some events grant a named trait — *Duelist*, *Sickly*, *Iron Constitution*, an
 
 ### Body flaws
 
-Some events leave the hero with a **body flaw**: a damaged or destroyed body part. The lifecycle covers six families, each with a left and right side — arms, hands, legs, feet, eyes, ears — for twelve slots in total. Faces, jaws, fingers, and assorted other parts are explicitly out of scope, on the grounds that nobody has yet figured out a satisfying prosthetic for them.
+Some events leave the hero with a **body flaw**: a damaged or destroyed body part. The full body system covers 25 parts across four regions — head (brain, eyes, ears, jaw, nose), torso (heart, lungs, liver, kidneys, stomach, spine), arms (shoulders, arms, hands), and legs (legs, feet). See [Heroes Guide — Body & Injury](heroes.md#body--injury-system) for the complete list, including the vital-organ prosthetic window.
 
 A flaw applies once per slot, even if multiple events touch the same body part. The second narrative paragraph still shows up in the CV; the engine just refuses to double-count the damage, which is the polite version of the heroes' own habit of editing the worse details out of their second telling. Minor flaws land as **Damaged**; severe ones land as **Destroyed**, which is the engine's tactful term for *gone*.
 

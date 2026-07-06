@@ -248,7 +248,7 @@ The Guild Clerk considers this the sporting thing to do. The Warrior considers i
 | Lich King | 10,000 – 15,000 | 6 – 12 | Phylactery Shard |
 | Void Titan | 12,000 – 18,000 | 8 – 14 | Reality Fragment |
 
-Each boss also drops a set of guaranteed items, plus chance-rolled named items from its loot table (Ancestral-rarity tier-set pieces at 20% per roll, alongside other named drops at varying chances). The first kill of each boss unlocks a recipe at the appropriate crafting facility — the kind of recipe the alchemist won't shut up about.
+Each boss also drops a set of guaranteed items, plus chance-rolled named items from its loot table (Ancestral-rarity tier-set pieces at 20% per roll, alongside other named drops at varying chances). The first kill of each boss unlocks every recipe gated behind it — the kind of recipe the alchemist won't shut up about. Subsequent kills roll for recipe scrolls instead: 15% for an Epic recipe, 5% for a Legendary (independent rolls). World bosses skip Epic and roll 8% for Legendary only. Duplicates convert to gold (10,000g / 100,000g). See [Crafting Guide — Recipe Drops](crafting.md#recipe-drops).
 
 **Crafting currency drops:** Raid victories roll for Rare-tier crafting currencies (Ichors at 3–5%, Portents at 5–7%, Cursed Sigil at 3%). World Boss kills have a 5% chance to drop a Cursed Sigil specifically. See [Crafting Guide — Currencies](crafting.md#crafting-currencies).
 

@@ -144,6 +144,12 @@ Access: Mission Board → Heroic filter (🔥). A countdown timer shows time unt
 
 ---
 
+## Recipe Drops
+
+Each heroic dungeon completion rolls for recipe scrolls — 8% for an Epic recipe and 2% for a Legendary, independently. Duplicates convert to gold (10,000g / 100,000g). See [Crafting Guide — Recipe Drops](crafting.md#recipe-drops).
+
+---
+
 ## Related Guides
 
 - [Combat System](combat.md)

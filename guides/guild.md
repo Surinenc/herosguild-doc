@@ -704,6 +704,8 @@ Effective Price = Base Price × Player Multiplier × Event Modifier(s)
 
 Legendary materials cannot be bought or sold. Monster parts (dragon scales, bones, venom glands, etc.) are also excluded — the market has standards, or at least pretends to.
 
+**Crafting Currencies:** The market also stocks three [crafting currencies](crafting.md#crafting-currencies) at fixed prices — Powder of First Enchantment (500g), Powder of Erasure (500g), and Salt of Renewal (5,000g), restocked daily. Currency prices are exempt from the player multiplier and market events; the market considers them a public service rather than a commodity.
+
 **Player Multiplier:** Starts at 1.0×. Each unit bought adds +0.05, each unit sold subtracts -0.05. Clamped between 0.5× and 10.0×. Buying 10 Mithril Ore in one go pushes its multiplier to 1.50× — and drops the price of cheaper metals in the same category by -0.01 per unit. The market rewards diversified shopping.
 
 ### Stock & Restock

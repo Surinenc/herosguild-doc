@@ -315,7 +315,8 @@ When an injury occurs, a roll determines severity. Higher rolls are better, and 
 
 ### Fatal Injuries
 
-Certain injuries cause instant death. There is, regrettably, no prosthetic for these:
+Certain injuries cause instant death — which is why the vital-organ prosthetic window exists. Install the replacement *before* the organ is Destroyed, because afterwards there is nobody to install it on:
+- Brain destroyed
 - Heart destroyed
 - Liver destroyed
 - Both Lungs destroyed
@@ -323,13 +324,25 @@ Certain injuries cause instant death. There is, regrettably, no prosthetic for t
 
 ### Prosthetics
 
-Destroyed parts can be replaced with prosthetics:
+Destroyed parts can be replaced with prosthetics. The original limb-and-sense set (arms, legs, hands, feet, eyes, ears) is joined by full-body prosthetics covering 10 additional body part families — Brain, Jaw, Nose, Heart, Lung, Liver, Kidney, Stomach, Spine, and Shoulder — for a total of 47 prosthetic types. The Guild Clerk considers this a testament to both engineering ambition and the frequency of workplace injuries.
 
 | Tier | Efficiency | Infirmary Level | Crafting Skill |
 |------|------------|-----------------|----------------|
-| Basic | 50% | Level 3 | Leatherworking 5 |
-| Standard | 80% | Level 4 | Blacksmithing 10 |
-| Enchanted | 125% | Level 5 | Enchanting 15+ |
+| Basic | 50% | Level 3 | Softcraft 5 |
+| Standard | 80% | Level 4 | Metalsmithing 10 |
+| Enchanted | 125% | Level 5 | Arcana 15+ |
+
+**Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys, Stomach, Spine) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead (or, for paired organs like lungs and kidneys, dies only when both are gone). The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders) work as before: Destroyed-only installation.
+
+**Install fees** scale with the body part's importance to continued breathing:
+
+| Body Part | Basic | Standard | Enchanted |
+|-----------|-------|----------|-----------|
+| Brain | 2,000g | 5,000g | 15,000g |
+| Heart, Lung, Liver, Kidney, Spine | 1,500g | 4,000g | 12,000g |
+| Stomach | 800g | 2,000g | 6,000g |
+| Jaw, Nose | 300g | 800g | 2,500g |
+| Shoulder | 400g | 1,000g | 3,000g |
 
 ---
 

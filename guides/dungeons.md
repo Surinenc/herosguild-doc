@@ -425,7 +425,7 @@ The 25% extra-roll chance at L10–20 stacks additively with the Criminal backgr
 
 ### Currency Drops
 
-Crafting currencies (see [Crafting Guide — Currencies](crafting.md#crafting-currencies)) can drop from dungeon completions. Regular dungeons yield Common currencies (Powders, ~10–15% per clear). Heroic dungeons drop the full range up to the Cursed Sigil (~1%).
+Crafting currencies (see [Crafting Guide — Currencies](crafting.md#crafting-currencies)) drop from dungeon completions. Regular dungeons yield Common currencies (Powders, ~10–15% per clear) and Rare+ currencies at lower rates (Ichors 0.5–1.5%, Portents ~1%, Salt of Cleansing 1%) — enough that mid-game players encounter the Workshop's advanced mechanics without needing endgame content. Heroic dungeons roughly double those rates and add the Cursed Sigil (~1%).
 
 ---
 

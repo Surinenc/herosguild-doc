@@ -19,16 +19,16 @@ Ten crafting station types, each requiring a hero who could otherwise be doing s
 
 | Station | Crafts | Skills Used |
 |---------|--------|-------------|
-| **Forge** | Metal weapons, armor | Blacksmithing |
-| **Armory** | Armor crafting | Armorsmithing |
-| **Tannery** | Leather processing and goods | Leatherworking |
-| **Loom** | Cloth processing and items | Tailoring |
+| **Forge** | Metal weapons, armor | Metalsmithing |
+| **Armory** | Armor crafting | Metalsmithing |
+| **Tannery** | Leather processing and goods | Softcraft |
+| **Loom** | Cloth processing and items | Softcraft |
 | **Alchemy Lab** | Potions and elixirs | Alchemy |
-| **Kitchen** | Food buffs and meals | Cooking |
-| **Enchanting Table** | Magic enhancements | Enchanting |
-| **Jeweler Bench** | Jewelry and accessories | Jewelcrafting |
-| **Lumber Mill** | Wood processing, bows, prosthetics | Leatherworking |
-| **Smelter** | Ore processing, ingots | Blacksmithing |
+| **Kitchen** | Food buffs and meals | Alchemy |
+| **Enchanting Table** | Magic enhancements | Arcana |
+| **Jeweler Bench** | Jewelry and accessories | Arcana |
+| **Lumber Mill** | Wood processing, bows, prosthetics | Metalsmithing |
+| **Smelter** | Ore processing, ingots | Metalsmithing |
 
 ### Station Levels (Base)
 
@@ -68,6 +68,10 @@ Guild facility upgrades provide **additional** speed and quality bonuses on top 
 | 4 | Master Workshop | 1.6× | +15% |
 | 5 | Grand Workshop | 2.0× | +20% |
 | 6 | Mythic Workshop | 2.5× | +30% |
+| 7 | Aetherforge | 2.8× | +35% |
+| 8 | Crucible Sanctum | 3.0× | +40% |
+| 9 | Reality Anvil | 3.5× | +50% |
+| 10 | Apotheosis Workshop | 4.0× | +60% |
 
 **Alchemy Lab Facility** (potions, elixirs):
 
@@ -100,49 +104,62 @@ Some stations require facility unlock missions (see [Dungeons Guide](dungeons.md
 
 ## Hero Crafting Skills
 
-Heroes level up crafting skills by crafting. There is no shortcut, no cheat, and no amount of motivational speeches that will substitute for actually making things:
+Heroes level up crafting skills by crafting. There is no shortcut, no cheat, and no amount of motivational speeches that will substitute for actually making things. Four consolidated disciplines cover all ten stations:
 
-| Skill | Max Level | Governs |
-|-------|-----------|---------|
-| Blacksmithing | 100 | Metal weapons/armor |
-| Armorsmithing | 100 | All armor types |
-| Leatherworking | 100 | Leather goods |
-| Tailoring | 100 | Cloth items |
-| Alchemy | 100 | Potions |
-| Enchanting | 100 | Magic enhancements |
-| Jewelcrafting | 100 | Accessories |
-| Cooking | 100 | Food buffs |
+| Skill | Max Level | Governs | Stations |
+|-------|-----------|---------|----------|
+| Metalsmithing | 100 | Metal weapons, armor, structural work | Forge, Armory, Smelter, Lumber Mill |
+| Softcraft | 100 | Leather and cloth goods | Tannery, Loom |
+| Alchemy | 100 | Potions, elixirs, food | Alchemy Lab, Kitchen |
+| Arcana | 100 | Enchantments, jewelry | Enchanting Table, Jeweler Bench |
 
 ### Skill Level Effects
 
 | Skill Level | Recipes Unlocked | Success Rate | Quality Bonus |
 |-------------|------------------|--------------|---------------|
-| 1-20 | ⭐ | 70% | -10% |
-| 21-40 | ⭐⭐ | 80% | +0% |
-| 41-60 | ⭐⭐⭐ | 85% | +5% |
-| 61-80 | ⭐⭐⭐⭐ | 90% | +10% |
-| 81-99 | ⭐⭐⭐⭐⭐ | 95% | +15% |
-| 100 | Masterwork | 100% | +25% |
+| 1-20 | ⭐ | 70% | +0% |
+| 21-40 | ⭐⭐ | 80% | +5% |
+| 41-60 | ⭐⭐⭐ | 85% | +10% |
+| 61-80 | ⭐⭐⭐⭐ | 90% | +15% |
+| 81-99 | ⭐⭐⭐⭐⭐ | 95% | +20% |
+| 100 | Masterwork | 100% | +30% |
+
+### Passive Combat Buffs
+
+Crafting skills aren't just for the workbench. Each hero's own crafting skill level grants a personal, always-active combat bonus — the game's way of rewarding heroes who've spent time at a station instead of a dungeon:
+
+| Skill | Stat Buffed | L21-40 | L41-60 | L61-80 | L81-99 | L100 |
+|-------|-------------|--------|--------|--------|--------|------|
+| Metalsmithing | Physical Damage | +5% | +10% | +15% | +20% | +30% |
+| Softcraft | Armor | +5% | +10% | +15% | +20% | +30% |
+| Alchemy | Max HP | +2% | +5% | +8% | +12% | +20% |
+| Alchemy | HP Regen (per turn) | +5% | +10% | +15% | +20% | +30% |
+| Arcana | Intelligence | +5% | +10% | +15% | +20% | +30% |
+
+Levels 1–20 grant no combat bonus. Bonuses from multiple levelled skills stack additively — a hero with Metalsmithing 60 and Arcana 40 gets +10% physical damage and +5% intelligence on top of everything else.
 
 ### Gaining Crafting XP
 
-Crafting XP is based on item tier and level:
+XP per level is linear — `100 × level` — so each successive level costs exactly 100 XP more than the last. Cumulative XP from 1 to 100 totals 505,000.
+
+Crafting XP per item is based on tier and level:
 
 ```
-XP = Base × Item Level × 15
+XP = Base × 100 + Item Level × 20
 ```
 
 | Material Tier | Base XP |
 |---------------|---------|
-| Common (T1) | 10 |
-| Uncommon (T2) | 25 |
-| Rare (T3) | 50 |
-| Epic (T4) | 100 |
-| Legendary (T5) | 200 |
+| Common (T1) | 1 |
+| Uncommon (T2) | 2 |
+| Rare (T3) | 5 |
+| Epic (T4) | 10 |
+| Legendary (T5) | 20 |
 
 **Examples:**
-- Common item (L5): 10 × 5 × 15 = 750 XP
-- Rare item (L30): 50 × 30 × 15 = 22,500 XP
+- Common item (L5): 1 × 100 + 5 × 20 = 200 XP
+- Rare item (L30): 5 × 100 + 30 × 20 = 1,100 XP
+- Legendary item (L70): 20 × 100 + 70 × 20 = 3,400 XP
 
 Exceptional quality crafts give +50% XP.
 
@@ -199,7 +216,7 @@ When crafting completes, quality is rolled:
 | 86-95 | Exceptional | +30% |
 | 96-100 | Masterwork | +50% |
 
-**Roll Modifiers (`Crafting.ts:2528`):**
+**Roll Modifiers (`crafting/system.ts:703`):**
 - Skill level adds directly to the roll
 - Station quality bonus adds to the roll
 - Masterwork skill (100) guarantees a 50+ roll
@@ -219,6 +236,26 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 
 The wiki previously claimed a Partial Fail produced an item at -1 quality tier; the current code path returns success:false with no item at all. The 50% XP grant on partial fail is the only consolation prize.
 
+### Crafted Item Sell Value
+
+Successful crafts produce items with a sell value based on material cost and quality — the game's way of ensuring your invested resources translate into at least something if the item isn't worth equipping:
+
+```
+Sell Value = floor(Material Cost × 1.3 + Gold Cost × 0.5 + Quality Bonus)
+```
+
+Quality bonus is a percentage of total material cost:
+
+| Quality | Bonus |
+|---------|-------|
+| Poor / Normal | 0% |
+| Fine | +10% |
+| Superior | +20% |
+| Exceptional | +30% |
+| Masterwork | +50% |
+
+Material cost is calculated using the sell anchor per tier: Common 100g, Uncommon 1,000g, Rare 10,000g, Epic 100,000g, Legendary 1,000,000g. A Masterwork Legendary item sells for considerably more than its component materials cost — which is, finally, a financial argument for patience.
+
 ---
 
 ## Recipes
@@ -230,7 +267,7 @@ Recipes enter your inventory through two confirmed code paths:
 | Source | How it works |
 |--------|--------------|
 | Starting set | Shipped with a new guild |
-| Quest chain rewards | `QuestChain.unlockRecipe()` is the only production hook (`Crafting.ts:2287`, called from `QuestChain.ts:493`) |
+| Quest chain rewards | `QuestChain.unlockRecipe()` is the only production hook (`crafting/system.ts:462`, called from `QuestChain.ts:493`) |
 
 There is no merchant-purchase recipe table, no general mission-reward recipe drop table, and no per-boss-tier recipe drop table in current code. If a future content patch adds these paths they will appear here.
 
@@ -324,9 +361,9 @@ Cloth → [Loom] → Fine Cloth
 
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
-| Peg Leg | ⭐⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron Ingot | Leatherworking 5 |
-| Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Mithril Ingot | Blacksmithing 10 |
-| Enchanted Leg | ⭐⭐⭐⭐ (Enhanced) | 2 Adamantine Ingot, 1 Dragon Bone, 2 Soul Shard, 1 Arcane Dust | Enchanting 15 |
+| Peg Leg | ⭐⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron Ingot | Softcraft 5 |
+| Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Mithril Ingot | Metalsmithing 10 |
+| Enchanted Leg | ⭐⭐⭐⭐ (Enhanced) | 2 Adamantine Ingot, 1 Dragon Bone, 2 Soul Shard, 1 Arcane Dust | Arcana 15 |
 
 ---
 
@@ -347,6 +384,67 @@ Costs double each time you reroll the same item. You can preview the new stats a
 
 ---
 
+## Crafting Currencies
+
+Ten consumable items that modify equipment bonus stats — the Workshop rerolls them wholesale, but currencies let you sculpt them one at a time, seal what you want to keep, or burn the lot down and start again. Think of them as the difference between "re-deal the whole hand" and "draw one card." The Cursed Sigil, at the far end, is the difference between "draw one card" and "flip a table."
+
+### Currency Types
+
+**Powders** (Common — purchasable at the Materials Market):
+
+| Currency | Effect |
+|----------|--------|
+| Powder of First Enchantment | Add one random bonus stat to an item that has none |
+| Powder of Erasure | Remove one random bonus stat (skips sealed stats) |
+
+**Salts** (Uncommon / Epic):
+
+| Currency | Effect |
+|----------|--------|
+| Salt of Renewal (Uncommon) | Reroll the *values* of existing bonus stats without changing which stats are present (skips sealed) |
+| Salt of Cleansing (Epic) | Strip *all* bonus stats and seals — a clean slate, for when the sculptor's approach has failed and the quarry's approach seems appropriate |
+
+**Ichors** (Rare — drop-only):
+
+| Currency | Effect |
+|----------|--------|
+| Ichor of Reshaping | Replace one random bonus stat with a different one (skips sealed) |
+| Ichor of Empowerment | Add one bonus stat, up to the item's maximum bonus slots |
+| Ichor of Sealing | Lock one bonus stat permanently — sealed stats cannot be removed, rerolled, or replaced by any currency |
+
+**Portents** (Epic — drop-only):
+
+| Currency | Effect |
+|----------|--------|
+| Portent of the Weighing | One-shot modifier: the *next* currency you apply targets the lowest-value stat |
+| Portent of Kinship | One-shot modifier: the *next* currency is restricted to the item's most common stat family |
+
+**Cursed Sigil** (Legendary — drop-only):
+
+Equal 25% chance of four outcomes: buff a stat, add a bonus slot, seal a stat, or **destroy the item**. All outcomes mark the item as Cursed. The Sigil is, in the Guild Clerk's opinion, an object that rewards courage and punishes optimism in equal measure.
+
+### Obtaining Currencies
+
+Common and Uncommon currencies (the two Powders and Salt of Renewal) are stocked daily at the Materials Market — 500g for either Powder, 5,000g for the Salt. Prices are fixed and exempt from market events.
+
+Everything Rare and above is drop-only, awarded from content completion:
+
+| Source | Drops |
+|--------|-------|
+| Regular Dungeons | Common Powders (10–15% per clear) |
+| Heroic Dungeons | Common–Rare currencies, Portents, Cursed Sigil (~1%) |
+| Abyssal Spire | Common–Rare currencies, Portents, Cursed Sigil (0.5% + soft pity) |
+| Raids | Rare currencies, Portents, Cursed Sigil (3%) |
+| World Bosses | Cursed Sigil only (5%) |
+
+Each currency is an independent Bernoulli roll per clear — you can receive multiple currencies from a single run. The Cursed Sigil has a soft-pity ramp on Abyssal floors: after 50 floors without one, the drop chance increases by +0.05% per floor, capping at 15%.
+
+### Workshop Currency Discount
+
+Workshop levels 2–10 reduce the gold cost of currency operations by 10% per level above 1 — `(level − 1) × 10%`, capped at 90% at level 10. This applies to the gold fee charged when you use a currency on an item, not to market purchase prices.
+
+---
+
 ## Tips for Efficient Crafting
 
 ### Early Game
@@ -358,7 +456,7 @@ Costs double each time you reroll the same item. You can preview the new stats a
 
 ### Mid Game
 
-1. **Specialize Heroes** - Different heroes for different skills; a Blacksmithing 80 and an Alchemy 80 outperform two heroes who are both at 40 in both
+1. **Specialize Heroes** - Different heroes for different skills; a Metalsmithing 80 and an Alchemy 80 outperform two heroes who are both at 40 in both
 2. **Use Assistants** - The speed bonus compounds with other modifiers; a full crafting team is meaningfully faster
 3. **Hunt for Recipes** - Boss dungeons drop blueprint tiers you cannot research; plan expeditions with this in mind
 4. **Quality Matters** - A Superior-quality item from a skilled crafter beats a Normal-quality item from the same recipe; wait for the crafter, not just the materials

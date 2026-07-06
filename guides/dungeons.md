@@ -411,6 +411,22 @@ Axis shifts accumulate along three axes — Valor ↔ Cunning, Wealth ↔ Glory,
 | High LCK stat | % better drops |
 | Secret rooms | +1 tier bonus |
 
+### Low-Level Drop Boost
+
+Low-level parties receive extra loot to smooth out the early game — the realm's equivalent of a new-employee welcome basket, except the basket contains swords:
+
+| Party Avg Level | Extra Rolls | Drop Count | Item Level Floor |
+|-----------------|-------------|------------|------------------|
+| 1–9 | +1 flat | ×1.5 (rounded up) | Party avg level (rounded up) |
+| 10–20 | 25% chance per base roll for +1 | Normal | None |
+| 21+ | Baseline | Normal | None |
+
+The 25% extra-roll chance at L10–20 stacks additively with the Criminal background's loot bonus — both roll independently per base drop.
+
+### Currency Drops
+
+Crafting currencies (see [Crafting Guide — Currencies](crafting.md#crafting-currencies)) can drop from dungeon completions. Regular dungeons yield Common currencies (Powders, ~10–15% per clear). Heroic dungeons drop the full range up to the Cursed Sigil (~1%).
+
 ---
 
 ## Death and Injury

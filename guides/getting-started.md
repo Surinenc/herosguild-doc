@@ -29,19 +29,34 @@ The Guild Screen is your home base — the single screen you'll spend most of yo
 - **Open the quest log** - Track story chains, class chains, and weekly bounties (a new bounty rolls every 7 days; the first one appears on **day 1** per `QuestChain.test.ts:794-809`)
 - **Open the shop** - Buy and sell items; the prices are not negotiable, but the regret is optional
 
-### Key Facilities
+### The Facilities Screen
 
-As you progress, unlock these essential facilities. The Guild Clerk's recommended priority is Barracks first (more heroes), then Forge (better equipment), then Alchemy Lab (potions save lives).
+The Facilities screen lists **fourteen** buildings in total, organised into four categories. Not all of them will make sense to a new Guild Master on Day One, but you should at least know they exist so you don't panic when the panel opens.
 
-| Facility | Purpose |
-|----------|---------|
-| Barracks | Increases hero capacity, affects mood and rest |
-| Training Yard | Heroes train skills and spar |
-| Forge | Craft metal weapons and armor |
-| Alchemy Lab | Brew potions and elixirs |
-| Enchanting Table | Add magical properties to items |
+**Core (8):** Guild Hall, Barracks, Tavern, Training Yard, Infirmary, Armory, Warehouse, Shop
+**Production (4):** Forge, Workshop, Alchemy Lab, Enchanting Table
+**Support (2):** Library, Chapel
+
+The Guild Clerk's recommended early priority is **Barracks first** (more heroes), then **Forge** (better equipment), then **Alchemy Lab** (potions save lives). The rest can wait until you've stopped bleeding gold.
+
+A few consolidations worth flagging, in case older guides confused you:
+
+- The **Kitchen** is not a separate building; food and drink production live under the **Alchemy Lab**.
+- The **Tannery**, **Loom**, and **Lumber Mill** all live under the **Workshop** these days.
+- The old **Vault** for items is now the **Armory**; the new **Warehouse** stores materials.
 
 The Facilities screen also has buttons that lead into two related sub-systems — **Hero Quarters** (private rooms, decorations, adjacency bonuses) and the **Materials Market** (buy and sell crafting materials with dynamic pricing). They're not part of the upgrade ladder, but you'll spend time in both.
+
+## Missions, Dungeons, Raids and the Tower — the four combat modes
+
+Before your first fight, know which door you're walking through. Hero's Guild has **four separate combat modes**, and new Guild Masters routinely confuse them:
+
+- **Missions** — contracts posted on the **Mission Board**. You assign heroes, they depart at night, they resolve while you continue your day. Simulated combat with a result report. This is the workhorse of guild income.
+- **Dungeons** — real-time interactive expeditions accessed from the **Dungeon** screen. You control the party as they move room-to-room, encounter combat, treasure, moral events, and bosses. Slower than missions but you have direct control.
+- **Raids** — 15-hero fights against realm-scale bosses. Unlock at **5,000 reputation and at least one level-50 hero**. See the [raid guide](raids.md).
+- **Endless Tower** (the **Abyssal Spire**) — a floor-by-floor endurance challenge. Requires **at least one level-95 hero** and — importantly — **a run of the Tower advances the game day by one on completion**. Plan around that; Tower runs are not free-time.
+
+New guilds should start with 1-2 star **Missions** or shallow **Dungeons**. Everything else is post-endgame.
 
 ## Your First Dungeon
 
@@ -69,12 +84,21 @@ Dungeons consist of multiple rooms connected by corridors. What's behind each do
 
 Combat is turn-based with these key mechanics:
 
-1. **Initiative** - Determines turn order (higher is faster)
-2. **Attack** - Use basic attacks or skills to damage enemies
-3. **Defend** - Reduce incoming damage
-4. **Skills** - Powerful abilities with various effects
+1. **Initiative** — determines turn order (higher is faster)
+2. **Attack** — use basic attacks or skills to damage enemies
+3. **Defend** — reduce incoming damage
+4. **Skills** — powerful abilities with various effects
 
 Target weaker enemies first, use your tank to draw aggro (threat), and keep your healer ready. If this sounds simple, the Guild Clerk assures you it will feel considerably less simple when three goblins are hitting your Mage.
+
+A few things happen in combat that new Guild Masters often don't recognise on their first fight:
+
+- **Skill gems** socketed into gear grant heroes their active and support skills. A hero with an empty weapon socket-group is missing a skill they could otherwise be using; see the **Vault** to socket one.
+- **Health potions** in a hero's Consumable slots are drunk automatically when the hero drops below 50% HP. Mana Flasks trigger below 30%. **Antidotes** trigger when a hero is poisoned. Equip these before missions or the hero cannot use them.
+- **Threat** is a hidden number. Tanks generate more of it; enemies attack the highest-threat visible target. If your Mage is being hit, either the tank isn't Defending or the Mage's Fireball made enemies angry enough to override the tank's threat.
+- **Status effects** — poison, bleed, burn, stun, freeze — tick every turn. Some can be prevented with resistances on gear. Poison can be cleared mid-fight with an Antidote in a Consumable slot.
+
+You don't need to master any of this on Day One. You do need to know these systems exist, because they will kill your heroes long before you notice them.
 
 ## After the Dungeon
 
@@ -110,9 +134,11 @@ The transition from "small band of adventurers" to "functioning institution" is 
 
 Three things will make or break your guild. Ignore any one of them and the Guild Clerk will be writing your closure report.
 
-- **Gold** - Pay **daily** hero wages (`calculateHeroWages` runs every day-advance via `GameState.ts:3284`), buy items, construct buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
-- **Materials** - Craft equipment and consumables. Running out of materials mid-craft is the guild equivalent of running out of flour mid-cake.
-- **Hero Mood** - Keep heroes happy for better performance. Unhappy heroes fight poorly, pick fights with each other, and occasionally leave. Happy heroes merely complain about the food.
+- **Gold** — pay daily upkeep on facilities and daily wages on **any hero at level 10 or above** (per `calculateHeroWages`; level 1-9 heroes are free until they earn their tenth level). Also pays for recruitment, contracts, items, and buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
+- **Time (days)** — the clock is always moving. Each day advances hero lifecycles, rotates the Mission Board, ages relationships, and re-rolls what merchants are selling. There is no pause. A day where you do nothing costs you wages and progresses events you might have preferred to attend to. **Time is the resource you can't buy more of.**
+- **Materials** — craft equipment and consumables. Running out of materials mid-craft is the guild equivalent of running out of flour mid-cake.
+
+**Hero Mood** is not a shared resource — it's a per-hero attribute — but it interacts with the three above. Unhappy heroes fight poorly, pick fights with each other, and occasionally leave. Happy heroes merely complain about the food.
 
 ## Common Mistakes to Avoid
 
@@ -124,20 +150,32 @@ The Guild Clerk has seen every one of these mistakes. Multiple times. Sometimes 
 4. **Hoarding gold** - Invest in facilities and equipment. Gold in the vault doesn't fight dragons.
 5. **Neglecting relationships** - Heroes with bonds fight better together. Heroes who hate each other fight worse — and occasionally fight each other.
 
+## Systems You'll Encounter That This Guide Doesn't Cover Yet
+
+The Quick Start above is enough to get you moving, but the game has several systems that will appear in your first few hours without introduction. Here's a two-line preview of each so nothing takes you by surprise:
+
+- **Chronicle** — every hero has an auto-generated per-hero journal recording everything they've done, refused, been party to, or fled from. Check it before you fire someone.
+- **Prosthetics** — heroes who lose limbs, eyes, or (yes) internal organs can have them replaced. Options range from "carved wooden leg" to "Octiron Cogitator." See [equipment](equipment.md).
+- **Passive Tree** — every hero has a 354-node passive progression tree they allocate as they level. See [passive tree](passive-tree.md).
+- **Ascendancy** — at higher levels, heroes can undertake trials to specialise further. Fourteen ascendancy paths total, 2-3 per class. See [ascendancy](ascendancy.md).
+- **Skill Gems** — active + support gems socketed into gear grant heroes their combat abilities. See [skills](skills.md).
+- **Guild Identity + Crises** — the guild has three moral axes that swing based on your choices. Certain axis positions can trigger realm-wide crises. See [crisis](crisis.md).
+- **Recipe Research** — most craft recipes must be researched at the Workshop before you can craft them. See [crafting](crafting.md).
+
 ## Next Steps
 
 Once you're comfortable with the basics:
 
-- [Heroes & Classes](heroes.md) - Learn about the 6 hero classes
-- [Combat System](combat.md) - Master tactical combat
-- [Equipment & Items](equipment.md) - Understand gear and gems
-- [Guild Management](guild.md) - Optimize your guild operations
+- [Heroes & Classes](heroes.md) — learn about the 6 hero classes
+- [Combat System](combat.md) — master tactical combat
+- [Equipment & Items](equipment.md) — understand gear and gems
+- [Guild Management](guild.md) — optimise your guild operations
 
 Endgame, when you get there:
 
-- [Heroic Dungeons](heroic-dungeons.md) - Weekly modifier-laden challenges
-- [Abyssal Spire](tower.md) - The endless tower, for parties with at least one level-95 hero
-- [World Boss Raids](raids.md) - 15-hero raid fights, unlocked at 5000 guild reputation and a level-50 hero
+- [Heroic Dungeons](heroic-dungeons.md) — weekly modifier-laden challenges
+- [Abyssal Spire](tower.md) — the endless tower, for parties with at least one level-95 hero (note: each Tower run advances the game day)
+- [World Boss Raids](raids.md) — 15-hero raid fights, unlocked at 5,000 guild reputation and a level-50 hero
 
 ---
 

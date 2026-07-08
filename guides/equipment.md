@@ -215,6 +215,35 @@ A higher-tier line of mana consumables for heroes who've gone past the "occasion
 
 Craftable at the alchemy bench. The recipes are short. The alchemist's commentary on them, less so.
 
+### Antidote
+
+| Name | Rarity | Effect | Stack |
+|------|--------|--------|-------|
+| Antidote | Common | Cures poison, consumed on use | 10 |
+
+**Auto-Use:** If a hero is poisoned at the start of their turn, they automatically use an Antidote from their Consumable slots (slot 1 checked first, then slot 2) — same priority order as health potions. The poison status is cleared instantly. Pack these for swamp dungeons and anything involving snakes, spiders, or alchemists with poor aim.
+
+### Phylactery Elixir
+
+| Name | Rarity | Level | Effect | Stack |
+|------|--------|-------|--------|-------|
+| Phylactery Elixir | Legendary | 80 | Cheat death: revive to full HP + mana | 1 |
+
+The insurance policy the Guild Clerk wishes the guild itself could afford. When a hero carrying a Phylactery Elixir would take lethal damage, the elixir intervenes — the hero revives at full HP and full mana, and the elixir is consumed. Once per equip, no passive stats, no second chances on the second chance. The check runs inside `Hero.takeDamage` before death is finalised, so it catches all damage sources: normal attacks, DoTs, and AoE splash.
+
+### Elixirs
+
+Elixirs are percentage-based stat buffs equipped in the two Consumable slots. They come in four tiers — Uncommon through Legendary — with escalating stat budgets and decreasing stack sizes. Unlike potions, elixirs are not auto-consumed; they provide passive bonuses for as long as they're equipped.
+
+| Tier | Example | Stack | Level Range |
+|------|---------|-------|-------------|
+| Uncommon | Elixir of Swiftness | 5 | 22+ |
+| Rare | Elixir of Braggart's Bravery | 4 | 35–40 |
+| Epic | Elixir of the Iron Titan | 3 | 55–65 |
+| Legendary | Elixir of the Gods, Elixir of the World Root | 1 | 80–85 |
+
+Legendary elixirs include `hpRegenPct` — a per-turn HP regeneration bonus wired into the combat regen loop — rather than the one-shot full heals they once carried.
+
 ### Buff Potions
 
 | Name | Effect | Duration |

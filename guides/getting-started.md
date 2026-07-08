@@ -134,7 +134,7 @@ The transition from "small band of adventurers" to "functioning institution" is 
 
 Three things will make or break your guild. Ignore any one of them and the Guild Clerk will be writing your closure report.
 
-- **Gold** — pay daily upkeep on facilities and daily wages on **any hero at level 10 or above** (per `calculateHeroWages`; level 1-9 heroes are free until they earn their tenth level). Also pays for recruitment, contracts, items, and buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
+- **Gold** — pay daily upkeep on facilities and daily wages on every **level-2-and-above** hero (per `calculateHeroWages`; level-1 heroes are freshers and cost nothing until they earn their second level). Wages scale exponentially with level and hero quality, so a level-100 Legendary hero costs orders of magnitude more per day than a level-10 Common. Also pays for recruitment, contracts, items, and buildings. Gold leaves faster than it arrives. This is normal. This is also terrifying.
 - **Time (days)** — the clock is always moving. Each day advances hero lifecycles, rotates the Mission Board, ages relationships, and re-rolls what merchants are selling. There is no pause. A day where you do nothing costs you wages and progresses events you might have preferred to attend to. **Time is the resource you can't buy more of.**
 - **Materials** — craft equipment and consumables. Running out of materials mid-craft is the guild equivalent of running out of flour mid-cake.
 

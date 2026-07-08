@@ -93,7 +93,7 @@ Target weaker enemies first, use your tank to draw aggro (threat), and keep your
 
 A few things happen in combat that new Guild Masters often don't recognise on their first fight:
 
-- **Skill gems** socketed into gear grant heroes their active and support skills. A hero with an empty weapon socket-group is missing a skill they could otherwise be using; see the **Vault** to socket one.
+- **Skill gems** socketed into gear grant heroes *additional* active and support skills. Every class already has native abilities (Warriors get Strike and Power Attack, Clerics get Smite and Heal, etc.) that cost no mana and fire without any gems. Gems add stronger, mana-costing options on top — a Warrior with a Cleave gem can hit multiple enemies at once. See the **Vault** to socket them.
 - **Health potions** in a hero's Consumable slots are drunk automatically when the hero drops below 50% HP. Mana Flasks trigger below 30%. **Antidotes** trigger when a hero is poisoned. Equip these before missions or the hero cannot use them.
 - **Threat** is a hidden number. Tanks generate more of it; enemies attack the highest-threat visible target. If your Mage is being hit, either the tank isn't Defending or the Mage's Fireball made enemies angry enough to override the tank's threat.
 - **Status effects** — poison, bleed, burn, stun, freeze — tick every turn. Some can be prevented with resistances on gear. Poison can be cleared mid-fight with an Antidote in a Consumable slot.

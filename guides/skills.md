@@ -86,7 +86,6 @@ The system enforces a strict placement hierarchy (`ItemForge.ts:canSocketGemInto
 
 - **Active gems require an empty group.** You cannot place an active skill into a link group that already has any gem socketed — clear the group first.
 - **Supports must be tag-compatible.** Once a link group has an active gem, any new support must pass the active's `canBeSupported` check (matching tags). Incompatible supports are greyed out in the UI.
-- **Class-lock gate.** Gems with an `allowedClasses` restriction cannot be socketed by heroes of the wrong class — the Guild is strict about it.
 - **Cascade unsocket.** Removing an active gem from a group also unsockets every support in that group, since a support group with no active is inert. All ejected gems return to the hero's gem inventory.
 - **Duplicate supports stack.** You can socket two copies of the same support gem into one group — they stack additively rather than being deduplicated.
 
@@ -298,7 +297,7 @@ Result: AoE healing (Healing Light is already AoE at the gem level — see the g
 
 1. **Match gem colors to sockets** - Plan your equipment around desired skill colors
 2. **Balance mana costs** - Support gems multiply mana costs; don't overstack
-3. **Consider your class** - Some gems work better with certain classes
+3. **Any hero, any gem** - Class restrictions on gem socketing have been removed; stat requirements (STR/DEX/INT) are the only natural gate
 4. **Level your main skills** - Focus XP on your primary damage/healing gems
 5. **Link count matters** - A 4-link with good supports beats a 6-link with bad ones
 
@@ -329,7 +328,7 @@ Heroes have a personal gem inventory separate from equipment sockets. Unneeded g
 
 - [Equipment & Items](equipment.md) - Socket system on gear
 - [Combat System](combat.md) - How skills work in combat
-- [Heroes & Classes](heroes.md) - Class-specific skill considerations
+- [Heroes & Classes](heroes.md) - Hero stats and progression
 
 ---
 

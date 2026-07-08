@@ -37,7 +37,7 @@ The Facilities screen lists **fourteen** buildings in total, organised into four
 **Production (4):** Forge, Workshop, Alchemy Lab, Enchanting Table
 **Support (2):** Library, Chapel
 
-The Guild Clerk's recommended early priority is **Barracks first** (more heroes), then **Forge** (better equipment), then **Alchemy Lab** (potions save lives). The rest can wait until you've stopped bleeding gold.
+The Guild Clerk's recommended early priority is **Guild Hall to level 2 first** — that raises parallel mission slots from 2 to 4, which roughly doubles income throughput. Then **Forge** for better equipment and **Alchemy Lab** for potions. Barracks upgrades wait until you actually have enough heroes to fill the starting capacity of 12; a fresh guild with three starters won't touch that cap for a while. The rest can wait until you've stopped bleeding gold.
 
 A few consolidations worth flagging, in case older guides confused you:
 

@@ -4,7 +4,7 @@ Two heroes, same class, same level, same sword, same gloves, same hat. They will
 
 This is not a bug. It is the entire point.
 
-Every hero arrives with a past — eight broad-strokes flavours of it, and four specific things that happened to them on the way to your tavern door — and the past does not stay in the past. It compounds quietly into the damage chain, into the HP pool, into every stat lookup. Two heroes who look identical on the equipment screen are, underneath, different people, doing different jobs, with different scars. The CV is not decoration. The CV is the rest of the build.
+Every hero arrives with a past — eight broad-strokes flavours of it, and four specific things that happened to them on the way to your tavern door, drawn from a catalog of just under two hundred events — and the past does not stay in the past. It compounds quietly into the damage chain, into the HP pool, into every stat lookup. Two heroes who look identical on the equipment screen are, underneath, different people, doing different jobs, with different scars. The CV is not decoration. The CV is the rest of the build.
 
 This guide covers the **Background tag** (the broad-strokes "what they did before") and the **Lifecycle** (the four life events that flesh it out). The two systems compose: the tag biases which events get rolled, and the events make the tag feel like a specific person rather than a template. The Guild Clerk considers this an improvement on the previous design, in which all Mages were essentially the same Mage wearing different hats.
 
@@ -33,10 +33,10 @@ Every hero, at the moment of generation, gets four things that happened to them.
 
 | Stage | Ages | UI label | Events authored |
 |-------|------|----------|-----------------|
-| Childhood | 5–10 | "Childhood" | 30 |
-| Adolescence | 11–16 | "Adolescence" | 30 |
-| Young Adulthood | 17–22 | "Young Adulthood" | 30 |
-| Before the Guild | 23–30 | "Before the Guild" | 30 |
+| Childhood | 5–10 | "Childhood" | 44 |
+| Adolescence | 11–16 | "Adolescence" | 49 |
+| Young Adulthood | 17–22 | "Young Adulthood" | 53 |
+| Before the Guild | 23–30 | "Before the Guild" | 48 |
 
 The roll happens once, at hire (or when you first look at a hero on a save that pre-dates this system — see [Existing Saves](#existing-saves) below). It does not change. The same hero, on the same save, will always have the same four paragraphs. There is no re-roll. The Guild Clerk has fielded the question many times and the answer has not improved with practice.
 
@@ -46,7 +46,7 @@ The roll is not uniform. Each event in the pool is tagged with zero or more back
 
 Backgrounds tilt the dice. They do not seal the bag.
 
-The authoring guide also enforces a hard cap: no single background tag can claim more than a quarter of any stage's events. This keeps the weighting from collapsing into "every Noble has the same four paragraphs," which would defeat the purpose of having a hundred and twenty of them.
+The authoring guide also enforces a hard cap: no single background tag can claim more than a quarter of any stage's events. This keeps the weighting from collapsing into "every Noble has the same four paragraphs," which would defeat the purpose of having nearly two hundred events to draw from.
 
 ---
 

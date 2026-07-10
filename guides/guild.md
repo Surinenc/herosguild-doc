@@ -39,6 +39,45 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 
 ---
 
+## Facility Upgrades Take Time
+
+Upgrading a facility is not instant. As of spec 221 (2026-07-10), every facility upgrade is a **construction project** that ticks down one in-game day at a time until the new level is finished. The mechanic is governed by an `upgradeTimeDays` value on each level entry — values range from **2 days to 20 days** depending on which facility and which level you're moving to.
+
+### The rules
+
+- **Old level stays active during the build.** If you upgrade the Guild Hall from level 1 to level 2 (a three-day build), your guild still has the L1 two mission slots for those three days. You lose nothing by starting; you gain the new level's benefits on completion.
+- **One at a time, guild-wide.** Only a single facility can be under construction at any moment. The Facilities screen will refuse to start a second upgrade and will name the currently-building facility in the error. Prioritise carefully — the Master Builder does not sub out.
+- **No cancellation.** Once construction has begun, the gold and materials are committed and the ledger has moved on. You cannot stop it, you cannot refund it. Wait for it to finish and consider it a lesson if you regret the choice.
+- **Completion emits a day-summary event.** On the day construction finishes, the day-tick pushes a `facility_upgrade_complete` phase event (`"🏗 Guild Hall reached level 2."`) so you don't need to open the Facilities screen to know it's done.
+
+### Build-time distribution
+
+Across all 14 facilities × 5 levels, `upgradeTimeDays` values from `GuildFacilities.ts` cluster as follows (excluding the "already-built" level-1 entries which are 0):
+
+| Build days | Count | Notable examples |
+|-----------|-------|------------------|
+| 2 | 7 | Barracks L2, Training Yard L2 — the low-level "quick" upgrades |
+| 3 | 10 | Guild Hall L2, Tavern L2, Alchemy Lab L2 — the most common bucket |
+| 4 | 3 | Barracks L3, Forge L3 |
+| 5 | 5 | Tavern L3, Training Yard L3 |
+| 6 | 6 | Barracks L4, mid-tier upgrades |
+| 7 | 4 | Guild Hall L3 |
+| 8 | 3 | Higher tiers on Support facilities |
+| 10 | 7 | Barracks L5, Training Yard L4 |
+| 14 | 1 | Guild Hall L4 |
+| 15 | 1 | Tavern L5 |
+| 20 | 3 | The endgame Legendary tiers — Guild Hall L5 sits in this bucket |
+
+Rule of thumb: expect two-to-three-day builds early on, single-digit builds through the mid-game, and multi-week commitments for anything Legendary-tier.
+
+### UI cues
+
+- The **Facilities tile** shows a `🏗 Nd` badge and a small progress bar under the level line while a facility is under construction.
+- The **detail panel** replaces the "Upgrade" affordance with a construction card explaining the days remaining and reminding you the upgrade cannot be cancelled.
+- The **next-level block** on the detail panel now shows the build time up front (`"Build time: 3 days · facility remains active at Level 1 while building"`) so you see the wait cost before you commit.
+
+---
+
 ## Facility Details
 
 ### Guild Hall

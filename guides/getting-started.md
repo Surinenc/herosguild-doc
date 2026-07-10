@@ -8,7 +8,9 @@ When you start Hero's Guild for the first time, you'll be greeted with the main 
 
 ### Your Starting Roster
 
-You begin with **500 gold** and three pre-recruited heroes already on the books — a Warrior, a Mage, and a Cleric. The Warrior and Mage arrive with starter weapons; the Cleric arrives armed with optimism.
+You begin with **500 gold** and three pre-recruited heroes already on the books — a Warrior, a Mage, and a Cleric. The Warrior and Mage arrive with starter weapons (a Rusty Sword and a Worn Staff respectively); the Cleric arrives armed with optimism. You'll want to buy her a basic weapon at the Shop before her first mission.
+
+Worth knowing up-front: the starter weapons have **zero sockets**, so skill gems can't be socketed into them. Your first socketed weapons will drop from mission loot or come out of the Forge — that's when the Vault's socketing UI becomes relevant. Until then, heroes fight with their native class skills (see the [Combat System](combat.md) guide).
 
 This baseline gives you a tank/DPS/healer triangle from day one. Visit the **Tavern** to expand your roster. When you do, consider whether you need:
 

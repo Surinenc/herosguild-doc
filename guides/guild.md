@@ -381,20 +381,47 @@ Research new recipes and lore. The librarian insists on silence, which is ambiti
 
 ### Chapel
 
-Provides mood bonuses and funeral services — two things that, in the adventuring business, are needed with roughly equal frequency.
+Provides mood bonuses, funeral services, blessings, and (from Temple level onward) sacred crafting — four things that, in the adventuring business, are needed with roughly equal frequency.
 
 | Level | Name | Mood Bonus | Features |
 |-------|------|------------|----------|
 | 1 | Small Shrine | +3 | Basic services |
-| 2 | Chapel | +6 | Blessings |
-| 3 | Temple | +10 | Holy crafts |
-| 4 | Grand Chapel | +15 | Expanded blessings |
-| 5 | Divine Sanctum | +22 | Full divine services |
+| 2 | Chapel | +6 | Blessings unlocked |
+| 3 | Temple | +10 | Blessings strengthen; Sacred Crafts unlocked (2 recipes) |
+| 4 | Grand Chapel | +15 | Blessings strengthen further; Sacred Crafts (4 recipes) |
+| 5 | Divine Sanctum | +22 | Blessings at full strength; Sacred Crafts (6 recipes) |
 
 **Special Features:**
 - Memorial services for fallen heroes — the Chapel exists for many reasons, but this is the one it gets used for most
 - Daily mood bonus for all heroes; the only passive benefit that doesn't require anyone to do anything dangerous
-- Blessing buffs before expeditions — optional, but the Guild Clerk has noticed that heroes who skip the blessing tend to become memorial cases
+- Blessing buffs before expeditions, from Chapel level 2 onward
+- Sacred item crafting at the Forge, from Chapel level 3 onward (requires a Cleric on the roster)
+
+#### Blessing types
+
+The guild receives **one blessing charge per day** whenever the Chapel is at level 2 or above — no charge at level 0/1. Unspent charges do not roll over; the pool simply refills to 1 at the next dawn. From the Mission Board's contract-detail panel, spend the day's charge to bless an undispatched contract with one of three types. The blessing sticks until that mission resolves.
+
+Chapel level does not grant extra charges — it's always one call a day — but it does make that one call more decisive: the blessing's magnitude scales with Chapel level.
+
+| Blessing | L2 (Chapel) | L3 (Temple) | L4 (Grand Chapel) | L5 (Divine Sanctum) |
+|---|---|---|---|---|
+| **✚ Courage** — party damage / mission success | +5% dmg / +3% success | +8% / +5% | +12% / +7% | +15% / +10% |
+| **✧ Fortune** — loot count / legendary chance | +10% loot / +1% legendary | +15% / +2% | +20% / +3% | +25% / +4% |
+| **⛨ Vigilance** — injury avoidance | −8% injury chance | −12% | −16% | −20% |
+
+Blessings nudge the odds; they don't override them. A Vigilance-blessed party can still come home limping — just less often than an unblessed one would.
+
+#### Sacred Crafts
+
+Once the Chapel reaches Temple (level 3) and the guild has a Cleric on the roster, six named-item recipes become available at the Forge (Metalsmithing skill — no new station required):
+
+| Chapel level | Recipes unlocked | Items |
+|---|---|---|
+| 3 | +2 | Blessed Warhammer, Blessed Plate |
+| 4 | +2 (4 total) | Blessed Amulet, Blessed Circlet |
+| 5 | +2 (6 total) | Blessed Shield, Blessed Greaves |
+
+All six use `blessed_stone`, `world_tree_branch`, and `god_tear` — the same materials the Chapel's own upgrades consume — plus mundane metals. Every piece is Ancestral rarity and Cleric-locked. If your only Cleric leaves the roster, the recipes vanish from the Forge list until you recruit another one; nothing already crafted is affected.
 
 ---
 

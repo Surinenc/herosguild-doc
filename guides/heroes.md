@@ -326,6 +326,8 @@ Certain injuries cause instant death — which is why the vital-organ prosthetic
 
 Destroyed parts can be replaced with prosthetics. The original limb-and-sense set (arms, legs, hands, feet, eyes, ears) is joined by full-body prosthetics covering 10 additional body part families — Brain, Jaw, Nose, Heart, Lung, Liver, Kidney, Stomach, Spine, and Shoulder — for a total of 47 prosthetic types. The Guild Clerk considers this a testament to both engineering ambition and the frequency of workplace injuries.
 
+**Installing one:** Open a hero's Body Status modal (the ✚ panel on the right of the character screen). Every non-healthy part with an in-stock, tier-compatible prosthetic gets an install button showing the prosthetic name, efficiency, and current stock — click to fit it. The button only appears when the current Infirmary tier supports that prosthetic. Fees are paid at craft time via material costs (see [Crafting Guide](crafting.md)); the surgical procedure itself is currently free — the Guild Clerk assumes the anaesthetic budget will resolve itself.
+
 | Tier | Efficiency | Infirmary Level | Crafting Skill |
 |------|------------|-----------------|----------------|
 | Basic | 50% | Level 3 | Softcraft 5 |
@@ -334,15 +336,7 @@ Destroyed parts can be replaced with prosthetics. The original limb-and-sense se
 
 **Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys, Stomach, Spine) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead (or, for paired organs like lungs and kidneys, dies only when both are gone). The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders) work as before: Destroyed-only installation.
 
-**Install fees** scale with the body part's importance to continued breathing:
-
-| Body Part | Basic | Standard | Enchanted |
-|-----------|-------|----------|-----------|
-| Brain | 2,000g | 5,000g | 15,000g |
-| Heart, Lung, Liver, Kidney, Spine | 1,500g | 4,000g | 12,000g |
-| Stomach | 800g | 2,000g | 6,000g |
-| Jaw, Nose | 300g | 800g | 2,500g |
-| Shoulder | 400g | 1,000g | 3,000g |
+**Install fees:** The gold-cost surgical fee described in previous versions is not currently charged — the only cost is the material investment at craft time. If per-part surgical fees are added later, this section will list them.
 
 ---
 

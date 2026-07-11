@@ -706,13 +706,15 @@ The guild shop lets you sell items to visiting customers for gold — turning yo
 
 | Level | Name | Display Slots | Customers/Day | Daily Upkeep |
 |-------|------|---------------|---------------|--------------|
-| 1 | Market Stall | 8 | 3-5 | 5g |
-| 2 | Small Shop | 16 | 5-8 | 10g |
-| 3 | Merchant Store | 24 | 8-12 | 20g |
-| 4 | Trading Post | 32 | 12-16 | 600g |
-| 5 | Emporium | 48 | 16-24 | 1,500g |
+| 1 | Market Stall | 8 | 4-7 | 5g |
+| 2 | Small Shop | 16 | 6-10 | 10g |
+| 3 | Merchant Store | 24 | 10-15 | 20g |
+| 4 | Trading Post | 32 | 14-20 | 600g |
+| 5 | Emporium | 48 | 20-30 | 1,500g |
 
-**Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with different budgets and item preferences.
+**Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with a distinct budget range, a curated list of item types they'll consider, and a base rarity ceiling. Peasants stick to Consumables and Materials; Merchants trade in bulk goods and accessories; Nobles buy prestige (accessories, then weapons/armor/helmets); Collectors pay any price for high-tier weapons, armor, and accessories. Higher shop levels tilt the mix toward wealthier customer types rather than granting Peasants more spending power.
+
+**Thieves:** Peasants have the highest chance of attempting theft (~8%); Rival Guilds are also plausible saboteurs (~5%); Knights, Nobles, and Collectors never steal. Anti-theft investment (shop level, guard, shopkeeper skill) raises the catch rate — a caught thief leaves an audit-visible ⚑ mark on the shelf for a couple of days.
 
 **Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit. Finding the sweet spot is an art form that most guild masters discover through expensive trial and error.
 

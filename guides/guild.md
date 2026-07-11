@@ -405,9 +405,15 @@ Chapel level does not grant extra charges — it's always one call a day — but
 
 | Blessing | L2 (Chapel) | L3 (Temple) | L4 (Grand Chapel) | L5 (Divine Sanctum) |
 |---|---|---|---|---|
-| **✚ Courage** — party damage / mission success | +5% dmg / +3% success | +8% / +5% | +12% / +7% | +15% / +10% |
-| **✧ Fortune** — loot count / legendary chance | +10% loot / +1% legendary | +15% / +2% | +20% / +3% | +25% / +4% |
-| **⛨ Vigilance** — injury avoidance | −8% injury chance | −12% | −16% | −20% |
+| **✚ Courage** — party damage / critical-success chance | +5% dmg / +3% crit | +8% / +5% | +12% / +7% | +15% / +10% |
+| **✧ Fortune** — loot count / legendary drop chance | +10% loot / +1% legendary | +15% / +2% | +20% / +3% | +25% / +4% |
+| **⛨ Vigilance** — post-death-save injury reduction | −8% injury chance | −12% | −16% | −20% |
+
+**What each blessing actually does — the print behind the percentages:**
+
+- **Courage's "success" is the critical-success chance**, not the base win rate. If your party would win the mission, Courage improves the odds that the win is a Critical Success (bigger rewards). It doesn't turn losing missions into winning ones — pick your fight before you bless it.
+- **Fortune's legendary boost only fires on missions that could drop a Legendary anyway** (mission level 60+ and 4-star+ difficulty). On lower-tier contracts the loot-count bonus still applies, but the legendary chance is silently zeroed — the Chapel isn't going to summon a Legendary from a Rare-tier goblin cave.
+- **Vigilance is the survivor's blessing.** It protects heroes who got knocked to zero HP during the mission and passed their death save — the ones bleeding out on the ground when the fight ends. Those heroes usually come back to the guild with a lasting injury; Vigilance drops that injury chance by the stated %. Heroes who never went down aren't at injury risk anyway, so Vigilance doesn't waste on them. In practice: on a mission where no one gets seriously hurt, Vigilance did nothing visible; on a mission where a hero cheated death, Vigilance is the difference between a scar and a healthy return.
 
 Blessings nudge the odds; they don't override them. A Vigilance-blessed party can still come home limping — just less often than an unblessed one would.
 

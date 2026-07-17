@@ -196,7 +196,7 @@ Defensive skills, mostly for heroes who've learned what happens without them.
 | Gem | Type | Description |
 |-----|------|-------------|
 | **Enduring Cry** | Self | Restore HP, generate endurance charges |
-| **Rallying Cry** | Party | Buff nearby allies' damage |
+| **Rallying Cry** | Party | Buffs the party's damage modifier for its duration; stacks *additively* with pre-combat additions (Courage blessing, OathSworn bond). When the warcry expires, only its own contribution is removed — pre-combat bonuses survive intact |
 | **Steady Aim** | Self HoT (Ranger) | Grants life regen while active; the Ranger's quiet 4-turn promise that they are about to do something competent |
 | **Unholy Vigor** | Self HoT (Necromancer) | Sustained life regen via dark vitality; "darkness is surprisingly nurturing if you ask nicely" |
 

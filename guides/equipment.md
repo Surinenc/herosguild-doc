@@ -192,7 +192,7 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 | Health Potion | Uncommon | 150 HP | 10 |
 | Greater Health Potion | Rare | 400 HP | 5 |
 
-**Auto-Use:** Heroes automatically drink health potions when below 50% HP.
+**Auto-Use:** Heroes automatically drink health potions when below the configured HP threshold (default **50%**, adjustable in Settings → Combat).
 
 ### Mana Potions
 
@@ -205,7 +205,7 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 
 ### Mana Flasks
 
-A higher-tier line of mana consumables for heroes who've gone past the "occasionally run dry" stage and into the "regularly spend a 6-link's mana in one turn" tier. Combat tactical logic auto-uses these when mana drops below threshold and a flask is in either Consumable slot.
+A higher-tier line of mana consumables for heroes who've gone past the "occasionally run dry" stage and into the "regularly spend a 6-link's mana in one turn" tier. Combat tactical logic auto-uses these when mana drops below the configured threshold (default **30%**, adjustable in Settings → Combat) and a flask is in either Consumable slot.
 
 | Name | Rarity | Mana | Min Level | Stack |
 |------|--------|------|-----------|-------|

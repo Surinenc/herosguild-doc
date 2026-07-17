@@ -32,7 +32,7 @@ Every round resolves in the same four phases, in the same order, without excepti
 | **Defend** | 50% damage reduction until next turn; some heroes call this cowardice, others call it still being alive |
 | **Flee** | Attempt to escape (30% + DEX + LCK/2 chance); feels lower than it sounds when you're actually trying it |
 
-**Auto-Potions:** If a hero is below 50% HP at the start of their turn, they automatically drink a health potion (if available). Poisoned heroes also auto-use an Antidote if one is equipped (slot 1 first, then slot 2). This is, admittedly, the only consistently good decision most heroes make without supervision.
+**Auto-Potions:** At the start of a hero's turn, they automatically drink a health potion if HP is below the configured threshold (default **50%**, adjustable in Settings → Combat). Mana flasks auto-trigger the same way when mana falls below a separate threshold (default **30%**). Poisoned heroes also auto-use an Antidote if one is equipped (slot 1 first, then slot 2). These are, admittedly, the only consistently good decisions most heroes make without supervision.
 
 ---
 

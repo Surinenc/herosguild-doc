@@ -394,7 +394,7 @@ Heroes killed in combat get a memorial in the Chapel. When a hero dies, the real
 
 - Generates an **obituary** — a short, Chronicle-flavoured three-paragraph piece drawn from the hero's background, career, relationships, and the manner of their death. The Guild Clerk has standing instructions not to read these aloud at staff meetings, having tried it once
 - Preserves any **earned titles** the hero held; the memorial card shows the first two as title chips with a `+N` overflow indicator
-- Marks the hero as `Dead` and removes them from the active roster permanently
+- Marks the hero as `Dead` and removes them from the active roster permanently — their equipment goes with them. Gear cannot be pulled from a corpse during the burial grace period; the loadout is buried alongside the hero. The Vault will not let you select a dead hero's items, however briefly they're still in the system
 
 Memorial cards are visible from the Chapel screen. The cards persist indefinitely; the realm does not forget. The Guild Clerk, asked whether the memorial should ever be cleared, has replied only "no" on each of the seven occasions the question has come up.
 

@@ -52,7 +52,7 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 - **14 Ascendancy Paths**: 2-3 specializations per class
 - **Deep Combat System**: Turn-based with initiative, threat, and positioning
 - **Relationship System**: Heroes form bonds, rivalries, and romances
-- **Extensive Crafting**: 4 production facilities with 100+ recipes
+- **Extensive Crafting**: 10 production facilities across blacksmithing, alchemy, enchanting, and more
 - **Procedural Dungeons**: 7 environments with unique mechanics
 - **Endgame Content**: Heroic Dungeons, Abyssal Spire, World Bosses
 

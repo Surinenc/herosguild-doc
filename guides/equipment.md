@@ -250,7 +250,7 @@ Legendary elixirs include `hpRegenPct` — a per-turn HP regeneration bonus wire
 |------|--------|----------|
 | Strength Tonic | +15 STR | 1 combat |
 | Defense Potion | +25 Armor | 1 combat |
-| Haste Potion | +50% Speed | 1 combat |
+| Haste Potion | +8% Crit Chance | 1 combat |
 
 ---
 

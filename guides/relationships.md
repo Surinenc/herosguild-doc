@@ -393,6 +393,10 @@ Mental breaks affect heroes mid-combat:
 - Address low mood quickly — the chance compounds at +3% per day
 - Watch for risk factors: recent loss of a loved one adds +15% break chance
 
+### Recovery
+
+Breaks clear on schedule — a Berserk episode ends the following day, a Catatonic one after its 3-to-7 days elapse, and so on — and the hero **returns to whatever state they were in before the break** (Ready, Resting, Crafting, and so forth). Desertion, being permanent, is the exception; that hero is simply gone.
+
 ---
 
 ## Social Traits
@@ -593,7 +597,7 @@ Even available heroes may refuse specific missions:
 
 ### Location Trauma
 
-Heroes who experience traumatic events in specific dungeon types (a party wipe in Crypts, a near-death in Caves) develop location trauma. They will refuse missions to those dungeon types until the trauma fades. Trauma has a severity scale of 1-10, with higher severity meaning longer recovery.
+Heroes who experience traumatic events in specific dungeon types (a party wipe in Crypts, a near-death in Caves) develop location trauma. They will refuse missions to those dungeon types until the trauma fades. Trauma has a severity scale of 1-10, with higher severity meaning longer recovery — one severity point drains away every ten days, and the trauma clears when severity reaches zero. A 10-severity Crypts phobia therefore takes a hundred days of not-Crypts before the hero will consider Crypts again.
 
 ### Insistence
 

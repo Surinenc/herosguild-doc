@@ -429,7 +429,7 @@ Heroes develop emotional bonds with their equipment over time. The longer they w
 | Comfortable | 3+ days | Rare+ | -5 | 0 |
 | Favorite | 14+ days | Epic+ | -10 | +3 |
 | Prized | 30+ days | Legendary | -20 | +5 |
-| Soulbound | Sentimental only | — | -35 | +8 |
+| Soulbound | Sentimental only | — | *N/A* | +8 |
 
 Attachment builds through two paths: **time equipped** and **item rarity**. A Legendary weapon is instantly Prized; an Epic item starts as a Favorite. The highest of the two paths wins.
 
@@ -443,7 +443,9 @@ Some items become Soulbound through events rather than time:
 - **Saved Life** — the hero survived a near-death thanks to this item
 - **Family Heirloom** — brought from their background
 
-Soulbound items cannot be removed without severe mood penalties (-35). Heroes will actively resist, and their complaints about it will be memorable.
+Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button where the Unequip button used to be, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
+
+Prized and Soulbound items are also skipped by the auto-equip pass, so a shinier drop won't quietly displace either from a hero who's grown fond of what they've got.
 
 ### Trait Effects
 
@@ -458,7 +460,7 @@ Removing a Favorite or higher item causes a lingering mood penalty:
 |-----------|-------------|---------|
 | Favorite | -8 | 3 days |
 | Prized | -12 | 5 days |
-| Soulbound | -35 (immediate) | — |
+| Soulbound | *cannot be removed* | — |
 
 Heroes also complain about equipment they find aesthetically displeasing (-5 mood while worn).
 

@@ -395,6 +395,8 @@ Heroes may comment on equipment based on their personality:
 - Frugal heroes complain about expensive gear
 - Traditional heroes like dwarven craftsmanship
 
+Personality is not the only thing at work. Heroes also **keep a private tally** of every forge whose gear they've carried into a fight, and eventually pick a favorite: after about ten missions with a given forge's kit, there's roughly a one-in-three chance they quietly develop a preference for it. Sentimental gifts from close friends can lock in that preference in one stroke. From then on, wearing equipment from a **rival** forge produces a daily mood drip and the occasional pointed remark; wearing gear from a **merely different** forge produces a smaller version of the same. Three critical crafting failures at the same forge, meanwhile, can convince a hero to **boycott** it — refusing to accept its output from the Vault until they get over themselves, which they may not.
+
 ---
 
 ## Managing Equipment

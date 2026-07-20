@@ -148,7 +148,7 @@ Rangers have three distinct paths for different combat styles.
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Crit Chance** | Accuracy | +10% crit → +15% crit → +25% crit |
-| **B - Crit Damage** | Precision | +5% crit damage → +5% more → +5% more |
+| **B - Crit Damage** | Precision | +15% crit damage → +25% crit damage → +40% crit damage |
 | **C - Headshot** | Burst | 10% headshot chance (2× damage) → +15% headshot chance (25% total) → headshots deal 2.5× damage |
 
 **Best For:** Boss sniping, crit builds, long-range damage

@@ -88,6 +88,16 @@ Relationships affect combat performance in both directions. Heroes who like each
 | Hostile | -18% |
 | Enemy | -25% |
 
+### Healer Refusal
+
+A Cleric or Paladin will not heal an ally they actively despise. Any wounded hero at **relationship value ≤ -25** (Dislike, Rival, Hostile, Enemy — mutual grievance is not required, the healer's ledger is the one that counts) is skipped:
+
+- **Single-target heals** pick the next-most-wounded ally they *don't* hate. If every wounded ally is hated, the caster spends the turn refusing loudly (mercifully, at no cooldown cost).
+- **AoE heals** exclude hated allies from the target set — the shield of holy light politely goes around them.
+- **Guardian and Champion self-heal** paths are exempt, on the theory that even a bitter healer will patch themselves up rather than bleed on principle.
+
+The reliable fix is to stop your Cleric hating people. The unreliable one is to stock a great many Bandages and hope they land on the right hero.
+
 ---
 
 ## Special Bonds
@@ -483,6 +493,8 @@ Intoxication is tracked on a 0-100 scale:
 | Blackout | 81-100 | **No** | -20 | -80 | Will remember nothing tomorrow |
 
 Heroes who are Hammered or Blacked Out cannot be sent on missions. A Tipsy hero has better social interactions but slightly worse aim — a trade-off the game considers fair.
+
+The Accuracy column is not decorative. It applies as a **miss chance on basic attacks** — a Drunk hero's swings fail 15% of the time, a Hammered one 40%. Skills, spells, and gem-driven attacks land as normal, because muscle memory is apparently more waterproof than motor control. Hangover accuracy penalties and withdrawal shakes stack into the same roll, which is how a hero with a bad night behind them and worse plans ahead of them can miss a stationary goblin.
 
 ### Drinks
 

@@ -230,11 +230,11 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 | Result | Effect |
 |--------|--------|
 | Success | Item created at rolled quality |
-| Partial Fail | **No item created.** 100% of materials refunded. 50% XP granted to the crafter — a learning experience with no inventory cost |
+| Partial Fail | **No item created.** 75% of materials refunded (25% lost). 50% XP granted to the crafter — a learning experience with an actual, if modest, inventory cost |
 | Full Fail | **No item created.** 50% of materials refunded (50% lost) |
 | Critical Fail | All materials lost, station damaged |
 
-The wiki previously claimed a Partial Fail produced an item at -1 quality tier; the current code path returns success:false with no item at all. The 50% XP grant on partial fail is the only consolation prize.
+The wiki previously claimed a Partial Fail produced an item at -1 quality tier; the current code path returns success:false with no item at all. The 50% XP grant on partial fail is the consolation prize, and no longer comes with a full refund — the free-retry loophole was closed.
 
 ### Crafted Item Sell Value
 

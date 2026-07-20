@@ -859,9 +859,14 @@ Traveling merchants visit your guild periodically, offering items and services. 
 
 ## Rival Guilds
 
-> **Currently Disabled** — The Rival Guild system exists in the game code but is currently disabled. The information below describes the intended design, which is to say, a design that exists in the philosophical sense.
+The AI-rival-guild manager — the one that used to poach heroes, launch sabotage runs, and hurl challenges at your gate — has been **removed from the game**. It sat disabled in code for a long time, waiting for a rework that never quite arrived, and was retired rather than kept on life support.
 
-Rival guilds are AI-controlled competing guilds with different personalities (Aggressive, Scheming, Honorable, Desperate, Mercantile). They can interact with your guild through events like hero poaching, reputation attacks, sabotage, trade offers, and challenges.
+Two smaller pieces survive, because they were doing useful work independently:
+
+- **Rival Guild War** persists as a *crisis type* — a competitor guild occasionally makes itself your problem for a while, without any of the standing rival-manager machinery underneath.
+- **Rival Guilds** still appear as *shop customers* — buying the odd item at the odd price, complaining about the odd markup — just like Peasants and Nobles do.
+
+Everything else — hero poaching, reputation attacks, trade offers, the personality wheel — is no longer in the game.
 
 ---
 

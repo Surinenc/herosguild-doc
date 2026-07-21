@@ -451,7 +451,7 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 | Stun | 1 turn | Skip turn |
 | Freeze | 1 turn | Skip turn (25% chance from Frost Nova) |
 | Shock | 2 turns | Target takes +20% damage |
-| Vulnerable | 3 turns | Target takes +25% damage from **all** sources — stacks multiplicatively with Shock, party-wide damage-taken auras, and every other multiplier the enemy has been unwise enough to accumulate. Applied by Ranger Spectral Wolf bites, and refreshed on every subsequent bite, which is to say: effectively permanent for as long as the wolf is still gnawing on things. |
+| Vulnerable | 3 turns | Target takes +10% damage from **all** sources — stacks multiplicatively with Shock, party-wide damage-taken auras, and every other multiplier the enemy has been unwise enough to accumulate. Applied by Ranger Spectral Wolf bites, and refreshed on every subsequent bite, which is to say: effectively permanent for as long as the wolf is still gnawing on things. Deliberately tuned below Trickster's tier-3 Marked for Death ceiling so the pet-bite debuff never quite outclasses the ascendancy investment. |
 | Weaken | 3 turns | Reduced damage dealt |
 
 ### Elemental Procs

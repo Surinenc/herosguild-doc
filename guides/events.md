@@ -10,7 +10,7 @@ Every night, the **Tonight** tab in the Tavern presents 6–8 situations requiri
 
 You are given a limited number of **Attention Points** to spend. You will not have enough to address everything. The situations you ignore tonight will be waiting for you tomorrow, slightly worse.
 
-There is no history log for tavern decisions. What happens in the tavern stays in the tavern — which is either freeing or terrifying depending on your record-keeping habits.
+The morning after, each resolved decision surfaces in the **Last Night's Notes** panel — a brief record of which options you picked and how they landed. What happens in the tavern still mostly stays in the tavern, but the highlight reel is now, at least, filed.
 
 → **Full details:** [Guild Management — Nightly Decisions](guild.md#nightly-decisions-tavern-decision-engine)
 

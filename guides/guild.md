@@ -217,7 +217,7 @@ Costs scale with the total level of heroes present (Σ hero levels). Mood effect
 
 #### Nightly Decisions (Tavern Decision Engine)
 
-Each night, the Tavern presents 6-8 situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Note: there is no history log for tavern decisions — once the night passes, the outcomes are final and unrecorded.
+Each night, the Tavern presents 6-8 situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Each resolved decision is written up in the **Last Night's Notes** panel the following morning — a short after-action record of which options you picked and how they landed, so the previous evening isn't quite as lost to the fog as it once was.
 
 **Attention Points per Night:**
 

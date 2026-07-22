@@ -820,7 +820,7 @@ The market has a 5% daily chance of generating a random event (up to 3 concurren
 | Dwarven Trade Agreement | Metal | -30% | 10 days |
 | Bumper Harvest | Herbs | -40% | 7 days |
 | Foreign Traders | All categories | -20% | 3 days |
-| Festival Leftovers | Misc/Food | -50% | 4 days |
+| Festival Leftovers | Sundries | -50% | 4 days |
 | Silk Road Opens | Cloth | -35% | 8 days |
 | Alchemy Breakthrough | Herbs + Essence | -25% | 8 days |
 

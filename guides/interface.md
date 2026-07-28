@@ -301,6 +301,10 @@ Small things that make a significant difference, provided for heroes who prefer 
 - Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
 - Online Features (sends leaderboard stats and unlocks community dungeons)
 
+### Credits
+
+- 🎬 Roll the credits — opens a cinematic end-credits reel that scrolls the names behind the tunes, the thumps, and the letterforms over the intro backdrop. Hover to pause; Escape or a click on the backdrop dismisses. Purely ornamental, but the people whose work is in the soundtrack deserve their moment.
+
 ---
 
 ## Related Guides

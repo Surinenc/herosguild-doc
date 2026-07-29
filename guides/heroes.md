@@ -340,6 +340,70 @@ Destroyed parts can be replaced with prosthetics. The original limb-and-sense se
 
 ---
 
+## Illness & Chronic Traits
+
+Heroes catch things. It is an entirely separate problem to injury, wounds, or the aftermath of a Grand Feast — one that spreads, worsens over days, and occasionally kills. The Guild Clerk has, per Guild custom, expanded the medical filing cabinet.
+
+### How Illness Works
+
+Every day, each active illness gains **severity** and each afflicted hero builds **immunity**. Whichever wins first decides the outcome:
+
+- Immunity fills first → **recovered**. If the peak severity during the illness crossed that illness's chronic-recovery threshold, a **chronic trait** is granted — a permanent scar the Clerk will now file under the hero's name for the rest of their career.
+- Severity reaches the illness's **lethal threshold** first → **dead**. Most illnesses cap out non-lethal, but a handful — Wound Rot, The Long Cough, The Grey Weep, The Blackblood, Backfire Fever, The Marsh Sweats — will finish the job.
+
+Illnesses spread. Contagion ticks daily against nearby uninfected heroes; **mission mates** and **close bonds** amplify transmission, and a Plague crisis triples the baseline across everything transmissible. **Enemy** and **Nemesis** bonds *dampen* transmission by roughly 30% — heroes who hate each other keep their distance, which turns out to be medically fortunate.
+
+### Symptom Penalties
+
+Active illnesses apply **percentage-based** stat penalties. Across all active illnesses on a hero, negative percents on any single stat are floored at **−60%**. Chronic traits stack a separate **−30% per stat** floor. The two apply multiplicatively, so a hero riding every cap sits at their base stat × 0.28 — barely functional, but still able to hold a sword the wrong way round.
+
+Positive percentages are uncapped. This matters chiefly because **Octarine Blindness** grants +8% INT (the affected hero temporarily perceives the eighth colour, which is helpful for mages and unnerving for everybody else) at the cost of −10% DEX.
+
+Mood modifiers stay absolute — mood is a 0-to-100 scale, so a −15 mood hit means −15, no scaling required.
+
+### Illness Categories
+
+Illnesses come in six broad flavours, each with its own risk profile and its own reasons for happening.
+
+| Category | Character | Examples |
+|----------|-----------|----------|
+| Mundane / Ambient | Low-lethality, common | The Sniffles, The Grippe, Wet Boots Fever, Slap-Belly, Rat-Cough |
+| Urban / Ankh-adjacent | Air-quality respiratory | Chimney Ash Lung |
+| Occupational / Class-linked | Fire **only** on the matching class | Warrior's Elbow, Mage's Fugue, Whisper Throat (Cleric), Necromancer's Shadow Cough, Ranger's Sun-Fever |
+| Magical residue | Tower & high-magic zones | Ambient Aetheric Rash, Thaumic Flu, Octarine Blindness, Backfire Fever |
+| Beast / creature-linked | Injury-seeded from beast wounds | Werewolf Fever, Vampire Anaemia |
+| Metaphysical | Slow, mood-crushing, non-lethal | The Sighs, The Doldrums, The Small Hours |
+
+Where a hero contracts an illness depends heavily on **environment** — Swamps push respiratory fevers (Marsh Sweats ×4), Crypts stir The Long Cough and Necromancer's Shadow Cough, Ruins amplify The Small Hours, Towers grow the magical bestiary — and on **age**. Age-linked illnesses (Grippe, Marsh Sweats, Long Cough, River Sickness, Rat-Cough, Watchman's Foot, Chimney Ash Lung) compound at roughly **×1.3 / ×1.8 / ×2.5** for heroes past **40 / 55 / 70**. Crises pile on further multipliers where the pairing makes sense: **Blood Moon** triples Werewolf Fever, **Syzygy** triples Thaumic Flu, **Cult Uprising** doubles The Small Hours and The Sighs, **Famine** doubles The Doldrums.
+
+Class also matters. Warriors are more prone to Wound Rot; Necromancers court The Long Cough and The Grey Weep; Rangers shrug off Marsh Sweats and Wet Boots Fever thanks to herbal knowledge and, apparently, waterproof boots. The occupational category is stricter than a nudge — those illnesses **only** fire on the matching class in the first place.
+
+### Treatment
+
+Whenever any hero is sick, the next morning opens on the **Infirmary scouting scene** — rendered before the Tavern and above the ceremonial moment queues, on the reasonable principle that dying tomorrow is more urgent than most other things. Each sick hero gets a card: illness name, severity bar, immunity bar, Pratchett-flavoured symptom notes, and a **Treat** toggle. Treatment slots are limited by Infirmary tier:
+
+| Infirmary Level | Treatment Capacity |
+|-----------------|--------------------|
+| 1 | 2 heroes |
+| 2 | 3 heroes |
+| 3 | 5 heroes |
+| 4 | 8 heroes |
+| 5 | 12 heroes |
+
+Treating a hero cuts that illness's daily severity growth by roughly **60%**. Higher Infirmary tiers shave an additional **5% per level** off severity growth even without a direct treatment slot, on the theory that a well-appointed ward is medically useful just by existing.
+
+A **Cleric present at the guild** — not dead, not on mission, no assignment necessary — adds an immunity bonus of **+25%** to each treated hero. Heroes with high VIT (above the class baseline of 10) also add a **constitution bonus** of up to +50% immunity gain of their own; VIT is genuinely load-bearing here in a way it isn't in ordinary combat.
+
+**Confirm** applies your chosen treatments. **Skip Infirmary Tonight** dismisses the scene and resolves the untreated heroes autonomously, worst-case, which is a polite way of saying the highest-severity ones may not survive the week. Sick heroes are flagged on their **HeroRow** with an illness badge coloured by severity — green under 30, amber 30 to 70, red past 70 — so you can tell at a glance who's on borrowed time.
+
+### Chronic Traits
+
+If a hero's peak severity crossed the illness's chronic-recovery threshold before immunity finished the race, they recover with a **chronic trait** — a permanent scar with modest but permanent stat and mood costs. A survivor of The Long Cough carries **The Wheeze** for life; a Grey Weep survivor picks up **Hollow Blood**; Vampire Anaemia leaves **Slow Blood**; Chimney Ash Lung leaves **Ash Lung**. The Guild Clerk enters these into the record with the polite understatement of someone who has, per custom, seen a great deal — "the lungs, per medical record, remember the fight. They will not, per record, forget it."
+
+The full list of a hero's chronic traits appears on the **History tab** of the Hero Details modal, each one a short bureaucratic obituary of a fight the hero came back from.
+
+---
+
 ## Death Saves
 
 When a hero is reduced to 0 HP, they must make a death save to determine whether they survive with an injury or join the memorial wall permanently. It is, without exaggeration, the most stressful dice roll in the guild.

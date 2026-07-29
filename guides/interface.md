@@ -32,6 +32,8 @@ Your roster at a glance. The Guild Clerk designed this panel to answer the quest
 - Level — so you remember what they're capable of
 - Current state (Ready, Injured, Resting, etc.) — the honest answer to whether they can go
 - Mood indicator — the honest answer to whether they want to
+- **Illness badge** — appears when the hero is sick, coloured by severity (green under 30, amber 30-70, red past 70). The list of afflictions is on their History tab
+- **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Seeded stable per day from personality traits, so the same hero says roughly the same thing all day and something different tomorrow
 
 Click a hero to see details.
 
@@ -48,6 +50,19 @@ Changes based on what you've selected. The Guild Clerk considers this the most u
 - Selected hero details
 - Facility information
 - Mission details
+
+### Story Moment Scenes
+
+Certain events pause the guild flow with a full-screen **ceremonial scene** — a short vignette between you and the next thing you were going to do. They drain in a fixed priority so the emotionally weighty scenes get their room before the celebratory ones. The current order:
+
+1. **Infirmary** — any hero sick tonight ([Illness system](heroes.md#illness--chronic-traits)). Life-critical, so it renders before anything else.
+2. **Guild Rank Up** — the guild reached a new civic milestone. Rare enough to earn the top slot after the medical stuff.
+3. **Legendary Item** — a hero discovered or crafted something with a name and a history.
+4. **Body Part Loss** — a hero left a piece of themselves in a dungeon. The Guild Clerk marks the incident with an appropriate degree of understatement.
+5. **Enemy Made** — a mission created a personal grudge; the Ledger now has another name in it.
+6. **Recruit** — a new hero joined. Lowest priority, because it happens often enough that it would otherwise drown out the rare moments above.
+
+Each scene is a **Continue** click away from the next; there is no Skip, but there is no forced reading either — you can Continue immediately if the mood doesn't take you.
 
 ---
 

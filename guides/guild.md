@@ -206,14 +206,22 @@ The number column is the **quality range** (`recruitQualityMin`/`recruitQualityM
 
 **Tavern Activities:**
 
-Costs scale with the total level of heroes present (Σ hero levels). Mood effects are listed per hero participating.
+Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities now apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
 
-| Activity | Cost | Mood Effect | Cooldown |
-|----------|------|-------------|----------|
+| Activity | Cost | Mood Effect (baseline) | Cooldown |
+|----------|------|------------------------|----------|
 | Buy Rounds | 10g × Σ hero levels | +3 mood | None (blackout risk daily) |
 | Grand Feast | 100g + 20g × Σ hero levels | +10 mood | 1 day |
 | Gambling | Bet 50–500g | +5 mood (win or lose) | None |
 | Bard Night | 15g × Σ hero levels | +8 mood | 3 days |
+
+Each activity also carries a **~15% chance** of pushing a secondary event onto the nightly scouting scene — a bar fight after a rowdy Buy Rounds, a flirtation after a Bard Night, a rumour after Gambling. The Guild Clerk considers this an entirely reasonable rate of consequence per evening spent drinking.
+
+#### Nightly Scouting Scene
+
+On any night the tavern is populated, the Tavern tab surfaces a **scouting scene** above the recruits: 3-6 weighted autonomous events rolled from the heroes present, their drunk levels, their bonds, and their traits. Event kinds include **drunken fights, adultery, flirtations, rumours, confessions, mentorship moments, and full bar fights** — the mix skews to whatever the current roster has been quietly building up to. Each event renders as a card with participant portraits, a severity chip, a short description, and an **Intervene** button.
+
+Intervention **costs Attention Points from the same budget the Tonight tab spends** (see below) — the tavern has one supply of your attention, and both surfaces draw from it. Successful intervention nudges the participants' mood up and marks the event Handled. **Skip Tavern Tonight** dismisses the scene and passes any unresolved events to the autonomous resolver — worst-case, meaning the drunken fight goes ahead and the confession is made anyway.
 
 #### Nightly Decisions (Tavern Decision Engine)
 
@@ -311,15 +319,17 @@ Where heroes train and spar. The sounds of practice combat are indistinguishable
 
 ### Infirmary
 
-Treats injured heroes. The smell of antiseptic potions mingles with the sound of "I told you not to fight the dragon."
+Treats injured heroes, houses the sick, and installs the prosthetics. The smell of antiseptic potions mingles with the sound of "I told you not to fight the dragon."
 
-| Level | Healing Speed | Features |
-|-------|---------------|----------|
-| 1 | 1.0x | Basic care |
-| 2 | 1.25x | Better medicine |
-| 3 | 1.5x | Surgery, basic prosthetics |
-| 4 | 1.75x | Standard prosthetics |
-| 5 | 2.0x | Enchanted prosthetics |
+| Level | Healing Speed | Illness Treatment Slots | Features |
+|-------|---------------|-------------------------|----------|
+| 1 | 1.0x | 2 | Basic care |
+| 2 | 1.25x | 3 | Better medicine |
+| 3 | 1.5x | 5 | Surgery, basic prosthetics |
+| 4 | 1.75x | 8 | Standard prosthetics |
+| 5 | 2.0x | 12 | Enchanted prosthetics |
+
+**Illness treatment slots** cap how many sick heroes you can put on the ward per night from the Infirmary scouting scene (see the [Illness system in the Hero Guide](heroes.md#illness--chronic-traits)). Whenever any hero is sick, the game opens on the Infirmary scene the next morning — before Tavern, above the ceremonial moment queues — showing every sick hero as a card with severity, immunity, symptom notes, and a **Treat** toggle. **Skip Infirmary Tonight** resolves the untreated heroes autonomously, worst-case. Higher tiers also shave 5% per level off severity growth for every sick hero, treated or not, on the reasonable theory that a well-appointed ward is helpful just by existing. A Cleric present at the guild — not dead, not on mission — grants a further +25% immunity gain to each treated hero.
 
 ### Armory
 

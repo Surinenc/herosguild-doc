@@ -581,6 +581,22 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 
 Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty. Some reasons — like Mourning or Mental Health — cannot be overridden at all.
 
+#### What It Costs Them
+
+Being elsewhere is not free. Every absence is priced and the hero pays it out of their own [purse](heroes.md#purse--ambition) — the coast is expensive, the aunt requires a coach fare, and a three-day bender is not cheap in any economy. The bill lands the same night and appears in the day summary under **Elsewhere**.
+
+The price sits on the *line*, not on the reason. A Personal Day is not one price but a table of things a hero might claim to be doing, each costed separately, so standard of living emerges from which claims a hero can reach rather than from any percentage of their wage. A hero who cannot afford anything at all still gets their day off — they just have to take a free one, and the ledger notes that they could not afford it, which is its own small tragedy.
+
+Each entry also carries a **veracity**, which the Chronicler records and then declines to investigate:
+
+| Veracity | Meaning | Typical reasons |
+|----------|---------|-----------------|
+| Sincere | The guild knows why. No wink | Mourning, Mental Health |
+| Unverifiable | Plausible, unchecked, occasionally suspicious | Family Business, Pilgrimage |
+| Thin | The excuse is doing no work and everyone knows it | Hangover, Bender |
+
+The governing rule is that **the ledger records what the hero said, not what happened**. The aunt does not have to exist. The dog may have died four times. The game never adjudicates, and the Guild Clerk is not paid to check.
+
 ### Mission Refusal
 
 Even available heroes may refuse specific missions:

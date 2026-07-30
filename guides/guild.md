@@ -667,12 +667,15 @@ Daily Wage = floor((Level - 1)^1.5 × 3) × Quality Multiplier
 | Legendary | 3.0x |
 
 **Examples:**
-- Level 10 Common: 85g/day
-- Level 50 Common: 2,079g/day
-- Level 100 Common: 8,850g/day
-- Level 100 Legendary: 26,550g/day
+- Level 5 Common: 24g/day
+- Level 20 Common: 248g/day
+- Level 50 Common: 1,029g/day
+- Level 100 Common: 2,955g/day
+- Level 100 Legendary: 8,865g/day
 
-Level 1 heroes are free (no wages). The exponential scaling means high-level heroes cost significantly more — a full roster of level 100 Legendaries will test even the wealthiest guild's finances.
+Level 1 heroes are free (no wages). The exponential scaling means high-level heroes cost significantly more — a sixty-strong roster of Legendary 100s runs to 531,900 gold a day, which will test even the wealthiest guild's finances and several of its assumptions.
+
+**The money now reaches the heroes.** Wages used to be debited from the guild and then quietly cease to exist, which the ledger accepted without comment. Each hero is now credited their **base** wage — the crisis multiplier inflates what you pay but not what they receive, so a crisis stays a cost to the guild rather than a windfall for the staff. What they do with it is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
 
 ### Managing Finances
 

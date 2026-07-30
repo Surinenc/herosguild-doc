@@ -351,15 +351,17 @@ Every day, each active illness gains **severity** and each afflicted hero builds
 - Immunity fills first → **recovered**. If the peak severity during the illness crossed that illness's chronic-recovery threshold, a **chronic trait** is granted — a permanent scar the Clerk will now file under the hero's name for the rest of their career.
 - Severity reaches the illness's **lethal threshold** first → **dead**. Most illnesses cap out non-lethal, but a handful — Wound Rot, The Long Cough, The Grey Weep, The Blackblood, Backfire Fever, The Marsh Sweats — will finish the job.
 
-Illnesses spread. Contagion ticks daily against nearby uninfected heroes; **mission mates** and **close bonds** amplify transmission, and a Plague crisis triples the baseline across everything transmissible. **Enemy** and **Nemesis** bonds *dampen* transmission by roughly 30% — heroes who hate each other keep their distance, which turns out to be medically fortunate.
+Illnesses spread, and they spread along the lines of affection. Contagion ticks daily against every uninfected hero in reach — the whole roster if you're at the guild, your party-mates if you're out on a mission — and the multipliers stack: **married ×3.5**, **lovers, partners and the merely dating ×3.0**, **best friends ×2.0**, **sharing a room ×2.0 on top of whichever of those applies** (see [Cohabitation](guild.md#cohabitation)), **same mission party ×1.5**, and a Plague crisis **×3** across everything transmissible. **Enemy** and **Nemesis** bonds *dampen* transmission to **×0.7** — heroes who loathe each other keep their distance, which turns out to be medically fortunate.
+
+The whole product is then capped at **0.85**, because a married couple in a shared bed during a plague was otherwise reaching certainty, and certainty makes for poor drama. Even at the ceiling there is roughly a one-in-seven chance of not catching it, which the Guild Clerk files, per Guild custom, under *hope*.
 
 ### Symptom Penalties
 
 Active illnesses apply **percentage-based** stat penalties. Across all active illnesses on a hero, negative percents on any single stat are floored at **−60%**. Chronic traits stack a separate **−30% per stat** floor. The two apply multiplicatively, so a hero riding every cap sits at their base stat × 0.28 — barely functional, but still able to hold a sword the wrong way round.
 
-Positive percentages are uncapped. This matters chiefly because **Octarine Blindness** grants +8% INT (the affected hero temporarily perceives the eighth colour, which is helpful for mages and unnerving for everybody else) at the cost of −10% DEX.
+Positive percentages are uncapped. This matters chiefly because **The Glimmers** grants +8% INT (the affected hero temporarily perceives the eighth colour, which is helpful for mages and unnerving for everybody else) at the cost of −10% DEX.
 
-Mood modifiers stay absolute — mood is a 0-to-100 scale, so a −15 mood hit means −15, no scaling required.
+Mood modifiers stay absolute — mood is a 0-to-100 scale, so a −15 mood hit means −15, no scaling required. Every illness carries one, ranging from a −3 sulk to a −15 collapse, re-applied each morning with a single day's life so it lapses of its own accord the moment the hero recovers and nobody has to remember to file the paperwork. The Glimmers is the only affliction in the cabinet that *improves* a hero's mood, by +2, on the grounds that the eighth colour is at least interesting.
 
 ### Illness Categories
 
@@ -368,9 +370,9 @@ Illnesses come in six broad flavours, each with its own risk profile and its own
 | Category | Character | Examples |
 |----------|-----------|----------|
 | Mundane / Ambient | Low-lethality, common | The Sniffles, The Grippe, Wet Boots Fever, Slap-Belly, Rat-Cough |
-| Urban / Ankh-adjacent | Air-quality respiratory | Chimney Ash Lung |
+| Urban / Guttergate-adjacent | Air-quality respiratory | Chimney Ash Lung |
 | Occupational / Class-linked | Fire **only** on the matching class | Warrior's Elbow, Mage's Fugue, Whisper Throat (Cleric), Necromancer's Shadow Cough, Ranger's Sun-Fever |
-| Magical residue | Tower & high-magic zones | Ambient Aetheric Rash, Thaumic Flu, Octarine Blindness, Backfire Fever |
+| Magical residue | Tower & high-magic zones | Ambient Aetheric Rash, Thaumic Flu, The Glimmers, Backfire Fever |
 | Beast / creature-linked | Injury-seeded from beast wounds | Werewolf Fever, Vampire Anaemia |
 | Metaphysical | Slow, mood-crushing, non-lethal | The Sighs, The Doldrums, The Small Hours |
 
@@ -380,7 +382,7 @@ Class also matters. Warriors are more prone to Wound Rot; Necromancers court The
 
 A few specimens worth naming individually, because you will meet them and remember them:
 
-- **Octarine Blindness** — the affected hero begins perceiving the eighth colour. Mechanically, +8% INT and −10% DEX, so a mage who catches it becomes briefly cleverer at the cost of walking into furniture. The only illness in the catalog with a *positive* stat mod, and the only one anybody has ever been vaguely pleased to develop.
+- **The Glimmers** — the eyes, having seen the eighth colour, decline to stop. Mechanically, +8% INT and −10% DEX, so a mage who catches it becomes briefly cleverer at the cost of walking into furniture. The only illness in the catalog with a *positive* stat mod, and the only one anybody has ever been vaguely pleased to develop.
 - **Thaumic Flu** — magical inflammation. Every day, deterministic ±8% swings on STR / DEX / INT, seeded per hero per day, so you can't plan around it and it isn't the same swing tomorrow. The Syzygy triples the odds of catching it in the first place.
 - **The Sighs** — pure existential malaise. No stat penalty, no death, just a −12 mood tick that goes on for as long as it goes on. Cult Uprisings double it, which nobody finds coincidental.
 - **The Watchman's Foot** — flat-foot ache from too many years walking a beat. Non-contagious, non-lethal, mostly a −5% DEX with an age curve. Rangers get a pass; Warriors, per medical record, get a limp.

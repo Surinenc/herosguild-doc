@@ -378,6 +378,14 @@ Where a hero contracts an illness depends heavily on **environment** — Swamps 
 
 Class also matters. Warriors are more prone to Wound Rot; Necromancers court The Long Cough and The Grey Weep; Rangers shrug off Marsh Sweats and Wet Boots Fever thanks to herbal knowledge and, apparently, waterproof boots. The occupational category is stricter than a nudge — those illnesses **only** fire on the matching class in the first place.
 
+A few specimens worth naming individually, because you will meet them and remember them:
+
+- **Octarine Blindness** — the affected hero begins perceiving the eighth colour. Mechanically, +8% INT and −10% DEX, so a mage who catches it becomes briefly cleverer at the cost of walking into furniture. The only illness in the catalog with a *positive* stat mod, and the only one anybody has ever been vaguely pleased to develop.
+- **Thaumic Flu** — magical inflammation. Every day, deterministic ±8% swings on STR / DEX / INT, seeded per hero per day, so you can't plan around it and it isn't the same swing tomorrow. The Syzygy triples the odds of catching it in the first place.
+- **The Sighs** — pure existential malaise. No stat penalty, no death, just a −12 mood tick that goes on for as long as it goes on. Cult Uprisings double it, which nobody finds coincidental.
+- **The Watchman's Foot** — flat-foot ache from too many years walking a beat. Non-contagious, non-lethal, mostly a −5% DEX with an age curve. Rangers get a pass; Warriors, per medical record, get a limp.
+- **Backfire Fever** — Mage-only. A spell went wrong; the mage is now the spell. Lethal if untreated, chronic-recovery leaves **Wandering Mind**, and The Syzygy doubles the odds.
+
 ### Treatment
 
 Whenever any hero is sick, the next morning opens on the **Infirmary scouting scene** — rendered before the Tavern and above the ceremonial moment queues, on the reasonable principle that dying tomorrow is more urgent than most other things. Each sick hero gets a card: illness name, severity bar, immunity bar, Pratchett-flavoured symptom notes, and a **Treat** toggle. Treatment slots are limited by Infirmary tier:

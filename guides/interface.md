@@ -79,6 +79,7 @@ Once the moment queues have drained, the day closes on a **summary** — everyth
 8. **Crafts Completed**
 9. **On the Ward** — infections, recoveries, chronic traits granted, and anyone the illness finished off ([Illness system](heroes.md#illness--chronic-traits))
 10. **Quarters** — couples who moved in together and pairs the nightly pass moved apart ([Cohabitation](guild.md#cohabitation))
+11. **Elsewhere** — what each absent hero claimed to be doing and what it cost them, plus anyone who bought what they were saving for or retired on the strength of it ([Purse & Ambition](heroes.md#purse--ambition))
 
 Fatal news goes at the top and routine record-keeping at the bottom, on the principle that the ward report should not have to compete with a funeral.
 
@@ -165,6 +166,7 @@ Mood, traits, and needs are surfaced on the main hero panel rather than this tab
 
 The Career tab exists because the Guild Clerk wanted receipts.
 
+- **Purse & Ambition** — at the top: what the hero is holding, what they earn a day, and a progress bar toward the thing they are privately saving for, captioned in their own words. A "saved enough" marker appears when the fund fills, and a line beneath it says whether that means *Bought* or *Enough to leave the guild*. Underneath, **Things they saved for** lists everything they have already bought, each chip carrying its permanent effect. See [Purse & Ambition](heroes.md#purse--ambition)
 - Mission history and statistics
 - Veteran rank and progress
 - Monster knowledge levels

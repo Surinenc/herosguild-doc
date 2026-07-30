@@ -43,6 +43,7 @@ The heart of your guild operations. The Guild Clerk is rather proud of this layo
 - Click facilities to access them
 - Upgrade indicators show available upgrades
 - Active crafting shows progress
+- A row of **quick links** across the top of the facility list jumps straight to **Quarters**, **Market**, and the **Infirmary**. The Infirmary opens on demand whether or not anyone is ill — an empty ward is, per Guild custom, worth looking in on
 
 ### Info Panel (Right)
 
@@ -63,6 +64,23 @@ Certain events pause the guild flow with a full-screen **ceremonial scene** — 
 6. **Recruit** — a new hero joined. Lowest priority, because it happens often enough that it would otherwise drown out the rare moments above.
 
 Each scene is a **Continue** click away from the next; there is no Skip, but there is no forced reading either — you can Continue immediately if the mood doesn't take you.
+
+### Day Summary
+
+Once the moment queues have drained, the day closes on a **summary** — everything that happened while you weren't watching, filed in order of how badly it wants your attention. Empty sections are simply not drawn, so a quiet day produces a short page and a certain amount of relief:
+
+1. **Heroes Lost**
+2. **World Boss**
+3. **Scandals**
+4. **New Titles Earned**
+5. **Auto-resolved Guild Events**
+6. **Quest Chain Progress**
+7. **Social**
+8. **Crafts Completed**
+9. **On the Ward** — infections, recoveries, chronic traits granted, and anyone the illness finished off ([Illness system](heroes.md#illness--chronic-traits))
+10. **Quarters** — couples who moved in together and pairs the nightly pass moved apart ([Cohabitation](guild.md#cohabitation))
+
+Fatal news goes at the top and routine record-keeping at the bottom, on the principle that the ward report should not have to compete with a funeral.
 
 ---
 

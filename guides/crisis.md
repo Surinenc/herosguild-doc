@@ -48,7 +48,7 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 
 | Crisis | Icon | Duration | Effect |
 |--------|------|----------|--------|
-| **The Creeping Plague** | 🦠 | 12–18 | Upkeep ×1.2–2.0 (worsens with severity), recruitment frozen at Moderate+, mission rewards ×0.5–0.9, **illness contagion ×3** across the roster (see [Illness system](heroes.md#illness--chronic-traits)) |
+| **The Creeping Plague** | 🦠 | 12–18 | Upkeep ×1.2–2.0 (worsens with severity), recruitment frozen at Moderate+, mission rewards ×0.5–0.9, **illness contagion ×3** across the roster, stacking with bond and shared-room multipliers under an **0.85 ceiling** on the final chance (see [Illness system](heroes.md#illness--chronic-traits)) |
 | **The Great Famine** | 🌾 | 14–20 | Upkeep ×1.05–2.5, recruitment frozen at Severe+ |
 
 ### Military

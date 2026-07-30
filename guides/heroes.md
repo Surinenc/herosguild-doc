@@ -458,6 +458,70 @@ Survival Chance = 50% (base)
 
 ---
 
+## Purse & Ambition
+
+Heroes are paid. This was, for a long time, a polite fiction — the guild was debited every morning and the money simply ceased to exist, which the Guild Clerk describes as "the tidiest payroll in the realm" and everybody else describes as theft. It now goes into the hero's **purse**, and what they do with it is entirely their own business.
+
+### The Purse
+
+Every living hero is credited their daily wage each morning — the base figure, not the crisis-inflated one, so a crisis costs *you* rather than enriching the staff. A new recruit arrives holding **three days' wage**, or **25 gold**, whichever is larger, so nobody starts destitute on their first afternoon off.
+
+What a hero can afford is expressed in absolute gold rather than as a share of their income, which is the whole point: a recruit on 24 gold a day genuinely cannot reach what a veteran takes for granted.
+
+| Band | Cost |
+|------|------|
+| Modest | 5–40g |
+| Comfortable | 50–300g |
+| Fine | 400–1,500g |
+| Extravagant | 2,000–10,000g |
+
+Heroes never spend down to nothing — they keep roughly a day's wage in reserve, on the grounds that a hero who blew every coin on one evening and could then do nothing at all until payday reads as a bug rather than a personality.
+
+Purse and daily wage are both shown on the **Career tab** of the Hero Details modal.
+
+### Days Off Cost Money
+
+The reasons a hero is unavailable — the Personal Day, the Hangover, the family business that may or may not exist — are now **priced**, and the hero pays. See [Unavailability](relationships.md#unavailability) for the reasons themselves and what the ledger records.
+
+The short version: the gold comes out of their purse, which is gold not going into the fund below. A hero who keeps going to the coast never finishes saving for anything. That tension is deliberate.
+
+### The Dream
+
+Every hero is privately saving toward one specific thing. **35%** of each day's surplus goes into the fund, capped at 35% of their daily wage so the sum stays linear rather than compounding, and paying nothing at all on a day they've spent down to the reserve.
+
+The price belongs to the **dream**, not the dreamer. A headstone is cheap and a ship is not, regardless of who wants one:
+
+| Scale | Cost | What it buys |
+|-------|------|--------------|
+| Trifle | 3,000–12,000g | A coat. A headstone. A debt settled with a neighbour |
+| Modest | 30,000–90,000g | A stall, a room, a small and unreliable boat |
+| Substantial | 200,000–600,000g | The bakery. The farm. The shop with their name over it |
+| Grand | 1,500,000–5,000,000g | Only the very well paid, and only if they live frugally |
+| Fable | 20,000,000–60,000,000g | Nobody finishes these. They were never really about the money |
+
+Which scale a hero reaches for is weighted by what they earn, but with a genuine tail upward — a fair number of heroes want something they will never afford, and will carry the ambition their entire career and die still short of it. The Guild Clerk considers this the most realistic feature in the game.
+
+The **Career tab** shows the dream as a progress bar with the hero's own words underneath, the amount saved against the target, and a "saved enough" marker when the fund fills.
+
+### What Happens When the Fund Fills
+
+Authored per dream, not derived from its price — nobody hands in their notice over a pair of boots:
+
+- **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
+- **They leave.** Some dreams *were* the change of life. The hero retires from the guild, alive, on their own terms, owing nothing
+
+A little over one dream in five is the second kind. You will not know which until the bar fills.
+
+### Retirement
+
+A retiring hero walks out through the front gate in daylight and is filed in the **Departed archive** under `Retired`, which is the only cheerful entry that archive has ever held.
+
+It is still a loss. The guild runs exactly the same grief through their friendships that a death does — their friends do not care that it was a happy ending, and neither, in the small hours, do you. You are obliged to be pleased about it. The Quartermaster has noted that the roster is one shorter and one happier, and has been asked to stop saying this.
+
+There is an inversion worth planning around: paying your best hero well buys them out sooner. The guild's interests and the hero's are not, it turns out, entirely aligned.
+
+---
+
 ## Memorial and Departed
 
 A hero can leave the guild in two distinctly different ways, and the realm keeps separate records for each.
@@ -474,9 +538,9 @@ Memorial cards are visible from the Chapel screen. The cards persist indefinitel
 
 ### The Departed Archive — for heroes who left alive
 
-Not every hero who leaves the guild dies. Some are banished after disgracing themselves. Some desert after a particularly bad mission. Some are sent off on a permanent quest. Some are released because the guild has overrun its barracks capacity and the realm has decided which name to draw out of the metaphorical hat.
+Not every hero who leaves the guild dies. Some are banished after disgracing themselves. Some desert after a particularly bad mission. Some are sent off on a permanent quest. Some are released because the guild has overrun its barracks capacity and the realm has decided which name to draw out of the metaphorical hat. And some — see [Retirement](#retirement) — simply saved up enough to stop.
 
-These heroes go to the **Departed archive**, a separate record from the Chapel memorial. They are not dead — they are simply no longer with the guild — and they retain their titles and chronicle entries in the archive. The realm keeps the record so that, should any of them ever return, the guild has a paper trail to consult. The current build's UI for browsing the Departed archive is still under construction; the data is preserved regardless.
+These heroes go to the **Departed archive**, a separate record from the Chapel memorial. They are not dead — they are simply no longer with the guild — and they retain their titles and chronicle entries in the archive. The realm keeps the record so that, should any of them ever return, the guild has a paper trail to consult. The archive lives behind the **Departed** tab on the Chapel screen, alongside the Memorial Hall, each card labelled with the manner of going: Retired, Deserted, Guild event, Lost to a dungeon, Called away, or the admirably noncommittal Left the guild.
 
 The distinction matters: a hero killed in combat is mourned in the Chapel. A hero who walks out alive is filed in the archive. The Guild Clerk insists that mixing these two categories would be "professionally embarrassing."
 

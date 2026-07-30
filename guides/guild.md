@@ -132,7 +132,7 @@ Floors must be built in order. Each floor contains 12 private rooms. Once built,
 | 5 | 1,500,000g |
 | 6 | 3,000,000g |
 
-Total capacity: 72 private rooms across all 6 floors.
+Total capacity: 72 private rooms across all 6 floors — and, since a room sleeps two, up to 144 heroes if every one of them is besotted with a colleague.
 
 #### Room Tiers
 
@@ -146,7 +146,7 @@ Rooms start at Tier 1 and can be upgraded sequentially. Higher tiers provide bet
 | 4 | Luxury Suite | 200,000g | 500g | 4 | +20 |
 | 5 | Royal Chamber | 500,000g | 1,000g | 5 | +30 |
 
-Only occupied rooms cost daily upkeep. Empty rooms are free.
+Only occupied rooms cost daily upkeep. Empty rooms are free, and upkeep is billed **per room, not per hero** — a couple sharing one bed pays for one room, which is the closest thing to a discount the Quartermaster has ever knowingly offered.
 
 #### Decorations
 
@@ -178,9 +178,34 @@ Each floor arranges its 12 rooms around a central hallway. Adjacent rooms share 
 
 Each room has 1-2 neighbors. Place friends together and enemies apart.
 
+#### Cohabitation
+
+Private rooms hold **two heroes**. The Barracks, being communal, holds as many as you can fit and a great deal of resentment.
+
+Heroes who share a room and a romance draw an extra morale bonus, pitched deliberately above the best-friend adjacency bonus on the reasoning that sharing a bed ought to read as warmer than living next door:
+
+| Shared-room bond | Morale |
+|------------------|--------|
+| Married | +12 |
+| Lovers / Partner | +9 |
+| Dating | +6 |
+| Anything else | 0 |
+
+Two heroes you have bunked together for reasons of your own take no penalty for it. The Quartermaster has, per Order custom, asked no questions.
+
+**The nightly pass.** Every day-advance, before upkeep is charged, the Guild reconciles who is living with whom. Separations run first, so the rooms they free are available to the couples moving in on the same night:
+
+- **Splits move out.** A pair carrying **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Cheated** — and no surviving romance — is separated. One of them takes the first free private room; if there isn't one, they go back to the Barracks, which is its own commentary.
+- **Couples move in.** A hero's strongest current partner (Married outranks Lovers, which outranks Partner, which outranks Dating) is moved in with them. Where both already hold private rooms, the **better-tiered room wins** and the other hero packs. Where the destination already holds two, nobody moves.
+- **Couples both in the Barracks are left alone.** Moving them into a private room would spend your gold and add upkeep without asking, so the Guild declines to be helpful. Assign them yourself from the Quarters screen.
+
+Every move is narrated in the day summary and written into both heroes' chronicles, so you will find out about the divorce at the same time as the ledger does.
+
+One consequence worth planning around: roommates multiply illness transmission by **×2.0**, stacking on top of the bond multiplier the couple already carries. An auto-cohabiting married pair reaches ×7 before any crisis multiplier lands on top. Barracks heroes are *not* roommates for this purpose — otherwise the whole roster would count as mutually exposed — so a shared room is a housing decision with a medical bill attached. See [Illness & Chronic Traits](heroes.md#illness--chronic-traits).
+
 #### Quarters Morale Effects
 
-The total quarters morale (room tier + decorations + class preferences + adjacency) translates into combat bonuses:
+The total quarters morale (room tier + decorations + class preferences + adjacency + cohabitation) translates into combat bonuses:
 
 | Quarters Morale | Effect |
 |----------------|--------|
@@ -689,7 +714,7 @@ Mood affects combat performance. Happy heroes hit harder; miserable heroes hit t
 
 **Improving Mood:** The things worth investing in.
 - Tavern activities (Buy Rounds, Feast) — the Guild Clerk considers these mandatory expenses
-- Private Quarters — room tier, decorations, and good neighbors all contribute; see [Hero Quarters](#hero-quarters)
+- Private Quarters — room tier, decorations, good neighbors, and a partner in the same room all contribute; see [Hero Quarters](#hero-quarters)
 - Comfortable Barracks — the baseline everyone notices when it falls below acceptable
 - Chapel bonus — passive, daily, and the easiest improvement in the game to arrange
 - Successful missions — nothing lifts morale like coming back

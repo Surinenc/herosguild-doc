@@ -110,6 +110,8 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 - **Bonus:** +15% combat stats together
 - **Risk:** Huge penalties if partner dies (Berserk, Broken); the guild does not recommend falling in love as a combat strategy
 - **Special:** +25% intervene chance modifier (`Combat.ts:5656-5660`). Not an always-trigger — the overall intervene chance still caps at 90%
+- **Housing:** Romantic bonds move heroes in together. If either partner holds a private room, the nightly pass relocates the other into it — see [Cohabitation](guild.md#cohabitation). Sharing a room is worth up to +12 morale and costs one room's upkeep instead of two, which is the romantic case put in accounting terms
+- **Contagion:** It also multiplies illness transmission between them by up to **×7** — ×3.5 for the marriage, ×2.0 again for the shared bed. Love, per medical record, is a vector
 
 ### Mentor / Student
 
@@ -151,6 +153,9 @@ Additional bonds include:
 - **Blood Feud** - Sworn enemies. Heroes in a Blood Feud bond **refuse to deploy on the same mission together** — a hard refusal that cannot be overridden, even at a mood cost. You will have to send one of them, or neither
 - **Ex / Scorned** - Failed romantic relationship
 - **Estranged** - Former bond broken by betrayal
+- **Divorced / Cheated** - The paperwork version of the above
+
+Any of **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Cheated**, with no surviving romance attached, will get a cohabiting pair separated on the next day-advance — one of them takes a free private room, or the Barracks if there isn't one. See [Cohabitation](guild.md#cohabitation).
 
 ---
 

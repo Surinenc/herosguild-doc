@@ -156,6 +156,8 @@ Custom Dungeon rewards are concentrated in the **first clear**: when you clear a
 
 There is no separate Custom Dungeon loot economy or bespoke loot table — gold reuses the regular mission economy. Leaderboard placement is **not** gated by first-clear status; the leaderboard tracks each player's best cleared session for the dungeon and ranks the top 10.
 
+Custom Dungeon standings sit behind the same ban sweep as everything else that keeps score: a banned SteamID vanishes from the per-dungeon boards, the monthly League standings, and the Hall of Notorious alike, retroactively and without ceremony. See [Raid Leaderboard](raids.md#raid-leaderboard) for what a ban does and, more importantly, what it doesn't.
+
 ---
 
 ## Scoring & Seasons

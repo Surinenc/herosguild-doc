@@ -108,6 +108,8 @@ A representative sample:
 
 The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
 
+One entry in that table now comes with a footnote: the **Fire Whelp** is raid furniture. It was authored to be spawned three at a time by the Ancient Dragon and tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is flagged raid-only, so it no longer appears in random mission, dungeon, or Tower rolls at all. It reaches the field only when something asks for it by name, which in practice means a raid boss. Before the flag it was eligible for ordinary ★★ contracts, where it removed level-appropriate heroes in a single bite, and the Guild Clerk has since revised the filing.
+
 Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — **20 kills** (the first tier, Known, is reached at 5 kills and grants a small damage bonus but no resistance display). Until Studied, you're guessing, which is part of the early-game character.
 
 ### Armor and Damage Reduction

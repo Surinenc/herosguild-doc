@@ -376,6 +376,8 @@ Illnesses come in six broad flavours, each with its own risk profile and its own
 | Beast / creature-linked | Injury-seeded from beast wounds | Werewolf Fever, Vampire Anaemia |
 | Metaphysical | Slow, mood-crushing, non-lethal | The Sighs, The Doldrums, The Small Hours |
 
+Left entirely alone, the world is not especially virulent: a hero sitting at the guild with no environmental or crisis multipliers working on them has roughly a **4.5% chance per day** of picking something up — about one new complaint every three weeks. That figure is the compound of a very small per-strain roll across the 23 illnesses that seed themselves, which is why the multipliers below matter so much more than the baseline does.
+
 Where a hero contracts an illness depends heavily on **environment** — Swamps push respiratory fevers (Marsh Sweats ×4), Crypts stir The Long Cough and Necromancer's Shadow Cough, Ruins amplify The Small Hours, Towers grow the magical bestiary — and on **age**. Age-linked illnesses (Grippe, Marsh Sweats, Long Cough, River Sickness, Rat-Cough, Watchman's Foot, Chimney Ash Lung) compound at roughly **×1.3 / ×1.8 / ×2.5** for heroes past **40 / 55 / 70**. Crises pile on further multipliers where the pairing makes sense: **The Blood Moon** triples Werewolf Fever, **The Syzygy** triples Thaumic Flu, **The Cult of the Unseen** doubles The Small Hours and The Sighs, **The Great Famine** doubles The Doldrums.
 
 Class also matters. Warriors are more prone to Wound Rot; Necromancers court The Long Cough and The Grey Weep; Rangers shrug off Marsh Sweats and Wet Boots Fever thanks to herbal knowledge and, apparently, waterproof boots. The occupational category is stricter than a nudge — those illnesses **only** fire on the matching class in the first place.
@@ -394,11 +396,11 @@ Whenever any hero is sick, the next morning opens on the **Infirmary scouting sc
 
 | Infirmary Level | Treatment Capacity |
 |-----------------|--------------------|
-| 1 | 2 heroes |
-| 2 | 3 heroes |
-| 3 | 5 heroes |
-| 4 | 8 heroes |
-| 5 | 12 heroes |
+| 1 | 4 heroes |
+| 2 | 6 heroes |
+| 3 | 10 heroes |
+| 4 | 16 heroes |
+| 5 | 24 heroes |
 
 A bed treats the **hero**, not the illness. Occupy one and *every* strain that hero is carrying has its daily severity growth cut by **80%** — which matters more than it sounds, because a thoroughly unlucky hero collects six to nine illnesses at once and the ward has never had the beds to admit them one strain at a time. Higher Infirmary tiers shave an additional **5% per level** off severity growth even without a direct treatment slot, on the theory that a well-appointed ward is medically useful just by existing.
 
@@ -407,6 +409,8 @@ The arithmetic is the whole argument for building beds. Left alone, the six leth
 A **Cleric present at the guild** — not dead, not on mission, no assignment necessary — adds an immunity bonus of **+25%** to each treated hero. Heroes with high VIT (above the class baseline of 10) also add a **constitution bonus** of up to +50% immunity gain of their own; VIT is genuinely load-bearing here in a way it isn't in ordinary combat.
 
 **Confirm** applies your chosen treatments. **Skip Infirmary Tonight** dismisses the scene and lets the ward fill itself — and it fills itself by *illness*, not by hero, working down every strain in the guild in order of severity until the beds run out. The distinction is worth a moment of your evening: two beds assigned by hand cover two heroes entirely, while the same two beds assigned in your absence may well go to the two worst strains on the same unfortunate person and leave the rest of them, and everyone else, untended. Which is a polite way of saying the ones you skipped may not survive the week. Sick heroes are flagged on their **HeroRow** with an illness badge coloured by severity — green under 30, amber 30 to 70, red past 70 — so you can tell at a glance who's on borrowed time.
+
+Each card also carries an **Until Cured** toggle, which exists because a bed only ever bought one night and long illnesses meant re-picking the same three invalids every single evening until somebody recovered or didn't. Flagged heroes are pre-ticked into the ward the moment the scene opens — up to the bed count, worst first, and no further — so most nights you confirm rather than click. It saves the clicks and decides nothing: you can untick anyone before confirming, and the beds are as few as they ever were. The flag rides on the hero rather than the illness and nothing takes it off again, so a veteran you once marked will quietly claim a bed the next time they turn up on the ward roster, which is either thoughtful or presumptuous depending on how many beds you have.
 
 ### Chronic Traits
 

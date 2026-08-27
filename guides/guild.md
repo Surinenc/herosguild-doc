@@ -348,13 +348,13 @@ Treats injured heroes, houses the sick, and installs the prosthetics. The smell 
 
 | Level | Healing Speed | Illness Treatment Slots | Features |
 |-------|---------------|-------------------------|----------|
-| 1 | 1.0x | 2 | Basic care |
-| 2 | 1.25x | 3 | Better medicine |
-| 3 | 1.5x | 5 | Surgery, basic prosthetics |
-| 4 | 1.75x | 8 | Standard prosthetics |
-| 5 | 2.0x | 12 | Enchanted prosthetics |
+| 1 | 1.0x | 4 | Basic care |
+| 2 | 1.25x | 6 | Better medicine |
+| 3 | 1.5x | 10 | Surgery, basic prosthetics |
+| 4 | 1.75x | 16 | Standard prosthetics |
+| 5 | 2.0x | 24 | Enchanted prosthetics |
 
-**Illness treatment slots** cap how many sick heroes you can put on the ward per night from the Infirmary scouting scene (see the [Illness system in the Hero Guide](heroes.md#illness--chronic-traits)). Whenever any hero is sick, the game opens on the Infirmary scene the next morning — before Tavern, above the ceremonial moment queues — showing every sick hero as a card with severity, immunity, symptom notes, and a **Treat** toggle. A bed treats the whole hero — every strain they are carrying, not just the headline one. **Skip Infirmary Tonight** hands the ward over to the house, which fills the beds by *illness* instead: worst strain in the guild first, until it runs out of beds. Higher tiers also shave 5% per level off severity growth for every sick hero, treated or not, on the reasonable theory that a well-appointed ward is helpful just by existing. A Cleric present at the guild — not dead, not on mission — grants a further +25% immunity gain to each treated hero.
+**Illness treatment slots** cap how many sick heroes you can put on the ward per night from the Infirmary scouting scene (see the [Illness system in the Hero Guide](heroes.md#illness--chronic-traits)). Whenever any hero is sick, the game opens on the Infirmary scene the next morning — before Tavern, above the ceremonial moment queues — showing every sick hero as a card with severity, immunity, symptom notes, and a **Treat** toggle. A bed treats the whole hero — every strain they are carrying, not just the headline one. **Skip Infirmary Tonight** hands the ward over to the house, which fills the beds by *illness* instead: worst strain in the guild first, until it runs out of beds. Higher tiers also shave 5% per level off severity growth for every sick hero, treated or not, on the reasonable theory that a well-appointed ward is helpful just by existing. A Cleric present at the guild — not dead, not on mission — grants a further +25% immunity gain to each treated hero. An **Until Cured** toggle on each card keeps that hero pre-selected on following nights, so a long convalescence costs you one confirmation rather than a nightly round of the roster.
 
 ### Armory
 

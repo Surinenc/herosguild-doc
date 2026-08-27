@@ -465,13 +465,17 @@ Everything Rare and above is drop-only, awarded from content completion:
 
 | Source | Drops |
 |--------|-------|
-| Regular Dungeons | Common Powders (10–15%), Ichors (0.5–1.5%), Salt of Cleansing (1%), Portents (1–1.5%) |
-| Heroic Dungeons | Full range including Cursed Sigil (~1%) |
-| Abyssal Spire | Full range, Cursed Sigil (0.5% + soft pity) |
-| Raids | Rare currencies, Portents, Cursed Sigil (3%) |
+| Regular Dungeons | Powders (10–15%), Salt of Renewal (3%), Ichors (2% each), Salt of Cleansing and Portents (0.8% each) |
+| Heroic Dungeons | Powders (15–20%), Salt of Renewal (5%), Ichors (3.5% each), Salt of Cleansing and Portents (1.5% each), Cursed Sigil (1%) |
+| Abyssal Spire | Powders (8–10%), Salt of Renewal (3%), Ichors (2% each), Salt of Cleansing and Portents (0.8% each), Cursed Sigil (0.5% + soft pity) |
+| Raids | Ichors (6% each), Salt of Cleansing and Portents (4% each), Cursed Sigil (3%) |
 | World Bosses | Cursed Sigil only (5%) |
 
-Regular dungeons drop Rare+ currencies at roughly half the heroic rate — early- and mid-game players see Ichors and Portents without needing endgame content. Only the Cursed Sigil remains gated to heroic dungeons, the Abyssal Spire, raids, and world bosses.
+Within a rarity tier every reagent shares one rate, and the tiers descend in the order you'd hope — Common ahead of Uncommon ahead of Rare ahead of Epic ahead of Legendary. This was not always so. For a while an Ichor was three times scarcer than a Portent it was supposed to outrank, and the Guild Clerk's filing system, which sorts by rarity, quietly stopped matching the drawer contents.
+
+Difficulty also gates what can drop *at all*. Every reagent carries a minimum content rating, and below it the roll doesn't happen: Powders from ⭐, Salt of Renewal from ⭐⭐, the Ichors from ⭐⭐⭐, Salt of Cleansing and both Portents from ⭐⭐⭐⭐, and the Cursed Sigil from ⭐⭐⭐⭐⭐. A one-star pest-control contract yields Powders and nothing else no matter how many times you run it — which was not previously the case, and is why a certain kind of Guild Master was banking Epic Portents off errands a competent farmhand could have finished. Raids and World Bosses declare no star rating and are ungated, on the reasonable grounds that anything with a raid boss in it is endgame by construction. The Abyssal Spire converts depth into stars instead: floors 1–10 count as ⭐⭐, 11–25 as ⭐⭐⭐, 26–50 as ⭐⭐⭐⭐, and 51 and beyond as ⭐⭐⭐⭐⭐.
+
+Regular dungeons drop Rare+ reagents at roughly half the heroic rate — mid-game players see Ichors and Portents without needing endgame content, provided the contract is starred high enough to permit them. Only the Cursed Sigil remains shut out of regular dungeons entirely, at any difficulty.
 
 Each currency is an independent Bernoulli roll per clear — you can receive multiple currencies from a single run. The Cursed Sigil has a soft-pity ramp on Abyssal floors: after 50 floors without one, the drop chance increases by +0.05% per floor, capping at 15%.
 

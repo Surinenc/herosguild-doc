@@ -137,16 +137,19 @@ Each floor cleared rolls for [crafting currencies](crafting.md#crafting-currenci
 | Powder of First Enchantment | 10% |
 | Powder of Erasure | 8% |
 | Salt of Renewal | 3% |
-| Ichor of Reshaping / Empowerment | 1% each |
-| Ichor of Sealing | 2% |
-| Salt of Cleansing | 1% |
-| Portent of the Weighing | 2% |
-| Portent of Kinship | 1.5% |
+| Ichor of Reshaping / Empowerment / Sealing | 2% each |
+| Salt of Cleansing | 0.8% |
+| Portent of the Weighing | 0.8% |
+| Portent of Kinship | 0.8% |
 | Cursed Sigil | 0.5% baseline (soft pity) |
+
+Those rates only apply once you are deep enough to earn them. The Spire has no star rating of its own, so it uses depth as one: floors **1–10** count as ⭐⭐, **11–25** as ⭐⭐⭐, **26–50** as ⭐⭐⭐⭐, and **51 and beyond** as ⭐⭐⭐⭐⭐. Since each reagent has a minimum rating (see [Crafting Guide — Currencies](crafting.md#crafting-currencies)), the shallow floors pay in Powders and Salt of Renewal, Ichors begin at floor 11, Salt of Cleansing and the Portents at floor 26, and the Cursed Sigil not until floor 51. Floor 1 is a great many things, but it is not endgame content, and it has stopped raining Portents accordingly.
 
 ### Cursed Sigil Soft Pity
 
 The Cursed Sigil's 0.5% base rate on Abyssal floors ramps up if you go long enough without seeing one. The counter tracks floors cleared since the last Sigil dropped from *any* source — raids, world bosses, and heroic dungeons all reset it.
+
+The counter climbs on **every** floor you clear, including the shallow ones the Sigil can't drop on at all. Grinding floors 1–50 therefore builds pity you cannot spend until you're past floor 50 — a saved-up debt the Spire honours the moment you're deep enough to collect, which is either good planning or a long walk, depending on temperament.
 
 ```
 Rate = min(15%, 0.5% + max(0, floors_since_last − 50) × 0.05%)

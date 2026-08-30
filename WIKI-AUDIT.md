@@ -191,7 +191,7 @@ Game source root: `/home/anarion/proj/herosguild/game/`
 
 | ID | Line | Claim | Where to verify | Status | Notes |
 |----|------|-------|-----------------|--------|-------|
-| CD-01 | 3-11 | A bottom-nav button labelled "Workshop CD" (🗝) opens the Custom Dungeons app | bottom nav component | OK | BottomNav.tsx:24 - custom-dungeons, glyph 🗝, label "Workshop CD", beta badge |
+| CD-01 | 3-11 | A bottom-nav button labelled "Custom Dungeons" (🗝) opens the Custom Dungeons app | bottom nav component | OK | BottomNav.tsx:23 - custom-dungeons, glyph 🗝, label "Custom Dungeons", beta badge (renamed from "Workshop CD" in c613d02e; guide updated) |
 | CD-02 | 38-42 | Editor rules: rooms may not touch, may not overlap on the minimap, entrance and exit must be reachable, pathfinding must connect them | dungeon validator | — | |
 | CD-03 | 43 | The editor offers a starter menu of pre-built themed layouts | editor starters | — | |
 | CD-04 | 47 | The validator runs on save and publish and blocks publishing until clean | validator wiring | — | |

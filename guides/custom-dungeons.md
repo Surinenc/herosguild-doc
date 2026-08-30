@@ -1,6 +1,6 @@
 # Custom Dungeons
 
-A workshop where Guild Masters design their own dungeons, publish them to the realm, and run other Guild Masters' dungeons in return. The Guild Clerk has filed three complaints about the naming — there is already a Workshop, and that Workshop makes belts — but the bottom-nav button labelled **Workshop CD** (🗝) is firmly in place, and the Clerk has been told the matter is closed.
+A workshop where Guild Masters design their own dungeons, publish them to the realm, and run other Guild Masters' dungeons in return. The Guild Clerk filed three complaints about the naming — there was already a Workshop, and that Workshop makes belts — and has now, after a career of being told the matter is closed, won one: the bottom-nav button (🗝) reads **Custom Dungeons**.
 
 This guide covers the two halves of the system: designing and publishing dungeons (the **author loop**), and raiding the community's published dungeons (the **raid loop**). They share an interface and a name; otherwise they are quite separate.
 
@@ -8,7 +8,7 @@ This guide covers the two halves of the system: designing and publishing dungeon
 
 ## Where to Find It
 
-The **Workshop CD** button sits in the bottom navigation alongside Guild, Market, Dungeons, and the rest. Pressing it opens the Custom Dungeons app, which then routes between the various sub-pages depending on what you want to do.
+The **Custom Dungeons** button sits at the far right of the bottom navigation, last in a row that runs Tavern, Missions, Dungeon, Craft, Training, Shop, Vault, Facilities, Workshop. It carries a beta badge, which is the interface's way of clearing its throat. Pressing it opens the Custom Dungeons app, which then routes between the various sub-pages depending on what you want to do.
 
 The button is **not the crafting Workshop**. That one has hammers. This one has dungeons. Both are essential, and only one of them ends in a wipe.
 

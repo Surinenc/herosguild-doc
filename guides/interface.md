@@ -327,7 +327,7 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 ### Display
 
-- Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — bigger screens show more detail, but the goblins are also bigger. The dropdown is only available in the Electron desktop build.
+- Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — the interface is drawn once, at 1920×1080, and then scaled to fit whatever you pick, so this is a size control rather than a detail control. Nothing extra appears at 2560×1440; the goblins are simply legible from further away. The window cannot be dragged to a new size — a fixed canvas can only be zoomed, and the edges have been nailed down accordingly — so the dropdown is the only handle there is. Electron desktop build only.
 - Fullscreen toggle
 
 ### Gameplay

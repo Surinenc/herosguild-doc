@@ -272,7 +272,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Calm Volatile | 2 | Volatile hero with mood < 40 | +5 mood | -4 mood |
 | Comfort Injured | 2 | Hero recovering from injuries | +6 mood, -1 day recovery | -2 mood |
 | Mentor Session | 2 | Veteran (51+) and rookie (under 20) present | XP for student, +3 mood for mentor | None |
-| Host Feast | 2 | Gold available | +5 mood (all heroes) | None |
+| Host Feast | 2 | Gold above the feast cost (100g + 20g × Σ levels present) | +5 mood (all present) | None |
 | Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
 | Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
 | Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | -2 relationship |
@@ -281,7 +281,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Drinking Buddy | 1 | Two drinking buddies present | +3 mood, +4 relationship | None |
 | Training Partners | 1 | Two heroes both training | +2 mood, +5 training progress | None |
 | Address Gossip | 1 | Hero with Gossip trait | Gossip stopped, -1 mood (reprimand) | -3 random relationship |
-| Share Loot | 1 | Guild has > 5,000g (costs 500g) | +3 mood (all heroes) | None |
+| Share Loot | 1 | Guild has > 5,000g (costs 500g) | +3 mood (all present) | None |
 | Tell War Stories | 1 | Always available | +10 XP for low-level heroes | None |
 | Eavesdrop | 1 | Always available | Reveals social intel | None |
 
@@ -354,7 +354,7 @@ Treats injured heroes, houses the sick, and installs the prosthetics. The smell 
 | 4 | 1.75x | 16 | Standard prosthetics |
 | 5 | 2.0x | 24 | Enchanted prosthetics |
 
-**Illness treatment slots** cap how many sick heroes you can put on the ward per night from the Infirmary scouting scene (see the [Illness system in the Hero Guide](heroes.md#illness--chronic-traits)). Whenever any hero is sick, the game opens on the Infirmary scene the next morning — before Tavern, above the ceremonial moment queues — showing every sick hero as a card with severity, immunity, symptom notes, and a **Treat** toggle. A bed treats the whole hero — every strain they are carrying, not just the headline one. **Skip Infirmary Tonight** hands the ward over to the house, which fills the beds by *illness* instead: worst strain in the guild first, until it runs out of beds. Higher tiers also shave 5% per level off severity growth for every sick hero, treated or not, on the reasonable theory that a well-appointed ward is helpful just by existing. A Cleric present at the guild — not dead, not on mission — grants a further +25% immunity gain to each treated hero. An **Until Cured** toggle on each card keeps that hero pre-selected on following nights, so a long convalescence costs you one confirmation rather than a nightly round of the roster.
+**Illness treatment slots** cap how many sick heroes you can put on the ward per night from the Infirmary scouting scene (see the [Illness system in the Hero Guide](heroes.md#illness--chronic-traits)). Whenever any hero is sick, the game opens on the Infirmary scene the next morning — before Tavern, above the ceremonial moment queues — showing every sick hero as a card with severity, immunity, symptom notes, and a **Treat** toggle. A bed treats the whole hero — every strain they are carrying, not just the headline one. **Skip Infirmary Tonight** hands the ward over to the house, which fills the beds by the same rule you would have: sickest hero first, ranked on their worst strain, until the beds run out. Higher tiers also shave 5% per level off severity growth for every sick hero, treated or not, on the reasonable theory that a well-appointed ward is helpful just by existing. A Cleric present at the guild — not dead, not on mission — grants a further +25% immunity gain to each treated hero. An **Until Cured** toggle on each card keeps that hero pre-selected on following nights, so a long convalescence costs you one confirmation rather than a nightly round of the roster.
 
 ### Armory
 

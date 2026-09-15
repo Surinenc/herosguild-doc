@@ -21,7 +21,7 @@ The Guild Screen is your home base — the one screen you'll see more than any o
 The top bar answers the three questions you are always asking: how much money you have, what day it is, and how badly you are regarded:
 - **Gold** - Your current funds; the number that determines everything
 - **Day** - Current game day; the number that determines how long you have been getting into trouble
-- **Guild Rank** - Your reputation rank (F through S); the number that determines what trouble is available
+- **Guild Rank** - Your reputation rank (F through S); the number that determines what trouble is available. Hover the cell, or tab to it, and it lays out the current rank and what it grants — roster space, mission slots, better recruits — then the next rank, the reputation still owed, and what that one grants. It will not tell you which stories open up there, on the grounds that spoiling them would be rude
 - **Settings** - Access options
 
 ### Hero Panel (Left)

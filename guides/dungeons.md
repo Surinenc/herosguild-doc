@@ -59,6 +59,7 @@ Monster level determines enemy strength:
 - Higher level = more HP, more damage
 - Scales with your guild's highest hero level
 - Independent of star rating
+- Sets the level term of the contract's gold. Up to monster level 20 that term follows `level^1.2`; past it, `level^1.5` — the same shape as the [wage curve](guild.md#daily-wages), and deliberately so. It was not always. On the old flat curve, pay fell behind payroll a little more with every level, until at around monster level 77 a full eight-hero five-star contract no longer covered the wages of the party sent to run it — sooner, with a roster of expensive heroes. A level-80 contract now pays roughly half again what it used to, which the Guild Clerk has filed under *arithmetic finally catching up with itself*
 
 **Example Combinations:**
 - ⭐ + Level 50: Quick farm run for high-level heroes

@@ -668,7 +668,7 @@ Each Paragon point costs **192,109 XP**. Points are allocated into 8 categories,
 | Armor | +5 Armor | 50 | +250 Armor |
 | XP Gain | +2% | 50 | +100% |
 
-**Total Paragon Points:** 400 points to fully max all 8 categories.
+**Total Paragon Points:** 400 points to fully max all 8 categories — and 400 is a hard ceiling rather than a milestone. A hero at the cap keeps earning Paragon XP, which sits banked in their total rather than converting into points they could not spend; the Paragon tab says as much, in place of the per-point progress bar it shows on the way up.
 
 **Strategy Notes:**
 - **XP Gain first** — investing early in XP Gain (up to +100%) dramatically accelerates all future Paragon point acquisition. The maths is compelling.

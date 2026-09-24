@@ -269,7 +269,7 @@ Central storage for all items — a carefully catalogued system that heroes will
 ### Item Actions
 
 - **Equip** - Assign to hero (can also be done by dragging, which heroes always manage to do accidentally)
-- **Sell** - Convert to gold (also available as a bulk-mode toggle)
+- **Sell** - Convert to gold (also available as a bulk-mode toggle). If any living hero carries the **Merchant** background, the highest-level of them handles the transaction and their sell-price bonus applies; the preview, the panel and the toast all name whoever is doing the haggling, so you can see the difference a Merchant makes before you agree to it
 - **Salvage** - Get materials (also available as a bulk-mode toggle)
 
 Enchanting is not a per-item vault action — it lives in the Workshop (Enchanting Table facility). Open the workshop and bring the item there.

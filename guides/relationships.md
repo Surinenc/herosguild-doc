@@ -360,31 +360,33 @@ When mood drops critically low, heroes may have what the Guild Clerk's handbook 
 
 ### Trigger Conditions
 
-Mental breaks can only occur when mood drops below **30** (critical zone). The chance increases with:
+Mental breaks can only occur when mood drops below **25**. That one number is shared by the daily roll, the mid-combat check and the BreakRisk chip, so what the chip warns you about is exactly what the morning rolls. Below it, the chance is:
 
 | Factor | Effect on Break Chance |
 |--------|----------------------|
-| Base chance | 5% |
-| Per day at low mood | +3% per day |
-| Mood below 20 | +10% |
-| Mood below 10 | +20% |
-| Recently lost loved one | +15% |
-| Per close friend | -2% (protective) |
+| Base chance | 15% |
+| Per day at low mood | +5% per day |
+| Recently lost a loved one | +20% (a grief thought added within the last 7 days) |
+| Per close friend | -5% (protective) |
 
-Break chance is capped at 80%. Keep mood above 30 to prevent breaks entirely.
+Break chance is capped at 90%. Keep mood at 25 or above to prevent breaks entirely.
+
+A hero already in a break does not roll for another, and a hero **out on a mission or scheduled for one** does not roll at all — but their days-at-low-mood keeps counting while they are away, so the risk is sitting on the doorstep when they get back. The dead, mercifully, are exempt.
 
 ### Break Types
 
 | Break | Duration | Weight | Effect |
 |-------|----------|--------|--------|
-| Desertion | Permanent | 15% | Hero leaves the guild |
-| Berserk | 1 day | 10% | Attacks random allies in combat |
-| Catatonic | 3-7 days | 15% | Cannot function, loses turns in combat |
-| Binge | 2-4 days | 15% | Goes on a drinking spree |
-| Insulting | 1-2 days | 15% | Insults other heroes, damages relationships |
-| Hiding | 2-5 days | 10% | Refuses to leave quarters |
-| Wandering | 1-3 days | 10% | Wanders off, unavailable |
-| Confession | Instant | 10% | Blurts out a secret, one-time relationship impact |
+| Desertion | Permanent | 15% | The hero packs and leaves the guild, that same morning. There is no coming back and no consolation thought |
+| Berserk | 1 day | 10% | Costs the hero 20% of their max HP and two days injured, then picks a Ready hero who isn't breaking down themselves and does the same to them. Relationship -25 from the breaker, -30 from the victim, who takes it rather more personally. With nobody available they trash the barracks instead |
+| Catatonic | 3-7 days | 15% | Set to Resting and stares at the wall for the duration |
+| Binge | 2-4 days | 15% | Set to Resting and booked as a **Bender** absence for the whole duration — drunk 100, hangover 80, addiction +15, and ten drinks on the lifetime tally |
+| Insulting | 1-2 days | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: -10 from their side, -15 from each recipient's |
+| Hiding | 2-5 days | 10% | Set to Resting behind a locked door |
+| Wandering | 1-3 days | 10% | Set to Resting, location unknown |
+| Confession | Instant | 10% | Resolves the same tick. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |
+
+Every break ends — the instant ones resolve on the tick they fire, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy.
 
 ### Combat Impact
 
@@ -395,9 +397,9 @@ Mental breaks affect heroes mid-combat:
 
 ### Prevention
 
-- Keep mood above 30 — this is the absolute threshold
-- Assign close friends to the same guild activities (each friend reduces break chance by 2%)
-- Address low mood quickly — the chance compounds at +3% per day
+- Keep mood at 25 or above — below that line, and only below it, the dice come out
+- Friendships are armour: each close friend takes 5 points off the daily chance
+- Address low mood quickly — the chance compounds at +5% per day, so a week of neglect is worth more than the base rate
 - Watch for risk factors: recent loss of a loved one adds +15% break chance
 
 ### Recovery

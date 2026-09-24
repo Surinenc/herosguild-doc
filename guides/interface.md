@@ -34,6 +34,7 @@ Your roster at a glance. The Guild Clerk designed this panel to answer the quest
 - Mood indicator — the honest answer to whether they want to
 - **Illness badge** — appears when the hero is sick, coloured by severity (green under 30, amber 30-70, red past 70). The list of afflictions is on their History tab
 - **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Seeded stable per day from personality traits, so the same hero says roughly the same thing all day and something different tomorrow
+- **Break chips** — a red **Break Risk** chip appears the moment mood falls under 25, and its tooltip names the mood and the line it has crossed rather than leaving you to guess. Should the roll go badly it is replaced by a **Mental Break** chip naming the break and the days left on it, which outranks every other social chip on the card, as these things tend to
 
 Click a hero to see details.
 

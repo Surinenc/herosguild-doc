@@ -308,6 +308,8 @@ Note: "Broken" appears as both a combat emotional state (triggered by trauma dur
 
 Each hero has a mood value (0-100) that quietly applies a multiplier to everything they do. Happy heroes fight better, earn more, and complain less. Miserable heroes do the reverse — and occasionally leave:
 
+Mood is not a number that drifts about on its own. It is arithmetic: **50, plus every thought the hero is currently carrying**, clamped to 0–100. Each thought has a value, a stack count and an expiry, and nothing moves mood without leaving one behind — which means every point of a hero's misery is itemised and attributable, and the itemisation is printed on their Hero Details panel. A hero holding the **Survivor** title has the negative half of that sum softened by 20%, **Phoenix** by 25%; a hero with both gets the better of the two rather than the sum, Phoenix being Survivor's promotion rather than its companion.
+
 ### Mood States
 
 Mood is a 0-100 value mapped to 6 states:

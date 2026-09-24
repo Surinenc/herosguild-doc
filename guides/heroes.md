@@ -592,7 +592,7 @@ Heroes earn titles by achieving specific milestones tracked in their Chronicle. 
 | **Whisperer** | Maintain bonds with 5 different heroes | +5% damage when partied with a bonded ally |
 | **Phoenix** | Recover from 3 mental breaks | -25% negative mood impact |
 
-Titles stack — a hero can hold multiple titles simultaneously. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it. Trial-Master is the only title that requires the [Ascendancy](ascendancy.md) trial path; Old Guard rewards heroes who simply refuse to retire.
+Titles stack — a hero can hold multiple titles simultaneously, with one exception: Survivor and Phoenix both soften negative mood, and a hero holding both gets the larger reduction rather than 45% off their troubles. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it. Trial-Master is the only title that requires the [Ascendancy](ascendancy.md) trial path; Old Guard rewards heroes who simply refuse to retire.
 
 When a hero dies, their earned titles are preserved on their **Chapel memorial card** — the Guild Clerk considers this the minimum decency the realm can offer.
 

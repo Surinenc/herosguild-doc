@@ -435,27 +435,54 @@ Heroes have personality traits that affect relationships. These traits are, regr
 
 | Trait | Effect |
 |-------|--------|
-| Friendly | +2 trust per interaction; most heroes consider this overachievement |
-| Kind | Easier to form positive bonds; not everyone finds this useful |
-| Brave | Combat bonuses, inspirational; the trait the Warrior has already explained to you |
-| Loyal | Won't betray relationships; a lower bar than it sounds |
+| Gregarious | Relationships build 1.5× faster — and their social need drains 1.5× faster too, because company is a diet, not a decoration |
+| Charming | Relationships build 1.2× faster, and everyone meets them at **+3** |
+| Kind | Relationships build 1.1× faster; a **15%** daily chance of quietly giving somebody a small present |
+| Loyal | Takes relationship damage at half rate, and **+10%** to intervene for someone they care about |
+| Empathic | Can comfort a hero who needs it, which the guild has never found a way to put on a form |
+| Inspiring | An aura: **+5 mood** to their immediate neighbours, simply by existing nearby |
+| Peacemaker | Their presence opens the *Mediate Conflict* option for feuding pairs, Enemies included |
+| Diplomatic | Takes relationship damage at 0.7× rate; everyone meets them at **+5** |
+| Approachable | **+20%** to positive social events finding them |
+| Forgiving | Takes relationship damage at half rate and lets grudges decay — one point toward zero every third day |
+| Cheerful | Relationships build 1.2× faster, and an aura worth **+8 mood** to those nearby |
+| Trustworthy | Everyone meets them at **+10**, the largest first impression in the realm |
 
 ### Negative Traits
 
 | Trait | Effect |
 |-------|--------|
-| Antisocial | -1 trust per interaction; they are not trying, and it shows |
-| Jealous | May sabotage rivals; productive only from a very specific angle |
-| Coward | May flee, lower morale; consistent at least |
-| Cruel | Others dislike them; they consider this neutral information |
+| Shy | Relationships build at 0.7× rate |
+| Abrasive | Relationships build at 0.8× and take damage at 1.5× |
+| Jealous | Someone else's good fortune costs them mood; productive only from a very specific angle |
+| Pessimist | An aura: **-5 mood** to their neighbours. They would like you to know it is realism |
+| Gossip | Spreads information, accurately or otherwise |
+| Loner | Social need decays at 0.3× rate and they never complain about being left alone — the cheapest hero in the guild to ignore |
+| Psychopath | Relationship effects simply do not apply to them |
+| Coward | Refuses dangerous missions |
+| Greedy | Grows attached to equipment at double speed |
+| Lazy | Takes personal days more often |
+| Vindictive | Takes relationship damage at 1.5× and holds grudges — it also cancels Forgiving, if by some administrative accident they hold both |
+| Paranoid | **+20%** to negative social events finding them, which they had of course predicted |
+| Annoying Voice | Everyone meets them at **-10**, before they have said anything of substance |
+| Volatile | Relationships build *and* break at 2×; the fastest friendships and the shortest |
+| Misanthrope | Starts at **-5** toward everybody. Not a first impression they make — a first impression they arrive holding |
 
 ### Neutral Traits
 
 | Trait | Effect |
 |-------|--------|
-| Romantic | More likely to form couples; this goes well until it doesn't |
-| Competitive | Forms rivalries easily; also the source of the +10% rival bonus, which is cold comfort |
-| Independent | Fewer social interactions; harder to build bonds, easier to avoid drama |
+| Reserved | Relationships build and break at 0.7×; very little happens, slowly |
+| Passionate | Both directions at 1.5× |
+| Protective | **+15%** to intervene for someone they care about, the largest trait bonus in the table |
+| Competitive | Forms rivalries from **Dislike** rather than waiting for real hostility |
+| Ascetic | Never grows attached to equipment; swap their gear freely |
+| Unpredictable | Draws a random event type, which is exactly as helpful as it sounds |
+| Intense | Both directions at 1.5× |
+
+First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder. Misanthrope runs the other way: it colours how the holder sees everyone else. The distinction was for a long while reversed in the code, which made charm a private virtue and an annoying voice a private burden, neither of which is how either works.
+
+Contradictory traits no longer turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's traits are nudged. Heroes who already hold such a pair keep it — they have presumably made it work, or at least made it everyone's problem.
 
 ---
 
@@ -602,7 +629,7 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 | Runaway | Temporarily left the guild |
 | Mental Health | Recovering from trauma |
 
-Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty. Some reasons — like Mourning or Mental Health — cannot be overridden at all.
+Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty, paid up front: the override clears the absence, and only then can they be dispatched. Some reasons — like Mourning or Mental Health — cannot be overridden at all. The rule is now the same everywhere: an absent hero cannot be accepted onto a contract, a dungeon run or a Spire climb, rather than being blocked at the Mission Board and quietly admitted through the side doors.
 
 #### What It Costs Them
 

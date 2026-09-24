@@ -169,14 +169,15 @@ Exceptional quality crafts give +50% XP.
 
 ### Step by Step
 
-Crafting follows six steps in sequence. Missing any of them produces results ranging from nothing happening to an expensive pile of unusable materials:
+Crafting follows seven steps in sequence. Missing any of them produces results ranging from nothing happening to an expensive pile of unusable materials:
 
 1. **Select Recipe** - Must have the recipe unlocked; wanting the item is not sufficient
-2. **Assign Crafter** - A hero with the appropriate skill who is not currently doing something else
+2. **Assign Crafter** - A hero whose skill clears both gates: the recipe's own **skill requirement**, and the **tier access** their level grants. The Craft button and the model consult the same rule, so a button that offers you a craft is a button that will let you make it
 3. **Check Materials** - Everything must be in the guild vault; the station does not improvise
-4. **Queue Craft** - Production begins; the crafter is now unavailable for anything more urgent
-5. **Wait** - Duration based on item tier ranging from hours to an entire week for Legendary items
-6. **Completion** - Quality is rolled, the item is created, and you find out whether the wait was worth it
+4. **Pay the Bench Fee** - Every craft charges gold on top of its materials, by tier: **50g** Common, **150g** Uncommon, **400g** Rare, **1,000g** Epic, **2,500g** Legendary. Charcoal, thread, whetstones and the quiet attrition of tools — the Guild Clerk has itemised it, at length, and nobody has asked twice
+5. **Queue Craft** - Production begins; the crafter is now unavailable for anything more urgent
+6. **Wait** - Duration based on item tier ranging from hours to an entire week for Legendary items. A multi-day craft stays with the hero who started it; you cannot hand the tongs to someone else halfway and keep their skill bonus
+7. **Completion** - Quality is rolled, the item is created, and you find out whether the wait was worth it
 
 ### Crafting Time
 
@@ -345,20 +346,22 @@ Raw materials must be processed before use. The Guild Clerk has lost count of th
 **Metal Chain:**
 ```
 Iron Ore → [Smelter] → Iron Ingot → [Forge] → Steel Ingot
-  2 ore = 1 ingot          2 iron + 1 coal = 1 steel
+  2 ore = 1 ingot          12 iron + 1 coal = 1 steel
 ```
 
 **Leather Chain:**
 ```
 Leather Scraps → [Tannery] → Leather → [Tannery] → Hardened Leather
-  3 scraps = 1 leather         2 leather + 1 oil = 1 hardened
+  3 scraps = 1 leather         3 leather + 1 oil = 1 hardened
 ```
 
 **Cloth Chain:**
 ```
 Cloth → [Loom] → Fine Cloth
-  3 cloth = 1 fine
+  13 cloth = 1 fine
 ```
+
+Those input counts are not typos, and they went up considerably. Every processing recipe is now priced so that what comes out is worth **less than 0.8×** what went in — because a step that turned cheap material into expensive material at a favourable ratio was not a crafting chain, it was a printing press. The same ceiling governs **salvage**: breaking an item down returns materials worth at most 80% of the lower of its sell value and its notional drop value, so the vault is a place to recover something from a mistake rather than a place to manufacture money out of one.
 
 ---
 

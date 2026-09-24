@@ -371,6 +371,10 @@ Needs below their critical threshold actively decrease mood.
 - Overwork — heroes sent on back-to-back missions with no rest will eventually stop asking nicely
 - Poor living conditions — the barracks complaint is the one they never stop making
 
+**Adventures now leave thoughts of their own.** A mission or dungeon run writes up what actually happened: the success or the failure, a hero's first kill, a boss going down, saving an ally, *being* saved by one, and a genuinely rich haul. Each arrives as its own listed line rather than an unexplained shift in the total.
+
+One rule governs the pile: **a good outcome never leaves a hero worse off than they started.** The success thought is applied last and absorbs whatever the rest of the run cost them, so a party that won, took a beating, lost the loot roll and watched a friend nearly die still comes home no gloomier than they set out. Losing is permitted to hurt. Winning is not.
+
 ---
 
 ## Mental Breaks

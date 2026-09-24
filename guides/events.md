@@ -42,6 +42,8 @@ These events have consequences. They shift the axes further. Occasionally, they 
 
 The game pays close attention to your heroes. Not as a general principle — it scans your roster continuously for specific conditions and produces events built around whoever it finds. A rivalry at boiling point. A veteran who has gone unacknowledged for too long. A near-death hero quietly reconsidering their career choices. The events use their names. The options reflect what has actually happened between them. They have deadlines. If the deadline passes without your input, the game resolves it for you — defaulting, generally, to the least interesting option available.
 
+Casting is now as careful as the writing. Each slot in an event carries its own conditions, and the realm fills it with a hero who actually meets them — including paired slots, so a sibling rivalry finds two heroes who are in fact siblings and in fact rivals, rather than two names and a hopeful noun. A follow-up in a chain only fires from its chain, never by being drawn at random, which incidentally freed up the pool it had been crowding out.
+
 → **Full details:** [Guild Management — Context-Aware Guild Events](guild.md#context-aware-guild-events)
 
 ---

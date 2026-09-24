@@ -318,9 +318,14 @@ When a hero would receive a **killing blow**, allies may intervene:
 
 **Modifiers:**
 - Warrior class: +20%
-- Lovers/Married: +25%
+- Attracted / Lovers / Married: +25%
 - Life Debt bond: +30%
+- Mentor / Battle Brother: +15%
+- Shield Sibling title: +15%
+- Protective trait: +15%; Loyal trait: +10%
 - Maximum: 90%
+
+The base chance comes from the **would-be rescuer's** opinion of the hero in danger, not the other way round. See [the full table in the Relationships Guide](relationships.md#intervene-chance).
 
 ### Relationship Impact
 
@@ -531,7 +536,7 @@ When a boss drops below a phase threshold:
 
 ### Relationship Bonuses
 
-Heroes fight better alongside friends and worse alongside enemies, because professionalism in the adventuring industry is, at best, aspirational:
+Heroes fight better alongside friends and worse alongside enemies, because professionalism in the adventuring industry is, at best, aspirational. The tier is taken from the **average** of that hero's relationships with everyone else in the party, so one beloved comrade can offset one loathed one and leave a hero fighting as though surrounded by strangers:
 
 | Relationship | Damage Modifier |
 |--------------|-----------------|
@@ -546,6 +551,8 @@ Heroes fight better alongside friends and worse alongside enemies, because profe
 | Rival (-36 to -55) | -12% |
 | Hostile (-56 to -75) | -18% |
 | Enemy (-76 to -100) | -25% |
+
+This applies to **basic attacks only**. A skill is a skill: the gem does not care how the caster feels about the person standing next to them, and the modifier above never reaches it. A party of enemies who all fight with skills will notice remarkably little; a party of enemies swinging swords will notice a quarter of their damage missing.
 
 **Warning:** Lovers can go Berserk or Broken if their partner dies. Consider the risk. Love is a battlefield, and in this case, that's literally true.
 

@@ -90,11 +90,22 @@ Relationships affect combat performance in both directions. Heroes who like each
 
 ### Healer Refusal
 
-A Cleric or Paladin will not heal an ally they actively despise. Any wounded hero at **relationship value ≤ -25** (Dislike, Rival, Hostile, Enemy — mutual grievance is not required, the healer's ledger is the one that counts) is skipped:
+A Cleric or Paladin may or may not heal an ally they despise, and the question is settled by dice rather than principle. Refusal is graded on the healer's own ledger — mutual grievance is not required, only theirs:
 
-- **Single-target heals** pick the next-most-wounded ally they *don't* hate. If every wounded ally is hated, the caster spends the turn refusing loudly (mercifully, at no cooldown cost).
-- **AoE heals** exclude hated allies from the target set — the shield of holy light politely goes around them.
-- **Guardian and Champion self-heal** paths are exempt, on the theory that even a bitter healer will patch themselves up rather than bleed on principle.
+| The healer's opinion | Chance of refusing |
+|----------------------|--------------------|
+| -10 or worse | 20% |
+| -30 or worse | 50% |
+| -60 or worse | 80% |
+| **Blood Feud or Nemesis** bond | 90% to 98%, depending on how far the underlying ledger had already sunk |
+
+The roll happens **once per wounded ally per cast**, so a healer who grudgingly patched someone last turn may refuse the next, which is how grudges actually work.
+
+- **Single-target heals** pick the next-most-wounded ally they *didn't* refuse. Only if the roll actually turned away the most-wounded ally does the caster spend the turn refusing loudly — a hated ally who happened to survive the dice no longer gets the healer blamed for it
+- **AoE heals** exclude whoever the roll turned down — the shield of holy light politely goes around them
+- **Nobody refuses to heal themselves.** Even a bitter healer will patch their own arm rather than bleed on principle
+
+Love and debt override the dice entirely. **Lovers** and **Married** partners are never refused and jump to the front of the queue at 2.5× priority; a **Life Debt** likewise cannot be refused, at 2.0×. Short of that, simply being liked moves a hero up the list: 1.2× from +30, 1.5× from +50, and 2.0× from +80, which means a well-loved hero is triaged first and a merely tolerated one waits.
 
 The reliable fix is to stop your Cleric hating people. The unreliable one is to stock a great many Bandages and hope they land on the right hero.
 
@@ -130,6 +141,7 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 - **How:** Similar achievements, competitive traits
 - **Penalty:** -15% combat damage when both are in the same party — the bond is corrosive in practice. Rivals also refuse to party together once the bond locks in.
 - **Risk:** May conflict over leadership
+- **It can end.** A Rival or Enemy bond clears itself once the underlying opinion has been held above Dislike — that is, at -20 or better — for **7 consecutive days**. The counter resets the moment they slip back, so the work has to be sustained rather than merely attempted. A **Forgiving** hero does the work on their own, drifting any negative relationship one point toward zero every third day, unless they are also **Vindictive**, in which case the two traits argue and nothing moves
 
 ### Life Debt
 
@@ -149,11 +161,13 @@ Additional bonds include:
 - **Siblings** - Family bond
 
 **Negative:**
-- **Nemesis** - Escalated rivalry, deep personal hatred
+- **Nemesis** - Escalated hatred, reachable from either Rival *or* Enemy. The hostile ladder will not stack Rival on top of an existing Enemy, Nemesis or Blood Feud — there is no need to formalise what is already obvious
 - **Blood Feud** - Sworn enemies. Heroes in a Blood Feud bond **refuse to deploy on the same mission together** — a hard refusal that cannot be overridden, even at a mood cost. You will have to send one of them, or neither
 - **Ex / Scorned** - Failed romantic relationship
 - **Estranged** - Former bond broken by betrayal
 - **Divorced / Cheated** - The paperwork version of the above
+
+**Who refuses whom.** Four bonds block a shared deployment, and the check now runs in **both directions** — the newcomer's objection to the party and every existing member's objection to the newcomer. **Blood Feud**, **Rival** and **Enemy** are *hard* refusals: no mood price will buy them off, and the dispatch is blocked outright. **Ex-Partner** is *soft* — you may insist, at a cost of 20 mood to the hero you insisted on. Refusal also outranks insistence: a hero who would ordinarily refuse to go anywhere without their devoted companion will stand down quietly if that companion is party to a hard conflict, rather than the two demands cancelling each other out in the dispatch window. Suggest Party builds its roster one hero at a time, checking each new candidate against everyone already chosen.
 
 Any of **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Cheated**, with no surviving romance attached, will get a cohabiting pair separated on the next day-advance — one of them takes a free private room, or the Barracks if there isn't one. See [Cohabitation](guild.md#cohabitation).
 
@@ -171,7 +185,7 @@ All arcs share:
 - Both heroes must be at least **level 5**
 - A per-pair **cooldown of 200 days** after any arc resolves — the realm does not allow the same two heroes to keep restarting
 - Only **one arc in flight per hero** at any time
-- The arc opens with a Chronicle **spark** entry, then a delayed **modal event** in Guild Events with a **3-day deadline**. The default-on-expiry varies by archetype (`arcDefinitions.ts:58,82,107,131`): Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
+- The arc opens with a Chronicle **spark** entry, then a **modal event** in Guild Events with a **3-day deadline**. How long you wait for that modal depends on the archetype — Rivalry lands after **3 days**, Romance and Honor Debt after **5**, Mentorship after **7**, on the sensible grounds that a grudge sharpens faster than a vocation. The default-on-expiry varies by archetype (`arcDefinitions.ts:58,82,107,131`): Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
 - The crisis system has the right of way: if a [crisis](crisis.md) is active, the arc step is deferred by a day
 
 ### The Four Arc Archetypes
@@ -262,9 +276,14 @@ An intervene attempt requires all of the following, because goodwill alone is no
 |-----------|----------|
 | Warrior class | +20% |
 | Life Debt bond | +30% |
-| Lovers/Married | +25% |
-| Mentor/Battle Brother | +15% |
+| Attracted / Lovers / Married | +25% |
+| Mentor / Battle Brother | +15% |
+| **Shield Sibling** title | +15% |
+| **Protective** trait | +15% |
+| **Loyal** trait | +10% |
 | Maximum | 90% |
+
+The base chance is read from **the ally's own opinion of the hero in danger** — which is the only direction that makes sense, whatever the engine may have believed previously. A hero adored by a Warrior who owes them a life debt is very hard to kill; a hero who merely tolerates everyone is on their own.
 
 ### What Happens
 

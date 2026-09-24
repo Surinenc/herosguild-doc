@@ -43,14 +43,14 @@ Every hero begins on their class node. It cannot be removed, which saves conside
 
 | Class | Starting Stats |
 |-------|---------------|
-| **Warrior** | +50 STR, +100 Damage, +20% Physical Damage |
-| **Mage** | +50 INT, +50 Damage, +20% Spell Damage |
-| **Rogue** | +50 DEX, +80 Damage, +20% Physical Damage |
-| **Ranger** | +50 DEX, +50 Damage, +20% Projectile Damage |
-| **Cleric** | +40 INT, +40 STR, +50 Damage, +20% Spell Damage |
-| **Necromancer** | +50 INT, +50 Damage, +20% Chaos Damage |
+| **Warrior** | +50 STR, +10% Damage, +20% Physical Damage |
+| **Mage** | +50 INT, +5% Damage, +20% Spell Damage |
+| **Rogue** | +50 DEX, +8% Damage, +20% Physical Damage |
+| **Ranger** | +50 DEX, +5% Damage, +20% Projectile Damage |
+| **Cleric** | +40 INT, +40 STR, +5% Damage, +20% Spell Damage |
+| **Necromancer** | +50 INT, +5% Damage, +20% Chaos Damage |
 
-Warrior and Rogue starting nodes carry extra flat damage — Warrior gets the largest bump because plate-and-stubbornness was the slowest archetype to come online in the early game; Rogue gets a smaller bump because daggers are already pointy.
+Warrior and Rogue starting nodes carry a larger damage bump — Warrior the largest, because plate-and-stubbornness was the slowest archetype to come online in the early game; Rogue a smaller one, because daggers are already pointy. These used to be *flat* damage, back when something read flat damage; they are percentages now, which is the same intent expressed in a unit the engine has an opinion about.
 
 ### Branch Specializations
 
@@ -206,7 +206,7 @@ Passive tree bonuses don't all stack the same way. Three modifier types govern h
 
 | Type | Behaviour | Example |
 |------|-----------|---------|
-| **Flat** | Added directly | +50 Strength, +50 Damage |
+| **Flat** | Added directly | +50 Strength, +150 Maximum Life |
 | **Percent** | Additive with other percent bonuses | Two +5% Armor nodes = +10% Armor |
 | **Multiplier** | Multiplicative scaling | Compounds with other multiplier sources |
 

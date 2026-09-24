@@ -249,7 +249,7 @@ Clerics choose between healing mastery or battle cleric.
 |--------|-------|---------------|
 | **A - Heal** | Healing Power | +25% heal power → heals apply 5% HP/turn regen → **single-target heals bounce once to the next-most-wounded ally (Chain of Grace)** |
 | **B - Party Defense** | Protection | Allies take -10% damage → -15% damage → -25% damage |
-| **C - Shields** | Barriers | Heals grant 10% of heal as shield → Shield Wall lasts +2 turns → shields absorb 50% more |
+| **C - Shields** | Barriers | Heals grant 10% of heal as shield → heals restore **+15%** more HP to allies → shields absorb 50% more |
 
 **Best For:** Primary healer, party survival, defensive content
 

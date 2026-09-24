@@ -207,8 +207,11 @@ These are calculated from primary stats, because apparently nothing in this guil
 | Max HP | 50 + (VIT × 10) + (Level × 10) |
 | Max Mana | 30 + (INT × 5) |
 | Initiative | DEX + 1d10 (random roll at combat start) |
-| Crit Chance | 5% + (DEX / 20) + (LCK / 20) + bonuses (UI / stat display path, `Hero.ts:2778`) |
-| Crit Chance (combat) | 5% + (DEX / 20) + (LCK / 10) + bonuses (in-fight roll, `Balance.ts:625`) |
+| Crit Chance | 5% + (DEX / 20) + (LCK / 10) + gear + set bonuses + passive nodes + gem crit + buffs, ascendancy and paragon |
+| Crit Damage | 150% × (1 + total crit-damage bonus %), from the same list of sources |
+| Energy Shield | (Mage and Necromancer only) INT × 5, plus any flat shield from support gems, raised by passive Energy Shield % |
+
+The sheet and the fight now read the **same two functions**, which is less obvious an improvement than it sounds: for a long while the hero sheet totted up your crit gloves, set bonuses, passive nodes and gem crit, and the combat engine quietly used a shorter formula that included none of them. The gloves worked in the display cabinet and nowhere else. Both now use everything on the list.
 
 ---
 

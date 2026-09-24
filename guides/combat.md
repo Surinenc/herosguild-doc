@@ -81,11 +81,11 @@ The class multiplier exists to keep the spread between best- and worst-case buil
 When the numbers align, attacks deal significantly more damage. The numbers do not always align:
 
 ```
-Crit Chance = 5% + (DEX / 20) + (LCK / 10) + bonuses
-Crit Multiplier = 1.5× (base) + (bonus crit damage% / 100)
+Crit Chance = 5% + (DEX / 20) + (LCK / 10) + gear + sets + passives + gems + buffs/ascendancy/paragon + situational
+Crit Multiplier = 1.5x (base) x (1 + bonus crit damage% / 100)
 ```
 
-Socketed skill gems contribute their own `critical_strike_multiplier` to the crit damage on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup.
+Socketed skill gems contribute their own `critical_strike_chance` and `critical_strike_multiplier` on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup. Every crit roll in the fight — basic attack, off-hand, multi-strike, triple-strike, gem skill, default skill and the Gladiator counter — goes through the same pair of functions the hero sheet uses, so what the sheet promises is what the dice are actually given.
 
 ### Enemy Weaknesses
 

@@ -23,18 +23,21 @@ When a crisis fires, the realm picks a type, picks a duration (8 to 20 days depe
 Every crisis runs through up to four **severity tiers**: Mild, Moderate, Severe, and Critical. The tier governs how heavy the penalties are, what extra effects kick in, and — for three specific crises — whether a permadeath moral event becomes available.
 
 **Escalation:**
-- Crises start at **Mild.**
-- At the halfway point, if no **resolution missions** have been completed, severity bumps once.
-- If the crisis runs its full duration with **zero resolution missions completed**, it ends at **Critical** automatically — the worst possible outcome.
+- Crises start at **Mild** (a chained successor may start at **Moderate**).
+- There are three escalation checkpoints, at the **halfway**, **three-quarter** and **nine-tenths** marks of the crisis's run. At each one, if **no resolution missions** have been completed, severity bumps a tier — at most one bump per day, and never past Critical.
+- Which means ignoring a Mild crisis entirely does reach **Critical**, at the 90% mark, rather than merely threatening to; a chained crisis that starts at Moderate gets there by the three-quarter mark. The old arrangement, in which a crisis escalated exactly once and Critical was in practice unreachable, has been retired along with the complacency it encouraged.
 
 **De-escalation:**
 - Completing a **resolution mission** (a mission flagged as relevant to the active crisis) drops severity by one tier.
+- Every one of the fourteen crises now has a resolution mission on the board — including the six that once offered no way out at all, of which the Dragon's Tithe and the Royal Levy name theirs outright (*Drive off the dragon*, *Petition the crown*).
 - Stack resolution missions and you can hold a crisis at Mild for its entire duration.
 
 **End conditions** are one of:
 - **Engaged** — the player completed at least one resolution mission. The best outcome.
 - **Partial** — some resolution missions completed but not enough to fully resolve. Middle outcome.
 - **Ignored** — zero resolution missions completed. Worst outcome, and the one that triggers the heavy consequences listed below.
+
+A crisis contract is paid by **its own** reward multiplier, not the crisis's global reward penalty. The realm is many things, but it is not so tasteless as to dock your pay for cleaning up its mess — and the rule holds even if the contract straggles home after the crisis has already ended.
 
 The Guild Clerk maintains a small mental ledger of crises survived. Heroes who have survived a Critical crisis tend to mention it, unprompted, for the rest of their careers.
 
@@ -55,7 +58,7 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 
 | Crisis | Icon | Duration | Effect |
 |--------|------|----------|--------|
-| **The Guild Wars** | ⚔️ | 10–14 | Mission rewards ×0.4–0.8, rival-guild combat missions injected |
+| **The Guild Wars** | ⚔️ | 10–14 | Mission rewards ×0.4–0.8, rival-guild combat missions injected, and a **10% chance per mission** of the first encounter opening as an ambush — a small, unbudgeted chance, which accountants everywhere agree is the worst kind |
 | **The Bandit Raids** | 🗡️ | 8–14 | Mission rewards ×0.65–0.85, large reputation swings on resolution outcomes (±50 to −100) |
 | **The Iron Pact** | ⚙️ | 10–14 | **Hero physical damage ×1.25; hero non-physical damage ×0.90.** Steel is in fashion; magic is out |
 | **Beast Rampage** | 🐺 | 8–12 | **Beast-category enemies deal +25% physical damage** |
@@ -64,8 +67,8 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 
 | Crisis | Icon | Duration | Effect |
 |--------|------|----------|--------|
-| **The Dragon's Tithe** | 🐉 | 8–12 | Tribute moral event (currently a **flat -500 gold** in production code; the 25% vault-percentage config is present but the production tribute handler that would read it is not wired up). Ignore the crisis and the dragon damages your highest non-Barracks facility by 2 levels |
-| **The Royal Levy** | 👑 | 8–12 | Tribute moral event (configured for 15% of vault capped at 20,000 in the data layer, but the production handler is **not wired up** — the current moral event uses a sentinel gold cost rather than the percentage). A smaller tax with a more official letter |
+| **The Dragon's Tithe** | 🐉 | 8–12 | Tribute moral event, injected at crisis start: paying costs **25% of the treasury, capped at 40,000g**, and the Pay option's cost chip names the real figure before you agree to it. Paying ends the crisis as **Engaged** at the next dawn. Ignore the crisis instead and the dragon damages your highest non-Barracks facility by 2 levels |
+| **The Royal Levy** | 👑 | 8–12 | Tribute moral event, injected at crisis start: **15% of the treasury, capped at 20,000g**, and paying likewise ends the crisis as Engaged. A smaller tax with a more official letter |
 
 
 ### Supernatural
@@ -176,7 +179,7 @@ The Guild Clerk maintains a quiet ledger of crisis-related achievements. Each is
 | Milestone | Condition |
 |-----------|-----------|
 | **Storm Survivor** | A crisis ended at Severe or higher with zero hero deaths |
-| **Skin of Teeth** | A crisis ended at Critical, ≥1 resolution mission completed, zero hero deaths |
+| **Skin of Teeth** | A crisis **reached** Critical at some point, ≥1 resolution mission completed, zero hero deaths. It is the peak that counts, not the tier it finished on — pulling a crisis back down from Critical is the whole achievement, and it would be perverse to disqualify yourself by succeeding |
 | **Chain Breaker** | A chained crisis resolved at Engaged |
 | **Eye of the Storm** | A chained crisis resolved at Engaged with zero deaths, and the parent also had zero deaths |
 | **Necromantic Drought** | Planar Interference ended with zero deaths |

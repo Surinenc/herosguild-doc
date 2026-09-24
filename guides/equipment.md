@@ -54,6 +54,8 @@ Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes wee
 | Legendary | 60 | 4★ | Rare (T3+) |
 | Mythic | 85 | 5★ | Boss (T5) |
 
+**Magic Find** multiplies every above-Common chance in the roll, with Common absorbing whatever is left over — so a party carrying +20% Magic Find turns a 1% Mythic chance into 1.2% and shaves the difference off the tat. It applies to monster drops and to end-of-run completion rewards, on missions, dungeon runs and Spire floors alike. The figure used is the party **average**, not the sum — one hero in full Magic Find regalia raises the party's number by their share of it, which is the realm's way of saying that dressing the whole party is the only real answer. Material and item-drop bonuses are averaged the same way.
+
 Socket count rolls increase with item level. Base chance: `20% + item level × 1%` (capped at 90%).
 
 ---

@@ -142,7 +142,11 @@ The Quest Log UI only enumerates **unlocked** chains — locked chains do not ap
 
 ## Hero Details
 
-When you select a hero, you get a comprehensive view of everything they are, everything they own, and everything they've done. It is, in the Guild Clerk's opinion, the most informative screen in the game:
+When you select a hero, you get a comprehensive view of everything they are, everything they own, and everything they've done. It is, in the Guild Clerk's opinion, the most informative screen in the game.
+
+Down the right-hand side, beneath Active Effects, the **Mood** panel now shows its working: every thought the hero is carrying, sorted by how much it weighs, each with its stack count, its days remaining (or *ongoing*), and its signed value — and a footer doing the sum out loud, `Base 50 · Thoughts ±N · Title ±N = mood`, with *(capped)* appended when the arithmetic ran off either end of the 0–100 scale. A hero with nothing on their mind gets the line *"No active thoughts. The head is, briefly, an empty hall."*
+
+The tabs:
 
 ### Gems Tab
 

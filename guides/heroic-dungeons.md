@@ -63,6 +63,8 @@ The dungeon rearranges itself while you're inside it. The map you made three roo
 - Reward: +30% gold
 - Visual: Reality glitch particles, warped floor overlay
 
+> **Currently out of rotation.** The modifier is defined, but nothing in combat implements the rearranging, so it has been pulled from the weekly draw rather than advertised falsely. It remains here against the day someone wires the rooms up.
+
 ### Cursed Ground 💀
 **Difficulty:** 2/3
 
@@ -81,13 +83,15 @@ Random magical chaos. Sometimes it helps you. Usually it doesn't.
 - Reward: +100% skill gem chance, +30% gold
 - Visual: Arcane sparks, arcane runes floor overlay
 
+> **Currently out of rotation**, for the same reason as Fragmented Reality: the random spell effects have no implementation behind them, so the contract would be describing a hazard that never arrives.
+
 ### Shattered Defenses 🛡️
 **Difficulty:** 2/3
 
 Your armor works 30% less well. Warriors find this existentially threatening.
 
 - Heroes have -30% armor and resistances
-- Reward: +30% gold, 3× defense gear drop frequency
+- Reward: +30% gold. (A tripled defence-gear drop rate is pencilled into the modifier's notes and has never been implemented; do not plan a wardrobe around it)
 
 ### Chaos Incarnate 🌪️
 **Difficulty:** 3/3
@@ -104,7 +108,7 @@ Two modifiers at once. For heroes who looked at the other nine options and thoug
 
 | Difficulty | Modifiers |
 |------------|-----------|
-| 2/3 | Overwhelming Force, Vampiric Enemies, Elite Swarm, Fragmented Reality, Cursed Ground, Arcane Instability, Shattered Defenses |
+| 2/3 | Overwhelming Force, Vampiric Enemies, Elite Swarm, Cursed Ground, Shattered Defenses (*Fragmented Reality* and *Arcane Instability* are defined at this difficulty but out of rotation) |
 | 3/3 | Relentless Assault, Enrage Timer, Chaos Incarnate |
 
 ---
@@ -138,9 +142,13 @@ Three heroic dungeons are available each week, rotating every **Thursday at 00:0
 | Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 |
 | Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 |
 
-Each tier gets a randomly assigned modifier. Chaos Incarnate is excluded from the weekly rotation entirely. No modifier repeats within the same week.
+Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Three are excluded from the draw: **Chaos Incarnate**, which stacks two others and is being kept back, and **Fragmented Reality** and **Arcane Instability**, neither of which has a combat hook behind it — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply stopped offering them.
+
+The contract itself now names its modifier and quotes what it does, instead of the bare internal id it used to show.
 
 Access: Mission Board → Heroic filter (🔥). A countdown timer shows time until the next weekly reset.
+
+Two gates stand in front of all this. You need **10,000 reputation** before heroic contracts appear at all, and you may complete **three per week** — the three that are posted, in other words, and not one of them twice. A dispatched heroic leaves the list, so the board shows what is still open rather than what was once available.
 
 ---
 

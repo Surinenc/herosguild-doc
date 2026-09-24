@@ -286,7 +286,7 @@ Skill gems add new abilities to your hero when socketed:
 
 ### Socket Links
 
-Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point. Weapon and body-armor slots can support up to 6-link chains; smaller slots cap lower (see [Skill Gems](skills.md#socket-links)).
+Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point. Weapon and body-armor slots can support up to 6-link chains; smaller slots cap lower (see [Linking Sockets](skills.md#linking-sockets)).
 
 | Link | Effect |
 |------|--------|

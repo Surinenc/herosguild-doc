@@ -317,6 +317,8 @@ Necromancers focus on minions or personal dark power.
 
 ## Choosing Your Ascendancy
 
+The choice is permanent, so the screen now shows you what you are choosing. Each ascendancy card previews three of its nodes, and selecting one lays out **every** node it has — the starting node first, then each branch in tier order — before you commit. Previously you picked from a name, a sentence and a certain amount of faith.
+
 ### Class-by-Class Recommendations
 
 | Class | Ascendancy | Best For |

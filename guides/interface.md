@@ -343,6 +343,10 @@ Small things that make a significant difference, provided for heroes who prefer 
 - Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
 - Online Features (sends leaderboard stats and unlocks community dungeons)
 
+### Leaving
+
+Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. **📥 Save game** appears only while a game is actually in progress — offering to save from the main menu was a promise with nothing behind it. And **New Game** now asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+
 ### Credits
 
 - 🎬 Roll the credits — opens a cinematic end-credits reel that scrolls the names behind the tunes, the thumps, and the letterforms over the intro backdrop. Hover to pause; Escape or a click on the backdrop dismisses. Purely ornamental, but the people whose work is in the soundtrack deserve their moment.

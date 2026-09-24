@@ -98,11 +98,13 @@ Hero housing affects mood and rest recovery. The beds have witnessed more reconc
 
 | Level | Beds | Mood | Rest Speed | Daily Upkeep |
 |-------|------|------|------------|--------------|
-| 1 | 12 | -10% | 0.9x | 2g |
-| 2 | 20 | -5% | 0.95x | 12g |
-| 3 | 30 | +0% | 1.0x | 20g |
-| 4 | 45 | +5% | 1.05x | 800g |
-| 5 | 60 | +10% | 1.1x | 2,000g |
+| 1 | 12 | +0 | 0.9x | 2g |
+| 2 | 20 | +0 | 0.95x | 12g |
+| 3 | 30 | +0 | 1.0x | 20g |
+| 4 | 45 | +5 | 1.05x | 800g |
+| 5 | 60 | +10 | 1.1x | 2,000g |
+
+The lower three tiers are now **neutral** rather than a penalty. Levels 1 to 3 are what a guild can afford early, and docking a new master's mood for the crime of having a small building was a tax on being new; the upgrades reward you instead of merely undoing a punishment. The figures are mood points, not percentages, and they arrive as a listed thought like everything else.
 
 ### Hero Quarters
 
@@ -341,6 +343,8 @@ Where heroes train and spar. The sounds of practice combat are indistinguishable
 | 3 | 1.5x | Advanced techniques |
 | 4 | 1.75x | Weapon specialization |
 | 5 | 2.0x | Master training |
+
+**Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The training programme descriptions now say exactly this, having previously advertised multipliers that bore no relation to what the yard actually paid.
 
 ### Infirmary
 
@@ -673,7 +677,7 @@ Daily Wage = floor((Level - 1)^1.5 × 3) × Quality Multiplier
 - Level 100 Common: 2,955g/day
 - Level 100 Legendary: 8,865g/day
 
-Level 1 heroes are free (no wages). The exponential scaling means high-level heroes cost significantly more — a sixty-strong roster of Legendary 100s runs to 531,900 gold a day, which will test even the wealthiest guild's finances and several of its assumptions.
+Level 1 heroes are free (no wages), and so, in the end, are the dead — payroll now skips them, which it did not always, and the Guild Clerk has quietly closed the file marked *posthumous remuneration*. The exponential scaling means high-level heroes cost significantly more — a sixty-strong roster of Legendary 100s runs to 531,900 gold a day, which will test even the wealthiest guild's finances and several of its assumptions.
 
 **The money now reaches the heroes.** Wages used to be debited from the guild and then quietly cease to exist, which the ledger accepted without comment. Each hero is now credited their **base** wage — the crisis multiplier inflates what you pay but not what they receive, so a crisis stays a cost to the guild rather than a windfall for the staff. What they do with it is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
 

@@ -442,11 +442,13 @@ Survival Chance = 50% (base)
 | Cleric in party | +15% |
 | Supervised mission | +10% |
 | Is a Cleric (Divine Favor) | +10% |
-| Survival gear equipped | +5% |
+| Survival gear equipped | +5% (see below) |
 | Lucky trait | +5% |
 | LCK stat | +1% per 5 LCK (max +5%) |
 | VIT stat | +1% per 5 VIT (max +5%) |
 | Cursed trait | -10% |
+
+**Survival gear** is not a category the smiths recognise; it is a keyword search. An equipped item qualifies if its **name** contains *survival*, *lifesaving*, *protection*, *guardian*, *phoenix* or *resurrection*, or if one of its **enchantments** mentions *death save*, *survival* or *last stand*. This is exactly as literal as it sounds — the Amulet of the Phoenix qualifies on the strength of being called that. For a long time the check looked in the wrong place and found nothing at all, so the +5% never applied to anybody; it does now, which means the name on the item is worth a glance before you sell it.
 
 ### Example Calculations
 

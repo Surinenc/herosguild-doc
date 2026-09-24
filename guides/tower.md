@@ -173,8 +173,10 @@ The pity ramp is the Spire's quiet concession that running 340 floors without a 
 The Spire keeps score, because even existential dread benefits from a competitive element. The Guild Clerk maintains the leaderboard and has observed that the top scores belong exclusively to parties who brought two Clerics.
 
 ```
-Score = (Floor × 100) + (Enemies Defeated × 10) + (Gold Earned ÷ 100)
+Score = (Last Cleared Floor × 100) + (Enemies Defeated × 10) + (Gold Earned ÷ 100)
 ```
+
+Note the wording: the floor you **cleared**, not the floor you were standing on when it went wrong. A wipe or a retreat leaves the run pointing at the floor that beat you, and the Spire declines to award a hundred points for being killed somewhere impressive. Your recorded best floor follows the same rule.
 
 ---
 

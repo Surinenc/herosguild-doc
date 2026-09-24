@@ -75,6 +75,8 @@ Monster level determines enemy strength:
 | ⭐⭐⭐⭐ | 3.0x | 2.0x | 35% |
 | ⭐⭐⭐⭐⭐ | 5.0x | 3.0x | 50% |
 
+The gold column multiplies **combat gold** — what enemies drop — and leaves the value of loot alone, an item being worth what it is worth regardless of how many rooms you walked through to find it. Both multipliers now reach dungeon runs, which they conspicuously did not for a while. **Boss rooms** also pay out their own treasure, gems included, once per boss.
+
 ---
 
 ## Dungeon Environments

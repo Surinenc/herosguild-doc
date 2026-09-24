@@ -121,6 +121,8 @@ Missions at 2★ and higher can carry an **environmental hazard** ([Environmenta
 2. Form your party (drag heroes onto the slots)
 3. Press **Dispatch**
 
+The **success chance** shown beside the party is not an estimate in the loose sense. The realm runs the fight **20 times** through the very same resolution the dispatch will use, and reports how many of those runs came home. It is therefore as honest a number as anyone could ask for, which is not at all the same as a comforting one — a hero who dies in fourteen of twenty rehearsals will not be persuaded otherwise by the fifteenth.
+
 The unsupervised/supervised distinction (and Command Point spending) is set on the dungeon-menu side of expedition launches, not on the Mission Board itself.
 
 ---

@@ -548,7 +548,11 @@ Not every hero who leaves the guild dies. Some are banished after disgracing the
 
 These heroes go to the **Departed archive**, a separate record from the Chapel memorial. They are not dead — they are simply no longer with the guild — and they retain their titles and chronicle entries in the archive. The realm keeps the record so that, should any of them ever return, the guild has a paper trail to consult. The archive lives behind the **Departed** tab on the Chapel screen, alongside the Memorial Hall, each card labelled with the manner of going: Retired, Deserted, Guild event, Lost to a dungeon, Called away, or the admirably noncommittal Left the guild.
 
-The distinction matters: a hero killed in combat is mourned in the Chapel. A hero who walks out alive is filed in the archive. The Guild Clerk insists that mixing these two categories would be "professionally embarrassing."
+The distinction matters, and the roster feels it differently. A **death** brings grief scaled to the bond — a Devoted partner carries -60 mood for thirty days, a best friend -40 for fourteen, a friend -20 for a week, while a rival flips a coin between relief and an unexpected -10 — and the closely bonded go unavailable with Mourning on top of it. A hero who merely **leaves alive** gets a smaller, plainer reaction: friends take -6 mood for a week (-5 if the hero deserted rather than being thrown out), enemies enjoy +3 for three days, and everyone in between carries on as though nothing has happened, which for them it largely hasn't. No bonds are severed, no one is widowed, and no blood feud is rolled, because none of that is what leaving means.
+
+**Retirement is the exception that proves the Clerk's filing system.** A hero who saves up and goes out on their own terms is mourned at the full death-grade magnitude — the guild loses them just as completely, and their friends know it. What none of the living departures do is count as *grief* for the purposes of a [mental break](relationships.md#mental-breaks): only an actual death can push a grieving hero over that line.
+
+The Guild Clerk insists that mixing these two categories would be "professionally embarrassing."
 
 ---
 

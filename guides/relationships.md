@@ -602,6 +602,10 @@ Repeated drinking builds addiction (0-100 scale). Without alcohol, addicted hero
 
 Recovery requires going without drinks for the listed number of days. An Addicted hero needs a full month of sobriety — during which they'll be miserable, shaking, and may refuse to work 40% of the time.
 
+**The promise.** At the tavern you can ask a hero to quit, and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
+
+A hero who goes to bed above **60 drunk** wakes with a **Hangover** absence and loses the next day. Overriding an alcohol-related refusal costs **10 mood**, which is cheaper than it sounds and more expensive than it looks.
+
 ### Blackout Events
 
 Heroes who reach Blackout may experience random events they won't remember: losing gold, gaining or losing items, forming unexpected bonds, or doing things they'll later be embarrassed about. The details are revealed the next morning.

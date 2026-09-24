@@ -592,7 +592,7 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 | Reason | Description |
 |--------|-------------|
 | Personal Day | Needs a day off. For reasons. |
-| Romantic Escape | Gone off with their partner |
+| Romantic Escape | Gone off with their partner — one roll, both partners, 1-2 days, and rare enough (0.1% a day) that it counts as a story when it happens |
 | Sulking | After a rejection, breakup, or insult |
 | Hangover | Drank too much last night |
 | Bender | Extended drinking episode (addiction-related) |
@@ -750,9 +750,9 @@ Each keepsake carries exactly one bonus from a discriminated union (`KeepsakeBon
 |------|--------|---------|
 | `mood_floor` | Permanent mood modifier (adds to mood baseline) | +3 mood floor |
 | `combat` | Percent bonus to crit chance, dodge, or life steal | +3% crit chance |
-| `resist` | Percent resistance to a damage type (fire, cold, lightning, or general) | +5% fire resist |
+| `resist` | Fire, cold and lightning land on the same resist stats your gear uses, so a keepsake and a ring add together rather than arguing. A *general* resist keepsake, having no stat to land on, reduces damage taken instead | +5% fire resist |
 
-Bonuses are applied as buffs via `applyKeepsakeBonus` (`GameState.ts:118`) — combat and resist bonuses become `BuffSource.Keepsake` entries visible in the hero's Active Effects panel; mood-floor bonuses are applied as long-lived mood modifiers on the social system.
+Bonuses are applied as buffs via `applyKeepsakeBonus` (`GameState.ts:174`) — combat and resist bonuses become `BuffSource.Keepsake` entries visible in the hero's Active Effects panel; mood-floor bonuses are applied as long-lived mood modifiers on the social system. Each keepsake's buff is filed under that keepsake's own id and replaces any earlier copy of itself rather than piling up beside it, so a trinket that somehow arrives twice makes a hero sentimental rather than twice as lucky.
 
 ### Limits
 

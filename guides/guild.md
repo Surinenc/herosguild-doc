@@ -657,6 +657,21 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Infirmary costs | Variable | Per treatment |
 | Crisis levy | A share of the treasury | When a crisis demands tribute |
 
+### The Warehouse Ceiling
+
+The Warehouse caps how much gold the guild can hold, and **income above the cap is not kept** — it does not queue, it does not spill into next week, it simply never arrives.
+
+| Warehouse | Gold capacity |
+|-----------|---------------|
+| 1 — Storage Shed | 250,000g |
+| 2 — Storehouse | 1,000,000g |
+| 3 — Warehouse | 5,000,000g |
+| 4 — Grand Warehouse | 25,000,000g |
+| 5 — Logistics Center | 100,000,000g |
+| 6 — Mythic Repository | 999,999,999g |
+
+Every sale now tells you when this has happened. A Market sale, a Vault bulk sale and Sell Duplicates each report the gold **actually banked** and append *"The Warehouse is full: Ng didn't fit."* — where previously the Market announced you had pocketed 0g with no explanation whatsoever, and the Vault cheerfully claimed the full amount it had not in fact received.
+
 ### Debt, and the End of It
 
 The bills come due whether or not you can pay them. Gold is allowed to go **negative** — the ledger no longer quietly forgives an unaffordable night by rounding your treasury back up to nothing, which for a long while it did, and which made the guild's finances a matter of style rather than consequence.

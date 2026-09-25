@@ -324,6 +324,8 @@ What a ban does depends on which one it is. All three stop you submitting. A Ste
 
 The boards have **no time filter** (no this-week / all-time toggle); they are perpetual per-player bests.
 
+**Plausibility.** A submission is now checked for internal sense before it is believed: survivors cannot exceed the party size, a party cannot exceed **15**, and the wall-clock time cannot be shorter than the raid scheduler's own fastest possible turn cadence. A run claiming 999,999 survivors in one turn used to rank publicly, which is a flattering result for somebody and a poor one for everyone else. As with the stat board, the check **observes and logs** by default; rejection is switched on separately by the people who run the server.
+
 ---
 
 ## Related Guides

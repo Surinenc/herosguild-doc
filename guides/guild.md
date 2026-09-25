@@ -670,6 +670,8 @@ The Warehouse caps how much gold the guild can hold, and **income above the cap 
 | 5 — Logistics Center | 100,000,000g |
 | 6 — Mythic Repository | 999,999,999g |
 
+The Facilities income average counts what was **banked**, not what was offered — tavern takings, mission gold and bonuses, and shop sales all record the figure that actually landed, so a capped day reads honestly rather than flattering itself. Raid loot gold is counted too, under dungeon loot, having previously appeared in no income column at all.
+
 **Loot is never simply lost to a full Vault.** An item that has nowhere to go is sold at its vendor value instead, the gold routed through the same banking rules as any other income, and a guild-log line names the item and what it fetched. It used to vanish without comment — from dungeon runs, mission rewards, world-boss drops, crafted items and quest rewards alike.
 
 Every sale now tells you when this has happened. A Market sale, a Vault bulk sale and Sell Duplicates each report the gold **actually banked** and append *"The Warehouse is full: Ng didn't fit."* — where previously the Market announced you had pocketed 0g with no explanation whatsoever, and the Vault cheerfully claimed the full amount it had not in fact received.

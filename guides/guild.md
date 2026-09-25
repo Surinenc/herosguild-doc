@@ -653,6 +653,19 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Crafting materials | Variable | On craft |
 | Recruitment | Scales with level and quality (50g – 100,000g+) | Per hire |
 | Infirmary costs | Variable | Per treatment |
+| Crisis levy | A share of the treasury | When a crisis demands tribute |
+
+### Debt, and the End of It
+
+The bills come due whether or not you can pay them. Gold is allowed to go **negative** — the ledger no longer quietly forgives an unaffordable night by rounding your treasury back up to nothing, which for a long while it did, and which made the guild's finances a matter of style rather than consequence.
+
+| Gold | What happens |
+|------|--------------|
+| Below 0 | Negative balances are shown in red everywhere gold appears. The night you first cross, the guild log and a toast both tell you: *"The guild has gone into debt."* |
+| At or below **-3,000** | A second, sharper warning on the night you cross it: *"There is a limit to how far this can go."* |
+| At or below **-5,000** | **Game Over.** The guild cannot operate and the run ends |
+
+A crisis levy is a bill like any other and can push you across all three lines on its own, which is worth remembering before you agree to one. The bankruptcy projection on the economy panel now counts the days to **-5,000** rather than to zero, on the grounds that zero stopped being the cliff edge and became a landmark on the way down.
 
 ### Daily Wages
 

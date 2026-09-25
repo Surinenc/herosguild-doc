@@ -20,6 +20,8 @@ Also pays for recruitment fees, contract fees, gear, potions, tavern nights, and
 
 **Gold leaves faster than it arrives.** This is normal. This is also terrifying.
 
+It is terrifying for a concrete reason: the guild can go **into debt**. An unaffordable night is not written off — it is carried, in red. You get a warning the night you first go negative and a firmer one at **-3,000**, and at **-5,000** the run is over. See [Debt, and the End of It](guild.md#debt-and-the-end-of-it).
+
 ### Materials
 
 Used at production facilities to craft equipment, potions, and consumables. Come from mission drops, merchant caravans, and gathering. Running out mid-craft is the guild equivalent of running out of flour mid-cake.

@@ -48,6 +48,8 @@ This applies uniformly to all 10 station types.
 
 Guild facility upgrades provide **additional** speed and quality bonuses on top of station-level modifiers. These are separate systems that stack.
 
+A station's own level now **follows its facility**, for more stations than it used to: the **Tannery** and **Loom** rise with the Workshop, and the **Armory** rises with the **Forge** — not with the similarly-named Armory facility, which is a storage building with no opinion about metallurgy. Every Armory recipe uses Metalsmithing, the same discipline as the Forge's own, so the Forge is the honest parent. The Lumber Mill still keeps its own level.
+
 **Forge Facility** (metals, weapons, armor):
 
 | Level | Name | Speed | Quality Bonus |
@@ -388,11 +390,13 @@ Those input counts are not typos, and they went up considerably. Every processin
 
 ### Potions
 
-| Recipe | Tier | Materials | Skill Req |
-|--------|------|-----------|-----------|
-| Minor Health Potion | ⭐ | 2 Herbs, 1 Water | 1 |
-| Health Potion | ⭐⭐ | 2 Herb Extract, 1 Blood | 25 |
-| Greater Health Potion | ⭐⭐⭐ | 2 Herb Concentrate, 1 Rare Herbs | 50 |
+| Recipe | Tier | Materials | Skill Req | Yield |
+|--------|------|-----------|-----------|-------|
+| Minor Health Potion | ⭐ | 2 Herbs, 1 Water | 1 | 3 |
+| Health Potion | ⭐⭐ | 2 Herb Extract, 1 Blood | 25 | 3 |
+| Greater Health Potion | ⭐⭐⭐ | 2 Herb Concentrate, 1 Rare Herbs | 50 | 3 |
+
+Potions and food come in **batches**, and the batch size on the recipe is the number you actually receive — a claim the vault only recently started honouring, having previously handed over one of whatever it was and kept the rest for reasons it declined to give. Each unit rolls its own quality, so a batch of three can come out mixed.
 
 ### Prosthetics
 

@@ -408,7 +408,7 @@ Personality is not the only thing at work. Heroes also **keep a private tally** 
 All items go to the central Guild Vault. From there you can:
 - **Equip** items to heroes
 - **Sell** items for gold
-- **Salvage** items for crafting materials
+- **Salvage** items for crafting materials — **accessories always salvage**, whatever their rarity. Every accessory tier resolves to the same material, so there is nothing cheaper to step down to and the usual value ceiling would simply have refused the job; rings and amulets below Rare were, for a while, unbreakable in the least useful sense
 - **Enchant** items with magical properties
 
 ### Tips

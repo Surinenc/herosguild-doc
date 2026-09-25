@@ -212,6 +212,7 @@ A few things worth knowing about the cadence:
 - **Add waves run on a default 3-turn cadence, but the unit varies by boss.** Per `BOSS_ADD_CONFIG` at `RaidOrchestrator.ts:2019-2024`: the Ancient Dragon spawns 3 Fire Whelps per wave, the Lich King spawns 2 Skeletons, and the Void Titan spawns 2 Wraiths. A bare Goblin is the fallback only when no boss config matches. Boss-scripted waves (e.g. the Lich's add-summon abilities) layer on top of this cadence.
 - **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
+- **Heroes recover between rounds**, as they do anywhere else: mana regenerates, skill cooldowns tick down, and per-turn HP regeneration — food buffs, Alchemy regen, equipped-item regen, the Champion's own Regeneration node — applies. None of it used to, which meant a raid was the one fight where your carefully-stacked sustain sat there doing nothing at all.
 - **Call Retreat** has its own button (`data-test-id="call-retreat-btn"` in `RaidTurnControl.tsx`) outside the order budget; pressing it ends the raid immediately.
 
 The speed selector is the lever for actually surviving the harder fights — speeding up trivial turns and slowing down to read telegraphs and queue intricate group orders during the dangerous ones.

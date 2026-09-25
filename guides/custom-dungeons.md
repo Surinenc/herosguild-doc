@@ -51,6 +51,8 @@ The validator runs whenever you save or attempt to publish. It surfaces errors a
 - **Minimap overlap** — the minimap representation collides with another room's. Move one.
 - **Unreachable entrance/exit** — pathfinding can't connect them. Add corridors.
 - **Empty room set** — you have to put rooms in the dungeon.
+- **Key behind its own door** — a locked door whose key sits in a room only that door opens. The validator now walks the dungeon the way a raider must, opening a locked door only once the key's room is reachable *without* it, and the same for a hidden door and its trigger. A dungeon that locked the key inside the vault used to validate with no complaints at all, which was a compliment nobody had earned.
+- **A key or trigger pointing at nothing** — delete the room holding a key and the door still claimed to have one. Those references are scrubbed as you edit now, so the validator can no longer be fooled by a key that stopped existing three edits ago.
 
 The validator is direct rather than polite. The Guild Clerk approves of this and has asked whether the validator could be redeployed to staff meetings.
 
@@ -65,6 +67,8 @@ Before publishing, you can test-run your own dungeon in the Test Modal. The test
 - Whether your favourite trap is, in fact, lethal
 
 You can iterate the editor → test loop as many times as you like. Nothing about test runs is recorded publicly.
+
+**A clear is proof of *that* dungeon.** Completing the test run stamps a proof against a hash of the dungeon's playable content. Change that content — rooms, connections, keys, encounters — and the proof is torn up and you test again. Purely cosmetic edits, such as renaming a room or rewriting its description, leave it standing. The realm checks the same hash again at publish time against the dungeon you actually submitted, so a proof earned on a beatable draft cannot be carried across to an unbeatable one.
 
 ### Publish Modal
 

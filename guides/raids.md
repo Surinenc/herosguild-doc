@@ -231,7 +231,7 @@ A raid ends in one of three ways.
 
 ### What Happens to Fallen Heroes
 
-Nothing, in the way the Guild Clerk finds most surprising. Unlike regular dungeon defeats — which trigger death-saves, injury rolls, and Infirmary stays — raids have no wipe handler. Heroes who fall come out of the fight at **0 HP, in Ready state, with no injury, no infirmary time, and no permadeath risk.** Rest them at the Guild and they recover normally.
+Nothing, in the way the Guild Clerk finds most surprising. Unlike regular dungeon defeats — which trigger death-saves, injury rolls, and Infirmary stays — raids have no wipe handler, and this is **deliberate rather than an oversight**: a raid never kills a hero, full stop. Heroes who fall come out of the fight at **0 HP, in Ready state, with no injury, no infirmary time, and no permadeath risk.** Rest them at the Guild and they recover normally.
 
 Equipment is not lost. The raid is, in this one specific sense, oddly forgiving.
 

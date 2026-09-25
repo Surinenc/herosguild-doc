@@ -230,6 +230,8 @@ Worth reviewing before committing to any dungeon. The Guild Clerk has drafted in
 | **Stairs** | ⬇️ | Next floor |
 | **Exit** | 🏁 | Dungeon complete |
 
+On any floor that has a boss, the **Exit connects only to the boss room**. You cannot walk around the thing you came to kill and claim a clear on the way past — which, on roughly half of all three- to five-star boss floors, you previously could, the exit having been wired into the map through whichever room the generator felt like.
+
 ### Fog of War
 
 The dungeon doesn't open itself up for inspection. Knowledge costs movement:

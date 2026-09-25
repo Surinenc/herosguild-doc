@@ -122,7 +122,7 @@ Three two-piece sets drop only from Spire major-boss floors. Each set grants a b
 | Voidtouched | +35 INT, +150 mana, +20 crit damage | +25 INT, +20% mana cost reduction, +150 mana |
 | Abyssal | +6 crit chance, +20 DEX, +12 LCK | +10 crit chance, +35 crit damage, +15 DEX |
 
-The tower-only halves are gated by an `isTowerCombat` flag the Spire run sets at the start of each fight. The Guild Clerk notes that the gating exists "so that an Abyssal Mask doesn't trivialise the rest of the game," which it would.
+The tower-only halves are gated by an `isTowerCombat` flag the Spire run sets at the start of each fight — and which combat now actually reads. The armour, HP and mana halves were being looked up without it at every point in the fight that mattered, so the Spirebreaker's +75 armour and +400 HP and the Voidtouched's +150 mana were showing on the sheet and absent from the battle. They apply now, which makes a deep climb meaningfully more survivable than it has been. The Guild Clerk notes that the gating exists "so that an Abyssal Mask doesn't trivialise the rest of the game," which it would.
 
 Each set takes both pieces to activate. Single-piece set items grant the base item stats but no set bonus — which is why most Spire-bound Guild Masters either run a full Spirebreaker tank or commit to none of it.
 

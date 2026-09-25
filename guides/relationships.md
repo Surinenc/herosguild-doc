@@ -33,6 +33,18 @@ Every mission is a social experiment as much as a combat one. Each pair of missi
 | Combat bonding (FoughtBackToBack / BrilliantStrategy) — requires the mission had combat | 15% | +3 |
 | Success bonding (SharedMeal / SharedLoot) — requires success | 10% | +2 |
 
+Those percentages are the **neutral-pair** figures. The realm now scales each roll by how the pair already feel about each other — the amounts don't move, only the odds of the roll landing:
+
+| The pair | Blame & clash | Bonding |
+|----------|---------------|---------|
+| Rival, Hostile or Enemy | ×2.0 | ×0.3 |
+| Annoyed or Dislike | ×1.4 | ×0.7 |
+| Neutral | ×1.0 | ×1.0 |
+| Friendly or Friend | ×0.7 | ×1.3 |
+| Close Friend, Best Friend or Devoted | ×0.4 | ×1.8 |
+
+Which is to say a failed mission fought by two enemies has an **80%** chance of one blaming the other, and two devoted friends have a 16% chance and rather better odds of coming home closer than they left. Bad pairs get worse on the road; good ones get better. Party composition was already a combat decision; it is now also a social one with compound interest.
+
 ### Social Events
 
 | Action | Trust Change |
@@ -61,6 +73,10 @@ Every mission is a social experiment as much as a combat one. Each pair of missi
 | Jealousy | −2 (mood penalty −4 is the larger sting; `SocialEventGenerator.ts:546-547`) |
 | Insult | −3 to −5 (`SocialEventGenerator.ts:541`) |
 | Hogged loot | −2 to −6 (sub-variant of the personality-clash mission event; `SocialEventGenerator.ts:858-887`) |
+
+**Guild-hall fights.** An insult between two heroes who already dislike each other (below Dislike) can escalate into an actual fight in the hall: a **4%** chance per day, **doubled** for a Volatile hero. It goes one of two ways, evenly: **cathartic**, worth **+15** opinion, and the pair come away having got something out of their system — or **angering**, worth **-12**, plus a **20%** chance one of them takes a real injury (8% of max HP, and two days out of action). Bad blood, left alone, eventually costs you a hero-day.
+
+**Who talks to whom.** The daily social pick is **opinion-weighted** rather than a flat draw across the roster: a hero's chance of being chosen as somebody's conversational partner is their opinion value plus 100, with a floor of 15. Friends seek each other out; enemies are unlikely company rather than impossible company, which is how you get the occasional bracing surprise.
 
 ---
 
@@ -484,6 +500,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Forgiving | Takes relationship damage at half rate and lets grudges decay — one point toward zero every third day |
 | Cheerful | Relationships build 1.2× faster, and an aura worth **+8 mood** to those nearby |
 | Trustworthy | Everyone meets them at **+10**, the largest first impression in the realm |
+| Iron-Willed | Breaks ten mood points later than anybody else. They do not, as a rule, discuss it |
 
 ### Negative Traits
 
@@ -504,6 +521,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Annoying Voice | Everyone meets them at **-10**, before they have said anything of substance |
 | Volatile | Relationships build *and* break at 2×; the fastest friendships and the shortest |
 | Misanthrope | Starts at **-5** toward everybody. Not a first impression they make — a first impression they arrive holding |
+| Nervous | Breaks eight points sooner, and when they do it is half again as likely to be Hiding or Wandering |
 
 ### Neutral Traits
 
@@ -516,6 +534,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Ascetic | Never grows attached to equipment; swap their gear freely |
 | Unpredictable | Draws a random event type, which is exactly as helpful as it sounds |
 | Intense | Both directions at 1.5× |
+| Tortured Artist | Changes no break odds at all — but coming out of one carries a **40%** chance of arriving with Master's Hand attached. The guild does not endorse the method |
 
 First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder. Misanthrope runs the other way: it colours how the holder sees everyone else. The distinction was for a long while reversed in the code, which made charm a private virtue and an annoying voice a private burden, neither of which is how either works.
 

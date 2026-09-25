@@ -420,6 +420,8 @@ Using skills improves proficiency, which is the game's way of rewarding you for 
 
 **Proficiency XP Formula:** `50 × (Level + 1)^1.6` XP to next level. Max level 20.
 
+**The hero's own level caps it**: proficiency cannot exceed `hero level ÷ 5`, rounded down, with a floor of 1 and a ceiling of 20 — so level 20 proficiency needs a level-100 hero. The Training Yard respects this too, having previously run its own uncapped ladder that let a level-5 hero grind to proficiency 20 and its full +30% skill damage without ever meeting an enemy. Heroes who already climbed too high by that route keep what they earned; they simply stop climbing.
+
 ---
 
 ## Monster Knowledge

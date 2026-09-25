@@ -570,7 +570,7 @@ Some items become Soulbound through events rather than time:
 
 Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button where the Unequip button used to be, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
 
-Prized and Soulbound items are also skipped by the auto-equip pass, so a shinier drop won't quietly displace either from a hero who's grown fond of what they've got.
+Prized and Soulbound items are also skipped by the auto-equip pass, so a shinier drop won't quietly displace either from a hero who's grown fond of what they've got. When auto-equip *does* compare two items it now scores their **full** stats — base, rolled bonuses and enchantments together — rather than the base line alone, which had it rating a superbly-rolled sword exactly level with a dreadful one of the same make.
 
 ### Trait Effects
 

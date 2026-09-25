@@ -518,7 +518,7 @@ The **Career tab** shows the dream as a progress bar with the hero's own words u
 
 Authored per dream, not derived from its price — nobody hands in their notice over a pair of boots:
 
-- **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
+- **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Those stat modifiers land on the five stats a hero actually has; a good many of them used to be authored against wisdom and charisma, which the realm admires in principle and does not track, so their stat halves did precisely nothing. Reflective dreams now read as **INT**, sociable ones as **LCK**, at the percentages they always claimed. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
 - **They leave.** Some dreams *were* the change of life. The hero retires from the guild, alive, on their own terms, owing nothing
 
 A little over one dream in five is the second kind. You will not know which until the bar fills.

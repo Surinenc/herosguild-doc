@@ -248,9 +248,9 @@ Each activity also carries a **~15% chance** of pushing a secondary event onto t
 
 #### Nightly Scouting Scene
 
-On any night the tavern is populated, the Tavern tab surfaces a **scouting scene** above the recruits: 3-6 weighted autonomous events rolled from the heroes present, their drunk levels, their bonds, and their traits. Event kinds include **drunken fights, adultery, flirtations, rumours, confessions, mentorship moments, and full bar fights** — the mix skews to whatever the current roster has been quietly building up to. Each event renders as a card with participant portraits, a severity chip, a short description, and an **Intervene** button.
+On any night the tavern is populated, the Tavern tab surfaces a **scouting scene** above the recruits: 3-6 weighted autonomous events rolled from the heroes present, their drunk levels, their bonds, and their traits. Event kinds include **drunken fights, adultery, flirtations, rumours, confessions, mentorship moments, and full bar fights** — the mix skews to whatever the current roster has been quietly building up to. Each event renders as a card with participant portraits, a severity chip, a short description, and an **Intervene** button. Intervening in a **mentorship moment** now forms the **Mentor** and **Student** bonds the success text has always claimed were "noted" — the note has finally been filed.
 
-Intervention **costs Attention Points from the same budget the Tonight tab spends** (see below) — the tavern has one supply of your attention, and both surfaces draw from it. Successful intervention nudges the participants' mood up and marks the event Handled. **Skip Tavern Tonight** dismisses the scene and passes any unresolved events to the autonomous resolver — worst-case, meaning the drunken fight goes ahead and the confession is made anyway. The skip penalties in the decision table above are real and are applied at the day tick, whether you skipped deliberately or simply never opened the tavern; each unattended decision leaves the hero in question a thought about it, generally along the lines of *"Wanted a word with the guildmaster. Didn't get one."* The card now shows that cost before you decline, instead of quoting a failure message that could never occur.
+Intervention **costs Attention Points from the same budget the Tonight tab spends** (see below) — the tavern has one supply of your attention, and both surfaces draw from it. Successful intervention nudges the participants' mood up and marks the event Handled. **It can fail**: one attempt in five goes wrong, and a failed intervention costs you the point *and* delivers the same consequence as never having tried, with the option's own bleak version of events in the result modal. You are a guildmaster, not a hostage negotiator, and the difference occasionally shows. **Skip Tavern Tonight** dismisses the scene and passes any unresolved events to the autonomous resolver — worst-case, meaning the drunken fight goes ahead and the confession is made anyway. The skip penalties in the decision table above are real and are applied at the day tick, whether you skipped deliberately or simply never opened the tavern; each unattended decision leaves the hero in question a thought about it, generally along the lines of *"Wanted a word with the guildmaster. Didn't get one."* The card now shows that cost before you decline, instead of quoting a failure message that could never occur.
 
 #### Nightly Decisions (Tavern Decision Engine)
 
@@ -280,9 +280,9 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
 | Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
 | Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | -2 relationship |
-| Celebrate Romance | 1 | Lovers/married with recent milestone | +5 mood, +5 relationship | -2 mood |
+| Celebrate Romance | 1 | Lovers/married with recent milestone | +5 mood, +5 relationship **both ways** | -2 mood |
 | Welcome Recruit | 1 | Hero joined < 7 days ago | +5 mood, +2 relationship (all) | -3 mood |
-| Drinking Buddy | 1 | Two drinking buddies present | +3 mood, +4 relationship | None |
+| Drinking Buddy | 1 | Two drinking buddies present | +3 mood, +4 relationship **both ways** | None |
 | Training Partners | 1 | Two heroes both training | +2 mood, +5 training progress | None |
 | Address Gossip | 1 | Hero with Gossip trait | Gossip stopped, -1 mood (reprimand) | -3 random relationship |
 | Share Loot | 1 | Guild has > 5,000g (costs 500g) | +3 mood (all present) | None |

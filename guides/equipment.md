@@ -233,6 +233,14 @@ Craftable at the alchemy bench. The recipes are short. The alchemist's commentar
 
 The insurance policy the Guild Clerk wishes the guild itself could afford. When a hero carrying a Phylactery Elixir would take lethal damage, the elixir intervenes — the hero revives at full HP and full mana, and the elixir is consumed. Once per equip, no passive stats, no second chances on the second chance. The check runs inside `Hero.takeDamage` before death is finalised, so it catches all damage sources: normal attacks, DoTs, and AoE splash.
 
+**There is a queue for cheating death**, and the elixir is only first in it. Every lethal blow in the game now runs the same three checks in order:
+
+1. **Phylactery Elixir** — revive at full HP and mana, elixir consumed
+2. **Undying Fury** (Berserker 4-piece) — survive at **1 HP**, once per fight
+3. **Phoenix Rebirth** (Phoenix 4-piece) — back to **full HP**, once per fight
+
+Each is used at most once per hero per combat, and they are tried in that order, so a hero wearing both sets and carrying an elixir has three separate deaths to get through before the Chapel is involved. What matters is that this gate is now the *only* way a hero dies: it used to sit inside the enemy-attack path alone, which meant an area attack, Cursed Ground, a poison tick, raid cleave splash or a berserk ally could kill a hero wearing every protection the realm sells.
+
 ### Elixirs
 
 Elixirs are percentage-based stat buffs equipped in the two Consumable slots. They come in four tiers — Uncommon through Legendary — with escalating stat budgets and decreasing stack sizes. Unlike potions, elixirs are not auto-consumed; they provide passive bonuses for as long as they're equipped.

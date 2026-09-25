@@ -117,7 +117,7 @@ Every time a hero is in the affected zone of a dodgeable cleave (Cone, Row Sweep
 - **+20% damage on every subsequent telegraph hit** to that hero (the multiplier compounds: at N stacks, the next telegraph deals `× (1 + 0.2 × N)`)
 - **+30% to all damage taken** by that hero, permanently for the fight
 
-Both effects stack with additional Wounded marks. Both reset between attempts; both are permanent within an attempt — no decay, no time-out, no priest can cleanse them.
+Both effects stack with additional Wounded marks. Both are permanent within an attempt — no decay, no time-out, no priest can cleanse them — and both are cleared the moment the attempt **ends**, on victory, wipe or retreat alike, rather than lingering on the roster until the next raid happens to start. A save loaded with stale marks on it has them stripped too, a raid being incapable of being in progress across a load.
 
 The avoidance check is **deterministic and positional.** A hero who moved out of the telegraphed zone before resolution takes no damage and gains no Wounded stack. A hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
 

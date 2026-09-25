@@ -460,6 +460,10 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 | Shock | 2 turns | Target takes +20% damage |
 | Vulnerable | 3 turns | Target takes +10% damage from **all** sources — stacks multiplicatively with Shock, party-wide damage-taken auras, and every other multiplier the enemy has been unwise enough to accumulate. Applied by Ranger Spectral Wolf bites, and refreshed on every subsequent bite, which is to say: effectively permanent for as long as the wolf is still gnawing on things. Deliberately tuned below Trickster's tier-3 Marked for Death ceiling so the pet-bite debuff never quite outclasses the ascendancy investment. |
 | Weaken | 3 turns | Reduced damage dealt |
+| Charm | 2 turns | A charmed hero has a **40%** chance each turn of simply refusing to act. Applied by the Vampire's and the Succubus's Charm, at 50% on cast — stronger than fear (30%) and slow (20%), weaker than an outright stun, on the reasoning that the things which cast it are rare enough |
+| Blind | 1 turn | A **25%** chance to swing wildly and miss. Applied by the Bandit's Dirty Trick at 40% |
+
+Charm and Blind were, for a long time, a promise without a delivery: both abilities applied a plain stun instead, which is a different and considerably worse thing to be on the receiving end of. They now do what their names say.
 
 ### Elemental Procs
 

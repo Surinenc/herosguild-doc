@@ -408,7 +408,7 @@ Mental breaks can only occur when mood drops below **25**. That one number is sh
 | Recently lost a loved one | +20% (a grief thought added within the last 7 days) |
 | Per close friend | -5% (protective) |
 
-Break chance is capped at 90%. Keep mood at 25 or above to prevent breaks entirely.
+Break chance is capped at 90%. Keep mood above the line and no roll happens at all — but note that **25 is the base line, not everyone's line**: the traits below move it, so a Nervous hero is rolling from 33 and an Iron-Willed one not until 15.
 
 A hero already in a break does not roll for another, and a hero **out on a mission or scheduled for one** does not roll at all — but their days-at-low-mood keeps counting while they are away, so the risk is sitting on the doorstep when they get back. The dead, mercifully, are exempt.
 
@@ -469,7 +469,7 @@ Mental breaks affect heroes mid-combat:
 
 ### Prevention
 
-- Keep mood at 25 or above — below that line, and only below it, the dice come out
+- Keep mood above the hero's own threshold — 25 for most, adjusted by their traits — because below that line, and only below it, the dice come out
 - Friendships are armour: each close friend takes 5 points off the daily chance
 - Address low mood quickly — the chance compounds at +5% per day, so a week of neglect is worth more than the base rate
 - Watch for risk factors: recent loss of a loved one adds +15% break chance

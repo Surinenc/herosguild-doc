@@ -777,7 +777,7 @@ When mood drops too low, heroes may have mental breaks. The mental break system 
 - **Wandering** — leaves the guild grounds aimlessly
 - **Confession** — blurts out a secret, usually one someone wanted kept
 
-Prevent breaks by keeping mood at **25 or above**. That is the whole rule — the roll only happens below it — though a hero sitting at 26 is not so much safe as standing very close to the edge and facing the other way.
+Prevent breaks by keeping mood above **25** — the base threshold, which a hero's traits shift up or down by as much as ten points either way. The roll only happens below the line, though a hero sitting a point above it is not so much safe as standing very close to the edge and facing the other way. Below **10**, the two worst outcomes — Berserk and Desertion — join the pool.
 
 ---
 

@@ -104,6 +104,8 @@ Hero housing affects mood and rest recovery. The beds have witnessed more reconc
 | 4 | 45 | +5 | 1.05x | 800g |
 | 5 | 60 | +10 | 1.1x | 2,000g |
 
+Crowding is handled by the **comfort need**, which tracks real headcount against real capacity and scales with how bad it is — not by a second flat penalty from the facility level. The two used to land on the same hero on the same day at the same size, charging twice for one cramped room; the flat thought now only fires when comfort isn't already covering it.
+
 The lower three tiers are now **neutral** rather than a penalty. Levels 1 to 3 are what a guild can afford early, and docking a new master's mood for the crime of having a small building was a tax on being new; the upgrades reward you instead of merely undoing a punishment. The figures are mood points, not percentages, and they arrive as a listed thought like everything else.
 
 ### Hero Quarters

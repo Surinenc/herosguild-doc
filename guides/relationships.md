@@ -396,6 +396,26 @@ Break chance is capped at 90%. Keep mood at 25 or above to prevent breaks entire
 
 A hero already in a break does not roll for another, and a hero **out on a mission or scheduled for one** does not roll at all — but their days-at-low-mood keeps counting while they are away, so the risk is sitting on the doorstep when they get back. The dead, mercifully, are exempt.
 
+**Two tiers, not one.** How far a hero has fallen decides *what kind* of episode is available, not merely whether one happens:
+
+- Between **10 and 25** mood, only the six **minor** breaks are on the table: Catatonic, Binge, Insulting, Hiding, Wandering, Confession.
+- **Below 10**, the two **major** breaks — Berserk and Desertion — join the pool. A higher tier *adds* options rather than replacing them, so a hero at mood 2 can still simply hide under a table.
+
+This closes a genuinely nasty old behaviour, in which a hero at mood 24 could desert at exactly the same odds as one at mood 1.
+
+**Six traits change the maths.** Threshold shifts add together; weight multipliers multiply, and the pool is re-normalised before the roll. The **major** threshold of 10 never moves, whatever a hero is carrying, which keeps the worst outcomes reliably rare:
+
+| Trait | Effect on breaks |
+|-------|------------------|
+| **Iron-Willed** | Threshold **-10** — they break ten points later than anyone else |
+| **Reserved** | Threshold -5 |
+| **Pessimist** | Threshold +3 |
+| **Nervous** | Threshold +8, and ×1.5 each to Hiding and Wandering |
+| **Volatile** | Threshold +5, and ×2 each to Berserk and Insulting |
+| **Peacemaker** | Insulting ×0 — whatever else goes wrong, they will not say the unforgivable thing |
+| **Coward** | Hiding ×2 |
+| **Loyal** | Desertion ×0.3 — they are, to the last, unlikely to simply go |
+
 ### Break Types
 
 | Break | Duration | Weight | Effect |
@@ -409,7 +429,20 @@ A hero already in a break does not roll for another, and a hero **out on a missi
 | Wandering | 1-3 days | 10% | Set to Resting, location unknown |
 | Confession | Instant | 10% | Resolves the same tick. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |
 
-Every break ends — the instant ones resolve on the tick they fire, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy.
+Every break ends — the instant ones resolve on the tick they fire, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy. A **Tortured Artist** gets something else out of it: a **40%** chance that coming out the other side also grants them Master's Hand, on top of the catharsis rather than instead of it. Suffering, they will tell you at length, is material.
+
+### Inspirations
+
+Breaks have a mirror. A hero at **mood 70 or above** rolls a **10%** daily chance of becoming inspired — no bonds required, no availability check, and unlike a break it happens just as readily to someone halfway across the realm on a contract, since being inspired never touches what a hero is doing.
+
+| Inspiration | Duration | Effect |
+|-------------|----------|--------|
+| **Focused** | 3 days | +20% XP — *"Everything's clicking today."* |
+| **On a Roll** | 2 days | +15% crit chance — *"I can't miss."* |
+| **Master's Hand** | 3 days | +15 crafting quality — *"My hands know exactly what to do."* |
+| **Heroic Focus** | 2 days | +10% damage — *"Nothing can stop me right now."* |
+
+The type is drawn evenly from the four. Each arrives with a **+8 mood** thought lasting 3 days, a Chronicle entry, and an **Inspired** chip on the hero's card — a chip that used to appear on vibes alone and now means something specific is running.
 
 ### Combat Impact
 

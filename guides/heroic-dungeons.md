@@ -45,6 +45,8 @@ A clock that punishes dawdling. The Guild Clerk has strong feelings about heroes
 - Reward: +40% gold
 - Visual: Red screen tint, timer UI
 
+> **Currently out of rotation** — and for a more interesting reason than the other two. The clock is real and wired up; it simply never strikes. Fifty measured heroic resolutions reached turn 15 exactly zero times, because heroic fights end well before then, so the modifier promised a threat the combat could not deliver. Should fights ever get longer, it is ready and waiting.
+
 ### Elite Swarm 👑
 **Difficulty:** 2/3
 
@@ -109,7 +111,7 @@ Two modifiers at once. For heroes who looked at the other nine options and thoug
 | Difficulty | Modifiers |
 |------------|-----------|
 | 2/3 | Overwhelming Force, Vampiric Enemies, Elite Swarm, Cursed Ground, Shattered Defenses (*Fragmented Reality* and *Arcane Instability* are defined at this difficulty but out of rotation) |
-| 3/3 | Relentless Assault, Enrage Timer, Chaos Incarnate |
+| 3/3 | Relentless Assault (*Enrage Timer* and *Chaos Incarnate* are defined at this difficulty but out of rotation) |
 
 ---
 
@@ -142,7 +144,7 @@ Three heroic dungeons are available each week, rotating every **Thursday at 00:0
 | Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 |
 | Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 |
 
-Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Three are excluded from the draw: **Chaos Incarnate**, which stacks two others and is being kept back, and **Fragmented Reality** and **Arcane Instability**, neither of which has a combat hook behind it — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply stopped offering them.
+Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Four are excluded from the draw: **Chaos Incarnate**, which stacks two others and is being kept back; **Fragmented Reality** and **Arcane Instability**, neither of which has a combat hook behind it; and **Enrage Timer**, whose hook exists but whose clock no heroic fight has ever run long enough to reach — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply stopped offering them.
 
 The contract itself now names its modifier and quotes what it does, instead of the bare internal id it used to show.
 

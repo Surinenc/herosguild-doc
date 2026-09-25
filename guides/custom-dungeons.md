@@ -136,7 +136,7 @@ The practical effect: hazards are not free even if you have a Cleric. The Guild 
 
 #### Axis Shifts Are Permanent
 
-Moral-event choices during the run earn or burn the guild's **Valor**, **Wealth**, and **Order** axes. These shifts persist to your guild identity on cleared, wiped, **and** forfeited outcomes — there is no "I quit, I didn't mean it" path. The right-rail HUD during the run shows the **deltas this run has earned so far**, not your full axis values; the totals only commit when the run ends.
+Moral-event choices during the run earn or burn the guild's **Valor**, **Wealth**, and **Order** axes. These shifts persist to your guild identity on cleared, wiped, **and** forfeited outcomes — there is no "I quit, I didn't mean it" path. Ending a run now asks you to confirm first, the axes being unforgiving enough without a misplaced click helping them along. The right-rail HUD during the run shows the **deltas this run has earned so far**, not your full axis values; the totals only commit when the run ends.
 
 The Custom Dungeon system uses its own moral event catalogue, distinct from the regular [events system](events.md). The events are placed in rooms by the architect and surface as modal choices when your party traverses that room.
 

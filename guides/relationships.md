@@ -679,7 +679,7 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 | Reason | Description |
 |--------|-------------|
 | Personal Day | Needs a day off. For reasons. |
-| Romantic Escape | Gone off with their partner — one roll, both partners, 1-2 days, and rare enough (0.1% a day) that it counts as a story when it happens |
+| Romantic Escape | Gone off with their partner — one roll, both partners, 1-2 days, at **2% a day** for an eligible couple |
 | Sulking | After a rejection, breakup, or insult |
 | Hangover | Drank too much last night |
 | Bender | Extended drinking episode (addiction-related) |

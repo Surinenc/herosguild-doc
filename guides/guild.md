@@ -235,12 +235,14 @@ The number column is the **quality range** (`recruitQualityMin`/`recruitQualityM
 
 **Tavern Activities:**
 
+**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern: they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
+
 Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities now apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
 
 | Activity | Cost | Mood Effect (baseline) | Cooldown |
 |----------|------|------------------------|----------|
 | Buy Rounds | 10g × Σ hero levels | +3 mood | None (blackout risk daily) |
-| Grand Feast | 100g + 20g × Σ hero levels | +10 mood | 1 day |
+| Grand Feast | 100g + 20g × Σ hero levels | +10 mood, **+8 recreation to everyone** | 1 day |
 | Gambling | Bet 50–500g | +5 mood (win or lose) | None |
 | Bard Night | 15g × Σ hero levels | +8 mood | 3 days |
 
@@ -276,7 +278,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Calm Volatile | 2 | Volatile hero with mood < 40 | +5 mood | -4 mood |
 | Comfort Injured | 2 | Hero recovering from injuries | +6 mood, -1 day recovery | -2 mood |
 | Mentor Session | 2 | Veteran (51+) and rookie (under 20) present | XP for student, +3 mood for mentor | None |
-| Host Feast | 2 | Gold above the feast cost (100g + 20g × Σ levels present) | +5 mood (all present) | None |
+| Host Feast | 2 | Gold above the feast cost (100g + 20g × Σ levels present) | +5 mood and +8 recreation (all present); anyone who enjoys drinking gets the drink on top | None |
 | Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
 | Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
 | Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | -2 relationship |

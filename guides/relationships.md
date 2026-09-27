@@ -371,6 +371,34 @@ Heroes have four needs that affect mood:
 
 Needs below their critical threshold actively decrease mood.
 
+**Recreation is personal.** A hero does not relax by doing things in general; they relax by doing the things *they* enjoy. Every hero rolls **two pastimes** — three, four times in ten — weighted by their traits and class, and separately has a **70% chance** of enjoying **Drinking** on top (10% for an Ascetic, 30% for the Reserved, 95% for the Gregarious). There are ten pastimes in all: Adventure, Training, Crafting, Quiet days, Drinking, Music, Gambling, Company, Faith, Romance.
+
+| | |
+|---|---|
+| Recreation from a day spent on something they enjoy | **+20** |
+| Recreation from anything they don't enjoy | **0** |
+| Mood from an enjoyed day | +3, lasting a day |
+| Food — the one thing every hero enjoys | +8 recreation |
+| Deprived: recreation under 30 with no liked pastime for 5 days | -4 mood |
+
+This is why a hero can be sent to the tavern every night and stay miserable. If they don't like drinking, the tavern is a room full of noise they didn't ask for. A Cleric with Faith and Quiet days wants the chapel and an afternoon by a window; a Warrior with Training wants the yard. Missions, training, crafting, quiet days, chapel visits, tavern activities, gatherings and even absences each map to a pastime, and only a match counts. Pastimes are **discovered** in play, not shown up front — the first time one restores a hero it earns a Chronicle line and appears under *Personality* on their Social tab.
+
+**Heroes spend their own money on it.** Below **60 recreation** a bored hero buys an evening they enjoy out of their own [purse](heroes.md#purse--ambition): a drink at **10 gold × their level**, an evening with their partner at **20 × level each** (both pay), or a bet.
+
+**Gambling is an addiction with its own ladder**, running the same five levels as drink. The higher it climbs, the bigger the stakes and the harder it is to skip a night:
+
+| Habit | Stake band | Chance of gambling on any given night |
+|-------|------------|----------------------------------------|
+| None | Modest | Only when bored, as a pastime |
+| Dabbler | Modest | 30% |
+| Regular | Comfortable | 70% |
+| Heavy | Fine | **Every night** |
+| Addicted | Extravagant | **Every night** |
+
+A bet wins **45%** of the time and pays double the stake. Each bet adds 3 to the habit — doubled for stakes in the Fine band or above — against a decay of 1 a day, so a seat at the manager's gambling night (worth 2) is cheaper than the habit a hero builds alone. Mood swings with the stake, from ±3 at Modest to ±10 at Extravagant. An addict with an empty purse takes **-5 mood** and starts **borrowing from friends** — anyone they're on +20 or better with — at a cost of **5 relationship in both directions** each time they ask.
+
+**Tastes change.** An addiction that reaches Heavy or worse *becomes* a pastime: the hero has stopped merely drinking or betting and started genuinely loving it, with a Chronicle entry marking the moment. And trauma can rewrite a hero: losing someone close carries a **20%** chance of trading **Adventure** for **Quiet days**, rising 15 points with each earlier loss to a ceiling of 80%. *"I used to love the road. Now I want four walls around me."*
+
 ### Affecting Mood
 
 **Improve:** Things that remind heroes why they're here.

@@ -377,27 +377,38 @@ Needs below their critical threshold actively decrease mood.
 
 | | |
 |---|---|
-| Recreation from a day spent on something they enjoy | **+20** |
+| Recreation from a day spent on something they enjoy | **+10** |
 | Recreation from anything they don't enjoy | **0** |
 | Mood from an enjoyed day | +3, lasting a day |
 | Food — the one thing every hero enjoys | +8 recreation |
+| A drink at a feast, for those who enjoy drinking | +7.5 recreation |
 | Deprived: recreation under 30 with no liked pastime for 5 days | -4 mood |
 
 This is why a hero can be sent to the tavern every night and stay miserable. If they don't like drinking, the tavern is a room full of noise they didn't ask for. A Cleric with Faith and Quiet days wants the chapel and an afternoon by a window; a Warrior with Training wants the yard. Missions, training, crafting, quiet days, chapel visits, tavern activities, gatherings and even absences each map to a pastime, and only a match counts. Pastimes are **discovered** in play, not shown up front — the first time one restores a hero it earns a Chronicle line and appears under *Personality* on their Social tab.
 
-**Heroes spend their own money on it.** Below **60 recreation** a bored hero buys an evening they enjoy out of their own [purse](heroes.md#purse--ambition): a drink at **10 gold × their level**, an evening with their partner at **20 × level each** (both pay), or a bet.
+**Heroes spend their own money on it.** A hero under **60 recreation** counts as bored, and a bored hero buys an evening they enjoy out of their own [purse](heroes.md#purse--ambition): a drink at **5 gold × their level**, an evening with their partner at **20 × level each** (both pay), or a bet.
 
-**Gambling is an addiction with its own ladder**, running the same five levels as drink. The higher it climbs, the bigger the stakes and the harder it is to skip a night:
+**Drinking and gambling are habits**, each with the same five addiction levels, and each rolled every night the hero is at the guild — out of your hands entirely.
 
-| Habit | Stake band | Chance of gambling on any given night |
-|-------|------------|----------------------------------------|
-| None | Modest | Only when bored, as a pastime |
-| Dabbler | Modest | 30% |
-| Regular | Comfortable | 70% |
-| Heavy | Fine | **Every night** |
-| Addicted | Extravagant | **Every night** |
+*Drinking* takes the **highest** chance that applies: **50%** for a hero who simply enjoys it, **80%** if they enjoy it and are bored, or their addiction's own floor — nothing at None, 50% at Dabbler and Regular, 60% at Heavy, 70% at Addicted. Note what that last column means: an addicted hero drinks on most nights whether they were in the mood or not.
 
-A bet wins **45%** of the time and pays double the stake. Each bet adds 3 to the habit — doubled for stakes in the Fine band or above — against a decay of 1 a day, so a seat at the manager's gambling night (worth 2) is cheaper than the habit a hero builds alone. Mood swings with the stake, from ±3 at Modest to ±10 at Extravagant. An addict with an empty purse takes **-5 mood** and starts **borrowing from friends** — anyone they're on +20 or better with — at a cost of **5 relationship in both directions** each time they ask.
+*Gambling* adds its chances together instead, which is how a quiet evening becomes an expensive one:
+
+| | |
+|---|---|
+| Base | 15% |
+| Bored | +15% |
+| Tipsy or worse | +10% |
+| Both bored and drunk | +10% more |
+| Addiction: Dabbler / Regular / Heavy / Addicted | +5% / +10% / +17.5% / +25% |
+| A hero who doesn't enjoy gambling | ×0.4 of the total |
+| Ceiling | 95% |
+
+Stakes rise with the habit — Modest, Modest, Comfortable, Fine, Extravagant across the five levels. A bet wins **45%** of the time and pays double. Each bet adds **3** to the habit, halved from Regular upward, against a decay of only **0.15 a day**: gambling is far easier to acquire than to shed, which is the point. A seat at the manager's gambling night adds 2. Mood swings with the stake, from ±3 at Modest to ±10 at Extravagant. An addict with an empty purse takes **-5 mood** and starts **borrowing from friends** — anyone they're on +20 or better with — at **5 relationship in both directions** each time they ask.
+
+A hero who doesn't enjoy gambling can still acquire the taste by trying it: **3%** after a bet, **8%** if that bet won.
+
+**Drink is easier to shed than the tables.** Addiction falls **1.5 a day, but only after a night spent sober** — a hero who drinks every evening never recovers at all, however slowly they are climbing. A **Devoted** friend adds another **1 a day**, which is the mechanical form of somebody keeping an eye on you.
 
 **Tastes change.** An addiction that reaches Heavy or worse *becomes* a pastime: the hero has stopped merely drinking or betting and started genuinely loving it, with a Chronicle entry marking the moment. And trauma can rewrite a hero: losing someone close carries a **20%** chance of trading **Adventure** for **Quiet days**, rising 15 points with each earlier loss to a ceiling of 80%. *"I used to love the road. Now I want four walls around me."*
 
@@ -679,14 +690,15 @@ The morning after. Hangovers affect mood, accuracy, energy, and — at higher le
 
 Repeated drinking builds addiction (0-100 scale). Without alcohol, addicted heroes suffer withdrawal:
 
-| Level | Mood Penalty | Shakes (Accuracy) | Days to Recover | Mission Refusal Chance |
-|-------|-------------|-------------------|----------------|----------------------|
-| Dabbler | -2 | 0 | 3 | 0% |
-| Regular | -5 | -5 | 7 | 5% |
-| Heavy | -12 | -15 | 14 | 15% |
-| Addicted | -25 | -30 | 30 | 40% |
+| Level | Addiction | Craving Mood Penalty | Shakes (Accuracy) | Mission Refusal Chance |
+|-------|-----------|----------------------|-------------------|----------------------|
+| None | 0-20 | — | 0 | 0% |
+| Dabbler | 21-40 | -2 | 0 | 0% |
+| Regular | 41-60 | -5 | -5 | 5% |
+| Heavy | 61-80 | -12 | -15 | 15% |
+| Addicted | 81-100 | -25 | -30 | 40% |
 
-Recovery requires going without drinks for the listed number of days. An Addicted hero needs a full month of sobriety — during which they'll be miserable, shaking, and may refuse to work 40% of the time.
+The penalties land on any night the hero goes **without** a drink — that is the withdrawal, and an Addicted hero denied one is miserable, shaking, and refusing work two nights in five. Recovery itself is the **1.5 a day** described above, paid only on sober nights, so climbing down from Addicted is a matter of weeks rather than days. (A *"days to recover"* column used to appear here, taken from a field in the code that nothing has ever read; the daily rate is the real rule.)
 
 **The promise.** At the tavern you can ask a hero to quit, and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
 

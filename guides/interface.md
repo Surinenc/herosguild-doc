@@ -40,6 +40,8 @@ Click a hero to see details.
 
 ### Facility Panel (Center)
 
+Every facility screen now carries the **level badge** the Workshop has always had: current level, build progress, what the level does for you now, and what the next one would. It appears on the Tavern, Vault, Training, Memorial Hall, Quarters, Mission Board, Shop, Infirmary and Crafting screens, and reads from the facility data rather than from hand-written copy, which is how the descriptions came to match what the buildings actually do.
+
 The heart of your guild operations. The Guild Clerk is rather proud of this layout.
 - Click facilities to access them
 - Upgrade indicators show available upgrades

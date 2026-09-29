@@ -866,6 +866,8 @@ Legendary materials cannot be bought or sold. Monster parts (dragon scales, bone
 
 **Player Multiplier:** Starts at 1.0×. Each unit bought adds +0.05, each unit sold subtracts -0.05. Clamped between 0.5× and 10.0×. Buying 10 Mithril Ore in one go pushes its multiplier to 1.50× — and drops the price of cheaper metals in the same category by -0.01 per unit. The market rewards diversified shopping.
 
+**Prices heal overnight.** Every restock pulls each material's multiplier **10% of the way back toward 1.0**, and snaps it to exactly 1.0 once it is within 0.005 — so a market you hammered today is a little more reasonable tomorrow and back to normal inside a few quiet weeks. Nothing you do to a price is permanent, in either direction, which is a mercy if you have just dumped four hundred iron ingots and an irritation if you were hoping to keep a bargain.
+
 **Sell 10** walks the price down one unit at a time, exactly as ten separate Sell 1 clicks would: the second unit is sold at the price the first unit's sale created, and so on down. It used to pay the opening price ten times over and apply the cascade afterwards, which made the bulk button quietly the most profitable thing in the guild.
 
 ### Stock & Restock

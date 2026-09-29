@@ -366,7 +366,7 @@ Heroes have four needs that affect mood:
 
 | Need | Description | Critical Threshold |
 |------|-------------|-------------------|
-| Energy | Physical stamina | Below 20 |
+| Energy | Physical stamina — an idle hero at the guild recovers **+10 a day**, one resting or injured **+15** | Below 20 |
 | Social | Desire for companionship | Below 20 |
 | Recreation | Need for fun/downtime | Below 20 |
 | Comfort | Living conditions | Below 20 |

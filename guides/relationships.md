@@ -12,11 +12,13 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 | Friend | +30 to +59 | Know each other well enough to tell the truth occasionally. |
 | Friendly | +10 to +29 | Can name each other. Some progress. |
 | Neutral | -9 to +9 | Indifferent. This is the beginning, one way or the other. |
-| Annoyed | -10 to -20 | A small quantity of resentment, not yet organized. |
-| Dislike | -21 to -35 | Have noticed things about each other that cannot be unnoticed. |
-| Rival | -36 to -55 | Actively competing. Neither takes losses gracefully. |
-| Hostile | -56 to -75 | Requires active management. Or physical separation. |
-| Enemy | -76 to -100 | Puts considerable effort into this. It shows in the combat stats. |
+| Annoyed | -10 to -29 | A small quantity of resentment, not yet organized. |
+| Dislike | -30 to -59 | Have noticed things about each other that cannot be unnoticed. |
+| Rival | -60 to -79 | Actively competing. Neither takes losses gracefully. |
+| Hostile | -80 to -94 | Requires active management. Or physical separation. |
+| Enemy | -95 to -100 | Puts considerable effort into this. It shows in the combat stats. |
+
+The negative bands are exact mirrors of the positive ones — Enemy is as narrow as Devoted, Dislike as wide as Friend. They were not always: the old ladder crammed outright enmity into the last 25 points and made Enemy far easier to reach than Devoted, so a guild could acquire sworn enemies faster than it acquired anybody's devotion. Hatred now costs what love costs.
 
 ---
 
@@ -157,7 +159,7 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 - **How:** Similar achievements, competitive traits
 - **Penalty:** -15% combat damage when both are in the same party — the bond is corrosive in practice. Rivals also refuse to party together once the bond locks in.
 - **Risk:** May conflict over leadership
-- **It can end.** A Rival or Enemy bond clears itself once the underlying opinion has been held above Dislike — that is, at -20 or better — for **7 consecutive days**. The counter resets the moment they slip back, so the work has to be sustained rather than merely attempted. A **Forgiving** hero does the work on their own, drifting any negative relationship one point toward zero every third day, unless they are also **Vindictive**, in which case the two traits argue and nothing moves
+- **It can end.** A Rival or Enemy bond clears itself once the underlying opinion has been held above Dislike — that is, at -29 or better — for **7 consecutive days**. The counter resets the moment they slip back, so the work has to be sustained rather than merely attempted. A **Forgiving** hero does the work on their own, drifting any negative relationship one point toward zero every third day, unless they are also **Vindictive**, in which case the two traits argue and nothing moves
 
 ### Life Debt
 

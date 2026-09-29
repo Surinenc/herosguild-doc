@@ -552,11 +552,11 @@ Heroes fight better alongside friends and worse alongside enemies, because profe
 | Friend (30-59) | +10% |
 | Friendly (10-29) | +5% |
 | Neutral (-9 to 9) | 0% |
-| Annoyed (-10 to -20) | -3% |
-| Dislike (-21 to -35) | -8% |
-| Rival (-36 to -55) | -12% |
-| Hostile (-56 to -75) | -18% |
-| Enemy (-76 to -100) | -25% |
+| Annoyed (-10 to -29) | -3% |
+| Dislike (-30 to -59) | -8% |
+| Rival (-60 to -79) | -12% |
+| Hostile (-80 to -94) | -18% |
+| Enemy (-95 to -100) | -25% |
 
 This applies to **basic attacks only**. A skill is a skill: the gem does not care how the caster feels about the person standing next to them, and the modifier above never reaches it. A party of enemies who all fight with skills will notice remarkably little; a party of enemies swinging swords will notice a quarter of their damage missing.
 

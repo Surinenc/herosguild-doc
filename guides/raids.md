@@ -245,9 +245,11 @@ The Guild Clerk considers this the sporting thing to do. The Warrior considers i
 
 | Boss | Gold | Raid Tokens | Guaranteed Material |
 |------|------|-------------|---------------------|
-| Ancient Dragon | 8,000 – 12,000 | 5 – 10 | Ancient Dragon Scale |
-| Lich King | 10,000 – 15,000 | 6 – 12 | Phylactery Shard |
-| Void Titan | 12,000 – 18,000 | 8 – 14 | Reality Fragment |
+| Ancient Dragon | 800,000 – 1,200,000 | 5 – 10 | Ancient Dragon Scale |
+| Lich King | 1,000,000 – 1,500,000 | 6 – 12 | Phylactery Shard |
+| Void Titan | 1,200,000 – 1,800,000 | 8 – 14 | Reality Fragment |
+
+Those purses are **a hundred times** what they were. A raid boss used to pay less than a tenth of one five-star contract, which made the hardest fight in the game an act of charity. Heroic difficulty still leaves gold alone — it doubles tokens, materials and item rolls instead.
 
 Each boss also drops a set of guaranteed items, plus chance-rolled named items from its loot table (Ancestral-rarity tier-set pieces at 20% per roll, alongside other named drops at varying chances). The first kill of each boss unlocks every recipe gated behind it — the kind of recipe the alchemist won't shut up about. Subsequent kills roll for recipe scrolls instead: 15% for an Epic recipe, 5% for a Legendary (independent rolls). World bosses skip Epic and roll 8% for Legendary only. Duplicates convert to gold (10,000g / 100,000g). See [Crafting Guide — Recipe Drops](crafting.md#recipe-drops).
 

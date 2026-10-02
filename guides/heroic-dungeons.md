@@ -117,10 +117,12 @@ Two modifiers at once. For heroes who looked at the other nine options and thoug
 
 ## Reward Multiplier
 
-Gold rewards are calculated as follows. The Guild Clerk considers the bonus "hazard pay, and barely adequate":
+A heroic contract's base gold is the **regular contract curve for its stars and monster level, times ten** — see [Monster Level](dungeons.md#monster-level-power) for the curve itself. Heroics had been left on the old pre-rebalance linear formula, which paid roughly one two-hundredth of a regular contract at the same level; three heroics a week now cover the wages of a full five-star roster, which is the point of there being three of them.
+
+On top of that base, the modifier and difficulty bonuses apply. The Guild Clerk considers the result "hazard pay, and barely adequate":
 
 ```
-Base Gold × Modifier Gold Bonus × Difficulty Bonus
+Base Gold (contract curve × 10) × Modifier Gold Bonus × Difficulty Bonus
 ```
 
 Difficulty bonuses:

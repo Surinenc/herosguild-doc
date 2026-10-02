@@ -598,7 +598,22 @@ A little over one dream in five is the second kind. You will not know which unti
 
 A retiring hero walks out through the front gate in daylight and is filed in the **Departed archive** under `Retired`, which is the only cheerful entry that archive has ever held.
 
-It is still a loss. The guild runs exactly the same grief through their friendships that a death does — their friends do not care that it was a happy ending, and neither, in the small hours, do you. You are obliged to be pleased about it. The Quartermaster has noted that the roster is one shorter and one happier, and has been asked to stop saying this.
+There is a **retirement party** — the retiree's last night, at which everyone has a view. The guild feels it as a loss rather than a bereavement, and the hall sorts itself into camps:
+
+| How they knew them | Mood |
+|---|---|
+| Devoted | -25 for a fortnight |
+| Lover or spouse | -20 for twenty days, and some time off over it |
+| Best friend | -15 for ten days |
+| Close friend or friend | -8 for five days |
+| Friendly acquaintance | **+3** — pleased for them, in a distant sort of way |
+| Neutral, Annoyed, Dislike | Nothing whatsoever |
+| Rival or Hostile | +5 |
+| Enemy | +8, and no attempt to hide it |
+
+Personality then has the final word on the same news. The **Kind**, **Empathic**, **Cheerful**, **Inspiring**, **Approachable** and **Forgiving** take it at half weight and add a frankly decent *"I am glad for them"*. The **Loyal**, **Protective**, **Pessimist**, **Nervous**, **Passionate** and **Intense** take it half again as hard. The **Loner**, **Reserved** and **Iron-Willed** take it at half weight and say nothing at all, while the **Misanthrope** and the **Psychopath** do not react in any measurable way, the departure of a colleague being, to them, weather.
+
+And the **Jealous**, **Greedy** and **Competitive** carry a separate sour thought regardless of how they felt about the hero — *"Must be nice"* — because somebody else got out and they did not.
 
 There is an inversion worth planning around: paying your best hero well buys them out sooner. The guild's interests and the hero's are not, it turns out, entirely aligned.
 

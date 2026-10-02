@@ -303,6 +303,8 @@ An intervene attempt requires all of the following, because goodwill alone is no
 
 The base chance is read from **the ally's own opinion of the hero in danger** — which is the only direction that makes sense, whatever the engine may have believed previously. A hero adored by a Warrior who owes them a life debt is very hard to kill; a hero who merely tolerates everyone is on their own.
 
+**Then the whole thing is halved.** Every figure in both tables above — the base band, each bonus, and the 90% ceiling — is multiplied by **0.5** at the end, so the real maximum is **45%** and a plain Friend intervenes 10% of the time rather than 20%. Rescues were firing every other day, which made them the second-largest source of good feeling in the guild after the tavern and devalued the thing considerably. A rescue is meant to be a story, not a routine.
+
 ### What Happens
 
 1. Intervener takes 50% of the killing blow damage, further reduced by their own armor

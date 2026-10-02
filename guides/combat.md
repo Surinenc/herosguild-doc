@@ -325,7 +325,7 @@ When a hero would receive a **killing blow**, allies may intervene:
 - Protective trait: +15%; Loyal trait: +10%
 - Maximum: 90%
 
-The base chance comes from the **would-be rescuer's** opinion of the hero in danger, not the other way round. See [the full table in the Relationships Guide](relationships.md#intervene-chance).
+The base chance comes from the **would-be rescuer's** opinion of the hero in danger, not the other way round. **Every number above is then halved** — base, bonuses and cap alike — so the true ceiling is 45%, not 90%. See [the full table in the Relationships Guide](relationships.md#intervene-chance).
 
 ### Relationship Impact
 

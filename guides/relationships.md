@@ -148,7 +148,7 @@ A Cleric or Paladin may or may not heal an ally they despise, and the question i
 
 The roll happens **once per wounded ally per cast**, so a healer who grudgingly patched someone last turn may refuse the next, which is how grudges actually work.
 
-- **Single-target heals** pick the next-most-wounded ally they *didn't* refuse. Only if the roll actually turned away the most-wounded ally does the caster spend the turn refusing loudly — a hated ally who happened to survive the dice no longer gets the healer blamed for it
+- **Single-target heals** pick the next-most-wounded ally they *didn't* refuse. The caster only spends the turn refusing loudly if the dice actually turned away the ally who needed it most — a grudge the roll declined to act on passes without comment, and everybody keeps their dignity
 - **AoE heals** exclude whoever the roll turned down — the shield of holy light politely goes around them
 - **Nobody refuses to heal themselves.** Even a bitter healer will patch their own arm rather than bleed on principle
 
@@ -214,7 +214,7 @@ Additional bonds include:
 - **Estranged** - Former bond broken by betrayal
 - **Divorced / Cheated** - The paperwork version of the above
 
-**Who refuses whom.** Five bonds block a shared deployment, and the check now runs in **both directions** — the newcomer's objection to the party and every existing member's objection to the newcomer. **Blood Feud**, **Rival** and **Enemy** are *hard* refusals: no mood price will buy them off, and the dispatch is blocked outright — in a dungeon party exactly as on a contract, the two having previously disagreed about it. **Ex-Partner** is *soft* — you may insist, at a cost of 20 mood to the hero you insisted on — and **Cheated** is soft at 15, borne only by the wronged party, since only they are carrying the bond. Every refusal line now names the hero the objection is about, rather than leaving you to work out which of the seven people on the card is the problem. Refusal also outranks insistence: a hero who would ordinarily refuse to go anywhere without their devoted companion will stand down quietly if that companion is party to a hard conflict, rather than the two demands cancelling each other out in the dispatch window. Suggest Party builds its roster one hero at a time, checking each new candidate against everyone already chosen.
+**Who refuses whom.** Five bonds block a shared deployment, and the objection runs in **both directions** — the newcomer's view of the party and every existing member's view of the newcomer. **Blood Feud**, **Rival** and **Enemy** are *hard* refusals: no mood price will buy them off, and the dispatch is blocked outright, in a dungeon party exactly as on a contract. **Ex-Partner** is *soft* — you may insist, at a cost of 20 mood to the hero you insisted on — and **Cheated** is soft at 15, borne only by the wronged party, since only they are carrying the bond. Every refusal line names the hero the objection is about, which saves you working out which of the seven people on the card is the problem. Refusal also outranks insistence: a hero who would ordinarily refuse to go anywhere without their devoted companion will stand down quietly if that companion is party to a hard conflict, rather than the two demands cancelling each other out in the dispatch window. Suggest Party builds its roster one hero at a time, checking each new candidate against everyone already chosen.
 
 Any of **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Cheated**, with no surviving romance attached, will get a cohabiting pair separated on the next day-advance — one of them takes a free private room, or the Barracks if there isn't one. See [Cohabitation](guild.md#cohabitation).
 
@@ -330,7 +330,7 @@ An intervene attempt requires all of the following, because goodwill alone is no
 | **Loyal** trait | +10% |
 | Maximum | 90% |
 
-The base chance is read from **the ally's own opinion of the hero in danger** — which is the only direction that makes sense, whatever the engine may have believed previously. A hero adored by a Warrior who owes them a life debt is very hard to kill; a hero who merely tolerates everyone is on their own.
+The base chance is read from **the would-be rescuer's own opinion of the hero in danger**, which is the only direction that makes any sense: nobody has ever thrown themselves in front of an axe because the victim thought well of *them*. A hero adored by a Warrior who owes them a life debt is very hard to kill; a hero who merely tolerates everyone is on their own.
 
 **Then the whole thing is halved.** Every figure in both tables above — the base band, each bonus, and the 90% ceiling — is multiplied by **0.5** at the end, so the real maximum is **45%** and a plain Friend intervenes 10% of the time rather than 20%. Rescues were firing every other day, which made them the second-largest source of good feeling in the guild after the tavern and devalued the thing considerably. A rescue is meant to be a story, not a routine.
 
@@ -530,7 +530,7 @@ Breaks have a mirror. A hero at **mood 70 or above** rolls a **10%** daily chanc
 | **Master's Hand** | 3 days | +15 crafting quality — *"My hands know exactly what to do."* |
 | **Heroic Focus** | 2 days | +10% damage — *"Nothing can stop me right now."* |
 
-The type is drawn evenly from the four. Each arrives with a **+8 mood** thought lasting 3 days, a Chronicle entry, and an **Inspired** chip on the hero's card — a chip that used to appear on vibes alone and now means something specific is running.
+The type is drawn evenly from the four. Each arrives with a **+8 mood** thought lasting 3 days, a Chronicle entry, and an **Inspired** chip on the hero's card — and the chip means something specific is running, rather than merely that the hero is having a nice morning.
 
 ### Combat Impact
 
@@ -608,9 +608,9 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Intense | Both directions at 1.5× |
 | Tortured Artist | Changes no break odds at all — but coming out of one carries a **40%** chance of arriving with Master's Hand attached. The guild does not endorse the method |
 
-First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder. Misanthrope runs the other way: it colours how the holder sees everyone else. The distinction was for a long while reversed in the code, which made charm a private virtue and an annoying voice a private burden, neither of which is how either works.
+First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder, which is the entire point of an impression. Misanthrope runs the other way: it colours how the holder sees everyone else, and asks nothing of them in return.
 
-Contradictory traits no longer turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's traits are nudged. Heroes who already hold such a pair keep it — they have presumably made it work, or at least made it everyone's problem.
+Contradictory traits do not turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's are nudged. A hero from an old roster who somehow holds both keeps them, and has presumably made it work, or at least made it everyone's problem.
 
 ---
 
@@ -640,7 +640,7 @@ Some items become Soulbound through events rather than time:
 - **Saved Life** — the hero survived a near-death thanks to this item
 - **Family Heirloom** — brought from their background
 
-Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button where the Unequip button used to be, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
+Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button in place of an Unequip one, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
 
 Prized and Soulbound items are also skipped by the auto-equip pass, so a shinier drop won't quietly displace either from a hero who's grown fond of what they've got. When auto-equip *does* compare two items it now scores their **full** stats — base, rolled bonuses and enchantments together — rather than the base line alone, which had it rating a superbly-rolled sword exactly level with a dreadful one of the same make.
 
@@ -729,7 +729,7 @@ Repeated drinking builds addiction (0-100 scale). Without alcohol, addicted hero
 | Heavy | 61-80 | -12 | -15 | 15% |
 | Addicted | 81-100 | -25 | -30 | 40% |
 
-The penalties land on any night the hero goes **without** a drink — that is the withdrawal, and an Addicted hero denied one is miserable, shaking, and refusing work two nights in five. Recovery itself is the **1.5 a day** described above, paid only on sober nights, so climbing down from Addicted is a matter of weeks rather than days. (A *"days to recover"* column used to appear here, taken from a field in the code that nothing has ever read; the daily rate is the real rule.)
+The penalties land on any night the hero goes **without** a drink — that is the withdrawal, and an Addicted hero denied one is miserable, shaking, and refusing work two nights in five. Recovery itself is the **1.5 a day** described above, paid only on sober nights, so climbing down from Addicted is a matter of weeks rather than days — and weeks during which the hero is being actively unpleasant about it.
 
 **The promise.** At the tavern you can ask a hero to quit, and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
 

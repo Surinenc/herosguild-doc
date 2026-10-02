@@ -92,7 +92,7 @@ Your central building. The notice board here has seen more drama than most theat
 | 4 | Manor Hall | 8 (+1 contract) | 1,500g |
 | 5 | Legendary Hall | 10 (+2 contracts) | 4,000g |
 
-**And the cap is now enforced.** With every slot in use the Mission Board refuses the dispatch and says which limit you have hit — previously the number appeared in the facility text and nowhere in the code, so a Guild Master with two slots could run nine contracts at once and reasonably conclude that the Guild Hall was decorative.
+The cap is real. With every slot in use the Mission Board declines the dispatch and names the limit you have reached, in the tone of a clerk who has said it before. Contracts wait their turn; the Guild Hall is not decorative.
 
 ### Barracks
 
@@ -106,7 +106,7 @@ Hero housing affects mood and rest recovery. The beds have witnessed more reconc
 | 4 | 45 | +5 | 1.05x | 800g |
 | 5 | 60 | +10 | 1.1x | 2,000g |
 
-Crowding is handled by the **comfort need**, which tracks real headcount against real capacity and scales with how bad it is — not by a second flat penalty from the facility level. The two used to land on the same hero on the same day at the same size, charging twice for one cramped room; the flat thought now only fires when comfort isn't already covering it.
+Crowding is handled by the **comfort need**, which measures real headcount against real capacity and scales with how bad the squeeze is. The facility's own flat mood line only speaks up when comfort isn't already saying it — one cramped room, one complaint, the Guild Clerk being firm about double-counting.
 
 The lower three tiers are now **neutral** rather than a penalty. Levels 1 to 3 are what a guild can afford early, and docking a new master's mood for the crime of having a small building was a tax on being new; the upgrades reward you instead of merely undoing a punishment. The figures are mood points, not percentages, and they arrive as a listed thought like everything else.
 
@@ -295,7 +295,7 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Tell War Stories | 1 | Always available | +10 XP for low-level heroes | None |
 | Eavesdrop | 1 | Always available | Reveals social intel | None |
 
-**The relationship penalties were tripled** (3 → 9, and 2 → 6 on Encourage Romance). Ignored tavern trouble was the only regular source of bad feeling in the guild — worth about -1.9 per change against a tavern that otherwise only ever pushed relationships upward — so a roster left to itself drifted inexorably toward everybody adoring everybody. Trouble you decline to handle now costs what handling it would have been worth.
+Trouble you decline to handle costs roughly what handling it would have been worth — **-9 relationship** on the serious ones, **-6** on a romance left to wither. The tavern is otherwise a machine for making people like each other, and without a price on neglect a roster drifts gently toward everyone adoring everyone, which is pleasant, implausible, and no fun at all.
 
 **Cooldowns:** Each specific hero-situation combination has a 3-night cooldown, so you won't see the same problem with the same heroes every night — just similar problems with different heroes.
 
@@ -678,15 +678,15 @@ The Warehouse caps how much gold the guild can hold, and **income above the cap 
 | 5 — Logistics Center | 100,000,000g |
 | 6 — Mythic Repository | 999,999,999g |
 
-The Facilities income average counts what was **banked**, not what was offered — tavern takings, mission gold and bonuses, and shop sales all record the figure that actually landed, so a capped day reads honestly rather than flattering itself. Raid loot gold is counted too, under dungeon loot, having previously appeared in no income column at all.
+The Facilities income average counts what was **banked**, not what was offered: tavern takings, mission gold and bonuses, shop sales and raid loot all record the figure that actually landed in the vault. A day spent at the Warehouse ceiling therefore reads honestly, rather than flattering itself about money that bounced.
 
-**Loot is never simply lost to a full Vault.** An item that has nowhere to go is sold at its vendor value instead, the gold routed through the same banking rules as any other income, and a guild-log line names the item and what it fetched. It used to vanish without comment — from dungeon runs, mission rewards, world-boss drops, crafted items and quest rewards alike.
+**Loot is never simply lost to a full Vault.** An item with nowhere to go is sold at its vendor value instead — dungeon spoils, mission rewards, world-boss drops, crafted goods and quest prizes alike — the gold banked by the usual rules, and a guild-log line naming the item and what it fetched. The Guild Clerk regards an unrecorded disappearance as the worst thing that can happen to an object.
 
-Every sale now tells you when this has happened. A Market sale, a Vault bulk sale and Sell Duplicates each report the gold **actually banked** and append *"The Warehouse is full: Ng didn't fit."* — where previously the Market announced you had pocketed 0g with no explanation whatsoever, and the Vault cheerfully claimed the full amount it had not in fact received.
+Every sale says so when it happens. A Market sale, a Vault bulk sale and Sell Duplicates each report the gold **actually banked** and append *"The Warehouse is full: Ng didn't fit."* — the Clerk holding that a guild told exactly how much money it failed to receive is a guild that may yet build a bigger shed.
 
 ### Debt, and the End of It
 
-The bills come due whether or not you can pay them. Gold is allowed to go **negative** — the ledger no longer quietly forgives an unaffordable night by rounding your treasury back up to nothing, which for a long while it did, and which made the guild's finances a matter of style rather than consequence.
+The bills come due whether or not you can pay them. Gold is allowed to go **negative**: an unaffordable night is not forgiven, rounded away or quietly overlooked, but written down in red and carried, because the ledger has no imagination and considers this a virtue.
 
 | Gold | What happens |
 |------|--------------|
@@ -712,7 +712,7 @@ Daily Wage = floor((Level - 1)^1.4 × 2) × Quality Multiplier
 | Epic (4★) | 8x |
 | Legendary (5★) | 16x |
 
-The curve itself was flattened — the exponent came down from 1.5 and the coefficient from 3 — while the quality ladder was rebuilt to **double with every star**, where it used to crawl from 1.0 to 3.0. The two changes pull in opposite directions on purpose: levelling a hero is now affordable, and a famous one is paid like a famous one. A 5★ veteran costs sixteen times what a 1★ of the same level does, and is worth it or isn't.
+The two halves of that sum pull in opposite directions on purpose. The level curve is gentle enough that training somebody up does not bankrupt you; the star ladder **doubles at every rung**, so a 5★ veteran costs sixteen times what a 1★ of the same level does. Fame is the expensive part, as fame generally is, and whether it is worth sixteen common heroes is a question the Guild Clerk files under *operational philosophy* and declines to answer.
 
 **Examples:**
 - Level 5 Common: 13g/day
@@ -721,9 +721,9 @@ The curve itself was flattened — the exponent came down from 1.5 and the coeff
 - Level 100 Common: 1,244g/day
 - Level 100 Legendary: 19,904g/day
 
-Level 1 heroes are free (no wages), and so, in the end, are the dead — payroll now skips them, which it did not always, and the Guild Clerk has quietly closed the file marked *posthumous remuneration*. The star multiplier is where the real money goes: a sixty-strong roster of Legendary 100s runs to **1,194,240 gold a day**, a figure the Clerk declines to write out in words.
+Level 1 heroes are free, being freshers, and so are the dead, the file marked *posthumous remuneration* having been closed with some embarrassment. The star multiplier is where the real money goes: a sixty-strong roster of Legendary 100s runs to **1,194,240 gold a day**, a figure the Clerk declines to write out in words.
 
-**The money now reaches the heroes.** Wages used to be debited from the guild and then quietly cease to exist, which the ledger accepted without comment. Each hero is now credited their **base** wage — the crisis multiplier inflates what you pay but not what they receive, so a crisis stays a cost to the guild rather than a windfall for the staff. What they do with it is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
+**The money reaches the heroes.** Each is credited their **base** wage — the crisis multiplier inflates what you pay without inflating what they receive, so hard times stay a cost to the guild rather than a windfall for the staff, an arrangement nobody has yet explained to the staff. What they do with the money is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
 
 ### Managing Finances
 
@@ -872,7 +872,7 @@ Legendary materials cannot be bought or sold. Monster parts (dragon scales, bone
 
 **Prices heal overnight.** Every restock pulls each material's multiplier **10% of the way back toward 1.0**, and snaps it to exactly 1.0 once it is within 0.005 — so a market you hammered today is a little more reasonable tomorrow and back to normal inside a few quiet weeks. Nothing you do to a price is permanent, in either direction, which is a mercy if you have just dumped four hundred iron ingots and an irritation if you were hoping to keep a bargain.
 
-**Sell 10** walks the price down one unit at a time, exactly as ten separate Sell 1 clicks would: the second unit is sold at the price the first unit's sale created, and so on down. It used to pay the opening price ten times over and apply the cascade afterwards, which made the bulk button quietly the most profitable thing in the guild.
+**Sell 10** walks the price down one unit at a time, exactly as ten separate Sell 1 clicks would: the second unit goes for what the first unit's sale left it worth, and so on down the pile. The convenience is in the clicking, not in the arithmetic, which the Guild Clerk considers the correct place for convenience to live.
 
 ### Stock & Restock
 

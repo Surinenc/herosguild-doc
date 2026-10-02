@@ -699,25 +699,27 @@ A crisis levy is a bill like any other and can push you across all three lines o
 Heroes expect to be paid based on their level, because apparently risking their lives for the guild's reputation isn't reward enough:
 
 ```
-Daily Wage = floor((Level - 1)^1.5 × 3) × Quality Multiplier
+Daily Wage = floor((Level - 1)^1.4 × 2) × Quality Multiplier
 ```
 
 | Hero Quality | Multiplier |
 |--------------|------------|
-| Common | 1.0x |
-| Uncommon | 1.2x |
-| Rare | 1.5x |
-| Epic | 2.0x |
-| Legendary | 3.0x |
+| Common (1★) | 1x |
+| Uncommon (2★) | 2x |
+| Rare (3★) | 4x |
+| Epic (4★) | 8x |
+| Legendary (5★) | 16x |
+
+The curve itself was flattened — the exponent came down from 1.5 and the coefficient from 3 — while the quality ladder was rebuilt to **double with every star**, where it used to crawl from 1.0 to 3.0. The two changes pull in opposite directions on purpose: levelling a hero is now affordable, and a famous one is paid like a famous one. A 5★ veteran costs sixteen times what a 1★ of the same level does, and is worth it or isn't.
 
 **Examples:**
-- Level 5 Common: 24g/day
-- Level 20 Common: 248g/day
-- Level 50 Common: 1,029g/day
-- Level 100 Common: 2,955g/day
-- Level 100 Legendary: 8,865g/day
+- Level 5 Common: 13g/day
+- Level 20 Common: 123g/day
+- Level 50 Common: 464g/day
+- Level 100 Common: 1,244g/day
+- Level 100 Legendary: 19,904g/day
 
-Level 1 heroes are free (no wages), and so, in the end, are the dead — payroll now skips them, which it did not always, and the Guild Clerk has quietly closed the file marked *posthumous remuneration*. The exponential scaling means high-level heroes cost significantly more — a sixty-strong roster of Legendary 100s runs to 531,900 gold a day, which will test even the wealthiest guild's finances and several of its assumptions.
+Level 1 heroes are free (no wages), and so, in the end, are the dead — payroll now skips them, which it did not always, and the Guild Clerk has quietly closed the file marked *posthumous remuneration*. The star multiplier is where the real money goes: a sixty-strong roster of Legendary 100s runs to **1,194,240 gold a day**, a figure the Clerk declines to write out in words.
 
 **The money now reaches the heroes.** Wages used to be debited from the guild and then quietly cease to exist, which the ledger accepted without comment. Each hero is now credited their **base** wage — the crisis multiplier inflates what you pay but not what they receive, so a crisis stays a cost to the guild rather than a windfall for the staff. What they do with it is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
 

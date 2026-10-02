@@ -483,7 +483,7 @@ Heroes are paid. This was, for a long time, a polite fiction — the guild was d
 
 Every living hero is credited their daily wage each morning — the base figure, not the crisis-inflated one, so a crisis costs *you* rather than enriching the staff. A new recruit arrives holding **three days' wage**, or **25 gold**, whichever is larger, so nobody starts destitute on their first afternoon off.
 
-What a hero can afford is expressed in absolute gold rather than as a share of their income, which is the whole point: a recruit on 24 gold a day genuinely cannot reach what a veteran takes for granted.
+What a hero can afford is expressed in absolute gold rather than as a share of their income, which is the whole point: a recruit on 13 gold a day genuinely cannot reach what a veteran takes for granted.
 
 | Band | Cost |
 |------|------|
@@ -502,9 +502,26 @@ The reasons a hero is unavailable — the Personal Day, the Hangover, the family
 
 The short version: the gold comes out of their purse, which is gold not going into the fund below. A hero who keeps going to the coast never finishes saving for anything. That tension is deliberate.
 
+### The Party's Cut
+
+Heroes do not work for wages alone. **10%** of a contract's gold goes to the party, split evenly between **the heroes who came back** — the dead draw nothing, which is grim but consistent. Each survivor puts their own saving rate of that share straight into their dream and the rest in their purse; the guild banks what is left.
+
+This is the real engine of a hero's ambitions. Wages are a trickle next to a high-level contract, and a veteran who wants a farm gets it from contract shares rather than from forty years of careful payroll. It is also the reason a hero can afford to leave you: every contract you send them on pays a little toward the day they hand in their notice.
+
 ### The Dream
 
-Every hero is privately saving toward one specific thing. **35%** of each day's surplus goes into the fund, capped at 35% of their daily wage so the sum stays linear rather than compounding, and paying nothing at all on a day they've spent down to the reserve.
+Every hero is privately saving toward one specific thing, and **how hard they save is a matter of character**. The base rate is **50%** of each day's surplus, capped at the same share of their daily wage so the sum stays linear rather than compounding, and paying nothing at all on a day they've spent down to the reserve. Their upbringing and personality then move that rate, in percentage points:
+
+| Raised as | | Personality | |
+|---|---|---|---|
+| Merchant | +15 | Ascetic | +20 |
+| Peasant | +10 | Greedy | +15 |
+| Scholar | +5 | Reserved | +5 |
+| Soldier, Outlander | 0 | Lazy | -5 |
+| Cultist, Criminal | -10 | Gregarious, Unpredictable | -10 |
+| Noble | -15 | Passionate | -15 |
+
+Traits stack with each other and with the background, and the result is clamped between **20%** and **95%**. A Greedy Merchant banks four coins in five; a Passionate Noble barely a fifth, and will tell you at length that money is vulgar.
 
 The price belongs to the **dream**, not the dreamer. A headstone is cheap and a ship is not, regardless of who wants one:
 
@@ -516,7 +533,16 @@ The price belongs to the **dream**, not the dreamer. A headstone is cheap and a 
 | Grand | 1,500,000–5,000,000g | Only the very well paid, and only if they live frugally |
 | Fable | 20,000,000–60,000,000g | Nobody finishes these. They were never really about the money |
 
-Which scale a hero reaches for is weighted by what they earn, but with a genuine tail upward — a fair number of heroes want something they will never afford, and will carry the ambition their entire career and die still short of it. The Guild Clerk considers this the most realistic feature in the game.
+Which scale a hero reaches for is weighted by their **level**, not their pay — quality no longer picks a bigger dream, it only fills the one they have faster, since the wage it saves from carries the star multiplier. The weighting shifts as they climb:
+
+| Hero level | Trifle | Modest | Substantial | Grand | Fable |
+|---|---|---|---|---|---|
+| 1–15 | 55% | 25% | 12% | 6% | 2% |
+| 16–40 | 30% | 35% | 22% | 10% | 3% |
+| 41–70 | 14% | 28% | 34% | 20% | 4% |
+| 71+ | 8% | 18% | 34% | 35% | 5% |
+
+There is a genuine tail upward at every level — a fair number of heroes want something they will never afford, and will carry the ambition their entire career and die still short of it. **Nobody ever finishes a Fable.** The Guild Clerk considers this the most realistic feature in the game.
 
 The **Career tab** shows the dream as a progress bar with the hero's own words underneath, the amount saved against the target, and a "saved enough" marker when the fund fills.
 

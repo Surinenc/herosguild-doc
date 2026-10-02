@@ -354,7 +354,7 @@ Where heroes train and spar. The sounds of practice combat are indistinguishable
 | 4 | 1.75x | Weapon specialization |
 | 5 | 2.0x | Master training |
 
-**Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The training programme descriptions now say exactly this, having previously advertised multipliers that bore no relation to what the yard actually paid.
+**Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The programme descriptions in the yard say exactly this, in those words, so nobody signs up for a multiplier that was never on offer.
 
 ### Infirmary
 

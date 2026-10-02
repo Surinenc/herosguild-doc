@@ -48,7 +48,7 @@ This applies uniformly to all 10 station types.
 
 Guild facility upgrades provide **additional** speed and quality bonuses on top of station-level modifiers. These are separate systems that stack.
 
-A station's own level now **follows its facility**, for more stations than it used to: the **Tannery** and **Loom** rise with the Workshop, and the **Armory** rises with the **Forge** — not with the similarly-named Armory facility, which is a storage building with no opinion about metallurgy. Every Armory recipe uses Metalsmithing, the same discipline as the Forge's own, so the Forge is the honest parent. The Lumber Mill still keeps its own level.
+A station's level **follows its facility**: the **Tannery** and **Loom** rise with the Workshop, and the **Armory** rises with the **Forge** — not with the similarly-named Armory facility, which is a storage building and holds no opinions whatever about metallurgy. Every Armory recipe uses Metalsmithing, the Forge's own discipline, so the Forge is the honest parent. The Lumber Mill keeps its own level, and keeps its own counsel.
 
 **Forge Facility** (metals, weapons, armor):
 
@@ -237,7 +237,7 @@ Low skill crafters can fail, with consequences ranging from "mildly disappointin
 | Full Fail | **No item created.** 50% of materials refunded (50% lost) |
 | Critical Fail | All materials lost, station damaged |
 
-The wiki previously claimed a Partial Fail produced an item at -1 quality tier; the current code path returns success:false with no item at all. The 50% XP grant on partial fail is the consolation prize, and no longer comes with a full refund — the free-retry loophole was closed.
+A Partial Fail produces **no item at all** — not a lesser one, not a dented one, nothing. The 50% XP is the entire consolation prize, and it does not come with your materials back, the Guild Clerk having taken the view that a craft you can retry for free is not really a craft.
 
 ### Crafted Item Sell Value
 
@@ -363,7 +363,7 @@ Cloth → [Loom] → Fine Cloth
   13 cloth = 1 fine
 ```
 
-Those input counts are not typos, and they went up considerably. Every processing recipe is now priced so that what comes out is worth **less than 0.8×** what went in — because a step that turned cheap material into expensive material at a favourable ratio was not a crafting chain, it was a printing press. The same ceiling governs **salvage**: breaking an item down returns materials worth at most 80% of the lower of its sell value and its notional drop value, so the vault is a place to recover something from a mistake rather than a place to manufacture money out of one.
+Those input counts are not typos. Every processing recipe is priced so that what comes out is worth **less than 0.8×** what went in, because a step that turns cheap material into expensive material at a favourable ratio is not a crafting chain, it is a printing press. The same ceiling governs **salvage**: breaking an item down returns materials worth at most 80% of the lower of its sell value and its notional drop value. The vault is a place to recover something from a mistake, not a place to manufacture money out of one.
 
 ---
 
@@ -396,7 +396,7 @@ Those input counts are not typos, and they went up considerably. Every processin
 | Health Potion | ⭐⭐ | 2 Herb Extract, 1 Blood | 25 | 3 |
 | Greater Health Potion | ⭐⭐⭐ | 2 Herb Concentrate, 1 Rare Herbs | 50 | 3 |
 
-Potions and food come in **batches**, and the batch size on the recipe is the number you actually receive — a claim the vault only recently started honouring, having previously handed over one of whatever it was and kept the rest for reasons it declined to give. Each unit rolls its own quality, so a batch of three can come out mixed.
+Potions and food come in **batches**, and the batch size on the recipe is the number you actually receive — all of them, counted out, no quiet shrinkage between the bench and the shelf. Each unit rolls its own quality, so a batch of three can come out mixed, and the one good flask in it will be drunk by whoever reaches the crate first.
 
 ### Prosthetics
 
@@ -480,7 +480,7 @@ Everything Rare and above is drop-only, awarded from content completion:
 
 Within a rarity tier every reagent shares one rate, and the tiers descend in the order you'd hope — Common ahead of Uncommon ahead of Rare ahead of Epic ahead of Legendary. This was not always so. For a while an Ichor was three times scarcer than a Portent it was supposed to outrank, and the Guild Clerk's filing system, which sorts by rarity, quietly stopped matching the drawer contents.
 
-Difficulty also gates what can drop *at all*. Every reagent carries a minimum content rating, and below it the roll doesn't happen: Powders from ⭐, Salt of Renewal from ⭐⭐, the Ichors from ⭐⭐⭐, Salt of Cleansing and both Portents from ⭐⭐⭐⭐, and the Cursed Sigil from ⭐⭐⭐⭐⭐. A one-star pest-control contract yields Powders and nothing else no matter how many times you run it — which was not previously the case, and is why a certain kind of Guild Master was banking Epic Portents off errands a competent farmhand could have finished. Raids and World Bosses declare no star rating and are ungated, on the reasonable grounds that anything with a raid boss in it is endgame by construction. The Abyssal Spire converts depth into stars instead: floors 1–10 count as ⭐⭐, 11–25 as ⭐⭐⭐, 26–50 as ⭐⭐⭐⭐, and 51 and beyond as ⭐⭐⭐⭐⭐.
+Difficulty also gates what can drop *at all*. Every reagent carries a minimum content rating, and below it the roll doesn't happen: Powders from ⭐, Salt of Renewal from ⭐⭐, the Ichors from ⭐⭐⭐, Salt of Cleansing and both Portents from ⭐⭐⭐⭐, and the Cursed Sigil from ⭐⭐⭐⭐⭐. A one-star pest-control contract yields Powders and nothing else, no matter how many times you run it: no quantity of rats adds up to an Epic Portent, and the Guild Clerk has had to explain this more than once. Raids and World Bosses declare no star rating and are ungated, on the reasonable grounds that anything with a raid boss in it is endgame by construction. The Abyssal Spire converts depth into stars instead: floors 1–10 count as ⭐⭐, 11–25 as ⭐⭐⭐, 26–50 as ⭐⭐⭐⭐, and 51 and beyond as ⭐⭐⭐⭐⭐.
 
 Regular dungeons drop Rare+ reagents at roughly half the heroic rate — mid-game players see Ichors and Portents without needing endgame content, provided the contract is starred high enough to permit them. Only the Cursed Sigil remains shut out of regular dungeons entirely, at any difficulty.
 

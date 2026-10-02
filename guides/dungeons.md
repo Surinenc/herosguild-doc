@@ -59,7 +59,7 @@ Monster level determines enemy strength:
 - Higher level = more HP, more damage
 - Scales with your guild's highest hero level
 - Independent of star rating
-- Sets the level term of the contract's gold, and that term is **doubled** before anything else touches it. Up to monster level 20 it follows `level^1.2`; past it, `level^1.5` — the same shape as the [wage curve](guild.md#daily-wages), and deliberately so. It was not always: on the old flat curve pay fell behind payroll a little more with every level, until around monster level 77 a full eight-hero five-star contract no longer covered the wages of the party sent to run it. It now pays roughly **three times** what that curve did, and clears its party's wages about threefold at every level — which is the point, since a contract that merely breaks even against payroll leaves nothing for the buildings
+- Sets the level term of the contract's gold, and that term is **doubled** before anything else touches it. Up to monster level 20 it follows `level^1.2`; past it, `level^1.5` — the same shape as the [wage curve](guild.md#daily-wages), and deliberately so, since a guild whose contracts merely break even against payroll is a guild that never builds anything. In practice a full eight-hero five-star contract clears its own party's wages about **threefold** at every level, which leaves something over for the roof
 
 **Example Combinations:**
 - ⭐ + Level 50: Quick farm run for high-level heroes
@@ -230,7 +230,7 @@ Worth reviewing before committing to any dungeon. The Guild Clerk has drafted in
 | **Stairs** | ⬇️ | Next floor |
 | **Exit** | 🏁 | Dungeon complete |
 
-On any floor that has a boss, the **Exit connects only to the boss room**. You cannot walk around the thing you came to kill and claim a clear on the way past — which, on roughly half of all three- to five-star boss floors, you previously could, the exit having been wired into the map through whichever room the generator felt like.
+On any floor that has a boss, the **Exit connects only to the boss room**. There is no corridor around the thing you came to kill, no side door, and no version of a clear that does not involve meeting it. The Guild Clerk regards this as the single most important wall in the realm.
 
 ### Fog of War
 

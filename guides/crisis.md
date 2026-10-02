@@ -150,7 +150,7 @@ Four crises damage facilities if you let them resolve at Ignored. The damage app
 
 The Dragon's Tithe damage scans all facilities at runtime, excludes the Barracks, and picks the one at the highest level. This is the dragon's idea of fairness.
 
-The Armory case is special: its level controls vault capacity, so damaging it triggers an automatic vault-capacity sync — a recent fix patched a stale-cap bug that previously left over-filled vault displays (e.g. "2409/2000") until the next save-load.
+The Armory case is special: its level controls vault capacity, so damaging it triggers an immediate vault-capacity sync. Your storage shrinks the moment the damage lands, and anything already over the new line is over it visibly, which is the Clerk's preferred way of delivering bad news.
 
 The other ten crises — including all spec-054 reskins and both spec-055 additions — do not damage facilities. The realm has decided, for now, that some things should stay standing.
 

@@ -131,7 +131,7 @@ Armor trades mobility for survival. Warriors consider this an excellent trade. M
 - Iron Plate: 15 armor, +20 HP
 - Steel Plate: 30 armor, +40 HP
 - Dragonplate: 80 armor, +120 HP, 50% Fire Resist (the Fire Resist actually comes from the Dragonslayer 3-piece set bonus)
-- **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists (`ArmorTemplates.ts:260-274`). No HP regen mechanic — the wiki previously claimed 150 armor + 5% regen/turn, both invented.
+- **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists (`ArmorTemplates.ts:260-274`). No HP regen mechanic, despite everything the name suggests.
 
 ---
 
@@ -156,7 +156,7 @@ Amulets focus on HP, Mana, and powerful unique effects — the equipment categor
 |---------|--------|--------|
 | Bone Charm | Common | +10 HP |
 | Crystal Pendant | Uncommon | +25 HP **and** +15 Mana |
-| **Heart of the World** | Legendary, L70 | +150 HP, +100 Mana, **+10% Life Steal** (the wiki previously claimed auto-resurrect — that mechanic does not exist on this template) |
+| **Heart of the World** | Legendary, L70 | +150 HP, +100 Mana, **+10% Life Steal**. Despite the name, it does not bring anyone back from anywhere |
 
 
 ### Notable Unique Accessories
@@ -203,7 +203,7 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 | Minor Mana Potion | Common | 30 | 10 |
 | Mana Potion | Uncommon | 80 | 10 |
 
-(For Rare and Epic tier mana consumables, see **Mana Flasks** below — the wiki previously listed "Greater Mana Potion" (Rare, 200 mana) and "Superior Mana Potion" (Epic, 500 mana) as separate items, but those exact named templates don't exist; the live Rare/Epic mana consumables are Mana Flask (Rare, 250 mana) and Greater Mana Flask (Epic, 500 mana).)
+(The Rare and Epic mana consumables are **Mana Flask** (Rare, 250 mana) and **Greater Mana Flask** (Epic, 500 mana) — see **Mana Flasks** below. There is no Greater or Superior *Potion* at those tiers, whatever the alchemist may imply when stock is low.)
 
 ### Mana Flasks
 
@@ -239,7 +239,7 @@ The insurance policy the Guild Clerk wishes the guild itself could afford. When 
 2. **Undying Fury** (Berserker 4-piece) — survive at **1 HP**, once per fight
 3. **Phoenix Rebirth** (Phoenix 4-piece) — back to **full HP**, once per fight
 
-Each is used at most once per hero per combat, and they are tried in that order, so a hero wearing both sets and carrying an elixir has three separate deaths to get through before the Chapel is involved. What matters is that this gate is now the *only* way a hero dies: it used to sit inside the enemy-attack path alone, which meant an area attack, Cursed Ground, a poison tick, raid cleave splash or a berserk ally could kill a hero wearing every protection the realm sells.
+Each is used at most once per hero per combat, and they are tried in that order, so a hero wearing both sets and carrying an elixir has three separate deaths to get through before the Chapel is involved. That gate is the *only* way a hero dies, and the route hardly matters: an area attack, Cursed Ground, a poison tick, raid cleave splash and a berserk ally all have to queue at the same door as an honest sword.
 
 ### Elixirs
 

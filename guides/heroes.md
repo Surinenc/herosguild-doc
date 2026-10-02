@@ -211,7 +211,7 @@ These are calculated from primary stats, because apparently nothing in this guil
 | Crit Damage | 150% × (1 + total crit-damage bonus %), from the same list of sources |
 | Energy Shield | (Mage and Necromancer only) INT × 5, plus any flat shield from support gems, raised by passive Energy Shield % |
 
-The sheet and the fight now read the **same two functions**, which is less obvious an improvement than it sounds: for a long while the hero sheet totted up your crit gloves, set bonuses, passive nodes and gem crit, and the combat engine quietly used a shorter formula that included none of them. The gloves worked in the display cabinet and nowhere else. Both now use everything on the list.
+The sheet and the fight read the **same two functions**, so the crit gloves, set bonuses, passive nodes and gem crit that the Hero Details screen totals up are the same ones the dice are handed. What the display cabinet promises, the battlefield delivers — an arrangement the Guild Clerk considers unremarkable and several armourers consider a triumph.
 
 ---
 
@@ -241,7 +241,7 @@ Higher quality heroes are significantly stronger due to the stat multiplier appl
 
 ### Background & Life History
 
-Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from a catalog of a hundred and twenty events. Both feed multiplicative modifiers into the damage chain and the effective-stats pass, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that previously the heroes were starting to look interchangeable.
+Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from a catalog of a hundred and twenty events. Both feed multiplicative modifiers into the damage chain and the effective-stats pass, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
 
 The CV shows up on the Details modal at the Tavern (before you hire) and on the Background tab in Hero Details (after you do). See [Hero Backgrounds](backgrounds.md) for the full system.
 
@@ -409,7 +409,7 @@ A bed treats the **hero**, not the illness. Occupy one and *every* strain that h
 
 The arithmetic is the whole argument for building beds. Left alone, **every one of the six lethal strains wins its race** — severity reaches 100 before immunity does, in all six cases, and the only variable is how long it takes: The Blackblood in a little over two days, The Grey Weep and Backfire Fever in five, Wound Rot in ten, The Long Cough in three unhurried weeks. That is not a risk so much as a timetable. Treated, growth is cut to a fifth — from 4.75–47.5 points a day down to 0.95–9.5 — and because the lethal threshold cannot fire on a treated strain at all, the hero gets better in the unglamorous way people actually get better: slowly, in bed, complaining.
 
-Recovery is a matter of immunity reaching 100, and it arrives faster than it used to. A non-lethal illness runs its course in **2 to 14 days** depending on how nasty it is; a lethal one takes **7 to 30**. The Sniffles is gone in five days, Slap-Belly in two, and The Long Cough will keep a hero in the ward for a month.
+Recovery is a matter of immunity reaching 100. A non-lethal illness runs its course in **2 to 14 days** depending on how nasty it is; a lethal one takes **7 to 30**. The Sniffles is gone in five days, Slap-Belly in two, and The Long Cough will keep a hero in the ward for a month.
 
 **Recovery buys immunity.** Beat an illness and the hero cannot catch *that* illness again for **60 days** — not by contagion, not by the game quietly seeding it. This was documented long before it was implemented, with the result that a recovered hero was routinely re-infected the following morning and whole rosters stayed permanently ill. It now works, and a guild that survives an outbreak is genuinely done with that strain for two months.
 
@@ -516,7 +516,7 @@ Your decisions reach them: **10%** of a guild axis shift reaches each hero, **25
 
 ## Purse & Ambition
 
-Heroes are paid. This was, for a long time, a polite fiction — the guild was debited every morning and the money simply ceased to exist, which the Guild Clerk describes as "the tidiest payroll in the realm" and everybody else describes as theft. It now goes into the hero's **purse**, and what they do with it is entirely their own business.
+Heroes are paid, and the money goes somewhere: into the hero's **purse**, from which the guild has no further say in the matter. The Guild Clerk maintains that a payroll which merely debits the guild and stops there would be tidier. The Clerk has been overruled, and continues to describe the current arrangement as *untidy* at every opportunity.
 
 ### The Purse
 
@@ -572,7 +572,7 @@ The price belongs to the **dream**, not the dreamer. A headstone is cheap and a 
 | Grand | 1,500,000–5,000,000g | Only the very well paid, and only if they live frugally |
 | Fable | 20,000,000–60,000,000g | Nobody finishes these. They were never really about the money |
 
-Which scale a hero reaches for is weighted by their **level**, not their pay — quality no longer picks a bigger dream, it only fills the one they have faster, since the wage it saves from carries the star multiplier. The weighting shifts as they climb:
+Which scale a hero reaches for is weighted by their **level**, not their pay. A famous hero does not want a grander thing than an obscure one of the same experience; they simply get there sooner, their wage carrying the star multiplier into the fund. The weighting shifts as they climb:
 
 | Hero level | Trifle | Modest | Substantial | Grand | Fable |
 |---|---|---|---|---|---|
@@ -589,7 +589,7 @@ The **Career tab** shows the dream as a progress bar with the hero's own words u
 
 Authored per dream, not derived from its price — nobody hands in their notice over a pair of boots:
 
-- **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Those stat modifiers land on the five stats a hero actually has; a good many of them used to be authored against wisdom and charisma, which the realm admires in principle and does not track, so their stat halves did precisely nothing. Reflective dreams now read as **INT**, sociable ones as **LCK**, at the percentages they always claimed. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
+- **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Those stat modifiers land on the five stats a hero actually has: reflective dreams read as **INT**, sociable ones as **LCK**. Wisdom and charisma are admired throughout the realm and measured nowhere in it, a state of affairs the Guild Clerk finds restful. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
 - **They leave.** Some dreams *were* the change of life. The hero retires from the guild, alive, on their own terms, owing nothing
 
 A little over one dream in five is the second kind. You will not know which until the bar fills.

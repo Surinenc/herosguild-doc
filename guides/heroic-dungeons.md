@@ -117,7 +117,7 @@ Two modifiers at once. For heroes who looked at the other nine options and thoug
 
 ## Reward Multiplier
 
-A heroic contract's base gold is the **regular contract curve for its stars and monster level, times ten** — see [Monster Level](dungeons.md#monster-level-power) for the curve itself. Heroics had been left on the old pre-rebalance linear formula, which paid roughly one two-hundredth of a regular contract at the same level; three heroics a week now cover the wages of a full five-star roster, which is the point of there being three of them.
+A heroic contract's base gold is the **regular contract curve for its stars and monster level, times ten** — see [Monster Level](dungeons.md#monster-level-power) for the curve itself. Three heroics a week will cover the wages of a full five-star roster, which is rather the point of there being exactly three.
 
 On top of that base, the modifier and difficulty bonuses apply. The Guild Clerk considers the result "hazard pay, and barely adequate":
 
@@ -148,7 +148,7 @@ Three heroic dungeons are available each week, rotating every **Thursday at 00:0
 
 Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Four are excluded from the draw: **Chaos Incarnate**, which stacks two others and is being kept back; **Fragmented Reality** and **Arcane Instability**, neither of which has a combat hook behind it; and **Enrage Timer**, whose hook exists but whose clock no heroic fight has ever run long enough to reach — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply stopped offering them.
 
-The contract itself now names its modifier and quotes what it does, instead of the bare internal id it used to show.
+The contract names its modifier and quotes what the modifier does, so the card tells you what you are walking into before you agree to walk into it.
 
 Access: Mission Board → Heroic filter (🔥). A countdown timer shows time until the next weekly reset.
 

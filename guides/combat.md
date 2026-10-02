@@ -108,7 +108,7 @@ A representative sample:
 
 The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
 
-One entry in that table now comes with a footnote: the **Fire Whelp** is raid furniture. It was authored to be spawned three at a time by the Ancient Dragon and tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is flagged raid-only, so it no longer appears in random mission, dungeon, or Tower rolls at all. It reaches the field only when something asks for it by name, which in practice means a raid boss. Before the flag it was eligible for ordinary ★★ contracts, where it removed level-appropriate heroes in a single bite, and the Guild Clerk has since revised the filing.
+One entry in that table comes with a footnote: the **Fire Whelp** is raid furniture. It exists to be spawned three at a time by the Ancient Dragon and is tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is flagged raid-only, so it never turns up in a random mission, dungeon or Tower roll. It reaches the field only when something asks for it by name, which in practice means a raid boss. The Guild Clerk is firm on this point, having once seen the alternative.
 
 Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — **20 kills** (the first tier, Known, is reached at 5 kills and grants a small damage bonus but no resistance display). Until Studied, you're guessing, which is part of the early-game character.
 
@@ -420,7 +420,7 @@ Using skills improves proficiency, which is the game's way of rewarding you for 
 
 **Proficiency XP Formula:** `50 × (Level + 1)^1.6` XP to next level. Max level 20.
 
-**The hero's own level caps it**: proficiency cannot exceed `hero level ÷ 5`, rounded down, with a floor of 1 and a ceiling of 20 — so level 20 proficiency needs a level-100 hero. The Training Yard respects this too, having previously run its own uncapped ladder that let a level-5 hero grind to proficiency 20 and its full +30% skill damage without ever meeting an enemy. Heroes who already climbed too high by that route keep what they earned; they simply stop climbing.
+**The hero's own level caps it**: proficiency cannot exceed `hero level ÷ 5`, rounded down, with a floor of 1 and a ceiling of 20 — so level 20 proficiency needs a level-100 hero. The Training Yard respects the same ceiling, so a level-5 hero cannot drill their way to proficiency 20 and its full +30% skill damage without ever meeting an enemy. A hero somehow sitting above their cap keeps what they have and simply stops climbing, which is the closest the yard comes to tact.
 
 ---
 
@@ -465,7 +465,7 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 | Charm | 2 turns | A charmed hero has a **40%** chance each turn of simply refusing to act. Applied by the Vampire's and the Succubus's Charm, at 50% on cast — stronger than fear (30%) and slow (20%), weaker than an outright stun, on the reasoning that the things which cast it are rare enough |
 | Blind | 1 turn | A **25%** chance to swing wildly and miss. Applied by the Bandit's Dirty Trick at 40% |
 
-Charm and Blind were, for a long time, a promise without a delivery: both abilities applied a plain stun instead, which is a different and considerably worse thing to be on the receiving end of. They now do what their names say.
+Charm and Blind each do what their name says, which is worth stating plainly: a charmed hero is unwilling, a blinded one is merely inaccurate, and the difference matters enormously to the hero in question.
 
 ### Elemental Procs
 

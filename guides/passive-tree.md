@@ -50,7 +50,7 @@ Every hero begins on their class node. It cannot be removed, which saves conside
 | **Cleric** | +40 INT, +40 STR, +5% Damage, +20% Spell Damage |
 | **Necromancer** | +50 INT, +5% Damage, +20% Chaos Damage |
 
-Warrior and Rogue starting nodes carry a larger damage bump — Warrior the largest, because plate-and-stubbornness was the slowest archetype to come online in the early game; Rogue a smaller one, because daggers are already pointy. These used to be *flat* damage, back when something read flat damage; they are percentages now, which is the same intent expressed in a unit the engine has an opinion about.
+Warrior and Rogue starting nodes carry a larger damage bump — Warrior the largest, plate-and-stubbornness being the slowest archetype to come online; Rogue a smaller one, daggers being already pointy. All of it is percentage damage, which compounds with everything else a hero accumulates rather than sitting politely in a corner being flat.
 
 ### Branch Specializations
 

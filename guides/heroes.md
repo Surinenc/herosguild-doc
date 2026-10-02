@@ -411,7 +411,7 @@ The arithmetic is the whole argument for building beds. Left alone, **every one 
 
 Recovery is a matter of immunity reaching 100. A non-lethal illness runs its course in **2 to 14 days** depending on how nasty it is; a lethal one takes **7 to 30**. The Sniffles is gone in five days, Slap-Belly in two, and The Long Cough will keep a hero in the ward for a month.
 
-**Recovery buys immunity.** Beat an illness and the hero cannot catch *that* illness again for **60 days** — not by contagion, not by the game quietly seeding it. This was documented long before it was implemented, with the result that a recovered hero was routinely re-infected the following morning and whole rosters stayed permanently ill. It now works, and a guild that survives an outbreak is genuinely done with that strain for two months.
+**Recovery buys immunity.** Beat an illness and the hero cannot catch *that* illness again for **60 days** — not from a sickroom neighbour, not from the realm quietly seeding it overnight. A guild that survives an outbreak is genuinely finished with that strain for two months, which is the only kindness the medical system offers and is worth banking.
 
 A **Cleric present at the guild** — not dead, not on mission, no assignment necessary — adds an immunity bonus of **+25%** to each treated hero. Heroes with high VIT (above the class baseline of 10) also add a **constitution bonus** of up to +50% immunity gain of their own; VIT is genuinely load-bearing here in a way it isn't in ordinary combat.
 

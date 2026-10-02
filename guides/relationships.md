@@ -78,7 +78,36 @@ Which is to say a failed mission fought by two enemies has an **80%** chance of 
 
 **Guild-hall fights.** An insult between two heroes who already dislike each other (below Dislike) can escalate into an actual fight in the hall: a **4%** chance per day, **doubled** for a Volatile hero. It goes one of two ways, evenly: **cathartic**, worth **+15** opinion, and the pair come away having got something out of their system — or **angering**, worth **-12**, plus a **20%** chance one of them takes a real injury (8% of max HP, and two days out of action). Bad blood, left alone, eventually costs you a hero-day.
 
-**Who talks to whom.** The daily social pick is **opinion-weighted** rather than a flat draw across the roster: a hero's chance of being chosen as somebody's conversational partner is their opinion value plus 100, with a floor of 15. Friends seek each other out; enemies are unlikely company rather than impossible company, which is how you get the occasional bracing surprise.
+**Who talks to whom.** Every hero takes part in up to **two interactions a day**. The partner is **opinion-weighted** rather than drawn flat across the roster: a hero's chance of being somebody's company is their opinion value plus 100, floored at 15. Friends seek each other out; enemies are unlikely company rather than impossible company, which is how you get the occasional bracing surprise.
+
+**How it goes depends on how things already stand.** Good days beget good days:
+
+| The pair | Good | Bad | Unremarkable |
+|---|---|---|---|
+| Devoted | 55% | 15% | 30% |
+| Best Friend | 52% | 18% | 30% |
+| Close Friend | 49% | 21% | 30% |
+| Friend | 45% | 25% | 30% |
+| Friendly | 40% | 30% | 30% |
+| Neutral | 34% | 36% | 30% |
+| Annoyed | 29% | 41% | 30% |
+| Dislike | 25% | 45% | 30% |
+| Rival | 21% | 49% | 30% |
+| Hostile | 18% | 52% | 30% |
+| Enemy | 15% | 55% | 30% |
+
+Friendships compound and so do feuds, which is why a pair left alone tends to end up somewhere rather than nowhere. Traits then push those odds about — a Gregarious hero adds 15 to the good column, a Loyal one takes 15 off the bad.
+
+**And drink sours the whole business**, by whichever of the two has had more:
+
+| Drunker of the pair | Added to the bad column |
+|---|---|
+| Tipsy | +5 |
+| Drunk | +10 |
+| Hammered | +20 |
+| Blackout | +30 |
+
+The same scale governs how much of a tavern night's trouble turns into an actual fight, rising from one in ten while sober to one in two at blackout. There is no version of this in which buying the rounds is purely a kindness.
 
 ---
 

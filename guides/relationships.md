@@ -704,6 +704,26 @@ The penalties land on any night the hero goes **without** a drink — that is th
 
 **The promise.** At the tavern you can ask a hero to quit, and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
 
+### Detox
+
+Asking nicely has limits. A hero at **Regular or worse** (addiction 41+) can be dried out in an Infirmary bed: no drink, supervised withdrawal, and addiction falling **8 a day** instead of the usual crawl — **9.5** if the guild has a Chapel, the orderlies apparently finding prayer useful at four in the morning. Being watched also halves the withdrawal and hangover misery. It runs until addiction is back down to **20**, and costs **10 gold × the hero's level** every day of it.
+
+The price is the bed. It is the same bed a sick hero needs, and the ward has never had enough of them, which is the entire decision.
+
+Heroes get a say. Asked to go in, some simply decline — a chance per day by temperament, the worst trait winning:
+
+| Trait | Chance of refusing |
+|-------|--------------------|
+| Psychopath | 60% — does not accept that there is a problem |
+| Paranoid | 50% — does not accept that the orderlies are orderlies |
+| Misanthrope | 40% — will not be shut in a ward with strangers |
+| Loner | 40% |
+| Abrasive | 30% — too proud to say the sentence out loud |
+
+The decision is made once per hero per day, so asking twice before supper achieves nothing; tomorrow may go differently. Once inside, a **Restless** hero walks out on **5%** of days and most others on **1%**, while the **Iron-Willed** stay put with the grim determination that is the whole of their personality.
+
+Finish the course and the hero comes out having sworn off, with a **20%** chance that Drinking stops being one of their pastimes altogether — the taste simply gone. The other four in five walk out sober, cured of nothing, and remember where the tavern is.
+
 A hero who goes to bed above **60 drunk** wakes with a **Hangover** absence and loses the next day. Overriding an alcohol-related refusal costs **10 mood**, which is cheaper than it sounds and more expensive than it looks.
 
 ### Blackout Events

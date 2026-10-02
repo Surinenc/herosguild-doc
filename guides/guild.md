@@ -488,7 +488,7 @@ Your guild develops a moral identity over time, shaped by the decisions you make
 
 ### Moral Axes
 
-Three axes define your guild's character, each ranging from -100 to +100:
+Three axes define your guild's character, each ranging from -100 to +100. **Your heroes hold positions on the same three**, arrived at through their own lives, and they notice when the guild's differ — see [What a Hero Believes](heroes.md#what-a-hero-believes):
 
 | Axis | Positive (+) | Negative (-) |
 |------|-------------|-------------|

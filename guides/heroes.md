@@ -475,6 +475,45 @@ Survival Chance = 50% (base)
 
 ---
 
+## What a Hero Believes
+
+Heroes hold opinions on the same three axes the guild does — **Valor/Cunning**, **Wealth/Glory**, **Order/Freedom**, each running -100 to +100 (see [Guild Identity](guild.md#guild-identity--moral-events) for the axes themselves). Yours is a position you choose. Theirs is a position they arrived with, and they will notice whether the two agree.
+
+**Where they start.** Their **life history** is the main source — the childhood barn fire, the apprenticeship, the farm that failed all lean a hero one way or another — with smaller pushes from their background and personality, and a ±10 personal roll on top. Nobody starts beyond 85, and **nobody starts balanced**: if a hero would sit within 40 of the middle on every axis, their strongest is pushed out to 40 so that everyone believes *something*.
+
+| Raised as | Leans |
+|---|---|
+| Noble | Valor +10, Glory +15, Order +20 |
+| Soldier | Valor +20, Order +20 |
+| Merchant | Wealth +25, Order +5 |
+| Peasant | Valor +5, Wealth +10, Order +5 |
+| Scholar | Glory +10, Order +10 |
+| Criminal | Cunning +20, Wealth +15, Freedom +25 |
+| Cultist | Cunning +10, Glory +10, Freedom +15 |
+| Outlander | Valor +5, Glory +5, Freedom +20 |
+
+**Where they move.** Slowly, and never more than **1 point a day** from everything combined. A push against a hero's own lean lands at **half rate**, and past **80** the last stretch toward a pole is also halved — becoming a zealot is meant to be hard. Within **±20** of the middle a hero holds no lean on that axis at all.
+
+Your decisions reach them: **10%** of a guild axis shift reaches each hero, **25%** if the event named them personally, 10% from a crisis, and a full **50%** from a hazard they lived through. What they do themselves also counts:
+
+| They | Moves them |
+|---|---|
+| Rescued someone | Valor +2 |
+| Were rescued | Valor +1 |
+| Cowered | Cunning +2 |
+| Hoarded loot | Wealth +2 |
+| Won or lost big at the tables | Wealth ±1 |
+| Bought their dream | Wealth +3 |
+| Watched a close friend retire | Glory +1 |
+| Finished a detox | Order +2 |
+| Had a mental break | Freedom +2 |
+
+**They have opinions about your opinions.** When the guild shifts an axis, every hero reacts in proportion to how strongly they hold that axis — a mood thought lasting **5 days**, sized at half the product of the shift and their conviction. Clashes **stack, up to 12**: a guild that keeps choosing against someone wears them down. Agreement does **not** stack — each approving thought replaces the last and caps at **5**, because being pleased with your employer is a mood, not a permanent buff.
+
+**Fit, and losing it.** A hero whose values sit within an average of **25** of the guild's carries *"This guild suits me"* at +2 mood. One **60** or more away carries *"I don't belong in this guild"* at -3. And a hero whose value crosses the middle and **establishes a real lean on the far side** — not merely wobbling over zero — has a **change of heart**: -5 mood for a week, a Chronicle line, and the thought *"I barely recognise myself."* It takes sustained pressure to turn an idealist into a pragmatist, which is as it should be.
+
+---
+
 ## Purse & Ambition
 
 Heroes are paid. This was, for a long time, a polite fiction — the guild was debited every morning and the money simply ceased to exist, which the Guild Clerk describes as "the tidiest payroll in the realm" and everybody else describes as theft. It now goes into the hero's **purse**, and what they do with it is entirely their own business.

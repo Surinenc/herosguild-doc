@@ -480,10 +480,10 @@ This closes a genuinely nasty old behaviour, in which a hero at mood 24 could de
 | Break | Duration | Weight | Effect |
 |-------|----------|--------|--------|
 | Desertion | Permanent | 15% | The hero packs and leaves the guild, that same morning. There is no coming back and no consolation thought |
-| Berserk | 1 day | 10% | Costs the hero 20% of their max HP and two days injured, then picks a Ready hero who isn't breaking down themselves and does the same to them. Relationship -25 from the breaker, -30 from the victim, who takes it rather more personally. With nobody available they trash the barracks instead |
+| Berserk | 1 day | 10% | Costs the hero 20% of their max HP and two days injured, then picks a Ready hero who isn't breaking down themselves and does the same to them. Relationship **-50** from the breaker, **-60** from the victim, who takes it rather more personally — enough, from a standing start, to turn a friendship into open hostility in a single evening. With nobody available they trash the barracks instead |
 | Catatonic | 3-7 days | 15% | Set to Resting and stares at the wall for the duration |
 | Binge | 2-4 days | 15% | Set to Resting and booked as a **Bender** absence for the whole duration — drunk 100, hangover 80, addiction +15, and ten drinks on the lifetime tally |
-| Insulting | 1-2 days | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: -10 from their side, -15 from each recipient's |
+| Insulting | 1-2 days | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: **-20** from their side, **-30** from each recipient's |
 | Hiding | 2-5 days | 10% | Set to Resting behind a locked door |
 | Wandering | 1-3 days | 10% | Set to Resting, location unknown |
 | Confession | Instant | 10% | Resolves the same tick. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |

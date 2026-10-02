@@ -277,23 +277,25 @@ Each decision costs 1-2 points. You won't have enough to address everything — 
 | Decision | Cost | Trigger | Outcome (Success) | Skip Penalty |
 |----------|------|---------|-------------------|-------------|
 | Counsel Hero | 2 | Hero mood < 35 or social need < 40 | +6 mood | -3 mood |
-| Mediate Conflict | 2 | Two heroes are rivals or worse | +3 mood each, +5 relationship | -3 relationship |
-| Break Up Fight | 2 | Rivals with relationship < -50 | +3 relationship | -3 relationship |
+| Mediate Conflict | 2 | Two heroes are rivals or worse | +3 mood each, +5 relationship | **-9 relationship** |
+| Break Up Fight | 2 | Rivals with relationship < -50 | +3 relationship | **-9 relationship** |
 | Calm Volatile | 2 | Volatile hero with mood < 40 | +5 mood | -4 mood |
 | Comfort Injured | 2 | Hero recovering from injuries | +6 mood, -1 day recovery | -2 mood |
 | Mentor Session | 2 | Veteran (51+) and rookie (under 20) present | XP for student, +3 mood for mentor | None |
 | Host Feast | 2 | Gold above the feast cost (50g + 10g × Σ levels present) | +5 mood and +8 recreation (all present); anyone who enjoys drinking gets the drink on top | None |
 | Celebrate Achievement | 1 | Hero reached a milestone | +8 mood (hero), -2 mood (jealous heroes) | None |
 | Toast Success | 1 | Recent mission victory | +4 mood, +2 relationship (all) | -2 mood |
-| Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | -2 relationship |
+| Encourage Romance | 1 | Attracted or dating heroes | +8 relationship | **-6 relationship** |
 | Celebrate Romance | 1 | Lovers/married with recent milestone | +5 mood, +5 relationship **both ways** | -2 mood |
 | Welcome Recruit | 1 | Hero joined < 7 days ago | +5 mood, +2 relationship (all) | -3 mood |
 | Drinking Buddy | 1 | Two drinking buddies present | +3 mood, +4 relationship **both ways** | None |
 | Training Partners | 1 | Two heroes both training | +2 mood, +5 training progress | None |
-| Address Gossip | 1 | Hero with Gossip trait | Gossip stopped, -1 mood (reprimand) | -3 random relationship |
+| Address Gossip | 1 | Hero with Gossip trait | Gossip stopped, -1 mood (reprimand) | **-9 random relationship** |
 | Share Loot | 1 | Guild has > 5,000g (costs 500g) | +3 mood (all present) | None |
 | Tell War Stories | 1 | Always available | +10 XP for low-level heroes | None |
 | Eavesdrop | 1 | Always available | Reveals social intel | None |
+
+**The relationship penalties were tripled** (3 → 9, and 2 → 6 on Encourage Romance). Ignored tavern trouble was the only regular source of bad feeling in the guild — worth about -1.9 per change against a tavern that otherwise only ever pushed relationships upward — so a roster left to itself drifted inexorably toward everybody adoring everybody. Trouble you decline to handle now costs what handling it would have been worth.
 
 **Cooldowns:** Each specific hero-situation combination has a 3-night cooldown, so you won't see the same problem with the same heroes every night — just similar problems with different heroes.
 

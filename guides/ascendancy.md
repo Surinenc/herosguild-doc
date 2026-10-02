@@ -21,13 +21,13 @@ Each ascendancy has **10 nodes** in a branching tree — more options than you'l
 - 1 Starting node (defines the path and is mandatory)
 - 3 Branches (A, B, C) with 3 nodes each
 
-You earn **4 points total** (one per trial), so you'll choose 4 of 10 nodes. Depth wins over breadth.
+You earn **4 points total**, one per trial, and each ascendancy offers ten nodes. Four of ten, forever. Depth wins over breadth, and the six you didn't take will be there every time you open the screen, quietly.
 
 ---
 
 ## Warrior Ascendancies
 
-Warriors can choose between three paths: tanking, damage, or dual-wielding.
+Warriors get three paths: stand in front of things, hit things harder, or hit things twice. The Guild Clerk notes that all three are, in the end, about hitting things, and has been asked not to put that in the recruitment material.
 
 ### Champion
 
@@ -39,7 +39,7 @@ Warriors can choose between three paths: tanking, damage, or dual-wielding.
 
 The starting node ("Defender's Stance") makes the Champion the realm's designated boss-aggro holder — the +1000% threat baseline applies regardless of which branch you pick, so every Champion locks down the highest-priority enemy on the board. This is the post-spec-158 rework: the threat baseline lives on the starting node, and Branch B was repurposed as a counter-attack tree.
 
-The Champion also retains and enhances the Warrior's Taunt and Shield Wall abilities.
+The Champion keeps Taunt and Shield Wall, and improves them — being extremely annoying to the enemy is the whole career, and it deserves proper tools.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -57,7 +57,7 @@ The Champion also retains and enhances the Warrior's Taunt and Shield Wall abili
 
 **Focus:** Raw Damage, Life Steal, Execute
 
-The Berserker **removes Taunt and Shield Wall** for pure offensive power.
+The Berserker **gives up Taunt and Shield Wall** entirely. There is no defensive plan, which is not an oversight but the thesis.
 
 **Starting Bonus:** +86% physical damage, +15% damage, +10% crit, +20% rage damage per 5% HP missing
 
@@ -77,7 +77,7 @@ The Berserker **removes Taunt and Shield Wall** for pure offensive power.
 
 **Focus:** Dual Wielding, Multi-Strike, Critical Hits
 
-The Gladiator **removes Taunt and Shield Wall** for dual-wield offense.
+The Gladiator also **gives up Taunt and Shield Wall**, on the grounds that a second weapon occupies the hand a shield was using, and the Gladiator has made their choice about which of the two is more interesting.
 
 **Starting Bonus:** +69% physical damage, +29% damage
 
@@ -103,7 +103,7 @@ Rogues specialize in burst damage through different means.
 
 **Starting Bonus:** +20% crit, +50% physical damage, +15% dexterity
 
-Note: Some nodes grant bonus damage but increase damage taken as a tradeoff.
+Several nodes hand you power and quietly bill you for it in damage taken. Read them twice: the first line is the one that sells the node, and the second is the one that explains the funeral.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|

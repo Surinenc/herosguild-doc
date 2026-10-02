@@ -35,7 +35,7 @@ Heroes earn **1 passive point per level**, starting at level 1. The first point 
 
 ## Class Regions
 
-The tree is divided into six class regions arranged in a hexagonal layout. Each region contains a starting node and three specialized branches.
+The tree is six class regions in a hexagon, each with a starting node and three branches heading off into specialisation. It looks, from a distance, like a snowflake designed by a committee of armourers.
 
 ### Starting Node Bonuses
 

@@ -16,7 +16,7 @@ Three things will make or break your guild. Ignore any one of them and the Guild
 
 Pays for daily upkeep on every unlocked facility and daily wages on every hero at **level 2 or above** (level-1 heroes are freshers and cost nothing until they earn their second level). Wages scale exponentially with hero level and hero quality — a level-100 Legendary hero costs orders of magnitude more per day than a level-10 Common.
 
-Also pays for recruitment fees, contract fees, gear, potions, tavern nights, and buildings.
+It also pays for recruitment fees, contract fees, gear, potions, tavern nights and buildings — which is to say for everything, all of it, continuously.
 
 **Gold leaves faster than it arrives.** This is normal. This is also terrifying.
 
@@ -24,7 +24,7 @@ It is terrifying for a concrete reason: the guild can go **into debt**. An unaff
 
 ### Materials
 
-Used at production facilities to craft equipment, potions, and consumables. Come from mission drops, merchant caravans, and gathering. Running out mid-craft is the guild equivalent of running out of flour mid-cake.
+Spent at the production facilities on equipment, potions and consumables; gathered from mission drops, merchant caravans and the patient business of picking things up. Running out mid-craft is the guild equivalent of running out of flour mid-cake.
 
 ### Time (days)
 

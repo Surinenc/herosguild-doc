@@ -35,7 +35,7 @@ Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes wee
 | Mythic | Red | 3 | 6 |
 | Ancestral | Blood Red | 4 | 7 |
 
-**Bonus Stats by Rarity:** Higher rarity items roll additional random bonus stats:
+**Bonus Stats by Rarity:** The rarer the item, the more extra stats it rolls on top of its base — and the more opinions the armourer will offer about it:
 
 | Rarity | Bonus Stats | Stat Multiplier |
 |--------|-------------|-----------------|

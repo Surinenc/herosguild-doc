@@ -8,7 +8,7 @@ A chain is not a single mission. It is a campaign made of missions. You do not a
 
 ## The Three Categories
 
-There are three kinds of chain, each unlocked differently and rewarding differently.
+There are three kinds of chain. They unlock differently, they pay differently, and only one of them has a deadline, which is the one that will catch you out.
 
 ### Story Chains
 

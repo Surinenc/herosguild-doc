@@ -103,7 +103,7 @@ Each mission entry shows what you're getting into — before you commit to getti
 
 ### Filters
 
-The Mission Board has a three-button filter strip (`MissionBoard.tsx:390-392`):
+The Mission Board carries a three-button filter strip, for the days when nine contracts is eight too many to read (`MissionBoard.tsx:390-392`):
 
 - **All** - Both regular and heroic missions
 - **Normal** - Regular missions, the bread and butter of guild operations

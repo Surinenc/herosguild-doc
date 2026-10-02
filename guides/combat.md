@@ -6,7 +6,7 @@ Hero's Guild features a turn-based combat system of considerable depth, involvin
 
 ### Initiative
 
-At the start of each combat round, turn order is determined by initiative:
+Turn order is settled at the start of every round by initiative, which is to say by a combination of reflexes and luck, in that order:
 
 ```
 Initiative = DEX + Random(1-10)
@@ -16,7 +16,7 @@ Higher initiative means acting earlier, which is particularly useful for heroes 
 
 ### Round Flow
 
-Every round resolves in the same four phases, in the same order, without exception, regardless of hero preference:
+Every round resolves in the same four phases, in the same order, without exception and regardless of anybody's strong feelings on the matter:
 
 1. **Start of Turn** - Mana regenerates (see [Mana Economy](#mana-economy) — flat base + percent of max, tuned by class)
 2. **Cooldown Tick** - All skill cooldowns decrease by 1
@@ -145,7 +145,7 @@ Effective Resistance % = Raw Resistance / (Raw Resistance + 100) × 100
 
 The asymptote is 100%. You cannot reach it. The Guild Clerk considers this a feature — full elemental immunity would, in the Clerk's view, "make the Dragon's Tithe optional," and the Dragon disagrees.
 
-Physical damage has no resistance stat. Stacking armor handles it instead.
+Physical damage has no resistance stat at all — there is nothing to stack against a sword except armour, which is a refreshingly honest arrangement in a game otherwise full of elemental small print.
 
 The curve is hero-side only. **Enemies use a flat 50% reduction** per matching resistance tag — a simpler ledger, since enemies don't go shopping for jewellery.
 

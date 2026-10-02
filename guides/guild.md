@@ -127,7 +127,7 @@ Heroes not assigned to a private room remain in the Barracks (Floor 0), which is
 
 #### Floor Construction
 
-Floors must be built in order. Each floor contains 12 private rooms. Once built, floors are permanent.
+Floors go up in order, twelve private rooms apiece, and once up they stay up. There is no unbuilding a floor; the realm has no mechanism for it and the Guild Clerk has no patience for the question.
 
 | Floor | Build Cost |
 |-------|-----------|
@@ -142,7 +142,7 @@ Total capacity: 72 private rooms across all 6 floors — and, since a room sleep
 
 #### Room Tiers
 
-Rooms start at Tier 1 and can be upgraded sequentially. Higher tiers provide better morale bonuses and more decoration slots.
+Rooms start at Tier 1 and climb one tier at a time, each rung buying more morale and another decoration slot. A hero's room is the only part of the guild they consider theirs, and they will notice the difference between four walls and four nice walls.
 
 | Tier | Name | Upgrade Cost | Daily Upkeep | Deco Slots | Morale |
 |------|------|-------------|-------------|------------|--------|

@@ -23,7 +23,7 @@ Every floor is a fight. The only variety is what kind of fight, and whether ther
 | Shop | Every 15 floors (15, 30, 45...) |
 | Major boss | Every 25 floors (25, 50, 75, 100...) |
 
-Note: Major boss takes precedence over mini-boss (floor 50 is major boss, not mini-boss).
+Where a floor qualifies as both, the major boss wins: floor 50 is a major boss and the mini-boss is sent away disappointed.
 
 ---
 

@@ -16,7 +16,7 @@ The button is **not the crafting Workshop**. That one has hammers. This one has 
 
 ## The Two Loops
 
-The Custom Dungeons app supports two distinct activities, both reached from the app's home screen:
+The app does two quite different jobs, both from the same home screen, and most Guild Masters discover the second one by accident while avoiding the first:
 
 | Loop | What you do | Where it lives |
 |------|-------------|----------------|

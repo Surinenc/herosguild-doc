@@ -37,7 +37,7 @@ Effectively: a gem's **color** tells you which socket it fits into, and its **re
 
 ### Equipment Sockets
 
-Different equipment pieces have different socket configurations:
+Where the sockets are depends on what you are wearing, and the realm distributes them with the generosity of a landlord:
 
 | Equipment | Max Sockets | Typical Links |
 |-----------|-------------|---------------|
@@ -52,7 +52,7 @@ Different equipment pieces have different socket configurations:
 
 ### Socket Colors
 
-Sockets have colors that determine which gems can be placed:
+Sockets come in colours, and a socket is entirely inflexible about what it will accept:
 - Red sockets accept 🔴 red gems
 - Green sockets accept 🟢 green gems
 - Blue sockets accept 🔵 blue gems
@@ -82,7 +82,7 @@ Sockets can be **linked** together, shown by a bar connecting them. The more lin
 
 ### Socket Placement Rules
 
-The system enforces a strict placement hierarchy (`ItemForge.ts:canSocketGemIntoGroup`):
+Placement follows a strict hierarchy, enforced without sympathy (`ItemForge.ts:canSocketGemIntoGroup`):
 
 - **Active gems require an empty group.** You cannot place an active skill into a link group that already has any gem socketed — clear the group first.
 - **Supports must be tag-compatible.** Once a link group has an active gem, any new support must pass the active's `canBeSupported` check (matching tags). Incompatible supports are greyed out in the UI.

@@ -237,13 +237,13 @@ Heroes come in five quality tiers that affect their base stats and trait count. 
 | Level 4 | 30% | 40% | 25% | 5% | - |
 | Level 5 | 15% | 35% | 37% | 10% | 3% |
 
-Higher quality heroes are significantly stronger due to the stat multiplier applying to ALL stats after all bonuses.
+The quality multiplier lands on **every** stat, after every other bonus has been counted — which is why a Legendary hero is not slightly better than a Common one of the same level but comprehensively, irritatingly better at all of it.
 
 ### Background & Life History
 
 Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from a catalog of a hundred and twenty events. Both feed multiplicative modifiers into the damage chain and the effective-stats pass, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
 
-The CV shows up on the Details modal at the Tavern (before you hire) and on the Background tab in Hero Details (after you do). See [Hero Backgrounds](backgrounds.md) for the full system.
+The CV appears on the Details modal at the Tavern, where it is a sales document, and on the Background tab in Hero Details, where it becomes a medical history. See [Hero Backgrounds](backgrounds.md) for the full system.
 
 ---
 

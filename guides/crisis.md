@@ -8,13 +8,13 @@ This guide covers when crises happen, how they progress, what each of the fourte
 
 ## When Crises Happen
 
-Crises are gated to prevent the early game from being unplayable. The realm respects:
+Crises are gated, the realm having concluded that a guild drowned in its first fortnight provides no entertainment for anybody. It therefore respects:
 
 - **Day Gate** — no crisis fires before **day 45.** Before that, the Guild Clerk's only emergencies are the financial ones.
 - **Cooldown** — a **30-day cooldown** after any crisis ends before another can fire.
 - **Trigger probability** — once eligible, the daily roll is **5% + 2% per day past the cooldown**, capped at **60%.** The longer you go without one, the more likely the next one becomes.
 
-When a crisis fires, the realm picks a type, picks a duration (8 to 20 days depending on type), and announces it via a modal. From that day on, the crisis is in effect.
+When a crisis fires, the realm picks a type, picks a duration — 8 to 20 days, depending on how thorough it intends to be — and announces the fact in a modal you cannot argue with. From that morning the crisis is simply a feature of the world, like weather, and about as negotiable.
 
 ---
 
@@ -117,7 +117,7 @@ The three crises with permadeath events are:
 
 ### How They Fire
 
-A permadeath event becomes available when **all** of the following are true:
+A permadeath event becomes available only when **every** one of the following is true, the realm requiring a great deal of paperwork before it takes a hero this way:
 - Severity has reached **Critical**
 - At least **one resolution mission** has been completed
 - At least **two living heroes** remain in the guild

@@ -454,7 +454,7 @@ Survival Chance = 50% (base)
 | VIT stat | +1% per 5 VIT (max +5%) |
 | Cursed trait | -10% |
 
-**Survival gear** is not a category the smiths recognise; it is a keyword search. An equipped item qualifies if its **name** contains *survival*, *lifesaving*, *protection*, *guardian*, *phoenix* or *resurrection*, or if one of its **enchantments** mentions *death save*, *survival* or *last stand*. This is exactly as literal as it sounds — the Amulet of the Phoenix qualifies on the strength of being called that. For a long time the check looked in the wrong place and found nothing at all, so the +5% never applied to anybody; it does now, which means the name on the item is worth a glance before you sell it.
+**Survival gear** is not a category the smiths recognise; it is a keyword search. An equipped item qualifies if its **name** contains *survival*, *lifesaving*, *protection*, *guardian*, *phoenix* or *resurrection*, or if one of its **enchantments** mentions *death save*, *survival* or *last stand*. This is exactly as literal as it sounds — the Amulet of the Phoenix qualifies on the strength of being called that. Read the names on your accessories before you sell them: somewhere in the Vault is a +5% chance of living, filed under a word somebody chose for flavour.
 
 ### Example Calculations
 

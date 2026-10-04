@@ -37,7 +37,7 @@ Warriors get three paths: stand in front of things, hit things harder, or hit th
 
 **Starting Bonus:** +100 armor, **+1000% threat generation**
 
-The starting node ("Defender's Stance") makes the Champion the realm's designated boss-aggro holder — the +1000% threat baseline applies regardless of which branch you pick, so every Champion locks down the highest-priority enemy on the board. This is the post-spec-158 rework: the threat baseline lives on the starting node, and Branch B was repurposed as a counter-attack tree.
+The starting node ("Defender's Stance") makes the Champion the realm's designated boss-aggro holder — the +1000% threat baseline applies regardless of which branch you pick, so every Champion locks down the highest-priority enemy on the board. With the threat sewn into the starting node, Branch B is free to be something more spiteful: a counter-attack tree, for Champions who would like the enemy to regret its attention personally.
 
 The Champion keeps Taunt and Shield Wall, and improves them — being extremely annoying to the enemy is the whole career, and it deserves proper tools.
 
@@ -317,7 +317,7 @@ Necromancers focus on minions or personal dark power.
 
 ## Choosing Your Ascendancy
 
-The choice is permanent, so the screen now shows you what you are choosing. Each ascendancy card previews three of its nodes, and selecting one lays out **every** node it has — the starting node first, then each branch in tier order — before you commit. There is no part of the decision you are asked to take on faith, which for a permanent choice seems the least the realm could offer.
+The choice is permanent, so the screen shows you exactly what you are choosing. Each ascendancy card previews three of its nodes, and selecting one lays out **every** node it has — the starting node first, then each branch in tier order — before you commit. There is no part of the decision you are asked to take on faith, which for a permanent choice seems the least the realm could offer.
 
 ### Class-by-Class Recommendations
 

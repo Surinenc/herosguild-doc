@@ -8,7 +8,7 @@ The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tow
 
 **Requirements:**
 - At least one hero at level 95+
-- Party size: **maximum 6 heroes** (`selectedIds.size < 6` in `TowerMenu.tsx`)
+- Party size: **maximum 6 heroes** — the stairs are narrow, and the Spire has no interest in your reserves
 
 ---
 
@@ -122,7 +122,7 @@ Three two-piece sets drop only from Spire major-boss floors. Each set grants a b
 | Voidtouched | +35 INT, +150 mana, +20 crit damage | +25 INT, +20% mana cost reduction, +150 mana |
 | Abyssal | +6 crit chance, +20 DEX, +12 LCK | +10 crit chance, +35 crit damage, +15 DEX |
 
-The tower-only halves are gated by an `isTowerCombat` flag the Spire run sets at the start of each fight, and they apply in the fight as well as on the sheet — the Spirebreaker's +75 armour and +400 HP and the Voidtouched's +150 mana all turn up when the enemy does. The Guild Clerk notes that the gating exists "so that an Abyssal Mask doesn't trivialise the rest of the game," which it would, instantly and without apology.
+The tower-only halves wake up at the start of every Spire fight and nowhere else, and they apply in the fight as well as on the sheet — the Spirebreaker's +75 armour and +400 HP and the Voidtouched's +150 mana all turn up when the enemy does. The Guild Clerk notes that the gating exists "so that an Abyssal Mask doesn't trivialise the rest of the game," which it would, instantly and without apology.
 
 Each set takes both pieces to activate. Single-piece set items grant the base item stats but no set bonus — which is why most Spire-bound Guild Masters either run a full Spirebreaker tank or commit to none of it.
 

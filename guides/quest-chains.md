@@ -20,11 +20,11 @@ Seven long-form campaigns that track the shape of your guild's career. Each one 
 
 Story chains are where the game's narrative lives. Each step comes with flavor text; each completion advances a small arc that the world quietly remembers.
 
-The two most recently added are **The Founding Blade** (rank D, retrieves the realm's *first guild sword*) and **The World Tree Pact** (rank D, brokers the realm's accord with the Fae and rewards *Nature's Embrace* — a Legendary leather chest piece for Ranger/Cleric, not a bow per `NamedItems.ts:331-341`). Both ship as full three-step chains with a finale of named item + recipe + two skill gems.
+Two of them share rank D with a third: **The Founding Blade** (retrieves the realm's *first guild sword*, the sort of heirloom every guild claims to own and none can produce) and **The World Tree Pact** (brokers the realm's accord with the Fae and rewards *Nature's Embrace* — a Legendary leather chest piece for Ranger/Cleric, and not, despite everything the name suggests to a Ranger, a bow). Both ship as full three-step chains with a finale of named item + recipe + two skill gems.
 
 ### Class Chains
 
-One chain per class for most of them — **seven chains across six classes**, since the Mage now has two. Unlocking any of them requires two things simultaneously:
+One chain per class for most of them — **seven chains across six classes**, since the Mage has two, Mages never having knowingly settled for one of anything. Unlocking any of them requires two things simultaneously:
 
 - Guild rank **E or higher**, and
 - At least **one hero of that class at level 25+**
@@ -35,7 +35,7 @@ The Guild Clerk notes that this is the game's way of saying "prove you're commit
 - **No time limit**
 - **Finale rewards:** a class-restricted named item, a crafting recipe, and two skill gems
 
-The Mage's second chain, **The Archmage's Thesis**, unlocks at level 40 and **rank C** (the standard Class Chain gate is rank E, so the Thesis is two ranks higher, not one — `ClassChains.ts:148`). It rewards the *Archmage Robes* — for Mages who have moved past the "first major item" tier and want something explicitly archmage-flavoured.
+The Mage's second chain, **The Archmage's Thesis**, unlocks at level 40 and **rank C** (the standard Class Chain gate is rank E, so the Thesis sits two ranks higher, not one). It rewards the *Archmage Robes* — for Mages who have moved past the "first major item" tier and want something explicitly archmage-flavoured.
 
 You can pursue multiple class chains in parallel — qualifying a Warrior doesn't close the door on the Mage chain, and qualifying the Mage's first chain doesn't close the door on the Thesis.
 
@@ -77,7 +77,7 @@ If a weekly bounty's 7-day expiry hits while your party is already dispatched on
 
 ## The Quest Log
 
-The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the other icon buttons (`TopBar.tsx:134`) and is visible from day one. It has three tabs:
+The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the other icon buttons and is visible from day one. It has three tabs:
 
 | Tab | What it shows |
 |-----|---------------|
@@ -85,7 +85,7 @@ The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the o
 | **Class** | Active, available, expiring, and completed class chains (7 chains across 6 classes — the Mage has two) |
 | **Weekly** | The current bounty (with its ⏰ countdown), plus a history of completed bounties |
 
-The Quest Log UI does **not** enumerate locked chains with their unlock conditions (`QuestLog.tsx:113-148`); the panel only renders chains that have entered the player's `questChainState.chains`. When no chain of a type is unlocked yet, the tab shows empty-state flavor copy rather than a list of locked chains. Active chains show your current step, a summary of step-level rewards, and a preview of the finale reward.
+The Quest Log does **not** list locked chains or what it would take to open them; it shows only the chains you have already unlocked. When no chain of a type is unlocked yet, the tab offers a few lines of flavour instead — the realm's way of saying *not yet* without saying *what*. Active chains show your current step, a summary of step-level rewards, and a preview of the finale reward.
 
 ---
 
@@ -110,14 +110,14 @@ Class chains are the game's main reliable source of class-restricted named gear 
 
 Two story chains grant a **special hero** as part of their finale — a named, pre-built adventurer who joins your guild immediately at the level of your current highest-level hero. They arrive with equipment and a built skill setup.
 
-If your Barracks is already at capacity when this happens, the hero joins anyway. Your roster goes **over cap** (e.g., 13/12), and the Guild Scene header turns red with a warning. A **14-day grace timer** starts (`QuestChain.ts:746-766`):
+If your Barracks is already at capacity when this happens, the hero joins anyway. Your roster goes **over cap** (e.g., 13/12), and the Guild Scene header turns red with a warning. A **14-day grace timer** starts:
 
 | Days Remaining | Warning Color |
 |----------------|---------------|
-| 14 → 8 | Yellow (`elapsed` 0–6) |
-| 7 → 3 | Orange (`elapsed` 7–11) |
-| 2 | Orange + Day-13 modal naming the hero to remove (`elapsed` 12) |
-| 1 | Red (`elapsed` 13; auto-removal fires next tick) |
+| 14 → 8 | Yellow |
+| 7 → 3 | Orange |
+| 2 | Orange, plus a modal naming the hero who will leave |
+| 1 | Red — tomorrow, they go |
 
 Your options during the grace period:
 
@@ -136,7 +136,7 @@ The Guild Clerk notes that heroes who leave this way are not angry, exactly. The
 | First Weekly Bounty | Day 1 of any new save (and every 7 days thereafter) |
 | Quest Log icon | Visible from day 1 (renders only unlocked chains; locked chains do not enumerate with requirements) |
 | First Story chain | At guild rank F |
-| Later Story chains | At ranks E, D, D, D, C, B (three chains share rank D after the spec-119 additions — Founding Blade and World Tree Pact) |
+| Later Story chains | At ranks E, D, D, D, C, B (three chains share rank D, among them the Founding Blade and the World Tree Pact) |
 | Class chains | Rank E + a level-25 hero of that class for the six baseline chains; rank C + a level-40 Mage for the Archmage's Thesis |
 
 ---
@@ -144,7 +144,7 @@ The Guild Clerk notes that heroes who leave this way are not angry, exactly. The
 ## Tips
 
 - **Check the Quest Log before dispatching parties** — if a chain step is on tomorrow's board, you may want to hold a strong party for it
-- **Don't stress weekly bounties you can't finish** — missing one costs nothing except the reward. The next Monday brings a different one
+- **Don't stress weekly bounties you can't finish** — missing one costs nothing except the reward. Next week brings a different one
 - **Class chains are efficient** — three missions for a named item, a recipe, and two gems is the best reward-per-mission ratio in the game
 - **Plan Barracks space before completing "The Undead Plague" or "The Rival's Gambit"** — if you know a special hero is on the finale, having a bed ready avoids the countdown entirely
 - **Chain steps don't stack** — each chain has at most one active step on the board at a time, but multiple chains can have steps active simultaneously

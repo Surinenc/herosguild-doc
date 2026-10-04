@@ -56,7 +56,7 @@ Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes wee
 
 **Magic Find** multiplies every above-Common chance in the roll, with Common absorbing whatever is left over — so a party carrying +20% Magic Find turns a 1% Mythic chance into 1.2% and shaves the difference off the tat. It applies to monster drops and to end-of-run completion rewards, on missions, dungeon runs and Spire floors alike. The figure used is the party **average**, not the sum — one hero in full Magic Find regalia raises the party's number by their share of it, which is the realm's way of saying that dressing the whole party is the only real answer. Material and item-drop bonuses are averaged the same way.
 
-Socket count rolls increase with item level. Base chance: `20% + item level × 1%` (capped at 90%).
+Socket count rolls increase with item level. Each socket rolls at `30% + item level × 2%` (capped at 90%), and each link at `20% + item level × 1%` (capped at 70%) — see [Socket Generation](skills.md#socket-colors).
 
 ---
 
@@ -94,12 +94,12 @@ Every weapon reduces to five numbers. Heroes who understand these numbers do bet
 - Steel Sword (Uncommon): 14-20 damage, +2% crit
 - Mithril Blade (Rare): 25-35 damage, +8% crit, +10 STR
 - Dragonslayer (Epic): 40-55 damage (the +20% vs Dragons comes from the Dragonslayer 2-piece **set bonus**, not the weapon itself)
-- Worldsplitter (Legendary): 70-95 damage, +15% crit, +50% crit damage (the "cleave all enemies" claim has no template-level support; that effect would belong to a linked support gem like Melee Splash)
+- Worldsplitter (Legendary): 70-95 damage, +15% crit, +50% crit damage (it cleaves nothing on its own, whatever the bards say; for that, link a Melee Splash gem)
 
 **Staves (Mage/Cleric/Necromancer):**
 - Wooden Staff (Common): 5-8 damage, +10 Mana
 - Arcane Staff (Rare): 18-28 damage, +50 Mana
-- Staff of Eternity (Legendary): 55-80 damage, +150 Mana, +int (the "-20% cooldowns" claim is the **Archmage's Regalia 3-piece set bonus**, not a weapon stat)
+- Staff of Eternity (Legendary): 55-80 damage, +150 Mana, +INT (the celebrated −20% cooldowns belong to the **Archmage's Regalia 3-piece set bonus**, not to the staff, which takes the credit anyway)
 
 ---
 
@@ -131,7 +131,7 @@ Armor trades mobility for survival. Warriors consider this an excellent trade. M
 - Iron Plate: 15 armor, +20 HP
 - Steel Plate: 30 armor, +40 HP
 - Dragonplate: 80 armor, +120 HP, 50% Fire Resist (the Fire Resist actually comes from the Dragonslayer 3-piece set bonus)
-- **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists (`ArmorTemplates.ts:260-274`). No HP regen mechanic, despite everything the name suggests.
+- **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists. No HP regeneration, despite everything the name suggests.
 
 ---
 
@@ -175,8 +175,8 @@ Two random-roll affixes feed the [mana economy](combat.md#mana-economy):
 
 | Affix | Rolls On | Effect |
 |-------|----------|--------|
-| `manaRegen` | Accessory 1, Accessory 2 | Flat mana regen per turn; stacks with passive tree and class baseline |
-| `manaCostReduction` | Accessory 1, Accessory 2, weapons | Percent reduction to skill mana costs; additive with proficiency, passives, set bonuses, and ascendancy, capped at 75% total |
+| **Mana Regen** | Accessory 1, Accessory 2 | Flat mana regen per turn; stacks with passive tree and class baseline |
+| **Mana Cost Reduction** | Accessory 1, Accessory 2, weapons | Percent reduction to skill mana costs; additive with proficiency, passives, set bonuses, and ascendancy, capped at 75% total |
 
 Both use continuous scaling — a rare ring at L50 will roll something modest, the same affix on a mythic at L100 considerably less so. They can coexist on the same accessory, which is the combination experienced builders look for first.
 
@@ -207,7 +207,7 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 
 ### Mana Flasks
 
-A higher-tier line of mana consumables for heroes who've gone past the "occasionally run dry" stage and into the "regularly spend a 6-link's mana in one turn" tier. Combat tactical logic auto-uses these when mana drops below the configured threshold (default **30%**, adjustable in Settings → Combat) and a flask is in either Consumable slot.
+A higher-tier line of mana consumables for heroes who've gone past the "occasionally run dry" stage and into the "regularly spend a 6-link's mana in one turn" tier. Heroes drink these automatically when mana drops below the configured threshold (default **30%**, adjustable in Settings → Combat) and a flask is in either Consumable slot.
 
 | Name | Rarity | Mana | Min Level | Stack |
 |------|--------|------|-----------|-------|
@@ -231,9 +231,9 @@ Craftable at the alchemy bench. The recipes are short. The alchemist's commentar
 |------|--------|-------|--------|-------|
 | Phylactery Elixir | Legendary | 80 | Cheat death: revive to full HP + mana | 1 |
 
-The insurance policy the Guild Clerk wishes the guild itself could afford. When a hero carrying a Phylactery Elixir would take lethal damage, the elixir intervenes — the hero revives at full HP and full mana, and the elixir is consumed. Once per equip, no passive stats, no second chances on the second chance. The check runs inside `Hero.takeDamage` before death is finalised, so it catches all damage sources: normal attacks, DoTs, and AoE splash.
+The insurance policy the Guild Clerk wishes the guild itself could afford. When a hero carrying a Phylactery Elixir would take lethal damage, the elixir intervenes — the hero revives at full HP and full mana, and the elixir is consumed. Once per equip, no passive stats, no second chances on the second chance. The elixir steps in before death is finalised, so it catches every kind of damage: normal attacks, DoTs, and AoE splash alike.
 
-**There is a queue for cheating death**, and the elixir is only first in it. Every lethal blow in the game now runs the same three checks in order:
+**There is a queue for cheating death**, and the elixir is only first in it. Every lethal blow in the game runs the same three checks in order:
 
 1. **Phylactery Elixir** — revive at full HP and mana, elixir consumed
 2. **Undying Fury** (Berserker 4-piece) — survive at **1 HP**, once per fight
@@ -252,7 +252,7 @@ Elixirs are percentage-based stat buffs equipped in the two Consumable slots. Th
 | Epic | Elixir of the Iron Titan | 3 | 55–65 |
 | Legendary | Elixir of the Gods, Elixir of the World Root | 1 | 80–85 |
 
-Legendary elixirs include `hpRegenPct` — a per-turn HP regeneration bonus wired into the combat regen loop — rather than the one-shot full heals they once carried.
+Legendary elixirs carry a per-turn HP regeneration bonus that ticks in every fight — a slow, dignified recovery rather than a single dramatic gulp.
 
 ### Buff Potions
 
@@ -276,7 +276,7 @@ Socket colors gate **gem compatibility** — they do not map cleanly to a damage
 |-------|---------|-------------------|
 | **Red** | Red gems | All active attack, spell, minion, holy, and many ranged gems are red regardless of their stat requirement |
 | **Green** | Green gems | Defensive guards, warcries, healing, movement and some utility actives |
-| **Blue** | Blue gems | Currently no active blue gems exist; blue sockets accept the **blue variants of support gems**, which require INT |
+| **Blue** | Blue gems | No active gems are blue; blue sockets accept the **blue variants of support gems**, which require INT |
 | **White** | Any color | Wild slot, rolled at ~3% per socket |
 
 ### Skill Gems
@@ -332,7 +332,7 @@ Wearing multiple pieces from the same set grants powerful bonuses. The Guild Cle
 |--------|-------|
 | 2 | +15% Crit Damage |
 | 3 | +20% Crit Chance |
-| 4 | First attack in combat always crits (`assassin_ambush`) |
+| 4 | First attack in combat always crits — the ambush, perfected |
 
 **Pieces:** Shadowblade, Nightstalker Armor, Hood of Shadows, Ring of Shadows
 
@@ -377,9 +377,9 @@ Quality is determined by crafting skill or random drop luck.
 
 ## Enchanting
 
-Items can hold enchantments up to their **`maxEnchantSlots`** (a per-template field, typically 1–3 depending on slot and rarity), applied at the Enchanting Table facility. The Enchanting Table itself scales by level: Rune Desk → Enchanting Altar → Arcane Workshop → Mystic Chamber → Ley Nexus, with `enchantPower` rising from 1.0× to 2.0× and `maxTier` rising 1 → 5 (`GuildFacilities.ts:309-313`).
+Items can hold a limited number of enchantments — typically 1–3, depending on the slot and the rarity — applied at the Enchanting Table facility. The Enchanting Table itself scales by level: Rune Desk → Enchanting Altar → Arcane Workshop → Mystic Chamber → Ley Nexus, with its enchant power rising from 1.0× to 2.0× and the highest enchantment tier it can manage from 1 to 5.
 
-The named enchantment catalogue some earlier wiki versions listed (Sharpness / Flaming / Vorpal / Fortified / Resilient / Luck / Swiftness / etc.) has no corresponding effect-by-name table in current code — `Item.enchantments` is a `string[]` and only the Enchanting Table facility data and a couple of "check enchantments for survival effects" branches reference it. Treat enchantments as a real slot system whose specific named catalogue is not currently shipped.
+There is no catalogue of named enchantments to choose from — no Sharpness, no Flaming, no Vorpal, nothing with a pleasing ring to it. The slots are real; the poetry is the enchanter's own business.
 
 
 ---
@@ -416,7 +416,7 @@ Personality is not the only thing at work. Heroes also **keep a private tally** 
 All items go to the central Guild Vault. From there you can:
 - **Equip** items to heroes
 - **Sell** items for gold
-- **Salvage** items for crafting materials — **accessories always salvage**, whatever their rarity. Every accessory tier resolves to the same material, so there is nothing cheaper to step down to and the usual value ceiling would simply have refused the job; rings and amulets below Rare were, for a while, unbreakable in the least useful sense
+- **Salvage** items for crafting materials — **accessories always salvage**, whatever their rarity. Every ring and amulet breaks down into the same material, so even a humble Bone Charm gives something back, which is more than can be said for most of the people who wore one
 - **Enchant** items with magical properties
 
 ### Tips

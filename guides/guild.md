@@ -96,19 +96,28 @@ The cap is real. With every slot in use the Mission Board declines the dispatch 
 
 ### Barracks
 
-Hero housing affects mood and rest recovery. The beds have witnessed more reconciliations than any chapel.
+Hero housing is the first thing a hero has an opinion about and the last thing they stop complaining about. The beds have witnessed more reconciliations than any chapel. **Upgrade it first** — before the Guild Hall, before anything else.
 
-| Level | Beds | Mood | Rest Speed | Daily Upkeep |
-|-------|------|------|------------|--------------|
-| 1 | 12 | +0 | 0.9x | 2g |
-| 2 | 20 | +0 | 0.95x | 12g |
-| 3 | 30 | +0 | 1.0x | 20g |
-| 4 | 45 | +5 | 1.05x | 800g |
-| 5 | 60 | +10 | 1.1x | 2,000g |
+| Level | Beds | Mood | Comfort Bonus | Daily Upkeep |
+|-------|------|------|---------------|--------------|
+| 1 | 12 | +0 | +0 | 2g |
+| 2 | 20 | +0 | +5 | 12g |
+| 3 | 30 | +0 | +10 | 20g |
+| 4 | 45 | +5 | +15 | 800g |
+| 5 | 60 | +10 | +20 | 2,000g |
 
-Crowding is handled by the **comfort need**, which measures real headcount against real capacity and scales with how bad the squeeze is. The facility's own flat mood line only speaks up when comfort isn't already saying it — one cramped room, one complaint, the Guild Clerk being firm about double-counting.
+Heroes sleeping in the Barracks take their **comfort** from how full it is, and they notice long before it is actually full:
 
-The lower three tiers are now **neutral** rather than a penalty. Levels 1 to 3 are what a guild can afford early, and docking a new master's mood for the crime of having a small building was a tax on being new; the upgrades reward you instead of merely undoing a punishment. The figures are mood points, not percentages, and they arrive as a listed thought like everything else.
+| How full | Base comfort | |
+|---|---|---|
+| Under a quarter | 90 | *"Living in luxury. This is the life."* +6 mood |
+| A quarter to a half | 75 | *"Nice accommodations."* +3 |
+| Half to three-quarters | 55 | No opinion |
+| Three-quarters or more | 35, then 20 | *"These beds are terrible."* -5 |
+
+The level's comfort bonus is added on top, and the mood lasts exactly as long as the crowding does. Upgrading therefore pays twice: more beds lower the occupancy, and better ones raise the comfort. Nine heroes in a level-1 Barracks are three-quarters full and each carries **-5**; the same nine in a level-2 Barracks are under half full at +5 comfort and each carries **+6**. Eleven points of mood per hero, every day, for 2,000 gold, two days and some wood — which is the cheapest happiness the guild will ever buy.
+
+The **Mood** column is a separate flat bonus from the building itself, and it only speaks up when comfort isn't already complaining — one cramped room, one grievance, the Guild Clerk being firm about double-counting. Levels 1 to 3 carry none, which is not a punishment for a small building, merely an absence of praise.
 
 ### Hero Quarters
 
@@ -1038,8 +1047,8 @@ The Guild Clerk's recommendations, based on extensive observation of which guild
 
 ### Early Game
 
-1. **Guild Hall 2** - More mission slots means more income; this is the foundational upgrade
-2. **Barracks 2** - A mood penalty from overcrowding compounds daily; fix it early
+1. **Barracks 2** - Comfort falls as the beds fill, and a crowded barracks costs every hero in it mood every single day; fix it before anything else
+2. **Guild Hall 2** - More mission slots means more income; the foundational upgrade once everyone can sleep
 3. **Tavern 2** - Better recruits start arriving, which is the entire point of having a Tavern
 4. **Infirmary 2** - Faster healing means heroes are back on roster sooner; you will need this immediately
 

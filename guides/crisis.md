@@ -25,11 +25,11 @@ Every crisis runs through up to four **severity tiers**: Mild, Moderate, Severe,
 **Escalation:**
 - Crises start at **Mild** (a chained successor may start at **Moderate**).
 - There are three escalation checkpoints, at the **halfway**, **three-quarter** and **nine-tenths** marks of the crisis's run. At each one, if **no resolution missions** have been completed, severity bumps a tier — at most one bump per day, and never past Critical.
-- Which means ignoring a Mild crisis entirely does reach **Critical**, at the 90% mark, rather than merely threatening to; a chained crisis that starts at Moderate gets there by the three-quarter mark. The old arrangement, in which a crisis escalated exactly once and Critical was in practice unreachable, has been retired along with the complacency it encouraged.
+- Which means ignoring a Mild crisis entirely does reach **Critical**, at the 90% mark, rather than merely threatening to; a chained crisis that starts at Moderate gets there by the three-quarter mark. Complacency, in short, is a strategy with a known end date.
 
 **De-escalation:**
 - Completing a **resolution mission** (a mission flagged as relevant to the active crisis) drops severity by one tier.
-- Every one of the fourteen crises now has a resolution mission on the board — including the six that once offered no way out at all, of which the Dragon's Tithe and the Royal Levy name theirs outright (*Drive off the dragon*, *Petition the crown*).
+- Every one of the fourteen crises has a resolution mission on the board; the Dragon's Tithe and the Royal Levy even name theirs outright (*Drive off the dragon*, *Petition the crown*), which is more candour than most crises manage.
 - Stack resolution missions and you can hold a crisis at Mild for its entire duration.
 
 **End conditions** are one of:
@@ -76,7 +76,7 @@ The realm rotates through fourteen named crises, grouped into four categories. E
 | Crisis | Icon | Duration | Effect |
 |--------|------|----------|--------|
 | **The Cult of the Unseen** | 👁️ | 12–16 | At Moderate+, the cult injects three moral events into the queue. Each comes with a difficult choice |
-| **The Heretic Schism** | ✝️ | 12–18 | One moral event injected per severity step (`per-escalation` cadence) |
+| **The Heretic Schism** | ✝️ | 12–18 | One moral event injected per severity step — the further it escalates, the more there is to argue about |
 | **The Syzygy** | 🌕 | 10–14 | **Hero fire/cold/lightning ×1.30; enemy same ×1.15.** Both sides hit harder; the stars are aligning poorly |
 | **Planar Interference** | 🌀 | 10–16 | **Hero fire/cold/lightning/holy/chaos ×0.70.** Magic suppressed. Bring physical damage or bring a Cleric who has accepted disappointment |
 | **The Blood Moon** | 🌑 | 10–14 | **Both sides: chaos damage ×1.50, holy damage ×0.75.** Necromancers thrive; Clerics file complaints |
@@ -99,7 +99,7 @@ A **Partial** outcome (some resolution missions completed but not enough to full
 
 A chain is announced in the Chronicle with a 🔗 log event. The Guild Clerk has filed papers, more than once, suggesting that the realm not be allowed to combo crises. The papers have been ignored.
 
-Crises that resolve at **Engaged** still chain, but they chain into a Mild successor and earn the **Chain Breaker** milestone if the successor also resolves at Engaged. The other ten crises — including both spec-055 additions — do not chain onward.
+Crises that resolve at **Engaged** still chain, but they chain into a Mild successor and earn the **Chain Breaker** milestone if the successor also resolves at Engaged. The other ten crises do not chain onward; they arrive, ruin a month, and leave without introducing anyone.
 
 ---
 
@@ -111,7 +111,7 @@ The three crises with permadeath events are:
 
 | Crisis | Event Title | Hero Selection |
 |--------|-------------|----------------|
-| The Creeping Plague | Healer's Sacrifice | Highest morale → most bonds → highest level (any class — the narrative implies a healer, but mechanically no class filter is applied) |
+| The Creeping Plague | Healer's Sacrifice | Highest morale → most bonds → highest level (any class — the title implies a healer, but the plague is not fussy) |
 | The Cult of the Unseen | Inquisition's Demand | Your **most disposable** hero — lowest morale, fewest bonds, lowest level |
 | The Dragon's Tithe | Hero Tribute | Legendary-quality hero if any exist; otherwise lowest morale, fewest bonds, lowest level |
 
@@ -131,7 +131,7 @@ Permadeath moral events are deliberately binary. **There is no gold or material 
 - **Accept** — the chosen hero permadies. The crisis force-ends at **Engaged**, you skip whatever was coming next, and you earn the **Sacrificial Lamb** milestone. The hero is dead. Permanently.
 - **Refuse** — the hero lives. The crisis continues at Critical until its normal end day, with all the consequences that implies.
 
-Refusing the Dragon's Tithe tribute event additionally sets a `tributeRefused` flag and earns the **Defiant Refusal** milestone — a recognition that you, specifically, told the dragon to go away.
+Refusing the Dragon's Tithe tribute event additionally earns the **Defiant Refusal** milestone — a recognition that you, specifically, told the dragon to go away.
 
 If you let the modal time out, the default is **Refuse.** The Guild Clerk considers this the correct default and has never said otherwise.
 
@@ -148,11 +148,11 @@ Four crises damage facilities if you let them resolve at Ignored. The damage app
 | The Cult of the Unseen | Chapel | -1 / — |
 | The Dragon's Tithe | Highest non-Barracks facility | -2 / — |
 
-The Dragon's Tithe damage scans all facilities at runtime, excludes the Barracks, and picks the one at the highest level. This is the dragon's idea of fairness.
+The dragon surveys every facility you own, politely ignores the Barracks, and flattens whichever stands highest. This is the dragon's idea of fairness.
 
-The Armory case is special: its level controls vault capacity, so damaging it triggers an immediate vault-capacity sync. Your storage shrinks the moment the damage lands, and anything already over the new line is over it visibly, which is the Clerk's preferred way of delivering bad news.
+The Armory case is special: its level sets vault capacity, so your storage shrinks the moment the damage lands, and anything already over the new line is over it visibly, which is the Clerk's preferred way of delivering bad news.
 
-The other ten crises — including all spec-054 reskins and both spec-055 additions — do not damage facilities. The realm has decided, for now, that some things should stay standing.
+The other ten crises do not damage facilities. Some things, the realm has decided, should stay standing.
 
 ---
 
@@ -166,7 +166,7 @@ The Syzygy, Planar Interference, Iron Pact, Blood Moon, Necromancers Stir, and B
 Final Damage = Base Damage × Crisis Type Multiplier × Crisis Enemy-Category Multiplier
 ```
 
-Both multipliers apply in sequence, so the Beast Rampage's "+25% beast physical" stacks with any active damage-type modifier from another crisis if two ever overlap (the cooldown gate makes overlap rare, but the formula composes regardless).
+Both multipliers apply in sequence, so the Beast Rampage's "+25% beast physical" stacks with any active damage-type modifier from another crisis if two ever overlap (the cooldown makes overlap rare, but the arithmetic doesn't mind).
 
 A crisis-time team build is a real decision. Iron Pact rewards physical-only parties. Planar Interference makes elemental Mages tragic. Blood Moon turns Necromancers into the obvious carry. The realm has, in essence, become an opinionated battle theatre with rotating rules.
 
@@ -174,7 +174,7 @@ A crisis-time team build is a real decision. Iron Pact rewards physical-only par
 
 ## Milestones
 
-The Guild Clerk maintains a quiet ledger of crisis-related achievements. Each is one-shot, and each is recorded as a `crisis_milestone` Chronicle entry on every living hero with a 💫 log event.
+The Guild Clerk maintains a quiet ledger of crisis-related achievements. Each is one-shot, and each is written into the Chronicle of every living hero, with a 💫 in the log.
 
 | Milestone | Condition |
 |-----------|-----------|
@@ -193,13 +193,13 @@ There is no mechanical reward and no unlock — milestones are recognition for t
 
 ## Where You See It
 
-The Crisis system has a small UI surface:
+Crises announce themselves sparingly:
 
-- **Announcement modal** — fires on the day a crisis starts. Shows the crisis icon, severity badge (colour-coded Mild → Critical), duration, description, and a modifier summary listing upkeep multiplier, recruitment-frozen flag, reward multiplier, and any active damage-type multipliers ("Fire ×1.3" and similar). Uses a ceremonial scene shell with a bespoke background image.
+- **Announcement modal** — fires on the day a crisis starts. Shows the crisis icon, severity badge (colour-coded Mild → Critical), duration, description, and a modifier summary listing the upkeep multiplier, whether recruitment is frozen, the reward multiplier, and any active damage-type multipliers ("Fire ×1.3" and similar). It arrives as a full ceremonial scene with its own painted backdrop, on the principle that bad news should at least be well presented.
 - **Chronicle entries** — crisis start, severity changes, resolution mission completions, chain announcements, permadeath events, milestones, and crisis end all post to the Chronicle.
 - **Log events** — the in-game log shows 🔗 for chain triggers, 🏚️ for facility damage, and 💫 for milestones.
 
-There is **no always-on HUD banner or top-bar indicator.** Once you dismiss the announcement modal, you find out the crisis is still happening from the increased upkeep, the modal that pops up when you try to recruit during a freeze, and the resolution missions appearing in the mission queue. The Guild Clerk has, several times, suggested adding a status icon to the main bar. The suggestion has not yet been formalised.
+There is **no always-on HUD banner or top-bar indicator.** Once you dismiss the announcement modal, you find out the crisis is still happening from the increased upkeep, the modal that pops up when you try to recruit during a freeze, and the resolution missions appearing in the mission queue. The Guild Clerk keeps a note pinned above the desk instead, and recommends you do the same.
 
 ---
 

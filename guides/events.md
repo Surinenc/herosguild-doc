@@ -10,7 +10,7 @@ Every night, the **Tonight** tab in the Tavern presents 6–8 situations requiri
 
 You are given a limited number of **Attention Points** to spend. You will not have enough to address everything. The situations you ignore tonight will be waiting for you tomorrow, slightly worse.
 
-The morning after, each resolved decision surfaces in the **Last Night's Notes** panel — a brief record of which options you picked and how they landed. What happens in the tavern still mostly stays in the tavern, but the highlight reel is now, at least, filed.
+The morning after, each resolved decision surfaces in the **Last Night's Notes** panel — a brief record of which options you picked and how they landed. What happens in the tavern still mostly stays in the tavern, but the highlight reel is, at least, filed.
 
 → **Full details:** [Guild Management — Nightly Decisions](guild.md#nightly-decisions)
 
@@ -42,7 +42,7 @@ These events have consequences. They shift the axes further. Occasionally, they 
 
 The game pays close attention to your heroes. Not as a general principle — it scans your roster continuously for specific conditions and produces events built around whoever it finds. A rivalry at boiling point. A veteran who has gone unacknowledged for too long. A near-death hero quietly reconsidering their career choices. The events use their names. The options reflect what has actually happened between them. They have deadlines. If the deadline passes without your input, the game resolves it for you — defaulting, generally, to the least interesting option available.
 
-Casting is now as careful as the writing. Each slot in an event carries its own conditions, and the realm fills it with a hero who actually meets them — including paired slots, so a sibling rivalry finds two heroes who are in fact siblings and in fact rivals, rather than two names and a hopeful noun. A follow-up in a chain only fires from its chain, never by being drawn at random, which incidentally freed up the pool it had been crowding out.
+Casting is as careful as the writing. Each slot in an event carries its own conditions, and the realm fills it with a hero who actually meets them — including paired slots, so a sibling rivalry finds two heroes who are in fact siblings and in fact rivals, rather than two names and a hopeful noun. A chain's follow-up arrives only as a follow-up; it never wanders in at random to confuse a plot it isn't part of.
 
 → **Full details:** [Guild Management — Context-Aware Guild Events](guild.md#context-aware-guild-events)
 
@@ -90,6 +90,6 @@ A guild that consistently burns shrines and robs travelers will, eventually, att
 
 ## Related Guides
 
-- [Crises](crisis.md) - Of the 14 crisis types, **Cult of the Unseen** injects three moral events at Moderate+, **Heretic Schism** injects one per severity escalation (per-escalation cadence), and Plague / Cult of the Unseen / Dragon's Tithe additionally fire **permadeath** moral events at Critical severity
+- [Crises](crisis.md) - Of the 14 crisis types, **Cult of the Unseen** injects three moral events at Moderate+, **Heretic Schism** injects one per severity escalation, and Plague / Cult of the Unseen / Dragon's Tithe additionally fire **permadeath** moral events at Critical severity
 - [Relationships](relationships.md) - Story Arcs queue their own moral events tied to specific hero pairs
 - [Dungeons](dungeons.md) - In-dungeon moral events, the other major source of choice prompts

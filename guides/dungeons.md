@@ -75,13 +75,13 @@ Monster level determines enemy strength:
 | ⭐⭐⭐⭐ | 3.0x | 2.0x | 35% |
 | ⭐⭐⭐⭐⭐ | 5.0x | 3.0x | 50% |
 
-The gold column multiplies **combat gold** — what enemies drop — and leaves the value of loot alone, an item being worth what it is worth regardless of how many rooms you walked through to find it. Both multipliers now reach dungeon runs, which they conspicuously did not for a while. **Boss rooms** also pay out their own treasure, gems included, once per boss.
+The gold column multiplies **combat gold** — what enemies drop — and leaves the value of loot alone, an item being worth what it is worth regardless of how many rooms you walked through to find it. Both multipliers apply to dungeon runs as well as missions, the stars being no respecters of paperwork. **Boss rooms** also pay out their own treasure, gems included, once per boss.
 
 ---
 
 ## Dungeon Environments
 
-Seven distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. (The structured class-resolved [Environmental Hazards](#environmental-hazards) system is environment-agnostic — any hazard can roll on any 2★+ dungeon.)
+Seven distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. ([Environmental Hazards](#environmental-hazards) are the exception: they don't care where they are, and any of them can turn up in any 2★+ dungeon.)
 
 ### Forest
 
@@ -182,7 +182,7 @@ Auto-resolved based on party strength and tactical preset. You send them in, go 
 ### Party Size
 
 - **Minimum:** 1 hero (dangerous!)
-- **Maximum:** scales with stars — `Math.min(3 + stars, 8)` → 1★=4, 2★=5, 3★=6, 4★=7, 5★=8 (`Mission.ts:354`)
+- **Maximum:** three plus the stars, up to eight — 1★=4, 2★=5, 3★=6, 4★=7, 5★=8. Past that the corridors simply get crowded
 - **Recommended:** Stars + 2 (e.g., ⭐⭐⭐ = 5 heroes)
 - **Rating Bonus:** +5 party rating per hero beyond the 3rd
 
@@ -235,7 +235,7 @@ On any floor that has a boss, the **Exit connects only to the boss room**. There
 ### Fog of War
 
 The dungeon doesn't open itself up for inspection. Knowledge costs movement:
-- At start, the entrance and all rooms **directly connected to the entrance** are revealed (`Dungeon.ts:1000-1008`); rooms beyond that one-hop radius stay dark until you reach them
+- At start, the entrance and all rooms **directly connected to the entrance** are revealed; rooms beyond that one-hop radius stay dark until you reach them
 - Rooms reveal as you explore, which is both discovery and commitment
 - Creates tension and the occasional navigational dispute
 - Supervised mode helps scouting; Rangers help more
@@ -274,7 +274,7 @@ A 2★ dungeon carries roughly one hazard. Higher-star dungeons can carry severa
 
 ### Hazard Types
 
-Eight hazard types currently ship (`HazardCatalog.ts`). Each names the class (or pair of classes) that resolves it cleanly:
+There are eight hazard types. Each names the class (or pair of classes) that resolves it cleanly:
 
 | Hazard | Resolved By |
 |--------|-------------|
@@ -291,7 +291,7 @@ Hazards are **not environment-themed** — any hazard can roll on any 2★+ dung
 
 ### Clean Resolution vs. Pushing Through
 
-When a hazard fires, the engine looks at your party for the required class:
+When a hazard fires, the realm looks at your party for the required class, and is either satisfied or not:
 
 **Clean resolution** — at least one matching hero is present:
 - One hero of the required class handles it (the first matching hero in party order, if you have multiple)
@@ -326,7 +326,7 @@ These add up over many dungeons. A guild that consistently dispatches well-balan
 
 ### Persistence
 
-A resolved hazard stays resolved. If you save and reload mid-dungeon, hazard rooms you've already cleared do not re-fire. Hazards are tied to the dungeon instance, not to the room template.
+A resolved hazard stays resolved. If you save and reload mid-dungeon, hazard rooms you've already cleared do not re-fire. A hazard belongs to that particular dungeon, not to every room that happens to look like it.
 
 ---
 
@@ -498,7 +498,7 @@ Mission slots come from two sources:
 - **Guild Hall level** — L1=2 slots, L2=4, L3=6, L4=8, L5=10
 - **Guild rank bonus** — F/E=+0, D/C=+1, B/A=+2, S=+3
 
-Add the two together to get your slot count. So a rank C guild with a level 3 Guild Hall has 6 + 1 = 7 slots; a rank S guild with a level 5 Manor/Legendary Hall caps out at 10 + 3 = 13. Only one expedition can be supervised per night regardless of slot count.
+Add the two together to get your slot count. So a rank C guild with a level 3 Guild Hall has 6 + 1 = 7 slots; a rank S guild with a level 5 Legendary Hall caps out at 10 + 3 = 13. Only one expedition can be supervised per night regardless of slot count.
 
 ---
 
@@ -532,7 +532,7 @@ Each prestige mission also rewards 5 guaranteed materials, with tier scaling bas
 
 ## World Boss Raids
 
-When a World Boss appears in the realm, the Guild can mount a raid against it from the Guild screen — a single fight with up to 15 heroes across 5 groups on a tactical board. The mechanics, rewards, and the surprisingly forgiving wipe rules are all covered in their own guide.
+When a World Boss appears in the realm, the Guild can mount a raid against it from the Guild screen — a single fight with up to 15 heroes, organised into groups, on a tactical board. The mechanics, rewards, and the surprisingly forgiving wipe rules are all covered in their own guide.
 
 See [**World Boss Raids**](raids.md).
 

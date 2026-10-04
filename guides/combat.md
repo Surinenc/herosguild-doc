@@ -61,8 +61,8 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage. This is why experienced guild masters invest in training rather than just handing heroes a bigger sword and hoping for the best.
 
 **Modifiers Applied (multiplicative):**
-- **Class damage multiplier** — Mage/Necromancer ×1.25, Cleric/Warrior ×1.00, Rogue ×0.85, Ranger ×0.80. Applied at every hero-source damage point as a top-level cap on relative class power.
-- **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a per-hero `damage` multiplier applied on top of everything else. This is the reason two heroes with identical class, level, and equipment will not hit for the same numbers: their pasts disagree about what their hands are capable of.
+- **Class damage multiplier** — Mage/Necromancer ×1.25, Cleric/Warrior ×1.00, Rogue ×0.85, Ranger ×0.80. Applied to everything a hero hits, with anything.
+- **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a personal damage multiplier applied on top of everything else. This is the reason two heroes with identical class, level, and equipment will not hit for the same numbers: their pasts disagree about what their hands are capable of.
 - Skill damage percentage (e.g., Power Attack = 150%)
 - [Passive tree](passive-tree.md) bonuses
 - Weapon proficiency (0-38% at max level 20)
@@ -74,7 +74,7 @@ Higher stats provide a multiplicative bonus — for example, 100 stat points = +
 - Mood modifier
 - Damage variance (±10%)
 
-The class multiplier exists to keep the spread between best- and worst-case builds within a single weight class — physical Rogue/Ranger top builds were pulling several times the DPS of casters before it was added. Casters get the lift in the same direction. The Guild Clerk considers this fair. The Rogues do not, but the Rogues have never considered anything fair, and this is itself part of the design. (Rogues were quietly nudged from ×0.80 to ×0.85 in a later pass. They have not yet acknowledged this.)
+The class multiplier keeps every class in the same weight division, so that a well-built Rogue and a well-built Mage are arguing about the same order of magnitude. The Guild Clerk considers this fair. The Rogues do not, but the Rogues have never considered anything fair, and this is itself part of the design. (The Rogues do sit a nose ahead of the Rangers, a fact they mention only when a Ranger is in earshot.)
 
 ### Critical Hits
 
@@ -85,7 +85,7 @@ Crit Chance = 5% + (DEX / 20) + (LCK / 10) + gear + sets + passives + gems + buf
 Crit Multiplier = 1.5x (base) x (1 + bonus crit damage% / 100)
 ```
 
-Socketed skill gems contribute their own `critical_strike_chance` and `critical_strike_multiplier` on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup. Every crit roll in the fight — basic attack, off-hand, multi-strike, triple-strike, gem skill, default skill and the Gladiator counter — goes through the same pair of functions the hero sheet uses, so what the sheet promises is what the dice are actually given.
+Socketed skill gems contribute their own crit chance and crit multiplier on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup. Every crit roll in the fight — basic attack, off-hand, multi-strike, triple-strike, gem skill, default skill and the Gladiator counter — is worked out exactly the way the hero sheet works it out, so what the sheet promises is what the dice are actually given.
 
 ### Enemy Weaknesses
 
@@ -108,7 +108,7 @@ A representative sample:
 
 The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
 
-One entry in that table comes with a footnote: the **Fire Whelp** is raid furniture. It exists to be spawned three at a time by the Ancient Dragon and is tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is flagged raid-only, so it never turns up in a random mission, dungeon or Tower roll. It reaches the field only when something asks for it by name, which in practice means a raid boss. The Guild Clerk is firm on this point, having once seen the alternative.
+One entry in that table comes with a footnote: the **Fire Whelp** is raid furniture. It exists to be spawned three at a time by the Ancient Dragon and is tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is raid-only, so it never turns up in a random mission, dungeon or Tower roll. It reaches the field only when something asks for it by name, which in practice means a raid boss. The Guild Clerk is firm on this point, having once seen the alternative.
 
 Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — **20 kills** (the first tier, Known, is reached at 5 kills and grants a small damage bonus but no resistance display). Until Studied, you're guessing, which is part of the early-game character.
 
@@ -178,7 +178,7 @@ Certain ascendancy and passive tree effects grant the **Heal Grants Shield** bon
 
 - Stacks with multiple heals
 - Absorbed damage is reduced before reaching HP or Energy Shield
-- The `shieldAbsorbBonus` stat makes shields absorb more efficiently (shields take less damage per point absorbed)
+- The **Shield Absorb** bonus makes shields absorb more efficiently (shields take less damage per point absorbed)
 - Separate from Energy Shield — Guardian Shield comes from healing, Energy Shield comes from INT
 
 This is primarily a Cleric mechanic (Prophet and Paladin ascendancy paths), and the reason well-supported parties survive significantly longer than ones that consider healing optional.
@@ -193,7 +193,7 @@ Heal Amount = floor(sqrt(Damage × Life Steal% / 100 × 100))
 
 Examples: 100 damage at 10% steal → 31 HP, 500 damage → ~70 HP, 2500 damage → ~158 HP.
 
-The **Life Leech** support gem grants `life_leech_percent` directly to its linked skill (2% baseline, scaling up by an additional ~3% across 100 levels). The Guild Clerk notes that linking it to a 6-link burst skill has saved more Berserkers than the Berserkers themselves are willing to admit.
+The **Life Leech** support gem grants life leech directly to its linked skill (2% baseline, scaling up by an additional ~3% across 100 levels). The Guild Clerk notes that linking it to a 6-link burst skill has saved more Berserkers than the Berserkers themselves are willing to admit.
 
 ---
 
@@ -211,7 +211,7 @@ Mana Regen = 20 (flat base)
            + Equipment Flat Regen
 ```
 
-Where **Total Regen%** = 3% baseline + passive tree `mana_regen` + ascendancy `mana_regen`.
+Where **Total Regen%** = 3% baseline + Mana Regen from the passive tree + Mana Regen from the ascendancy.
 
 ### Class Coefficients
 
@@ -221,24 +221,28 @@ The per-class coefficient is the lever that makes a Mage feel "casty" and a Warr
 |-------|------------|------|
 | Ranger | 1.1× | The strongest sustain in the roster. The Rangers, who spent years complaining about mana drought, now refuse to discuss it. |
 | Mage, Necromancer, Cleric | 1.0× | Casters as the baseline. |
-| Rogue | 0.95× | Slightly under baseline; Rogues still spike-shaped, but cast more often than before. |
+| Rogue | 0.95× | Slightly under baseline; Rogues are spike-shaped, but cast more often than their reputation for loitering suggests. |
 | Warrior | 0.7× | Lowest of all. Big swings spaced out by basic attacks. As intended. |
 
 ### Cost Reduction
 
-A new stat — `mana_cost_reduction` — exists on equipment affixes, passive tree nodes, set bonuses, ascendancy paths, and (additively) skill proficiency. All sources stack, with a hard cap of **75% reduction**. The cap prevents free skills, on the principle that anyone casting Meteor twice a turn for free has wandered out of the design space and into someone else's problem.
+**Mana Cost Reduction** turns up on equipment affixes, passive tree nodes, set bonuses, ascendancy paths, and (additively) skill proficiency. All sources stack, with a hard cap of **75% reduction**. The cap prevents free skills, on the principle that anyone casting Meteor twice a turn for free has wandered out of adventuring and into theology.
 
 ### Sustain Levers
 
 In ascending order of how much of a build you need to spend on it:
 
-1. **Equipment affixes** — `mana_regen` rolls on accessories only (Accessory 1 and Accessory 2); `mana_cost_reduction` rolls on accessories and weapons. Both use continuous scaling and can appear on the same accessory.
+1. **Equipment affixes** — Mana Regen rolls on accessories only (Accessory 1 and Accessory 2); Mana Cost Reduction rolls on accessories and weapons. Both use continuous scaling and can appear on the same accessory.
 2. **Mana Flasks** — consumables in the two Consumable slots that instantly restore a fixed amount (120 / 250 / 500). See [Equipment](equipment.md#consumables).
-3. **Passive tree Core Hub** — the inner ring's six even-numbered slots now grant alternating `mana_regen` / `mana_cost_reduction`, each with a stronger outward tail node. See [Passive Tree](passive-tree.md#core-hub-mana-cluster).
+3. **Passive tree Core Hub** — the inner ring's six even-numbered slots grant alternating Mana Regen / Mana Cost Reduction, each with a stronger outward tail node. See [Passive Tree](passive-tree.md#core-hub-mana-cluster).
 4. **Class coefficient** — the regen formula itself. Not allocatable; the choice of class is the choice of sustain shape.
-5. **Ascendancy** — Occultist branch C grants `mana_regen` directly as part of its drain package.
+5. **Ascendancy** — Occultist branch C grants Mana Regen directly as part of its drain package.
 
 Investing across all five is what turns a 6-link burst skill from a once-per-fight finisher into a sustained main attack.
+
+---
+
+## Threat System
 
 Enemies use threat to determine who to attack. Higher threat means more attention from things that want to kill you, which is either the entire point (Warriors) or a catastrophic failure of planning (everyone else).
 
@@ -255,7 +259,7 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 |--------|------------------|
 | Dealing Damage | Amount × 1.0 (Warriors: × 1.5) |
 | Healing | Amount × 0.5 |
-| Taunt | +100,000 (`TAUNT_THREAT_BOOST`) |
+| Taunt | +100,000 |
 | Shield Wall | +50 |
 
 ### Enemy Targeting Logic
@@ -273,7 +277,7 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 
 - **Effect:** Forces ALL enemies to attack the Warrior
 - **Duration:** 2 turns (+ ascendancy bonuses)
-- **Threat Bonus:** +100,000 (raised from 200 in spec 158 because the old 200 was eclipsed by a single Ranger crit and the tank lost aggro the instant the taunt window closed)
+- **Threat Bonus:** +100,000 — a number chosen so that no Ranger crit, however smug, can talk the enemy out of it
 - **Cooldown:** 3 turns
 - **Best Used:** When squishy allies are being targeted, which is to say, constantly
 
@@ -342,13 +346,13 @@ Combat can trigger powerful emotional reactions based on relationships. This is 
 | State | Effect | Duration | Trigger |
 |-------|--------|----------|---------|
 | **Normal** | None | - | Default |
-| **Inspired** | Behavior flag set; the damage modifier referenced in enum docs is not currently applied in the live damage path | 3 turns | Saved by ally |
-| **Panicked** | 40% chance to skip the turn (`Combat.ts:7411`) | 2 turns | Coward trait + ally death |
-| **Grief** | Behavior flag set; comment says "handled in damage modifiers" but the actual modifier path is not present in code (`Combat.ts:7451`) | 2-3 turns | Friend dies |
-| **Enraged** | **Forces aggressive AI + locks target to the killer** if known (`Combat.ts:7442-7450`). The +30% damage in the enum doc is not currently applied | 2-3 turns | Close friend / student dies |
-| **Vengeful** | **Forces aggressive AI + locks target to the killer** (`Combat.ts:7442-7450`). The +20% damage in the enum doc is not currently applied | 4-6 turns | Mentor / lover dies |
-| **Berserk** | **Forces aggressive AI + targets random enemy or ally** (`Combat.ts:7438, 6859-6941`). Damage runs through the full defensive pipeline. The +50% damage / -30% defense in the enum doc are not currently applied | 4-5 turns | Lover dies |
-| **Broken** | Cannot act (`Combat.ts:7398`) | 4 turns | Extreme trauma |
+| **Inspired** | None in the fight itself. The hero feels marvellous, which is its own reward and, mechanically, the only one | 3 turns | Saved by ally |
+| **Panicked** | 40% chance to skip the turn, spent mostly on screaming | 2 turns | Coward trait + ally death |
+| **Grief** | None in the fight itself. The grief is real; the penalty is not | 2-3 turns | Friend dies |
+| **Enraged** | **Fights aggressively and goes straight for the killer**, if known. No extra damage — only extra intent | 2-3 turns | Close friend / student dies |
+| **Vengeful** | **Fights aggressively and goes straight for the killer.** Like Enraged, it adds focus rather than damage, and lasts longer, revenge being a dish best served over several turns | 4-6 turns | Mentor / lover dies |
+| **Berserk** | **Fights aggressively at a random target — enemy or ally.** The blows are mitigated by armour, evasion and resistances like any other, which the ally on the receiving end will regard as cold comfort. No bonus damage, no lowered defence; just the wrong target | 4-5 turns | Lover dies |
+| **Broken** | Cannot act. Sits down. Possibly forever, as far as they're concerned | 4 turns | Extreme trauma |
 
 ### Death Reactions
 
@@ -460,7 +464,7 @@ Bleed and poison damage scale from the hit that applied them, not from max HP. A
 | Stun | 1 turn | Skip turn |
 | Freeze | 1 turn | Skip turn (25% chance from Frost Nova) |
 | Shock | 2 turns | Target takes +20% damage |
-| Vulnerable | 3 turns | Target takes +10% damage from **all** sources — stacks multiplicatively with Shock, party-wide damage-taken auras, and every other multiplier the enemy has been unwise enough to accumulate. Applied by Ranger Spectral Wolf bites, and refreshed on every subsequent bite, which is to say: effectively permanent for as long as the wolf is still gnawing on things. Deliberately tuned below Trickster's tier-3 Marked for Death ceiling so the pet-bite debuff never quite outclasses the ascendancy investment. |
+| Vulnerable | 3 turns | Target takes +10% damage from **all** sources — stacks multiplicatively with Shock, party-wide damage-taken auras, and every other multiplier the enemy has been unwise enough to accumulate. Applied by Ranger Spectral Wolf bites, and refreshed on every subsequent bite, which is to say: effectively permanent for as long as the wolf is still gnawing on things. It sits just below the Trickster's tier-3 Marked for Death, so the wolf never quite upstages the professionals. |
 | Weaken | 3 turns | Reduced damage dealt |
 | Charm | 2 turns | A charmed hero has a **40%** chance each turn of simply refusing to act. Applied by the Vampire's and the Succubus's Charm, at 50% on cast — stronger than fear (30%) and slow (20%), weaker than an outright stun, on the reasoning that the things which cast it are rare enough |
 | Blind | 1 turn | A **25%** chance to swing wildly and miss. Applied by the Bandit's Dirty Trick at 40% |

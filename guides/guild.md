@@ -34,7 +34,7 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 
 | Facility | Function | Max Level |
 |----------|----------|-----------|
-| **Library** | Research & recipes | 5 |
+| **Library** | Mission XP, Meditation | 5 |
 | **Chapel** | Morale, blessings, funerals | 5 |
 
 ---
@@ -423,19 +423,21 @@ See [Crafting Guide](crafting.md) for details.
 | 9 | Reality Anvil | 3.5× | +50% | 12,000g |
 | 10 | Apotheosis Workshop | 4.0× | +60% | 15,000g |
 
-Levels 7–10 also unlock a crafting currency discount — 10% per level above 1, up to 90% at level 10 — on the gold fee for using currencies on equipment. See [Crafting Guide](crafting.md#workshop-currency-discount).
+Every level above the first also takes 10% off the gold cost of a Workshop **Reroll All**, up to 90% at level 10. See [Crafting Guide](crafting.md#workshop-currency-discount).
 
 ### Library
 
-Research new recipes and lore. The librarian insists on silence, which is ambitious given the explosions from the Alchemy Lab next door.
+Makes heroes cleverer about what just happened to them. The librarian insists on silence, which is ambitious given the explosions from the Alchemy Lab next door. Despite appearances, it does no research — that is the Workshop's job, and the Library has made its peace with this.
 
-| Level | Research Speed | Max Recipe Tier |
-|-------|----------------|-----------------|
-| 1 | 1.0x | ⭐ |
-| 2 | 1.25x | ⭐⭐ |
-| 3 | 1.5x | ⭐⭐⭐ |
-| 4 | 1.75x | ⭐⭐⭐ (+lore) |
-| 5 | 2.0x | ⭐⭐⭐ (+lore) |
+| Level | Name | Mission XP | Features |
+|-------|------|------------|----------|
+| 1 | Book Shelf | +5% | - |
+| 2 | Study Room | +10% | - |
+| 3 | Library | +15% | Meditation training |
+| 4 | Grand Library | +20% | - |
+| 5 | Archives | +25% | - |
+
+The XP bonus applies to dungeon runs as well as contracts. **Meditation**, from level 3, lets a hero earn passive points early by sitting very still and thinking about it.
 
 ### Chapel
 
@@ -929,16 +931,16 @@ Event modifiers stack on top of the player multiplier and are not clamped — a 
 
 ## Item Workshop
 
-The Item Workshop lets you reroll bonus stats on Rare or higher rarity items for gold. Named items cannot be rerolled, because some things are sacred (or at least expensive enough to discourage tampering).
+The Item Workshop lets you reroll the bonus stats on any item for gold — Common to Legendary, named or not. Only **Cursed** items refuse, the curse resisting your instruments with what the Workshop describes as quiet dignity.
 
 **Reroll Cost Formula:**
 ```
 Cost = 1,000 × Rarity × 2^(Reroll Count)
 ```
 
-Costs double with each successive reroll. You can preview the new stats before accepting or rejecting.
+Costs double with each successive reroll. You then choose between the new stats and the old — but the gold is spent either way.
 
-Navigate to the Item Workshop from the Guild Screen → Item Workshop button.
+The Workshop (⚙) sits in the bottom navigation. See [Crafting Guide — Item Workshop](crafting.md#item-workshop).
 
 ---
 
@@ -1056,7 +1058,7 @@ The Guild Clerk's recommendations, based on extensive observation of which guild
 
 1. **Forge 3** - Better equipment tier unlocked; the quality jump at level 3 is significant
 2. **Training Yard 3** - Faster leveling for heroes who aren't the ones dying; invest in the ones who survive
-3. **Library 3** - Research unlocks recipes that cannot be obtained any other way
+3. **Library 3** - +15% XP on every mission, and Meditation training for the heroes who'd rather think than spar
 4. **Warehouse 3** - More storage means less forced selling of materials you'll want later
 
 ### Late Game

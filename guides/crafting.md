@@ -32,7 +32,7 @@ Ten crafting station types, each requiring a hero who could otherwise be doing s
 
 ### Station Levels (Base)
 
-Each crafting station has an internal level that reduces crafting time by 10% per level and unlocks material tiers. At level 5, you also get a quality bonus, which is the game's way of rewarding patience — a virtue that, in the Guild Clerk's experience, is in desperately short supply.
+Each crafting station has its own level, which reduces crafting time by 10% per level and unlocks material tiers. At level 5, you also get a quality bonus, which is the game's way of rewarding patience — a virtue that, in the Guild Clerk's experience, is in desperately short supply.
 
 | Level | Time Modifier | Tier Unlocked | Quality Bonus |
 |-------|---------------|---------------|---------------|
@@ -174,7 +174,7 @@ Exceptional quality crafts give +50% XP.
 Crafting follows seven steps in sequence. Missing any of them produces results ranging from nothing happening to an expensive pile of unusable materials:
 
 1. **Select Recipe** - Must have the recipe unlocked; wanting the item is not sufficient
-2. **Assign Crafter** - A hero whose skill clears both gates: the recipe's own **skill requirement**, and the **tier access** their level grants. The Craft button and the model consult the same rule, so a button that offers you a craft is a button that will let you make it
+2. **Assign Crafter** - A hero whose skill clears both gates: the recipe's own **skill requirement**, and the **tier access** their level grants. The Craft button checks both, so a button that offers you a craft is a button that will let you make it — a rarer courtesy among buttons than you might think
 3. **Check Materials** - Everything must be in the guild vault; the station does not improvise
 4. **Pay the Bench Fee** - Every craft charges gold on top of its materials, by tier: **50g** Common, **150g** Uncommon, **400g** Rare, **1,000g** Epic, **2,500g** Legendary. Charcoal, thread, whetstones and the quiet attrition of tools — the Guild Clerk has itemised it, at length, and nobody has asked twice
 5. **Queue Craft** - Production begins; the crafter is now unavailable for anything more urgent
@@ -202,7 +202,7 @@ Each station can have:
 - 1 primary crafter (full XP, does the actual work)
 - 1 assistant (+20% speed, **no XP**, does whatever the primary crafter doesn't want to do)
 
-The assistant accelerates the craft but does not currently earn skill XP for the work — only the primary crafter levels up. An in-code comment notes that per-skill assistant XP tracking would need to be added before this changes; until then, the assistant role is purely a speed lever, not a training rotation. The Guild Clerk still considers it an excellent way to keep idle heroes out of the Tavern.
+The assistant speeds the craft but earns no skill XP for the work — only the primary crafter levels up, the assistant's contribution being, in the eyes of the craft, mostly holding things. It is a speed lever, not a training rotation. The Guild Clerk still considers it an excellent way to keep idle heroes out of the Tavern.
 
 ---
 
@@ -219,12 +219,12 @@ When crafting completes, quality is rolled:
 | 86-95 | Exceptional | +30% |
 | 96-100 | Masterwork | +50% |
 
-**Roll Modifiers (`crafting/system.ts:703`):**
+**Roll Modifiers:**
 - Skill level adds directly to the roll
 - Station quality bonus adds to the roll
 - Masterwork skill (100) guarantees a 50+ roll
-- `extraQualityBonus` slot: the **Master Artisan title** adds +10 to this slot; it is the only consumer in current code
-- *(No assistant quality bonus is currently applied.)*
+- The **Master Artisan title** adds +10 — the only title that does, artisans being famously unimpressed by everybody else's
+- An assistant adds nothing to quality; they hold things, and the things are held
 
 ### Crafting Failures
 
@@ -277,11 +277,11 @@ Every new guild starts with all **Common-tier** recipes unlocked — enough to g
 | Epic | **Drop-only** — heroic dungeons (8%), raids (15%) |
 | Legendary | **Drop-only** — heroic dungeons (2%), raids (5%), world bosses (8%) |
 
-A handful of recipes also require a specific **raid boss's first kill** — defeating that boss unlocks every recipe gated behind it (`GameState.ts`). Quest chains can still formally unlock recipes via `QuestChain.unlockRecipe()` (`crafting/system.ts:462`).
+A handful of recipes also require a specific **raid boss's first kill** — defeating that boss unlocks every recipe gated behind it. Quest chain finales can hand you a recipe outright, too.
 
 ### Recipe Drops
 
-Epic and Legendary recipes cannot be researched — they drop from endgame content as recipe scrolls. Each completion rolls two independent Bernoulli trials (one for Epic, one for Legendary), so a single clear can yield zero, one, or — for the improbably lucky — two recipes.
+Epic and Legendary recipes cannot be researched — they drop from endgame content as recipe scrolls. Each completion rolls twice, independently (once for Epic, once for Legendary), so a single clear can yield zero, one, or — for the improbably lucky — two recipes.
 
 | Source | Epic (per clear) | Legendary (per clear) |
 |--------|-------------------|-----------------------|
@@ -304,7 +304,7 @@ Research is how Uncommon and Rare recipes enter your collection — a process in
 | Uncommon | 5,000g | 50% of recipe's materials (rounded up) | 2 days |
 | Rare | 50,000g | 50% of recipe's materials (rounded up) | 5 days |
 
-Common recipes don't need research (already unlocked). Epic and Legendary recipes return "drop-only and cannot be researched" — `getResearchCost` returns `null` for tier 4+ (`formulas.ts:200`).
+Common recipes don't need research (already unlocked). Epic and Legendary recipes cannot be researched at all — the Workshop will tell you they are drop-only, in the tone of a librarian asked for a book that has not been written.
 
 **Cancellation:** You can cancel a research project at any time. Half the materials come back (rounded down); gold does not. The Guild Clerk notes that this refund policy is "consistent with every other refund policy the guild has ever offered, which is to say: partial, grudging, and non-negotiable."
 
@@ -312,7 +312,7 @@ Common recipes don't need research (already unlocked). Epic and Legendary recipe
 
 ### Library
 
-The Library facility declares `researchSpeed` and `maxRecipeTier` metadata in its level templates, but neither value is currently consumed by the research system — research slots come from the **Workshop** and research duration is fixed per tier. The Library's actual runtime effects are +5% mission XP per level and unlocking Meditation training at L3.
+Despite the name, the Library has nothing to do with research — research slots come from the **Workshop**, and research time is fixed per tier. What the Library does is make heroes cleverer about what happened to them: **+5% mission and dungeon XP per level**, and **Meditation** training from level 3.
 
 ---
 
@@ -412,14 +412,14 @@ Potions and food come in **batches**, and the batch size on the recipe is the nu
 
 The Item Workshop lets you reroll the bonus stats on equipment without crafting a new item. This is useful for items that have good base stats but poor bonus rolls — a situation that occurs with frustrating regularity.
 
-**Requirements:** the Workshop UI itself does not currently gate rerolls by rarity or by named status — the rarity filter offers a "common-uncommon (C/U)" option, and `handleReroll` has no `isNamed` check. In practice you can reroll any item the Workshop will display, including named ones.
+**Requirements:** none worth mentioning. Any item in the vault or on a hero's back can be rerolled — Common or Legendary, named or nameless. The one exception is a **Cursed** item, which declines further attention, and the Workshop knows better than to insist.
 
 **Reroll Cost:**
 ```
 Cost = 1,000 × Rarity Tier × 2^(Previous Rerolls)
 ```
 
-Costs double each time you reroll the same item. You can preview the new stats and choose to Accept or Reject before committing.
+Costs double each time you reroll the same item. The gold goes the moment the dice leave your hand; you then see the new roll beside the old and keep whichever you prefer — but either way the reroll counts, and the next one costs double.
 
 **Navigate to:** the **Workshop** (⚙) button in the bottom navigation — it is a peer of Guild and Market, not a sub-screen of the Guild Hall.
 
@@ -478,7 +478,7 @@ Everything Rare and above is drop-only, awarded from content completion:
 | Raids | Ichors (6% each), Salt of Cleansing and Portents (4% each), Cursed Sigil (3%) |
 | World Bosses | Cursed Sigil only (5%) |
 
-Within a rarity tier every reagent shares one rate, and the tiers descend in the order you'd hope — Common ahead of Uncommon ahead of Rare ahead of Epic ahead of Legendary. This was not always so. For a while an Ichor was three times scarcer than a Portent it was supposed to outrank, and the Guild Clerk's filing system, which sorts by rarity, quietly stopped matching the drawer contents.
+Within a rarity tier every reagent shares one rate, and the tiers descend in the order you'd hope — Common ahead of Uncommon ahead of Rare ahead of Epic ahead of Legendary — which keeps the Guild Clerk's filing system, sorted by rarity, in step with the drawers.
 
 Difficulty also gates what can drop *at all*. Every reagent carries a minimum content rating, and below it the roll doesn't happen: Powders from ⭐, Salt of Renewal from ⭐⭐, the Ichors from ⭐⭐⭐, Salt of Cleansing and both Portents from ⭐⭐⭐⭐, and the Cursed Sigil from ⭐⭐⭐⭐⭐. A one-star pest-control contract yields Powders and nothing else, no matter how many times you run it: no quantity of rats adds up to an Epic Portent, and the Guild Clerk has had to explain this more than once. Raids and World Bosses declare no star rating and are ungated, on the reasonable grounds that anything with a raid boss in it is endgame by construction. The Abyssal Spire converts depth into stars instead: floors 1–10 count as ⭐⭐, 11–25 as ⭐⭐⭐, 26–50 as ⭐⭐⭐⭐, and 51 and beyond as ⭐⭐⭐⭐⭐.
 
@@ -488,7 +488,7 @@ Each currency is an independent Bernoulli roll per clear — you can receive mul
 
 ### Workshop Currency Discount
 
-Workshop levels 2–10 reduce the gold cost of currency operations by 10% per level above 1 — `(level − 1) × 10%`, capped at 90% at level 10. This applies to the gold fee charged when you use a currency on an item, not to market purchase prices.
+Workshop levels 2–10 take 10% per level above 1 off the gold cost of **Reroll All**, reaching 90% off at level 10. Currencies themselves cost nothing to apply beyond the currency, the reagent being considered payment enough, and market prices are the market's own business.
 
 ---
 
@@ -499,7 +499,7 @@ Workshop levels 2–10 reduce the gold cost of currency operations by 10% per le
 1. **Focus One Crafter** - Level one hero's crafting skill fast; a generalist who's mediocre at everything produces consistently mediocre items
 2. **Process Materials** - Keep raw materials processed and ready; unprocessed ore can't be crafted into anything useful, regardless of how much you have
 3. **Unlock Stations Early** - Facility missions are worth prioritizing; you cannot craft what you don't have a station for
-4. **Research Basic Recipes** - Library investment pays off quickly with access to Tier 2 recipes before you'd find them in the field
+4. **Research Basic Recipes** - Workshop research pays off quickly with access to Tier 2 recipes before you'd find them in the field
 
 ### Mid Game
 
@@ -511,7 +511,7 @@ Workshop levels 2–10 reduce the gold cost of currency operations by 10% per le
 ### Late Game
 
 1. **Masterwork Crafters** - Skill level 100 guarantees quality rolls of 50+, which eliminates Poor and Normal outcomes entirely
-2. **Farm World Bosses** - The only reliable source of ⭐⭐⭐⭐⭐ recipes; no Library level substitutes for this
+2. **Farm World Bosses** - The only reliable source of ⭐⭐⭐⭐⭐ recipes; no amount of research substitutes for this
 3. **Enchant Everything** - Bare high-tier gear is leaving performance on the table
 4. **Prosthetics** - Enchanted prosthetics at 125% efficiency outperform the original body part; this is, technically, a reason to be optimistic
 

@@ -45,7 +45,7 @@ A clock that punishes dawdling. The Guild Clerk has strong feelings about heroes
 - Reward: +40% gold
 - Visual: Red screen tint, timer UI
 
-> **Currently out of rotation** — and for a more interesting reason than the other two. The clock is real and wired up; it simply never strikes. Fifty measured heroic resolutions reached turn 15 exactly zero times, because heroic fights end well before then, so the modifier promised a threat the combat could not deliver. Should fights ever get longer, it is ready and waiting.
+> **Currently out of rotation** — and for a more interesting reason than the others. The clock is real; it simply never strikes. Heroic fights are over, one way or another, long before turn 15, so the modifier was promising a threat no party ever stayed long enough to meet. The realm has stopped offering it.
 
 ### Elite Swarm 👑
 **Difficulty:** 2/3
@@ -65,7 +65,7 @@ The dungeon rearranges itself while you're inside it. The map you made three roo
 - Reward: +30% gold
 - Visual: Reality glitch particles, warped floor overlay
 
-> **Currently out of rotation.** The modifier is defined, but nothing in combat implements the rearranging, so it has been pulled from the weekly draw rather than advertised falsely. It remains here against the day someone wires the rooms up.
+> **Currently out of rotation.** The rooms, it turns out, stay stubbornly where they were built, and the realm declines to post a contract promising otherwise.
 
 ### Cursed Ground 💀
 **Difficulty:** 2/3
@@ -85,7 +85,7 @@ Random magical chaos. Sometimes it helps you. Usually it doesn't.
 - Reward: +100% skill gem chance, +30% gold
 - Visual: Arcane sparks, arcane runes floor overlay
 
-> **Currently out of rotation**, for the same reason as Fragmented Reality: the random spell effects have no implementation behind them, so the contract would be describing a hazard that never arrives.
+> **Currently out of rotation**, for much the same reason as Fragmented Reality: the random spell effects never actually occur, and a contract describing a hazard that never arrives is, in the Guild Clerk's view, fraud with extra steps.
 
 ### Shattered Defenses 🛡️
 **Difficulty:** 2/3
@@ -93,7 +93,7 @@ Random magical chaos. Sometimes it helps you. Usually it doesn't.
 Your armor works 30% less well. Warriors find this existentially threatening.
 
 - Heroes have -30% armor and resistances
-- Reward: +30% gold. (A tripled defence-gear drop rate is pencilled into the modifier's notes and has never been implemented; do not plan a wardrobe around it)
+- Reward: +30% gold, and nothing else — no shower of replacement armour, whatever the name suggests to an optimist. Do not plan a wardrobe around it
 
 ### Chaos Incarnate 🌪️
 **Difficulty:** 3/3
@@ -103,6 +103,8 @@ Two modifiers at once. For heroes who looked at the other nine options and thoug
 - 2 random modifiers active simultaneously
 - Reward: +75% gold (stacks with component modifiers)
 - Visual: Chaos swirl particles
+
+> **Currently out of rotation.** Chaos Incarnate is kept out of the weekly draw; the realm, for once, is showing restraint.
 
 ---
 
@@ -138,7 +140,7 @@ Difficulty bonuses:
 
 ## Weekly Rotation
 
-Three heroic dungeons are available each week, rotating every **Thursday at 00:00 UTC** (the rotation epoch is 2026-01-01, a Thursday, and the window steps forward in 7-day increments — `WeeklyRotation.ts:24`). The Guild Clerk is responsible for posting the rotation on the notice board and, despite years of service, has never once been thanked.
+Three heroic dungeons are available each week, rotating every **Thursday at 00:00 UTC**, regardless of what day it is in the guild. The Guild Clerk is responsible for posting the rotation on the notice board and, despite years of service, has never once been thanked.
 
 | Tier | Stars | Level |
 |------|-------|-------|
@@ -146,7 +148,7 @@ Three heroic dungeons are available each week, rotating every **Thursday at 00:0
 | Heroic Challenge | ⭐⭐⭐⭐ | Base + 5 |
 | Heroic Ordeal | ⭐⭐⭐⭐⭐ | Base + 10 |
 
-Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Four are excluded from the draw: **Chaos Incarnate**, which stacks two others and is being kept back; **Fragmented Reality** and **Arcane Instability**, neither of which has a combat hook behind it; and **Enrage Timer**, whose hook exists but whose clock no heroic fight has ever run long enough to reach — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply stopped offering them.
+Each tier gets a randomly assigned modifier, and no modifier repeats within the same week. Four are excluded from the draw: **Chaos Incarnate**, which stacks two others and is kept back; **Fragmented Reality** and **Arcane Instability**, which don't do what they say on the tin; and **Enrage Timer**, whose clock no heroic fight runs long enough to hear — rather than print a promise on the contract card that the fight would then decline to keep, the realm simply doesn't offer them.
 
 The contract names its modifier and quotes what the modifier does, so the card tells you what you are walking into before you agree to walk into it.
 

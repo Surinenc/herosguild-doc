@@ -268,7 +268,7 @@ When exploring dungeons:
 
 ### Guild Vault
 
-Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers six type filters (`Vault.tsx:75-82`): **All / Weapons / Armor / Accessory / Consumables / Materials**, plus bulk actions.
+Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers six type filters: **All / Weapons / Armor / Accessory / Consumables / Materials**, plus bulk actions.
 
 ### Item Actions
 

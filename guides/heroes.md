@@ -82,7 +82,7 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 - **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
 - **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
 - **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
-- **Trap Detection & Lockpicking** - Rogues (or heroes with the KeenEyes / NimbleFingers traits) handle traps and locks the rest of the party would fail at — `Expedition.ts:221, 224`
+- **Trap Detection & Lockpicking** - Rogues handle the traps and locks the rest of the party would fail at, usually by being the only one who thought to look
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
@@ -145,7 +145,7 @@ Clerics are the backbone of any party, keeping allies alive through the toughest
 ```
 Base Heal = Skill Base Heal + INT + (Level + sqrt(Level)) + Max HP × 0.015
 ```
-Then the realm applies, in order: mood modifier (±20%), skill proficiency, the **Cleric magical damage bonus** at half-rate (`× 1 + magicDamage% / 200`), heal-effectiveness from gem supports, ascendancy healing-% nodes, and set bonuses — Crusader 3-piece (×1.25) and Paladin 3-piece (×1.30). A fully-supported endgame Cleric heals for several times what the base formula suggests, which is the difference between the party surviving and the Guild Clerk filing more paperwork than usual.
+Then the realm applies, in order: mood modifier (±20%), skill proficiency, the **Cleric's magic damage bonus** at half its usual weight, heal-effectiveness from gem supports, ascendancy healing-% nodes, and set bonuses — Crusader 3-piece (×1.25) and Paladin 3-piece (×1.30). A fully-supported endgame Cleric heals for several times what the base formula suggests, which is the difference between the party surviving and the Guild Clerk filing more paperwork than usual.
 
 **Best For:** Every party needs one! Essential for longer dungeons. Arguably the most important class, a fact they will remind you of at every opportunity.
 
@@ -211,7 +211,7 @@ These are calculated from primary stats, because apparently nothing in this guil
 | Crit Damage | 150% × (1 + total crit-damage bonus %), from the same list of sources |
 | Energy Shield | (Mage and Necromancer only) INT × 5, plus any flat shield from support gems, raised by passive Energy Shield % |
 
-The sheet and the fight read the **same two functions**, so the crit gloves, set bonuses, passive nodes and gem crit that the Hero Details screen totals up are the same ones the dice are handed. What the display cabinet promises, the battlefield delivers — an arrangement the Guild Clerk considers unremarkable and several armourers consider a triumph.
+The sheet and the fight do **the same sums**, so the crit gloves, set bonuses, passive nodes and gem crit that the Hero Details screen totals up are the same ones the dice are handed. What the display cabinet promises, the battlefield delivers — an arrangement the Guild Clerk considers unremarkable and several armourers consider a triumph.
 
 ---
 
@@ -241,7 +241,7 @@ The quality multiplier lands on **every** stat, after every other bonus has been
 
 ### Background & Life History
 
-Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from a catalog of a hundred and twenty events. Both feed multiplicative modifiers into the damage chain and the effective-stats pass, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
+Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from just under two hundred possible events. Both feed multiplicative modifiers into the damage chain and the hero's stats, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
 
 The CV appears on the Details modal at the Tavern, where it is a sales document, and on the Background tab in Hero Details, where it becomes a medical history. See [Hero Backgrounds](backgrounds.md) for the full system.
 
@@ -329,7 +329,7 @@ Certain injuries cause instant death — which is why the vital-organ prosthetic
 
 Destroyed parts can be replaced with prosthetics. The original limb-and-sense set (arms, legs, hands, feet, eyes, ears) is joined by full-body prosthetics covering 10 additional body part families — Brain, Jaw, Nose, Heart, Lung, Liver, Kidney, Stomach, Spine, and Shoulder — for a total of 47 prosthetic types. The Guild Clerk considers this a testament to both engineering ambition and the frequency of workplace injuries.
 
-**Installing one:** Open a hero's Body Status modal (the ✚ panel on the right of the character screen). Every non-healthy part with an in-stock, tier-compatible prosthetic gets an install button showing the prosthetic name, efficiency, and current stock — click to fit it. The button only appears when the current Infirmary tier supports that prosthetic. Fees are paid at craft time via material costs (see [Crafting Guide](crafting.md)); the surgical procedure itself is currently free — the Guild Clerk assumes the anaesthetic budget will resolve itself.
+**Installing one:** Open a hero's Body Status modal (the ✚ panel on the right of the character screen). Every non-healthy part with an in-stock, tier-compatible prosthetic gets an install button showing the prosthetic name, efficiency, and current stock — click to fit it. The button only appears when the current Infirmary tier supports that prosthetic. Fees are paid at craft time via material costs (see [Crafting Guide](crafting.md)); the surgical procedure itself is free — the Guild Clerk assumes the anaesthetic budget will resolve itself.
 
 | Tier | Efficiency | Infirmary Level | Crafting Skill |
 |------|------------|-----------------|----------------|
@@ -337,9 +337,7 @@ Destroyed parts can be replaced with prosthetics. The original limb-and-sense se
 | Standard | 80% | Level 4 | Metalsmithing 10 |
 | Enchanted | 125% | Level 5 | Arcana 15+ |
 
-**Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys, Stomach, Spine) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead (or, for paired organs like lungs and kidneys, dies only when both are gone). The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders) work as before: Destroyed-only installation.
-
-**Install fees:** The gold-cost surgical fee described in previous versions is not currently charged — the only cost is the material investment at craft time. If per-part surgical fees are added later, this section will list them.
+**Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys, Stomach, Spine) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead (or, for paired organs like lungs and kidneys, dies only when both are gone). The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders) take a prosthetic only once Destroyed, the guild declining to saw off anything that still works.
 
 ---
 
@@ -356,7 +354,7 @@ Every day, each active illness gains **severity** and each afflicted hero builds
 
 Illnesses spread, and they spread along the lines of affection. Contagion ticks daily against every uninfected hero in reach — the whole roster if you're at the guild, your party-mates if you're out on a mission — and the multipliers stack: **married ×3.5**, **lovers, partners and the merely dating ×3.0**, **best friends ×2.0**, **sharing a room ×2.0 on top of whichever of those applies** (see [Cohabitation](guild.md#cohabitation)), **same mission party ×1.5**, and a Plague crisis **×3** across everything transmissible. **Enemy** and **Nemesis** bonds *dampen* transmission to **×0.7** — heroes who loathe each other keep their distance, which turns out to be medically fortunate.
 
-The whole product is then capped at **0.85**, because a married couple in a shared bed during a plague was otherwise reaching certainty, and certainty makes for poor drama. Even at the ceiling there is roughly a one-in-seven chance of not catching it, which the Guild Clerk files, per Guild custom, under *hope*.
+The whole product is then capped at **0.85**, because a married couple in a shared bed during a plague would otherwise reach certainty, and certainty makes for poor drama. Even at the ceiling there is roughly a one-in-seven chance of not catching it, which the Guild Clerk files, per Guild custom, under *hope*.
 
 ### Symptom Penalties
 
@@ -395,7 +393,7 @@ A few specimens worth naming individually, because you will meet them and rememb
 
 ### Treatment
 
-Whenever any hero is sick, the next morning opens on the **Infirmary scouting scene** — rendered before the Tavern and above the ceremonial moment queues, on the reasonable principle that dying tomorrow is more urgent than most other things. Each sick hero gets a card: illness name, severity bar, immunity bar, Pratchett-flavoured symptom notes, and a **Treat** toggle. Treatment slots are limited by Infirmary tier:
+Whenever any hero is sick, the next morning opens on the **Infirmary scouting scene** — rendered before the Tavern and above the ceremonial moment queues, on the reasonable principle that dying tomorrow is more urgent than most other things. Each sick hero gets a card: illness name, severity bar, immunity bar, symptom notes written with rather more relish than strictly necessary, and a **Treat** toggle. Treatment slots are limited by Infirmary tier:
 
 | Infirmary Level | Treatment Capacity |
 |-----------------|--------------------|
@@ -415,11 +413,11 @@ Recovery is a matter of immunity reaching 100. A non-lethal illness runs its cou
 
 A **Cleric present at the guild** — not dead, not on mission, no assignment necessary — adds an immunity bonus of **+25%** to each treated hero. Heroes with high VIT (above the class baseline of 10) also add a **constitution bonus** of up to +50% immunity gain of their own; VIT is genuinely load-bearing here in a way it isn't in ordinary combat.
 
-**Confirm** applies your chosen treatments. **Skip Infirmary Tonight** dismisses the scene and lets the ward fill itself, by precisely the rule you would have used by hand: one bed per hero, sickest first — ranked on the worst single strain each of them is carrying — and every strain on a hero who gets a bed is treated. The house triages perfectly competently. What the house cannot do is disagree with you about who matters: a two-bed ward goes to the two nearest the lethal threshold, which is the right answer to a question you may well have wanted to answer differently, the promising level-30 with a survivable cough being worth rather more to the guild than the recruit who is already three-quarters of the way through the door. Sick heroes are flagged on their **HeroRow** with an illness badge coloured by severity — green under 30, amber 30 to 70, red past 70 — so you can tell at a glance who's on borrowed time.
+**Confirm** applies your chosen treatments. **Skip Infirmary Tonight** dismisses the scene and lets the ward fill itself, by precisely the rule you would have used by hand: one bed per hero, sickest first — ranked on the worst single strain each of them is carrying — and every strain on a hero who gets a bed is treated. The house triages perfectly competently. What the house cannot do is disagree with you about who matters: a two-bed ward goes to the two nearest the lethal threshold, which is the right answer to a question you may well have wanted to answer differently, the promising level-30 with a survivable cough being worth rather more to the guild than the recruit who is already three-quarters of the way through the door. Sick heroes are flagged on their roster row with an illness badge coloured by severity — green under 30, amber 30 to 70, red past 70 — so you can tell at a glance who's on borrowed time.
 
-Each card also carries an **Until Cured** toggle, which exists because a bed only ever bought one night and long illnesses meant re-picking the same three invalids every single evening until somebody recovered or didn't. Flagged heroes are pre-ticked into the ward the moment the scene opens — up to the bed count, worst first, and no further — so most nights you confirm rather than click. It saves the clicks and decides nothing: you can untick anyone before confirming, and the beds are as few as they ever were. The flag rides on the hero rather than the illness and nothing takes it off again, so a veteran you once marked will quietly claim a bed the next time they turn up on the ward roster, which is either thoughtful or presumptuous depending on how many beds you have.
+Each card also carries an **Until Cured** toggle, which exists because a bed only ever buys one night, and a long illness would otherwise mean re-picking the same three invalids every single evening until somebody recovered or didn't. Flagged heroes are pre-ticked into the ward the moment the scene opens — up to the bed count, worst first, and no further — so most nights you confirm rather than click. It saves the clicks and decides nothing: you can untick anyone before confirming, and the beds are as few as they ever were. The flag rides on the hero rather than the illness and nothing takes it off again, so a veteran you once marked will quietly claim a bed the next time they turn up on the ward roster, which is either thoughtful or presumptuous depending on how many beds you have.
 
-**It also does something rather more useful than saving clicks: it quarantines.** A hero flagged Until Cured, still ill, and not out on a mission is **isolated** — they neither pass their strains to anyone nor catch anything new. A single night's bed does not achieve this; by morning that hero is back among the guild, breathing on everyone. Nor does the flag isolate a hero who has already recovered. Before this, a player who conscientiously kept a consumptive in the infirmary was running a permanent infection source in the middle of the guild, which is close to the opposite of what they were trying to do.
+**It also does something rather more useful than saving clicks: it quarantines.** A hero flagged Until Cured, still ill, and not out on a mission is **isolated** — they neither pass their strains to anyone nor catch anything new. A single night's bed does not achieve this; by morning that hero is back among the guild, breathing on everyone. Nor does the flag isolate a hero who has already recovered. Quarantine, like the ward itself, is for the sick.
 
 ### Chronic Traits
 
@@ -531,13 +529,13 @@ What a hero can afford is expressed in absolute gold rather than as a share of t
 | Fine | 400–1,500g |
 | Extravagant | 2,000–10,000g |
 
-Heroes never spend down to nothing — they keep roughly a day's wage in reserve, on the grounds that a hero who blew every coin on one evening and could then do nothing at all until payday reads as a bug rather than a personality.
+Heroes never spend down to nothing — they keep roughly a day's wage in reserve, on the grounds that a hero who blew every coin on one evening and could then do nothing at all until payday would be less a personality than a cautionary tale.
 
 Purse and daily wage are both shown on the **Career tab** of the Hero Details modal.
 
 ### Days Off Cost Money
 
-The reasons a hero is unavailable — the Personal Day, the Hangover, the family business that may or may not exist — are now **priced**, and the hero pays. See [Unavailability](relationships.md#unavailability) for the reasons themselves and what the ledger records.
+The reasons a hero is unavailable — the Personal Day, the Hangover, the family business that may or may not exist — are **priced**, and the hero pays. See [Unavailability](relationships.md#unavailability) for the reasons themselves and what the ledger records.
 
 The short version: the gold comes out of their purse, which is gold not going into the fund below. A hero who keeps going to the coast never finishes saving for anything. That tension is deliberate.
 
@@ -587,7 +585,7 @@ The **Career tab** shows the dream as a progress bar with the hero's own words u
 
 ### What Happens When the Fund Fills
 
-Authored per dream, not derived from its price — nobody hands in their notice over a pair of boots:
+Each dream decides for itself, whatever it cost — nobody hands in their notice over a pair of boots:
 
 - **They keep it.** They buy the thing, carry on working, and are permanently a little better for having it — a small flat mood bonus, sometimes a percentage stat modifier, always a line on the Career tab under *Things they saved for*. Those stat modifiers land on the five stats a hero actually has: reflective dreams read as **INT**, sociable ones as **LCK**. Wisdom and charisma are admired throughout the realm and measured nowhere in it, a state of affairs the Guild Clerk finds restful. Then they start saving for something else, drawn from what they haven't already bought. Most dreams work this way
 - **They leave.** Some dreams *were* the change of life. The hero retires from the guild, alive, on their own terms, owing nothing
@@ -596,7 +594,7 @@ A little over one dream in five is the second kind. You will not know which unti
 
 ### Retirement
 
-A retiring hero walks out through the front gate in daylight and is filed in the **Departed archive** under `Retired`, which is the only cheerful entry that archive has ever held.
+A retiring hero walks out through the front gate in daylight and is filed in the **Departed archive** under *Retired*, which is the only cheerful entry that archive has ever held.
 
 There is a **retirement party** — the retiree's last night, at which everyone has a view. The guild feels it as a loss rather than a bereavement, and the hall sorts itself into camps:
 
@@ -628,8 +626,8 @@ A hero can leave the guild in two distinctly different ways, and the realm keeps
 Heroes killed in combat get a memorial in the Chapel. When a hero dies, the realm:
 
 - Generates an **obituary** — a short, Chronicle-flavoured three-paragraph piece drawn from the hero's background, career, relationships, and the manner of their death. The Guild Clerk has standing instructions not to read these aloud at staff meetings, having tried it once
-- Preserves any **earned titles** the hero held; the memorial card shows the first two as title chips with a `+N` overflow indicator
-- Marks the hero as `Dead` and removes them from the active roster permanently — their equipment goes with them. Gear cannot be pulled from a corpse during the burial grace period; the loadout is buried alongside the hero. The Vault will not let you select a dead hero's items, however briefly they're still in the system
+- Preserves any **earned titles** the hero held; the memorial card shows the first two, and a modest *+N* for the rest
+- Marks the hero as dead and removes them from the active roster permanently — their equipment goes with them. Gear cannot be pulled from a corpse during the burial grace period; the loadout is buried alongside the hero. The Vault will not let you select a dead hero's items, however briefly they linger on the books
 
 Memorial cards are visible from the Chapel screen. The cards persist indefinitely; the realm does not forget. The Guild Clerk, asked whether the memorial should ever be cleared, has replied only "no" on each of the seven occasions the question has come up.
 
@@ -676,7 +674,7 @@ Heroes earn titles by achieving specific milestones tracked in their Chronicle. 
 | **Heartbroken** | Lose a partner to death | +8% all damage |
 | **Veteran** | Complete 100 missions | +5% XP to lower-level allies |
 | **Ironhide** | Survive 5 near-death experiences | +10% max HP |
-| **Oathbound** | Form an OathSworn bond | +8% damage with oath partner |
+| **Oathbound** | Form an Oath Sworn bond | +8% damage with oath partner |
 | **Master Artisan** | Craft 3 Masterwork items | +10 crafting quality |
 | **Shield Brother** | Save 10 allies via Intervene | +15% Intervene chance |
 | **Nemesis Hunter** | End a Blood Feud | +10% damage vs Humanoids |
@@ -716,7 +714,7 @@ Most levels are just numbers. These ones come with something attached:
 
 ### XP Curve
 
-XP required uses a single power-law formula: `ceil(2.5 × level^2.5)`. Reaching level 100 is meant to feel like an achievement, not a commute, and `level^2.5` makes sure of it — early levels go quickly, the mid-game stretches, and the last ten levels are the kind of climb that makes you read the patch notes.
+XP required uses a single power-law formula: `ceil(2.5 × level^2.5)`. Reaching level 100 is meant to feel like an achievement, not a commute, and `level^2.5` makes sure of it — early levels go quickly, the mid-game stretches, and the last ten levels are the kind of climb that makes heroes reconsider their career choices.
 
 ### XP Penalties (Levels 95-99)
 

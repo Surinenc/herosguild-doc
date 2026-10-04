@@ -1,6 +1,6 @@
 # Hero's Guild - Player Guide
 
-Welcome to the official documentation for **Hero's Guild**, a tactical guild management RPG where you recruit heroes, manage their relationships, and conquer dungeons.
+Welcome to the official documentation for **Hero's Guild**, a tactical guild management RPG in which you recruit heroes, manage their relationships, conquer dungeons, and pay for all of it. The heroes do the fighting. You do the paperwork. The Guild Clerk would like it known that the paperwork is the harder job.
 
 ## Quick Links
 
@@ -38,7 +38,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 
 ## About Hero's Guild
 
-Hero's Guild is a tactical guild management RPG inspired by games like Darkest Dungeon, RimWorld, and Path of Exile. You'll:
+Hero's Guild is a tactical guild management RPG inspired by games like Darkest Dungeon, RimWorld, and Path of Exile — which is to say it has opinions about stress, about who gets along with whom, and about how many sockets a pair of boots deserves. You'll:
 
 - **Recruit and manage heroes** from 6 unique classes
 - **Build relationships** between guild members
@@ -66,4 +66,4 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 
 ---
 
-*Hero's Guild is currently in Early Access. This documentation is updated regularly as new features are added.*
+*Hero's Guild is currently in Early Access. This documentation is updated as the realm changes, which it does, often, and without asking anyone's permission.*

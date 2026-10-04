@@ -1,6 +1,6 @@
 # Passive Tree
 
-The Passive Tree is the single largest system in Hero's Guild and, by a comfortable margin, the one most likely to make new players stare at the screen in quiet despair. It contains 354 nodes arranged in a hexagonal web connecting all six classes. Think of it as a map of everything your hero *could* become, drawn by someone with strong opinions about symmetry.
+The Passive Tree is the single largest system in Hero's Guild and, by a comfortable margin, the one most likely to make new players stare at the screen in quiet despair. It contains 426 nodes arranged in a hexagonal web connecting all six classes. Think of it as a map of everything your hero *could* become, drawn by someone with strong opinions about symmetry.
 
 Each hero begins at their class starting node and works outward, spending one passive point per level. By level 100, a hero will have allocated roughly a quarter of the tree — enough to feel powerful, not enough to feel safe.
 
@@ -87,7 +87,7 @@ Each class has three branches, offering distinct playstyles. You won't have the 
 **Cleric** — Three interpretations of divine power: protective, supportive, and the one that hits unexpectedly hard.
 | Branch | Theme | Focus |
 |--------|-------|-------|
-| Paladin | Holy warrior | Spell damage, armor (no `holy_damage` stat exists in the passive tree — Cleric branches all scale with `spell_damage`) |
+| Paladin | Holy warrior | Spell damage, armor (there is no Holy Damage stat anywhere in the tree — every Cleric branch scales with Spell Damage, the gods apparently preferring to be invoiced generically) |
 | Prophet | Divine channeller | Mana regen, maximum mana |
 | Inquisitor | Righteous fury | Spell damage, critical strikes |
 
@@ -106,7 +106,7 @@ Keystones are the tree's most dramatic nodes. Every keystone grants a powerful b
 
 ### Bypass Paths
 
-Mid-path keystones have **bypass paths** — adjacent non-keystone nodes connect to create parallel routes around them. A keystone's tradeoff is genuinely optional: you can skip it for 0–1 extra points. The tree does not force you to accept a drawback just to reach the nodes behind it. (The exact number of bypass-equipped keystones isn't a code constant; the `_d` suffix appears on 54 detour-helper nodes spread across the 18 branches.)
+Mid-path keystones have **bypass paths** — adjacent non-keystone nodes connect to create parallel routes around them. A keystone's tradeoff is genuinely optional: you can skip it for 0–1 extra points. The tree does not force you to accept a drawback just to reach the nodes behind it; it merely makes sure you notice yourself declining.
 
 ### Penalty Patterns
 
@@ -128,7 +128,7 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 | Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
 
-Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. The Spire leaderboard reflects this design philosophy: the top entries are all glass cannons, and the second page is full of cautionary tales.
+Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
 
 ---
 
@@ -163,7 +163,7 @@ Crossing into another class's region costs travel points (you're spending nodes 
 
 ## Core Hub Mana Cluster
 
-At the very centre of the tree sits the Core Hub — a ring of twelve slots equidistant from every class. Six of those slots are now mana stat nodes; each has an outward "tail" notable behind it, and beyond those a second outer tier of stronger notables. Sustain has gone from "what your INT happens to give you" to "what you pathed to."
+At the very centre of the tree sits the Core Hub — a ring of twelve slots equidistant from every class. Six of those slots are mana stat nodes; each has an outward "tail" notable behind it, and beyond those a second outer tier of stronger notables. Sustain, here, is not what your INT happens to give you but what you went out of your way to fetch.
 
 ### Hub Ring (six minor stats, alternating)
 
@@ -178,7 +178,7 @@ The flavours alternate around the ring, so any class can reach either kind witho
 
 ### Inner Tails (six notables, one per hub)
 
-Each repurposed hub slot has a single notable connected outward — a stronger version of its parent's flavour:
+Each mana hub slot has a single notable connected outward — a stronger version of its parent's flavour:
 
 | Parent Hub | Tail Notable | Effect |
 |------------|--------------|--------|

@@ -18,7 +18,7 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 | Hostile | -80 to -94 | Requires active management. Or physical separation. |
 | Enemy | -95 to -100 | Puts considerable effort into this. It shows in the combat stats. |
 
-The negative bands are exact mirrors of the positive ones — Enemy is as narrow as Devoted, Dislike as wide as Friend. They were not always: the old ladder crammed outright enmity into the last 25 points and made Enemy far easier to reach than Devoted, so a guild could acquire sworn enemies faster than it acquired anybody's devotion. Hatred now costs what love costs.
+The negative bands are exact mirrors of the positive ones — Enemy is as narrow as Devoted, Dislike as wide as Friend. Hatred costs exactly what love costs, which is one of the few fair prices in the realm.
 
 ---
 
@@ -26,16 +26,16 @@ The negative bands are exact mirrors of the positive ones — Enemy is as narrow
 
 ### Mission Events
 
-Every mission is a social experiment as much as a combat one. Each pair of mission-mates rolls separately on a small set of independent outcomes (`SocialEventGenerator.generateMissionEvents` at `SocialEventGenerator.ts:836-928`):
+Every mission is a social experiment as much as a combat one. Each pair of mission-mates rolls separately on a small set of independent outcomes:
 
 | Outcome | Chance | Trust Change |
 |---------|--------|--------------|
-| Mission failure blame (Blame, Cowered, LeftBehind, HoardedLoot) — on a failed mission | 40% (on failure) | varies |
-| Personality clash (Argument / Cowered / LeftBehind / HoardedLoot) | 25% | −2 to −6 |
-| Combat bonding (FoughtBackToBack / BrilliantStrategy) — requires the mission had combat | 15% | +3 |
-| Success bonding (SharedMeal / SharedLoot) — requires success | 10% | +2 |
+| Mission failure blame (blaming, cowering, leaving someone behind, hoarding the loot) — on a failed mission | 40% (on failure) | varies |
+| Personality clash (an argument, cowering, leaving someone behind, hoarding the loot) | 25% | −2 to −6 |
+| Combat bonding (fought back to back, a brilliant bit of strategy) — requires the mission had combat | 15% | +3 |
+| Success bonding (a shared meal, a fair split of the loot) — requires success | 10% | +2 |
 
-Those percentages are the **neutral-pair** figures. The realm now scales each roll by how the pair already feel about each other — the amounts don't move, only the odds of the roll landing:
+Those percentages are the **neutral-pair** figures. The realm scales each roll by how the pair already feel about each other — the amounts don't move, only the odds of the roll landing:
 
 | The pair | Blame & clash | Bonding |
 |----------|---------------|---------|
@@ -45,13 +45,13 @@ Those percentages are the **neutral-pair** figures. The realm now scales each ro
 | Friendly or Friend | ×0.7 | ×1.3 |
 | Close Friend, Best Friend or Devoted | ×0.4 | ×1.8 |
 
-Which is to say a failed mission fought by two enemies has an **80%** chance of one blaming the other, and two devoted friends have a 16% chance and rather better odds of coming home closer than they left. Bad pairs get worse on the road; good ones get better. Party composition was already a combat decision; it is now also a social one with compound interest.
+Which is to say a failed mission fought by two enemies has an **80%** chance of one blaming the other, and two devoted friends have a 16% chance and rather better odds of coming home closer than they left. Bad pairs get worse on the road; good ones get better. Party composition is a combat decision and a social one, with compound interest.
 
 ### Social Events
 
 | Action | Trust Change |
 |--------|--------------|
-| Intervene save (combat) | +30 saved / +15 saver during combat (`Combat.ts:5260-5261`) PLUS a post-mission **Saved Life** event that adds +20 saved / +15 saver (`SocialEventGenerator.ts:958-959`) — both fire on a successful intervene |
+| Intervene save (combat) | +30 saved / +15 saver during combat, PLUS a post-mission **Saved Life** event worth another +20 saved / +15 saver — both land on a successful intervene, gratitude being the kind of thing that gets said twice |
 | Shared meal | +2 to +4 |
 | Training together (social) | +2 to +4 |
 | Gift giving | +4 to +6 |
@@ -71,10 +71,10 @@ Which is to say a failed mission fought by two enemies has an **80%** chance of 
 
 | Event | Trust Lost |
 |-------|------------|
-| Romantic rejection | −6 (`SocialEventGenerator.ts:673`) |
-| Jealousy | −2 (mood penalty −4 is the larger sting; `SocialEventGenerator.ts:546-547`) |
-| Insult | −3 to −5 (`SocialEventGenerator.ts:541`) |
-| Hogged loot | −2 to −6 (sub-variant of the personality-clash mission event; `SocialEventGenerator.ts:858-887`) |
+| Romantic rejection | −6 |
+| Jealousy | −2 (the −4 mood penalty is the larger sting) |
+| Insult | −3 to −5 |
+| Hogged loot | −2 to −6 (one of the personality clashes on the road) |
 
 **Guild-hall fights.** An insult between two heroes who already dislike each other (below Dislike) can escalate into an actual fight in the hall: a **4%** chance per day, **doubled** for a Volatile hero. It goes one of two ways, evenly: **cathartic**, worth **+15** opinion, and the pair come away having got something out of their system — or **angering**, worth **-12**, plus a **20%** chance one of them takes a real injury (8% of max HP, and two days out of action). Bad blood, left alone, eventually costs you a hero-day.
 
@@ -167,7 +167,7 @@ Beyond simple friendship, heroes can form special bonds — deeper entanglements
 - **How:** High trust + romantic events
 - **Bonus:** +15% combat stats together
 - **Risk:** Huge penalties if partner dies (Berserk, Broken); the guild does not recommend falling in love as a combat strategy
-- **Special:** +25% intervene chance modifier (`Combat.ts:5656-5660`). Not an always-trigger — the overall intervene chance still caps at 90%
+- **Special:** +25% intervene chance. Not a guarantee — love is subject to the same halving and the same 45% ceiling as everything else (see [Intervene Chance](#intervene-chance))
 - **Housing:** Romantic bonds move heroes in together. If either partner holds a private room, the nightly pass relocates the other into it — see [Cohabitation](guild.md#cohabitation). Sharing a room is worth up to +12 morale and costs one room's upkeep instead of two, which is the romantic case put in accounting terms
 - **Contagion:** It also multiplies illness transmission between them by up to **×7** — ×3.5 for the marriage, ×2.0 again for the shared bed. Love, per medical record, is a vector
 
@@ -232,7 +232,7 @@ All arcs share:
 - Both heroes must be at least **level 5**
 - A per-pair **cooldown of 200 days** after any arc resolves — the realm does not allow the same two heroes to keep restarting
 - Only **one arc in flight per hero** at any time
-- The arc opens with a Chronicle **spark** entry, then a **modal event** in Guild Events with a **3-day deadline**. How long you wait for that modal depends on the archetype — Rivalry lands after **3 days**, Romance and Honor Debt after **5**, Mentorship after **7**, on the sensible grounds that a grudge sharpens faster than a vocation. The default-on-expiry varies by archetype (`arcDefinitions.ts:58,82,107,131`): Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
+- The arc opens with a Chronicle **spark** entry, then a **modal event** in Guild Events with a **3-day deadline**. How long you wait for that modal depends on the archetype — Rivalry lands after **3 days**, Romance and Honor Debt after **5**, Mentorship after **7**, on the sensible grounds that a grudge sharpens faster than a vocation. The default-on-expiry varies by archetype: Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
 - The crisis system has the right of way: if a [crisis](crisis.md) is active, the arc step is deferred by a day
 
 ### The Four Arc Archetypes
@@ -284,17 +284,17 @@ The lifecycle plays out like this:
 3. The outcome resolves immediately: bonds are granted or removed, mood and stat effects apply, and a Chronicle entry is written for both heroes.
 4. The per-pair 200-day cooldown begins.
 
-If one of the heroes dies before the modal resolves, the arc is swept clean with a `relationship_arc_resolved` Chronicle entry on the survivor flagged as a permadeath resolution. The cooldown still applies.
+If one of the heroes dies before the modal resolves, the arc is swept clean, and the survivor's Chronicle records that it ended the hard way. The cooldown still applies.
 
 ### Where Arcs Are Tracked
 
 Arcs surface in three places:
 
 - **Guild Events** — the modal for the active step
-- **The Chronicle** — every hero's Chronicle shows arc sparks and resolutions tagged as Social entries, with metadata fields for which archetype, which branch, and whether the arc ended in permadeath
-- **Pending Consequences** — the queue of upcoming arc modals lives on the relationship arc state, and the deadline for each is visible on the event card
+- **The Chronicle** — every hero's Chronicle shows arc sparks and resolutions as Social entries, noting which archetype, which branch, and whether the arc ended in a funeral
+- **Pending Consequences** — upcoming arc modals wait their turn here, each with its deadline on the event card
 
-The Guild Clerk has, on three separate occasions, suggested adding an "Active Arcs" panel to the Social tab. The suggestion is being considered, in the way that ledger items are considered when nobody has decided who owns them.
+There is no single panel listing every arc in flight. You piece it together from the event cards and the Chronicle, which the Guild Clerk considers excellent practice in reading between the lines, that being where heroes keep most of their feelings.
 
 ---
 
@@ -332,7 +332,7 @@ An intervene attempt requires all of the following, because goodwill alone is no
 
 The base chance is read from **the would-be rescuer's own opinion of the hero in danger**, which is the only direction that makes any sense: nobody has ever thrown themselves in front of an axe because the victim thought well of *them*. A hero adored by a Warrior who owes them a life debt is very hard to kill; a hero who merely tolerates everyone is on their own.
 
-**Then the whole thing is halved.** Every figure in both tables above — the base band, each bonus, and the 90% ceiling — is multiplied by **0.5** at the end, so the real maximum is **45%** and a plain Friend intervenes 10% of the time rather than 20%. Rescues were firing every other day, which made them the second-largest source of good feeling in the guild after the tavern and devalued the thing considerably. A rescue is meant to be a story, not a routine.
+**Then the whole thing is halved.** Every figure in both tables above — the base band, each bonus, and the 90% ceiling — is multiplied by **0.5** at the end, so the real maximum is **45%** and a plain Friend intervenes 10% of the time rather than 20%. A rescue is meant to be a story, not a routine, and the halving sees to it.
 
 ### What Happens
 
@@ -360,13 +360,13 @@ Relationships trigger emotional states during combat — uncontrollable, unsched
 
 | State | Effect | Duration |
 |-------|--------|----------|
-| Inspired | +15% all stats | 3 turns |
-| Enraged | +30% damage, focuses on target | 2-3 turns |
-| Vengeful | +20% damage vs specific enemy | 4-6 turns |
-| Berserk | +50% damage, -30% defense, attacks randomly | 4-5 turns |
-| Grief | -20% all stats, may refuse to heal | 2-3 turns |
-| Broken | Refuses to act, cowers in fear | 4 turns |
-| Panicked | May flee or cower | 2 turns |
+| Inspired | None in the fight itself — a warm glow, mechanically inert | 3 turns |
+| Enraged | Fights aggressively and goes straight for the killer | 2-3 turns |
+| Vengeful | Fights aggressively and goes straight for the killer, for longer | 4-6 turns |
+| Berserk | Fights aggressively at a random enemy and refuses to defend | 4-5 turns |
+| Grief | None in the fight itself — the grief is real, the penalty is not | 2-3 turns |
+| Broken | Refuses to act; stands there, paralysed | 4 turns |
+| Panicked | 40% chance each turn to cower instead of acting | 2 turns |
 
 Note: "Broken" appears as both a combat emotional state (triggered by trauma during combat) and a mood state (mood 0-9). They are separate systems.
 
@@ -459,7 +459,7 @@ A hero who doesn't enjoy gambling can still acquire the taste by trying it: **3%
 - Overwork — heroes sent on back-to-back missions with no rest will eventually stop asking nicely
 - Poor living conditions — the barracks complaint is the one they never stop making
 
-**Adventures now leave thoughts of their own.** A mission or dungeon run writes up what actually happened: the success or the failure, a hero's first kill, a boss going down, saving an ally, *being* saved by one, and a genuinely rich haul. Each arrives as its own listed line rather than an unexplained shift in the total.
+**Adventures leave thoughts of their own.** A mission or dungeon run writes up what actually happened: the success or the failure, a hero's first kill, a boss going down, saving an ally, *being* saved by one, and a genuinely rich haul. Each arrives as its own listed line rather than an unexplained shift in the total.
 
 One rule governs the pile: **a good outcome never leaves a hero worse off than they started.** The success thought is applied last and absorbs whatever the rest of the run cost them, so a party that won, took a beating, lost the loot roll and watched a friend nearly die still comes home no gloomier than they set out. Losing is permitted to hurt. Winning is not.
 
@@ -471,7 +471,7 @@ When mood drops critically low, heroes may have what the Guild Clerk's handbook 
 
 ### Trigger Conditions
 
-Mental breaks can only occur when mood drops below **25**. That one number is shared by the daily roll, the mid-combat check and the BreakRisk chip, so what the chip warns you about is exactly what the morning rolls. Below it, the chance is:
+Mental breaks can only occur when mood drops below **25**. That one number is shared by the daily roll, the mid-combat check and the Break Risk chip, so what the chip warns you about is exactly what the morning rolls. Below it, the chance is:
 
 | Factor | Effect on Break Chance |
 |--------|----------------------|
@@ -489,7 +489,7 @@ A hero already in a break does not roll for another, and a hero **out on a missi
 - Between **10 and 25** mood, only the six **minor** breaks are on the table: Catatonic, Binge, Insulting, Hiding, Wandering, Confession.
 - **Below 10**, the two **major** breaks — Berserk and Desertion — join the pool. A higher tier *adds* options rather than replacing them, so a hero at mood 2 can still simply hide under a table.
 
-This closes a genuinely nasty old behaviour, in which a hero at mood 24 could desert at exactly the same odds as one at mood 1.
+Which is to say a hero at mood 24 is a worry, and a hero at mood 1 is an emergency with its bags packed.
 
 **Six traits change the maths.** Threshold shifts add together; weight multipliers multiply, and the pool is re-normalised before the roll. The **major** threshold of 10 never moves, whatever a hero is carrying, which keeps the worst outcomes reliably rare:
 
@@ -515,9 +515,9 @@ This closes a genuinely nasty old behaviour, in which a hero at mood 24 could de
 | Insulting | 1-2 days | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: **-20** from their side, **-30** from each recipient's |
 | Hiding | 2-5 days | 10% | Set to Resting behind a locked door |
 | Wandering | 1-3 days | 10% | Set to Resting, location unknown |
-| Confession | Instant | 10% | Resolves the same tick. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |
+| Confession | Instant | 10% | Resolves on the spot. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |
 
-Every break ends — the instant ones resolve on the tick they fire, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy. A **Tortured Artist** gets something else out of it: a **40%** chance that coming out the other side also grants them Master's Hand, on top of the catharsis rather than instead of it. Suffering, they will tell you at length, is material.
+Every break ends — the instant ones resolve as they happen, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy. A **Tortured Artist** gets something else out of it: a **40%** chance that coming out the other side also grants them Master's Hand, on top of the catharsis rather than instead of it. Suffering, they will tell you at length, is material.
 
 ### Inspirations
 
@@ -535,7 +535,7 @@ The type is drawn evenly from the four. Each arrives with a **+8 mood** thought 
 ### Combat Impact
 
 Mental breaks affect heroes mid-combat:
-- **Berserk** heroes attack a random target from a pool that includes both allies *and* enemies (`Combat.ts:6859-6941`). The damage passes through the full defensive pipeline (evasion, armor, ascendancy reduction, elemental resists, energy shield) — not "full damage" in the unmitigated sense
+- **Berserk** heroes attack a random target from a pool that includes both allies *and* enemies. The blow is softened by the victim's evasion, armour, resistances and shields like any other, which the ally on the receiving end will regard as cold comfort
 - **Catatonic** heroes freeze and lose their turn completely
 - Other break types primarily affect availability outside of combat
 
@@ -544,7 +544,7 @@ Mental breaks affect heroes mid-combat:
 - Keep mood above the hero's own threshold — 25 for most, adjusted by their traits — because below that line, and only below it, the dice come out
 - Friendships are armour: each close friend takes 5 points off the daily chance
 - Address low mood quickly — the chance compounds at +5% per day, so a week of neglect is worth more than the base rate
-- Watch for risk factors: recent loss of a loved one adds +15% break chance
+- Watch for risk factors: recent loss of a loved one adds +20% break chance
 
 ### Recovery
 
@@ -610,7 +610,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 
 First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder, which is the entire point of an impression. Misanthrope runs the other way: it colours how the holder sees everyone else, and asks nothing of them in return.
 
-Contradictory traits do not turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's are nudged. A hero from an old roster who somehow holds both keeps them, and has presumably made it work, or at least made it everyone's problem.
+Contradictory traits do not turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's are nudged. Should a hero somehow hold both anyway, they keep them, and have presumably made it work, or at least made it everyone's problem.
 
 ---
 
@@ -668,7 +668,7 @@ Heroes also complain about equipment they find aesthetically displeasing (-5 moo
 
 ## Alcohol & Addiction
 
-The Tavern serves drinks. Heroes drink them. Sometimes, they drink too many of them. The game tracks intoxication, tolerance, addiction, and hangovers with the kind of detail that suggests the developers have Opinions about pub culture.
+The Tavern serves drinks. Heroes drink them. Sometimes, they drink too many of them. The game tracks intoxication, tolerance, addiction, and hangovers with the kind of detail that suggests the Guild Clerk has Opinions about pub culture.
 
 ### Drunk Levels
 
@@ -785,7 +785,7 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 | Runaway | Temporarily left the guild |
 | Mental Health | Recovering from trauma |
 
-Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty, paid up front: the override clears the absence, and only then can they be dispatched. Some reasons — like Mourning or Mental Health — cannot be overridden at all. The rule is now the same everywhere: an absent hero cannot be accepted onto a contract, a dungeon run or a Spire climb, rather than being blocked at the Mission Board and quietly admitted through the side doors.
+Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty, paid up front: the override clears the absence, and only then can they be dispatched. Some reasons — like Mourning or Mental Health — cannot be overridden at all. The rule is the same at every door: an absent hero cannot be accepted onto a contract, a dungeon run or a Spire climb, and there is no side entrance.
 
 #### What It Costs Them
 
@@ -913,7 +913,7 @@ Social events are logged with the hero's name and a description. The logs don't 
 
 ## Keepsakes
 
-Heroes accumulate sentimental mementos — non-item tokens stored on their social data (`HeroSocial.ts`). A keepsake is not equipment; it cannot be traded, sold, or dropped. It sits in the hero's record and applies a small permanent bonus, which is the game's way of saying that sentiment has mechanical weight.
+Heroes accumulate sentimental mementos — not items, exactly, but the sort of thing kept in a breast pocket and never mentioned. A keepsake is not equipment; it cannot be traded, sold, or dropped. It sits in the hero's record and applies a small permanent bonus, which is the game's way of saying that sentiment has mechanical weight.
 
 ### How Keepsakes Are Acquired
 
@@ -927,15 +927,15 @@ Gift names are drawn from per-class pools — Warriors give battle-worn hilts an
 
 ### Keepsake Bonuses
 
-Each keepsake carries exactly one bonus from a discriminated union (`KeepsakeBonus` in `HeroSocial.ts`):
+Each keepsake carries exactly one bonus, sentiment being specific:
 
 | Kind | Effect | Example |
 |------|--------|---------|
-| `mood_floor` | Permanent mood modifier (adds to mood baseline) | +3 mood floor |
-| `combat` | Percent bonus to crit chance, dodge, or life steal | +3% crit chance |
-| `resist` | Fire, cold and lightning land on the same resist stats your gear uses, so a keepsake and a ring add together rather than arguing. A *general* resist keepsake, having no stat to land on, reduces damage taken instead | +5% fire resist |
+| **Mood floor** | Permanent mood modifier (adds to mood baseline) | +3 mood floor |
+| **Combat** | Percent bonus to crit chance, dodge, or life steal | +3% crit chance |
+| **Resist** | Fire, cold and lightning land on the same resist stats your gear uses, so a keepsake and a ring add together rather than arguing. A *general* resist keepsake, having no stat to land on, reduces damage taken instead | +5% fire resist |
 
-Bonuses are applied as buffs via `applyKeepsakeBonus` (`GameState.ts:174`) — combat and resist bonuses become `BuffSource.Keepsake` entries visible in the hero's Active Effects panel; mood-floor bonuses are applied as long-lived mood modifiers on the social system. Each keepsake's buff is filed under that keepsake's own id and replaces any earlier copy of itself rather than piling up beside it, so a trinket that somehow arrives twice makes a hero sentimental rather than twice as lucky.
+Combat and resist bonuses appear in the hero's Active Effects panel, labelled as keepsakes; mood-floor bonuses sit among their thoughts as long-lived comforts. Each keepsake counts once, however many times it turns up, so a trinket that somehow arrives twice makes a hero sentimental rather than twice as lucky.
 
 ### Limits
 
@@ -964,7 +964,7 @@ There is no cap on the number of keepsakes a hero can hold. A hero who lives lon
 
 The goal is a roster where people fight better together than they do alone — which requires treating the social feed as seriously as the stat sheet:
 
-1. Start with compatible traits — Antisocial and Jealous heroes require more management than they're worth in most party compositions
+1. Start with compatible traits — Abrasive and Jealous heroes require more management than they're worth in most party compositions
 2. Run missions together consistently — bonds form through sustained shared experience, not single events
 3. Use Tavern activities — the nightly routines quietly accumulate trust at no cost except the time
 4. Let relationships form naturally — manufactured bonds are weaker than earned ones

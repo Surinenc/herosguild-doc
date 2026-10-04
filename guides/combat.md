@@ -351,7 +351,7 @@ Combat can trigger powerful emotional reactions based on relationships. This is 
 | **Grief** | None in the fight itself. The grief is real; the penalty is not | 2-3 turns | Friend dies |
 | **Enraged** | **Fights aggressively and goes straight for the killer**, if known. No extra damage — only extra intent | 2-3 turns | Close friend / student dies |
 | **Vengeful** | **Fights aggressively and goes straight for the killer.** Like Enraged, it adds focus rather than damage, and lasts longer, revenge being a dish best served over several turns | 4-6 turns | Mentor / lover dies |
-| **Berserk** | **Fights aggressively at a random target — enemy or ally.** The blows are mitigated by armour, evasion and resistances like any other, which the ally on the receiving end will regard as cold comfort. No bonus damage, no lowered defence; just the wrong target | 4-5 turns | Lover dies |
+| **Berserk** | **Fights aggressively at a random enemy and refuses to defend.** No bonus damage, no lowered defence — just no plan whatsoever. (Not to be confused with the Berserk [mental break](relationships.md#mental-breaks), which is not fussy about which side it hits) | 4-5 turns | Lover dies |
 | **Broken** | Cannot act. Sits down. Possibly forever, as far as they're concerned | 4 turns | Extreme trauma |
 
 ### Death Reactions

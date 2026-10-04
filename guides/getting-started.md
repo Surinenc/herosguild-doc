@@ -40,9 +40,13 @@ Guilds that fail usually fail because their master treated time as background ra
 
 Send tank + damage + healer + one flex. The Guild Clerk has watched hundreds of new masters send four damage dealers into a dungeon with no healer. Every one of them then spent gold they didn't have on a memorial. **Balance beats power** for the first ~30 hours of play.
 
-### 2. Guild Hall to level 2 is your first upgrade priority
+### 2. Barracks first, then the Guild Hall
 
-Guild Hall level 1 unlocks two mission slots. Level 2 unlocks four — a straight doubling of your income throughput. It costs **5,000 gold plus 50 wood and 30 stone**, plus three in-game days to build, so you can't do it on Day One. Run missions until you can afford it, then build it immediately. After that: **Forge** (better weapons), then **Alchemy Lab** (potions save lives). Barracks upgrades wait until you actually have enough heroes to strain the starting capacity of 12.
+Heroes judge their beds long before the beds run out. The Barracks starts to feel crowded at half full, and once three-quarters of the beds are taken every hero sleeping there carries a standing *"These beds are terrible"* — a mood penalty that lasts exactly as long as the crowding does and goes with them into every fight. An upgrade fixes it twice over: more beds, so the same roster has room to breathe, and better ones, worth **+5 comfort** a level, so they mind less. Level 2 costs **2,000 gold plus 30 wood and 20 stone** and two days, which makes it the cheapest happiness in the guild.
+
+Then the **Guild Hall to level 2**: it doubles your mission slots from two to four, and with them your income, for **5,000 gold plus 50 wood and 30 stone** and three days.
+
+The **Forge**, the **Alchemy Lab** and the other crafting buildings start locked. While any of them are, the Mission Board always carries a two-star contract that unlocks the next one — take it whenever you have a spare party.
 
 ### 3. Consumables must be equipped to be useful
 
@@ -56,7 +60,7 @@ You'll notice by day 20 that some pairs of heroes always volunteer for the same 
 
 - **Missions** — contracts from the Mission Board. Heroes depart at night, combat resolves offscreen. Guild income workhorse.
 - **Dungeons** — real-time interactive expeditions. You control the party as they explore. Slower, more control.
-- **Raids** — 15-hero endgame fights. Unlock at 5,000 reputation and a level-50 hero.
+- **Raids** — 15-hero endgame fights. Once you have 5,000 reputation and a level-50 hero, a world boss may appear; it arrives when it chooses, which is never convenient.
 - **The Abyssal Spire** — endless tower. Unlocks when one hero reaches level 95. A Tower run advances the game day.
 
 New guilds should stay on 1-2 star Missions and shallow Dungeons for the first 5-10 hours. Everything else is post-endgame content that will kill your heroes if you knock on the door early.
@@ -66,7 +70,7 @@ New guilds should stay on 1-2 star Missions and shallow Dungeons for the first 5
 The Guild Clerk has seen every one of these. Multiple times. Sometimes in the same week.
 
 1. **Overextending.** The star rating on a mission is a suggestion, not a promise of survival. When in doubt, take an easier one.
-2. **Ignoring injuries.** Injured heroes fight poorly and can die. The Infirmary heals them, but you have to assign them there manually.
+2. **No bench for the wounded.** An injured hero cannot be sent anywhere until they have mended, and neither can one who is resting, training or in the middle of a mental break. A guild with exactly one party's worth of heroes finds this out the morning after its first bad night.
 3. **No bench depth.** Deaths happen. Injuries happen. Plan on running two rotating parties eventually so one is always ready while the other is healing.
 4. **Hoarding gold.** Gold in the vault does not fight dragons. Invest in facility upgrades and better gear.
 5. **Neglecting the Tavern.** Not the drinks — the relationships. Bonds and rivalries decide who fights well together.
@@ -75,7 +79,7 @@ The Guild Clerk has seen every one of these. Multiple times. Sometimes in the sa
 
 Each of these will appear without introduction. Each has its own guide.
 
-- **[Chronicle](guides/heroes.md)** — every hero has an auto-generated journal recording what they've done, refused, been party to, or fled from. Check it before you fire someone.
+- **[Chronicle](heroes.md)** — every hero has an auto-generated journal recording what they've done, refused, been party to, or fled from. Check it before you fire someone.
 - **Prosthetics** — heroes who lose limbs, eyes, or (yes) internal organs can have them replaced. See [equipment](equipment.md).
 - **[Passive Tree](passive-tree.md)** — every hero has a passive progression tree they allocate as they level.
 - **[Ascendancy](ascendancy.md)** — at higher levels, heroes can undertake trials to specialise further.
@@ -96,7 +100,7 @@ Endgame gates, when you get there:
 
 - [Heroic Dungeons](heroic-dungeons.md) — weekly modifier-laden challenges
 - [Abyssal Spire](tower.md) — endless tower, unlocks at hero level 95 (each run advances the game day)
-- [World Boss Raids](raids.md) — 15-hero raids, unlocks at 5,000 reputation and a level-50 hero
+- [World Boss Raids](raids.md) — 15-hero raids; a world boss can appear once you have 5,000 reputation and a level-50 hero
 
 ---
 

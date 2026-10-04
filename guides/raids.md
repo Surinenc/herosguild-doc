@@ -196,7 +196,7 @@ Standing orders are the lever for boss patterns you've seen before: the second t
 
 ## The Turn Loop
 
-**Raids run in real time.** There is no End Turn button; the boss does not wait for you to finish thinking. Turns auto-resolve on a **6-second base tick**, and you control the pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds. A **Pause** button sits in the raid phase header and is also bound to the **Space** key — useful when you need to read a queued telegraph or queue a complex set of orders without the tick eating the window.
+**Raids run in real time.** There is no End Turn button; the boss does not wait for you to finish thinking. Turns auto-resolve on a **6-second base tick**, and you control the pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds. A **Pause** button sits in the raid phase header — useful when you need to read a queued telegraph or queue a complex set of orders without the tick eating the window.
 
 The loop, in practice:
 
@@ -293,10 +293,7 @@ The raid plays out in three stages:
 
 The board layout, from top to bottom: a status bar at the top, the groups roster on the left, the tactical board in the centre, the threat queue and combat log on the right, and the group chips, order panel, and keyboard legend along the bottom.
 
-**Keyboard** (the legend is printed along the bottom of the board, for the forgetful):
-- **M / H / B / T / I / E** — issue order (Move, Hold, Burst, Taunt, Interrupt, Engage)
-- **1 / 2 / 3** — select group
-- **Space** — pause · **Esc** — cancel
+**Keyboard.** A legend along the bottom of the board lists hotkeys — **M / H / B / T / I / E** for orders, **1 / 2 / 3** for groups, **Space** to pause, **Esc** to cancel. It is a handsome legend, and a legend is all it is: the keys do nothing. Every order, group and pause is issued with the mouse. The Guild Clerk has seen signposts like this before, usually pointing at a bridge that isn't there.
 
 A trio of view tabs in the phase header switches the central panel between **Live** (the fight as it stands), **Telegraphs** (a reference card for what the queued symbols mean), and **Storyboards** (a tactical preview of the boss's known patterns). The Telegraphs tab is worth opening every time you face a new boss; the Storyboards tab is worth opening every time you face a familiar one.
 

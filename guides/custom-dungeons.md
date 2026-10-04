@@ -21,7 +21,7 @@ The app does two quite different jobs, both from the same home screen, and most 
 | Loop | What you do | Where it lives |
 |------|-------------|----------------|
 | **Author** | Design rooms, validate, test, publish your own dungeon | Editor + Test Modal + Publish Modal |
-| **Raid** | Browse community dungeons, deploy a party, run the dungeon | Gallery + Raid runtime |
+| **Raid** | Browse community dungeons, deploy a party, run the dungeon | Gallery + Raid screen |
 
 You can be a full-time architect, a full-time raider, or both. Most Guild Masters end up both, because the architect rewards are paid out when *other* people run your dungeons, and the runners need dungeons to run.
 
@@ -102,7 +102,7 @@ Each card shows the dungeon's name, the architect's name (or "Anonymous"), the e
 
 ### Picking a Party
 
-The raid runtime opens with a party picker. The only eligibility rule is that the hero is **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
+A raid opens with a party picker. The only eligibility rule is that the hero is **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
 
 ### The Run
 
@@ -110,9 +110,9 @@ A run proceeds the way all dungeon runs proceed in the ballads: the party enters
 
 **Rewind.** At any point in a run — and most urgently when the whole party is lying on the floor — you can press **Rewind**, pick any point you've already explored on the saga tree, and roll the run back to it as though the unpleasantness never happened. Rewinds are free and unlimited. They are not, however, *forgotten*: every one is counted and printed on your results screen, a quiet record of how many times history had to be asked nicely. The future you abandoned stays on the tree as a ghost branch, which is either instructive or haunting depending on how it ended.
 
-### Raid Runtime Mechanics
+### Raid Mechanics
 
-The Custom Dungeon raid runtime has its own toolkit, distinct from regular dungeon combat. The key pieces:
+Custom Dungeon raids have their own toolkit, distinct from regular dungeon combat. The key pieces:
 
 #### Per-Class Session Abilities
 

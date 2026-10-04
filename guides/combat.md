@@ -89,7 +89,7 @@ Socketed skill gems contribute their own crit chance and crit multiplier on top 
 
 ### Enemy Weaknesses
 
-Most enemies have one or two **damage type weaknesses** declared in their template. Hitting an enemy with damage of a type they're weak to multiplies the damage by **1.5× before armor** — the difference between "this fight is a slog" and "this fight is over."
+Most enemies have one or two **damage type weaknesses**, which they would prefer you didn't know about. Hitting an enemy with damage of a type they're weak to multiplies the damage by **1.5× before armor** — the difference between "this fight is a slog" and "this fight is over."
 
 A representative sample:
 

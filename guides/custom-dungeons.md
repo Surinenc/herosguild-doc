@@ -8,7 +8,7 @@ This guide covers the two halves of the system: designing and publishing dungeon
 
 ## Where to Find It
 
-The **Custom Dungeons** button sits at the far right of the bottom navigation, last in a row that runs Tavern, Missions, Dungeon, Craft, Training, Shop, Vault, Facilities, Workshop. It carries a beta badge, which is the interface's way of clearing its throat. Pressing it opens the Custom Dungeons app, which then routes between the various sub-pages depending on what you want to do.
+The **Custom Dungeons** button sits at the far right of the bottom navigation, last in a row that runs Tavern, Missions, Dungeon, Craft, Training, Shop, Vault, Facilities, Workshop. It carries a beta badge, which is the interface's way of clearing its throat. Pressing it opens the Custom Dungeons hall, a building with more doors than it strictly needs, each leading to a different thing you might want to do.
 
 The button is **not the crafting Workshop**. That one has hammers. This one has dungeons. Both are essential, and only one of them ends in a wipe.
 
@@ -68,7 +68,7 @@ Before publishing, you can test-run your own dungeon in the Test Modal. The test
 
 You can iterate the editor → test loop as many times as you like. Nothing about test runs is recorded publicly.
 
-**A clear is proof of *that* dungeon.** Completing the test run stamps a proof against a hash of the dungeon's playable content. Change that content — rooms, connections, keys, encounters — and the proof is torn up and you test again. Purely cosmetic edits, such as renaming a room or rewriting its description, leave it standing. The realm checks the same hash again at publish time against the dungeon you actually submitted, so a proof earned on a beatable draft cannot be carried across to an unbeatable one.
+**A clear is proof of *that* dungeon.** Completing the test run stamps a proof against the dungeon's playable content — its exact fingerprint, as it stood when you beat it. Change that content — rooms, connections, keys, encounters — and the proof is torn up and you test again. Purely cosmetic edits, such as renaming a room or rewriting its description, leave it standing. The realm checks that fingerprint again at publish time against the dungeon you actually submitted, so a proof earned on a beatable draft cannot be carried across to an unbeatable one.
 
 ### Publish Modal
 
@@ -102,13 +102,13 @@ Each card shows the dungeon's name, the architect's name (or "Anonymous"), the e
 
 ### Picking a Party
 
-The raid runtime opens with a party picker. The only eligibility rule is **`hero.state === HeroState.Ready`** (`raidEligibility.ts:24`) — any alive, unassigned, uninjured, untraining, uncrafting, unscheduled hero can be picked. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
+The raid runtime opens with a party picker. The only eligibility rule is that the hero is **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
 
 ### The Run
 
-The raid orchestrator is a 9-state machine: the party enters, traverses rooms, encounters hazards and combat and the dungeon's bespoke moral events, collects loot, and either clears the exit or doesn't. Telegraphs and combat draw on the same systems you know from regular dungeon runs, but the room order, hazards, and events are entirely the architect's doing.
+A run proceeds the way all dungeon runs proceed in the ballads: the party enters, traverses rooms, encounters hazards and combat and the dungeon's bespoke moral events, collects loot, and either clears the exit or doesn't. Telegraphs and combat draw on the same systems you know from regular dungeon runs, but the room order, hazards, and events are entirely the architect's doing.
 
-**Wipe rewind.** Custom Dungeon raids include a finite-token rewind mechanic (`RewindTokens { remaining, max }`, default starts at 2 remaining out of 3 max — `cdRaidData.ts:182,220`). When the party reaches a wipe condition you may spend a token to roll the run back to a previously-explored node in the saga tree and continue from there. Tokens do not refill within a run; once `remaining` hits 0, the next wipe is final. There is no per-rewind scoring penalty — the cost is the token count itself.
+**Rewind.** At any point in a run — and most urgently when the whole party is lying on the floor — you can press **Rewind**, pick any point you've already explored on the saga tree, and roll the run back to it as though the unpleasantness never happened. Rewinds are free and unlimited. They are not, however, *forgotten*: every one is counted and printed on your results screen, a quiet record of how many times history had to be asked nicely. The future you abandoned stays on the tree as a ghost branch, which is either instructive or haunting depending on how it ended.
 
 ### Raid Runtime Mechanics
 
@@ -132,7 +132,7 @@ Hazards that none of your classes can handle become problems you walk through an
 
 #### Run-Trauma — Hazards Carry Across Rooms
 
-Custom Dungeon raids implement a **trauma** mechanic: every point of HP damage a hero takes from a hazard accumulates as a permanent debuff that **reduces that hero's effective max HP for the rest of the run.** A Cleric's heal cannot lift a hero above their trauma-reduced max — the heal clamps to whatever cap the trauma has left them.
+Custom Dungeon raids keep a **trauma** ledger: every point of HP damage a hero takes from a hazard accumulates as a permanent debuff that **reduces that hero's effective max HP for the rest of the run.** A Cleric's heal cannot lift a hero above their trauma-reduced max — the heal clamps to whatever cap the trauma has left them.
 
 A hero whose accumulated trauma reaches their original max HP **falls.** Trauma persists across rooms within a single run, and resets only when the run ends (cleared, wiped, or forfeited).
 
@@ -152,15 +152,15 @@ Architects can place **patrol entities** that walk through dungeon rooms on a se
 - **Hide** — roll the party's **ambush evasion chance** against the patrol. The chance is built from a 5% base, mood (party-average and leader contribute), a per-Ranger bonus that diminishes after the first, and clamps to a 5–60% range. Succeed and the patrol passes by. Fail and you fight from a disadvantaged position
 - **Flee** — retreat to the previous room. Only available when there *is* a previous room to retreat to. Patrols still tick — you can't exploit Flee to dodge cooldowns indefinitely
 
-Combat in a room also broadcasts noise. Patrols within a configurable BFS range of the noise will redirect toward that room on subsequent turns — the dungeon equivalent of "the watchman heard the screams." Architects who place patrols in noise range of likely combat rooms are doing so deliberately.
+Combat in a room also broadcasts noise. Patrols within earshot — a set number of rooms, chosen by the architect — will redirect toward that room on subsequent turns — the dungeon equivalent of "the watchman heard the screams." Architects who place patrols in noise range of likely combat rooms are doing so deliberately.
 
 ### Rewards (for the raider)
 
-Custom Dungeon rewards are concentrated in the **first clear**: when you clear a community dungeon for the first time, the realm pays out gold + XP via `computeFirstClearGold` / `computeFirstClearXp` (`cdRaidRewards.ts:64-77`), where the gold range is the regular **`MISSION_GOLD_RANGES`** for the dungeon's observed difficulty stars, scaled by average party level. Subsequent clears of the same dungeon do **not** repeat the first-clear payout — they still record your run for League standings and personal best, but no fresh gold drop.
+Custom Dungeon rewards are concentrated in the **first clear**: when you clear a community dungeon for the first time, the realm pays out gold + XP, with the gold drawn from the regular mission gold range for the dungeon's observed difficulty stars and scaled by average party level. Subsequent clears of the same dungeon do **not** repeat the first-clear payout — they still record your run for League standings and personal best, but no fresh gold drop.
 
 There is no separate Custom Dungeon loot economy or bespoke loot table — gold reuses the regular mission economy. Leaderboard placement is **not** gated by first-clear status; the leaderboard tracks each player's best cleared session for the dungeon and ranks the top 10.
 
-Custom Dungeon standings sit behind the same ban sweep as everything else that keeps score: a banned SteamID vanishes from the per-dungeon boards, the monthly League standings, and the Hall of Notorious alike, retroactively and without ceremony. See [Raid Leaderboard](raids.md#raid-leaderboard) for what a ban does and, more importantly, what it doesn't.
+Custom Dungeon standings answer to the same bans as everything else that keeps score: a banned Steam player vanishes from the per-dungeon boards, the monthly League standings, and the Hall of Notorious alike, retroactively and without ceremony. See [Raid Leaderboard](raids.md#raid-leaderboard) for what a ban does and, more importantly, what it doesn't.
 
 ---
 
@@ -172,21 +172,21 @@ Every published dungeon carries an **elegance score** computed from its layout �
 
 ### The League
 
-The League rotates through three competitive metrics on a **monthly cadence** (the server indexes by `leagueMonth`; the client `leagueMetricForWeek` helper is the offline-only approximation). The metric scoring is unrelated to the per-dungeon elegance display:
+The League rotates through three competitive metrics on a **monthly cadence**, a new month bringing a new definition of *good*. The metric scoring is unrelated to the per-dungeon elegance display:
 
 | Metric | What it scores | Better when |
 |--------|----------------|-------------|
-| **Elegance** | **Decisions taken** on a cleared run (`r.decisions`) | Fewer is better — the contest is about clearing a dungeon with the fewest choice-prompts handled |
-| **Efficiency** | **Attempts** until first clear (`r.attempts`) | Fewer is better — rewards getting it right early |
-| **Speed** | **Turns** on a cleared run (`r.turns`) | Fewer is better — straight speedrun |
+| **Elegance** | **Decisions taken** on a cleared run | Fewer is better — the contest is about clearing a dungeon with the fewest choice-prompts handled |
+| **Efficiency** | **Attempts** until first clear | Fewer is better — rewards getting it right early |
+| **Speed** | **Turns** on a cleared run | Fewer is better — straight speedrun |
 
-Source: `cdLeague.ts:128-138`. The League panel shows the current month's metric, your standing, and the top performers. (Note: this is distinct from the per-dungeon **elegance score** described above, which is a layout-quality display number — the League's Elegance metric measures *decision frugality*, not layout cleanliness.)
+The League panel shows the current month's metric, your standing, and the top performers. (Note: this is distinct from the per-dungeon **elegance score** described above, which is a layout-quality display number — the League's Elegance metric measures *decision frugality*, not layout cleanliness.)
 
 ### Seasons & The Watcher
 
-The **Seasons** page (`CdSeasonsPage.tsx`) shows the rolling monthly league standings, the Hall of Notorious, and a legacy-league archive. It does not currently expose themed dungeon rotations or special events — those are aspirational labels.
+The **Seasons** page shows the rolling monthly league standings, the Hall of Notorious, and an archive of leagues past. It holds no themed rotations or special events — the season is a calendar, not a festival.
 
-The **Watcher Journal** (`CdWatcherPage.tsx`) is a log browser: your raids plus raids of your published dungeons, sortable by date / attempts / outcome / depth, with a scrubbable timeline. It is closer to a chronological log viewer than an achievements page.
+The **Watcher Journal** is a log browser: your raids plus raids of your published dungeons, sortable by date / attempts / outcome / depth, with a scrubbable timeline. It is closer to a chronological log viewer than an achievements page.
 
 ---
 
@@ -194,7 +194,7 @@ The **Watcher Journal** (`CdWatcherPage.tsx`) is a log browser: your raids plus 
 
 This is the half of the system that makes publishing worth the trouble.
 
-When other Guild Masters across the realm clear *your* published dungeon, the realm pays you, the architect, in **gold and Guild Reputation**. The rewards accumulate on the server while you're playing, and are **claimed on login** — every time you start a session, any pending architect rewards are deposited into your vault and noted in the Chronicle. The Guild Clerk has stopped pretending not to look at this notification first.
+When other Guild Masters across the realm clear *your* published dungeon, the realm pays you, the architect, in **gold and Guild Reputation**. The rewards pile up in the realm's ledger whether or not you're watching, and are **claimed on login** — every time you start a session, any pending architect rewards are deposited into your vault and noted in the Chronicle. The Guild Clerk has stopped pretending not to look at this notification first.
 
 **What earns architect rewards:**
 - A successful clear of your dungeon by another Guild Master
@@ -205,7 +205,7 @@ When other Guild Masters across the realm clear *your* published dungeon, the re
 - Wipes by raiders — your dungeon paying you for killing other people's parties would create perverse incentives
 - Your own test-runs of your own dungeon
 
-**Fame Decay (Dungeon Archival).** "Fame Decay" in this system is a **dungeon-archival** mechanic in `cdObservedDifficulty.ts`, not a rewards-shrinking one: a published dungeon that goes 60 days without being raided is archived out of the main browse list (`cdObservedDifficulty.ts:103-118`). Pending architect rewards themselves are not time-scaled by the client — the server returns the full accumulated `claimedGold` and `claimedReputation` at the time of claim. To keep a dungeon visible and earning, it has to keep being run.
+**Fame Decay (Dungeon Archival).** Fame decays here in the old-fashioned way: by being forgotten. A published dungeon that goes **60 days** without being raided is archived out of the main browse list, like a play nobody has bought a ticket to since spring. Pending architect rewards do not shrink while they wait — you collect every coin and every point of reputation in full, however late you turn up. To keep a dungeon visible and earning, it has to keep being run.
 
 The **Architect Page** shows your published dungeons, lifetime architect rewards earned, recent clears with raider names and outcomes, and your seasonal standing. Most architects discover that one specific dungeon outearns all their others combined, and respond by quietly trying to figure out which feature of that dungeon is doing the work.
 

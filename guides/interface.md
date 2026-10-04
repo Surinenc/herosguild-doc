@@ -33,14 +33,14 @@ Your roster at a glance. The Guild Clerk designed this panel to answer the quest
 - Current state (Ready, Injured, Resting, etc.) — the honest answer to whether they can go
 - Mood indicator — the honest answer to whether they want to
 - **Illness badge** — appears when the hero is sick, coloured by severity (green under 30, amber 30-70, red past 70). The list of afflictions is on their History tab
-- **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Seeded stable per day from personality traits, so the same hero says roughly the same thing all day and something different tomorrow
+- **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Chosen once a day from their personality traits, so the same hero says roughly the same thing all day and something different tomorrow, much like everyone you have ever worked with
 - **Break chips** — a red **Break Risk** chip appears the moment mood falls under 25, and its tooltip names the mood and the line it has crossed rather than leaving you to guess. Should the roll go badly it is replaced by a **Mental Break** chip naming the break and the days left on it, which outranks every other social chip on the card, as these things tend to
 
 Click a hero to see details.
 
 ### Facility Panel (Center)
 
-Every facility screen now carries the **level badge** the Workshop has always had: current level, build progress, what the level does for you now, and what the next one would. It appears on the Tavern, Vault, Training, Memorial Hall, Quarters, Mission Board, Shop, Infirmary and Crafting screens, and reads from the facility data rather than from hand-written copy, which is how the descriptions came to match what the buildings actually do.
+Every facility screen carries a **level badge**: current level, build progress, what the level does for you now, and what the next one would. It appears on the Tavern, Vault, Training, Memorial Hall, Quarters, Mission Board, Shop, Infirmary, Crafting and Workshop screens, and it describes what the building actually does rather than what the builder promised, which in the Guild Clerk's experience is rarer than it should be.
 
 The heart of your guild operations. The Guild Clerk is rather proud of this layout.
 - Click facilities to access them
@@ -90,7 +90,7 @@ Fatal news goes at the top and routine record-keeping at the bottom, on the prin
 
 ## Mission Board
 
-Access dungeons and contracts here. The Mission Board defaults to a **World Map** view (V2) showing mission pins on a map. The legacy list view (V1) is gated by the `useMissionBoardV2` boolean in `GameSettings` (defaults to true, read at `GuildLedgerApp.tsx:607`) — there is no in-game UI or URL parameter to toggle it; you would need to edit the save flag directly.
+Access dungeons and contracts here. The Mission Board opens on a **World Map**, with every contract pinned to the place where it intends to go wrong.
 
 ### Mission List
 
@@ -103,7 +103,7 @@ Each mission entry shows what you're getting into — before you commit to getti
 
 ### Filters
 
-The Mission Board carries a three-button filter strip, for the days when nine contracts is eight too many to read (`MissionBoard.tsx:390-392`):
+The Mission Board carries a three-button filter strip, for the days when nine contracts is eight too many to read:
 
 - **All** - Both regular and heroic missions
 - **Normal** - Regular missions, the bread and butter of guild operations
@@ -115,7 +115,7 @@ Missions belonging to a [quest chain](quest-chains.md) carry a **📜 badge** an
 
 ### Hazard Badge
 
-Missions at 2★ and higher can carry an **environmental hazard** ([Environmental Hazards](dungeons.md#environmental-hazards)) naming the class(es) that resolve it cleanly (e.g., *"Toxic Gas Cloud — Cleric"*). Hazards are rendered in the **Contract Details side panel** below the description and requirements (`MissionBoard.tsx:826-840`) — the world-map pins themselves only carry chain (📜) and heroic (🔥) badges, not hazard badges. Bring the named class to handle the hazard cleanly; otherwise the party pushes through and pays for it.
+Missions at 2★ and higher can carry an **environmental hazard** ([Environmental Hazards](dungeons.md#environmental-hazards)) naming the class(es) that resolve it cleanly (e.g., *"Toxic Gas Cloud — Cleric"*). Hazards are listed in the **Contract Details side panel** below the description and requirements — the world-map pins themselves only carry chain (📜) and heroic (🔥) badges, not hazard badges. Bring the named class to handle the hazard cleanly; otherwise the party pushes through and pays for it.
 
 ### Starting a Mission
 
@@ -131,15 +131,15 @@ The unsupervised/supervised distinction (and Command Point spending) is set on t
 
 ## Quest Log
 
-The **Quest Log** button (glyph **❡** per `TopBar.tsx:134`) sits in the **Top Bar** alongside the other icon buttons — not in a sidebar — and is visible from day one. It tracks every story chain, class chain, and weekly bounty that is currently *active, available, expiring, or completed*.
+The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the other icon buttons — not in a sidebar — and is visible from day one. It tracks every story chain, class chain, and weekly bounty that is currently *active, available, expiring, or completed*.
 
 ### Tabs
 
 - **Story** - **Seven** long-form campaigns gated by guild rank (F → B)
 - **Class** - **Seven** class chains across the six classes (Mage has two: The Arcane Thesis at rank E + level 25, and The Archmage's Thesis at rank C + level 40)
-- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown (the first bounty rolls on **day 1**, per `QuestChain.test.ts:794-809`)
+- **Weekly** - The current weekly bounty with its ⏰ 7-day countdown (the first bounty rolls on **day 1** — the realm wastes no time finding you errands)
 
-The Quest Log UI only enumerates **unlocked** chains — locked chains do not appear with their unlock requirements; if no chain of a type is unlocked, the panel falls back to an empty-state message (`QuestLog.tsx:113-148`). Active chains show the current step and finale reward. Completed chains are archived for the record.
+The Quest Log UI only enumerates **unlocked** chains — locked chains do not appear with their unlock requirements; if no chain of a type is unlocked, the panel shows a short note to that effect rather than a list of mysteries. Active chains show the current step and finale reward. Completed chains are archived for the record.
 
 → **Full details:** [Quest Chains](quest-chains.md)
 
@@ -149,7 +149,7 @@ The Quest Log UI only enumerates **unlocked** chains — locked chains do not ap
 
 When you select a hero, you get a comprehensive view of everything they are, everything they own, and everything they've done. It is, in the Guild Clerk's opinion, the most informative screen in the game.
 
-Down the right-hand side, beneath Active Effects, the **Mood** panel now shows its working: every thought the hero is carrying, sorted by how much it weighs, each with its stack count, its days remaining (or *ongoing*), and its signed value — and a footer doing the sum out loud, `Base 50 · Thoughts ±N · Title ±N = mood`, with *(capped)* appended when the arithmetic ran off either end of the 0–100 scale. A hero with nothing on their mind gets the line *"No active thoughts. The head is, briefly, an empty hall."*
+Down the right-hand side, beneath Active Effects, the **Mood** panel shows its working: every thought the hero is carrying, sorted by how much it weighs, each with its stack count, its days remaining (or *ongoing*), and its signed value — and a footer doing the sum out loud, `Base 50 · Thoughts ±N · Title ±N = mood`, with *(capped)* appended when the arithmetic ran off either end of the 0–100 scale. A hero with nothing on their mind gets the line *"No active thoughts. The head is, briefly, an empty hall."*
 
 The tabs:
 
@@ -194,7 +194,7 @@ The hero's static identity — who this person is, before any of the bonds, achi
 - **Marks of a Life** — body flaws picked up along the way
 - **Traits** — named traits the lifecycle gave them (Duelist, Sickly, and the rest of that family)
 
-The newer React UI also exposes **Paragon** and **Trials** tabs alongside the above. Both tabs are rendered unconditionally for every hero (`HeroDetails.tsx:741-756`) — there is no level-100 gate on Paragon nor an ascendancy-eligibility gate on Trials at the tab-strip level; the contents inside each tab will tell you whether the hero qualifies. The Guild Clerk maintains that fitting all of this onto a single screen is a polite fiction and that anyone who reads everything before issuing orders is doing the job properly.
+**Paragon** and **Trials** tabs sit alongside the above for every hero, qualified or not — the tabs are always there, and the contents will tell you, with varying degrees of tact, whether this particular hero has any business being in them. The Guild Clerk maintains that fitting all of this onto a single screen is a polite fiction and that anyone who reads everything before issuing orders is doing the job properly.
 
 ---
 
@@ -219,7 +219,7 @@ The fight itself, laid out clearly so there are no excuses:
 
 ### Combat is AI-driven
 
-Hero's Guild combat does not expose per-hero Attack / Skill / Defend / Flee buttons during a fight. Skill selection runs through `Combat.selectBestSkill` driven by each hero's tactical preset and the engine's AI; the player's pre-fight choices (party composition, equipment, tactics, supervision) are what shapes the outcome. The CombatActionType enum (`Attack`, `Skill`, `Defend`, `Item`, `Flee`) exists in the engine but is consumed by the AI, not by player clicks. The closest player-visible "action bar" is the Hero Details bottom bar (Passive Tree / Spec / Body / Food / Rest / Dismiss), which is a hero-management strip, not a combat control.
+Hero's Guild combat has no Attack / Skill / Defend / Flee buttons. Once the fight starts, the heroes choose their own skills, guided by their tactical presets and their own judgement, which is about what you'd expect. Your influence is everything you did *before* the first swing — party composition, equipment, tactics, supervision — and the Guild Clerk notes that this is also how real management works. The bar along the bottom of Hero Details (Passive Tree / Spec / Body / Food / Rest / Dismiss) looks a bit like a combat bar and is nothing of the sort: it manages heroes, not fights.
 
 ### Combat Log (Side)
 
@@ -308,9 +308,11 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
-The interface is mouse-first. There is **no global Esc-closes-current-menu handler** in the ui-next codebase. Escape is scoped to a few specific contexts only: the Raid Test Sandbox (cancel pending order), the RaidSetupV2 group rename input, and the Custom Dungeon editor. Settings, Achievements, and Beta Chat must be closed by clicking their close buttons.
+The interface is mouse-first, and the keyboard is mostly decorative. **Escape** does not close whatever happens to be open; it dismisses the smaller dialogs — confirmations, the save/load window, the Quarters pickers and their relatives — cancels a group rename in raid setup, and dismisses the credits reel. **Any key at all** skips the intro video, which is the one place the game is entirely relaxed about what you press. Settings, Achievements, and Beta Chat must be closed with their close buttons, like doors in a well-run building.
 
-The raid screen has its own dedicated hotkey set documented in [World Boss Raids](raids.md#the-raid-interface). A few other scenes wire up niche right-click handlers (Mission Board, Passive Tree, Dungeon Menu); see those scenes for specifics.
+The **Custom Dungeon editor** is the exception, being a place where people do actual work: **Escape** steps back out of whatever you were doing (patrol placement first, then the active tool, then the selection), and **Delete** or **Backspace** removes the selected room or corridor without asking whether you're sure. Architects learn to be sure.
+
+The raid screen prints a keyboard legend of its own, which the keys do not honour — see [World Boss Raids](raids.md#the-raid-interface). A few other screens hide right-click shortcuts (Mission Board, Passive Tree, Dungeon Menu), for those who like to poke things and see what happens.
 
 ---
 
@@ -319,7 +321,7 @@ The raid screen has its own dedicated hotkey set documented in [World Boss Raids
 Small things that make a significant difference, provided for heroes who prefer to learn from documentation rather than experience:
 
 1. **Hover for tooltips** - Most elements have explanations; the game assumes you will use this
-2. **Watch for right-click handlers in specific scenes** - The Mission Board, Passive Tree, and Dungeon Menu use right-click for niche shortcuts; the rest of the UI is left-click only
+2. **Try right-clicking on a few screens** - The Mission Board, Passive Tree, and Dungeon Menu use right-click for niche shortcuts; the rest of the UI is left-click only
 3. **Drag and drop** - Equipment, party formation, and gem management all support this
 4. **Watch the log** - Combat details and events scroll past quickly; the important ones scroll past quickest
 5. **Check notifications** - Red dots indicate something needs attention; they do not go away on their own
@@ -336,7 +338,7 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 ### Display
 
-- Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — the interface is drawn once, at 1920×1080, and then scaled to fit whatever you pick, so this is a size control rather than a detail control. Nothing extra appears at 2560×1440; the goblins are simply legible from further away. The window cannot be dragged to a new size — a fixed canvas can only be zoomed, and the edges have been nailed down accordingly — so the dropdown is the only handle there is. Electron desktop build only.
+- Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — the interface is drawn once, at 1920×1080, and then scaled to fit whatever you pick, so this is a size control rather than a detail control. Nothing extra appears at 2560×1440; the goblins are simply legible from further away. The window cannot be dragged to a new size — a fixed canvas can only be zoomed, and the edges have been nailed down accordingly — so the dropdown is the only handle there is. Desktop version only.
 - Fullscreen toggle
 
 ### Gameplay
@@ -347,7 +349,7 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 ### Leaving
 
-Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. **📥 Save game** appears only while a game is actually in progress — offering to save from the main menu was a promise with nothing behind it. And **New Game** now asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
 
 ### Credits
 

@@ -4,7 +4,7 @@ Heroic Dungeons feature special modifiers that add challenge and reward scaling 
 
 ---
 
-## The 10 Heroic Modifiers
+## The Heroic Modifiers
 
 Each heroic dungeon has one modifier that changes gameplay. Think of them as the dungeon's way of saying "you thought this would be straightforward?"
 
@@ -98,7 +98,7 @@ Your armor works 30% less well. Warriors find this existentially threatening.
 ### Chaos Incarnate 🌪️
 **Difficulty:** 3/3
 
-Two modifiers at once. For heroes who looked at the other nine options and thought "why not both?"
+Two modifiers at once. For heroes who looked at the other options and thought "why not both?"
 
 - 2 random modifiers active simultaneously
 - Reward: +75% gold (stacks with component modifiers)

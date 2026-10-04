@@ -1,8 +1,8 @@
 # Crises
 
-Periodically, the realm decides the Guild has been managing too well, and arranges for a Crisis. The Guild Clerk has, after extensive study, identified fourteen distinct varieties. None of them are good news. Several of them are categorically worse than the others. All of them last for several weeks.
+Periodically, the realm decides the Guild has been managing too well, and arranges for a Crisis. The Guild Clerk has, after extensive study, catalogued every variety. None of them are good news. Several of them are categorically worse than the others. All of them last for several weeks.
 
-This guide covers when crises happen, how they progress, what each of the fourteen does to the guild, and how to survive the three that can kill a hero outright.
+This guide covers when crises happen, how they progress, what each one does to the guild, and how to survive the three that can kill a hero outright.
 
 ---
 
@@ -29,7 +29,7 @@ Every crisis runs through up to four **severity tiers**: Mild, Moderate, Severe,
 
 **De-escalation:**
 - Completing a **resolution mission** (a mission flagged as relevant to the active crisis) drops severity by one tier.
-- Every one of the fourteen crises has a resolution mission on the board; the Dragon's Tithe and the Royal Levy even name theirs outright (*Drive off the dragon*, *Petition the crown*), which is more candour than most crises manage.
+- Every crisis has a resolution mission on the board; the Dragon's Tithe and the Royal Levy even name theirs outright (*Drive off the dragon*, *Petition the crown*), which is more candour than most crises manage.
 - Stack resolution missions and you can hold a crisis at Mild for its entire duration.
 
 **End conditions** are one of:
@@ -43,9 +43,9 @@ The Guild Clerk maintains a small mental ledger of crises survived. Heroes who h
 
 ---
 
-## The Fourteen Crises
+## The Crises
 
-The realm rotates through fourteen named crises, grouped into four categories. Each crisis has its own duration range, its own modifier pattern, and its own way of being deeply unhelpful.
+The realm rotates through its named crises, grouped into four categories. Each crisis has its own duration range, its own modifier pattern, and its own way of being deeply unhelpful.
 
 ### Economic
 
@@ -99,7 +99,7 @@ A **Partial** outcome (some resolution missions completed but not enough to full
 
 A chain is announced in the Chronicle with a 🔗 log event. The Guild Clerk has filed papers, more than once, suggesting that the realm not be allowed to combo crises. The papers have been ignored.
 
-Crises that resolve at **Engaged** still chain, but they chain into a Mild successor and earn the **Chain Breaker** milestone if the successor also resolves at Engaged. The other ten crises do not chain onward; they arrive, ruin a month, and leave without introducing anyone.
+Crises that resolve at **Engaged** still chain, but they chain into a Mild successor and earn the **Chain Breaker** milestone if the successor also resolves at Engaged. The rest do not chain onward; they arrive, ruin a month, and leave without introducing anyone.
 
 ---
 
@@ -152,7 +152,7 @@ The dragon surveys every facility you own, politely ignores the Barracks, and fl
 
 The Armory case is special: its level sets vault capacity, so your storage shrinks the moment the damage lands, and anything already over the new line is over it visibly, which is the Clerk's preferred way of delivering bad news.
 
-The other ten crises do not damage facilities. Some things, the realm has decided, should stay standing.
+The rest do not damage facilities. Some things, the realm has decided, should stay standing.
 
 ---
 

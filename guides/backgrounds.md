@@ -4,15 +4,15 @@ Two heroes, same class, same level, same sword, same gloves, same hat. They will
 
 This is not a bug. It is the entire point.
 
-Every hero arrives with a past — eight broad-strokes flavours of it, and four specific things that happened to them on the way to your tavern door, drawn from a catalog of just under two hundred events — and the past does not stay in the past. It compounds quietly into the damage chain, into the HP pool, into every number on the sheet. Two heroes who look identical on the equipment screen are, underneath, different people, doing different jobs, with different scars. The CV is not decoration. The CV is the rest of the build.
+Every hero arrives with a past — a broad-strokes background, and four specific things that happened to them on the way to your tavern door — and the past does not stay in the past. It compounds quietly into the damage chain, into the HP pool, into every number on the sheet. Two heroes who look identical on the equipment screen are, underneath, different people, doing different jobs, with different scars. The CV is not decoration. The CV is the rest of the build.
 
 This guide covers the **Background tag** (the broad-strokes "what they did before") and the **Lifecycle** (the four life events that flesh it out). The two systems compose: the tag biases which events get rolled, and the events make the tag feel like a specific person rather than a template. The Guild Clerk considers this a great improvement on the alternative, in which every Mage would be essentially the same Mage in a different hat.
 
 ---
 
-## The Eight Backgrounds
+## The Backgrounds
 
-Every recruit carries one background tag, assigned at generation alongside their class and quality. It is independent of both — a Noble Mage and a Noble Warrior share an axis the Cultist Cleric does not, which is why the Cultist Cleric does not get invited to either of their dinner parties. The eight backgrounds are:
+Every recruit carries one background tag, assigned at generation alongside their class and quality. It is independent of both — a Noble Mage and a Noble Warrior share an axis the Cultist Cleric does not, which is why the Cultist Cleric does not get invited to either of their dinner parties. The backgrounds are:
 
 - **Noble** — raised on tutors, expectations, and family debt
 - **Criminal** — pragmatic about consequences, rehearsed at improvising
@@ -31,12 +31,12 @@ Each background grants a permanent combat modifier (listed among the hero's acti
 
 Every hero, at the moment of generation, gets four things that happened to them. One from childhood. One from adolescence. One from young adulthood. One from the years just before the contract got signed. The four paragraphs together form the hero's **CV** — a short, first-person life history that reads chronologically and never mentions a single mechanical number, which is the polite way of saying that the heroes don't know their own multipliers and would probably be insulted to learn they had any.
 
-| Stage | Ages | Shown as | Possible events |
-|-------|------|----------|-----------------|
-| Childhood | 5–10 | "Childhood" | 44 |
-| Adolescence | 11–16 | "Adolescence" | 49 |
-| Young Adulthood | 17–22 | "Young Adulthood" | 53 |
-| Before the Guild | 23–30 | "Before the Guild" | 48 |
+| Stage | Ages | Shown as |
+|-------|------|----------|
+| Childhood | 5–10 | "Childhood" |
+| Adolescence | 11–16 | "Adolescence" |
+| Young Adulthood | 17–22 | "Young Adulthood" |
+| Before the Guild | 23–30 | "Before the Guild" |
 
 The roll happens once, at hire. It does not change. The same hero, on the same save, will always have the same four paragraphs. There is no re-roll. The Guild Clerk has fielded the question many times and the answer has not improved with practice.
 
@@ -46,7 +46,7 @@ The roll is not uniform. Each event in the pool is tagged with zero or more back
 
 Backgrounds tilt the dice. They do not seal the bag.
 
-No single background can claim more than a quarter of any stage's events, either. This keeps the weighting from collapsing into "every Noble has the same four paragraphs," which would defeat the purpose of having nearly two hundred events to draw from.
+No single background can claim more than a quarter of any stage's events, either. This keeps the weighting from collapsing into "every Noble has the same four paragraphs," which would defeat the purpose of everyone having had a different life.
 
 ---
 
@@ -68,7 +68,7 @@ Some events grant a named trait — *Duelist*, *Sickly*, *Iron Constitution*, an
 
 ### Body flaws
 
-Some events leave the hero with a **body flaw**: a damaged or destroyed body part. The full body system covers 25 parts across four regions — head (brain, eyes, ears, jaw, nose), torso (heart, lungs, liver, kidneys, stomach, spine), arms (shoulders, arms, hands), and legs (legs, feet). See [Heroes Guide — Body & Injury](heroes.md#body--injury-system) for the complete list, including the vital-organ prosthetic window.
+Some events leave the hero with a **body flaw**: a damaged or destroyed body part. The full body system covers four regions — head (brain, eyes, ears, jaw, nose), torso (heart, lungs, liver, kidneys, stomach, spine), arms (shoulders, arms, hands), and legs (legs, feet). See [Heroes Guide — Body & Injury](heroes.md#body--injury-system) for the complete list, including the vital-organ prosthetic window.
 
 A flaw applies once per slot, even if multiple events touch the same body part. The second narrative paragraph still shows up in the CV; the body simply declines to be ruined twice in the same place, which is the polite version of the heroes' own habit of editing the worse details out of their second telling. Minor flaws land as **Damaged**; severe ones land as **Destroyed**, which is the realm's tactful term for *gone*.
 

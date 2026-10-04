@@ -103,7 +103,7 @@ Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in t
 
 ## Tower Set Items
 
-Three two-piece sets drop only from Spire major-boss floors. Each set grants a baseline two-piece bonus that applies everywhere, plus a **tower-only bonus** that activates only while you are inside the Abyssal Spire — the realm's way of giving the Spire its own metagame without breaking the wider game's economy.
+Two-piece sets drop only from Spire major-boss floors. Each set grants a baseline two-piece bonus that applies everywhere, plus a **tower-only bonus** that activates only while you are inside the Abyssal Spire — the realm's way of giving the Spire its own metagame without breaking the wider game's economy.
 
 | Item | Slot | Set | Drop Floor |
 |------|------|-----|------------|

@@ -10,11 +10,11 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 
 ### Core Systems
 - [Heroes & Classes](guides/heroes.md) - The 6 hero classes and their abilities
-- [Hero Backgrounds](guides/backgrounds.md) - The 8 backgrounds and the 4-stage life history every hero carries
+- [Hero Backgrounds](guides/backgrounds.md) - Where heroes come from, and the four-stage life history every one of them carries
 - [Combat System](guides/combat.md) - Turn-based tactical combat explained
 - [Equipment & Items](guides/equipment.md) - Gear, gems, and item rarities
 - [Skill Gems](guides/skills.md) - Active and support gem system
-- [Passive Tree](guides/passive-tree.md) - The 426-node passive progression system
+- [Passive Tree](guides/passive-tree.md) - The sprawling passive progression web every hero climbs through
 - [Ascendancy Paths](guides/ascendancy.md) - Hero specializations
 
 ### Guild Management
@@ -23,7 +23,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Materials Market](guides/guild.md#materials-market) - Buy/sell crafting materials with dynamic pricing
 - [Hero Relationships](guides/relationships.md) - Social bonds, story arcs, and mood system
 - [Events Overview](guides/events.md) - Tavern, guild, and dungeon event systems
-- [Crises](guides/crisis.md) - The 14 realm-wide crises and how to survive them
+- [Crises](guides/crisis.md) - Realm-wide crises and how to survive them
 - [Crafting](guides/crafting.md) - Blacksmithing, alchemy, and more
 
 ### Progression
@@ -49,11 +49,11 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 ### Key Features
 
 - **6 Hero Classes**: Warrior, Mage, Rogue, Ranger, Necromancer, Cleric
-- **14 Ascendancy Paths**: 2-3 specializations per class
+- **Ascendancy Paths**: 2-3 specializations per class
 - **Deep Combat System**: Turn-based with initiative, threat, and positioning
 - **Relationship System**: Heroes form bonds, rivalries, and romances
-- **Extensive Crafting**: 10 production facilities across blacksmithing, alchemy, enchanting, and more
-- **Procedural Dungeons**: 7 environments with unique mechanics
+- **Extensive Crafting**: blacksmithing, alchemy, enchanting, and more
+- **Procedural Dungeons**: forests, crypts, volcanoes and worse, each with its own way of killing you
 - **Endgame Content**: Heroic Dungeons, Abyssal Spire, World Bosses
 
 ---

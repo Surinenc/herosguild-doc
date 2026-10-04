@@ -81,7 +81,7 @@ The gold column multiplies **combat gold** — what enemies drop — and leaves 
 
 ## Dungeon Environments
 
-Seven distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. ([Environmental Hazards](#environmental-hazards) are the exception: they don't care where they are, and any of them can turn up in any 2★+ dungeon.)
+Distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. ([Environmental Hazards](#environmental-hazards) are the exception: they don't care where they are, and any of them can turn up in any 2★+ dungeon.)
 
 ### Forest
 
@@ -274,7 +274,7 @@ A 2★ dungeon carries roughly one hazard. Higher-star dungeons can carry severa
 
 ### Hazard Types
 
-There are eight hazard types. Each names the class (or pair of classes) that resolves it cleanly:
+Each hazard type names the class (or pair of classes) that resolves it cleanly:
 
 | Hazard | Resolved By |
 |--------|-------------|
@@ -334,13 +334,13 @@ A resolved hazard stays resolved. If you save and reload mid-dungeon, hazard roo
 
 Dungeons are full of choices. Not the comfortable kind, where both options are acceptable and failure is theoretical. The other kind — where you have to decide who you actually are, while something is bleeding nearby.
 
-Moral events are spread across all seven environments. Each event presents three options with distinct tones: **benevolent**, **neutral**, and **aggressive**. The right choice depends on your build, your relationship with your heroes, and how much you care about the consequences lasting longer than the dungeon.
+Moral events are spread across every environment. Each event presents three options with distinct tones: **benevolent**, **neutral**, and **aggressive**. The right choice depends on your build, your relationship with your heroes, and how much you care about the consequences lasting longer than the dungeon.
 
 ### How Events Work
 
 Events trigger in specific rooms based on:
 
-- **Environment** — each of the 7 dungeon types (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano) has its own event pool
+- **Environment** — each dungeon type (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano) has its own event pool
 - **Difficulty** — some events only appear in harder dungeons
 - **Hero conditions** — trait-gated, mood-gated, bond-gated, and chronicle-title-gated events fire only when the right hero is present
 

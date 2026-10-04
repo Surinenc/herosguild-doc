@@ -259,7 +259,7 @@ Each boss also drops a set of guaranteed items, plus chance-rolled named items f
 
 ## The Raid Token Vendor
 
-Raid tokens are spent at the **Market → Raid Tokens** tab, which appears after your first raid token lands in the vault. The vendor stocks 26 items across six sections — all tier-set pieces are **Ancestral** rarity (the highest gear tier, matching Heroic Dungeon drops but with set bonuses on top):
+Raid tokens are spent at the **Market → Raid Tokens** tab, which appears after your first raid token lands in the vault. The vendor stocks six sections — all tier-set pieces are **Ancestral** rarity (the highest gear tier, matching Heroic Dungeon drops but with set bonuses on top):
 
 | Section | Items | Token Price |
 |---------|-------|-------------|

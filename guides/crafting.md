@@ -15,7 +15,7 @@ Create powerful equipment, potions, and consumables for your heroes — assuming
 
 ### Production Facilities
 
-Ten crafting station types, each requiring a hero who could otherwise be doing something more immediately dangerous:
+Crafting stations, each requiring a hero who could otherwise be doing something more immediately dangerous:
 
 | Station | Crafts | Skills Used |
 |---------|--------|-------------|
@@ -42,7 +42,7 @@ Each crafting station has its own level, which reduces crafting time by 10% per 
 | 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
 | 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-This applies uniformly to all 10 station types.
+This applies uniformly to every station.
 
 ### Facility Upgrades (Stacking Bonuses)
 
@@ -106,7 +106,7 @@ Some stations require facility unlock missions (see [Dungeons Guide](dungeons.md
 
 ## Hero Crafting Skills
 
-Heroes level up crafting skills by crafting. There is no shortcut, no cheat, and no amount of motivational speeches that will substitute for actually making things. Four consolidated disciplines cover all ten stations:
+Heroes level up crafting skills by crafting. There is no shortcut, no cheat, and no amount of motivational speeches that will substitute for actually making things. Four consolidated disciplines cover every station:
 
 | Skill | Max Level | Governs | Stations |
 |-------|-----------|---------|----------|
@@ -427,7 +427,7 @@ Costs double each time you reroll the same item. The gold goes the moment the di
 
 ## Crafting Currencies
 
-Ten consumable items that modify equipment bonus stats — the Workshop rerolls them wholesale, but currencies let you sculpt them one at a time, seal what you want to keep, or burn the lot down and start again. Think of them as the difference between "re-deal the whole hand" and "draw one card." The Cursed Sigil, at the far end, is the difference between "draw one card" and "flip a table."
+Consumable items that modify equipment bonus stats — the Workshop rerolls them wholesale, but currencies let you sculpt them one at a time, seal what you want to keep, or burn the lot down and start again. Think of them as the difference between "re-deal the whole hand" and "draw one card." The Cursed Sigil, at the far end, is the difference between "draw one card" and "flip a table."
 
 ### Currency Types
 

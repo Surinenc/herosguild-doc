@@ -1,6 +1,6 @@
 # Passive Tree
 
-The Passive Tree is the single largest system in Hero's Guild and, by a comfortable margin, the one most likely to make new players stare at the screen in quiet despair. It contains 426 nodes arranged in a hexagonal web connecting all six classes. Think of it as a map of everything your hero *could* become, drawn by someone with strong opinions about symmetry.
+The Passive Tree is the single largest system in Hero's Guild and, by a comfortable margin, the one most likely to make new players stare at the screen in quiet despair. It is a hexagonal web of nodes connecting all six classes. Think of it as a map of everything your hero *could* become, drawn by someone with strong opinions about symmetry.
 
 Each hero begins at their class starting node and works outward, spending one passive point per level. By level 100, a hero will have allocated roughly a quarter of the tree — enough to feel powerful, not enough to feel safe.
 
@@ -140,7 +140,7 @@ Travel nodes are the connective tissue of the tree. When you allocate a travel n
 - **Dexterity** (+5 flat) — useful for speed, dodge, and critical chance; Rogues and Rangers pick this by reflex
 - **Intelligence** (+5 flat) — spell damage and mana scaling; Mages consider any other choice a waste of a perfectly good node
 
-With 176 travel nodes in the tree, these choices add up. A Warrior routing through 40 travel nodes and picking Strength each time gains +200 STR before even counting minor and notable nodes.
+Travel nodes are everywhere, so these choices add up. A Warrior routing through 40 travel nodes and picking Strength each time gains +200 STR before even counting minor and notable nodes.
 
 ---
 

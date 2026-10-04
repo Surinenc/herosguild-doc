@@ -4,7 +4,7 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 
 ## Guild Facilities
 
-14 facilities to build and upgrade:
+Facilities to build and upgrade:
 
 ### Core Facilities
 
@@ -52,21 +52,21 @@ Upgrading a facility is not instant. Every upgrade is a **construction project**
 
 ### Build-time distribution
 
-Across all 14 facilities × 5 levels, build times cluster as follows (level 1 comes already built, there being no point paying anyone to build something you own):
+Across every facility and level, build times cluster as follows (level 1 comes already built, there being no point paying anyone to build something you own):
 
-| Build days | Count | Notable examples |
-|-----------|-------|------------------|
-| 2 | 7 | Barracks L2, Training Yard L2 — the low-level "quick" upgrades |
-| 3 | 10 | Guild Hall L2, Tavern L2, Alchemy Lab L2 — the most common bucket |
-| 4 | 3 | Barracks L3, Forge L3 |
-| 5 | 5 | Tavern L3, Training Yard L3 |
-| 6 | 6 | Barracks L4, mid-tier upgrades |
-| 7 | 4 | Guild Hall L3 |
-| 8 | 3 | Higher tiers on Support facilities |
-| 10 | 7 | Barracks L5, Training Yard L4 |
-| 14 | 1 | Guild Hall L4 |
-| 15 | 1 | Tavern L5 |
-| 20 | 3 | The endgame Legendary tiers — Guild Hall L5 sits in this bucket |
+| Build days | Notable examples |
+|-----------|------------------|
+| 2 | Barracks L2, Training Yard L2 — the low-level "quick" upgrades |
+| 3 | Guild Hall L2, Tavern L2, Alchemy Lab L2 — the most common bucket |
+| 4 | Barracks L3, Forge L3 |
+| 5 | Tavern L3, Training Yard L3 |
+| 6 | Barracks L4, mid-tier upgrades |
+| 7 | Guild Hall L3 |
+| 8 | Higher tiers on Support facilities |
+| 10 | Barracks L5, Training Yard L4 |
+| 14 | Guild Hall L4 |
+| 15 | Tavern L5 |
+| 20 | The endgame Legendary tiers — Guild Hall L5 sits in this bucket |
 
 Rule of thumb: expect two-to-three-day builds early on, single-digit builds through the mid-game, and multi-week commitments for anything Legendary-tier.
 

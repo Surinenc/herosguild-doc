@@ -241,7 +241,7 @@ The quality multiplier lands on **every** stat, after every other bonus has been
 
 ### Background & Life History
 
-Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of eight: Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** rolled from just under two hundred possible events. Both feed multiplicative modifiers into the damage chain and the hero's stats, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
+Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** of things that happened to them first. Both feed multiplicative modifiers into the damage chain and the hero's stats, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
 
 The CV appears on the Details modal at the Tavern, where it is a sales document, and on the Background tab in Hero Details, where it becomes a medical history. See [Hero Backgrounds](backgrounds.md) for the full system.
 
@@ -266,7 +266,7 @@ Heroes can be in various states that affect what they can do. Think of it as a v
 
 ## Body & Injury System
 
-Heroes have a detailed body system with 25 body parts that can be damaged, destroyed, or — in a triumph of guild engineering — replaced with something mechanical. The human body, it turns out, is surprisingly modular.
+Heroes have a detailed body system, every part of which can be damaged, destroyed, or — in a triumph of guild engineering — replaced with something mechanical. The human body, it turns out, is surprisingly modular.
 
 ### Body Part Categories
 
@@ -327,7 +327,7 @@ Certain injuries cause instant death — which is why the vital-organ prosthetic
 
 ### Prosthetics
 
-Destroyed parts can be replaced with prosthetics. The original limb-and-sense set (arms, legs, hands, feet, eyes, ears) is joined by full-body prosthetics covering 10 additional body part families — Brain, Jaw, Nose, Heart, Lung, Liver, Kidney, Stomach, Spine, and Shoulder — for a total of 47 prosthetic types. The Guild Clerk considers this a testament to both engineering ambition and the frequency of workplace injuries.
+Destroyed parts can be replaced with prosthetics. The original limb-and-sense set (arms, legs, hands, feet, eyes, ears) is joined by full-body prosthetics for the Brain, Jaw, Nose, Heart, Lungs, Liver, Kidneys, Stomach, Spine and Shoulders — very nearly the whole hero, in other words. The Guild Clerk considers this a testament to both engineering ambition and the frequency of workplace injuries.
 
 **Installing one:** Open a hero's Body Status modal (the ✚ panel on the right of the character screen). Every non-healthy part with an in-stock, tier-compatible prosthetic gets an install button showing the prosthetic name, efficiency, and current stock — click to fit it. The button only appears when the current Infirmary tier supports that prosthetic. Fees are paid at craft time via material costs (see [Crafting Guide](crafting.md)); the surgical procedure itself is free — the Guild Clerk assumes the anaesthetic budget will resolve itself.
 
@@ -366,7 +366,7 @@ Mood modifiers stay absolute — mood is a 0-to-100 scale, so a −15 mood hit m
 
 ### Illness Categories
 
-Illnesses come in six broad flavours, each with its own risk profile and its own reasons for happening.
+Illnesses come in several broad flavours, each with its own risk profile and its own reasons for happening.
 
 | Category | Character | Examples |
 |----------|-----------|----------|
@@ -377,7 +377,7 @@ Illnesses come in six broad flavours, each with its own risk profile and its own
 | Beast / creature-linked | Injury-seeded from beast wounds | Werewolf Fever, Vampire Anaemia |
 | Metaphysical | Slow, mood-crushing, non-lethal | The Sighs, The Doldrums, The Small Hours |
 
-Left entirely alone, the world is not especially virulent: a hero sitting at the guild with no environmental or crisis multipliers working on them has roughly a **4.5% chance per day** of picking something up — about one new complaint every three weeks. That figure is the compound of a very small per-strain roll across the 23 illnesses that seed themselves, which is why the multipliers below matter so much more than the baseline does.
+Left entirely alone, the world is not especially virulent: a hero sitting at the guild with no environmental or crisis multipliers working on them has roughly a **4.5% chance per day** of picking something up — about one new complaint every three weeks. That figure is the compound of a very small per-strain roll across every illness that can seed itself, which is why the multipliers below matter so much more than the baseline does.
 
 Where a hero contracts an illness depends heavily on **environment** — Swamps push respiratory fevers (Marsh Sweats ×4), Crypts stir The Long Cough and Necromancer's Shadow Cough, Ruins amplify The Small Hours, Towers grow the magical bestiary — and on **age**. Age-linked illnesses (Grippe, Marsh Sweats, Long Cough, River Sickness, Rat-Cough, Watchman's Foot, Chimney Ash Lung) compound at roughly **×1.3 / ×1.8 / ×2.5** for heroes past **40 / 55 / 70**. Crises pile on further multipliers where the pairing makes sense: **The Blood Moon** triples Werewolf Fever, **The Syzygy** triples Thaumic Flu, **The Cult of the Unseen** doubles The Small Hours and The Sighs, **The Great Famine** doubles The Doldrums.
 
@@ -405,7 +405,7 @@ Whenever any hero is sick, the next morning opens on the **Infirmary scouting sc
 
 A bed treats the **hero**, not the illness. Occupy one and *every* strain that hero is carrying has its daily severity growth cut by **80%** — which matters more than it sounds, because a thoroughly unlucky hero collects six to nine illnesses at once and the ward has never had the beds to admit them one strain at a time. Higher Infirmary tiers shave an additional **5% per level** off severity growth even without a direct treatment slot, on the theory that a well-appointed ward is medically useful just by existing.
 
-The arithmetic is the whole argument for building beds. Left alone, **every one of the six lethal strains wins its race** — severity reaches 100 before immunity does, in all six cases, and the only variable is how long it takes: The Blackblood in a little over two days, The Grey Weep and Backfire Fever in five, Wound Rot in ten, The Long Cough in three unhurried weeks. That is not a risk so much as a timetable. Treated, growth is cut to a fifth — from 4.75–47.5 points a day down to 0.95–9.5 — and because the lethal threshold cannot fire on a treated strain at all, the hero gets better in the unglamorous way people actually get better: slowly, in bed, complaining.
+The arithmetic is the whole argument for building beds. Left alone, **every one of the lethal strains wins its race** — severity reaches 100 before immunity does, every time, and the only variable is how long it takes: The Blackblood in a little over two days, The Grey Weep and Backfire Fever in five, Wound Rot in ten, The Long Cough in three unhurried weeks. That is not a risk so much as a timetable. Treated, growth is cut to a fifth — from 4.75–47.5 points a day down to 0.95–9.5 — and because the lethal threshold cannot fire on a treated strain at all, the hero gets better in the unglamorous way people actually get better: slowly, in bed, complaining.
 
 Recovery is a matter of immunity reaching 100. A non-lethal illness runs its course in **2 to 14 days** depending on how nasty it is; a lethal one takes **7 to 30**. The Sniffles is gone in five days, Slap-Belly in two, and The Long Cough will keep a hero in the ward for a month.
 

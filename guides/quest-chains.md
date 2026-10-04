@@ -41,7 +41,7 @@ You can pursue multiple class chains in parallel — qualifying a Warrior doesn'
 
 ### Weekly Bounties
 
-Twelve rotating templates. No unlock requirement — every guild sees one from day one.
+A rotating set of bounties. No unlock requirement — every guild sees one from day one.
 
 - **3 steps** per bounty
 - **7-day timer** — starts when the bounty rolls; if unfinished by day 7, the chain closes silently and a new one rolls

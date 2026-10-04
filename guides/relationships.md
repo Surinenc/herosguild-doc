@@ -224,7 +224,7 @@ Any of **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Che
 
 Some relationships develop their own plotlines. When two heroes have spent enough time around each other under the right conditions, the realm proposes a **Story Arc** — a queued moral event with three branches, each of which permanently changes the bond between them.
 
-The Guild Clerk has filed arcs as a separate category from bonds because arcs *create* bonds (or destroy them), rather than being bonds themselves. There are four arc archetypes, and only one arc can be in flight per hero at a time. The realm checks them in a fixed priority: **Romance → Mentorship → Rivalry → Honor Debt.**
+The Guild Clerk has filed arcs as a separate category from bonds because arcs *create* bonds (or destroy them), rather than being bonds themselves. Arcs come in a few archetypes, and only one arc can be in flight per hero at a time. The realm checks them in a fixed priority: **Romance → Mentorship → Rivalry → Honor Debt.**
 
 ### Common Rules
 
@@ -235,7 +235,7 @@ All arcs share:
 - The arc opens with a Chronicle **spark** entry, then a **modal event** in Guild Events with a **3-day deadline**. How long you wait for that modal depends on the archetype — Rivalry lands after **3 days**, Romance and Honor Debt after **5**, Mentorship after **7**, on the sensible grounds that a grudge sharpens faster than a vocation. The default-on-expiry varies by archetype: Romance defaults to *Play it cool* (no change), Mentorship to *Casual* (small mood bonus), Rivalry to *Tavern* (positive resolution), and Honor Debt to *Even debt* (asymmetric LifeDebt). None of the four archetypes default to the openly negative branch on expiry
 - The crisis system has the right of way: if a [crisis](crisis.md) is active, the arc step is deferred by a day
 
-### The Four Arc Archetypes
+### The Arc Archetypes
 
 #### Romance
 
@@ -404,7 +404,7 @@ Heroes have four needs that affect mood:
 
 Needs below their critical threshold actively decrease mood.
 
-**Recreation is personal.** A hero does not relax by doing things in general; they relax by doing the things *they* enjoy. Every hero rolls **two pastimes** — three, four times in ten — weighted by their traits and class, and separately has a **70% chance** of enjoying **Drinking** on top (10% for an Ascetic, 30% for the Reserved, 95% for the Gregarious). There are ten pastimes in all: Adventure, Training, Crafting, Quiet days, Drinking, Music, Gambling, Company, Faith, Romance.
+**Recreation is personal.** A hero does not relax by doing things in general; they relax by doing the things *they* enjoy. Every hero rolls **two pastimes** — three, four times in ten — weighted by their traits and class, and separately has a **70% chance** of enjoying **Drinking** on top (10% for an Ascetic, 30% for the Reserved, 95% for the Gregarious). The pastimes are: Adventure, Training, Crafting, Quiet days, Drinking, Music, Gambling, Company, Faith, Romance.
 
 | | |
 |---|---|
@@ -491,7 +491,7 @@ A hero already in a break does not roll for another, and a hero **out on a missi
 
 Which is to say a hero at mood 24 is a worry, and a hero at mood 1 is an emergency with its bags packed.
 
-**Six traits change the maths.** Threshold shifts add together; weight multipliers multiply, and the pool is re-normalised before the roll. The **major** threshold of 10 never moves, whatever a hero is carrying, which keeps the worst outcomes reliably rare:
+**Some traits change the maths.** Threshold shifts add together; weight multipliers multiply, and the pool is re-normalised before the roll. The **major** threshold of 10 never moves, whatever a hero is carrying, which keeps the worst outcomes reliably rare:
 
 | Trait | Effect on breaks |
 |-------|------------------|
@@ -610,7 +610,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 
 First impressions — Charming, Diplomatic, Trustworthy and Annoying Voice — shape how **everyone else** sees the holder, which is the entire point of an impression. Misanthrope runs the other way: it colours how the holder sees everyone else, and asks nothing of them in return.
 
-Contradictory traits do not turn up on the same hero: **22 incompatible pairs** (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's are nudged. Should a hero somehow hold both anyway, they keep them, and have presumably made it work, or at least made it everyone's problem.
+Contradictory traits do not turn up on the same hero: incompatible pairs (Gregarious and Loner, Forgiving and Vindictive, Cheerful and Pessimist, Greedy and Ascetic, Coward and Protective, and their relatives) are excluded when traits are rolled and when a recruit's are nudged. Should a hero somehow hold both anyway, they keep them, and have presumably made it work, or at least made it everyone's problem.
 
 ---
 

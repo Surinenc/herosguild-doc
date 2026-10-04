@@ -18,7 +18,7 @@ The morning after, each resolved decision surfaces in the **Last Night's Notes**
 
 ## Tavern Background Events
 
-While you're busy allocating Attention Points, the rest of the tavern is getting on with things without you. **Background events** fire automatically — 22 of them across three types — affecting mood, relationships, gold, bonds, and sometimes whether a specific hero is available tomorrow morning. You don't authorize them. You discover them. These are not decisions. They are consequences.
+While you're busy allocating Attention Points, the rest of the tavern is getting on with things without you. **Background events** fire automatically — positive, negative and dramatic — affecting mood, relationships, gold, bonds, and sometimes whether a specific hero is available tomorrow morning. You don't authorize them. You discover them. These are not decisions. They are consequences.
 
 Notable examples: a Drinking Contest, a Bar Fight, a Love Triangle, and the occasional Marriage Proposal. Some resolve quietly. Others require a certain amount of explaining.
 
@@ -62,7 +62,7 @@ These events appear in the social feed. They cannot be intercepted. The relation
 
 Inside dungeons, rooms occasionally contain something other than monsters or traps: a decision. A wounded traveler. A sealed coffin. An imprisoned mage with eyes that could be grateful or mad. A shrine that wants blood before it gives power.
 
-There are 145+ of these events spread across seven environments (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano), each with three options and each with immediate and potentially lasting consequences. Some events only appear when a specific hero is present — the right trait, the wrong mood, a particular bond or chronicle title. Those events use that hero's name. They are not abstract.
+They are spread across every environment (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano), each with three options and each with immediate and potentially lasting consequences. Some events only appear when a specific hero is present — the right trait, the wrong mood, a particular bond or chronicle title. Those events use that hero's name. They are not abstract.
 
 Choices here affect the dungeon run directly (damage, healing, loot, enemy spawns, buffs). They also affect things outside the run: chronicle entries, axis shifts, and consequence chains that may resolve ten dungeons later in ways you've forgotten you caused.
 
@@ -90,6 +90,6 @@ A guild that consistently burns shrines and robs travelers will, eventually, att
 
 ## Related Guides
 
-- [Crises](crisis.md) - Of the 14 crisis types, **Cult of the Unseen** injects three moral events at Moderate+, **Heretic Schism** injects one per severity escalation, and Plague / Cult of the Unseen / Dragon's Tithe additionally fire **permadeath** moral events at Critical severity
+- [Crises](crisis.md) - Among the crises, **Cult of the Unseen** injects three moral events at Moderate+, **Heretic Schism** injects one per severity escalation, and Plague / Cult of the Unseen / Dragon's Tithe additionally fire **permadeath** moral events at Critical severity
 - [Relationships](relationships.md) - Story Arcs queue their own moral events tied to specific hero pairs
 - [Dungeons](dungeons.md) - In-dungeon moral events, the other major source of choice prompts

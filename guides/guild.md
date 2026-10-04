@@ -41,18 +41,18 @@ Your guild is your home base — a collection of buildings, debts, and strong op
 
 ## Facility Upgrades Take Time
 
-Upgrading a facility is not instant. As of spec 221 (2026-07-10), every facility upgrade is a **construction project** that ticks down one in-game day at a time until the new level is finished. The mechanic is governed by an `upgradeTimeDays` value on each level entry — values range from **2 days to 20 days** depending on which facility and which level you're moving to.
+Upgrading a facility is not instant. Every upgrade is a **construction project** that ticks down one in-game day at a time until the new level is finished — anywhere from **2 days to 20 days**, depending on the facility and the level you're moving to. The builders work at the pace of builders everywhere, which is to say at exactly the pace they said they would and not one day sooner.
 
 ### The rules
 
 - **Old level stays active during the build.** If you upgrade the Guild Hall from level 1 to level 2 (a three-day build), your guild still has the L1 two mission slots for those three days. You lose nothing by starting; you gain the new level's benefits on completion.
 - **One at a time, guild-wide.** Only a single facility can be under construction at any moment. The Facilities screen will refuse to start a second upgrade and will name the currently-building facility in the error. Prioritise carefully — the Master Builder does not sub out.
 - **No cancellation.** Once construction has begun, the gold and materials are committed and the ledger has moved on. You cannot stop it, you cannot refund it. Wait for it to finish and consider it a lesson if you regret the choice.
-- **Completion emits a day-summary event.** On the day construction finishes, the day-tick pushes a `facility_upgrade_complete` phase event (`"🏗 Guild Hall reached level 2."`) so you don't need to open the Facilities screen to know it's done.
+- **Completion is announced.** On the day construction finishes, the day summary says so (*"🏗 Guild Hall reached level 2."*), so you don't need to open the Facilities screen to know it's done. The builders would like it noted that they are already packing up.
 
 ### Build-time distribution
 
-Across all 14 facilities × 5 levels, `upgradeTimeDays` values from `GuildFacilities.ts` cluster as follows (excluding the "already-built" level-1 entries which are 0):
+Across all 14 facilities × 5 levels, build times cluster as follows (level 1 comes already built, there being no point paying anyone to build something you own):
 
 | Build days | Count | Notable examples |
 |-----------|-------|------------------|
@@ -72,9 +72,9 @@ Rule of thumb: expect two-to-three-day builds early on, single-digit builds thro
 
 ### UI cues
 
-- The **Facilities tile** shows a `🏗 Nd` badge and a small progress bar under the level line while a facility is under construction.
+- The **Facilities tile** shows a **🏗 *N*d** badge and a small progress bar under the level line while a facility is under construction.
 - The **detail panel** replaces the "Upgrade" affordance with a construction card explaining the days remaining and reminding you the upgrade cannot be cancelled.
-- The **next-level block** on the detail panel now shows the build time up front (`"Build time: 3 days · facility remains active at Level 1 while building"`) so you see the wait cost before you commit.
+- The **next-level block** on the detail panel shows the build time up front (*"Build time: 3 days · facility remains active at Level 1 while building"*) so you see the wait cost before you commit.
 
 ---
 
@@ -242,13 +242,13 @@ Recruitment hub, morale booster, and the place where most guild drama begins (an
 | 4 | Renowned Tavern | 2–4 | 4,000g | 800g |
 | 5 | Legendary Tavern | 3–5 | 10,000g | 1,500g |
 
-The number column is the **quality range** (`recruitQualityMin`/`recruitQualityMax` per `GuildFacilities.ts:190-194`), not the recruit count per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day.
+The number column is the **quality range** of the recruits on offer, not how many turn up per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day.
 
 **Tavern Activities:**
 
-**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for a mission at all: the Board shows them unavailable and refuses the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities: they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
+**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for a mission at all: the Board shows them unavailable and refuses the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
 
-Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities now apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
+Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
 
 | Activity | Cost | Mood Effect (baseline) | Cooldown |
 |----------|------|------------------------|----------|
@@ -257,17 +257,17 @@ Costs scale with the total level of heroes present (Σ hero levels). Mood effect
 | Gambling | Bet 50–500g | +5 mood (win or lose) | None |
 | Bard Night | 7.5g × Σ hero levels | +8 mood | 3 days |
 
-Those prices were **halved** when it became clear what they cost at scale: a guild of thirty-five level-58 heroes was paying some 41,000 gold for a single feast, and one long run had spent 11.6 million gold on keeping everybody cheerful. Morale is worth paying for; it is not worth *that*.
+The sums add up faster than they look: a feast for thirty-five level-58 heroes comes to a little over 20,000 gold, which is a great deal of gold and also, the Guild Clerk points out, a great many heroes. Morale is worth paying for. It is worth knowing the price first.
 
 Each activity also carries a **~15% chance** of pushing a secondary event onto the nightly scouting scene — a bar fight after a rowdy Buy Rounds, a flirtation after a Bard Night, a rumour after Gambling. The Guild Clerk considers this an entirely reasonable rate of consequence per evening spent drinking.
 
 #### Nightly Scouting Scene
 
-On any night the tavern is populated, the Tavern tab surfaces a **scouting scene** above the recruits: 3-6 weighted autonomous events rolled from the heroes present, their drunk levels, their bonds, and their traits. No hero appears in two events of the same kind on the same night — one flirtation per person per evening is the house limit. Event kinds include **drunken fights, adultery, flirtations, rumours, confessions, mentorship moments, and full bar fights** — the mix skews to whatever the current roster has been quietly building up to. Each event renders as a card with participant portraits, a severity chip, a short description, and an **Intervene** button. Intervening in a **mentorship moment** now forms the **Mentor** and **Student** bonds the success text has always claimed were "noted" — the note has finally been filed.
+On any night the tavern is populated, the Tavern tab surfaces a **scouting scene** above the recruits: 3-6 weighted autonomous events rolled from the heroes present, their drunk levels, their bonds, and their traits. No hero appears in two events of the same kind on the same night — one flirtation per person per evening is the house limit. Event kinds include **drunken fights, adultery, flirtations, rumours, confessions, mentorship moments, and full bar fights** — the mix skews to whatever the current roster has been quietly building up to. Each event renders as a card with participant portraits, a severity chip, a short description, and an **Intervene** button. Intervening in a **mentorship moment** forms the **Mentor** and **Student** bonds on the spot — the tavern's version of signing the paperwork, with beer on it.
 
-Intervention **costs Attention Points from the same budget the Tonight tab spends** (see below) — the tavern has one supply of your attention, and both surfaces draw from it. Successful intervention nudges the participants' mood up and marks the event Handled. **It can fail**: one attempt in five goes wrong, and a failed intervention costs you the point *and* delivers the same consequence as never having tried, with the option's own bleak version of events in the result modal. You are a guildmaster, not a hostage negotiator, and the difference occasionally shows. **Skip Tavern Tonight** dismisses the scene and passes any unresolved events to the autonomous resolver — worst-case, meaning the drunken fight goes ahead and the confession is made anyway. The skip penalties in the decision table above are real and are applied at the day tick, whether you skipped deliberately or simply never opened the tavern; each unattended decision leaves the hero in question a thought about it, generally along the lines of *"Wanted a word with the guildmaster. Didn't get one."* The card now shows that cost before you decline, instead of quoting a failure message that could never occur.
+Intervention **costs Attention Points from the same budget the Tonight tab spends** (see below) — the tavern has one supply of your attention, and both surfaces draw from it. Successful intervention nudges the participants' mood up and marks the event Handled. **It can fail**: one attempt in five goes wrong, and a failed intervention costs you the point *and* delivers the same consequence as never having tried, with the option's own bleak version of events in the result modal. You are a guildmaster, not a hostage negotiator, and the difference occasionally shows. **Skip Tavern Tonight** dismisses the scene and passes any unresolved events to the autonomous resolver — worst-case, meaning the drunken fight goes ahead and the confession is made anyway. The skip penalties in the decision table below are real and are applied at the day tick, whether you skipped deliberately or simply never opened the tavern; each unattended decision leaves the hero in question a thought about it, generally along the lines of *"Wanted a word with the guildmaster. Didn't get one."* The card shows that cost before you decline, which is more warning than most consequences extend.
 
-#### Nightly Decisions (Tavern Decision Engine)
+#### Nightly Decisions
 
 Each night, the Tavern presents 6-8 situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Each resolved decision is written up in the **Last Night's Notes** panel the following morning — a short after-action record of which options you picked and how they landed, so the previous evening isn't quite as lost to the fog as it once was.
 
@@ -363,7 +363,7 @@ Where heroes train and spar. The sounds of practice combat are indistinguishable
 | 4 | 1.75x | Weapon specialization |
 | 5 | 2.0x | Master training |
 
-**Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The programme descriptions in the yard say exactly this, in those words, so nobody signs up for a multiplier that was never on offer.
+**Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The programme descriptions in the yard say exactly this, which is more honesty than most noticeboards manage.
 
 ### Infirmary
 
@@ -406,7 +406,7 @@ Where raw metal becomes something worth dying over. See [Crafting Guide](craftin
 
 ### Workshop
 
-Covers all leather, cloth, and wood crafting. The Workshop absorbs the legacy Tannery, Loom, and Lumber Mill stations into a single upgradeable facility. The staff take pride in their work, which mostly involves hitting things with other things until they're useful.
+Covers all leather, cloth, and wood crafting under one roof, which saves on roofs. The staff take pride in their work, which mostly involves hitting things with other things until they're useful.
 
 See [Crafting Guide](crafting.md) for details.
 
@@ -485,9 +485,9 @@ Once the Chapel reaches Temple (level 3) and the guild has a Cleric on the roste
 | 4 | +2 (4 total) | Blessed Amulet, Blessed Circlet |
 | 5 | +2 (6 total) | Blessed Shield, Blessed Greaves |
 
-All six use `blessed_stone`, `world_tree_branch`, and `god_tear` — the same materials the Chapel's own upgrades consume — plus mundane metals. Every piece is Ancestral rarity and Cleric-locked. If your only Cleric leaves the roster, the recipes vanish from the Forge list until you recruit another one; nothing already crafted is affected.
+All six use Blessed Stone, World Tree Branch, and God Tear — the same materials the Chapel's own upgrades consume — plus mundane metals. Every piece is Ancestral rarity and Cleric-locked. If your only Cleric leaves the roster, the recipes vanish from the Forge list until you recruit another one; nothing already crafted is affected.
 
-**Consecrated modifier.** Every sacred craft carries a hidden `Consecrated` tag. While equipped, each consecrated piece adds **+30 flat HP** to the wearer, stacking cleanly with everything else. A Cleric fully outfitted in all six pieces gets +180 HP over the item stats already printed on their tooltips — a real Chapel-focused build bonus rather than just "your Ancestral gear happens to be blessed." Non-sacred items don't carry the tag, so mixing consecrated pieces with regular Ancestral gear is fine — you just lose the +30 for each swapped-out sacred slot.
+**Consecrated modifier.** Every sacred craft is quietly **Consecrated**. While equipped, each consecrated piece adds **+30 flat HP** to the wearer, stacking cleanly with everything else. A Cleric fully outfitted in all six pieces gets +180 HP over the item stats already printed on their tooltips — a real Chapel-focused build bonus rather than just "your Ancestral gear happens to be blessed." Non-sacred items aren't consecrated, so mixing consecrated pieces with regular Ancestral gear is fine — you just lose the +30 for each swapped-out sacred slot.
 
 ---
 
@@ -585,7 +585,7 @@ There are events in five categories. Each event has a deadline (typically 3–5 
 
 ### How Events are Matched
 
-Each event specifies **hero slots** (typically 1–2 heroes) and a set of **preconditions**. The precondition engine checks every hero against those conditions and fills the slots with matching heroes. Precondition types include:
+Each event specifies **hero slots** (typically 1–2 heroes) and a set of **preconditions**. The game checks every hero against those conditions and fills the slots with matching heroes. Precondition types include:
 
 | Precondition | Example |
 |---|---|
@@ -610,11 +610,11 @@ Context-aware events shift the guild's moral axes (Valor/Wealth/Order) just as s
 
 ## Guild Reputation
 
-Reputation unlocks better content and more expedition slots. Depressingly easy to lose, annoyingly hard to gain.
+Reputation unlocks better content and more expedition slots. Impossible to lose, annoyingly hard to gain — which sounds like a good deal right up until you try gaining it.
 
 ### Reputation Ranks
 
-The Reputation Rank table from `GuildFacilities.ts:579-586` gives the thresholds; the **Bonus Slots** column is what each rank adds *on top of* the Guild Hall's mission slots, per `GUILD_RANK_SLOT_BONUS` at `GuildFacilities.ts:607-615`. Total mission slots = Guild Hall base (2–10 across L1–L5) + this rank bonus.
+The **Bonus Slots** column is what each rank adds *on top of* the Guild Hall's mission slots — fame, it turns out, is mostly more paperwork. Total mission slots = Guild Hall base (2–10 across L1–L5) + this rank bonus.
 
 | Rank | Rep Required | Bonus Slots | Notes |
 |------|--------------|-------------|-------|
@@ -626,26 +626,26 @@ The Reputation Rank table from `GuildFacilities.ts:579-586` gives the thresholds
 | A | 25,000 | +2 | Elite management |
 | S | 60,000 | +3 | Legendary efficiency |
 
-The **Workshop** facility is NOT a rank-E unlock — it is gated by `unlockRequirements: { questUnlock: true }` (`GuildFacilities.ts:333`), meaning it unlocks via a quest reward, not by reaching any specific reputation rank.
+The **Workshop** is not a rank unlock at all — it comes as a quest reward, however famous you are, the leatherworkers being unimpressed by celebrity.
 
 ### Earning Reputation
 
-Reputation is granted only through these confirmed code paths:
+Reputation comes from four places, and only four:
 
 | Action | Reputation |
 |--------|------------|
-| Complete mission | scales with mission `reputationBase × reputationMultiplier` (`GameState.ts:4707`) |
-| Quest chain step + finale rewards | `reward.reputation` value on the step (`QuestChain.ts:465`) |
-| Moral event consequences (Guild Identity + Crisis) | per-consequence `reputationDelta` (`GuildIdentity.ts:243`, `MoralEventResolver.ts:72`) |
-| Custom Dungeon architect rewards | claimed on login from the server-side queue (`architectRewards.ts:56`) |
+| Complete mission | Each contract carries its own reputation value, paid on success |
+| Quest chain step + finale rewards | Whatever the step promises |
+| Moral event consequences (Guild Identity + Crisis) | Set by each consequence |
+| Custom Dungeon architect rewards | Claimed on login |
 
-There is no explicit reputation hook for boss kills outside the mission reward path, no rescue-NPC bonus, no veteran-rank promotion reward, and no other ambient reputation grant. Earning reputation is a function of *what missions and events you finish*, not a list of separate achievements.
+Boss kills outside the mission reward, rescues, veteran promotions — none of them pay reputation, however impressive they looked at the time. The realm judges you by what you *finish*, not by what you collect along the way.
 
 ### Losing Reputation
 
-There is no reputation-loss path in current code. `GameState.ts:4702-4708` explicitly notes that failure pays zero reputation and that the failure-penalty path is out of scope. No abandon penalty, no per-hero-death penalty, no party-wipe penalty exist on the reputation hook. Reputation is a one-way ratchet — failures and wipes leave it where it stood.
+You can't. Failure pays no reputation and costs none either; nor does abandoning a mission, losing a hero, or wiping a whole party. Reputation is a one-way ratchet — a disaster leaves it exactly where it stood. The realm's memory is short where your failures are concerned, which is the only respect in which it is kind.
 
-(Moral event consequences with negative `reputationDelta` can subtract, in principle, but the consequence data is event-specific rather than a generic "you lost a hero" hook.)
+(A moral event's consequences can occasionally subtract reputation, but only where that particular event says so.)
 
 
 ---
@@ -703,7 +703,7 @@ The bills come due whether or not you can pay them. Gold is allowed to go **nega
 | At or below **-3,000** | A second, sharper warning on the night you cross it: *"There is a limit to how far this can go."* |
 | At or below **-5,000** | **Game Over.** The guild cannot operate and the run ends |
 
-A crisis levy is a bill like any other and can push you across all three lines on its own, which is worth remembering before you agree to one. The bankruptcy projection on the economy panel now counts the days to **-5,000** rather than to zero, on the grounds that zero stopped being the cliff edge and became a landmark on the way down.
+A crisis levy is a bill like any other and can push you across all three lines on its own, which is worth remembering before you agree to one. The bankruptcy projection on the economy panel counts the days to **-5,000**, not to zero — zero being merely a landmark on the way down, and not the cliff edge.
 
 ### Daily Wages
 
@@ -844,7 +844,7 @@ The guild shop lets you sell items to visiting customers for gold — turning yo
 
 **Customer Types:** Peasants, Adventurers, Merchants, Knights, Nobles, Collectors, Rival Guilds, and Mages — each with a distinct budget range, a curated list of item types they'll consider, and a base rarity ceiling. Peasants stick to Consumables and Materials; Merchants trade in bulk goods and accessories; Nobles buy prestige (accessories, then weapons/armor/helmets); Collectors pay any price for high-tier weapons, armor, and accessories. Higher shop levels tilt the mix toward wealthier customer types rather than granting Peasants more spending power.
 
-**Thieves:** Peasants have the highest chance of attempting theft (~8%); Rival Guilds are also plausible saboteurs (~5%); Knights, Nobles, and Collectors never steal. Anti-theft investment (shop level, guard, shopkeeper skill) raises the catch rate — a caught thief leaves an audit-visible ⚑ mark on the shelf for a couple of days.
+**Thieves:** Peasants have the highest chance of attempting theft (~8%); Rival Guilds are also plausible saboteurs (~5%); Knights, Nobles, and Collectors never steal. Anti-theft investment (shop level, guard, shopkeeper skill) raises the catch rate — a caught thief leaves a ⚑ mark on the shelf for a couple of days, as a warning to others and a comfort to you.
 
 **Pricing:** Set prices on displayed items. Customers react based on how your price compares to fair value — price too high and they leave, price too low and you lose profit. Finding the sweet spot is an art form that most guild masters discover through expensive trial and error.
 
@@ -958,14 +958,14 @@ Traveling merchants visit your guild periodically, offering items and services. 
 
 ## Rival Guilds
 
-The AI-rival-guild manager — the one that used to poach heroes, launch sabotage runs, and hurl challenges at your gate — has been **removed from the game**. It sat disabled in code for a long time, waiting for a rework that never quite arrived, and was retired rather than kept on life support.
+Whatever the older tavern tales say, there are **no rival guilds** out there poaching your heroes, sabotaging your runs, or hurling challenges at your gate. They have left the realm, and nobody has written to ask after them.
 
-Two smaller pieces survive, because they were doing useful work independently:
+Two traces remain, having found honest work elsewhere:
 
-- **Rival Guild War** persists as a *crisis type* — a competitor guild occasionally makes itself your problem for a while, without any of the standing rival-manager machinery underneath.
+- **Rival Guild War** persists as a *crisis type* — a competitor guild occasionally makes itself your problem for a while, then goes away again.
 - **Rival Guilds** still appear as *shop customers* — buying the odd item at the odd price, complaining about the odd markup — just like Peasants and Nobles do.
 
-Everything else — hero poaching, reputation attacks, trade offers, the personality wheel — is no longer in the game.
+Hero poaching, reputation attacks, trade offers and the like are not part of the game.
 
 ---
 
@@ -1013,7 +1013,7 @@ Accumulating 50+ entries earns the **Legend** title (+8% to all stats). See [Chr
 
 ### Daily Cycle
 
-The day proceeds in five phases, with or without your attention — though your attention is recommended. Phase names from `GameState.ts:337-343`:
+The day proceeds in five phases, with or without your attention — though your attention is recommended:
 
 1. **Dawn** - Expedition results return; loot distributed, injuries and deaths resolved
 2. **Morning** - Guild management, healing, social events, recruitment at the Tavern

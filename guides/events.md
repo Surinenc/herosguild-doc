@@ -12,7 +12,7 @@ You are given a limited number of **Attention Points** to spend. You will not ha
 
 The morning after, each resolved decision surfaces in the **Last Night's Notes** panel — a brief record of which options you picked and how they landed. What happens in the tavern still mostly stays in the tavern, but the highlight reel is now, at least, filed.
 
-→ **Full details:** [Guild Management — Nightly Decisions](guild.md#nightly-decisions-tavern-decision-engine)
+→ **Full details:** [Guild Management — Nightly Decisions](guild.md#nightly-decisions)
 
 ---
 

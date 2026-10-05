@@ -196,7 +196,7 @@ Standing orders are the lever for boss patterns you've seen before: the second t
 
 ## The Turn Loop
 
-**Raids run in real time.** There is no End Turn button; the boss does not wait for you to finish thinking. Turns auto-resolve on a **6-second base tick**, and you control the pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds. A **Pause** button sits in the raid phase header — useful when you need to read a queued telegraph or queue a complex set of orders without the tick eating the window.
+**Raids run in real time.** There is no End Turn button; the boss does not wait for you to finish thinking. Turns auto-resolve on a **6-second base tick**, and you control the pace through a **speed selector** at the top of the raid UI offering ½×, 1×, 2×, and 4× speeds. There is **no pause**. The dragon does not stop for tea, and neither, therefore, do you; ½× — twelve seconds a turn — is as close to stopping as the realm allows, and is where you go to read a queued telegraph or line up a complicated set of orders.
 
 The loop, in practice:
 
@@ -212,7 +212,7 @@ A few things worth knowing about the cadence:
 - **Add waves run on a 3-turn cadence, but the guest list varies by boss.** The Ancient Dragon brings 3 Fire Whelps per wave, the Lich King 2 Skeletons, and the Void Titan 2 Wraiths — each boss, in its own way, believing in family. Boss-scripted waves (e.g. the Lich's add-summon abilities) layer on top of this cadence.
 - **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
-- **Heroes recover between rounds**, as they do anywhere else: mana regenerates, skill cooldowns tick down, and per-turn HP regeneration — food buffs, Alchemy regen, equipped-item regen, the Champion's own Regeneration node — applies. Sustain you have stacked for the rest of the game does not politely stand down because the enemy is enormous.
+- **Heroes recover between rounds**, as they do anywhere else: mana regenerates, skill cooldowns tick down (gem skills carry their [cooldowns](skills.md#cooldowns) from round to round, a raid being one very long fight), and per-turn HP regeneration — food buffs, Alchemy regen, equipped-item regen, the Champion's own Regeneration node — applies. Sustain you have stacked for the rest of the game does not politely stand down because the enemy is enormous.
 - **Call Retreat** has its own button outside the order budget; pressing it ends the raid immediately, and with slightly more dignity than the alternative.
 
 The speed selector is the lever for actually surviving the harder fights — speeding up trivial turns and slowing down to read telegraphs and queue intricate group orders during the dangerous ones.
@@ -293,7 +293,11 @@ The raid plays out in three stages:
 
 The board layout, from top to bottom: a status bar at the top, the groups roster on the left, the tactical board in the centre, the threat queue and combat log on the right, and the group chips, order panel, and keyboard legend along the bottom.
 
-**Keyboard.** A legend along the bottom of the board lists hotkeys — **M / H / B / T / I / E** for orders, **1 / 2 / 3** for groups, **Space** to pause, **Esc** to cancel. It is a handsome legend, and a legend is all it is: the keys do nothing. Every order, group and pause is issued with the mouse. The Guild Clerk has seen signposts like this before, usually pointing at a bridge that isn't there.
+**Keyboard** (on the Live view):
+- **1–6** — select a group (1 is the first; a seventh group, should you build one, answers only to the mouse)
+- **Esc** — cancel the selected group's queued order
+
+Orders themselves are issued with the mouse, since most of them want to know a target and the keyboard has no opinion about targets. Clicking a group in the heat of a Void Implosion is how raids are lost; the number keys exist so that it isn't.
 
 A trio of view tabs in the phase header switches the central panel between **Live** (the fight as it stands), **Telegraphs** (a reference card for what the queued symbols mean), and **Storyboards** (a tactical preview of the boss's known patterns). The Telegraphs tab is worth opening every time you face a new boss; the Storyboards tab is worth opening every time you face a familiar one.
 

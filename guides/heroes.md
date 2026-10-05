@@ -82,7 +82,7 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 - **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
 - **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
 - **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
-- **Trap Detection & Lockpicking** - Rogues handle the traps and locks the rest of the party would fail at, usually by being the only one who thought to look. A hero of any class with the **Keen Eye** trait spots traps too, but only a Rogue picks the lock
+- **Trap Detection & Lockpicking** - A Rogue counts as both on the party rating shown before dispatch, and a hero of any class with the **Keen Eye** trait covers the traps half. Inside the dungeon, the traps themselves disarm on the same odds for everybody, which the Rogue regards as an administrative oversight
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 

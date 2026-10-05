@@ -312,7 +312,7 @@ The interface is mouse-first, and the keyboard is mostly decorative. **Escape** 
 
 The **Custom Dungeon editor** is the exception, being a place where people do actual work: **Escape** steps back out of whatever you were doing (patrol placement first, then the active tool, then the selection), and **Delete** or **Backspace** removes the selected room or corridor without asking whether you're sure. Architects learn to be sure.
 
-The raid screen prints a keyboard legend of its own, which the keys do not honour — see [World Boss Raids](raids.md#the-raid-interface). A few other screens hide right-click shortcuts (Mission Board, Passive Tree, Dungeon Menu), for those who like to poke things and see what happens.
+The raid screen is the other exception: number keys **1–6** select groups and **Escape** cancels the selected group's queued order — see [World Boss Raids](raids.md#the-raid-interface). A few other screens hide right-click shortcuts (Mission Board, Passive Tree, Dungeon Menu), for those who like to poke things and see what happens.
 
 ---
 

@@ -37,18 +37,19 @@ Effectively: a gem's **color** tells you which socket it fits into, and its **st
 
 ### Equipment Sockets
 
-Where the sockets are depends on what you are wearing, and the realm distributes them with the generosity of a landlord:
+Any equipped item can carry sockets — weapon, off hand, armour, helmet, gloves, boots, and both accessory slots — and how many it gets depends on its **rarity**, not on where you wear it. The realm distributes them with the generosity of a landlord:
 
-| Equipment | Max Sockets | Typical Links |
-|-----------|-------------|---------------|
-| Weapon | 6 | Main skills |
-| Body Armor | 6 | Primary skill setup |
-| Helmet | 4 | Utility skills |
-| Gloves | 4 | Secondary attacks |
-| Boots | 4 | Movement, guards |
-| Off Hand | 3 | Support skills |
-| Amulet | 1 | Single gem |
-| Ring | 1 | Single gem |
+| Rarity | Guaranteed | Maximum |
+|--------|------------|---------|
+| Common | 0 | 1 (5% chance) |
+| Uncommon | 0 | 2 |
+| Rare | 1 | 3 |
+| Epic | 1 | 4 |
+| Legendary | 2 | 5 |
+| Mythic | 3 | 6 |
+| Ancestral | 4 | 7 |
+
+A Mythic ring has as many sockets as a Mythic breastplate. The ring finds this flattering; the breastplate has stopped mentioning it.
 
 ### Socket Colors
 
@@ -62,32 +63,53 @@ Sockets come in colours, and a socket is entirely inflexible about what it will 
 
 The mathematics of socket generation are, in the Guild Clerk's assessment, the sort of thing that keeps certain heroes awake at night.
 
-- Base socket chance: `30% + item level × 2%` (capped at 90%)
-- White socket chance: 3% (rare enough to cause genuine excitement)
-- Link chance: `20% + item level × 1%` (capped at 70%)
+- Above the guaranteed sockets, each extra one rolls at `20% + item level × 1%` (capped at 90%), and the rolling **stops at the first failure** — so a long run of sockets is a long run of luck
+- White socket chance: 3% per socket (rare enough to cause genuine excitement)
+- The other colours lean by item: **weapons** mostly red, then green, then blue; **armour** mostly red, then blue, then green; **everything else** mostly blue, with green and red sharing the rest
+
+Colours are rolled **once**, when the item's sockets first appear, and belong to the item from then on. Unequip it, vault it, hand it to another hero — the colours go with it. There is no re-rolling a bad set of sockets by taking the boots off and putting them on again, though heroes have been seen trying.
 
 ### Linking Sockets
 
-Sockets can be **linked** together, shown by a bar connecting them. The more links, the more powerful your skill setup — and the more time you'll spend staring at equipment trying to find one with the right colors:
+Every socket on an item is **linked to every other socket on it**. There are no loose sockets and no link rolls: an item is one link group, however many sockets it has.
 
 ```
-[🔴]—[🟢]  ← These two sockets are linked
-[🔵]      ← This socket is separate
+[🔴]—[🟢]—[🔵]—[🔴]  ← a four-socket item: one active skill, up to three supports
 ```
 
 **Why Links Matter:**
-- Active gems benefit from support gems in the same link group
-- More links = more supports = stronger skills
-- A 6-linked item is extremely valuable
+- Each item holds **one active skill**, and every other gem on it supports that skill — eight equipment slots, at most eight active skills
+- More sockets = more supports = stronger skills, but also a dearer and slower one (see [Cooldowns](#cooldowns) and [Mana Cost](#mana-cost-formula))
+- A seven-socket Ancestral item is a six-support skill in one piece, and is treated by its owner accordingly
 
 ### Socket Placement Rules
 
 Placement follows a strict hierarchy, enforced without sympathy:
 
-- **Active gems require an empty group.** You cannot place an active skill into a link group that already has any gem socketed — clear the group first.
-- **Supports must be tag-compatible.** Once a link group has an active gem, any new support must share a tag with the active gem — a fire support has nothing to say to a healing spell. Incompatible supports are greyed out in the UI.
-- **Cascade unsocket.** Removing an active gem from a group also unsockets every support in that group, since a support group with no active is inert. All ejected gems return to the hero's gem inventory.
-- **Duplicate supports stack.** You can socket two copies of the same support gem into one group — they stack additively rather than being deduplicated.
+- **The active goes in first.** A support on its own does nothing, so the game won't let you socket one into an item that has no active skill yet.
+- **Active gems require an empty item.** You cannot place an active skill into an item that already holds any gem — clear it first.
+- **Supports must be tag-compatible.** Once an item has an active gem, any new support must share a tag with it — a fire support has nothing to say to a healing spell. Incompatible supports are greyed out in the UI.
+- **Cascade unsocket.** Removing an active gem also unsockets every support on that item, since supports with no active are inert. All ejected gems return to the hero's gem inventory.
+- **Unequipping returns the gems.** Take an item off — by hand, by auto-equip, by selling it — and every gem in it goes back to its hero's gem inventory first. A sword in the vault casts nothing.
+- **Duplicate supports stack.** You can socket two copies of the same support gem into one item — they stack in full rather than being deduplicated, and the Guild Clerk has been told, firmly, that this is how some people like their builds.
+
+### Cooldowns
+
+A gem skill's cooldown is the size of its link: **1 for the active, plus 1 for every compatible support linked to it** (duplicates each count), reduced by the hero's skill proficiency and the Archmage's Regalia set, rounded to the nearest round, and never below 1.
+
+| Linked gems | Base cooldown |
+|-------------|---------------|
+| Active alone | 1 |
+| Active + 2 supports | 3 |
+| Active + 5 supports | 6 |
+
+A skill with cooldown N sits out the next N rounds after it is cast. This applies to every kind of gem skill — damage, heals, guards, warcries and minions. Bigger links hit harder and come round less often, which is the trade at the heart of the whole system. In a raid, cooldowns carry from round to round, a raid being one very long fight.
+
+The Gems tab, the gem tooltip and the item forge all show the **real** mana per cast and cooldown of each link, worked out the same way combat works it out.
+
+### How Heroes Choose
+
+Heroes pick their own skills in combat, and they pick the **strongest** one ready to fire — judged on the damage it would actually do with its linked supports included, every turn, against the enemies actually in front of them. Mana is not part of the judgement; a hero who can afford a skill will use the best one, and worry about the bill later.
 
 ---
 
@@ -115,9 +137,12 @@ As gems level up, they become more powerful but also more expensive to use — a
 
 ```
 Mana Cost = Base Mana × (1 + (Level - 1) × 0.02)
+          × each support's mana multiplier
+          × (1 + 0.15 × number of supports)
+          × (1 − the hero's mana cost reduction)        (minimum 1)
 ```
 
-At level 100, skills cost approximately 3× their base mana. The Guild Clerk has observed that this catches heroes by surprise roughly 100% of the time.
+The third line is the link tax: every support adds 15% on top of its own multiplier, so a five-support link costs ×1.75 before its supports have even opened their invoices. At level 100, a bare skill costs approximately 3× its base mana. The Guild Clerk has observed that this catches heroes by surprise roughly 100% of the time.
 
 ---
 
@@ -307,20 +332,20 @@ Result: AoE healing (Healing Light is already AoE at the gem level — see the g
 
 ### Finding Gems
 
-| Source | Gem Quality |
-|--------|-------------|
-| Dungeon drops | Common to Rare |
-| Boss drops | Uncommon to Epic |
-| Quest rewards | Specific useful gems |
-| Guild Shop | Basic gems for purchase |
-| World bosses | Legendary gems |
+Gems turn up where the fighting is worst, and nowhere they can be bought:
+
+| Source | Chance |
+|--------|--------|
+| Mission with a boss fight that doesn't fail | 10% at ⭐⭐⭐, 15% at ⭐⭐⭐⭐, 20% at ⭐⭐⭐⭐⭐ |
+| Dungeon boss room | 10% / 15% / 20% at ⭐⭐⭐ / ⭐⭐⭐⭐ / ⭐⭐⭐⭐⭐ — **doubled** in Heroic dungeons |
+| Heroic dungeon treasure room | 10% |
+| Quest chain rewards | Named in the chain's rewards |
+
+A drop is any gem at all, active or support, with no regard for who is in the party — so roughly two in three are supports, and the Necromancer's gem may very well go to the Warrior. Gems have no rarity; a gem's worth is its level and what you link to it.
 
 ### Gem Inventory
 
-Heroes have a personal gem inventory separate from equipment sockets. Unneeded gems can be:
-- Stored for later use
-- Traded between heroes
-- Sold for gold
+Every hero keeps a personal gem inventory, separate from their sockets, and **a gem belongs to the hero who found it**. It cannot be handed to another hero, sold, or thrown away — the one possession in the guild that is genuinely, permanently personal. A mission drop goes to a random survivor of the party, a dungeon find to the first hero still standing. If the wrong hero picked up the right gem, the only remedy is to make the wrong hero into the right one.
 
 ---
 

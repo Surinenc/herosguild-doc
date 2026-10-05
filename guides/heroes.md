@@ -82,7 +82,7 @@ Rogues strike from the shadows with devastating critical hits. Their high dexter
 - **High Crit Chance** - Designed around making the first strike count, ideally before anyone knows there's a fight
 - **Backstab Bonus** - Extra damage from positioning, which they treat as evidence that approach matters
 - **Evasion** - Can dodge incoming attacks, which they consider far preferable to receiving them
-- **Trap Detection & Lockpicking** - Rogues handle the traps and locks the rest of the party would fail at, usually by being the only one who thought to look
+- **Trap Detection & Lockpicking** - Rogues handle the traps and locks the rest of the party would fail at, usually by being the only one who thought to look. A hero of any class with the **Keen Eye** trait spots traps too, but only a Rogue picks the lock
 
 **Best For:** Taking down priority targets, finding treasure, critical-focused builds
 
@@ -319,11 +319,14 @@ When an injury occurs, a roll determines severity. Higher rolls are better, and 
 ### Fatal Injuries
 
 Certain injuries cause instant death — which is why the vital-organ prosthetic window exists. Install the replacement *before* the organ is Destroyed, because afterwards there is nobody to install it on:
-- Brain destroyed
 - Heart destroyed
 - Liver destroyed
-- Both Lungs destroyed
-- Both Kidneys destroyed
+- Both Lungs destroyed (the second one, specifically)
+- Both Kidneys destroyed (likewise)
+
+A fatal wound is final in a way that ordinary falling over is not. A hero whose heart or liver goes in a fight drops to 0 HP on the spot, and there is **no death save** — the dice are for heroes who might live. A hero who *passes* a death save and then takes an injury that destroys a vital organ dies of the wound anyway, which the Guild Clerk records as the cruellest sentence in the medical ledger.
+
+The **brain** is the exception that keeps everyone humble: it can be damaged, badly, but never destroyed. A hero survives any blow to the head — impaired, slower to learn, and repeating themselves at dinner, but alive.
 
 ### Prosthetics
 
@@ -337,7 +340,7 @@ Destroyed parts can be replaced with prosthetics. The original limb-and-sense se
 | Standard | 80% | Level 4 | Metalsmithing 10 |
 | Enchanted | 125% | Level 5 | Arcana 15+ |
 
-**Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys, Stomach, Spine) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead (or, for paired organs like lungs and kidneys, dies only when both are gone). The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders) take a prosthetic only once Destroyed, the guild declining to saw off anything that still works.
+**Vital-organ rescue window:** Vital body parts (Brain, Heart, Lungs, Liver, Kidneys) follow a different install rule — they can *only* receive a prosthetic while **Damaged**, not after destruction. Once a vital organ is Destroyed, the hero is already dead — or, for a lung or a kidney, is living on the other one, which can no longer be helped and had better not be lost. The window between "damaged" and "destroyed" is when the prosthetic must go in — the guild surgeon's version of a last-chance clearance sale. Non-vital parts (limbs, eyes, ears, jaw, nose, shoulders, stomach and spine) take a prosthetic only once Destroyed, the guild declining to saw off anything that still works. A hero survives losing a stomach, and a destroyed spine is paralysis rather than death — both bad days, both survivable, both fixable.
 
 ---
 
@@ -637,7 +640,7 @@ Not every hero who leaves the guild dies. Some are banished after disgracing the
 
 These heroes go to the **Departed archive**, a separate record from the Chapel memorial. They are not dead — they are simply no longer with the guild — and they retain their titles and chronicle entries in the archive. The realm keeps the record so that, should any of them ever return, the guild has a paper trail to consult. The archive lives behind the **Departed** tab on the Chapel screen, alongside the Memorial Hall, each card labelled with the manner of going: Retired, Deserted, Guild event, Lost to a dungeon, Called away, or the admirably noncommittal Left the guild.
 
-The distinction matters, and the roster feels it differently. A **death** brings grief scaled to the bond — a Devoted partner carries -60 mood for thirty days, a best friend -40 for fourteen, a friend -20 for a week, while a rival flips a coin between relief and an unexpected -10 — and the closely bonded go unavailable with Mourning on top of it. A hero who merely **leaves alive** gets a smaller, plainer reaction: friends take -6 mood for a week (-5 if the hero deserted rather than being thrown out), enemies enjoy +3 for three days, and everyone in between carries on as though nothing has happened, which for them it largely hasn't. No bonds are severed, no one is widowed, and no blood feud is rolled, because none of that is what leaving means.
+The distinction matters, and the roster feels it differently. A **death** brings grief scaled to the bond — a Devoted partner carries -60 mood for thirty days, a best friend -40 for fourteen, a friend -20 for a week (all of it shortened by a Temple-level [Chapel](guild.md#chapel)), while a rival flips a coin between relief and an unexpected -10 — and the closely bonded go unavailable with Mourning on top of it. A hero who merely **leaves alive** gets a smaller, plainer reaction: friends take -6 mood for a week (-5 if the hero deserted rather than being thrown out), enemies enjoy +3 for three days, and everyone in between carries on as though nothing has happened, which for them it largely hasn't. No bonds are severed, no one is widowed, and no blood feud is rolled, because none of that is what leaving means.
 
 **Retirement is the exception that proves the Clerk's filing system.** A hero who saves up and goes out on their own terms is mourned at the full death-grade magnitude — the guild loses them just as completely, and their friends know it. What none of the living departures do is count as *grief* for the purposes of a [mental break](relationships.md#mental-breaks): only an actual death can push a grieving hero over that line.
 

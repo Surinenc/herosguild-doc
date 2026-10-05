@@ -100,11 +100,11 @@ Hero housing is the first thing a hero has an opinion about and the last thing t
 
 | Level | Beds | Mood | Comfort Bonus | Daily Upkeep |
 |-------|------|------|---------------|--------------|
-| 1 | 12 | +0 | +0 | 2g |
-| 2 | 20 | +0 | +5 | 12g |
+| 1 | 12 | -5 | +0 | 2g |
+| 2 | 20 | -2 | +5 | 12g |
 | 3 | 30 | +0 | +10 | 20g |
-| 4 | 45 | +5 | +15 | 800g |
-| 5 | 60 | +10 | +20 | 2,000g |
+| 4 | 45 | +3 | +15 | 800g |
+| 5 | 60 | +5 | +20 | 2,000g |
 
 Heroes sleeping in the Barracks take their **comfort** from how full it is, and they notice long before it is actually full:
 
@@ -115,9 +115,9 @@ Heroes sleeping in the Barracks take their **comfort** from how full it is, and 
 | Half to three-quarters | 55 | No opinion |
 | Three-quarters or more | 35, then 20 | *"These beds are terrible."* -5 |
 
-The level's comfort bonus is added on top, and the mood lasts exactly as long as the crowding does. Upgrading therefore pays twice: more beds lower the occupancy, and better ones raise the comfort. Nine heroes in a level-1 Barracks are three-quarters full and each carries **-5**; the same nine in a level-2 Barracks are under half full at +5 comfort and each carries **+6**. Eleven points of mood per hero, every day, for 2,000 gold, two days and some wood — which is the cheapest happiness the guild will ever buy.
+The level's comfort bonus is added on top, and the mood lasts exactly as long as the crowding does. Upgrading therefore pays twice: more beds lower the occupancy, and better ones raise the comfort. Nine heroes in a level-1 Barracks are three-quarters full and each carries **-5**; the same nine in a level-2 Barracks are under half full at +5 comfort, earn **+6** for it, and lose 2 of that to the building — **+4** each. Nine points of mood per hero, every day, for 2,000 gold, two days and some wood — which is the cheapest happiness the guild will ever buy.
 
-The **Mood** column is a separate flat bonus from the building itself, and it only speaks up when comfort isn't already complaining — one cramped room, one grievance, the Guild Clerk being firm about double-counting. Levels 1 to 3 carry none, which is not a punishment for a small building, merely an absence of praise.
+The **Mood** column is a separate flat opinion of the building itself (*"Quarters: cramped"* or *"Quarters: comfortable"*). Its complaints only speak up when comfort isn't already complaining — one cramped room, one grievance, the Guild Clerk being firm about double-counting — but its praise is offered regardless. A level-3 Barracks has no opinion of itself at all, which in a building is a kind of serenity.
 
 ### Hero Quarters
 
@@ -445,23 +445,25 @@ Provides mood bonuses, funeral services, blessings, and (from Temple level onwar
 
 | Level | Name | Mood Bonus | Features |
 |-------|------|------------|----------|
-| 1 | Small Shrine | +3 | Basic services |
-| 2 | Chapel | +6 | Blessings unlocked |
-| 3 | Temple | +10 | Blessings strengthen; Sacred Crafts unlocked (2 recipes) |
-| 4 | Grand Chapel | +15 | Blessings strengthen further; Sacred Crafts (4 recipes) |
-| 5 | Divine Sanctum | +22 | Blessings at full strength; Sacred Crafts (6 recipes) |
+| 1 | Small Shrine | +2 | Basic services |
+| 2 | Chapel | +3 | Blessings unlocked |
+| 3 | Temple | +4 | Blessings strengthen; grief 25% shorter; Sacred Crafts unlocked (2 recipes) |
+| 4 | Grand Chapel | +5 | Blessings strengthen further; grief 40% shorter; trauma heals twice as fast; Sacred Crafts (4 recipes) |
+| 5 | Divine Sanctum | +6 | Blessings at full strength, **two a day**; grief 50% shorter; trauma heals twice as fast; Sacred Crafts (6 recipes) |
 
 **Special Features:**
 - Memorial services for fallen heroes — the Chapel exists for many reasons, but this is the one it gets used for most
 - Daily mood bonus for all heroes; the only passive benefit that doesn't require anyone to do anything dangerous
+- **Consolation**, from Temple level: when a hero dies, every grief thought the survivors carry for them runs 25% shorter at level 3, 40% at level 4 and half at level 5 (never under a day). Relief at an enemy's passing is not shortened; the Chapel does not counsel against gloating, it simply declines to help
+- **Trauma healing**, from Grand Chapel level: a hero's dread of a particular dungeon type fades a point every **5** days instead of every 10 — see [Location Trauma](relationships.md#location-trauma)
 - Blessing buffs before expeditions, from Chapel level 2 onward
 - Sacred item crafting at the Forge, from Chapel level 3 onward (requires a Cleric on the roster)
 
 #### Blessing types
 
-The guild receives **one blessing charge per day** whenever the Chapel is at level 2 or above — no charge at level 0/1. Unspent charges do not roll over; the pool simply refills to 1 at the next dawn. From the Mission Board's contract-detail panel, spend the day's charge to bless an undispatched contract with one of three types. The blessing sticks until that mission resolves.
+The guild receives **one blessing charge per day** while the Chapel is at level 2 to 4, and **two** at Divine Sanctum — no charge at level 0/1. Unspent charges do not roll over; the pool simply refills at the next dawn. From the Mission Board's contract-detail panel, spend the day's charge to bless an undispatched contract with one of three types. The blessing sticks until that mission resolves.
 
-Chapel level does not grant extra charges — it's always one call a day — but it does make that one call more decisive: the blessing's magnitude scales with Chapel level.
+Below Divine Sanctum, Chapel level grants no extra charges — it's one call a day — but it does make that call more decisive: the blessing's magnitude scales with Chapel level. At level 5 the gods, apparently, take a second appointment.
 
 | Blessing | L2 (Chapel) | L3 (Temple) | L4 (Grand Chapel) | L5 (Divine Sanctum) |
 |---|---|---|---|---|
@@ -1064,7 +1066,7 @@ The Guild Clerk's recommendations, based on extensive observation of which guild
 ### Late Game
 
 1. **All facilities to max** - Every bonus counts at high levels; there are no unimportant upgrades at this point
-2. **Chapel 5** - The +22 mood bonus at Divine Sanctum level makes mood management dramatically easier as the roster grows
+2. **Chapel 5** - Two blessings a day, grief halved and trauma healing twice as fast; the mood bonus is modest, but a Divine Sanctum earns its keep in the funerals
 3. **Arsenal** - Equipment maintenance becomes a real consideration when heroes are carrying Legendary gear
 
 ---

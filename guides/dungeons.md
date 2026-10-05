@@ -102,7 +102,7 @@ Distinct environments, each with unique enemies and atmosphere. The dungeon does
 - **Enemies:** Undead, Constructs
 - **Atmosphere:** Traps, unstable structures; the people who built these places anticipated visitors and took appropriate measures
 - **Loot Focus:** Artifacts, ancient items
-- **Tips:** Bring a Rogue for trap detection — the traps remain functional long after everything else has crumbled
+- **Tips:** Bring a healer — the traps remain functional long after everything else has crumbled, and disarming them is a coin weighted only seven to three
 
 ### Crypt
 
@@ -193,7 +193,7 @@ A party is not just a list of heroes. It's a system that either covers its gaps 
 1. **Tank** - Warrior or Cleric to absorb damage; someone needs to stand between the enemies and everyone else, and Warriors have accepted this as their purpose
 2. **Healer** - Cleric to keep everyone alive; the party will express its appreciation by blaming them when someone dies
 3. **DPS** - Mage, Rogue, Ranger for damage; the ones who end fights rather than merely surviving them
-4. **Utility** - Rogue for traps, Ranger for scouting; the contributions that are invisible until the moment they're absent
+4. **Utility** - Rogue for locks and a healthier party rating, Ranger for scouting; the contributions that are invisible until the moment they're absent
 
 ### Relationship Synergy
 
@@ -244,7 +244,7 @@ The dungeon doesn't open itself up for inspection. Knowledge costs movement:
 
 ## Traps
 
-Rogues with Detect Traps can spot these before triggering. Everyone else discovers them the traditional way.
+A Rogue in the party — or any hero with the **Keen Eye** trait — improves the party rating before dispatch. The trap itself does not check credentials: **Disarm** works seven times in ten and springs it otherwise, and **Rush** simply walks through and pays. Everyone discovers them, sooner or later, the traditional way.
 
 | Trap | Damage | Effect |
 |------|--------|--------|

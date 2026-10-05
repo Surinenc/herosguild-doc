@@ -491,7 +491,7 @@ Once the Chapel reaches Temple (level 3) and the guild has a Cleric on the roste
 
 All six use Blessed Stone, World Tree Branch, and God Tear — the same materials the Chapel's own upgrades consume — plus mundane metals. Every piece is Ancestral rarity and Cleric-locked. If your only Cleric leaves the roster, the recipes vanish from the Forge list until you recruit another one; nothing already crafted is affected.
 
-**Consecrated modifier.** Every sacred craft is quietly **Consecrated**. While equipped, each consecrated piece adds **+30 flat HP** to the wearer, stacking cleanly with everything else. A Cleric fully outfitted in all six pieces gets +180 HP over the item stats already printed on their tooltips — a real Chapel-focused build bonus rather than just "your Ancestral gear happens to be blessed." Non-sacred items aren't consecrated, so mixing consecrated pieces with regular Ancestral gear is fine — you just lose the +30 for each swapped-out sacred slot.
+**Consecrated modifier.** Every sacred craft is quietly **Consecrated**. While equipped, each consecrated piece adds **+100 flat HP** to the wearer, stacking cleanly with everything else. A Cleric fully outfitted in all six pieces gets +600 HP over the item stats already printed on their tooltips — a real Chapel-focused build bonus rather than just "your Ancestral gear happens to be blessed." Non-sacred items aren't consecrated, so mixing consecrated pieces with regular Ancestral gear is fine — you just lose the +100 for each swapped-out sacred slot.
 
 ---
 

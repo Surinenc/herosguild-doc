@@ -94,10 +94,12 @@ Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in t
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Healing Potion | 25g | Restore 50 HP to one hero |
-| Greater Healing Potion | 60g | Restore 100 HP to one hero |
-| Elixir of Vigor | 40g | Restore 25% HP to all heroes |
-| Antidote | 15g | Cure poison, restore 10 HP |
+| Healing Potion | 25g | Restore 15% of max HP to one hero |
+| Greater Healing Potion | 60g | Restore 30% of max HP to one hero |
+| Elixir of Vigor | 40g | Restore 25% of max HP to all heroes |
+| Antidote | 15g | Cure poison and restore 5% of max HP to all heroes |
+
+Every heal is a share of the hero's own maximum, gear and passives included, so the potions keep pace with the heroes drinking them. A level-100 Warrior on floor 90 is not going to be impressed by fifty hit points, and the merchant knows it.
 
 ---
 

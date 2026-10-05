@@ -824,7 +824,7 @@ Even available heroes may refuse specific missions:
 
 ### Location Trauma
 
-Heroes who experience traumatic events in specific dungeon types (a party wipe in Crypts, a near-death in Caves) develop location trauma. They will refuse missions to those dungeon types until the trauma fades. Trauma has a severity scale of 1-10, with higher severity meaning longer recovery — one severity point drains away every ten days, and the trauma clears when severity reaches zero. A 10-severity Crypts phobia therefore takes a hundred days of not-Crypts before the hero will consider Crypts again.
+Heroes who experience traumatic events in specific dungeon types (a party wipe in Crypts, a near-death in Caves) develop location trauma. They will refuse missions to those dungeon types until the trauma fades. Trauma has a severity scale of 1-10, with higher severity meaning longer recovery — one severity point drains away every ten days — every **five** with a Grand Chapel or better, which is what a good chaplain is for — and the trauma clears when severity reaches zero. A 10-severity Crypts phobia therefore takes a hundred days of not-Crypts before the hero will consider Crypts again, or fifty with the Chapel's help.
 
 ### Insistence
 

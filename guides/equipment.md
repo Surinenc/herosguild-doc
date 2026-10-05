@@ -56,7 +56,7 @@ Items come in seven rarity tiers. The Guild Clerk has witnessed grown heroes wee
 
 **Magic Find** multiplies every above-Common chance in the roll, with Common absorbing whatever is left over — so a party carrying +20% Magic Find turns a 1% Mythic chance into 1.2% and shaves the difference off the tat. It applies to monster drops and to end-of-run completion rewards, on missions, dungeon runs and Spire floors alike. The figure used is the party **average**, not the sum — one hero in full Magic Find regalia raises the party's number by their share of it, which is the realm's way of saying that dressing the whole party is the only real answer. Material and item-drop bonuses are averaged the same way.
 
-Socket count rolls increase with item level. Each socket rolls at `30% + item level × 2%` (capped at 90%), and each link at `20% + item level × 1%` (capped at 70%) — see [Socket Generation](skills.md#socket-colors).
+Socket count rolls increase with item level. Each socket beyond the guaranteed minimum rolls at `20% + item level × 1%` (capped at 90%), and the rolling stops at the first failure. Every socket on an item is linked — see [Socket Generation](skills.md#socket-colors).
 
 ---
 
@@ -266,7 +266,7 @@ Legendary elixirs carry a per-turn HP regeneration bonus that ticks in every fig
 
 ## Gem Sockets
 
-Equipment can have gem sockets based on rarity and slot type (see [Skill Gems Guide](skills.md) for full socket details). Socketed gems grant additional skills or bonuses. The Guild Clerk finds the entire gem-linking system needlessly complicated, but acknowledges that heroes who master it are considerably harder to kill.
+Equipment can have gem sockets based on its rarity, whatever the slot (see [Skill Gems Guide](skills.md) for full socket details). Socketed gems grant additional skills or bonuses. The Guild Clerk finds the entire gem-linking system needlessly complicated, but acknowledges that heroes who master it are considerably harder to kill.
 
 ### Socket Colors
 
@@ -290,23 +290,23 @@ Skill gems add new abilities to your hero when socketed:
 | Heavy Strike | Attack | High single-target physical hit |
 | Greater Cleave | Attack | AoE melee swing |
 | Split Arrow | Ranged | Bow attack hitting multiple targets |
-| Healing Light | Support | Heals an ally in combat |
+| Healing Light | Healing | Heals every ally at once |
 
 ### Socket Links
 
-Linked sockets allow support gems to enhance skill gems. Each additional link makes the skill considerably more dangerous, which is the point. Weapon and body-armor slots can support up to 6-link chains; smaller slots cap lower (see [Linking Sockets](skills.md#linking-sockets)).
+Every socket on an item is linked to every other, so each item holds one active skill and its supports. Each additional link makes the skill considerably more dangerous, and slower to come round again, which is the point. How big the link can get depends on the item's rarity, not its slot (see [Linking Sockets](skills.md#linking-sockets)).
 
 | Link | Effect |
 |------|--------|
 | **1-Link** | Skill gem only |
 | **2-Link** | Skill + 1 support |
 | **3-Link** | Skill + 2 supports |
-| **4–6-Link** | Skill + 3–5 supports (weapon / body armor only) |
+| **4–7-Link** | Skill + 3–6 supports (rarity permitting — seven needs an Ancestral) |
 
 **Support Gem Examples:**
 - **Added Fire Damage** - Adds fire damage to linked skill
-- **Multistrike** - Skill repeats additional times
-- **Spell Echo** - Spell casts twice
+- **Multistrike** - Chance for the skill to strike again
+- **Spell Echo** - Chance for the spell to cast again
 - **Life Leech** - Heal a percentage of damage dealt
 - **Concentrated Effect** - More damage at the cost of AoE radius
 

@@ -18,6 +18,8 @@ The tree contains five types of nodes, listed here in ascending order of how exc
 | **Notable** | 3 | Medium | Significant passives. Named abilities with meaningful impact on your build. |
 | **Keystone** | 1 | Large | Powerful transformative effects with mandatory drawbacks. The tree's most interesting decisions. |
 
+The humblest and most numerous minors are the **Conditioning** nodes scattered along every branch: one point each, **+3% damage and +3% maximum life**. Rogues and Rangers get **+4% life** from theirs instead — with no plate and no energy shield between them and the enemy, the extra point is less a favour than a correction.
+
 ---
 
 ## Passive Points
@@ -114,21 +116,21 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 
 - **Warrior / Cleric** keystones usually penalize damage or crit (armor is their primary defense). Exception: Berserker Mastery penalizes max life
 - **Mage / Necromancer** keystones usually penalize armor or max life (they rely on flat HP and energy shield rather than plate). Exception: Frost Mastery penalizes crit chance
-- **Rogue / Ranger** keystones usually penalize armor or max life (evasion is the survival layer). Exception: Trickster Mastery penalizes crit chance / crit multiplier instead
+- **Rogue / Ranger** keystones usually penalize armor or max life (evasion is the survival layer), but more gently than anyone else's — −8% to −10%, on the grounds that a hero with no plate and no energy shield has less to give. Exception: Trickster Mastery penalizes crit chance / crit multiplier instead
 
 ### Example Keystones
 
 | Keystone | Bonuses | Penalty |
 |----------|---------|---------|
 | Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
-| Berserker Mastery (Warrior) | +19% Physical Damage, +30% Life Leech | -20% Max Life |
-| Sharpshooter Mastery (Ranger) | +57% Projectile Damage, +30% Crit Chance | -20% Max Life |
-| Lich Mastery (Necromancer) | +49% Chaos Damage, +39% Spell Damage | -25% Max Life |
-| Summoner Mastery (Necromancer) | +66% Minion Damage, +33% Minion Life | -25% Damage |
-| Frost Mastery (Mage) | +43% Spell Damage, +30% Max Mana | -15% Crit Chance |
+| Berserker Mastery (Warrior) | +5% Physical Damage, +30% Life Leech | -20% Max Life |
+| Sharpshooter Mastery (Ranger) | +17% Projectile Damage, +9% Crit Chance | -10% Max Life |
+| Lich Mastery (Necromancer) | +9% Chaos Damage, +7% Spell Damage | -25% Max Life |
+| Summoner Mastery (Necromancer) | +12% Minion Damage, +33% Minion Life | -25% Damage |
+| Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
 
-Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
+Keystone damage is a garnish rather than the meal — single-digit to high-teens percentages on most of them — because the tree's damage all lands in one shared pool (see [Combat](combat.md#hero-damage)), and a keystone that doubled it would make every other node decorative. Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
 
 ---
 

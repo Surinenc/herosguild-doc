@@ -50,21 +50,21 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 
 | Class | Stat Bonus |
 |-------|------------|
-| Warrior | STR × 0.20 |
-| Rogue | DEX × 0.15 |
-| Ranger | DEX × 0.15 |
-| Cleric | INT × 0.10 + STR × 0.05 |
-| Mage | INT × 0.18 |
-| Necromancer | INT × 0.18 |
-| Paladin (ascendancy) | INT × 0.12 + STR × 0.12 |
+| Warrior | STR × 0.075 |
+| Rogue | DEX × 0.05 |
+| Ranger | DEX × 0.058 |
+| Cleric | INT × 0.037 + STR × 0.021 |
+| Mage | INT × 0.042 |
+| Necromancer | INT × 0.042 |
+| Paladin (ascendancy) | INT × 0.029 + STR × 0.029 |
 
-Higher stats provide a multiplicative bonus — for example, 100 stat points = +100% weapon damage. This is why experienced guild masters invest in training rather than just handing heroes a bigger sword and hoping for the best.
+The stat bonus is a percentage on the weapon: a Warrior with 100 STR hits for +7.5%, and one with 2,000 STR — a level-100 hero in their best kit — for roughly ×2.5. The off-hand follows the same idea (STR × 0.058 for Berserkers and Gladiators, DEX × 0.05 for Rogues). Stats are a steady multiplier rather than a miracle, which is why experienced guild masters invest in training *and* in a bigger sword, rather than choosing between them.
 
 **Modifiers Applied (multiplicative):**
 - **Class damage multiplier** — Mage/Necromancer ×1.25, Cleric/Warrior ×1.00, Rogue ×0.85, Ranger ×0.80. Applied to everything a hero hits, with anything.
 - **Lifecycle damage multiplier** — each hero's [background events](backgrounds.md) compound into a personal damage multiplier applied on top of everything else. This is the reason two heroes with identical class, level, and equipment will not hit for the same numbers: their pasts disagree about what their hands are capable of.
 - Skill damage percentage (e.g., Power Attack = 150%)
-- [Passive tree](passive-tree.md) bonuses
+- [Passive tree](passive-tree.md) bonuses — every damage % on the tree (physical, attack, spell, projectile, holy, chaos and plain damage) goes into one pool and is added together before it multiplies anything. **Elemental damage from gear** (+fire, +cold and the rest) joins that same pool for a skill of its element, so a +20% fire ring adds to the tree's percentages rather than multiplying them; element bonuses from ascendancies and buffs still multiply on top
 - Weapon proficiency (0-38% at max level 20)
 - Skill proficiency (0-30% at max level 20)
 - Monster knowledge (up to +20%)
@@ -82,8 +82,10 @@ When the numbers align, attacks deal significantly more damage. The numbers do n
 
 ```
 Crit Chance = 5% + (DEX / 20) + (LCK / 10) + gear + sets + passives + gems + buffs/ascendancy/paragon + situational
-Crit Multiplier = 1.5x (base) x (1 + bonus crit damage% / 100)
+Crit Damage = 150% + every crit damage bonus, added as percentage points
 ```
+
+Crit damage never multiplies itself: +50 crit damage from a ring and +30 from a gem make a crit hit for 230%, not some compound figure the Guild Clerk would need an abacus for.
 
 Socketed skill gems contribute their own crit chance and crit multiplier on top of weapon and stat bonuses, which is the reason a Heavy Strike gemmed for crit hits considerably harder than the same skill cast from a different setup. Every crit roll in the fight — basic attack, off-hand, multi-strike, triple-strike, gem skill, default skill and the Gladiator counter — is worked out exactly the way the hero sheet works it out, so what the sheet promises is what the dice are actually given.
 

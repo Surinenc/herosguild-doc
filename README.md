@@ -2,6 +2,8 @@
 
 Welcome to the official documentation for **Hero's Guild**, a tactical guild management RPG in which you recruit heroes, manage their relationships, conquer dungeons, and pay for all of it. The heroes do the fighting. You do the paperwork. The Guild Clerk would like it known that the paperwork is the harder job.
 
+> **Development disclaimer:** Hero's Guild is in active development. All formulas, numerical values, mechanics, features, and other information in this documentation are subject to change as we balance and refine the game. These details have changed several times during development and may change again. This guide may not always reflect the latest game build; treat it as a work in progress, not a guarantee of final behavior or content.
+
 ## Quick Links
 
 ### Getting Started

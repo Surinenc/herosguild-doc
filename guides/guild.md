@@ -736,7 +736,7 @@ The two halves of that sum pull in opposite directions on purpose. The level cur
 
 Level 1 heroes are free, being freshers, and so are the dead, the file marked *posthumous remuneration* having been closed with some embarrassment. The star multiplier is where the real money goes: a sixty-strong roster of Legendary 100s runs to **1,194,240 gold a day**, a figure the Clerk declines to write out in words.
 
-**The money reaches the heroes.** Each is credited their **base** wage — the crisis multiplier inflates what you pay without inflating what they receive, so hard times stay a cost to the guild rather than a windfall for the staff, an arrangement nobody has yet explained to the staff. What they do with the money is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
+**The money reaches the heroes** — some of it. Each keeps the **Common wage at their level × √(quality multiplier)** and spends the rest on living, so a Legendary veteran pockets four times a Common one's keep rather than sixteen. The crisis multiplier inflates what you pay without inflating what they receive, so hard times stay a cost to the guild rather than a windfall for the staff, an arrangement nobody has yet explained to the staff. What they do with the money is covered in [Purse & Ambition](heroes.md#purse--ambition), and includes, eventually, leaving.
 
 ### Managing Finances
 

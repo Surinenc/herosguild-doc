@@ -345,7 +345,23 @@ A drop is any gem at all, active or support, with no regard for who is in the pa
 
 ### Gem Inventory
 
-Every hero keeps a personal gem inventory, separate from their sockets, and **a gem belongs to the hero who found it**. It cannot be handed to another hero, sold, or thrown away — the one possession in the guild that is genuinely, permanently personal. A mission drop goes to a random survivor of the party, a dungeon find to the first hero still standing. If the wrong hero picked up the right gem, the only remedy is to make the wrong hero into the right one.
+Every hero keeps a personal gem inventory, separate from their sockets, and **a gem belongs to the hero who found it**. It cannot be handed to another hero or sold — the one possession in the guild that is genuinely, permanently personal. A mission drop goes to a random survivor of the party, a dungeon find to the first hero still standing. If the wrong hero picked up the right gem, the only remedy is to make the wrong hero into the right one. Identical gems — same name, level and colour — are shown as one entry with a count, so a hero hoarding five Life Leeches is at least hoarding them tidily.
+
+**Recycling.** You can *ask* a hero to recycle a gem they don't want. It is destroyed outright — nothing comes back but shelf space — and the hero has a say:
+
+| | Chance to agree |
+|---|---|
+| Base | 70% |
+| Ascetic | +25% |
+| Kind | +15% |
+| Empathic, Loyal | +10% each |
+| Paranoid | −10% |
+| Competitive | −15% |
+| Jealous | −20% |
+| Greedy | −40% |
+| Limits | 5% to 95% |
+
+Agreeing leaves a small **+2** thought for three days (*"Let a gem go. Lighter for it."*); refusing, a **−3** one (*"As if it were theirs to ask."*), and you may not ask about that gem again for **seven days**. A Greedy, Jealous hero is very unlikely ever to part with anything, which surprises nobody who has met one.
 
 ---
 

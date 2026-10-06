@@ -107,7 +107,7 @@ Several nodes hand you power and quietly bill you for it in damage taken. Read t
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Crit** | Critical Damage | +15% crit and **-10% enemy armor** (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
+| **A - Crit** | Critical Damage | +15% crit and **-10% enemy armor** (takes +5% dmg) → +40% crit damage (takes +5%) → +50% crit damage (takes +5%) |
 | **B - Ambush** | First Hit | +50% first hit damage and +30% always-on → first hit always crits → first hit ignores armor |
 | **C - Execute** | Low HP Targets | +50% damage below 50% HP → +50% crit below 30% HP → 10% instant kill |
 
@@ -128,7 +128,7 @@ Note: Party damage nodes grant team bonuses but increase the Trickster's own dam
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Venom** | Poison DoT | 10% poison on hit → +25% poison damage → +30% damage to poisoned enemies |
-| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +10%) → +10% (you take +10%) → +12% (you take +10%) |
+| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +5%) → +10% (you take +5%) → +12% (you take +5%) |
 | **C - Weaken** | Enemy Debuffs | Enemies deal -10% damage → -20% damage → enemies lose 10% armor |
 
 **Best For:** Long fights, attrition strategies, party debuff support
@@ -203,7 +203,7 @@ Mages choose between raw elemental power or dark magic.
 
 **Focus:** Elemental Damage, AoE, Status Effects
 
-**Starting Bonus:** +10% crit, +150% damage
+**Starting Bonus:** +10% crit, +75% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -221,12 +221,12 @@ Mages choose between raw elemental power or dark magic.
 
 **Focus:** Curses, Chaos Damage, Life Drain
 
-**Starting Bonus:** +180% damage, skills apply weaken
+**Starting Bonus:** +60% damage, skills apply weaken
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Weaken** | Debuffs | +2 weaken duration → weakened enemies deal -25% damage → weakened take +20% damage |
-| **B - Chaos** | Dark Magic | +20% chaos damage → +25% chaos damage → +30% chaos damage |
+| **B - Chaos** | Dark Magic | +5% chaos damage → +5% chaos damage → +10% chaos damage |
 | **C - Drain** | Sustain | +10% mana regen and 3% life steal → +5% life steal → +7% life steal |
 
 **Best For:** Debuff support, chaos damage builds, sustain mages
@@ -263,12 +263,12 @@ Clerics choose between healing mastery or battle cleric.
 
 The Paladin **replaces Heal and Prayer of Healing** with offensive abilities: Divine Strike (120% damage) and Consecrate.
 
-**Starting Bonus:** +60% damage
+**Starting Bonus:** +30% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Absorption** | Tank/DPS Hybrid | Take 20% of ally damage (+20% dmg, -5% enemy armor) → 30% ally damage (+40% dmg, -10%) → heal 50% of absorbed (+60% dmg, -15%) |
-| **B - Holy DPS** | Damage | +30% holy damage → +40% → +80% holy damage |
+| **A - Absorption** | Tank/DPS Hybrid | Take 20% of ally damage (+10% dmg, -5% enemy armor) → 30% ally damage (+20% dmg, -10%) → heal 50% of absorbed (+30% dmg, -15%) |
+| **B - Holy DPS** | Damage | +10% holy damage → +15% → +25% holy damage |
 | **C - Party** | Buffs | Allies +10% damage → enemies take +15% damage → allies +15% crit, enemies -15% damage |
 
 **Best For:** Damage dealers who want utility, hybrid tank/DPS, party enabler
@@ -285,11 +285,11 @@ Necromancers focus on minions or personal dark power.
 
 **Focus:** Minions, Summons, Army Building
 
-**Starting Bonus:** +1 max minion, +30% minion damage, +120% damage
+**Starting Bonus:** +1 max minion, +15% minion damage, +60% damage
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Minion Damage** | Offense | +30% minion damage → +50% → +200% minion damage |
+| **A - Minion Damage** | Offense | +15% minion damage → +25% → +100% minion damage |
 | **B - Minion Durability** | Tankiness | +25% minion HP → +50% → +200% minion HP |
 | **C - Minion Count** | Army | +1 max minion → +1 more → +2 more max minions |
 
@@ -307,7 +307,7 @@ Necromancers focus on minions or personal dark power.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Chaos** | Dark Damage | +15% chaos damage → +25% → +30% chaos damage |
+| **A - Chaos** | Dark Damage | +5% chaos damage → +5% → +10% chaos damage |
 | **B - Drain** | Life Steal | +10% life steal, +10% damage reduction, +10% damage → +15% life steal, +20% damage reduction, +10% damage → +25% life steal, +25% damage reduction, +10% damage |
 | **C - Crit** | Critical Strikes | +10% crit and +15% crit damage → +30% crit damage → +50% crit damage |
 

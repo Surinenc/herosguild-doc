@@ -208,7 +208,7 @@ These are calculated from primary stats, because apparently nothing in this guil
 | Max Mana | 30 + (INT × 5) |
 | Initiative | DEX + 1d10 (random roll at combat start) |
 | Crit Chance | 5% + (DEX / 20) + (LCK / 10) + gear + set bonuses + passive nodes + gem crit + buffs, ascendancy and paragon |
-| Crit Damage | 150% × (1 + total crit-damage bonus %), from the same list of sources |
+| Crit Damage | 150% + every crit-damage bonus as percentage points, from the same list of sources |
 | Energy Shield | (Mage and Necromancer only) INT × 5, plus any flat shield from support gems, raised by passive Energy Shield % |
 
 The sheet and the fight do **the same sums**, so the crit gloves, set bonuses, passive nodes and gem crit that the Hero Details screen totals up are the same ones the dice are handed. What the display cabinet promises, the battlefield delivers — an arrangement the Guild Clerk considers unremarkable and several armourers consider a triumph.
@@ -418,7 +418,7 @@ A **Cleric present at the guild** — not dead, not on mission, no assignment ne
 
 **Confirm** applies your chosen treatments. **Skip Infirmary Tonight** dismisses the scene and lets the ward fill itself, by precisely the rule you would have used by hand: one bed per hero, sickest first — ranked on the worst single strain each of them is carrying — and every strain on a hero who gets a bed is treated. The house triages perfectly competently. What the house cannot do is disagree with you about who matters: a two-bed ward goes to the two nearest the lethal threshold, which is the right answer to a question you may well have wanted to answer differently, the promising level-30 with a survivable cough being worth rather more to the guild than the recruit who is already three-quarters of the way through the door. Sick heroes are flagged on their roster row with an illness badge coloured by severity — green under 30, amber 30 to 70, red past 70 — so you can tell at a glance who's on borrowed time.
 
-Each card also carries an **Until Cured** toggle, which exists because a bed only ever buys one night, and a long illness would otherwise mean re-picking the same three invalids every single evening until somebody recovered or didn't. Flagged heroes are pre-ticked into the ward the moment the scene opens — up to the bed count, worst first, and no further — so most nights you confirm rather than click. It saves the clicks and decides nothing: you can untick anyone before confirming, and the beds are as few as they ever were. The flag rides on the hero rather than the illness and nothing takes it off again, so a veteran you once marked will quietly claim a bed the next time they turn up on the ward roster, which is either thoughtful or presumptuous depending on how many beds you have.
+Each card also carries an **Until Cured** toggle, which exists because a bed only ever buys one night, and a long illness would otherwise mean re-picking the same three invalids every single evening until somebody recovered or didn't. Flagged heroes are pre-ticked into the ward the moment the scene opens — up to the bed count, worst first, and no further — so most nights you confirm rather than click. It saves the clicks and decides nothing: you can untick anyone before confirming, and the beds are as few as they ever were. The flag rides on the hero, and comes off by itself the moment they are cured — so a veteran you once marked does not quietly claim a bed the next time they sneeze, which saves everyone a conversation.
 
 **It also does something rather more useful than saving clicks: it quarantines.** A hero flagged Until Cured, still ill, and not out on a mission is **isolated** — they neither pass their strains to anyone nor catch anything new. A single night's bed does not achieve this; by morning that hero is back among the guild, breathing on everyone. Nor does the flag isolate a hero who has already recovered. Quarantine, like the ward itself, is for the sick.
 
@@ -521,7 +521,17 @@ Heroes are paid, and the money goes somewhere: into the hero's **purse**, from w
 
 ### The Purse
 
-Every living hero is credited their daily wage each morning — the base figure, not the crisis-inflated one, so a crisis costs *you* rather than enriching the staff. A new recruit arrives holding **three days' wage**, or **25 gold**, whichever is larger, so nobody starts destitute on their first afternoon off.
+Every living hero is paid each morning, but living is not free. Servants, tailors and rounds for the table come out first, and what reaches the purse is the **Common wage at their level × √(their quality multiplier)** — the base figure, not the crisis-inflated one, so a crisis costs *you* rather than enriching the staff. The guild still pays the full wage; the difference is simply spent being the sort of person who earns it:
+
+| Quality (level 100) | Wage | Living costs | Kept |
+|---|---|---|---|
+| Common (×1) | 1,244 | 0 | 1,244 |
+| Uncommon (×2) | 2,488 | 729 | 1,759 |
+| Rare (×4) | 4,976 | 2,488 | 2,488 |
+| Epic (×8) | 9,952 | 6,434 | 3,518 |
+| Legendary (×16) | 19,904 | 14,928 | 4,976 |
+
+A Legendary hero earns sixteen times what a Common one does and keeps four times as much, the rest having gone on the kind of lifestyle Legendary heroes consider unavoidable. A new recruit arrives holding **three days' wage**, or **25 gold**, whichever is larger, so nobody starts destitute on their first afternoon off.
 
 What a hero can afford is expressed in absolute gold rather than as a share of their income, which is the whole point: a recruit on 13 gold a day genuinely cannot reach what a veteran takes for granted.
 
@@ -532,7 +542,7 @@ What a hero can afford is expressed in absolute gold rather than as a share of t
 | Fine | 400–1,500g |
 | Extravagant | 2,000–10,000g |
 
-Heroes never spend down to nothing — they keep roughly a day's wage in reserve, on the grounds that a hero who blew every coin on one evening and could then do nothing at all until payday would be less a personality than a cautionary tale.
+Heroes never spend down to nothing — they keep roughly a day's kept wage in reserve, on the grounds that a hero who blew every coin on one evening and could then do nothing at all until payday would be less a personality than a cautionary tale.
 
 Purse and daily wage are both shown on the **Career tab** of the Hero Details modal.
 
@@ -550,7 +560,7 @@ This is the real engine of a hero's ambitions. Wages are a trickle next to a hig
 
 ### The Dream
 
-Every hero is privately saving toward one specific thing, and **how hard they save is a matter of character**. The base rate is **50%** of each day's surplus, capped at the same share of their daily wage so the sum stays linear rather than compounding, and paying nothing at all on a day they've spent down to the reserve. Their upbringing and personality then move that rate, in percentage points:
+Every hero is privately saving toward one specific thing, and **how hard they save is a matter of character**. The base rate is **50%** of each day's surplus, capped at the same share of their daily kept wage so the sum stays linear rather than compounding, and paying nothing at all on a day they've spent down to the reserve. Their upbringing and personality then move that rate, in percentage points:
 
 | Raised as | | Personality | |
 |---|---|---|---|
@@ -573,14 +583,14 @@ The price belongs to the **dream**, not the dreamer. A headstone is cheap and a 
 | Grand | 1,500,000–5,000,000g | Only the very well paid, and only if they live frugally |
 | Fable | 20,000,000–60,000,000g | Nobody finishes these. They were never really about the money |
 
-Which scale a hero reaches for is weighted by their **level**, not their pay. A famous hero does not want a grander thing than an obscure one of the same experience; they simply get there sooner, their wage carrying the star multiplier into the fund. The weighting shifts as they climb:
+Which scale a hero reaches for is weighted by their **level**, not their pay. A famous hero does not want a grander thing than an obscure one of the same experience; they simply get there sooner, their stars carrying into the fund — at the square root, after living costs, which is fame's way of sending its own invoice. The weighting shifts as they climb, and veterans reach less for the bakery and more for the legend:
 
 | Hero level | Trifle | Modest | Substantial | Grand | Fable |
 |---|---|---|---|---|---|
 | 1–15 | 55% | 25% | 12% | 6% | 2% |
-| 16–40 | 30% | 35% | 22% | 10% | 3% |
-| 41–70 | 14% | 28% | 34% | 20% | 4% |
-| 71+ | 8% | 18% | 34% | 35% | 5% |
+| 16–40 | 30% | 35% | 20% | 10% | 5% |
+| 41–70 | 14% | 28% | 28% | 20% | 10% |
+| 71+ | 8% | 18% | 22% | 35% | 17% |
 
 There is a genuine tail upward at every level — a fair number of heroes want something they will never afford, and will carry the ambition their entire career and die still short of it. **Nobody ever finishes a Fable.** The Guild Clerk considers this the most realistic feature in the game.
 

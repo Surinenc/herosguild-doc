@@ -316,6 +316,8 @@ Every socket on an item is linked to every other, so each item holds one active 
 
 Wearing multiple pieces from the same set grants powerful bonuses. The Guild Clerk has filed multiple incident reports about heroes refusing to equip statistically superior items because they'd "break the set." This is, apparently, a matter of principle.
 
+A set counts **distinct pieces**. Two copies of the same ring, one in each accessory slot, are one piece as far as the set is concerned — the set bonus is not fooled by twins, however identical.
+
 ### Dragonslayer Set (Epic)
 
 | Pieces | Bonus |

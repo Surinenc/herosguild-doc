@@ -107,7 +107,7 @@ Several nodes hand you power and quietly bill you for it in damage taken. Read t
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
-| **A - Crit** | Critical Damage | +15% crit and **-10% enemy armor** (takes +5% dmg) → +40% crit damage (takes +5%) → +50% crit damage (takes +5%) |
+| **A - Crit** | Critical Damage | +15% crit and **-10% enemy armor** (takes +10% dmg) → +40% crit damage (takes +10%) → +50% crit damage (takes +10%) |
 | **B - Ambush** | First Hit | +50% first hit damage and +30% always-on → first hit always crits → first hit ignores armor |
 | **C - Execute** | Low HP Targets | +50% damage below 50% HP → +50% crit below 30% HP → 10% instant kill |
 
@@ -128,7 +128,7 @@ Note: Party damage nodes grant team bonuses but increase the Trickster's own dam
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
 | **A - Venom** | Poison DoT | 10% poison on hit → +25% poison damage → +30% damage to poisoned enemies |
-| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +5%) → +10% (you take +5%) → +12% (you take +5%) |
+| **B - Party Damage** | Amplification | Enemies take +5% dmg (you take +10%) → +10% (you take +10%) → +12% (you take +10%) |
 | **C - Weaken** | Enemy Debuffs | Enemies deal -10% damage → -20% damage → enemies lose 10% armor |
 
 **Best For:** Long fights, attrition strategies, party debuff support

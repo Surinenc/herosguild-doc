@@ -18,7 +18,7 @@ The tree contains five types of nodes, listed here in ascending order of how exc
 | **Notable** | 3 | Medium | Significant passives. Named abilities with meaningful impact on your build. |
 | **Keystone** | 1 | Large | Powerful transformative effects with mandatory drawbacks. The tree's most interesting decisions. |
 
-The humblest and most numerous minors are the **Conditioning** nodes scattered along every branch: one point each, **+3% damage and +3% maximum life**. Rogues and Rangers get **+4% life** from theirs instead — with no plate and no energy shield between them and the enemy, the extra point is less a favour than a correction.
+The humblest and most numerous minors are the **Conditioning** nodes scattered along every branch: one point each, **+3% damage and +3% maximum life**, for every class alike. Rogues and Rangers, with no plate and no energy shield, notice the life rather more than anyone else, and get no extra for noticing.
 
 ---
 
@@ -116,7 +116,7 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 
 - **Warrior / Cleric** keystones usually penalize damage or crit (armor is their primary defense). Exception: Berserker Mastery penalizes max life
 - **Mage / Necromancer** keystones usually penalize armor or max life (they rely on flat HP and energy shield rather than plate). Exception: Frost Mastery penalizes crit chance
-- **Rogue / Ranger** keystones usually penalize armor or max life (evasion is the survival layer), but more gently than anyone else's — −8% to −10%, on the grounds that a hero with no plate and no energy shield has less to give. Exception: Trickster Mastery penalizes crit chance / crit multiplier instead
+- **Rogue / Ranger** keystones usually penalize armor or max life (evasion is the survival layer) — −15% to −20%, which on a hero with no plate and no energy shield is a genuine wager rather than a formality. Exception: Trickster Mastery penalizes crit chance / crit multiplier instead
 
 ### Example Keystones
 
@@ -124,7 +124,7 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 |----------|---------|---------|
 | Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
 | Berserker Mastery (Warrior) | +5% Physical Damage, +30% Life Leech | -20% Max Life |
-| Sharpshooter Mastery (Ranger) | +17% Projectile Damage, +9% Crit Chance | -10% Max Life |
+| Sharpshooter Mastery (Ranger) | +17% Projectile Damage, +9% Crit Chance | -20% Max Life |
 | Lich Mastery (Necromancer) | +9% Chaos Damage, +7% Spell Damage | -25% Max Life |
 | Summoner Mastery (Necromancer) | +12% Minion Damage, +33% Minion Life | -25% Damage |
 | Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |

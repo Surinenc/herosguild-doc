@@ -1,0 +1,28 @@
+title: Hero's Guild
+description: >-
+  The player guide for Hero's Guild, a tactical guild-management RPG where the
+  heroes are people, the deaths are permanent, and somebody has to write the
+  funeral invoices.
+
+url: https://surinenc.github.io
+baseurl: /herosguild-doc
+
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+exclude:
+  - CLAUDE.md
+  - GAME-STATS.md
+  - PORTFOLIO-REVIEW.md
+  - TRIALS-DESIGN-PLAN.md
+  - .specify
+  - .claude
+  - heroworld

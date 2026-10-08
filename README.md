@@ -72,4 +72,4 @@ has tried.
 
 ---
 
-*Hero's Guild is heading for Early Access. This documentation is updated as the realm changes, which it does, often, and without asking anyone's permission.*
+*Hero's Guild is heading for Early Access. This documentation is updated as the realm changes, which it does often, and not always under anyone's control — the Clerk's least of all.*

@@ -9,6 +9,8 @@ baseurl: /herosguild-doc
 
 theme: jekyll-theme-cayman
 
+google_site_verification: ARD0dKlvNrJbWupErIcjZHEMV-9IOiJWJBQQNbtTRII
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

@@ -406,6 +406,8 @@ Whenever any hero is sick, the next morning opens on the **Infirmary scouting sc
 | 4 | 16 heroes |
 | 5 | 24 heroes |
 
+Those beds are shared with the drying-out ward: **every hero in detox occupies one**, and the sick get what is left. A level-1 Infirmary running two detoxes has two beds for illness, not four — which is worth knowing before you commit a hero to sobriety in the middle of an outbreak.
+
 A bed treats the **hero**, not the illness. Occupy one and *every* strain that hero is carrying has its daily severity growth cut by **80%** — which matters more than it sounds, because a thoroughly unlucky hero collects six to nine illnesses at once and the ward has never had the beds to admit them one strain at a time. Higher Infirmary tiers shave an additional **5% per level** off severity growth even without a direct treatment slot, on the theory that a well-appointed ward is medically useful just by existing.
 
 The arithmetic is the whole argument for building beds. Left alone, **every one of the lethal strains wins its race** — severity reaches 100 before immunity does, every time, and the only variable is how long it takes: The Blackblood in a little over two days, The Grey Weep and Backfire Fever in five, Wound Rot in ten, The Long Cough in three unhurried weeks. That is not a risk so much as a timetable. Treated, growth is cut to a fifth — from 4.75–47.5 points a day down to 0.95–9.5 — and because the lethal threshold cannot fire on a treated strain at all, the hero gets better in the unglamorous way people actually get better: slowly, in bed, complaining.
@@ -676,6 +678,8 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 | Elite | 50-99 | +15 | 1.2× | 1.04× | +8% |
 | Champion | 100-199 | +25 | 1.3× | 1.06× | +12% |
 | Legend | 200+ | +40 | 1.5× | 1.08× | +15% |
+
+One caveat on that last column, and the Guild Clerk raises it with some embarrassment: the survival bonus is listed on the hero's sheet but is **not** currently applied to the [death save](#death-save-modifiers) itself. The modifiers that actually reach the roll are the ones in that table. Veteran rank buys morale, reputation and damage today; the death-save line is a promise the dice have not yet been told about.
 
 ### Chronicle Titles
 

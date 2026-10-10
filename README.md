@@ -13,7 +13,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 ### Core Systems
 - [Heroes & Classes](guides/heroes.md) - The 6 hero classes and their abilities
 - [Hero Backgrounds](guides/backgrounds.md) - Where heroes come from, and the four-stage life history every one of them carries
-- [Combat System](guides/combat.md) - Turn-based tactical combat explained
+- [Combat System](guides/combat.md) - How fights resolve, and the two levers you actually pull
 - [Equipment & Items](guides/equipment.md) - Gear, gems, and item rarities
 - [Skill Gems](guides/skills.md) - Active and support gem system
 - [Passive Tree](guides/passive-tree.md) - The sprawling passive progression web every hero climbs through
@@ -26,14 +26,14 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Hero Relationships](guides/relationships.md) - Social bonds, story arcs, and mood system
 - [Events Overview](guides/events.md) - Tavern, guild, and dungeon event systems
 - [Crises](guides/crisis.md) - Realm-wide crises and how to survive them
-- [Crafting](guides/crafting.md) - Blacksmithing, alchemy, and more
+- [Crafting](guides/crafting.md) - Metalsmithing, Softcraft, Alchemy and Arcana
 
 ### Progression
 - [Dungeons](guides/dungeons.md) - Exploring and conquering dungeons
 - [Quest Chains](guides/quest-chains.md) - Story chains, class chains, and weekly bounties
 - [Heroic Dungeons](guides/heroic-dungeons.md) - Weekly endgame challenges
 - [Abyssal Spire](guides/tower.md) - The endless tower challenge
-- [World Boss Raids](guides/raids.md) - 15-hero raids against the realm's largest threats
+- [World Boss Raids](guides/raids.md) - 15-hero raids on a zoned field, against the realm's largest threats
 - [Custom Dungeons](guides/custom-dungeons.md) - Design and publish your own dungeons, raid the community's
 
 ---
@@ -52,9 +52,9 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 
 - **6 Hero Classes**: Warrior, Mage, Rogue, Ranger, Necromancer, Cleric
 - **Ascendancy Paths**: 2-3 specializations per class
-- **Deep Combat System**: Turn-based with initiative, threat, and positioning
+- **Deep Combat System**: Turn-based and auto-resolving on initiative and threat — you set the tactics and spend command points; the heroes make their own decisions, for better and frequently for worse
 - **Relationship System**: Heroes form bonds, rivalries, and romances
-- **Extensive Crafting**: blacksmithing, alchemy, enchanting, and more
+- **Extensive Crafting**: four disciplines — Metalsmithing, Softcraft, Alchemy and Arcana
 - **Procedural Dungeons**: forests, crypts, volcanoes and worse, each with its own way of killing you
 - **Endgame Content**: Heroic Dungeons, Abyssal Spire, World Bosses
 

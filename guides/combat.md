@@ -9,7 +9,7 @@ Hero's Guild features a turn-based combat system of considerable depth, involvin
 Turn order is settled at the start of every round by initiative, which is to say by a combination of reflexes and luck, in that order:
 
 ```
-Initiative = DEX + Random(1-10)
+Initiative = DEX + initiative bonuses + Random(1-10)
 ```
 
 Higher initiative means acting earlier, which is particularly useful for heroes who subscribe to the "hit them before they hit you" school of combat philosophy. Turn order is recalculated each round, because consistency is for people who aren't being attacked by goblins.
@@ -29,8 +29,20 @@ Every round resolves in the same four phases, in the same order, without excepti
 |--------|-------------|
 | **Attack** | Basic weapon attack — the fallback when nothing more sophisticated is available, or when the Warrior decides nothing more sophisticated is necessary |
 | **Skill** | Use an equipped skill gem or class ability; the reason heroes carry skill gems in the first place |
-| **Defend** | 50% damage reduction until next turn; some heroes call this cowardice, others call it still being alive |
-| **Flee** | Attempt to escape (30% + DEX + LCK/2 chance); feels lower than it sounds when you're actually trying it |
+| **Defend** | 50% damage reduction until next turn; mostly a raid habit, where a hero with nothing in reach plants their feet rather than swing hopefully at the horizon |
+
+### Who Decides
+
+Not you, and this is the single most important thing to understand about combat in Hero's Guild.
+
+Heroes pick their own actions, every turn, from everything you have given them — their gems, their skills, their cooldowns, their opinion of the person bleeding next to them. You do not select a target or spend a cooldown. What you control is the two things that shape every one of those decisions:
+
+- **The tactical preset** — Reckless, Aggressive, Balanced, Cautious or Survival. It sets how heroes weigh damage against healing and defence, and which enemy they go for: the aggressive end focuses the weakest foe, the cautious end the one with the most HP. You can change it mid-fight, and changing it mid-fight is frequently the correct move.
+- **Command points** — a small budget per floor, spent on party-wide interventions (Battle Cry, Shield Wall, Quick Heal, and the rest).
+
+Both live on the run screen while the fight is happening; see [Dungeons](dungeons.md#expedition-types) for what each one does.
+
+Everything else is decided before the party leaves: who goes, what they carry, what they have trained, and whether they can stand each other. The Guild Clerk considers this the honest division of labour. You do the paperwork; they do the dying.
 
 **Auto-Potions:** At the start of a hero's turn, they automatically drink a health potion if HP is below the configured threshold (default **50%**, adjustable in Settings → Combat). Mana flasks auto-trigger the same way when mana falls below a separate threshold (default **30%**). Poisoned heroes also auto-use an Antidote if one is equipped (slot 1 first, then slot 2). These are, admittedly, the only consistently good decisions most heroes make without supervision.
 
@@ -58,7 +70,7 @@ Base Damage = (Avg Weapon Damage + Equipment Damage) × (1 + Stat Bonus / 100)
 | Necromancer | INT × 0.042 |
 | Paladin (ascendancy) | INT × 0.029 + STR × 0.029 |
 
-The stat bonus is a percentage on the weapon: a Warrior with 100 STR hits for +7.5%, and one with 2,000 STR — a level-100 hero in their best kit — for roughly ×2.5. The off-hand follows the same idea (STR × 0.058 for Berserkers and Gladiators, DEX × 0.05 for Rogues). Stats are a steady multiplier rather than a miracle, which is why experienced guild masters invest in training *and* in a bigger sword, rather than choosing between them.
+The stat bonus is a percentage on the weapon: a Warrior with 100 STR hits for +7.5%, and one with 2,000 STR — a level-100 hero in their best kit — for roughly ×2.5. The off-hand uses the same coefficients (STR × 0.058 for Berserkers and Gladiators, DEX × 0.05 for Rogues) but adds the result as **flat damage** rather than a multiplier, and then deals 75% of it — so a second weapon is a solid supplement to a build, not a second build. The Gladiator's three-piece set bonus lifts that 75% to the full 100%, which is most of why Gladiators are so fond of it. Stats are a steady multiplier rather than a miracle, which is why experienced guild masters invest in training *and* in a bigger sword, rather than choosing between them.
 
 **Modifiers Applied (multiplicative):**
 - **Class damage multiplier** — Mage/Necromancer ×1.25, Cleric/Warrior ×1.00, Rogue ×0.85, Ranger ×0.80. Applied to everything a hero hits, with anything.
@@ -122,6 +134,8 @@ Armor Reduction = sqrt(Armor × 2) × 100 / (50 + Enemy Level × 0.5)
 
 Capped at 95%. Minimum damage dealt is always 1. The square root in the formula ensures diminishing returns, which is the universe's way of telling Warriors that a third piece of plate armor is not, in fact, the answer to everything.
 
+This is the hero side of the ledger. Enemy armour runs on the same saturation curve as hero resistances — `Armor / (Armor + 100)` — so armour-shredding effects pay off most against the heavily plated and barely register on a goblin.
+
 **Defense Modifiers:**
 - Defending: 50% damage reduction
 - Shield Wall: 50% damage reduction
@@ -156,7 +170,7 @@ The curve is hero-side only. **Enemies use a flat 50% reduction** per matching r
 Evasion uses an entropy-based system (similar to Path of Exile 2) to ensure consistent dodge patterns rather than pure randomness. This means a hero with 50% evasion will reliably dodge every other attack, rather than getting hit seventeen times in a row and writing a strongly-worded complaint to the Guild Clerk's office.
 
 ```
-Evasion Rating = DEX + (LCK × 0.5) + flat evasion bonuses
+Evasion Rating = (DEX + (LCK × 0.5) + flat evasion) × (1 + evasion % / 100)
 Evasion Chance = sqrt(Evasion Rating × 2) × 100 / (50 + Enemy Level × 0.5)
 ```
 
@@ -305,7 +319,7 @@ When a hero would receive a **killing blow**, allies may intervene:
 
 1. Ally takes 50% of the damage instead
 2. Original target survives with no damage
-3. Massive relationship boost between them
+3. Both heroes think better of each other for it — modestly in the moment, considerably more by nightfall
 4. Creates the kind of moment that bards write songs about (and that the Guild Clerk writes incident reports about)
 
 ### Requirements
@@ -335,9 +349,11 @@ The base chance comes from the **would-be rescuer's** opinion of the hero in dan
 
 ### Relationship Impact
 
-- Saved hero: +30 trust toward savior
-- Savior: +15 protective instinct toward saved
+- Saved hero: +8 trust toward savior
+- Savior: +4 protective instinct toward saved
 - May trigger "Inspired" emotional state
+
+The in-combat figures are deliberately small. The larger reward arrives that evening as a **Saved Life** entry — another +20 to the rescued hero's opinion of their rescuer and +15 the other way, plus a [Life Debt](relationships.md#life-debt) bond. Gratitude in this guild is a thing people sleep on first.
 
 ---
 
@@ -364,8 +380,8 @@ When an ally dies, heroes react based on their relationship. These reactions are
 |--------------|-----------------|
 | Enemy/Nemesis | Inspired (relief!) |
 | Lover/Married | Berserk (40%), Broken (30%), Vengeful (30%) |
-| Best Friend | Berserk (30%), Grief (20%), Enraged (50%) |
-| Close Friend | Enraged (50%), Grief (50%) |
+| Best Friend / Battle Brother | Berserk (30%), Grief (20%), Enraged (50%) — a **Brave** hero is 20 points likelier to go Berserk, a **Coward** 20 points likelier to fall into Grief |
+| Close Friend | Reacts at all only 40% of the time; when they do, Enraged (50%) or Grief (50%) |
 
 ---
 
@@ -445,6 +461,8 @@ As heroes fight the same enemy types, they gradually learn their weaknesses — 
 
 Monster knowledge is tracked per hero per enemy type. The Slayer level grants bonus critical hit chance against that enemy, which seems fair after you've killed a hundred of them.
 
+Each tier also opens the books a little further: **Studied** reveals the creature's resistances and weaknesses, and **Expert** its exact HP. Before Studied, a hero is working from rumour and bruises.
+
 ---
 
 ## Status Effects
@@ -454,7 +472,7 @@ Monster knowledge is tracked per hero per enemy type. The Slayer level grants bo
 | Effect | Duration | Damage |
 |--------|----------|--------|
 | Poison | 4 turns | % of damage dealt per turn |
-| Burn | 3 turns | Fire damage per turn (30% ignite chance from Fireball) |
+| Burn | From the skill that lit it — 2 turns for Fireball, 3 when a burn spreads | Fire damage per turn (30% ignite chance from Fireball) |
 | Bleed | 3 turns | 20% of damage dealt per tick (+ bleed damage bonuses) |
 
 Bleed and poison damage scale from the hit that applied them, not from max HP. Ascendancy bonuses can increase DoT damage significantly — the Berserker's bleed build, in particular, has been described by surviving enemies as "deeply unfair."
@@ -525,11 +543,11 @@ When a boss drops below a phase threshold:
 
 ### General Strategies
 
-1. **Protect Your Healer** - Dead clerics mean dead parties. This is not a suggestion.
-2. **Control Threat** - Use Warrior Taunt to dictate targeting. The Warrior's job is to be hit. They are, one assumes, fine with this.
-3. **Focus Fire** - Kill one enemy fast rather than wounding many. A half-dead goblin is just as dangerous as a fully healthy one, but significantly angrier.
-4. **Watch Initiative** - Know who acts when
-5. **Save Cooldowns** - Don't blow everything turn 1. Overconfidence is the leading cause of party wipes, closely followed by underleveled equipment.
+1. **Bring a Warrior** - Threat is the whole of your targeting policy, and a Warrior is the only hero who generates it on purpose: 50 starting threat against everyone else's 10, half again as much from every hit, and a Taunt that buries the number entirely. You cannot tell the enemy who to hit. You can make the answer obvious.
+2. **Protect Your Healer** - Dead clerics mean dead parties. This is not a suggestion. Since you cannot pull the enemy off them by hand, it is bought at party-selection time or not at all.
+3. **Match the Preset to the Fight** - Survival and Cautious push heroes toward healing and defence; Aggressive and Reckless push them at the weakest enemy in the room. The dropdown is live, so a fight going badly is a fight you can still change your mind about.
+4. **Keep a Command Point Back** - Spending the floor's whole budget on the first encounter is a decision you meet again on the way out.
+5. **Train the Skills They Actually Use** - Proficiency caps at hero level ÷ 5, and heroes cast what they have, not what you would have chosen. Thirty per cent more damage on a skill a hero reaches for every fight beats a clever gem they ignore.
 
 ### Party Composition
 
@@ -614,9 +632,11 @@ All heroes knocked out. The dungeon has, in the technical sense, won:
 
 ### Fled
 
-Successful escape — the tactical decision the Guild Clerk officially discourages and quietly recommends:
-- No rewards
-- Party safely exits
+Retreat — the tactical decision the Guild Clerk officially discourages and quietly recommends. Heroes do not run away on their own initiative; leaving is one of the few things you decide for them, either with the Retreat button or by spending command points on a Tactical Retreat:
+
+- Party exits alive
+- Loot and experience already earned are kept — partially, and the Clerk declines to be more specific
+- Whatever was on the remaining floors stays there
 - Better than a wipe
 
 ---

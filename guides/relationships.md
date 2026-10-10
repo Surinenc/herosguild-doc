@@ -51,7 +51,7 @@ Which is to say a failed mission fought by two enemies has an **80%** chance of 
 
 | Action | Trust Change |
 |--------|--------------|
-| Intervene save (combat) | +30 saved / +15 saver during combat, PLUS a post-mission **Saved Life** event worth another +20 saved / +15 saver — both land on a successful intervene, gratitude being the kind of thing that gets said twice |
+| Intervene save (combat) | +8 saved / +4 saver during combat, PLUS a post-mission **Saved Life** event worth another +20 saved / +15 saver — both land on a successful intervene, and the larger share arrives after everyone has had a chance to think about it |
 | Shared meal | +2 to +4 |
 | Training together (social) | +2 to +4 |
 | Gift giving | +4 to +6 |

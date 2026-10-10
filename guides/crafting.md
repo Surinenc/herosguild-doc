@@ -224,6 +224,7 @@ When crafting completes, quality is rolled:
 - Station quality bonus adds to the roll
 - Masterwork skill (100) guarantees a 50+ roll
 - The **Master Artisan title** adds +10 — the only title that does, artisans being famously unimpressed by everybody else's
+- A hero carrying the **Master's Hand** inspiration adds **+15**, which is the largest single modifier on this list and lasts three days. It arrives by its own route — see [Inspirations](relationships.md#inspirations) — and cannot be arranged on demand, which the Guild Clerk considers the whole point of inspiration
 - An assistant adds nothing to quality; they hold things, and the things are held
 
 ### Crafting Failures

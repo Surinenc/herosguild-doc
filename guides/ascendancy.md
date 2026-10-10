@@ -97,7 +97,7 @@ Rogues specialize in burst damage through different means.
 
 ### Assassin
 
-*"Believes strongly in the efficiency of a well-placed blade. One hit, one kill - anything else is just wasting everyone's time."*
+*"Subscribes to the philosophy that fights should ideally be over before the enemy realizes they've started. Very efficient. Very quiet. Dry cleaning bills are astronomical."*
 
 **Focus:** Critical Strikes, First Strike, Execute
 
@@ -117,7 +117,7 @@ Several nodes hand you power and quietly bill you for it in damage taken. Read t
 
 ### Trickster
 
-*"There's no such thing as fighting dirty, just fighting effectively."*
+*"Believes in fighting fair, where 'fair' means the enemy is poisoned, weakened, and questioning their life choices before combat even begins."*
 
 **Focus:** Poison, Debuffs, Party Damage Amplification
 
@@ -141,9 +141,11 @@ Rangers have three distinct paths for different combat styles.
 
 ### Deadeye
 
-*"Takes aim at the part of the enemy that does the most good when it stops working."*
+*"Can shoot the wings off a fly at a hundred yards. Whether this is impressive or just cruel depends on your relationship with the fly."*
 
 **Focus:** Critical Hits, Headshots
+
+The Deadeye's starting node ("I Can See Your Mistakes From Here") grants **+40% damage and +18% crit chance**, which is the largest opening crit bonus of any path and the reason Deadeyes feel sharp from the first point.
 
 | Branch | Theme | Key Abilities |
 |--------|-------|---------------|
@@ -157,7 +159,7 @@ Rangers have three distinct paths for different combat styles.
 
 ### Raider
 
-*"Fortune favors the bold — especially when they check every chest."*
+*"Has a supernatural ability to find valuable things in places where valuable things shouldn't be. Pockets are significantly larger than they appear."*
 
 **Focus:** Loot, Material Drops, Magic Find
 
@@ -175,7 +177,7 @@ The Raider's starting node ("Professionally Nosy") grants **+35% damage and +14%
 
 ### Pathfinder
 
-*"Always one step ahead — literally."*
+*"The one who actually reads the map. Leads the party not because they're the bravest, but because someone has to keep the others from walking into obvious traps."*
 
 **Focus:** Tactical Support, Initiative Control, Party Buffs
 
@@ -199,7 +201,7 @@ Mages choose between raw elemental power or dark magic.
 
 ### Elementalist
 
-*"Fire, ice, lightning - why limit yourself to just one way to ruin someone's day?"*
+*"Can't decide which element is best, so uses all of them. Frequently sets things on fire 'by accident' and freezes drinks 'for practice.'"*
 
 **Focus:** Elemental Damage, AoE, Status Effects
 
@@ -217,7 +219,7 @@ Mages choose between raw elemental power or dark magic.
 
 ### Occultist
 
-*"Dabbles in forces better left alone. Considers 'cursed' to be a compliment."*
+*"Draws power from dark and mysterious sources, which sounds impressive until you realize it's mostly just staying up very late and being unpleasant to be around."*
 
 **Focus:** Curses, Chaos Damage, Life Drain
 
@@ -257,7 +259,7 @@ Clerics choose between healing mastery or battle cleric.
 
 ### Paladin
 
-*"Sometimes the best cure for what ails ye is a holy hammer to the face."*
+*"Hits things with holy righteousness, which is like regular hitting but with more moral justification. The glowing is optional but they do it anyway."*
 
 **Focus:** Battle Cleric, Holy Damage, Damage Absorption
 
@@ -281,7 +283,7 @@ Necromancers focus on minions or personal dark power.
 
 ### Puppeteer
 
-*"Why risk your own neck when perfectly good corpses are just lying around?"*
+*"Found that making friends is easier when the friends don't have opinions. Or pulses. The skeletons don't complain about the hours."*
 
 **Focus:** Minions, Summons, Army Building
 
@@ -299,7 +301,7 @@ Necromancers focus on minions or personal dark power.
 
 ### Lich
 
-*"Gave up warmth, sleep, and social invitations for ultimate power. Claims it was worth it."*
+*"Has decided that death is merely a suggestion and chaos is a lifestyle choice. Very pale. Doesn't get invited to parties, which suits them fine."*
 
 **Focus:** Chaos Damage, Life Steal, Critical Strikes
 

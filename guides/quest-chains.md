@@ -93,8 +93,9 @@ The Quest Log does **not** list locked chains or what it would take to open them
 
 | Reward Type | Story | Class | Weekly |
 |---|:-:|:-:|:-:|
-| Gold (per step + finale) | ✓ | ✓ | ✓ |
-| Reputation | Finale only | — | — |
+| Gold per step | ✓ | ✓ | ✓ |
+| Gold at the finale | — | — | ✓ |
+| Reputation | Every step **and** the finale (5 of 7 chains) | — | — |
 | Materials | ✓ | ✓ | ✓ |
 | Named item (finale) | ✓ | ✓ | — |
 | Crafting recipe (finale) | Some | ✓ | — |
@@ -102,13 +103,15 @@ The Quest Log does **not** list locked chains or what it would take to open them
 | Random Epic+ item | — | — | ✓ (finale) |
 | Special hero (finale) | 2 chains | — | — |
 
+Two details that catch people out. **Story and class chains pay their gold on the steps, not the finale** — the finale is where the named item, the recipe and the reputation live, and opening it expecting a purse is a disappointment. And **story reputation arrives at every step**, climbing as the chain goes (the Void Rift pays 300 / 350 / 400 / 450 / 600 on the way to a 2,500 finale), rather than landing in one lump at the end. The two rank-D chains, the Founding Blade and the World Tree Pact, pay no reputation at all — they trade it for the recipe and the two gems.
+
 Class chains are the game's main reliable source of class-restricted named gear and targeted skill gems. Weekly bounties are the most predictable source of high-rarity random loot. Story chains are where the singular, named, plot-relevant items live.
 
 ---
 
 ## Special Hero Rewards & Barracks Overflow
 
-Two story chains grant a **special hero** as part of their finale — a named, pre-built adventurer who joins your guild immediately at the level of your current highest-level hero. They arrive with equipment and a built skill setup.
+Two story chains grant a **special hero** as part of their finale — a named, pre-built adventurer who joins your guild immediately at the level of your current highest-level hero. They arrive with equipment and a built skill setup. They are **The Undead Plague**, which sends you *Ser Marcus the Sanctified* (an Epic-quality Cleric), and **The Rival's Gambit**, which sends you *Shade* (a Legendary Rogue, and no, that is the whole name).
 
 If your Barracks is already at capacity when this happens, the hero joins anyway. Your roster goes **over cap** (e.g., 13/12), and the Guild Scene header turns red with a warning. A **14-day grace timer** starts:
 

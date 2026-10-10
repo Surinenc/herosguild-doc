@@ -506,16 +506,18 @@ Which is to say a hero at mood 24 is a worry, and a hero at mood 1 is an emergen
 
 ### Break Types
 
-| Break | Duration | Weight | Effect |
-|-------|----------|--------|--------|
-| Desertion | Permanent | 15% | The hero packs and leaves the guild, that same morning. There is no coming back and no consolation thought |
-| Berserk | 1 day | 10% | Costs the hero 20% of their max HP and two days injured, then picks a Ready hero who isn't breaking down themselves and does the same to them. Relationship **-50** from the breaker, **-60** from the victim, who takes it rather more personally — enough, from a standing start, to turn a friendship into open hostility in a single evening. With nobody available they trash the barracks instead |
-| Catatonic | 3-7 days | 15% | Set to Resting and stares at the wall for the duration |
-| Binge | 2-4 days | 15% | Set to Resting and booked as a **Bender** absence for the whole duration — drunk 100, hangover 80, addiction +15, and ten drinks on the lifetime tally |
-| Insulting | 1-2 days | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: **-20** from their side, **-30** from each recipient's |
-| Hiding | 2-5 days | 10% | Set to Resting behind a locked door |
-| Wandering | 1-3 days | 10% | Set to Resting, location unknown |
-| Confession | Instant | 10% | Resolves on the spot. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: 60% of the time it lands well, +10 both ways; otherwise -10 both ways. With no such friend, they tell the tavern keeper, and word spreads |
+| Break | Duration | Weight at mood 10-25 | Weight below 10 | Effect |
+|-------|----------|---------------------|-----------------|--------|
+| Desertion | Permanent | — | 15% | The hero packs and leaves the guild, that same morning. There is no coming back and no consolation thought |
+| Berserk | 1 day | — | 10% | Costs the hero 20% of their max HP and two days injured, then picks a Ready hero who isn't breaking down themselves and does the same to them. Relationship **-50** from the breaker, **-60** from the victim, who takes it rather more personally — enough, from a standing start, to turn a friendship into open hostility in a single evening. With nobody available they trash the barracks instead |
+| Catatonic | 3-7 days | 20% | 15% | Set to Resting and stares at the wall for the duration |
+| Binge | 2-4 days | 20% | 15% | Set to Resting and booked as a **Bender** absence for the whole duration — drunk 100, hangover 80, addiction +15, and ten drinks on the lifetime tally |
+| Insulting | 1-2 days | 20% | 15% | Set to Resting, but not before saying something unforgivable to up to four Ready heroes: **-20** from their side, **-30** from each recipient's |
+| Hiding | 2-5 days | 13% | 10% | Set to Resting behind a locked door |
+| Wandering | 1-3 days | 13% | 10% | Set to Resting, location unknown |
+| Confession | Instant | 14% | 10% | Resolves on the spot. Finds a living hero they like (relationship above 30) and tells them something they shouldn't: it lands well only **40%** of the time, for +20 both ways, and the other 60% costs **-20** both ways. Confiding in someone while you are falling apart is, on the evidence, a bad bet. With no such friend, they tell the tavern keeper, and word spreads |
+
+The two weight columns are not decoration. Between mood 10 and 25 the six minor breaks are drawn from their own table, re-normalised to sum to 100 without the two major types in it; below 10 the full eight-type table applies. So a hero at mood 20 is likelier to go Catatonic, Binge or Insulting than the lower column suggests, and a dash means that break cannot happen at that mood at all. Trait multipliers are applied to whichever table is in force, and the pool re-normalised afterwards.
 
 Every break ends — the instant ones resolve as they happen, and the rest run their duration down. When one ends, the hero gets a **"Got it out of my system"** thought worth **+10 mood for 3 days**, which is the closest the realm comes to therapy. A **Tortured Artist** gets something else out of it: a **40%** chance that coming out the other side also grants them Master's Hand, on top of the catharsis rather than instead of it. Suffering, they will tell you at length, is material.
 

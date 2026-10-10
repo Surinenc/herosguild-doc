@@ -109,10 +109,12 @@ Every weapon reduces to five numbers. Heroes who understand these numbers do bet
 
 | Type | Defense | Classes | Guild Clerk's Notes |
 |------|---------|---------|---------------------|
-| **Plate** | Highest | Warrior | Warriors consider anything less to be "pajamas" |
+| **Plate** | Highest | Warrior, Cleric | Warriors consider anything less to be "pajamas"; Clerics wear it without comment |
 | **Mail** | High | Cleric, Ranger | A sensible compromise |
 | **Leather** | Medium | Rogue, Ranger | Rogues insist this is "tactical" |
 | **Cloth** | Low | Mage, Necromancer | Mages consider anything heavier "excessive" |
+
+**Clerics are the exception worth knowing**: they are the only class that can wear plate, mail *and* cloth, which makes them the most freely equipped hero in the guild and is most of the reason a Paladin can be built as a front-liner. The table above is the rule, not a guarantee — restrictions are set per item, so the occasional piece admits a class its armour type otherwise would not.
 
 ### Armor Stats
 
@@ -130,7 +132,7 @@ Armor trades mobility for survival. Warriors consider this an excellent trade. M
 **Heavy Armor (Warrior):**
 - Iron Plate: 15 armor, +20 HP
 - Steel Plate: 30 armor, +40 HP
-- Dragonplate: 80 armor, +120 HP, 50% Fire Resist (the Fire Resist actually comes from the Dragonslayer 3-piece set bonus)
+- Dragonplate: 80 armor, +120 HP, 50% Fire Resist — on the piece itself. The Dragonslayer 3-piece set bonus grants *another* 50%, so wearing three pieces of the set puts a Warrior at 100% raw fire resistance before anything else is counted
 - **Immortal Bastion** (Mythic, L68, Warrior/Cleric): 120 armor, +200 HP, +28 STR, +28 VIT, +20% to each of fire/ice/lightning/holy/dark resists. No HP regeneration, despite everything the name suggests.
 
 ---

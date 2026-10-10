@@ -27,4 +27,7 @@ exclude:
   - TRIALS-DESIGN-PLAN.md
   - .specify
   - .claude
+  - specs
   - heroworld
+  - HUMANITY-SYSTEMS-PROPOSAL.md
+  - HUMANITY-PLAYER-IMPACT-BASELINE.json

@@ -117,10 +117,13 @@ The three crises with permadeath events are:
 
 ### How They Fire
 
-A permadeath event becomes available only when **every** one of the following is true, the realm requiring a great deal of paperwork before it takes a hero this way:
-- Severity has reached **Critical**
-- At least **one resolution mission** has been completed
-- At least **two living heroes** remain in the guild
+The event is injected at the **moment severity escalates to Critical**, and only then — not re-offered later in the run. It requires:
+
+- Severity escalating to **Critical**
+- At least **two living heroes** in the guild
+- No copy of the same event already pending
+
+Note what is *not* on that list. **Completing resolution missions is not a prerequisite — it is the thing that prevents this entirely.** Severity only escalates while you have completed no resolution missions, so the Critical escalation that triggers a permadeath event can only happen to a guild that has done nothing about the crisis. The event is the realm's last-ditch bargain with the negligent, not a reward for engagement. A guild that cleared even one resolution mission never reaches the escalation that offers it.
 
 When the conditions hit, a pending moral event is queued with a deadline of the crisis end day. You'll see a modal in Guild Events with two options.
 
@@ -131,7 +134,7 @@ Permadeath moral events are deliberately binary. **There is no gold or material 
 - **Accept** — the chosen hero permadies. The crisis force-ends at **Engaged**, you skip whatever was coming next, and you earn the **Sacrificial Lamb** milestone. The hero is dead. Permanently.
 - **Refuse** — the hero lives. The crisis continues at Critical until its normal end day, with all the consequences that implies.
 
-Refusing the Dragon's Tithe tribute event additionally earns the **Defiant Refusal** milestone — a recognition that you, specifically, told the dragon to go away.
+Refusing the Dragon's Tithe **Hero Tribute** — this permadeath event, not the gold tribute at crisis start — additionally earns the **Defiant Refusal** milestone — a recognition that you, specifically, told the dragon to go away.
 
 If you let the modal time out, the default is **Refuse.** The Guild Clerk considers this the correct default and has never said otherwise.
 
@@ -183,7 +186,7 @@ The Guild Clerk maintains a quiet ledger of crisis-related achievements. Each is
 | **Chain Breaker** | A chained crisis resolved at Engaged |
 | **Eye of the Storm** | A chained crisis resolved at Engaged with zero deaths, and the parent also had zero deaths |
 | **Necromantic Drought** | Planar Interference ended with zero deaths |
-| **Defiant Refusal** | The Dragon's Tithe tribute event was refused |
+| **Defiant Refusal** | The Dragon's Tithe **Hero Tribute** permadeath event was refused. The gold tribute does not count, and no other crisis's tribute does either |
 | **Sacrificial Lamb** | A permadeath event was accepted |
 | **Tempest Conductor** | All 14 crisis types have been encountered at least once |
 

@@ -182,6 +182,7 @@ You command groups by issuing orders. Each turn you have **5 order points** to s
 | Interrupt | 1 | The group rolls to interrupt a casting enemy. First success cancels. Roll: INT + DEX vs DC. |
 | Disengage | 1 | Pull back from melee. |
 | Burst | 1 | Mage/Necromancer only. Channel a high-cost spell now. |
+| Heal | 1 | Direct healing at a chosen zone or a named hero. Cleric healing shares the melee distance cap, so the target has to be in reach. |
 | Standing Order | 1 (to set) | Set a default behaviour that persists across turns until changed. Setting it costs 1; it costs nothing to keep. |
 | Call Retreat | 0 | End the raid immediately. The Guild Clerk records this without comment, but expressively. |
 
@@ -190,7 +191,7 @@ You command groups by issuing orders. Each turn you have **5 order points** to s
 - If you issue two orders to the same group, the **latest wins**.
 - Movement consumes that hero's action — moving groups don't also attack the same turn.
 
-Standing orders are the lever for boss patterns you've seen before: the second time you fight the Void Titan, "Standing Order: Converge on the Stack telegraph" is two points well spent.
+Standing orders are the lever for boss patterns you've seen before. The four behaviours you can leave running are heal, engage the nearest add, taunt incoming threats, and interrupt telegraphs of a chosen type — and each resolves ties by lowest HP, highest priority or nearest, whichever you pick. The second time you fight the Void Titan, standing orders to interrupt its telegraphs cost one point once and nothing at all thereafter, which is the cheapest foresight in the game.
 
 ---
 

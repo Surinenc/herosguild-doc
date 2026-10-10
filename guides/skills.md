@@ -209,12 +209,19 @@ The skills that make the rest of the party's recklessness survivable.
 
 Defensive skills, mostly for heroes who've learned what happens without them.
 
-| Gem | Type | Description |
-|-----|------|-------------|
-| **Molten Shell** | Self | Absorb damage, explode when hit |
-| **Frost Shield** | Self | Cold-based damage absorption |
-| **Bone Armor** | Self | Necromancer's defensive shell |
-| **Arcane Barrier** | Self | Mana-based shield |
+**Every guard gem is locked to one class.** There is no shopping around: each class gets its own way of not being hit, and they absorb different shares for it.
+
+| Gem | Class | Absorbs | Description |
+|-----|-------|---------|-------------|
+| **Nimble Footwork** | Rogue | 35% | Dancing, which turns out to be practical. The strongest guard in the game |
+| **Mana Shield** | Mage | 30% | Pain becomes power, economically |
+| **Frost Shield** | Mage | 25% | Cold-based damage absorption |
+| **Bone Armor** | Necromancer | 25% | The Necromancer's defensive shell |
+| **Wind Walk** | Ranger | 25% | The Ranger would rather not be hit at all; this is the compromise |
+| **Molten Shell** | Warrior | 20% | Absorbs, then explodes when hit — the Warrior's whole philosophy in one gem |
+| **Arcane Barrier** | Mage | 20% | Mana-based shield |
+
+Each absorption figure is the gem's value at level 1 and climbs with gem level. A gem your hero cannot use will not appear in their socket list, however much you want it to — which is also why Mages have three of these and Warriors one.
 
 ### Warcry Skills (Green)
 
@@ -231,9 +238,11 @@ For tactical repositioning. Also for leaving approximately as fast as possible.
 
 | Gem | Type | Description |
 |-----|------|-------------|
-| **Evasive Roll** | Self | Dodge and reposition |
-| **Smoke Bomb** | Guard / AoE | Swirling cloak of smoke absorbs a percentage of incoming damage; visibility ruined for both parties, only one minds |
+| **Evasive Roll** | Self | Dodge and reposition; absorbs 25% |
+| **Smoke Bomb** | Guard / AoE | Swirling cloak of smoke absorbs 15% of incoming damage; visibility ruined for both parties, only one minds |
 | **Shadow Step** | Teleport | Instant teleport behind enemy |
+
+All three are **Rogue-only**, which is less a design statement than an admission about who actually leaves a fight early.
 
 ### Holy Skills (Red)
 

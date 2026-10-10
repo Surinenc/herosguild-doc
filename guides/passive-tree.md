@@ -14,9 +14,11 @@ The tree contains five types of nodes, listed here in ascending order of how exc
 |-----------|-----------|------|-------------|
 | **Start** | 1 | Largest | Your class entry point. Grants base stats and a damage type bonus. Cannot be removed. |
 | **Travel** | 1 | Smallest | Connector nodes. Grant +5 to a stat of your choice (Strength, Dexterity, or Intelligence). |
-| **Minor** | 5 | Small | Modest stat bonuses. Can be levelled up to 5 times for compounding returns. |
-| **Notable** | 3 | Medium | Significant passives. Named abilities with meaningful impact on your build. |
+| **Minor** | 1, 2, 3 or 5 | Small | Modest stat bonuses. Most take a single point; a minority can be levelled for compounding returns. |
+| **Notable** | 1 or 3 | Medium | Significant passives. Named abilities with meaningful impact on your build. |
 | **Keystone** | 1 | Large | Powerful transformative effects with mandatory drawbacks. The tree's most interesting decisions. |
+
+**Check the level cap on the node, not the node's type.** Minors and notables are not uniform: most minors are single-point, and roughly one in eight goes to five, with a scattering at two and three. Most notables go to three, but a sizeable minority are single-point. The node's own tooltip is the authority, and the difference matters when you are costing out a route.
 
 The humblest and most numerous minors are the **Conditioning** nodes scattered along every branch: one point each, **+3% damage and +3% maximum life**, for every class alike. Rogues and Rangers, with no plate and no energy shield, notice the life rather more than anyone else, and get no extra for noticing.
 
@@ -129,6 +131,8 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 | Summoner Mastery (Necromancer) | +12% Minion Damage, +33% Minion Life | -25% Damage |
 | Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
+
+The two keystones at the end of a branch **share a name** but not their effects: a Warrior walking the tank branch meets two nodes both called Tank Mastery, one trading damage for armour and life, the other trading crit for life and flat armour. Read the node, not the label. The table above gives one of each pair.
 
 Keystone damage is a garnish rather than the meal — single-digit to high-teens percentages on most of them — because the tree's damage all lands in one shared pool (see [Combat](combat.md#hero-damage)), and a keystone that doubled it would make every other node decorative. Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
 

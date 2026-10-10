@@ -41,7 +41,7 @@ Facilities to build and upgrade:
 
 ## Facility Upgrades Take Time
 
-Upgrading a facility is not instant. Every upgrade is a **construction project** that ticks down one in-game day at a time until the new level is finished — anywhere from **2 days to 20 days**, depending on the facility and the level you're moving to. The builders work at the pace of builders everywhere, which is to say at exactly the pace they said they would and not one day sooner.
+Upgrading a facility is not instant. Every upgrade is a **construction project** that ticks down one in-game day at a time until the new level is finished — anywhere from **a single day to half a year**, depending on the facility and the level you're moving to. The builders work at the pace of builders everywhere, which is to say at exactly the pace they said they would and not one day sooner.
 
 ### The rules
 
@@ -50,25 +50,33 @@ Upgrading a facility is not instant. Every upgrade is a **construction project**
 - **No cancellation.** Once construction has begun, the gold and materials are committed and the ledger has moved on. You cannot stop it, you cannot refund it. Wait for it to finish and consider it a lesson if you regret the choice.
 - **Completion is announced.** On the day construction finishes, the day summary says so (*"🏗 Guild Hall reached level 2."*), so you don't need to open the Facilities screen to know it's done. The builders would like it noted that they are already packing up.
 
+### Which facilities you start with
+
+The seven **Core** facilities — Guild Hall, Barracks, Tavern, Training Yard, Infirmary, Armory and Warehouse — come already standing at Level 1, there being no point paying anyone to build something you own. Everything else has to be built from nothing before it can be upgraded at all, and that first build has its own wait: Chapel and Shop a single day, Forge, Alchemy Lab, Workshop and Library two, Enchanting Table three.
+
 ### Build-time distribution
 
-Across every facility and level, build times cluster as follows (level 1 comes already built, there being no point paying anyone to build something you own):
+Across every facility and level, build times cluster as follows:
 
 | Build days | Notable examples |
 |-----------|------------------|
-| 2 | Barracks L2, Training Yard L2 — the low-level "quick" upgrades |
-| 3 | Guild Hall L2, Tavern L2, Alchemy Lab L2 — the most common bucket |
-| 4 | Barracks L3, Forge L3 |
-| 5 | Tavern L3, Training Yard L3 |
-| 6 | Barracks L4, mid-tier upgrades |
-| 7 | Guild Hall L3 |
-| 8 | Higher tiers on Support facilities |
-| 10 | Barracks L5, Training Yard L4 |
-| 14 | Guild Hall L4 |
-| 15 | Tavern L5 |
-| 20 | The endgame Legendary tiers — Guild Hall L5 sits in this bucket |
+| 1 | Chapel L1, Shop L1 — the cheapest ribbon-cuttings in the guild |
+| 2 | Barracks L2, Armory L2, Forge L1, Workshop L1 |
+| 3 | Guild Hall L2, Tavern L2, Training Yard L2, Infirmary L2 — the most crowded bucket |
+| 4 | Barracks L3, Forge L2, Library L2 |
+| 5 | Tavern L3, Armory L3, Workshop L3 |
+| 6 | Barracks L4, Training Yard L3, Infirmary L3, Chapel L3 |
+| 7 | Guild Hall L3, Forge L3, Shop L5 |
+| 8 | Armory L4, Enchanting Table L3, Chapel L4 |
+| 10 | Barracks L5, Tavern L4, Training Yard L4, Workshop L4 |
+| 12 | Armory L5, Forge L4, Library L4 |
+| 14 | Guild Hall L4, Enchanting Table L4 |
+| 15 | Tavern L5, Training Yard L5, Chapel L5 |
+| 18-25 | Warehouse L5, Infirmary L5, Forge L5, Enchanting Table L5 |
+| 30-35 | Guild Hall L5, Armory L6, Warehouse L6, Workshop L6 |
+| 60-180 | Workshop L7 through L10, at 60, 90, 120 and 180 days |
 
-Rule of thumb: expect two-to-three-day builds early on, single-digit builds through the mid-game, and multi-week commitments for anything Legendary-tier.
+Rule of thumb: two-to-three-day builds early on, single-digit builds through the mid-game, and a month apiece for the Legendary tiers. The Workshop is in a category of its own — it runs to Level 10 rather than 5, and its last four levels cost sixty, ninety, a hundred and twenty and a hundred and eighty days. The Apotheosis Workshop is a half-year project, and the builders have made their peace with that.
 
 ### UI cues
 
@@ -190,6 +198,17 @@ Each floor arranges its 12 rooms around a central hallway. Adjacent rooms share 
 | Neutral | 0 |
 | Rival | -5 |
 | Enemy | -10 |
+
+The hallway is worth understanding before you start pairing people off. The twelve rooms line the four sides of the floor, three to a side, and **a room only neighbours the rooms on its own side** — the corners do not reach round. That makes four separate chains of three rather than one ring of twelve:
+
+| Side | Rooms | Pairs |
+|------|-------|-------|
+| 1 | 1 – 2 – 3 | 1&2, 2&3 |
+| 2 | 4 – 6 – 8 | 4&6, 6&8 |
+| 3 | 5 – 7 – 9 | 5&7, 7&9 |
+| 4 | 10 – 11 – 12 | 10&11, 11&12 |
+
+So rooms **2, 6, 7 and 11** sit in the middle of a chain and have two neighbours each; the other eight have exactly one. Eight adjacency pairs on the floor, and no more. Put your two most devoted friends either side of a middle room and the hero in the middle collects from both; put a feud at opposite ends of the same side and they never meet through a wall at all. Every occupant of a neighbouring room counts, so a couple sharing one bed next door is scored twice — once each, which the Guild Clerk considers only fair.
 
 Each room has 1-2 neighbors. Place friends together and enemies apart.
 

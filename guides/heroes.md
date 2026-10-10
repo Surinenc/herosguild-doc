@@ -357,7 +357,7 @@ Every day, each active illness gains **severity** and each afflicted hero builds
 
 Illnesses spread, and they spread along the lines of affection. Contagion ticks daily against every uninfected hero in reach — the whole roster if you're at the guild, your party-mates if you're out on a mission — and the multipliers stack: **married ×3.5**, **lovers, partners and the merely dating ×3.0**, **best friends ×2.0**, **sharing a room ×2.0 on top of whichever of those applies** (see [Cohabitation](guild.md#cohabitation)), **same mission party ×1.5**, and a Plague crisis **×3** across everything transmissible. **Enemy** and **Nemesis** bonds *dampen* transmission to **×0.7** — heroes who loathe each other keep their distance, which turns out to be medically fortunate.
 
-The whole product is then capped at **0.85**, because a married couple in a shared bed during a plague would otherwise reach certainty, and certainty makes for poor drama. Even at the ceiling there is roughly a one-in-seven chance of not catching it, which the Guild Clerk files, per Guild custom, under *hope*.
+The whole product is then capped, because a married couple sharing a bed through a plague would otherwise be a formality rather than a roll. Some chance of coming through untouched always survives the arithmetic, however grim that arithmetic looks on paper, and the Guild Clerk files it, per Guild custom, under *hope*.
 
 ### Symptom Penalties
 

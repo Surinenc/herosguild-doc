@@ -181,6 +181,12 @@ The Career tab exists because the Guild Clerk wanted receipts.
 - Monster knowledge levels
 - Combat lifetime stats
 
+### Stats Tab
+
+The hero sheet: what this hero is actually worth in a fight, after everything has been counted. Primary stats (**STR / DEX / INT / VIT / LCK**) sit above the derived ones — **ATK**, **CRT%**, **Crit DMG**, **Armor**, **Evasion**, **Energy Shield**, **Life Steal** — and the two out-of-combat modifiers, **Gold Find** and **XP Bonus**.
+
+The crit figures here are worth trusting: combat rolls crit through the same functions this sheet reads, so the percentage shown is the percentage the dice are given. See [Critical Hits](combat.md#critical-hits). Everything on this tab is the *effective* value — gear, passives, ascendancy, paragon, titles, mood, illness and the hero's own life history are already in the numbers, which is why they rarely match the figures on the items.
+
 ### Chronicle Tab
 
 The hero's running history. Major fights, lost friends, milestones, titles earned — the entries that decide which titles unlock. The tab carries an unread badge when a new entry has arrived since you last looked.

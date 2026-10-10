@@ -90,13 +90,15 @@ Published dungeons appear in the community gallery for other Guild Masters to fi
 
 ### The Gallery
 
-The Gallery is where you find dungeons to run. It lists:
+The Gallery is where you find dungeons to run. It has three sections, and the difference between the last two is worth knowing:
 
-- **Community dungeons** — published by other Guild Masters
-- **Templates** — first-party starting layouts available to play as-is
-- **Featured / seasonal** — dungeons that the realm has surfaced for the current season
+- **My Dungeons** — your own, drafts and published alike
+- **Community Dungeons** — the nine that ship with the game, bylined *Community*. These are always there, with or without a working connection
+- **Published Dungeons** — fetched from the server: what other Guild Masters have actually published, shown with the architect's name or persona
 
-The realm also ships with **named starter dungeons** as ongoing community content — *The Sunken Cellar, The Library That Watches, Goblin Snare-Maze, Patrol Tower of Sighs, Endless Stair of the Lich, The Demon's Bargain, The Warden's Round, The Iron Menagerie,* and *The Drowned Cathedral.* They range from short Apprentice-tier layouts to multi-floor Master-tier crawls, and they exist partly as content, partly as worked examples of what an architect can do with the editor.
+**Templates** are not a gallery section. They are starting layouts offered by the *editor* when you begin a new dungeon — a scaffold to build on, not something you raid. **Seasons** likewise has its own screen, reached from the gallery's navigation rather than listed among the dungeons.
+
+The nine that ship with the game are **named starter dungeons**, doubling as ongoing community content — *The Sunken Cellar, The Library That Watches, Goblin Snare-Maze, Patrol Tower of Sighs, Endless Stair of the Lich, The Demon's Bargain, The Warden's Round, The Iron Menagerie,* and *The Drowned Cathedral.* They range from short Apprentice-tier layouts to multi-floor Master-tier crawls, and they exist partly as content, partly as worked examples of what an architect can do with the editor.
 
 Each card shows the dungeon's name, the architect's name (or "Anonymous"), the elegance score, observed difficulty from previous raid attempts, and a **⚔ Raid This Dungeon** button. Press it and you commit a party.
 

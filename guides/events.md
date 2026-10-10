@@ -6,7 +6,7 @@ Hero's Guild runs on decisions. Not the kind that live on a menu and wait patien
 
 ## Tavern Nightly Events
 
-Every night, the **Tonight** tab in the Tavern presents 6–8 situations requiring the guild master's attention. Heroes are in conflict. Someone needs encouragement. Gossip is spreading. A romance is either starting or ending, depending on how you handle the next few minutes.
+Every night, the **Tonight** tab in the Tavern presents **up to 8** situations requiring the guild master's attention — fewer on a quiet night, when the roster simply hasn't generated much to argue about. Heroes are in conflict. Someone needs encouragement. Gossip is spreading. A romance is either starting or ending, depending on how you handle the next few minutes.
 
 You are given a limited number of **Attention Points** to spend. You will not have enough to address everything. The situations you ignore tonight will be waiting for you tomorrow, slightly worse.
 
@@ -62,7 +62,7 @@ These events appear in the social feed. They cannot be intercepted. The relation
 
 Inside dungeons, rooms occasionally contain something other than monsters or traps: a decision. A wounded traveler. A sealed coffin. An imprisoned mage with eyes that could be grateful or mad. A shrine that wants blood before it gives power.
 
-They are spread across every environment (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano), each with three options and each with immediate and potentially lasting consequences. Some events only appear when a specific hero is present — the right trait, the wrong mood, a particular bond or chronicle title. Those events use that hero's name. They are not abstract.
+They are spread across every environment (Forest, Cave, Ruins, Crypt, Swamp, Tower, Volcano), each with three options and each with immediate and potentially lasting consequences. Some events only appear when a specific hero is present — the right trait, a mood below a threshold, or a particular chronicle title. Those events use that hero's name. They are not abstract.
 
 Choices here affect the dungeon run directly (damage, healing, loot, enemy spawns, buffs). They also affect things outside the run: chronicle entries, axis shifts, and consequence chains that may resolve ten dungeons later in ways you've forgotten you caused.
 

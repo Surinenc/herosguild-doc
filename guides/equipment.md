@@ -360,6 +360,53 @@ A set counts **distinct pieces**. Two copies of the same ring, one in each acces
 
 **Pieces:** Blessed Blade, Crusader's Plate, Shield of Faith, Holy Symbol
 
+### Berserker's Fury (Epic)
+
+| Pieces | Bonus |
+|--------|-------|
+| 2 | +5% Crit Chance |
+| 3 | +1% damage per 1% HP missing |
+| 4 | Undying Fury: cannot be killed, once per fight — see [Phylactery Elixir](#phylactery-elixir) |
+
+**Pieces:** Berserker Axe, Berserker Harness, Berserker Helm, Ring of Bloodrage
+
+### Nature Warden's Garb (Epic)
+
+| Pieces | Bonus |
+|--------|-------|
+| 2 | +20% damage to Beasts |
+| 3 | Regenerate 2% HP per turn |
+| 4 | Summons a wolf companion in combat |
+
+**Pieces:** Nature Bow, Warden Leather, Antlered Helm, Ring of Nature
+
+### Necrolord's Vestments (Legendary)
+
+| Pieces | Bonus |
+|--------|-------|
+| 2 | +25% Dark Damage |
+| 3 | Killed enemies have a 20% chance to rise as your minions |
+| 4 | Death Pact: sacrifice a minion to heal 50% HP |
+
+**Pieces:** Staff of Death, Necrolord Robe, Skull Helm, Soul Amulet
+
+### Phoenix Rebirth (Legendary)
+
+| Pieces | Bonus |
+|--------|-------|
+| 2 | +30% Fire Damage |
+| 3 | +50% Fire Resistance |
+| 4 | Resurrect at full HP on death, once per fight — see [Phylactery Elixir](#phylactery-elixir) |
+
+**Pieces:** Phoenix Sword, Phoenix Plate, Phoenix Crest, Phoenix Amulet
+
+### The sets this guide does not list
+
+Two further families exist and are documented where they are earned rather than here:
+
+- **Ascendancy sets** — one Mythic four-piece set per ascendancy path, fourteen in all, built around that path's identity. The Deadeye's and the Raider's four-piece bonuses are where the Spectral Wolf comes from
+- **Raid tier-sets** — four Ancestral five-piece sets with bonuses at 2, 4 and 5 pieces. See [World Boss Raids](raids.md)
+
 ---
 
 ## Item Quality

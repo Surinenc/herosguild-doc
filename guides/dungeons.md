@@ -142,10 +142,11 @@ You watch the dungeon crawl in real-time (one per night). It's like being there,
 
 **Benefits:** The advantages of watching things go wrong in real time rather than reading about it afterwards:
 - +25% XP bonus
-- +20% loot quality
 - +20 to injury rolls (safer)
-- Can order retreat to save heroes — the option that no unsupervised preset provides
+- +10 to death saves — see [Death Saves](heroes.md#death-save-modifiers)
+- Can order retreat to save heroes — the option an unsupervised run does not have
 - Use Command Points for interventions when the heroes' own judgment proves insufficient
+- **You set the tactical preset, and can change it mid-fight**
 
 **Command Points:**
 
@@ -161,19 +162,25 @@ You watch the dungeon crawl in real-time (one per night). It's like being there,
 
 Start with 3 CP per floor. Maximum 3 CP.
 
-### Unsupervised Expeditions
-
-Auto-resolved based on party strength and tactical preset. You send them in, go to bed, and hope for the best — which is, frankly, how most guild management works.
-
 **Tactical Presets:**
 
-| Preset | Risk | Reward | Behavior |
-|--------|------|--------|----------|
-| Reckless | Very High | Very High | Never retreat |
-| Aggressive | High | High | Minimal caution |
-| Balanced | Medium | Medium | Standard |
-| Cautious | Low | Low | Avoid fights |
-| Survival | Very Low | Very Low | Abort at danger |
+The preset is the standing instruction your heroes fight by. It decides two things: how they weigh damage against healing and defence when choosing a skill, and which enemy they go after. It is a dropdown on the run screen, so you can change your mind in the middle of a fight — and doing so is often the right call.
+
+| Preset | Skill priority | Focuses |
+|--------|----------------|---------|
+| Reckless | Damage above all; healing and defence come last | The weakest foe |
+| Aggressive | Leans toward damage | The weakest foe |
+| Balanced | Damage, healing and defence weighed evenly | The foe with the most HP |
+| Cautious | Leans toward healing and defence | The foe with the most HP |
+| Survival | Healing and defence above all; damage comes last | The foe with the most HP |
+
+Finishing the weakest enemy first removes an attacker from the board soonest; going after the fullest one is the slower, safer shape of a fight you expect to survive by attrition. Neither is correct in general, which is why the dropdown exists.
+
+### Unsupervised Expeditions
+
+Auto-resolved on the strength of the party and nothing else. You send them in, go to bed, and hope for the best — which is, frankly, how most guild management works.
+
+Worth knowing before you rely on it: an unsupervised party **always fights as Balanced**. The preset is a supervised-run control and is not offered for missions, so a roster you have carefully tuned for an aggressive push will quietly fight an even-handed fight while you sleep. Combined with the lost XP, injury and death-save bonuses above, the absent night is more expensive than it looks.
 
 ---
 

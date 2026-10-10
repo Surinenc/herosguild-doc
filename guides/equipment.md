@@ -188,20 +188,22 @@ Items heroes use mid-combat when the situation has become urgent — which, in t
 
 ### Health Potions
 
-| Name | Rarity | Healing | Stack |
-|------|--------|---------|-------|
-| Minor Health Potion | Common | 50 HP | 10 |
-| Health Potion | Uncommon | 150 HP | 10 |
-| Greater Health Potion | Rare | 400 HP | 5 |
+| Name | Rarity | Healing | Min Level | Stack |
+|------|--------|---------|-----------|-------|
+| Minor Health Potion | Common | 25% of max HP | 1 | 10 |
+| Health Potion | Uncommon | 40% of max HP | 10 | 10 |
+| Greater Health Potion | Rare | 55% of max HP | 25 | 5 |
+| Superior Health Potion | Epic | 75% of max HP | 60 | 5 |
+| Full Restoration Potion | Legendary | 100% of max HP | 80 | 1 |
 
 **Auto-Use:** Heroes automatically drink health potions when below the configured HP threshold (default **50%**, adjustable in Settings → Combat).
 
 ### Mana Potions
 
-| Name | Rarity | Mana | Stack |
-|------|--------|------|-------|
-| Minor Mana Potion | Common | 30 | 10 |
-| Mana Potion | Uncommon | 80 | 10 |
+| Name | Rarity | Mana | Min Level | Stack |
+|------|--------|------|-----------|-------|
+| Minor Mana Potion | Common | 25% of max mana | 1 | 10 |
+| Mana Potion | Uncommon | 40% of max mana | 10 | 10 |
 
 (The Rare and Epic mana consumables are **Mana Flask** (Rare, 250 mana) and **Greater Mana Flask** (Epic, 500 mana) — see **Mana Flasks** below. There is no Greater or Superior *Potion* at those tiers, whatever the alchemist may imply when stock is low.)
 
@@ -211,9 +213,9 @@ A higher-tier line of mana consumables for heroes who've gone past the "occasion
 
 | Name | Rarity | Mana | Min Level | Stack |
 |------|--------|------|-----------|-------|
-| Lesser Mana Flask | Uncommon | 120 | 20 | 5 |
-| Mana Flask | Rare | 250 | 40 | 5 |
-| Greater Mana Flask | Epic | 500 | 60 | 5 |
+| Lesser Mana Flask | Uncommon | 40% of max mana | 20 | 5 |
+| Mana Flask | Rare | 55% of max mana | 40 | 5 |
+| Greater Mana Flask | Epic | 75% of max mana | 60 | 5 |
 
 Craftable at the alchemy bench. The recipes are short. The alchemist's commentary on them, less so.
 

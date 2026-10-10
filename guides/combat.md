@@ -249,7 +249,7 @@ The per-class coefficient is the lever that makes a Mage feel "casty" and a Warr
 In ascending order of how much of a build you need to spend on it:
 
 1. **Equipment affixes** — Mana Regen rolls on accessories only (Accessory 1 and Accessory 2); Mana Cost Reduction rolls on accessories and weapons. Both use continuous scaling and can appear on the same accessory.
-2. **Mana Flasks** — consumables in the two Consumable slots that instantly restore a fixed amount (120 / 250 / 500). See [Equipment](equipment.md#consumables).
+2. **Mana Flasks** — consumables in the two Consumable slots that instantly restore a share of the hero's maximum mana (40% / 55% / 75%), so they keep pace with the hero carrying them. See [Equipment](equipment.md#consumables).
 3. **Passive tree Core Hub** — the inner ring's six even-numbered slots grant alternating Mana Regen / Mana Cost Reduction, each with a stronger outward tail node. See [Passive Tree](passive-tree.md#core-hub-mana-cluster).
 4. **Class coefficient** — the regen formula itself. Not allocatable; the choice of class is the choice of sustain shape.
 5. **Ascendancy** — Occultist branch C grants Mana Regen directly as part of its drain package.

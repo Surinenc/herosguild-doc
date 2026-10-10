@@ -58,8 +58,8 @@ You'll notice by day 20 that some pairs of heroes always volunteer for the same 
 
 ## The four combat modes — know which door you're walking through
 
-- **Missions** — contracts from the Mission Board. Heroes depart at night, combat resolves offscreen. Guild income workhorse.
-- **Dungeons** — real-time interactive expeditions. You control the party as they explore. Slower, more control.
+- **Missions** — contracts from the Mission Board. Heroes depart at night and the fighting resolves offscreen without you; they always fight an even-handed fight, whatever you would have preferred. Guild income workhorse.
+- **Dungeons** — expeditions you watch unfold, floor by floor. The heroes choose their own actions; you steer with a tactical preset and a small budget of command points, and you can pull them out. Slower, and the only mode where you get a say once the fighting starts.
 - **Raids** — 15-hero endgame fights. Once you have 5,000 reputation and a level-50 hero, a world boss may appear; it arrives when it chooses, which is never convenient.
 - **The Abyssal Spire** — endless tower. Unlocks when one hero reaches level 95. A Tower run advances the game day.
 

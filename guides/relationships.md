@@ -624,10 +624,10 @@ Heroes develop emotional bonds with their equipment over time. The longer they w
 
 | Level | Time Required | Rarity Shortcut | Mood on Removal | Mood While Worn |
 |-------|--------------|----------------|----------------|----------------|
-| None | under 9 days | — | 0 | 0 |
-| Comfortable | 9+ days | Rare+ | -5 | 0 |
-| Favorite | 42+ days | Epic+ | -10 | +3 |
-| Prized | 90+ days | Legendary | -20 | +5 |
+| None | under 18 days | — | 0 | 0 |
+| Comfortable | 18+ days | Rare+ | -5 | 0 |
+| Favorite | 84+ days | Epic+ | -10 | +3 |
+| Prized | 180+ days | Legendary | -20 | +5 |
 | Soulbound | Sentimental only | — | *cannot be removed* | +8 |
 
 Attachment builds through two paths: **time equipped** and **item rarity**. A Legendary weapon is instantly Prized; an Epic item starts as a Favorite. The highest of the two paths wins.
@@ -638,9 +638,10 @@ Some items become Soulbound through events rather than time:
 
 - **Gift** — received from a romantic partner or close friend
 - **Memorial** — belonged to a fallen guild member
-- **First Kill** — used to slay a significant boss
 - **Saved Life** — the hero survived a near-death thanks to this item
 - **Family Heirloom** — brought from their background
+
+A **first kill** is the deliberate exception. Every weapon earns one on its first real fight, so counting it as fully sentimental locked the entire armoury within a week of opening the guild — heroes immovably wedded to the starting sword by the simple fact of having hit something with it. A first kill now makes the item **Prized** instead. The hero still minds losing it, still says so, and the mood cost still doubles as it does for any sentimental object; but it can be taken off them, which the Quartermaster considers the most important sentence in this guide.
 
 Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button in place of an Unequip one, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
 
@@ -648,7 +649,7 @@ Prized and Soulbound items are skipped by the auto-equip pass, so a shinier drop
 
 ### Trait Effects
 
-- **Greedy** heroes attach at 2× speed, every day counting double: Comfortable at **5** actual days, Favorite at **21**, Prized at **45**. They are not sentimental, exactly. They simply know what things cost
+- **Greedy** heroes attach at 2× speed, every day counting double: Comfortable at **9** actual days, Favorite at **42**, Prized at **90**. They are not sentimental, exactly. They simply know what things cost
 - **Ascetic** heroes never form attachments — swap their gear freely
 
 ### Removal Mood Effects
@@ -663,6 +664,8 @@ Taking an attached item off a hero against their wishes costs mood, and the grie
 | Soulbound | -35 | 35 days |
 
 A **sentimental** item doubles the figure in both columns, the gift from a dead friend being a different sort of object to a well-liked sword. Soulbound items cannot ordinarily be taken at all, so that last row describes a cost the Vault will decline to let you pay.
+
+Dropping a better sword into an occupied slot is the same act, and is now charged as one. Equipping over something a hero is attached to raises the same confirmation, costs the same mood, and is refused outright where the item is Soulbound. It used to perform the swap without comment and leave you to find out from the hero's thoughts a day later, which was tidier for everyone except the hero.
 
 Heroes also complain about equipment they find aesthetically displeasing (-5 mood for as long as they are wearing it), which is a separate and entirely aesthetic objection.
 

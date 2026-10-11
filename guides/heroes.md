@@ -449,6 +449,7 @@ Survival Chance = 50% (base)
 | Modifier | Bonus |
 |----------|-------|
 | Cleric in party | +15% |
+| Veteran rank | +2% to +15% (see [Veteran Status](#veteran-status)) |
 | Supervised mission | +10% |
 | Is a Cleric (Divine Favor) | +10% |
 | Survival gear equipped | +5% (see below) |
@@ -672,14 +673,14 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 
 | Rank | Missions | Morale Bonus | Rep Multiplier | Damage Multiplier | Survival Bonus |
 |------|----------|-------------|----------------|-------------------|----------------|
-| Rookie | 0-9 | +0 | 1.0× | 1.0× | 0% |
-| Seasoned | 10-24 | +5 | 1.05× | 1.0× | +2% |
-| Veteran | 25-49 | +10 | 1.1× | 1.02× | +5% |
-| Elite | 50-99 | +15 | 1.2× | 1.04× | +8% |
-| Champion | 100-199 | +25 | 1.3× | 1.06× | +12% |
-| Legend | 200+ | +40 | 1.5× | 1.08× | +15% |
+| Rookie | 0-19 | +0 | 1.0× | 1.0× | 0% |
+| Seasoned | 20-49 | +2 | 1.05× | 1.0× | +2% |
+| Veteran | 50-99 | +4 | 1.1× | 1.02× | +5% |
+| Elite | 100-199 | +6 | 1.2× | 1.04× | +8% |
+| Champion | 200-399 | +8 | 1.3× | 1.06× | +12% |
+| Legend | 400+ | +10 | 1.5× | 1.08× | +15% |
 
-One caveat on that last column, and the Guild Clerk raises it with some embarrassment: the survival bonus is listed on the hero's sheet but is **not** currently applied to the [death save](#death-save-modifiers) itself. The modifiers that actually reach the roll are the ones in that table. Veteran rank buys morale, reputation and damage today; the death-save line is a promise the dice have not yet been told about.
+The dice have since been told. That last column now reaches the [death save](#death-save-modifiers) itself, so a Legend really is fifteen points harder to kill than a recruit — the Guild Clerk has amended the ledger with the air of someone who would rather the previous arrangement were not brought up again. The morale column lands somewhere more domestic: it is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. It was rescaled downward when it started working, on the reasoning that four hundred missions ought to be worth about as much as a furnished room — rank buys a comfortable bed, not a palace.
 
 ### Chronicle Titles
 

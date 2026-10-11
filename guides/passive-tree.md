@@ -132,7 +132,7 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 | Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
 
-The two keystones at the end of a branch **share a name** but not their effects: a Warrior walking the tank branch meets two nodes both called Tank Mastery, one trading damage for armour and life, the other trading crit for life and flat armour. Read the node, not the label. The table above gives one of each pair.
+Each of the two keystones at the end of a branch now carries **its own name**. The tank branch finishes in either **Tank Mastery** or **Undying Bulwark**, the lich branch in **Lich Mastery** or **Mortality Optional**, the assassin branch in **Assassin Mastery** or **Glass Cannon**. The table above gives the first of each pair; the second is generally the one whose name tells you what it intends to cost you.
 
 Keystone damage is a garnish rather than the meal — single-digit to high-teens percentages on most of them — because the tree's damage all lands in one shared pool (see [Combat](combat.md#hero-damage)), and a keystone that doubled it would make every other node decorative. Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
 

@@ -407,6 +407,10 @@ Potions and food come in **batches**, and the batch size on the recipe is the nu
 | Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Mithril Ingot | Metalsmithing 10 |
 | Enchanted Leg | ⭐⭐⭐⭐ (Enhanced) | 2 Adamantine Ingot, 1 Dragon Bone, 2 Soul Shard, 1 Arcane Dust | Arcana 15 |
 
+**You can also just buy the basic ones.** Roughly **half** of all [Exotic Goods caravans](guild.md#merchant-caravans) turn up carrying **one or two** basic prosthetics — the wooden and glass tier: peg legs, wooden hands and feet, glass eyes, ear horns — at a base price of **5,000 gold**, which the caravan's own markup or discount then moves about. A bought prosthetic goes into exactly the same guild stock a crafted one would, so nothing downstream can tell the difference.
+
+Whether this is a bargain depends entirely on the week you're having. Five thousand gold for a peg leg is an outrageous price for three pieces of hardwood and some leather, and it is a very reasonable price indeed when the hero currently missing the leg is your only Cleric, the caravan leaves in two days, and nobody in the guild has Softcraft 5. Exotic Goods merchants need **2,000 reputation** before they will visit at all, so this is a solution available mainly to guilds successful enough to have already solved it.
+
 ---
 
 ## Item Workshop

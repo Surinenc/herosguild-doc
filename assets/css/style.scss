@@ -1,0 +1,27 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Cayman ships 5rem of padding top and bottom on desktop, which puts 160px of
+// gradient above every page before a single word of content. The Guild Clerk
+// considers this a waste of good vellum.
+@media screen and (min-width: 64em) {
+  .page-header { padding: 1.25rem 6rem; }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .page-header { padding: 1rem 4rem; }
+}
+
+@media screen and (max-width: 42em) {
+  .page-header { padding: 1rem; }
+}
+
+// The tagline is the site-wide description, reprinted verbatim on all twenty
+// guide pages. Once was enough.
+.project-tagline { display: none; }
+
+// The banner heading repeats each page's own first heading immediately above
+// it, so the page announced itself twice and then did it again.
+.project-name { display: none; }

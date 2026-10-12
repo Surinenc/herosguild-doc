@@ -408,12 +408,14 @@ Needs below their critical threshold actively decrease mood.
 
 | | |
 |---|---|
-| Recreation from a day spent on something they enjoy | **+10** |
+| Recreation from a day spent on something they enjoy | **+17** |
 | Recreation from anything they don't enjoy | **0** |
 | Mood from an enjoyed day | +3, lasting a day |
 | Food — the one thing every hero enjoys | +8 recreation |
 | A drink at a feast, for those who enjoy drinking | +7.5 recreation |
 | Deprived: recreation under 30 with no liked pastime for 5 days | -4 mood |
+
+That **+17** is worth reading against the bill. Recreation drains **12** a day on its own and a further **5** on a mission day, so a hero who spends a working day doing something they love comes out exactly level — not rested, but not losing ground either — and a quiet day at home puts them five ahead. Below that line a hero is slowly sliding toward bored however well you treat them, which was the previous arrangement and explains a great deal about the mood of the old roster.
 
 This is why a hero can be sent to the tavern every night and stay miserable. If they don't like drinking, the tavern is a room full of noise they didn't ask for. A Cleric with Faith and Quiet days wants the chapel and an afternoon by a window; a Warrior with Training wants the yard. Missions, training, crafting, quiet days, chapel visits, tavern activities, gatherings and even absences each map to a pastime, and only a match counts. Pastimes are **discovered** in play, not shown up front — the first time one restores a hero it earns a Chronicle line and appears under *Personality* on their Social tab.
 

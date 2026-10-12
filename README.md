@@ -1,5 +1,7 @@
 # Hero's Guild - Player Guide
 
+![A crowded guild tavern at night. At the centre stands an empty chair, a sword propped against its seat and a red cloak draped over its back, beneath a framed portrait of a smiling young hero hung with white flowers. Around it a woman is fitted with a mechanical arm, a man sits with his head in his hand, two heroes embrace by the fire, and a dwarf and an elf wrestle over a coin purse. The table in the foreground is covered with a map, ledgers, scattered gold and a dented helmet.](assets/img/empty-chair.jpg)
+
 Welcome to the official documentation for **Hero's Guild**, a tactical guild management RPG in which you recruit heroes, manage their relationships, conquer dungeons, and pay for all of it. The heroes do the fighting. You do the paperwork. The Guild Clerk would like it known that the paperwork is the harder job.
 
 > **Development disclaimer:** Hero's Guild is in active development. All formulas, numerical values, mechanics, features, and other information in this documentation are subject to change as we balance and refine the game. These details have changed several times during development and may change again. This guide may not always reflect the latest game build; treat it as a work in progress, not a guarantee of final behavior or content.

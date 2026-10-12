@@ -449,7 +449,7 @@ Survival Chance = 50% (base)
 | Modifier | Bonus |
 |----------|-------|
 | Cleric in party | +15% |
-| Veteran rank | +2% to +15% (see [Veteran Status](#veteran-status)) |
+| Veteran rank | +5% to +25% (see [Veteran Status](#veteran-status)) |
 | Supervised mission | +10% |
 | Is a Cleric (Divine Favor) | +10% |
 | Survival gear equipped | +5% (see below) |
@@ -674,13 +674,13 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 | Rank | Missions | Morale Bonus | Rep Multiplier | Damage Multiplier | Survival Bonus |
 |------|----------|-------------|----------------|-------------------|----------------|
 | Rookie | 0-19 | +0 | 1.0× | 1.0× | 0% |
-| Seasoned | 20-49 | +2 | 1.05× | 1.0× | +2% |
-| Veteran | 50-99 | +4 | 1.1× | 1.02× | +5% |
-| Elite | 100-199 | +6 | 1.2× | 1.04× | +8% |
-| Champion | 200-399 | +8 | 1.3× | 1.06× | +12% |
-| Legend | 400+ | +10 | 1.5× | 1.08× | +15% |
+| Seasoned | 20-49 | +2 | 1.05× | 1.0× | +5% |
+| Veteran | 50-99 | +4 | 1.1× | 1.02× | +10% |
+| Elite | 100-199 | +6 | 1.2× | 1.04× | +15% |
+| Champion | 200-399 | +8 | 1.3× | 1.06× | +20% |
+| Legend | 400+ | +10 | 1.5× | 1.08× | +25% |
 
-The dice have since been told. That last column now reaches the [death save](#death-save-modifiers) itself, so a Legend really is fifteen points harder to kill than a recruit — the Guild Clerk has amended the ledger with the air of someone who would rather the previous arrangement were not brought up again. The morale column lands somewhere more domestic: it is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. It was rescaled downward when it started working, on the reasoning that four hundred missions ought to be worth about as much as a furnished room — rank buys a comfortable bed, not a palace.
+The dice have since been told. That last column now reaches the [death save](#death-save-modifiers) itself, so a Legend really is twenty-five points harder to kill than a recruit — the Guild Clerk has amended the ledger with the air of someone who would rather the previous arrangement were not brought up again. The column was also raised the day the monsters were, which is not a coincidence: enemies on missions now hit harder the higher the levels involved, on the reasoning that a party of level-sixty veterans walking unscathed through something billed as lethal was making everybody look bad. Experience buys you more than it used to because it now has more to buy you out of. The morale column lands somewhere more domestic: it is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. It was rescaled downward when it started working, on the reasoning that four hundred missions ought to be worth about as much as a furnished room — rank buys a comfortable bed, not a palace.
 
 ### Chronicle Titles
 

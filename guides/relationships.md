@@ -109,6 +109,40 @@ Friendships compound and so do feuds, which is why a pair left alone tends to en
 
 The same scale governs how much of a tavern night's trouble turns into an actual fight, rising from one in ten while sober to one in two at blackout. There is no version of this in which buying the rounds is purely a kindness.
 
+### Taking Sides
+
+Nothing done to a hero stays between the two of them. When one hero wrongs — or rescues — another, everybody who **cares about the victim** quietly revises their opinion of whoever did it. A guild is not a set of unrelated pairs; it is a room full of people with opinions about each other, and now it behaves like one.
+
+Thirteen things count as a deed worth taking sides over:
+
+| Deed | Weight |
+|---|---|
+| Going berserk on someone | 24 |
+| Cheating on a partner | 22 |
+| Betraying a trust | 16 |
+| Abandoning them on a mission | 14 |
+| **Saving their life** | **14** |
+| A screaming tirade in public | 12 |
+| Cowardice — hiding while they did the fighting | 10 |
+| Spreading rumours | 10 |
+| Theft | 10 |
+| Pocketing their share of the loot | 8 |
+| Insulting them | 8 |
+| Blaming them for something | 6 |
+| **Giving them a gift** | **5** |
+
+Who reacts, and how hard, follows three rules:
+
+- **You have to care.** An onlooker needs an opinion of the victim past **±30** — a friend or a dislike. Everyone neutral carries on with their day.
+- **The reaction scales with how much you care.** The weight above is multiplied by the onlooker's opinion of the victim as a fraction of 100, so a hero who merely likes the victim at +40 docks the offender 40% of the figure, while a devoted friend at +90 docks nearly all of it. Love is the multiplier; this is not a metaphor, it is the formula.
+- **Being there matters.** Heroes who were present react in full. Those who were elsewhere only hear about it if they are the victim's **close friends (+60 or better)**, and then at **half** strength. The victim's *enemies*, if absent, never find out at all, which is the one mercy in the system.
+
+And the victim's enemies, when present, react **the other way at half strength** — warming to whoever hurt someone they dislike, cooling toward whoever saved them. The enemy of your enemy does not become your friend exactly, but they do start nodding at you in the corridor.
+
+The onlooker also picks up a **thought that names what happened and who did it** — *"{actor} stole from my friend {victim}."*, or from the other side of the room, *"{actor} lifted something from {victim}. Can't say I mind."* It carries mood for **four days**, or **seven** for the serious ones — betrayal, cheating, abandonment, berserk and life-saving. Traits apply on top as they always do, so a Forgiving hero lets it go faster and a Psychopath, who does not form opinions about anything, barely registers it at all.
+
+What this changes in practice: a hero who makes one enemy has not made one enemy. They have made one enemy and a quiet adjustment in everybody that enemy was close to, and the ledger of who-dislikes-whom now fills in sideways instead of one careful pair at a time.
+
 ---
 
 ## Combat Bonuses

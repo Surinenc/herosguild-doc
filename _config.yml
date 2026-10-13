@@ -9,6 +9,14 @@ baseurl: /herosguild-doc
 
 theme: jekyll-theme-cayman
 
+# Store link in the page banner (_layouts/default.html). The UTM tag is read
+# back in Steamworks under Marketing & Visibility -> UTM Analytics. Keep the
+# values constant across pages: Steam hides parameter combinations whose
+# visits fall below a minimum threshold, so splitting the tag per guide would
+# scatter a small number of visits into rows that never appear.
+steam_app_id: 4268730
+steam_utm: "utm_source=wiki&utm_medium=referral&utm_campaign=player_guide"
+
 google_site_verification: ARD0dKlvNrJbWupErIcjZHEMV-9IOiJWJBQQNbtTRII
 
 plugins:

@@ -18,10 +18,6 @@
   .page-header { padding: 1rem; }
 }
 
-// The tagline is the site-wide description, reprinted verbatim on all twenty
-// guide pages. Once was enough.
-.project-tagline { display: none; }
-
-// The banner heading repeats each page's own first heading immediately above
-// it, so the page announced itself twice and then did it again.
-.project-name { display: none; }
+// .project-name and .project-tagline used to be hidden here. They are now
+// absent from _layouts/default.html instead, which keeps the duplicate <h1>
+// out of the markup rather than merely out of sight.

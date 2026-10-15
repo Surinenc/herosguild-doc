@@ -39,6 +39,8 @@ A group is the unit you actually pilot during the raid. Each group is assigned a
 
 The realm rotates between three bosses, each with its own pattern of pain. The Guild Clerk has prepared a brief on each, mostly out of self-defence.
 
+The raid board announces them rather more formally than the headings below: **The Skeletal Lich** — *Vexcrael, Hollow of the Ninth Crypt*; **The Ancient Dragon** — *Sovereign of Ashpeaks, Eldest of the Burning*; and **The Void Titan** — *Harbinger of the Sundered Rift*. The Lich answers to either name, titles being cheap in a place with nine crypts.
+
 ### Ancient Dragon
 
 A traditional sort of monster. Front-row pressure, sweeping area attacks, and a passive understanding that any hero who hasn't ducked yet is volunteering.
@@ -72,7 +74,7 @@ The interrupt fight. Damage from the Lich is manageable. Damage from the Lich *a
 
 **Signature mechanics:**
 - **Frost Lance** — single-target slowing strike.
-- **Frost Bolt** (Spread telegraph) — scattered ranged hits.
+- **Frost Bolt** (Spread telegraph) — hits **every living hero** for ice damage, and standing together costs nothing extra. Nobody dodges it; interrupt it or have the heals ready. It then leaves a freezing patch on every zone a hero was standing in, which *is* dodgeable, and should be.
 - **Ice Tomb** (SpotSoak telegraph) — drops a hazard zone; move out.
 - **Frost Volley** — heavy column-pattern damage.
 - **Death Touch** — single-target SpotSoak telegraph. Step out of it and it touches nobody, which is the best possible outcome for anything with that name.
@@ -211,7 +213,7 @@ A few things worth knowing about the cadence:
 - **Turn 0 is setup-only.** Nothing fights, nothing spawns, nothing telegraphs, and nothing ticks — the boss is, for one brief turn, merely looking at you. Use it to position groups before the boss starts swinging.
 - **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
 - **Add waves run on a 3-turn cadence, but the guest list varies by boss.** The Ancient Dragon brings 3 Fire Whelps per wave, the Lich King 2 Skeletons, and the Void Titan 2 Wraiths — each boss, in its own way, believing in family. Boss-scripted waves (e.g. the Lich's add-summon abilities) layer on top of this cadence.
-- **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile.
+- **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile. Every patch runs for **3 turns**, a hero standing in one picks up **a stack per turn**, and each stack ticks **30% of the telegraph's base damage** — so three turns of inattention becomes nine turns of compounding damage, carried out of the patch with you. The Burning badge spent some time advertising 15%, which was half the truth and twice as reassuring.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
 - **Heroes recover between rounds**, as they do anywhere else: mana regenerates, skill cooldowns tick down (gem skills carry their [cooldowns](skills.md#cooldowns) from round to round, a raid being one very long fight), and per-turn HP regeneration — food buffs, Alchemy regen, equipped-item regen, the Champion's own Regeneration node — applies. Sustain you have stacked for the rest of the game does not politely stand down because the enemy is enormous.
 - **Call Retreat** has its own button outside the order budget; pressing it ends the raid immediately, and with slightly more dignity than the alternative.

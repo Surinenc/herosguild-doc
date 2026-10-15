@@ -281,6 +281,7 @@ Central storage for all items — a carefully catalogued system that heroes will
 - **Equip** - Assign to hero (can also be done by dragging, which heroes always manage to do accidentally)
 - **Sell** - Convert to gold (also available as a bulk-mode toggle). If any living hero carries the **Merchant** background, the highest-level of them handles the transaction and their sell-price bonus applies; the preview, the panel and the toast all name whoever is doing the haggling, so you can see the difference a Merchant makes before you agree to it
 - **Salvage** - Get materials (also available as a bulk-mode toggle)
+- **Auto Equip All** - A button at the top of the Heroes panel that runs the per-hero Auto Equip across the whole living roster, working down the list, so each hero chooses from whatever the heroes above them left in the vault. The rules are unchanged: a hero still declines a [boycotted forge](equipment.md#forges--manufacturers) and anything in scandal, and still won't give up a Prized or Soulbound item. One toast reports the totals, including how many heroes found nothing they were willing to wear
 
 Enchanting is not a per-item vault action — it lives in the Workshop (Enchanting Table facility). Open the workshop and bring the item there.
 

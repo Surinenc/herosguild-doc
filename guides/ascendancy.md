@@ -113,6 +113,8 @@ Several nodes hand you power and quietly bill you for it in damage taken. Read t
 
 **Best For:** Alpha strikes, priority target elimination, speed clears
 
+**First-hit bonuses do not stack.** The Ambush branch's +50%, the Assassin set's two-piece +30% and the Raider set's four-piece +50% all compete for the same slot, and the fight takes **the largest of them** rather than the sum. Pairing the Ambush node with the Assassin two-piece therefore buys you nothing whatsoever, which is a poor return on four set pieces. The set texts now say so; they used to promise flat addition, with a confidence the arithmetic never shared.
+
 ---
 
 ### Trickster

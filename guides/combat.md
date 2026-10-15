@@ -307,6 +307,8 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 
 **Pro Tip:** Taunt first, then Shield Wall. The traditional "stand there and get hit" approach, but done professionally.
 
+**Two turns means two rounds.** Taunt, Shield Wall, Rallying Cry and the [emotional states](#emotional-states) below all tick down **once at the top of each round** — not once per enemy swing. They used to do the latter, which meant that against three enemies a two-turn Taunt had quietly expired before the third one got round to being annoyed by it, and the Ranger would be left wondering why the Warrior had gone to all that trouble. Raids keep their own clock, a raid having rather too many enemies to let every one of them wind the thing down.
+
 ---
 
 ## The Intervene Mechanic
@@ -536,6 +538,8 @@ When a boss drops below a phase threshold:
 | AoE | All heroes take significant damage simultaneously. This is the warning. |
 
 **Strategy:** Plan for phase transitions. Save defensive cooldowns for dangerous phases. If the boss starts glowing, that's generally a sign that things are about to become worse.
+
+**The other kind of enrage** is a clock rather than a threshold, and two enemies outside the raid roster carry one: the **Balor** at turn 20 and the **Elder Dragon** at turn 30. When it strikes, the enemy's speed goes up by half, once — and from that turn on it also adds **+10% of its base damage every turn**, additively and without a ceiling. The clock does not care how the fight is going. A long, careful, attritional win against an Elder Dragon is therefore a different proposition from a long, careful, attritional win against anything else, and the difference arrives around turn forty-five.
 
 ---
 

@@ -271,12 +271,14 @@ Costs scale with the total level of heroes present (Σ hero levels). Mood effect
 
 | Activity | Cost | Mood Effect (baseline) | Cooldown |
 |----------|------|------------------------|----------|
-| Buy Rounds | 5g × Σ hero levels | +3 mood | None (blackout risk daily) |
+| Buy Rounds | 5g × Σ hero levels | +2 mood, and only to heroes who enjoy drinking | None (blackout risk daily) |
 | Grand Feast | 50g + 10g × Σ hero levels | +10 mood, **+8 recreation to everyone** | 1 day |
 | Gambling | Bet 50–500g | +5 mood (win or lose) | None |
 | Bard Night | 7.5g × Σ hero levels | +8 mood | 3 days |
 
 The sums add up faster than they look: a feast for thirty-five level-58 heroes comes to a little over 20,000 gold, which is a great deal of gold and also, the Guild Clerk points out, a great many heroes. Morale is worth paying for. It is worth knowing the price first.
+
+**Buy Rounds pays nobody who didn't want a drink.** The mood only lands on heroes who hold Drinking as a pastime, and it lands as **+2 for two days** — rising to **+6** for the Gregarious, falling to **-1** for the Reserved, and to **-3** for an Ascetic, whose principles outrank both. Everybody present gets the five points of drunk regardless, out of politeness, and gains nothing from it but the headache. The activity card used to advertise +3 to all heroes, which was generous of it and entirely untrue.
 
 Each activity also carries a **~15% chance** of pushing a secondary event onto the nightly scouting scene — a bar fight after a rowdy Buy Rounds, a flirtation after a Bard Night, a rumour after Gambling. The Guild Clerk considers this an entirely reasonable rate of consequence per evening spent drinking.
 

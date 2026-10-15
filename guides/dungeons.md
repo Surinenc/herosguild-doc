@@ -45,13 +45,15 @@ Dungeons have two independent difficulty factors, because one axis of danger was
 
 Stars determine dungeon length and structure:
 
-| Stars | Rooms | Floors | Duration | Boss? |
-|-------|-------|--------|----------|-------|
-| ⭐ | 4 | 1 | 1 day | No |
-| ⭐⭐ | 7 | 1 | 2 days | No |
-| ⭐⭐⭐ | 12 | 2 | 3 days | Yes |
-| ⭐⭐⭐⭐ | 16 | 3 | 4 days | Yes |
-| ⭐⭐⭐⭐⭐ | 20 | 4 | 5 days | Yes |
+| Stars | Rooms (at least) | Floors | Duration | Boss? |
+|-------|------------------|--------|----------|-------|
+| ⭐ | 6 | 1 | 1 day | No |
+| ⭐⭐ | 10 | 1 | 2 days | No |
+| ⭐⭐⭐ | 19 | 2 | 3 days | Yes |
+| ⭐⭐⭐⭐ | 27 | 3 | 4 days | Yes |
+| ⭐⭐⭐⭐⭐ | 35 | 4 | 5 days | Yes |
+
+**"At least" is doing real work there.** The figures are the floor, not the plan: they count the entrance, the rest room, the stairs between floors, the exit and the boss, which the internal room budget does not, and they assume the dungeon rolled no shop and no secret room. It usually rolls at least one. The planner on the dungeon menu prints the same figure, and used to print the smaller one, which made every dungeon a pleasant surprise in exactly the wrong direction.
 
 ### Monster Level (Power)
 

@@ -95,6 +95,8 @@ Each class has three branches, offering distinct playstyles. You won't have the 
 | Prophet | Divine channeller | Mana regen, maximum mana |
 | Inquisitor | Righteous fury | Spell damage, critical strikes |
 
+**Cleric Synergy.** Every point of magical damage percentage a Cleric picks up — holy, spell or magic, from the tree or from anywhere else — also raises the output of **Heal** and **Prayer of Healing**, at **half rate**: +40% damage buys +20% healing. The tree's info panel spells this out when a Cleric is selected, and spent some months claiming it was 1:1, which flattered everybody involved.
+
 **Necromancer** — Three professional arrangements with death, ranked by how personally the hero gets involved.
 | Branch | Theme | Focus |
 |--------|-------|-------|

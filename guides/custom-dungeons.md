@@ -132,6 +132,8 @@ Each class brings a session-scoped raid ability with limited charges. Charges re
 
 Hazards that none of your classes can handle become problems you walk through and pay the toll on. Build parties accordingly.
 
+**An attempt is not a result.** Dispel and Purify are *rolled*, not guaranteed — the chance rises with the acting hero's luck and mood and with every living Ranger in the party — and the charge is spent either way. On a failure the hazard **fires on the party**, damage and [run-trauma](#run-trauma--hazards-carry-across-rooms) included, and does not get its permanent cutoff, so it will be waiting the next time somebody walks in. The same is true of a failed Disable or Clear, and of **Push Through**, which is the button for deciding to take a hazard on the chin with a perfectly good Rogue standing right there. None of the three counts toward the *survived-a-hazard* achievement, the realm declining to award credit for a toll voluntarily paid.
+
 #### Run-Trauma — Hazards Carry Across Rooms
 
 Custom Dungeon raids keep a **trauma** ledger: every point of HP damage a hero takes from a hazard accumulates as a permanent debuff that **reduces that hero's effective max HP for the rest of the run.** A Cleric's heal cannot lift a hero above their trauma-reduced max — the heal clamps to whatever cap the trauma has left them.

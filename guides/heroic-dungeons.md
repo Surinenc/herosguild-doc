@@ -23,7 +23,7 @@ The straightforward approach to making things harder: make them bigger and angri
 
 Kill them once, kill them again. The Guild Clerk considers this modifier personally offensive.
 
-- Enemies respawn once at 50% HP when killed — **including the last one**, which used to slip the net because victory was declared before the corpse had finished getting up
+- Enemies respawn once at 50% HP when killed, the last one included
 - Reward: +2 guaranteed item drops
 - Visual: Dark mist particles
 

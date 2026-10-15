@@ -307,7 +307,7 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 
 **Pro Tip:** Taunt first, then Shield Wall. The traditional "stand there and get hit" approach, but done professionally.
 
-**Two turns means two rounds.** Taunt, Shield Wall, Rallying Cry and the [emotional states](#emotional-states) below all tick down **once at the top of each round** — not once per enemy swing. They used to do the latter, which meant that against three enemies a two-turn Taunt had quietly expired before the third one got round to being annoyed by it, and the Ranger would be left wondering why the Warrior had gone to all that trouble. Raids keep their own clock, a raid having rather too many enemies to let every one of them wind the thing down.
+**Two turns means two rounds.** Taunt, Shield Wall, Rallying Cry and the [emotional states](#emotional-states) below all tick down **once at the top of each round** — not once per enemy swing. Raids keep their own clock, a raid having rather too many enemies to let every one of them wind the thing down.
 
 ---
 

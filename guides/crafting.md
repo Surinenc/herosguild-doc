@@ -42,7 +42,7 @@ Each crafting station has its own level, which reduces crafting time by 10% per 
 | 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
 | 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-This applies uniformly to every station, and it **stops at level 5** — 0.6× is the floor, and nothing takes a craft below it. The distinction matters because the Tannery and the Loom take their level from the Workshop, which climbs to 10: left unchecked they went down to 0.1×, turning a seven-day Legendary into an afternoon. The Guild Clerk, who had been quietly enjoying this, has been overruled.
+This applies uniformly to every station, and it **stops at level 5** — 0.6× is the floor, and nothing takes a craft below it. That holds even for the Tannery and the Loom, which take their level from the Workshop and can therefore sit at 10 while still crafting at 0.6× — a station can be better appointed than it is quick.
 
 ### Facility Upgrades (Stacking Bonuses)
 

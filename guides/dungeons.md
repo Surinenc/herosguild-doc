@@ -53,7 +53,7 @@ Stars determine dungeon length and structure:
 | ⭐⭐⭐⭐ | 27 | 3 | 4 days | Yes |
 | ⭐⭐⭐⭐⭐ | 35 | 4 | 5 days | Yes |
 
-**"At least" is doing real work there.** The figures are the floor, not the plan: they count the entrance, the rest room, the stairs between floors, the exit and the boss, which the internal room budget does not, and they assume the dungeon rolled no shop and no secret room. It usually rolls at least one. The planner on the dungeon menu prints the same figure, and used to print the smaller one, which made every dungeon a pleasant surprise in exactly the wrong direction.
+**"At least" is doing real work there.** The figures are the floor, not the plan: they count the entrance, the rest room, the stairs between floors, the exit and the boss, which the internal room budget does not, and they assume the dungeon rolled no shop and no secret room. It usually rolls at least one. The planner on the dungeon menu prints the same figure.
 
 ### Monster Level (Power)
 

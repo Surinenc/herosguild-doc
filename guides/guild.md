@@ -278,7 +278,7 @@ Costs scale with the total level of heroes present (Σ hero levels). Mood effect
 
 The sums add up faster than they look: a feast for thirty-five level-58 heroes comes to a little over 20,000 gold, which is a great deal of gold and also, the Guild Clerk points out, a great many heroes. Morale is worth paying for. It is worth knowing the price first.
 
-**Buy Rounds pays nobody who didn't want a drink.** The mood only lands on heroes who hold Drinking as a pastime, and it lands as **+2 for two days** — rising to **+6** for the Gregarious, falling to **-1** for the Reserved, and to **-3** for an Ascetic, whose principles outrank both. Everybody present gets the five points of drunk regardless, out of politeness, and gains nothing from it but the headache. The activity card used to advertise +3 to all heroes, which was generous of it and entirely untrue.
+**Buy Rounds pays nobody who didn't want a drink.** The mood only lands on heroes who hold Drinking as a pastime, and it lands as **+2 for two days** — rising to **+6** for the Gregarious, falling to **-1** for the Reserved, and to **-3** for an Ascetic, whose principles outrank both. Everybody present gets the five points of drunk regardless, out of politeness, and gains nothing from it but the headache.
 
 Each activity also carries a **~15% chance** of pushing a secondary event onto the nightly scouting scene — a bar fight after a rowdy Buy Rounds, a flirtation after a Bard Night, a rumour after Gambling. The Guild Clerk considers this an entirely reasonable rate of consequence per evening spent drinking.
 

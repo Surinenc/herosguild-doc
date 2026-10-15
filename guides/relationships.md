@@ -449,7 +449,7 @@ Needs below their critical threshold actively decrease mood.
 | A drink at a feast, for those who enjoy drinking | +7.5 recreation |
 | Deprived: recreation under 30 with no liked pastime for 5 days | -4 mood |
 
-That **+17** is worth reading against the bill. Recreation drains **12** a day on its own and a further **5** on a mission day, so a hero who spends a working day doing something they love comes out exactly level — not rested, but not losing ground either — and a quiet day at home puts them five ahead. Below that line a hero is slowly sliding toward bored however well you treat them, which was the previous arrangement and explains a great deal about the mood of the old roster.
+That **+17** is worth reading against the bill. Recreation drains **12** a day on its own and a further **5** on a mission day, so a hero who spends a working day doing something they love comes out exactly level — not rested, but not losing ground either — and a quiet day at home puts them five ahead. Anything that restores less than the drain leaves a hero sliding slowly toward bored however well you treat them, which is why the match matters more than the effort.
 
 This is why a hero can be sent to the tavern every night and stay miserable. If they don't like drinking, the tavern is a room full of noise they didn't ask for. A Cleric with Faith and Quiet days wants the chapel and an afternoon by a window; a Warrior with Training wants the yard. Missions, training, crafting, quiet days, chapel visits, tavern activities, gatherings and even absences each map to a pastime, and only a match counts. Pastimes are **discovered** in play, not shown up front — the first time one restores a hero it earns a Chronicle line and appears under *Personality* on their Social tab.
 
@@ -701,7 +701,7 @@ Taking an attached item off a hero against their wishes costs mood, and the grie
 
 A **sentimental** item doubles the figure in both columns, the gift from a dead friend being a different sort of object to a well-liked sword. Soulbound items cannot ordinarily be taken at all, so that last row describes a cost the Vault will decline to let you pay.
 
-Dropping a better sword into an occupied slot is the same act, and is now charged as one. Equipping over something a hero is attached to raises the same confirmation, costs the same mood, and is refused outright where the item is Soulbound. It used to perform the swap without comment and leave you to find out from the hero's thoughts a day later, which was tidier for everyone except the hero.
+Dropping a better sword into an occupied slot is the same act, and is charged as one. Equipping over something a hero is attached to raises the same confirmation, costs the same mood, and is refused outright where the item is Soulbound. The hero finds out when it happens, not from their own thoughts a day later, which is tidier for everyone except the person doing the swapping.
 
 Heroes also complain about equipment they find aesthetically displeasing (-5 mood for as long as they are wearing it), which is a separate and entirely aesthetic objection.
 

@@ -684,7 +684,9 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 | Champion | 200-399 | +8 | 1.3× | 1.06× | +20% |
 | Legend | 400+ | +10 | 1.5× | 1.08× | +25% |
 
-The dice have since been told. That last column now reaches the [death save](#death-save-modifiers) itself, so a Legend really is twenty-five points harder to kill than a recruit — the Guild Clerk has amended the ledger with the air of someone who would rather the previous arrangement were not brought up again. The column was also raised the day the monsters were, which is not a coincidence: enemies on missions now hit harder the higher the levels involved, on the reasoning that a party of level-sixty veterans walking unscathed through something billed as lethal was making everybody look bad. Experience buys you more than it used to because it now has more to buy you out of. The morale column lands somewhere more domestic: it is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. It was rescaled downward when it started working, on the reasoning that four hundred missions ought to be worth about as much as a furnished room — rank buys a comfortable bed, not a palace.
+**The Survival Bonus column reaches the [death save](#death-save-modifiers) itself**, so a Legend really is twenty-five points harder to kill than a recruit. It needs to be. Enemies on missions hit harder the higher the levels involved, which means a party of level-sixty veterans is walking into something proportionally nastier than any recruit has ever seen: experience buys you more because it has more to buy you out of.
+
+**The Morale Bonus column lands somewhere more domestic.** It is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. Four hundred missions are worth roughly as much as a furnished room — rank buys a comfortable bed, not a palace.
 
 ### Chronicle Titles
 

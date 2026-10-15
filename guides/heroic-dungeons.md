@@ -45,7 +45,7 @@ A clock that punishes dawdling. The Guild Clerk has strong feelings about heroes
 - Reward: +40% gold
 - Visual: Red screen tint, timer UI
 
-> **Currently out of rotation** — and for a more interesting reason than the others. The clock is real; it simply never strikes. Heroic fights are over, one way or another, long before turn 15, so the modifier was promising a threat no party ever stayed long enough to meet. The realm has stopped offering it.
+> **Currently out of rotation** — and for a more interesting reason than the others. The clock is real; it simply never strikes. Heroic fights are over, one way or another, long before turn 15, so the modifier promises a threat no party stays long enough to meet. The realm declines to offer it.
 
 ### Elite Swarm 👑
 **Difficulty:** 2/3

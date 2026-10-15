@@ -23,7 +23,7 @@ The straightforward approach to making things harder: make them bigger and angri
 
 Kill them once, kill them again. The Guild Clerk considers this modifier personally offensive.
 
-- Enemies respawn once at 50% HP when killed
+- Enemies respawn once at 50% HP when killed — **including the last one**, which used to slip the net because victory was declared before the corpse had finished getting up
 - Reward: +2 guaranteed item drops
 - Visual: Dark mist particles
 
@@ -52,7 +52,7 @@ A clock that punishes dawdling. The Guild Clerk has strong feelings about heroes
 
 Every enemy gets a promotion. Nobody asked for this.
 
-- All normal enemies upgraded to elite tier
+- All normal enemies upgraded to elite tier — **normal** being the operative word: bosses are exempt, and so is anything that turned up as an elite or a champion already, there being no promotion left to give it
 - Reward: +1 material tier, +40% gold
 - Visual: Gold enemy glow
 

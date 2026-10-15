@@ -42,7 +42,7 @@ Each crafting station has its own level, which reduces crafting time by 10% per 
 | 4 | 0.7× (-30%) | ⭐⭐⭐⭐ Epic | - |
 | 5 | 0.6× (-40%) | ⭐⭐⭐⭐⭐ Legendary | +5 to quality roll |
 
-This applies uniformly to every station.
+This applies uniformly to every station, and it **stops at level 5** — 0.6× is the floor, and nothing takes a craft below it. The distinction matters because the Tannery and the Loom take their level from the Workshop, which climbs to 10: left unchecked they went down to 0.1×, turning a seven-day Legendary into an afternoon. The Guild Clerk, who had been quietly enjoying this, has been overruled.
 
 ### Facility Upgrades (Stacking Bonuses)
 
@@ -192,7 +192,7 @@ Crafting follows seven steps in sequence. Missing any of them produces results r
 | ⭐⭐⭐⭐⭐ | 7 days (10,080 min) |
 
 **Time Modifiers:** Everything that can be done to reduce that 7-day Legendary wait:
-- Station level: -10% per level above 1 (see Station Levels table)
+- Station level: -10% per level above 1, to a maximum of -40% at level 5 (see Station Levels table)
 - Crafter skill: -1% per 5 skill levels (skill level / 500); a level 100 crafter saves 20% before anything else
 - Assistant: -20%; a second hero making themselves useful
 

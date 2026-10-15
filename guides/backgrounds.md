@@ -72,7 +72,7 @@ Some events leave the hero with a **body flaw**: a damaged or destroyed body par
 
 A flaw applies once per slot, even if multiple events touch the same body part. The second narrative paragraph still shows up in the CV; the body simply declines to be ruined twice in the same place, which is the polite version of the heroes' own habit of editing the worse details out of their second telling. Minor flaws land as **Damaged**; severe ones land as **Destroyed**, which is the realm's tactful term for *gone*.
 
-Lifecycle flaws compose cleanly with the [Prosthetic system](crafting.md#prosthetics): fitting a prosthetic at the Infirmary lifts body-part efficiency back up, with the higher tiers covering more of the gap. The accompanying stat penalty from the event itself, however, is permanent. The body part can be mended. The wider story it came from is part of who the hero is now, and no amount of mithril and gears will undo it.
+Lifecycle flaws compose cleanly with the [Prosthetic system](crafting.md#prosthetics): fitting a prosthetic at the Infirmary lifts body-part efficiency back up, with the higher tiers covering more of the gap. The accompanying stat penalty from the event itself, however, is permanent. The body part can be mended. The wider story it came from is part of who the hero is now, and no amount of moonsilver and gears will undo it.
 
 ---
 

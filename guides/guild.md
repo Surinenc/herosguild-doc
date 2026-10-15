@@ -900,7 +900,7 @@ Legendary materials cannot be bought or sold. Monster parts (dragon scales, bone
 
 **Crafting Currencies:** The market also stocks three [crafting currencies](crafting.md#crafting-currencies) at fixed prices — Powder of First Enchantment (500g), Powder of Erasure (500g), and Salt of Renewal (5,000g), restocked daily. Currency prices are exempt from the player multiplier and market events; the market considers them a public service rather than a commodity.
 
-**Player Multiplier:** Starts at 1.0×. Each unit bought adds +0.05, each unit sold subtracts -0.05. Clamped between 0.5× and 10.0×. Buying 10 Mithril Ore in one go pushes its multiplier to 1.50× — and drops the price of cheaper metals in the same category by -0.01 per unit. The market rewards diversified shopping.
+**Player Multiplier:** Starts at 1.0×. Each unit bought adds +0.05, each unit sold subtracts -0.05. Clamped between 0.5× and 10.0×. Buying 10 Moonsilver Ore in one go pushes its multiplier to 1.50× — and drops the price of cheaper metals in the same category by -0.01 per unit. The market rewards diversified shopping.
 
 **Prices heal overnight.** Every restock pulls each material's multiplier **10% of the way back toward 1.0**, and snaps it to exactly 1.0 once it is within 0.005 — so a market you hammered today is a little more reasonable tomorrow and back to normal inside a few quiet weeks. Nothing you do to a price is permanent, in either direction, which is a mercy if you have just dumped four hundred iron ingots and an irritation if you were hoping to keep a bargain.
 
@@ -933,7 +933,7 @@ The market has a 5% daily chance of generating a random event (up to 3 concurren
 | Dragon Attacks Tanneries | Leather | +75% | 5 days |
 | Drought | Herbs | +40% | 7 days |
 | War Declared | Metal + Leather | +40% | 10 days |
-| Royal Commission | Gold & Mithril only | +100% | 5 days |
+| Royal Commission | Gold & Moonsilver only | +100% | 5 days |
 
 **Price Drops** — when supply floods in:
 
@@ -946,7 +946,7 @@ The market has a 5% daily chance of generating a random event (up to 3 concurren
 | Silk Road Opens | Cloth | -35% | 8 days |
 | Alchemy Breakthrough | Herbs + Essence | -25% | 8 days |
 
-Event modifiers stack on top of the player multiplier and are not clamped — a Royal Commission on already-expensive Mithril can push prices well past 10×. The Guild Clerk recommends stockpiling before wars and selling during surpluses. This is the sort of advice that sounds obvious and is consistently ignored.
+Event modifiers stack on top of the player multiplier and are not clamped — a Royal Commission on already-expensive Moonsilver can push prices well past 10×. The Guild Clerk recommends stockpiling before wars and selling during surpluses. This is the sort of advice that sounds obvious and is consistently ignored.
 
 ---
 

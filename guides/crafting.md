@@ -330,7 +330,7 @@ Despite the name, the Library has nothing to do with research — research slots
 - Source: ⭐⭐+ dungeons
 
 **Tier 3 - Rare (⭐⭐⭐)**
-- Ironwood, Mithril Ore, Dragonhide, Mooncloth
+- Ironwood, Moonsilver Ore, Dragonhide, Mooncloth
 - Source: ⭐⭐⭐+ dungeons, Level 30+
 
 **Tier 4 - Epic (⭐⭐⭐⭐)**
@@ -376,7 +376,7 @@ Those input counts are not typos. Every processing recipe is priced so that what
 |--------|------|-----------|-----------|
 | Iron Sword | ⭐ | 3 Iron Ingot, 1 Wood | 1 |
 | Steel Sword | ⭐⭐ | 4 Steel Ingot, 2 Hardwood | 25 |
-| Mithril Blade | ⭐⭐⭐ | 5 Mithril Ingot, 2 Ironwood | 50 |
+| Moonsilver Blade | ⭐⭐⭐ | 5 Moonsilver Ingot, 2 Ironwood | 50 |
 | Adamantine Edge | ⭐⭐⭐⭐ | 4 Adamantine Ingot, 2 Dragon Fang | 75 |
 | Dragonslayer Axe | ⭐⭐⭐⭐⭐ | 3 Dragonscale, 2 Adamantine Ingot, 1 Dragon Heart | 100 |
 
@@ -386,7 +386,7 @@ Those input counts are not typos. Every processing recipe is priced so that what
 |--------|------|-----------|-----------|
 | Iron Plate | ⭐ | 5 Iron Ingot | 1 |
 | Steel Plate | ⭐⭐ | 6 Steel Ingot, 3 Leather | 25 |
-| Mithril Mail | ⭐⭐⭐ | 5 Mithril Ingot, 3 Quality Leather | 50 |
+| Moonsilver Mail | ⭐⭐⭐ | 5 Moonsilver Ingot, 3 Quality Leather | 50 |
 | Dragonplate | ⭐⭐⭐⭐ | 4 Adamantine Ingot, 4 Dragonscale | 75 |
 
 ### Potions
@@ -404,7 +404,7 @@ Potions and food come in **batches**, and the batch size on the recipe is the nu
 | Recipe | Tier | Materials | Skill Req |
 |--------|------|-----------|-----------|
 | Peg Leg | ⭐⭐ (Basic) | 3 Hardwood, 2 Leather, 1 Iron Ingot | Softcraft 5 |
-| Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Mithril Ingot | Metalsmithing 10 |
+| Prosthetic Leg | ⭐⭐⭐ (Standard) | 5 Steel Ingot, 2 Hardened Leather, 1 Moonsilver Ingot | Metalsmithing 10 |
 | Enchanted Leg | ⭐⭐⭐⭐ (Enhanced) | 2 Adamantine Ingot, 1 Dragon Bone, 2 Soul Shard, 1 Arcane Dust | Arcana 15 |
 
 **You can also just buy the basic ones.** Roughly **half** of all [Exotic Goods caravans](guild.md#merchant-caravans) turn up carrying **one or two** basic prosthetics — the wooden and glass tier: peg legs, wooden hands and feet, glass eyes, ear horns — at a base price of **5,000 gold**, which the caravan's own markup or discount then moves about. A bought prosthetic goes into exactly the same guild stock a crafted one would, so nothing downstream can tell the difference.

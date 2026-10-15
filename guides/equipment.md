@@ -92,7 +92,7 @@ Every weapon reduces to five numbers. Heroes who understand these numbers do bet
 **Swords (Warrior/Rogue):**
 - Iron Sword (Common): 8-12 damage
 - Steel Sword (Uncommon): 14-20 damage, +2% crit
-- Mithril Blade (Rare): 25-35 damage, +8% crit, +10 STR
+- Moonsilver Blade (Rare): 25-35 damage, +8% crit, +10 STR
 - Dragonslayer (Epic): 40-55 damage (the +20% vs Dragons comes from the Dragonslayer 2-piece **set bonus**, not the weapon itself)
 - Worldsplitter (Legendary): 70-95 damage, +15% crit, +50% crit damage (it cleaves nothing on its own, whatever the bards say; for that, link a Melee Splash gem)
 

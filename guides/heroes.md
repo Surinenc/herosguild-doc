@@ -376,20 +376,20 @@ Illnesses come in several broad flavours, each with its own risk profile and its
 | Mundane / Ambient | Low-lethality, common | The Sniffles, The Grippe, Wet Boots Fever, Slap-Belly, Rat-Cough |
 | Urban / Guttergate-adjacent | Air-quality respiratory | Chimney Ash Lung |
 | Occupational / Class-linked | Fire **only** on the matching class | Warrior's Elbow, Mage's Fugue, Whisper Throat (Cleric), Necromancer's Shadow Cough, Ranger's Sun-Fever |
-| Magical residue | Tower & high-magic zones | Ambient Aetheric Rash, Thaumic Flu, The Glimmers, Backfire Fever |
+| Magical residue | Tower & high-magic zones | Ambient Aetheric Rash, The Spell-Grippe, The Glimmers, Backfire Fever |
 | Beast / creature-linked | Injury-seeded from beast wounds | Werewolf Fever, Vampire Anaemia |
 | Metaphysical | Slow, mood-crushing, non-lethal | The Sighs, The Doldrums, The Small Hours |
 
 Left entirely alone, the world is not especially virulent: a hero sitting at the guild with no environmental or crisis multipliers working on them has roughly a **4.5% chance per day** of picking something up — about one new complaint every three weeks. That figure is the compound of a very small per-strain roll across every illness that can seed itself, which is why the multipliers below matter so much more than the baseline does.
 
-Where a hero contracts an illness depends heavily on **environment** — Swamps push respiratory fevers (Marsh Sweats ×4), Crypts stir The Long Cough and Necromancer's Shadow Cough, Ruins amplify The Small Hours, Towers grow the magical bestiary — and on **age**. Age-linked illnesses (Grippe, Marsh Sweats, Long Cough, River Sickness, Rat-Cough, Watchman's Foot, Chimney Ash Lung) compound at roughly **×1.3 / ×1.8 / ×2.5** for heroes past **40 / 55 / 70**. Crises pile on further multipliers where the pairing makes sense: **The Blood Moon** triples Werewolf Fever, **The Syzygy** triples Thaumic Flu, **The Cult of the Unseen** doubles The Small Hours and The Sighs, **The Great Famine** doubles The Doldrums.
+Where a hero contracts an illness depends heavily on **environment** — Swamps push respiratory fevers (Marsh Sweats ×4), Crypts stir The Long Cough and Necromancer's Shadow Cough, Ruins amplify The Small Hours, Towers grow the magical bestiary — and on **age**. Age-linked illnesses (Grippe, Marsh Sweats, Long Cough, River Sickness, Rat-Cough, Watchman's Foot, Chimney Ash Lung) compound at roughly **×1.3 / ×1.8 / ×2.5** for heroes past **40 / 55 / 70**. Crises pile on further multipliers where the pairing makes sense: **The Blood Moon** triples Werewolf Fever, **The Syzygy** triples The Spell-Grippe, **The Cult of the Unseen** doubles The Small Hours and The Sighs, **The Great Famine** doubles The Doldrums.
 
 Class also matters. Warriors are more prone to Wound Rot; Necromancers court The Long Cough and The Grey Weep; Rangers shrug off Marsh Sweats and Wet Boots Fever thanks to herbal knowledge and, apparently, waterproof boots. The occupational category is stricter than a nudge — those illnesses **only** fire on the matching class in the first place.
 
 A few specimens worth naming individually, because you will meet them and remember them:
 
 - **The Glimmers** — the eyes, having seen the eighth colour, decline to stop. Mechanically, +8% INT and −10% DEX, so a mage who catches it becomes briefly cleverer at the cost of walking into furniture. The only illness in the catalog with a *positive* stat mod, and the only one anybody has ever been vaguely pleased to develop.
-- **Thaumic Flu** — magical inflammation. Every day, deterministic ±8% swings on STR / DEX / INT, seeded per hero per day, so you can't plan around it and it isn't the same swing tomorrow. The Syzygy triples the odds of catching it in the first place.
+- **The Spell-Grippe** — magical inflammation. Every day, deterministic ±8% swings on STR / DEX / INT, seeded per hero per day, so you can't plan around it and it isn't the same swing tomorrow. The Syzygy triples the odds of catching it in the first place.
 - **The Sighs** — pure existential malaise. No stat penalty, no death, just a −12 mood tick that goes on for as long as it goes on. Cult Uprisings double it, which nobody finds coincidental.
 - **The Watchman's Foot** — flat-foot ache from too many years walking a beat. Non-contagious, non-lethal, mostly a −5% DEX with an age curve. Rangers get a pass; Warriors, per medical record, get a limp.
 - **Backfire Fever** — Mage-only. A spell went wrong; the mage is now the spell. Lethal if untreated, chronic-recovery leaves **Wandering Mind**, and The Syzygy doubles the odds.

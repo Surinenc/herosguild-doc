@@ -104,7 +104,7 @@ Each card shows the dungeon's name, the architect's name (or "Anonymous"), the e
 
 ### Picking a Party
 
-A raid opens with a party picker. The only eligibility rule is that the hero is **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
+A raid opens with a party picker. The hero must be **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day — and must not be held by one of the four standing excuses the guild recognises everywhere: a **mental break**, a **stay in the ward** under Until Cured, a **detox**, or an **absence** such as a personal day or a hangover. The mission board, the dungeon menu, the Spire and this picker all ask those same four questions, so a hero you cannot send on a contract is a hero you cannot send down somebody else's stairs either. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
 
 ### The Run
 

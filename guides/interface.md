@@ -315,7 +315,7 @@ At any crafting station:
 
 ## Keyboard Shortcuts
 
-The interface is mouse-first, and the keyboard is mostly decorative. **Escape** does not close whatever happens to be open; it dismisses the smaller dialogs — confirmations, the save/load window, the Quarters pickers and their relatives — cancels a group rename in raid setup, and dismisses the credits reel. **Any key at all** skips the intro video, which is the one place the game is entirely relaxed about what you press. Settings, Achievements, and Beta Chat must be closed with their close buttons, like doors in a well-run building.
+The interface is mouse-first, and the keyboard is mostly decorative. **Escape** does not close whatever happens to be open; it dismisses the smaller dialogs — confirmations, the save/load window, the Quarters pickers and their relatives — cancels a group rename in raid setup, and dismisses the credits reel. On the guild ledger itself, where there is nothing smaller to dismiss, **Escape** does the opposite and *opens* Settings — the same door the ⚙ button uses. It defers to whatever is already on screen: a pop-up or a tip keeps the key for itself, a text field keeps it while you are typing, and holding the key down achieves nothing. **Any key at all** skips the intro video, which is the one place the game is entirely relaxed about what you press. Settings, Achievements, and Beta Chat must be closed with their close buttons, like doors in a well-run building.
 
 The **Custom Dungeon editor** is the exception, being a place where people do actual work: **Escape** steps back out of whatever you were doing (patrol placement first, then the active tool, then the selection), and **Delete** or **Backspace** removes the selected room or corridor without asking whether you're sure. Architects learn to be sure.
 
@@ -356,7 +356,7 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 ### Leaving
 
-Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. The two confirmations do not offer the same choices. Returning to the main menu lets you **Save and return** or **Return without saving**, the second leaving the last autosave precisely as it was — which is what you want when you loaded an old save purely to look at it. Quitting offers only **Save and quit**, on the reasoning that someone closing the game for the night rarely means to throw the evening away. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
 
 ### Credits
 

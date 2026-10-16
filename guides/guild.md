@@ -265,7 +265,7 @@ The number column is the **quality range** of the recruits on offer, not how man
 
 **Tavern Activities:**
 
-**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for a mission at all: the Board shows them unavailable and refuses the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
+**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for any party at all: the mission board, the dungeon menu, the raid picker and the Spire alike show them unavailable and refuse the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
 
 Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
 
@@ -385,6 +385,8 @@ Where heroes train and spar. The sounds of practice combat are indistinguishable
 | 5 | 2.0x | Master training |
 
 **Basic Training** pays **2% of the XP still owed to the hero's next level each day, with a floor of 100** — so it keeps pace as a hero climbs, instead of becoming a rounding error somewhere around level 40. **Sparring** pays a flat **75 XP a day** to both partners plus a point of relationship, which makes it the social option rather than the fast one. The programme descriptions in the yard say exactly this, which is more honesty than most noticeboards manage.
+
+**The ward outranks the yard.** A hero flagged Until Cured and occupying a bed appears in the Training Yard badged *In the ward*: the screen will not start them, and will not offer them to anyone else as a sparring partner. One already mid-programme is stopped the following morning, before the day's training is paid out, and their sparring partner is stopped alongside them — a partner left swinging at nothing is not, strictly speaking, sparring. The guild log records the reason. They earn nothing that day, and you start them again when they are well.
 
 ### Infirmary
 

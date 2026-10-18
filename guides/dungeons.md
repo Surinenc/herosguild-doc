@@ -166,17 +166,17 @@ Start with 3 CP per floor. Maximum 3 CP.
 
 **Tactical Presets:**
 
-The preset is the standing instruction your heroes fight by. It decides two things: how they weigh damage against healing and defence when choosing a skill, and which enemy they go after. It is a dropdown on the run screen, so you can change your mind in the middle of a fight — and doing so is often the right call.
+The preset is the standing instruction your heroes fight by. It decides how they weigh damage against healing and defence when choosing a skill. It is a dropdown on the run screen, so you can change your mind in the middle of a fight — and doing so is often the right call.
 
 | Preset | Skill priority | Focuses |
 |--------|----------------|---------|
-| Reckless | Damage above all; healing and defence come last | The weakest foe |
-| Aggressive | Leans toward damage | The weakest foe |
-| Balanced | Damage, healing and defence weighed evenly | The foe with the most HP |
-| Cautious | Leans toward healing and defence | The foe with the most HP |
-| Survival | Healing and defence above all; damage comes last | The foe with the most HP |
+| Reckless | Damage above all; healing and defence come last | Whatever it can finish |
+| Aggressive | Leans toward damage | Whatever it can finish |
+| Balanced | Damage, healing and defence weighed evenly | Whatever it can finish |
+| Cautious | Leans toward healing and defence | Whatever it can finish |
+| Survival | Healing and defence above all; damage comes last | Whatever it can finish |
 
-Finishing the weakest enemy first removes an attacker from the board soonest; going after the fullest one is the slower, safer shape of a fight you expect to survive by attrition. Neither is correct in general, which is why the dropdown exists.
+The last column is the same five times, and that is not a misprint. Whatever the preset, a hero's blow goes to an enemy it can kill — the healthiest of those, so a big hit isn't squandered on a sliver — and when nothing is near enough to dying, to whoever needs the fewest blows. Armour, magic resistance and the creature's own resistances all go into that count, so the Fire Elemental that halves every spell is left standing a while longer while the Mage deals with something a spell actually hurts. The preset decides what your heroes reach for; arithmetic decides who gets it.
 
 ### Unsupervised Expeditions
 

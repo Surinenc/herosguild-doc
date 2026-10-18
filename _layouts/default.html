@@ -23,9 +23,14 @@
         - dropped <h2 class="project-tagline"> — it reprinted the site-wide
           description on all twenty guide pages
         - added the Steam link below
+        - added a link back to the index, in the banner and the footer, on
+          every page under /guides/ (the index itself would link to itself)
       Everything else is the theme's, untouched.
     {% endcomment %}
     <header class="page-header" role="banner">
+      {% if page.url contains '/guides/' %}
+        <a href="{{ '/' | relative_url }}" class="btn">&larr; All Guides</a>
+      {% endif %}
       {% if site.steam_app_id %}
         <a href="https://store.steampowered.com/app/{{ site.steam_app_id }}?{{ site.steam_utm }}" class="btn" target="_blank" rel="noopener">Wishlist on Steam</a>
       {% endif %}
@@ -42,6 +47,9 @@
       {{ content }}
 
       <footer class="site-footer">
+        {% if page.url contains '/guides/' %}
+          <span class="site-footer-owner"><a href="{{ '/' | relative_url }}">&larr; All Guides</a></span>
+        {% endif %}
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}

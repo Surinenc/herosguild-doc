@@ -226,6 +226,8 @@ Heroes can fully respec their passive tree at any time. A full respec deallocate
 
 **Partial respec** is also available — you can deallocate individual nodes one level at a time, provided removing the node doesn't break your tree's connectivity. The tree enforces that all allocated nodes must remain connected to the starting node through other allocated nodes. No orphaned branches allowed.
 
+Unpicking the nodes that were holding up a hero's maximum HP does not leave them at some alarming percentage of it: current HP keeps its share of whatever the new maximum turns out to be, downwards as cheerfully as up — see [Hero Stats](heroes.md#derived-stats).
+
 ---
 
 ## Pathing Rules

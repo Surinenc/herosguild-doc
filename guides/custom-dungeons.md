@@ -6,6 +6,16 @@ This guide covers the two halves of the system: designing and publishing dungeon
 
 ---
 
+## Contents
+
+- [Where to Find It](#where-to-find-it)
+- [The Two Loops](#the-two-loops)
+- [The Author Loop](#the-author-loop)
+- [The Raid Loop](#the-raid-loop)
+- [Scoring & Seasons](#scoring--seasons)
+- [Architect Rewards](#architect-rewards)
+- [Related Guides](#related-guides)
+
 ## Where to Find It
 
 The **Custom Dungeons** button sits at the far right of the bottom navigation, last in a row that runs Tavern, Missions, Dungeon, Craft, Training, Shop, Vault, Facilities, Workshop. It carries a beta badge, which is the interface's way of clearing its throat. Pressing it opens the Custom Dungeons hall, a building with more doors than it strictly needs, each leading to a different thing you might want to do.

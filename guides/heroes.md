@@ -2,6 +2,22 @@
 
 Heroes are the core of your guild — a collection of unique individuals with their own stats, skills, traits, and opinions about absolutely everything. Managing them is rather like herding cats, if the cats could wield swords and occasionally set things on fire.
 
+## Contents
+
+- [The Six Classes](#the-six-classes)
+- [Hero Stats](#hero-stats)
+- [Hero Quality](#hero-quality)
+- [Hero States](#hero-states)
+- [Body & Injury System](#body--injury-system)
+- [Illness & Chronic Traits](#illness--chronic-traits)
+- [Death Saves](#death-saves)
+- [What a Hero Believes](#what-a-hero-believes)
+- [Purse & Ambition](#purse--ambition)
+- [Memorial and Departed](#memorial-and-departed)
+- [Leveling & Progression](#leveling--progression)
+- [Tips for Building Your Roster](#tips-for-building-your-roster)
+- [Related Guides](#related-guides)
+
 ## The Six Classes
 
 Hero's Guild features six distinct hero classes, each with unique roles and varying degrees of self-preservation instinct.

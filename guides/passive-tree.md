@@ -6,6 +6,20 @@ Each hero begins at their class starting node and works outward, spending one pa
 
 ---
 
+## Contents
+
+- [Node Types](#node-types)
+- [Passive Points](#passive-points)
+- [Class Regions](#class-regions)
+- [Keystone Nodes](#keystone-nodes)
+- [Travel Nodes & Stat Choices](#travel-nodes--stat-choices)
+- [Cross-Class Bridges](#cross-class-bridges)
+- [Core Hub Mana Cluster](#core-hub-mana-cluster)
+- [Stat Modifier Stacking](#stat-modifier-stacking)
+- [Respec](#respec)
+- [Pathing Rules](#pathing-rules)
+- [Strategy Tips](#strategy-tips)
+
 ## Node Types
 
 The tree contains five types of nodes, listed here in ascending order of how excited you should be to find one:

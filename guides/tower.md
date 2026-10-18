@@ -4,6 +4,18 @@ The Abyssal Spire is an endless dungeon challenge with scaling enemies — a tow
 
 ---
 
+## Contents
+
+- [Unlocking the Spire](#unlocking-the-spire)
+- [Floor Types](#floor-types)
+- [Enemy Scaling](#enemy-scaling)
+- [Environments](#environments)
+- [Shop Items](#shop-items)
+- [Tower Set Items](#tower-set-items)
+- [Currency Drops](#currency-drops)
+- [Score Calculation](#score-calculation)
+- [Related Guides](#related-guides)
+
 ## Unlocking the Spire
 
 **Requirements:**

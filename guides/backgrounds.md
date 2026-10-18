@@ -10,6 +10,15 @@ This guide covers the **Background tag** (the broad-strokes "what they did befor
 
 ---
 
+## Contents
+
+- [The Backgrounds](#the-backgrounds)
+- [The Lifecycle: Four Stages, One CV](#the-lifecycle-four-stages-one-cv)
+- [Mechanical Effects](#mechanical-effects)
+- [Where Backgrounds Show Up](#where-backgrounds-show-up)
+- [Tips](#tips)
+- [Related Guides](#related-guides)
+
 ## The Backgrounds
 
 Every recruit carries one background tag, assigned at generation alongside their class and quality. It is independent of both — a Noble Mage and a Noble Warrior share an axis the Cultist Cleric does not, which is why the Cultist Cleric does not get invited to either of their dinner parties. The backgrounds are:

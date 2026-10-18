@@ -2,6 +2,27 @@
 
 Dungeons are where your heroes prove their worth — or, more frequently, where they discover the precise limits of their worth. This guide covers expedition types, dungeon environments, and how to improve the odds of everyone coming home.
 
+## Contents
+
+- [Mission Board](#mission-board)
+- [Difficulty System](#difficulty-system)
+- [Dungeon Environments](#dungeon-environments)
+- [Expedition Types](#expedition-types)
+- [Party Formation](#party-formation)
+- [Room Types](#room-types)
+- [Traps](#traps)
+- [Environmental Hazards](#environmental-hazards)
+- [In-Dungeon Moral Events](#in-dungeon-moral-events)
+- [Loot System](#loot-system)
+- [Death and Injury](#death-and-injury)
+- [Mission Results](#mission-results)
+- [Parallel Expeditions](#parallel-expeditions)
+- [Prestige Missions](#prestige-missions)
+- [World Boss Raids](#world-boss-raids)
+- [Weekly Heroic Rotation](#weekly-heroic-rotation)
+- [Tips for Success](#tips-for-success)
+- [Related Guides](#related-guides)
+
 ## Mission Board
 
 The Mission Board refreshes daily with available contracts. Access it from the Guild Screen. Think of it as a job board, except every job involves mortal peril.

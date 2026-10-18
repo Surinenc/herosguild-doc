@@ -2,6 +2,24 @@
 
 Hero's Guild features a turn-based combat system of considerable depth, involving threat management, emotional outbursts, and the sort of dynamic social interactions that make you wonder why you sent these people into a dungeon together in the first place.
 
+## Contents
+
+- [Turn Structure](#turn-structure)
+- [Damage Calculation](#damage-calculation)
+- [Mana Economy](#mana-economy)
+- [Threat System](#threat-system)
+- [Warrior Skills: Taunt & Shield Wall](#warrior-skills-taunt--shield-wall)
+- [The Intervene Mechanic](#the-intervene-mechanic)
+- [Emotional States](#emotional-states)
+- [Skills and Abilities](#skills-and-abilities)
+- [Monster Knowledge](#monster-knowledge)
+- [Status Effects](#status-effects)
+- [Boss Fights](#boss-fights)
+- [Combat Tips](#combat-tips)
+- [Ambush Mechanic](#ambush-mechanic)
+- [Combat Results](#combat-results)
+- [Related Guides](#related-guides)
+
 ## Turn Structure
 
 ### Initiative

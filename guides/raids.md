@@ -6,6 +6,20 @@ This guide covers how raids are unlocked, how they are fought, and what they pay
 
 ---
 
+## Contents
+
+- [Unlocking a Raid](#unlocking-a-raid)
+- [What a Raid Looks Like](#what-a-raid-looks-like)
+- [The Three Bosses](#the-three-bosses)
+- [Groups and the Board](#groups-and-the-board)
+- [Orders and the Five-Budget](#orders-and-the-five-budget)
+- [The Turn Loop](#the-turn-loop)
+- [Outcomes](#outcomes)
+- [The Raid Token Vendor](#the-raid-token-vendor)
+- [The Raid Interface](#the-raid-interface)
+- [Raid Leaderboard](#raid-leaderboard)
+- [Related Guides](#related-guides)
+
 ## Unlocking a Raid
 
 Raids do not appear on demand. The realm spawns them on its own schedule, and the Guild Clerk has stopped explaining this to people who ask whether it can be hurried up.

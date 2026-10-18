@@ -4,6 +4,18 @@ Hero's Guild runs on decisions. Not the kind that live on a menu and wait patien
 
 ---
 
+## Contents
+
+- [Tavern Nightly Events](#tavern-nightly-events)
+- [Tavern Background Events](#tavern-background-events)
+- [Guild Moral Events](#guild-moral-events)
+- [Context-Aware Guild Events](#context-aware-guild-events)
+- [Hero Social Events](#hero-social-events)
+- [In-Dungeon Moral Events](#in-dungeon-moral-events)
+- [What Hazards Are Not](#what-hazards-are-not)
+- [How the Systems Connect](#how-the-systems-connect)
+- [Related Guides](#related-guides)
+
 ## Tavern Nightly Events
 
 Every night, the **Tonight** tab in the Tavern presents **up to 8** situations requiring the guild master's attention — fewer on a quiet night, when the roster simply hasn't generated much to argue about. Heroes are in conflict. Someone needs encouragement. Gossip is spreading. A romance is either starting or ending, depending on how you handle the next few minutes.

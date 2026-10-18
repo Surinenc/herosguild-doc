@@ -2,6 +2,26 @@
 
 Heroes form bonds with each other over time, because apparently you can't put people through repeated near-death experiences without them developing opinions about each other. Strong relationships improve combat performance, while rivalries can cause the sort of problems that no amount of Tavern activities will fix.
 
+## Contents
+
+- [Relationship Levels](#relationship-levels)
+- [Building Relationships](#building-relationships)
+- [Combat Bonuses](#combat-bonuses)
+- [Special Bonds](#special-bonds)
+- [Story Arcs](#story-arcs)
+- [The Intervene Mechanic](#the-intervene-mechanic)
+- [Emotional Reactions in Combat](#emotional-reactions-in-combat)
+- [Mood System](#mood-system)
+- [Mental Breaks](#mental-breaks)
+- [Social Traits](#social-traits)
+- [Equipment Attachment](#equipment-attachment)
+- [Alcohol & Addiction](#alcohol--addiction)
+- [Unavailability & Refusal](#unavailability--refusal)
+- [Hero Social Events](#hero-social-events)
+- [Keepsakes](#keepsakes)
+- [Managing Relationships](#managing-relationships)
+- [Related Guides](#related-guides)
+
 ## Relationship Levels
 
 | Level | Trust | Description |

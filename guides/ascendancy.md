@@ -2,6 +2,18 @@
 
 Ascendancies are powerful sub-class specializations that dramatically change how your heroes play — and, in the case of the Berserker, how long they play. Each class has access to 2-3 unique ascendancy paths, offering distinct playstyles and strategic options.
 
+## Contents
+
+- [Unlocking Ascendancies](#unlocking-ascendancies)
+- [Warrior Ascendancies](#warrior-ascendancies)
+- [Rogue Ascendancies](#rogue-ascendancies)
+- [Ranger Ascendancies](#ranger-ascendancies)
+- [Mage Ascendancies](#mage-ascendancies)
+- [Cleric Ascendancies](#cleric-ascendancies)
+- [Necromancer Ascendancies](#necromancer-ascendancies)
+- [Choosing Your Ascendancy](#choosing-your-ascendancy)
+- [Related Guides](#related-guides)
+
 ## Unlocking Ascendancies
 
 Heroes unlock their ascendancy through Ascendancy Trials — solo tower challenges that serve as the game's way of asking "are you sure about this specialization?"

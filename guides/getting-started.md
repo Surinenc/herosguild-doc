@@ -2,6 +2,16 @@
 
 Welcome to Hero's Guild. You've inherited a building, a modest pile of gold, and the vague expectation that you'll fill it with adventurers and somehow make a profit. This guide is short on purpose — it covers the strategic layer. The game itself will walk you through the individual screens as you open them; **Quillsworth's in-game tutorial** will explain each screen the first time you visit. What you're reading here is the pattern you can't learn from a single screen.
 
+## Contents
+
+- [The mental model](#the-mental-model)
+- [The three resources](#the-three-resources)
+- [The three (and a half) rules that will save your guild](#the-three-and-a-half-rules-that-will-save-your-guild)
+- [The four combat modes — know which door you're walking through](#the-four-combat-modes--know-which-door-youre-walking-through)
+- [Common early mistakes](#common-early-mistakes)
+- [Systems you'll meet in your first few hours](#systems-youll-meet-in-your-first-few-hours)
+- [Next steps](#next-steps)
+
 ## The mental model
 
 You are not a hero. You are the Guild Master — the person who signs contracts, pays wages, and writes the funeral invoices. The heroes fight; your job is administrative. This is a management sim wrapped in fantasy trappings.

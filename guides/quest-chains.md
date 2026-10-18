@@ -6,6 +6,17 @@ A chain is not a single mission. It is a campaign made of missions. You do not a
 
 ---
 
+## Contents
+
+- [The Three Categories](#the-three-categories)
+- [How Chains Work on the Mission Board](#how-chains-work-on-the-mission-board)
+- [The Quest Log](#the-quest-log)
+- [Rewards, By Category](#rewards-by-category)
+- [Special Hero Rewards & Barracks Overflow](#special-hero-rewards--barracks-overflow)
+- [Unlock Timing, At a Glance](#unlock-timing-at-a-glance)
+- [Tips](#tips)
+- [Related Guides](#related-guides)
+
 ## The Three Categories
 
 There are three kinds of chain. They unlock differently, they pay differently, and only one of them has a deadline, which is the one that will catch you out.

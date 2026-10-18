@@ -2,6 +2,22 @@
 
 Create powerful equipment, potions, and consumables for your heroes — assuming you can spare a hero from dungeon duty long enough to actually craft something. Crafting is a core progression system that lets you gear up without relying on the generous loot drops of monsters (who are, it must be said, not known for their generosity).
 
+## Contents
+
+- [Core Concepts](#core-concepts)
+- [Crafting Stations](#crafting-stations)
+- [Hero Crafting Skills](#hero-crafting-skills)
+- [The Crafting Process](#the-crafting-process)
+- [Quality System](#quality-system)
+- [Recipes](#recipes)
+- [Materials](#materials)
+- [Example Recipes](#example-recipes)
+- [Item Workshop](#item-workshop)
+- [Crafting Currencies](#crafting-currencies)
+- [Tips for Efficient Crafting](#tips-for-efficient-crafting)
+- [Crafting Station Recommendations](#crafting-station-recommendations)
+- [Related Guides](#related-guides)
+
 ## Core Concepts
 
 - **Heroes Craft** - Your heroes do the crafting, not NPCs. Yes, the same heroes who think "charge the dragon" is a valid strategy.

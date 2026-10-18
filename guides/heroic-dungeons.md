@@ -4,6 +4,15 @@ Heroic Dungeons feature special modifiers that add challenge and reward scaling 
 
 ---
 
+## Contents
+
+- [The Heroic Modifiers](#the-heroic-modifiers)
+- [Difficulty Distribution](#difficulty-distribution)
+- [Reward Multiplier](#reward-multiplier)
+- [Weekly Rotation](#weekly-rotation)
+- [Recipe Drops](#recipe-drops)
+- [Related Guides](#related-guides)
+
 ## The Heroic Modifiers
 
 Each heroic dungeon has one modifier that changes gameplay. Think of them as the dungeon's way of saying "you thought this would be straightforward?"

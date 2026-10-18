@@ -6,6 +6,19 @@ This guide covers when crises happen, how they progress, what each one does to t
 
 ---
 
+## Contents
+
+- [When Crises Happen](#when-crises-happen)
+- [How a Crisis Progresses](#how-a-crisis-progresses)
+- [The Crises](#the-crises)
+- [Crisis Chains](#crisis-chains)
+- [Permadeath Moral Events](#permadeath-moral-events)
+- [Building Damage](#building-damage)
+- [Combat During a Crisis](#combat-during-a-crisis)
+- [Milestones](#milestones)
+- [Where You See It](#where-you-see-it)
+- [Related Guides](#related-guides)
+
 ## When Crises Happen
 
 Crises are gated, the realm having concluded that a guild drowned in its first fortnight provides no entertainment for anybody. It therefore respects:

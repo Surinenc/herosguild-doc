@@ -2,6 +2,17 @@
 
 Hero's Guild uses a Path of Exile-inspired skill gem system, because apparently just "knowing how to fight" wasn't complicated enough. Skills are gems that you socket into equipment, and linking gems together creates powerful combinations — or, if done poorly, expensive disappointments.
 
+## Contents
+
+- [Core Concepts](#core-concepts)
+- [Socket System](#socket-system)
+- [Gem Progression](#gem-progression)
+- [Active Gems](#active-gems)
+- [Support Gems](#support-gems)
+- [Building Skill Setups](#building-skill-setups)
+- [Gem Sources](#gem-sources)
+- [Related Guides](#related-guides)
+
 ## Core Concepts
 
 ### Skill Gems

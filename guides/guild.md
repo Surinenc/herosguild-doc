@@ -2,6 +2,28 @@
 
 Your guild is your home base — a collection of buildings, debts, and strong opinions held by people who hit things for a living. Manage facilities, finances, reputation, and your roster of heroes to build something that future historians will either celebrate or use as a cautionary tale.
 
+## Contents
+
+- [Guild Facilities](#guild-facilities)
+- [Facility Upgrades Take Time](#facility-upgrades-take-time)
+- [Facility Details](#facility-details)
+- [Guild Identity & Moral Events](#guild-identity--moral-events)
+- [Context-Aware Guild Events](#context-aware-guild-events)
+- [Guild Reputation](#guild-reputation)
+- [Guild Finances](#guild-finances)
+- [Hero Management](#hero-management)
+- [Hero Relationships](#hero-relationships)
+- [Guild Shop](#guild-shop)
+- [Materials Market](#materials-market)
+- [Item Workshop](#item-workshop)
+- [Merchant Caravans](#merchant-caravans)
+- [Rival Guilds](#rival-guilds)
+- [Guild Chronicle](#guild-chronicle)
+- [Daily Operations](#daily-operations)
+- [Upgrade Priority](#upgrade-priority)
+- [Tips for Guild Masters](#tips-for-guild-masters)
+- [Related Guides](#related-guides)
+
 ## Guild Facilities
 
 Facilities to build and upgrade:

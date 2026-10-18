@@ -2,6 +2,22 @@
 
 A quick guide to the Hero's Guild user interface and controls. Everything you need to know about where things are and what they do — which, in a game with this many menus, is no small undertaking.
 
+## Contents
+
+- [Main Menu](#main-menu)
+- [Guild Screen](#guild-screen)
+- [Mission Board](#mission-board)
+- [Quest Log](#quest-log)
+- [Hero Details](#hero-details)
+- [Combat Screen](#combat-screen)
+- [Dungeon Exploration](#dungeon-exploration)
+- [Inventory Management](#inventory-management)
+- [Crafting Interface](#crafting-interface)
+- [Keyboard Shortcuts](#keyboard-shortcuts)
+- [Quick Tips](#quick-tips)
+- [Settings](#settings)
+- [Related Guides](#related-guides)
+
 ## Main Menu
 
 From the main menu you can:

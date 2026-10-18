@@ -2,6 +2,22 @@
 
 Proper equipment is crucial for hero survival, in the same way that oxygen is crucial for breathing — technically optional, but the alternatives are universally fatal. This guide covers weapons, armor, accessories, and the gem socket system.
 
+## Contents
+
+- [Equipment Slots](#equipment-slots)
+- [Item Rarity](#item-rarity)
+- [Weapons](#weapons)
+- [Armor](#armor)
+- [Accessories](#accessories)
+- [Consumables](#consumables)
+- [Gem Sockets](#gem-sockets)
+- [Equipment Sets](#equipment-sets)
+- [Item Quality](#item-quality)
+- [Enchanting](#enchanting)
+- [Forges & Manufacturers](#forges--manufacturers)
+- [Managing Equipment](#managing-equipment)
+- [Related Guides](#related-guides)
+
 ## Equipment Slots
 
 Each hero has 10 equipment slots:

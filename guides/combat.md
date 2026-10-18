@@ -37,7 +37,7 @@ Not you, and this is the single most important thing to understand about combat 
 
 Heroes pick their own actions, every turn, from everything you have given them — their gems, their skills, their cooldowns, their opinion of the person bleeding next to them. You do not select a target or spend a cooldown. What you control is the two things that shape every one of those decisions:
 
-- **The tactical preset** — Reckless, Aggressive, Balanced, Cautious or Survival. It sets how heroes weigh damage against healing and defence, and which enemy they go for: the aggressive end focuses the weakest foe, the cautious end the one with the most HP. You can change it mid-fight, and changing it mid-fight is frequently the correct move.
+- **The tactical preset** — Reckless, Aggressive, Balanced, Cautious or Survival. It sets how heroes weigh damage against healing and defence. It does not choose the target: every preset aims by the same rule, and the rule is to kill something. A blow that can finish an enemy goes to the healthiest enemy it can finish — there is no sense spending a Backstab on a sliver — and when nothing is close enough to dying, it goes to whoever needs the fewest blows, counting armour, magic resistance and whatever the creature happens to resist or be weak to. Ties go to whoever takes the most. The exception is a hero whose feelings have taken over the decision — see [emotional states](#emotional-states). You can change the preset mid-fight, and changing it mid-fight is frequently the correct move.
 - **Command points** — a small budget per floor, spent on party-wide interventions (Battle Cry, Shield Wall, Quick Heal, and the rest).
 
 Both live on the run screen while the fight is happening; see [Dungeons](dungeons.md#expedition-types) for what each one does.
@@ -125,6 +125,8 @@ The exact list is broader than this; the principle is that monsters tend to be w
 One entry in that table comes with a footnote: the **Fire Whelp** is raid furniture. It exists to be spawned three at a time by the Ancient Dragon and is tuned for exactly that job — base damage 100, which is twelve and a half times a Goblin — and it is raid-only, so it never turns up in a random mission, dungeon or Tower roll. It reaches the field only when something asks for it by name, which in practice means a raid boss. The Guild Clerk is firm on this point, having once seen the alternative.
 
 Heroes can see an enemy's weaknesses (and resistances) once they've reached **Studied** monster knowledge for that creature — **20 kills** (the first tier, Known, is reached at 5 kills and grants a small damage bonus but no resistance display). Until Studied, you're guessing, which is part of the early-game character.
+
+The heroes themselves are under no such handicap. When a hero picks a skill, each damage skill's weight is multiplied by what the target does to that element — **halved** by a resistance, **half again as much** against a weakness — so a Mage facing something that shrugs off fire reaches for Frost Nova unprompted, while you are still working through the kill count that would have told you why. Armour and magic resistance stay out of that comparison: they are counted when a hero chooses *who* to hit, not *what* to hit them with.
 
 ### Armor and Damage Reduction
 
@@ -307,6 +309,8 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 
 **Pro Tip:** Taunt first, then Shield Wall. The traditional "stand there and get hit" approach, but done professionally.
 
+**One Taunt at a time.** Taunt points *every* enemy at the taunter, so a second Warrior bellowing over the first would only take the enemies off them — and the first tank's two rounds of professional suffering would be spent on nothing. A tank therefore leaves Taunt alone while an ally's Taunt still holds a living enemy, reaches for Shield Wall, Power Attack, Cleave or Strike instead, and taunts when the ally's wears off or the ally goes down. Two Warriors take turns rather than talking over each other. Raids keep their own arrangement, a raid having rather more enemies than one voice can hold.
+
 **Two turns means two rounds.** Taunt, Shield Wall, Rallying Cry and the [emotional states](#emotional-states) below all tick down **once at the top of each round** — not once per enemy swing. Raids keep their own clock, a raid having rather too many enemies to let every one of them wind the thing down.
 
 ---
@@ -427,6 +431,8 @@ Every hero starts with a set of class skills before any gem customization. These
 - Curse of Weakness - 60% AoE, 80% chance to weaken for 3 turns, 3-turn cooldown
 
 **Note:** Berserker and Gladiator ascendancies lose Taunt and Shield Wall, keeping only Strike, Power Attack, and Cleave. Paladin ascendancy replaces Heal and Prayer of Healing with Divine Strike (120% damage) and Consecrate.
+
+**What a cooldown number means.** A skill with a cooldown of N sits out the next N rounds and comes round again on the one after — a 2-turn cooldown is every third turn, a 3-turn cooldown every fourth, and Prayer of Healing's 4 is every fifth. Class skills and [gem skills](skills.md#cooldowns) are counted by the same rule. Proficiency's cooldown reduction and the Archmage's Regalia −20% apply to that number and are **rounded to the nearest round**, never below 1: full proficiency on a 2-turn skill leaves it at 2, and only the robes on top of that bring the wait down to every other turn. In between, a hero falls back on the basic attack, which has no cooldown at all — which is why Strike, Smite, Stab, Arrow Shot, Staff Strike and Dark Touch appear in the log far more often than their damage numbers suggest they ought to.
 
 ### Skill Gems
 
@@ -549,7 +555,7 @@ When a boss drops below a phase threshold:
 
 1. **Bring a Warrior** - Threat is the whole of your targeting policy, and a Warrior is the only hero who generates it on purpose: 50 starting threat against everyone else's 10, half again as much from every hit, and a Taunt that buries the number entirely. You cannot tell the enemy who to hit. You can make the answer obvious.
 2. **Protect Your Healer** - Dead clerics mean dead parties. This is not a suggestion. Since you cannot pull the enemy off them by hand, it is bought at party-selection time or not at all.
-3. **Match the Preset to the Fight** - Survival and Cautious push heroes toward healing and defence; Aggressive and Reckless push them at the weakest enemy in the room. The dropdown is live, so a fight going badly is a fight you can still change your mind about.
+3. **Match the Preset to the Fight** - Survival and Cautious push heroes toward healing and defence; Aggressive and Reckless push them at whatever is in front of them. What the preset will not do is pick the target — that rule is the same at every setting (see [Who Decides](#who-decides)). The dropdown is live, so a fight going badly is a fight you can still change your mind about.
 4. **Keep a Command Point Back** - Spending the floor's whole budget on the first encounter is a decision you meet again on the way out.
 5. **Train the Skills They Actually Use** - Proficiency caps at hero level ÷ 5, and heroes cast what they have, not what you would have chosen. Thirty per cent more damage on a skill a hero reaches for every fight beats a clever gem they ignore.
 

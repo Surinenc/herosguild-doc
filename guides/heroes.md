@@ -213,6 +213,8 @@ These are calculated from primary stats, because apparently nothing in this guil
 
 The sheet and the fight do **the same sums**, so the crit gloves, set bonuses, passive nodes and gem crit that the Hero Details screen totals up are the same ones the dice are handed. What the display cabinet promises, the battlefield delivers — an arrangement the Guild Clerk considers unremarkable and several armourers consider a triumph.
 
+**Current HP keeps its share.** When the maximum moves — because you spent a passive point, an ascendancy node or a paragon point, or because somebody has been handed a better breastplate — current HP moves with it and the percentage stays exactly where it was. A new hire at full HP who spends the points they arrived with is still at full HP, rather than at a fraction of a much larger number and one bad corridor from the infirmary; a hero at half is still at half. It works downwards too, so a respec that shrinks the maximum cannot quietly strand anyone at an alarming fraction of it, and swapping the same ring on and off ten times is consequently not a healing technique, which has disappointed a number of guild masters. A hero already at 0 stays at 0, there being no share of anything left to keep. Buffs, illnesses, chronic traits and titles move the maximum without moving current HP; a level-up is more generous than any of them and hands over the whole of its increase.
+
 ---
 
 ## Hero Quality

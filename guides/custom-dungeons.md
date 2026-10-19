@@ -132,17 +132,17 @@ Each class brings a session-scoped raid ability with limited charges. Charges re
 
 | Class | Ability | Charges | Effect |
 |-------|---------|---------|--------|
-| Mage | **Dispel** | 2 | Permanently disables a **magical hazard** in the current room (e.g. Magic Seal, Icy Flooded Passage). No HP or mood cost |
-| Cleric | **Purify** | 2 | Permanently disables a **cursed hazard** (e.g. Toxic Gas Cloud, Cursed Altar) |
-| Rogue | **Disable** | 3 | The general-purpose hazard removal — applies to any hazard the Rogue can solve. **+1 charge per living Ranger in the party** |
-| Necromancer | **Clear** | 2 | Temporarily clears every hazard in the current room. Each cleared hazard re-arms after 3 turns |
+| Mage | **Dispel** | 2 | *Attempts* to shut down a **magical hazard** in the current room (e.g. Magic Seal, Icy Flooded Passage); where it lands, the hazard stays down for the rest of the run. No HP or mood cost |
+| Cleric | **Purify** | 2 | The same attempt against a **cursed hazard** (e.g. Toxic Gas Cloud, Cursed Altar), and no likelier to land than Dispel |
+| Rogue | **Disable** | 3 | The general-purpose attempt — applies to any hazard the Rogue can solve, and the likeliest of the four to land. **+1 charge per living Ranger in the party** |
+| Necromancer | **Clear** | 2 | Attempts to clear every hazard in the current room at once, which is also the least likely of the four to land. Each hazard it does clear re-arms after 3 turns |
 | Necromancer | **Send Undead** | 2 | Sends a minion to a **directly adjacent** target room. If the minion isn't destroyed by a patrol in or adjacent to the target, the target is sighted and all its hazards are permanently cleared. If a patrol is in threat-zone, the minion is destroyed, the room is still sighted, and that patrol redirects toward your party |
 | Ranger | **Perception** (passive) | — | Extends the party's sight pool by +1 hop while at least one Ranger is alive. Not a charge — just being a Ranger does it |
 | Warrior | — | — | Warriors solve hazards by being warriors at them. The Guild Clerk has stopped trying to write this up |
 
 Hazards that none of your classes can handle become problems you walk through and pay the toll on. Build parties accordingly.
 
-**An attempt is not a result.** Dispel and Purify are *rolled*, not guaranteed — the chance rises with the acting hero's luck and mood and with every living Ranger in the party — and the charge is spent either way. On a failure the hazard **fires on the party**, damage and [run-trauma](#run-trauma--hazards-carry-across-rooms) included, and does not get its permanent cutoff, so it will be waiting the next time somebody walks in. The same is true of a failed Disable or Clear, and of **Push Through**, which is the button for deciding to take a hazard on the chin with a perfectly good Rogue standing right there. None of the three counts toward the *survived-a-hazard* achievement, the realm declining to award credit for a toll voluntarily paid.
+**An attempt is not a result.** Dispel and Purify are *rolled*, not guaranteed — the chance rises with the acting hero's luck and mood and with every living Ranger in the party — and the charge is spent either way. There is a floor under the chance, so even a despondent and thoroughly unlucky hero sometimes cuts the right wire by mistake. On a failure the hazard **fires on the party**, damage and [run-trauma](#run-trauma--hazards-carry-across-rooms) included, and is not shut down, so it will be waiting the next time somebody walks in. The same is true of a failed Disable or Clear, and of **Push Through**, which is the button for deciding to take a hazard on the chin with a perfectly good Rogue standing right there. None of the three counts toward the *survived-a-hazard* achievement, the realm declining to award credit for a toll voluntarily paid.
 
 #### Run-Trauma — Hazards Carry Across Rooms
 

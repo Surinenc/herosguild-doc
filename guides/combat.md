@@ -305,6 +305,10 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 3. **25% Chance** - Target wounded hero (<50% HP)
 4. **Otherwise** - Random weighted by threat
 
+That list is the fallback. Most bosses have a plan of their own: the **Goblin Chieftain**, **Spider Queen** and **Skeleton King** all hunt aggro, taking the highest-threat hero **85%** of the time and dropping back to the blend above the rest. Fifteen times in a hundred, even a monster with a plan forgets what it came in for. Tactics apply on contracts and in dungeons; raids keep their own targeting model, in which every class is equally interesting.
+
+**The Primordial is the exception you have to plan around.** It picks its target **uniformly at random** — no threat weighting whatsoever — and it is **immune to Taunt**. Against a force of nature, threat management is not a weaker strategy; it is not a strategy. Bring enough healing to cover whoever it happens to look at.
+
 ---
 
 ## Warrior Skills: Taunt & Shield Wall
@@ -316,6 +320,8 @@ Enemies use threat to determine who to attack. Higher threat means more attentio
 - **Threat Bonus:** +100,000 — a number chosen so that no Ranger crit, however smug, can talk the enemy out of it
 - **Cooldown:** 3 turns
 - **Best Used:** When squishy allies are being targeted, which is to say, constantly
+
+**Not everything can be insulted.** Taunt lands on every enemy in the game but one: the **Primordial** takes no notice of it, and the combat log names it as immune when a Warrior tries, so you find out from the log rather than from a dead Mage. The log also announces when a Taunt **wears off** — which is the cue for the second Warrior in the party to take their turn at bellowing.
 
 ### Shield Wall
 
@@ -571,7 +577,7 @@ When a boss drops below a phase threshold:
 
 ### General Strategies
 
-1. **Bring a Warrior** - Threat is the whole of your targeting policy, and a Warrior is the only hero who generates it on purpose: 50 starting threat against everyone else's 10, half again as much from every hit, and a Taunt that buries the number entirely. You cannot tell the enemy who to hit. You can make the answer obvious.
+1. **Bring a Warrior** - Threat is the whole of your targeting policy, and a Warrior is the only hero who generates it on purpose: 50 starting threat against everyone else's 10, half again as much from every hit, and a Taunt that buries the number entirely. You cannot tell the enemy who to hit. You can make the answer obvious — to everything except the [Primordial](#enemy-targeting-logic), which does not take suggestions.
 2. **Protect Your Healer** - Dead clerics mean dead parties. This is not a suggestion. Since you cannot pull the enemy off them by hand, it is bought at party-selection time or not at all.
 3. **Match the Preset to the Fight** - Survival and Cautious push heroes toward healing and defence; Aggressive and Reckless push them at whatever is in front of them. What the preset will not do is pick the target — that rule is the same at every setting (see [Who Decides](#who-decides)). The dropdown is live, so a fight going badly is a fight you can still change your mind about.
 4. **Keep a Command Point Back** - Spending the floor's whole budget on the first encounter is a decision you meet again on the way out.

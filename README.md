@@ -26,6 +26,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 - [Hero Quarters](guides/guild.md#hero-quarters) - Private rooms, decorations, and adjacency bonuses
 - [Materials Market](guides/guild.md#materials-market) - Buy/sell crafting materials with dynamic pricing
 - [Hero Relationships](guides/relationships.md) - Social bonds, story arcs, and mood system
+- [Hobbies & Clubs](guides/clubs.md) - What heroes take up in their own time, and what it costs you when they want a room for it
 - [Events Overview](guides/events.md) - Tavern, guild, and dungeon event systems
 - [Crises](guides/crisis.md) - Realm-wide crises and how to survive them
 - [Crafting](guides/crafting.md) - Metalsmithing, Softcraft, Alchemy and Arcana

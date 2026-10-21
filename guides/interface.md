@@ -8,6 +8,7 @@ A quick guide to the Hero's Guild user interface and controls. Everything you ne
 - [Guild Screen](#guild-screen)
 - [Mission Board](#mission-board)
 - [Quest Log](#quest-log)
+- [Guild Stats](#guild-stats)
 - [Hero Details](#hero-details)
 - [Combat Screen](#combat-screen)
 - [Dungeon Exploration](#dungeon-exploration)
@@ -158,6 +159,25 @@ The **Quest Log** button (glyph **❡**) sits in the **Top Bar** alongside the o
 The Quest Log UI only enumerates **unlocked** chains — locked chains do not appear with their unlock requirements; if no chain of a type is unlocked, the panel shows a short note to that effect rather than a list of mysteries. Active chains show the current step and finale reward. Completed chains are archived for the record.
 
 → **Full details:** [Quest Chains](quest-chains.md)
+
+---
+
+## Guild Stats
+
+The **◔ Stats** button opens the guild's own filing cabinet: a set of tabs, each one a table with a row per hero, plus a short list of whoever currently holds the records. **Clicking any row opens that hero**, which makes the whole screen a roster you can sort by whatever is worrying you today.
+
+| Tab | What it keeps |
+|---|---|
+| 🏰 **Guild** | The totals — days survived, heroes recruited, fallen and departed, missions completed, raids run, best Spire floor, trials passed, crises seen — and who holds the guild records for power, DPS, biggest hit, kills, service and Paragon |
+| ⚔ **Combat** | Damage out and in, healing out and in, kills, boss kills, DPS and missions, per hero |
+| 🏆 **Feats** | Knock-outs, close calls, biggest hit, allies saved, boss kills, Paragon and days served |
+| ✚ **Health** | Body parts damaged and lost, prosthetics fitted, illnesses, chronic conditions and Infirmary days |
+| 👥 **Social** | Mood, friends, rivals, drinks taken, days off, addiction and background |
+| 💰 **Life** | Purse, gambling losses, partner, current dream, guild rank and keepsakes |
+| 🎲 **Hobbies & Clubs** | Hobbies and clubs per hero, then a club ledger: hobby, members, nights held, rank and cost a day — see [Hobbies & Clubs](clubs.md) |
+| ⚖ **Identity** | Where the guild's values actually sit, and how each hero fits them |
+
+It is the screen to open before deciding who to send, who to retire, and which of your heroes has quietly accumulated four prosthetics without anybody mentioning it.
 
 ---
 
@@ -370,7 +390,7 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 - Skip Intro Video (skip the opening cinematic on New Game — the Guild Clerk takes no position on this, but does note that the intro was expensive to produce)
 - Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
-- Online Features (sends leaderboard stats and unlocks community dungeons)
+- Online Features — leaderboards, news, shared custom dungeons, bug reports and anonymous play statistics, all by way of a server in another time zone. Switched **off**, the game sends nothing at all. **Steam Cloud is a separate arrangement**: it keeps copies of your saves whatever this toggle says, because it belongs to Steam and not to the Guild Clerk, who would like that on the record
 
 ### Leaving
 

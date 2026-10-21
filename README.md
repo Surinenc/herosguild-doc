@@ -67,6 +67,7 @@ Hero's Guild is a tactical guild management RPG inspired by games like Darkest D
 
 - [Steam Store Page](https://store.steampowered.com/app/4268730/Heros_Guild/)
 - [Bug Reports](https://github.com/Surinenc/herosguild-doc/issues)
+- [Press Kit](presskit/) - For press and content creators
 
 If you have read this far into the arithmetic, you are the sort of player whose
 opinion other people actually trust. Should the Guild have earned it, a review on

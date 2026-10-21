@@ -74,6 +74,8 @@ From there, it behaves like any other mission:
 3. Dispatch them
 4. Wait for the Guild Clerk's report
 
+That includes the party cap: a chain step takes as many heroes as an ordinary contract of the same star rating — **five** at 1–2★ and **eight** from 3★ — so a late story step is not fought shorthanded on a technicality. See [Party Size](dungeons.md#party-size).
+
 **If you ignore the step for a day** — it rolls onto tomorrow's board unchanged. Chain progress doesn't decay.
 
 **If the party fails the step mission** — no chain progress is lost. The same step reappears on the next board roll. You retry until you succeed. (The Guild Clerk considers this generous. The heroes, less so.)

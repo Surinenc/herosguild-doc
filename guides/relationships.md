@@ -257,6 +257,7 @@ Additional bonds include:
 **Positive:**
 - **Drinking Buddies** - Bonded over tavern sessions
 - **Sparring Partners** - Regular training partners
+- **Club Mates** - Twelve club nights in each other's company, on Friendly terms or better, worth **+5 mood** to both. The only bond you can deliberately manufacture, by funding a room and hoping the two of them turn up - see [Hobbies & Clubs](clubs.md#club-nights)
 - **Confidant** - Trusted advisor and emotional support
 - **Oath Sworn** - Sworn allegiance to each other. A pair of Oath Sworn heroes assigned to the same mission grants **+5% party damage** for that mission. The bonus applies once regardless of how many Oath Sworn pairs are in the party — the realm rewards the dramatic gesture, not the inventory
 - **Siblings** - Family bond
@@ -697,7 +698,7 @@ Some items become Soulbound through events rather than time:
 - **Saved Life** — the hero survived a near-death thanks to this item
 - **Family Heirloom** — brought from their background
 
-A **first kill** is the deliberate exception. Every weapon earns one on its first real fight, so counting it as fully sentimental locked the entire armoury within a week of opening the guild — heroes immovably wedded to the starting sword by the simple fact of having hit something with it. A first kill now makes the item **Prized** instead. The hero still minds losing it, still says so, and the mood cost still doubles as it does for any sentimental object; but it can be taken off them, which the Quartermaster considers the most important sentence in this guide.
+A weapon's **first kill** is not on that list, and deliberately so. Every weapon earns one in its first real fight, so a first kill would sentimentalise the entire armoury within a week of opening the guild — a roster of heroes immovably wedded to their starting sword by the simple fact of having hit something with it. The kill is counted and that is all. A blade earns its place in a hero's affections the slow way, by time equipped, which the Quartermaster considers the most important sentence in this guide.
 
 Soulbound items cannot be removed at all — the Vault's confirmation dialog offers a Close button in place of an Unequip one, and the hero declines to elaborate. The bond only ends when the item is destroyed or the hero is. This is not a mood penalty you can pay through; it is simply not on the menu.
 
@@ -828,6 +829,8 @@ Heroes who reach Blackout may experience random events they won't remember: losi
 ## Unavailability & Refusal
 
 Heroes are not, despite what the roster screen implies, available at all times. They have personal lives, grudges, hangovers, and occasional existential crises. The game tracks three systems: **unavailability** (can't go), **refusal** (won't go), and **insistence** (determined to go whether you like it or not).
+
+**The card tells you which one you are looking at.** Any hero in the party picker who is not simply available wears a one-word badge across the top: **Insists** in green, **Refuses** in red for an objection that cannot be bought off, **Reluctant** in amber for one that can, and for a hero who is merely elsewhere, the reason itself — **Day off**, **Hungover**, **Sulking**, or just **Away**. The hover adds whether they can be called back and precisely what calling them back costs in mood. The colours are the entire summary: red means no, amber means it has a price, green means they have already packed.
 
 ### Unavailability
 
@@ -1037,6 +1040,7 @@ The goal is a roster where people fight better together than they do alone — w
 
 - [Combat System](combat.md) - Emotional states and intervene
 - [Guild Management](guild.md) - Mood and facilities
+- [Hobbies & Clubs](clubs.md) - What heroes do with an afternoon, and the Club Mates bond
 - [Heroes & Classes](heroes.md) - Traits and states
 
 ---

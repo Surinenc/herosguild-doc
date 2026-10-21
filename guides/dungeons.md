@@ -100,6 +100,16 @@ Monster level determines enemy strength:
 
 The gold column multiplies **combat gold** — what enemies drop — and leaves the value of loot alone, an item being worth what it is worth regardless of how many rooms you walked through to find it. Both multipliers apply to dungeon runs as well as missions, the stars being no respecters of paperwork. **Boss rooms** also pay out their own treasure, gems included, once per boss.
 
+**The great beasts keep to contracts of their own size.** A final boss appears only from **3★** up, and then it is drawn only from the bosses those stars permit — so the star rating tells you the worst thing that can be waiting at the end:
+
+| Stars | The boss may be |
+|---|---|
+| ⭐⭐⭐ | The Goblin Chieftain, the Spider Queen, the Skeleton King, the Chimera, the Death Knight or the Primordial |
+| ⭐⭐⭐⭐ | …or the Balor |
+| ⭐⭐⭐⭐⭐ | …or the Elder Dragon |
+
+A three-star contract will not end with an Elder Dragon, however badly the week has been going. The **Abyssal Spire** makes no such promise — it draws from the whole list at every height, which is part of what the Spire is for.
+
 ---
 
 ## Dungeon Environments
@@ -212,9 +222,11 @@ Worth knowing before you rely on it: an unsupervised party **always fights as Ba
 ### Party Size
 
 - **Minimum:** 1 hero (dangerous!)
-- **Maximum:** three plus the stars, up to eight — 1★=4, 2★=5, 3★=6, 4★=7, 5★=8. Past that the corridors simply get crowded
-- **Recommended:** Stars + 2 (e.g., ⭐⭐⭐ = 5 heroes)
+- **Maximum:** **five** heroes at 1–2★, **eight** from 3★ up. The same cap governs board contracts, heroic contracts and quest-chain steps
+- **Recommended:** as many as the fight actually needs, and no more — the note below explains why the eighth hero is not free
 - **Rating Bonus:** +5 party rating per hero beyond the 3rd
+
+**A full party is safer and slower.** Mission XP is scaled by how many went: **+10% for every hero under five, −10% for every hero over it**. A solo run pays **1.4×**, five heroes pay the flat rate, and eight pay **0.7×**. The party also takes a **10% cut of the mission's gold**, divided between the survivors, so an extra body thins everyone's purse as well as their lesson. Glory divides badly. Bring the full eight when the fight might kill somebody, and fewer when it certainly won't.
 
 ### Building a Good Party
 

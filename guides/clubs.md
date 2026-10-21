@@ -192,7 +192,9 @@ Then the **company** is counted, one score per other attendee, by how the hero f
 
 That total is capped at **±6** and converted at **1 mood per point**. The arithmetic is unsentimental: a single enemy across the table outweighs two friends beside you, and an evening that lands at **−1 or below** was **sour** for that hero. This is the whole reason the chair's opinion of applicants matters, and it is covered under [The Chair](#the-chair).
 
-**Leaving.** A member's daily chance of walking out is **0.1%** at rest, plus **1% per sour night** they have had and **1%** if they share the club with an enemy. **Three sour nights in a row** is a sour run, and a club with a sour run is a club losing people. Clubs do not usually collapse from lack of funding. They collapse because two members cannot stand each other and nobody did anything about it.
+**Leaving.** The club counts the whole evening as sour when **half or more** of those who came had a sour one, and keeps a running tally of consecutive sour nights — one decent evening resets it to zero. Every member's daily chance of walking out is then **0.1%**, plus **1% for each night in that streak**, plus **1%** if they share the club with an enemy. At three in a row the minutes stop being diplomatic and start recording that somebody left “after one sour evening too many”.
+
+Note that the streak is the *club's*, not the individual's: a sour run puts every member at the door, including the ones who had a perfectly nice time. Clubs rarely collapse from lack of funding. They collapse because two members cannot stand each other and nobody did anything about it.
 
 **Club Mates.** Members who attend **12 nights** together while on Friendly terms or better form the **Club Mates** bond, worth **+5 mood** to both for as long as it lasts. It is the only bond in the guild that can be manufactured on purpose, with a budget, by furnishing a room.
 

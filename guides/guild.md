@@ -558,7 +558,7 @@ Your position on each axis shifts based on event decisions. There is no right an
 
 ### Moral Events
 
-Starting from day 10, moral events appear periodically. You'll see up to 3 pending events at once. Each presents a situation with multiple options, and each option shifts your moral axes and carries consequences.
+Starting from day 10, moral events arrive on a daily roll of **1 in 7, 8 or 9** — about one every eight days, which is often enough to steer by and rare enough that each one is an occasion. You'll see up to 3 pending events at once. Each presents a situation with multiple options, and each option shifts your moral axes and carries consequences.
 
 **Event Categories:**
 
@@ -718,6 +718,7 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Hero wages | Per hero/day | Daily |
 | Facility upkeep | Per facility/day | Daily |
 | Quarters upkeep | 30-1,000g per occupied room | Daily |
+| Clubs | Each guild-funded club's fee, plus its room's upkeep | Daily |
 | Crafting materials | Variable | On craft |
 | Recruitment | Scales with level and quality (50g – 100,000g+) | Per hire |
 | Infirmary costs | Variable | Per treatment |
@@ -1135,6 +1136,7 @@ The Guild Clerk has watched enough guilds fail to identify the patterns. These a
 - [Crafting](crafting.md) - Production facilities
 - [Dungeons](dungeons.md) - Expedition management
 - [Relationships](relationships.md) - Social system
+- [Hobbies & Clubs](clubs.md) - The Club Wing, its floors and rooms, and the Clubs line on the expense sheet
 - [Custom Dungeons](custom-dungeons.md) - The other Workshop — the one with dungeons in it
 - [Crises](crisis.md) - Four crises damage facilities if left to resolve at Ignored
 

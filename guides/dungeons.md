@@ -19,7 +19,7 @@ Dungeons are where your heroes prove their worth — or, more frequently, where 
 - [Parallel Expeditions](#parallel-expeditions)
 - [Prestige Missions](#prestige-missions)
 - [World Boss Raids](#world-boss-raids)
-- [Weekly Heroic Rotation](#weekly-heroic-rotation)
+- [Heroic Rotation](#heroic-rotation)
 - [Tips for Success](#tips-for-success)
 - [Related Guides](#related-guides)
 
@@ -273,6 +273,21 @@ Worth reviewing before committing to any dungeon. The Guild Clerk has drafted in
 | **Exit** | 🏁 | Dungeon complete |
 
 On any floor that has a boss, the **Exit connects only to the boss room**. There is no corridor around the thing you came to kill, no side door, and no version of a clear that does not involve meeting it. The Guild Clerk regards this as the single most important wall in the realm.
+
+### The Wandering Merchant
+
+The 🏪 room is somebody who has set up a stall underground, on purpose, and would like you to think about that for a moment. The stall shows your party and their wounds alongside the wares, so the pitch is made by the heroes themselves.
+
+| Ware | Price | Effect |
+|------|-------|--------|
+| Field Bandage | 0.8 × one fight's gold | Restore 20% of max HP to all heroes |
+| Elixir of Vigor | 1.4 × one fight's gold | Restore 35% of max HP to all heroes |
+| Phoenix Draught | 2.4 × one fight's gold | Restore 60% of max HP to all heroes |
+| Material bundles | Market price × **1.5** | The material, carried down to you |
+
+Prices are a multiple of the average gold an **ordinary** (non-boss) fight in this dungeon pays, rounded to two significant figures, so the potions cost what the dungeon is worth rather than what a label says. Materials are the Market's current price with a mark-up for the carrying: convenience, never a bargain, and the merchant will not pretend otherwise.
+
+**A stall's prices are set when you reach it and stay there** however long you stand about weighing them up. Another stall, later, prices its own stock from scratch.
 
 ### Fog of War
 
@@ -580,9 +595,9 @@ See [**World Boss Raids**](raids.md).
 
 ---
 
-## Weekly Heroic Rotation
+## Heroic Rotation
 
-Three heroic dungeons rotate weekly (resets Thursday 00:00 UTC):
+Three heroic dungeons are posted at a time, rotating every **15 days of guild time**:
 
 | Tier | Stars | Level Offset | Name |
 |------|-------|-------------|------|
@@ -592,7 +607,7 @@ Three heroic dungeons rotate weekly (resets Thursday 00:00 UTC):
 
 Each tier has a randomly selected heroic modifier and environment. Base level scales with your highest hero level (minimum 80). See [Heroic Dungeons Guide](heroic-dungeons.md) for modifier details.
 
-Access the weekly rotation from Mission Board → Heroic filter (🔥).
+Access the rotation from Mission Board → Heroic filter (🔥), which counts down the guild days until the next three.
 
 ---
 

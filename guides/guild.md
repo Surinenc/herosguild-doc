@@ -283,11 +283,13 @@ Recruitment hub, morale booster, and the place where most guild drama begins (an
 | 4 | Renowned Tavern | 2–4 | 4,000g | 800g |
 | 5 | Legendary Tavern | 3–5 | 10,000g | 1,500g |
 
-The number column is the **quality range** of the recruits on offer, not how many turn up per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day.
+The number column is the **quality range** of the recruits on offer, not how many turn up per day. Higher-tier taverns surface higher-rarity recruits in the pool; they don't generate more candidates per day. The pool itself holds **up to six** at a time, laid out as two rows of three — six strangers is about as many as any one evening can honestly assess.
 
 **Tavern Activities:**
 
-**Who counts as present.** Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for any party at all: the mission board, the dungeon menu, the raid picker and the Spire alike show them unavailable and refuse the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
+**Who counts as present.** Heroes who are **away** — a day off, a hangover, mourning, a pilgrimage, any absence at all — are not at the tavern either, and the Heroes at Bar list does not pretend otherwise. They are left out of the activities and out of the bill for them, which is the only part of being absent that has ever pleased a guildmaster.
+
+Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for any party at all: the mission board, the dungeon menu, the raid picker and the Spire alike show them unavailable and refuse the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
 
 Costs scale with the total level of heroes present (Σ hero levels). Mood effects below are the **baseline** per hero — activities apply **per-hero variance** driven by each hero's personality traits (Gregarious drinks well; Reserved does not; Ascetic feels judged by everyone else's feasting; Greedy loves the gambling win and hates the loss, twice as much as anyone else). The result message enumerates who reacted how, so you can see the split rather than a group average.
 
@@ -321,6 +323,8 @@ Each night, the Tavern presents **up to 8** situations requiring your attention 
 | 1-2 | 3 |
 | 3-4 | 4 |
 | 5+ | 5 |
+
+**The guild's standing adds its own.** Every guild rank above F is worth **one more point a night** on top of the Tavern's share — +1 at E, +2 at D, and so on to **+6 at rank S**, where a Legendary Tavern hands you eleven. A guildmaster of standing is interrupted sooner and listened to longer, which amounts to the same thing as having more evening. Hover the attention bar to see where tonight's points came from.
 
 Each decision costs 1-2 points. You won't have enough to address everything — prioritisation is the point.
 

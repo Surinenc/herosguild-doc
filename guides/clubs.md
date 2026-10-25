@@ -15,7 +15,7 @@ Heroes do not spend every waking hour being heroic. Given an afternoon with noth
 - [Days Out](#days-out)
 - [Related Guides](#related-guides)
 
-The whole business lives behind the **♣ Clubs** button in the top bar. It is there from the first day and it is empty until somebody asks you for something, which is the most honest page in the game.
+The whole business lives behind the **♣ Clubs** button in **Facilities**, beside Quarters, the Market and the Infirmary — which is the correct filing, a club being a room the guild pays for rather than an errand. It is there from the first day and it is empty until somebody asks you for something, which is the most honest page in the game.
 
 ## Hobbies
 
@@ -123,7 +123,7 @@ The daily fee is the hobby's fee multiplied by the **club's** rank — a good ch
 
 That lands in your daily expenses as its own **Clubs** line, alongside wages and facility upkeep. Funding a Master reenactment society is a four-figure daily decision. If you stop paying, the members cover it themselves and sit at **−3 mood** for as long as they do, which is a slow leak rather than a crisis, and will be mentioned.
 
-A hero belongs to at most **two** clubs at once.
+A hero belongs to at most **two** clubs at once. A hero sitting on a **waiting list** who is already in two is passed over when a place opens, and **keeps their place in the queue** — they get in once they have left one of the others. The list does not punish ambition; it merely declines to reward it twice. The dead and the departed are struck off as they are reached, which is the only paperwork in the building that does itself.
 
 ## The Club Wing
 

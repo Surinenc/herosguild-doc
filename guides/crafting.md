@@ -212,6 +212,14 @@ Crafting follows seven steps in sequence. Missing any of them produces results r
 - Crafter skill: -1% per 5 skill levels (skill level / 500); a level 100 crafter saves 20% before anything else
 - Assistant: -20%; a second hero making themselves useful
 
+### The Queue
+
+A crafter works **one job at a time** and works **through** the list: each job begins the moment the one before it ends, and every job finished by dawn comes off the bench, in order. A hero with four two-hour trinkets queued hands over all four in a day's work. A job that runs past dawn carries over and finishes on the next day that has room for it.
+
+This holds across every station the hero is assigned to. They clear the active bench, then that bench's queue, then move to the next bench with work waiting on it — which means a crafter assigned to the Forge and the Alchemy Lab both is a crafter who will get to the Alchemy Lab eventually, in the way that sentence implies. The Crafting screen lists the finishing times it expects, and they are the times dawn will honour.
+
+One pair of hands, one job at a time, in order. The day is merely long enough to see more than one of them through.
+
 ### Assistants
 
 Each station can have:

@@ -150,6 +150,8 @@ Custom Dungeon raids keep a **trauma** ledger: every point of HP damage a hero t
 
 A hero whose accumulated trauma reaches their original max HP **falls.** Trauma persists across rooms within a single run, and resets only when the run ends (cleared, wiped, or forfeited).
 
+**Max HP here means the full one** — armour, passives and every other bonus counted in, not the bare figure a hero's class and level would give unaided. A hazard that takes a share of HP takes a share of *that*, and the trauma ledger fills toward *that*. A tank's plate therefore buys them extra hazard rooms as well as extra sword blows, which is very nearly the first good thing anyone has said about wearing plate down a sewer.
+
 The practical effect: hazards are not free even if you have a Cleric. The Guild Clerk has observed parties die slowly across six rooms of accumulated paper-cuts where any single hazard would have been trivial.
 
 #### Axis Shifts Are Permanent

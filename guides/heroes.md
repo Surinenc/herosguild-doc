@@ -261,7 +261,7 @@ The quality multiplier lands on **every** stat, after every other bonus has been
 
 Class and quality only get you so far. Every hero also arrives carrying a **background tag** — one of Noble, Criminal, Soldier, Peasant, Scholar, Merchant, Cultist, Outlander — and a **four-paragraph life history** of things that happened to them first. Both feed multiplicative modifiers into the damage chain and the hero's stats, and that is why two heroes with identical kit and identical class will not, in practice, hit for the same numbers. The Guild Clerk considers this a feature, on the grounds that a roster of interchangeable heroes is a spreadsheet with swords.
 
-The CV appears on the Details modal at the Tavern, where it is a sales document, and on the Background tab in Hero Details, where it becomes a medical history. See [Hero Backgrounds](backgrounds.md) for the full system.
+The CV appears on the Details modal at the Tavern, where it is a sales document, and on the Past tab in Hero Details, where it becomes a medical history. See [Hero Backgrounds](backgrounds.md) for the full system.
 
 ---
 
@@ -481,6 +481,12 @@ Survival Chance = 50% (base)
 | Cursed trait | -10% |
 
 **Survival gear** is not a category the smiths recognise; it is a keyword search. An equipped item qualifies if its **name** contains *survival*, *lifesaving*, *protection*, *guardian*, *phoenix* or *resurrection*, or if one of its **enchantments** mentions *death save*, *survival* or *last stand*. This is exactly as literal as it sounds — the Amulet of the Phoenix qualifies on the strength of being called that. Read the names on your accessories before you sell them: somewhere in the Vault is a +5% chance of living, filed under a word somebody chose for flavour.
+
+### A Legend Rolls Twice
+
+A hero at [Legend rank](#veteran-status) who fails the save **rolls once more, at the same odds**. Death, four hundred contracts in, has learned to knock twice. A second escape is written into their Chronicle, so the thing that didn't happen is at least on the record.
+
+It does not help with a destroyed organ. A fatal wound skips the save altogether, and skipping a save skips the second one with it — the dice are for heroes who might live, and that goes double for the spare set.
 
 ### Example Calculations
 
@@ -702,7 +708,7 @@ Heroes earn veteran ranks based on completed missions. The progression from Rook
 | Champion | 200-399 | +8 | 1.3× | 1.06× | +20% |
 | Legend | 400+ | +10 | 1.5× | 1.08× | +25% |
 
-**The Survival Bonus column reaches the [death save](#death-save-modifiers) itself**, so a Legend really is twenty-five points harder to kill than a recruit. It needs to be. Enemies on missions hit harder the higher the levels involved, which means a party of level-sixty veterans is walking into something proportionally nastier than any recruit has ever seen: experience buys you more because it has more to buy you out of.
+**The Survival Bonus column reaches the [death save](#death-save-modifiers) itself**, so a Legend really is twenty-five points harder to kill than a recruit — and, having failed the roll, [gets another one](#a-legend-rolls-twice). It needs to be. Enemies on missions hit harder the higher the levels involved, which means a party of level-sixty veterans is walking into something proportionally nastier than any recruit has ever seen: experience buys you more because it has more to buy you out of.
 
 **The Morale Bonus column lands somewhere more domestic.** It is added to the hero's [quarters morale](guild.md#quarters-morale-effects) total wherever they sleep, the barracks included. Four hundred missions are worth roughly as much as a furnished room — rank buys a comfortable bed, not a palace.
 

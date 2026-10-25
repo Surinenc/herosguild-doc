@@ -41,6 +41,8 @@ The top bar answers the three questions you are always asking: how much money yo
 - **Guild Rank** - Your reputation rank (F through S); the number that determines what trouble is available. Hover the cell, or tab to it, and it lays out the current rank and what it grants — roster space, mission slots, better recruits — then the next rank, the reputation still owed, and what that one grants. It will not tell you which stories open up there, on the grounds that spoiling them would be rude
 - **Settings** - Access options
 
+Above **100,000** the gold and vault figures are written short, in K and M, so the row keeps to one line at any text size; resting the pointer on a cell gives the exact sum, for those occasions when the exact sum is the point.
+
 ### Hero Panel (Left)
 
 Your roster at a glance. The Guild Clerk designed this panel to answer the question "who is available and who has an excuse" as quickly as possible.
@@ -63,7 +65,7 @@ The heart of your guild operations. The Guild Clerk is rather proud of this layo
 - Click facilities to access them
 - Upgrade indicators show available upgrades
 - Active crafting shows progress
-- A row of **quick links** across the top of the facility list jumps straight to **Quarters**, **Market**, and the **Infirmary**. The Infirmary opens on demand whether or not anyone is ill — an empty ward is, per Guild custom, worth looking in on
+- A row of **quick links** across the top of the facility list jumps straight to **Quarters**, the **Market**, the **Infirmary** and **♣ Clubs** — a club being a room the guild pays upkeep on, it is filed with the other rooms the guild pays upkeep on. The Infirmary opens on demand whether or not anyone is ill — an empty ward is, per Guild custom, worth looking in on
 
 ### Info Panel (Right)
 
@@ -168,7 +170,7 @@ The **◔ Stats** button opens the guild's own filing cabinet: a set of tabs, ea
 
 | Tab | What it keeps |
 |---|---|
-| 🏰 **Guild** | The totals — days survived, heroes recruited, fallen and departed, missions completed, raids run, best Spire floor, trials passed, crises seen — and who holds the guild records for power, DPS, biggest hit, kills, service and Paragon |
+| 🏰 **Guild** | The totals — days survived, heroes recruited, fallen and departed, missions completed, dungeons completed, raids run, best Spire floor, trials passed, crises seen — and who holds the guild records for power, DPS, biggest hit, kills, service and Paragon |
 | ⚔ **Combat** | Damage out and in, healing out and in, kills, boss kills, DPS and missions, per hero |
 | 🏆 **Feats** | Knock-outs, close calls, biggest hit, allies saved, boss kills, Paragon and days served |
 | ✚ **Health** | Body parts damaged and lost, prosthetics fitted, illnesses, chronic conditions and Infirmary days |
@@ -176,6 +178,8 @@ The **◔ Stats** button opens the guild's own filing cabinet: a set of tabs, ea
 | 💰 **Life** | Purse, gambling losses, partner, current dream, guild rank and keepsakes |
 | 🎲 **Hobbies & Clubs** | Hobbies and clubs per hero, then a club ledger: hobby, members, nights held, rank and cost a day — see [Hobbies & Clubs](clubs.md) |
 | ⚖ **Identity** | Where the guild's values actually sit, and how each hero fits them |
+
+The **biggest hit** record is taken from everywhere a hero fights — contracts, raids, the Spire and ascendancy trials alike — so the name on it belongs to whoever genuinely hit hardest, wherever they happened to be standing at the time.
 
 It is the screen to open before deciding who to send, who to retire, and which of your heroes has quietly accumulated four prosthetics without anybody mentioning it.
 
@@ -219,7 +223,7 @@ The Career tab exists because the Guild Clerk wanted receipts.
 
 ### Stats Tab
 
-The hero sheet: what this hero is actually worth in a fight, after everything has been counted. Primary stats (**STR / DEX / INT / VIT / LCK**) sit above the derived ones — **ATK**, **CRT%**, **Crit DMG**, **Armor**, **Evasion**, **Energy Shield**, **Life Steal** — and the two out-of-combat modifiers, **Gold Find** and **XP Bonus**.
+The hero sheet: what this hero is actually worth in a fight, after everything has been counted. Primary stats (**STR / DEX / INT / VIT / LCK**) sit above the derived ones — **ATK**, **CRT%**, **Crit DMG**, **Armor**, **Evasion**, **Energy Shield**, **Life Steal** — and the two out-of-combat modifiers, **Gold Find** and **XP Bonus**. **Evasion** is given the way **Armor** is — the rating, and beside it the dodge chance that rating actually buys against an enemy of the hero's own level, the passive tree's contribution included. A rating is a number; a percentage is an answer.
 
 The crit figures here are worth trusting: combat rolls crit through the same functions this sheet reads, so the percentage shown is the percentage the dice are given. See [Critical Hits](combat.md#critical-hits). Everything on this tab is the *effective* value — gear, passives, ascendancy, paragon, titles, mood, illness and the hero's own life history are already in the numbers, which is why they rarely match the figures on the items.
 
@@ -227,9 +231,9 @@ The crit figures here are worth trusting: combat rolls crit through the same fun
 
 The hero's running history. Major fights, lost friends, milestones, titles earned — the entries that decide which titles unlock. The tab carries an unread badge when a new entry has arrived since you last looked.
 
-### Background Tab
+### Past Tab
 
-The hero's static identity — who this person is, before any of the bonds, achievements, or unfortunate encounters with the dungeon system got involved. The tab holds the four life paragraphs and the modifiers quietly attached to them; the Chronicle handles the running record, the Background handles the origin. See [Hero Backgrounds](backgrounds.md) for the full system.
+The hero's static identity — who this person is, before any of the bonds, achievements, or unfortunate encounters with the dungeon system got involved. The tab holds the four life paragraphs and the modifiers quietly attached to them; the Chronicle handles the running record, the Past handles the origin. See [Hero Backgrounds](backgrounds.md) for the full system.
 
 - **Origin** — the hero's background tag and its mechanical effect
 - **Life paragraphs** — childhood, adolescence, young adulthood, before the guild
@@ -344,8 +348,10 @@ At any crafting station:
 ### Queue
 
 - Current craft progress
-- Queued items
+- Queued items, with the time each one is expected to come off the bench
 - Cancel option
+
+The times are worked out the way dawn works them out: a crafter takes their jobs one after another, each starting where the last ended, across every station they are assigned to. See [The Queue](crafting.md#the-queue).
 
 ---
 
@@ -385,6 +391,11 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 - Resolution dropdown (1280×720 / 1600×900 / 1920×1080 / 2560×1440) — the interface is drawn once, at 1920×1080, and then scaled to fit whatever you pick, so this is a size control rather than a detail control. Nothing extra appears at 2560×1440; the goblins are simply legible from further away. The window cannot be dragged to a new size — a fixed canvas can only be zoomed, and the edges have been nailed down accordingly — so the dropdown is the only handle there is. Desktop version only.
 - Fullscreen toggle
+- **Smallest text** — the floor under the game's small print, **16 px** by default, adjustable from 8 up to **20** (or off altogether). Every screen is laid out to make room as it rises. Labels set in capitals follow at a respectful 4 px behind
+- **Small text style** — *As designed*, or *Bold, no italics* for anyone who finds the designed italics hard going. It reaches the small print below 14 px only; larger text was meant to be read and is left in its own hand
+- **Layout** — *New*, the reworked Guild, Tavern and dungeon screens, or *Classic*, those same screens in their earlier arrangement. The game plays identically either way: the rules, the content and the fixes are the same, and only the furniture moves. Classic was built for 12 px and stops there, so choosing it brings a larger setting down to 12. Want the smaller, denser version throughout? Classic, 12 px, and *Bold, no italics*
+
+The game files all of this, along with Fullscreen and Resolution, under **The View**.
 
 ### Gameplay
 
@@ -395,6 +406,8 @@ Small things that make a significant difference, provided for heroes who prefer 
 ### Leaving
 
 Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. The two confirmations do not offer the same choices. Returning to the main menu lets you **Save and return** or **Return without saving**, the second leaving the last autosave precisely as it was — which is what you want when you loaded an old save purely to look at it. Quitting offers only **Save and quit**, on the reasoning that someone closing the game for the night rarely means to throw the evening away. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+
+**When the game saves without being asked.** At the end of each day, when you close the game, on the way into and out of a dungeon, raid or Spire run, and otherwise **every five minutes** if anything has changed since the last save. It does not save on the main menu or in the middle of a run, where there is nothing settled to copy. Clicking about a screen does not itself trigger a save, which is why a guild four thousand days old stays responsive while you read it.
 
 ### Credits
 

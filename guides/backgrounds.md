@@ -32,7 +32,7 @@ Every recruit carries one background tag, assigned at generation alongside their
 - **Cultist** — believed something. Some still do. The active-effects row will tell you which.
 - **Outlander** — from somewhere the map sketches in dotted lines; arrives with stories nobody else can confirm
 
-Each background grants a permanent combat modifier (listed among the hero's active effects) and a tilt in which lifecycle events the hero is likely to have rolled. The mechanical effect is described on the **Background tab** of Hero Details — same information from two angles, intentionally duplicated, because *who's modifying combat right now* and *who this person is* turn out to be two questions with the same answer and different audiences.
+Each background grants a permanent combat modifier (listed among the hero's active effects) and a tilt in which lifecycle events the hero is likely to have rolled. The mechanical effect is described on the **Past tab** of Hero Details — same information from two angles, intentionally duplicated, because *who's modifying combat right now* and *who this person is* turn out to be two questions with the same answer and different audiences.
 
 ---
 
@@ -73,7 +73,7 @@ The numbers themselves are never shown. You see the prose; the dice see the mult
 
 ### Lifecycle traits
 
-Some events grant a named trait — *Duelist*, *Sickly*, *Iron Constitution*, and others in that register. They sit on the Background tab under **Traits**, and they work the same however they were come by: a hero who picked up Duelist from a teenage tavern brawl is mechanically identical to a hero who was born to it. The route to the trait does not matter. The trait matters.
+Some events grant a named trait — *Duelist*, *Sickly*, *Iron Constitution*, and others in that register. They sit on the Past tab under **Traits**, and they work the same however they were come by: a hero who picked up Duelist from a teenage tavern brawl is mechanically identical to a hero who was born to it. The route to the trait does not matter. The trait matters.
 
 ### Body flaws
 
@@ -93,9 +93,9 @@ Click **Details** on any candidate in the Tavern. The recruit-details modal open
 
 The inline quick-hire card does not show the CV — there isn't space, and the Guild Clerk considers a hire made without reading the CV to be a hire made at one's own risk. To reject a CV, pass on the candidate. There is no re-roll, partly because re-rolls would defeat the point of unique heroes, and partly because the Guild Clerk has already explained this once.
 
-### On the Background tab (post-hire)
+### On the Past tab (post-hire)
 
-The Hero Details panel has a **Background tab** (icon 📜) alongside Gems, Social, Career, Chronicle, Paragon, and Trials. It is the canonical home for everything the lifecycle produces. Layout, top to bottom:
+The Hero Details panel has a **Past tab** (icon 📜) alongside Gems, Social, Career, Chronicle, Paragon, and Trials. It is the canonical home for everything the lifecycle produces. Layout, top to bottom:
 
 1. **Origin** — the hero's background tag and the mechanical effect blurb it carries
 2. The four life paragraphs, labeled by stage

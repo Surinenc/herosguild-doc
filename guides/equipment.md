@@ -30,8 +30,8 @@ Each hero has 10 equipment slots:
 | **Head** | Helmets, Hoods, Hats | Universal |
 | **Boots** | Boots, Greaves, Shoes | Universal |
 | **Gloves** | Gauntlets, Gloves, Bracers | Universal |
-| **Accessory 1** | Rings, Amulets | Universal |
-| **Accessory 2** | Rings, Amulets | Universal |
+| **Accessory I** | Rings, Amulets | Universal |
+| **Accessory II** | Rings, Amulets | Universal |
 | **Consumable 1** | Potions, Items | Universal |
 | **Consumable 2** | Potions, Items | Universal |
 
@@ -193,8 +193,8 @@ Two random-roll affixes feed the [mana economy](combat.md#mana-economy):
 
 | Affix | Rolls On | Effect |
 |-------|----------|--------|
-| **Mana Regen** | Accessory 1, Accessory 2 | Flat mana regen per turn; stacks with passive tree and class baseline |
-| **Mana Cost Reduction** | Accessory 1, Accessory 2, weapons | Percent reduction to skill mana costs; additive with proficiency, passives, set bonuses, and ascendancy, capped at 75% total |
+| **Mana Regen** | Accessory I, Accessory II | Flat mana regen per turn; stacks with passive tree and class baseline |
+| **Mana Cost Reduction** | Accessory I, Accessory II, weapons | Percent reduction to skill mana costs; additive with proficiency, passives, set bonuses, and ascendancy, capped at 75% total |
 
 Both use continuous scaling — a rare ring at L50 will roll something modest, the same affix on a mythic at L100 considerably less so. They can coexist on the same accessory, which is the combination experienced builders look for first.
 
@@ -257,9 +257,11 @@ The insurance policy the Guild Clerk wishes the guild itself could afford. When 
 
 1. **Phylactery Elixir** — revive at full HP and mana, elixir consumed
 2. **Undying Fury** (Berserker 4-piece) — survive at **1 HP**, once per fight
-3. **Phoenix Rebirth** (Phoenix 4-piece) — back to **full HP**, once per fight
+3. **Phoenix Rebirth** (Phoenix 4-piece) — back to **full HP**, once per *run*
 
-Each is used at most once per hero per combat, and they are tried in that order, so a hero wearing both sets and carrying an elixir has three separate deaths to get through before the Chapel is involved. That gate is the *only* way a hero dies, and the route hardly matters: an area attack, Cursed Ground, a poison tick, raid cleave splash and a berserk ally all have to queue at the same door as an honest sword.
+Undying Fury is good for once per fight. **Phoenix Rebirth is good for once per run**: in a raid the ashes will do one rising, however many phases follow, which is worth knowing before you plan around a second. Either way they are tried in that order, so a hero wearing both sets and carrying an elixir has three separate deaths to get through before the Chapel is involved. That gate is the *only* way a hero dies, and the route hardly matters: an area attack, Cursed Ground, a poison tick, raid cleave splash and a berserk ally all have to queue at the same door as an honest sword.
+
+**"Full HP" means the hero's real maximum** — armour, passives and every other bonus counted in — not the bare figure their class and level would give on their own. A level-100 Warrior rises from the ashes with the plate's hit points included, which is the only arrangement under which the trick is worth the four pieces.
 
 ### Elixirs
 
@@ -414,7 +416,7 @@ A set counts **distinct pieces**. Two copies of the same ring, one in each acces
 |--------|-------|
 | 2 | +30% Fire Damage |
 | 3 | +50% Fire Resistance |
-| 4 | Resurrect at full HP on death, once per fight — see [Phylactery Elixir](#phylactery-elixir) |
+| 4 | Resurrect at full HP on death, once per run — see [Phylactery Elixir](#phylactery-elixir) |
 
 **Pieces:** Phoenix Sword, Phoenix Plate, Phoenix Crest, Phoenix Amulet
 

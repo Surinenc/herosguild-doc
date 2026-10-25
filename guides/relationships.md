@@ -849,7 +849,7 @@ A hero may be temporarily unavailable for social or personal reasons. Some can b
 | Runaway | Temporarily left the guild |
 | Mental Health | Recovering from trauma |
 
-Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty, paid up front: the override clears the absence, and only then can they be dispatched. Some reasons — like Mourning or Mental Health — cannot be overridden at all. The rule is the same at every door: an absent hero cannot be accepted onto a contract, a dungeon run or a Spire climb, and there is no side entrance.
+Forcing an unavailable hero onto a mission (when overridable) incurs a mood penalty, **and the bill arrives at dispatch**. Picking them in the party screen costs nothing; the mood comes off when you actually send the party, and the Dispatch notice itemises what it cost. Change your mind and the absence resumes, no poorer than it was — deliberation is free, which is more than can be said for most of the guild's facilities. Some reasons — like Mourning or Mental Health — cannot be overridden at all. The rule is the same at every door: an absent hero cannot be accepted onto a contract, a dungeon run or a Spire climb, and there is no side entrance.
 
 #### What It Costs Them
 
@@ -873,7 +873,9 @@ Even available heroes may refuse specific missions:
 
 | Reason | Trigger | Severity |
 |--------|---------|----------|
-| Rival Conflict | Rival is on the team | Soft |
+| Blood Feud | A sworn enemy is on the team | Hard (no override offered) |
+| Rival Conflict | Rival is on the team | Hard |
+| Cheated | Someone who wronged them is on the team | Soft |
 | Ex Conflict | Ex-partner is on the team | Soft |
 | Enemy Conflict | Someone they hate is assigned | Hard |
 | Too Exhausted | Energy critically low | Soft |
@@ -885,6 +887,8 @@ Even available heroes may refuse specific missions:
 | Equipment Missing | Favourite or required gear unavailable | Soft |
 
 **Soft** refusals can be overridden with a mood penalty. **Hard** refusals cannot — the hero simply will not go.
+
+**A hard objection is asked about first.** Before the picker looks at whether a hero is tired, gloomy or frightened, it looks at who else is going: a **Blood Feud, Rival or Enemy** in the party outranks every milder reason and is the one the card shows. Being in a bad mood has never once stopped anyone from also holding a grudge, and a card that mentioned only the mood would be putting sworn enemies in the same party with a straight face. Suggest Party reads the same order, so it declines to pair them in the first place.
 
 ### Location Trauma
 
@@ -996,10 +1000,10 @@ Each keepsake carries exactly one bonus, sentiment being specific:
 | Kind | Effect | Example |
 |------|--------|---------|
 | **Mood floor** | Permanent mood modifier (adds to mood baseline) | +3 mood floor |
-| **Combat** | Percent bonus to crit chance, dodge, or life steal | +3% crit chance |
+| **Combat** | Percent bonus to crit chance, **DEX** or life steal | +3% crit chance |
 | **Resist** | Fire, cold and lightning land on the same resist stats your gear uses, so a keepsake and a ring add together rather than arguing. A *general* resist keepsake, having no stat to land on, reduces damage taken instead | +5% fire resist |
 
-Combat and resist bonuses appear in the hero's Active Effects panel, labelled as keepsakes; mood-floor bonuses sit among their thoughts as long-lived comforts. Each keepsake counts once, however many times it turns up, so a trinket that somehow arrives twice makes a hero sentimental rather than twice as lucky.
+The DEX kind is the one that catches people out: it is percent **DEX**, and dodge follows from DEX by way of [evasion](combat.md#evasion) rather than being granted directly — grandmother's ring makes a hero a little quicker, not a little harder to hit, and the difference shows up in the arithmetic. Combat and resist bonuses appear in the hero's Active Effects panel, labelled as keepsakes; mood-floor bonuses sit among their thoughts as long-lived comforts. Each keepsake counts once, however many times it turns up, so a trinket that somehow arrives twice makes a hero sentimental rather than twice as lucky.
 
 ### Limits
 

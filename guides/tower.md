@@ -104,14 +104,18 @@ Environments cycle after floor 100. The Guild Clerk has noted that parties who s
 
 Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in the Guild Clerk's assessment, "optimistic given the circumstances" — but when you're on floor 47 with three wounded heroes, you'll pay anything.
 
+**The price is a share of what the climb is earning.** Each ware costs a multiple of the average gold an ordinary combat floor pays at that height — not a figure on a label. The merchant has studied the party's purse rather more closely than the party has.
+
 | Item | Price | Effect |
 |------|-------|--------|
-| Healing Potion | 25g | Restore 15% of max HP to one hero |
-| Greater Healing Potion | 60g | Restore 30% of max HP to one hero |
-| Elixir of Vigor | 40g | Restore 25% of max HP to all heroes |
-| Antidote | 15g | Cure poison and restore 5% of max HP to all heroes |
+| Healing Potion | 0.5 × one floor's gold | Restore 15% of max HP to one hero |
+| Greater Healing Potion | 1.2 × one floor's gold | Restore 30% of max HP to one hero |
+| Elixir of Vigor | 1.0 × one floor's gold | Restore 25% of max HP to all heroes |
+| Antidote | 0.3 × one floor's gold | Cure poison and restore 5% of max HP to all heroes |
 
-Every heal is a share of the hero's own maximum, gear and passives included, so the potions keep pace with the heroes drinking them. A level-100 Warrior on floor 90 is not going to be impressed by fifty hit points, and the merchant knows it.
+The reference floor is always a **regular** one — a boss floor nearby would inflate the whole stall — and the sum is rounded to two significant figures, merchants being disinclined to quote anything that sounds calculated. **A stall's prices are set when it appears and do not move however many times you look at them.** The next stall prices its wares afresh, which is as close to haggling as the Spire gets.
+
+Every heal is a share of the hero's own maximum, gear and passives included, so the potions keep pace with the heroes drinking them. A level-100 Warrior on floor 90 is not going to be impressed by fifty hit points, and the merchant knows it. Neither, as the price makes clear, is the merchant.
 
 ---
 

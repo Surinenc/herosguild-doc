@@ -76,6 +76,8 @@ From there, it behaves like any other mission:
 
 That includes the party cap: a chain step takes as many heroes as an ordinary contract of the same star rating — **five** at 1–2★ and **eight** from 3★ — so a late story step is not fought shorthanded on a technicality. See [Party Size](dungeons.md#party-size).
 
+**The level it is fought at depends on the category.** A **weekly bounty** or **class** step rises to meet your guild: its monsters come out at the **average level of your best eight living heroes**, or the level printed on the step, whichever is higher. A bounty posted against level-twenty-four goblins does not remain a level-twenty-four goblin problem once the roster has spent a year getting good at goblins. **Story** steps keep their written level, being paced with the story rather than with you.
+
 **If you ignore the step for a day** — it rolls onto tomorrow's board unchanged. Chain progress doesn't decay.
 
 **If the party fails the step mission** — no chain progress is lost. The same step reappears on the next board roll. You retry until you succeed. (The Guild Clerk considers this generous. The heroes, less so.)
@@ -117,6 +119,8 @@ The Quest Log does **not** list locked chains or what it would take to open them
 | Special hero (finale) | 2 chains | — | — |
 
 Two details that catch people out. **Story and class chains pay their gold on the steps, not the finale** — the finale is where the named item, the recipe and the reputation live, and opening it expecting a purse is a disappointment. And **story reputation arrives at every step**, climbing as the chain goes (the Void Rift pays 300 / 350 / 400 / 450 / 600 on the way to a 2,500 finale), rather than landing in one lump at the end. The two rank-D chains, the Founding Blade and the World Tree Pact, pay no reputation at all — they trade it for the recipe and the two gems.
+
+**Every step pays a contract's gold at the level it is fought at**, and the quest's own written reward lands on top of that. For weekly bounties and class chains, whose level climbs with the guild, so does the purse: a reward that holds still while the roster doesn't stops being a reward and becomes a tip, and an insulting one.
 
 Class chains are the game's main reliable source of class-restricted named gear and targeted skill gems. Weekly bounties are the most predictable source of high-rarity random loot. Story chains are where the singular, named, plot-relevant items live.
 

@@ -22,7 +22,7 @@
           first heading, giving every page two <h1> elements
         - dropped <h2 class="project-tagline"> — it reprinted the site-wide
           description on all twenty guide pages
-        - added the Steam link below
+        - added the Steam and Discord links below
         - added a link back to the index, in the banner and the footer, on
           every page under /guides/ (the index itself would link to itself)
       Everything else is the theme's, untouched.
@@ -33,6 +33,9 @@
       {% endif %}
       {% if site.steam_app_id %}
         <a href="https://store.steampowered.com/app/{{ site.steam_app_id }}?{{ site.steam_utm }}" class="btn" target="_blank" rel="noopener">Wishlist on Steam</a>
+      {% endif %}
+      {% if site.discord_invite %}
+        <a href="{{ site.discord_invite }}" class="btn" target="_blank" rel="noopener">Join the Discord</a>
       {% endif %}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>

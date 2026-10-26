@@ -17,6 +17,11 @@ theme: jekyll-theme-cayman
 steam_app_id: 4268730
 steam_utm: "utm_source=wiki&utm_medium=referral&utm_campaign=player_guide"
 
+# Discord invite in the page banner (_layouts/default.html). A permanent
+# invite, so it does not need revisiting; if it is ever replaced, replacing it
+# here changes every page at once.
+discord_invite: https://discord.gg/5GFVYWD2em
+
 google_site_verification: ARD0dKlvNrJbWupErIcjZHEMV-9IOiJWJBQQNbtTRII
 
 plugins:

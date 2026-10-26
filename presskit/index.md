@@ -132,12 +132,15 @@ and stream coverage. There is no embargo and no conditions.
 ## Links
 
 - **Steam** — [store.steampowered.com/app/4268730](https://store.steampowered.com/app/4268730/Heros_Guild/)
+- **Discord** — [discord.gg/5GFVYWD2em](https://discord.gg/5GFVYWD2em)
 - **Player guide** — [the full documented wiki](../)
 - **Bug reports** — [GitHub issues](https://github.com/Surinenc/herosguild-doc/issues)
 
 ## Contact
 
 **Press and creator enquiries:** urummi@gmail.com
+
+Or find us on [Discord](https://discord.gg/5GFVYWD2em), which is usually quicker.
 
 Keys are available on request to anyone covering the game, including small
 channels. Just ask.

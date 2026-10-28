@@ -280,6 +280,10 @@ Heroes can be in various states that affect what they can do. Think of it as a v
 | Training | At training yard | ✗ | ✗ |
 | Dead | Permanently deceased | ✗ | ✗ |
 
+**A rest can be cut short.** A hero you sent to bed carries a **Wake up** button on their page, beside Feed. Pressing it returns them to Ready on the spot, at **−3 mood for two days** and the thought *"Dragged out of bed before I was done."* Nobody has ever been woken early and called it a kindness. The rest days they had already banked stay banked; the night you interrupted earns nothing, since only a hero still in bed at the day change is credited with one.
+
+Only a rest **you** ordered can be ended this way. Detox, a bed in the Infirmary under a Cleric's eye and a mental break all put a hero into the same Resting state, and each keeps its own way out — none of which is a button.
+
 ---
 
 ## Body & Injury System

@@ -216,9 +216,13 @@ Crafting follows seven steps in sequence. Missing any of them produces results r
 
 A crafter works **one job at a time** and works **through** the list: each job begins the moment the one before it ends, and every job finished by dawn comes off the bench, in order. A hero with four two-hour trinkets queued hands over all four in a day's work. A job that runs past dawn carries over and finishes on the next day that has room for it.
 
-This holds across every station the hero is assigned to. They clear the active bench, then that bench's queue, then move to the next bench with work waiting on it — which means a crafter assigned to the Forge and the Alchemy Lab both is a crafter who will get to the Alchemy Lab eventually, in the way that sentence implies. The Crafting screen lists the finishing times it expects, and they are the times dawn will honour.
+**A bench does one job at a time, and so does a hero.** The jobs belong to the crafter rather than to the bench, which settles the awkward cases: an idle bench takes the first job in its queue whose crafter is free, even when that is somebody else's work, and a crafter who finishes picks up their own next waiting job on whichever idle bench is holding it — the stations after the one they have just left, in alphabetical order, round the houses and back to the start. A hero assigned to the Forge and the Alchemy Lab both will get to the Alchemy Lab eventually, in the way that sentence implies. The Crafting screen lists the finishing times it expects, and they are the times dawn will honour.
+
+**Work waiting in a queue does not tie the hero down.** A hero is occupied only while a job is actually in their hands. One with three jobs queued behind somebody else's is free to take a contract, walk into a dungeon or be sent to bed; the work waits for them, and the queue says as much.
 
 One pair of hands, one job at a time, in order. The day is merely long enough to see more than one of them through.
+
+**Not everyone can be put to work.** The conditions that keep a hero out of a party keep them away from the bench as well: kept in the ward, in detox, in the middle of a mental break, or away on an absence of any kind. Such a hero cannot be assigned, and a job already in their hands does not advance by a minute while they are gone — it waits, with the reason written beside it in the queue. The forge is not an exemption from the Infirmary, whatever the Quartermaster has been heard to argue.
 
 ### Assistants
 

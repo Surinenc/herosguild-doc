@@ -408,9 +408,11 @@ A set counts **distinct pieces**. Two copies of the same ring, one in each acces
 |--------|-------|
 | 2 | +25% Dark Damage |
 | 3 | Killed enemies have a 20% chance to rise as your minions |
-| 4 | Death Pact: sacrifice a minion to heal 50% HP |
+| 4 | Death Pact: a minion that dies explodes for 50% of its own maximum HP against **every** enemy |
 
 **Pieces:** Staff of Death, Necrolord Robe, Skull Helm, Soul Amulet
+
+Death Pact is not a button. Every minion that dies while the four pieces are worn goes off on the spot, for half its own maximum health, against every enemy still standing — no choice in the matter and no warning to the minion, which is rather the arrangement one signs up for in necromancy. With the three-piece raising fresh minions from the fallen at 20%, a Necromancer in the full set runs a small, enthusiastic and extremely short-lived workforce.
 
 ### Phoenix Rebirth (Legendary)
 

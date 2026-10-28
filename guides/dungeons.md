@@ -169,6 +169,10 @@ Distinct environments, each with unique enemies and atmosphere. The dungeon does
 
 ## Expedition Types
 
+**A dungeon run ends the day.** Clearing the place or pulling out of it both roll the night over, so a run is a day's work and not an errand squeezed in before supper — the Dungeon Board's first tip says so, and it is worth believing the first time rather than the third. A **wipe** is the exception: after a wipe the day does not turn, there being nobody left to notice the sun going down.
+
+**The report comes before the night.** When the party gets back you read the **Dungeon Report** first; the evening — the Infirmary, the Nightshift Ledger, whatever scenes the day produced — waits behind it and arrives when you leave, by any route but the main menu. The dead are counted before the living are put to bed, which is the correct order and the Guild Clerk will hear no argument about it.
+
 ### Supervised Expeditions
 
 You watch the dungeon crawl in real-time (one per night). It's like being there, except you can't be hurt. The ideal management position.

@@ -314,7 +314,9 @@ When exploring dungeons:
 
 ### Guild Vault
 
-Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers six type filters: **All / Weapons / Armor / Accessory / Consumables / Materials**, plus bulk actions.
+Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers seven type filters: **All / Weapons / Armor / Accessory / Consumables / Materials / Runes**, plus bulk actions.
+
+**Materials** is the odd one out: it is not a list of items at all but the guild's crafting stock, grouped by tier in their rarity colours with the quantities held, the Workshop's crafting currencies after them, and, on hover, where each thing is found. Nothing held means no row, so the tab is a statement of what you have rather than a catalogue of what exists. The **Runes** tab holds the Vault's own Material items, runes being things a hero can be given rather than things a forge consumes.
 
 ### Item Actions
 
@@ -358,6 +360,8 @@ The times are worked out the way dawn works them out: a crafter takes their jobs
 ## Keyboard Shortcuts
 
 The interface is mouse-first, and the keyboard is mostly decorative. **Escape** does not close whatever happens to be open; it dismisses the smaller dialogs — confirmations, the save/load window, the Quarters pickers and their relatives — cancels a group rename in raid setup, and dismisses the credits reel. On the guild ledger itself, where there is nothing smaller to dismiss, **Escape** does the opposite and *opens* Settings — the same door the ⚙ button uses. It defers to whatever is already on screen: a pop-up or a tip keeps the key for itself, a text field keeps it while you are typing, and holding the key down achieves nothing. **Any key at all** skips the intro video, which is the one place the game is entirely relaxed about what you press. Settings, Achievements, and Beta Chat must be closed with their close buttons, like doors in a well-run building.
+
+**On a scene that invites you to click anywhere to continue** — a burial, a crisis announcement, a legendary item's ceremony — **Enter**, **Space** or **Escape** will do the job as well as the mouse, once the scene has finished arriving. Holding the key down achieves nothing, a tip or dialog open over the scene keeps the key for itself, and a text field keeps it while you are typing. The guild has learned that a solemn moment nobody can dismiss stops being solemn with remarkable speed.
 
 The **Custom Dungeon editor** is the exception, being a place where people do actual work: **Escape** steps back out of whatever you were doing (patrol placement first, then the active tool, then the selection), and **Delete** or **Backspace** removes the selected room or corridor without asking whether you're sure. Architects learn to be sure.
 

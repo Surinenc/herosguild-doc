@@ -41,6 +41,16 @@ Every round resolves in the same four phases, in the same order, without excepti
 3. **Actions** - Each combatant acts in initiative order
 4. **End of Turn** - Buffs/debuffs tick down
 
+### When a Fight Runs Out of Time
+
+An unsupervised contract is settled without you, and the resolver is not permitted to sit there all week: a mission fight is allowed **100 turns** and is then stopped where it stands. If every enemy is dead, or more heroes are left standing than enemies, it is scored a win; otherwise the party falls back. The combat log says as much in plain words and names whoever is still upright, with the health they had left — so an ordinary hit landing just before the word *Victory* is not mistaken for the blow that finished anything.
+
+A hundred turns is a great many turns. Reaching the limit means two sides swinging at one another to no particular effect, which in practice means a party badly short of damage for the work, and is worth reading the report over rather than shrugging at. **Supervised** expeditions, dungeon runs and Spire climbs have no such limit: you are standing there, and the fight lasts exactly as long as it lasts.
+
+### Who Gets the Kill
+
+Every kill is credited through the same gate, whatever did the killing — a basic swing, a skill, an area attack, a chain or splash hit, an off-hand follow-up, an extra strike, reflected damage, Thorns, a Dragon's Fury or a Spell Echo. All of it counts towards the hero's kill tally and towards the tally their main-hand weapon quietly keeps of its own. The combat log names each enemy that falls on the line that felled it, which means the record and the reading of it agree — a rarer arrangement in the guild's paperwork than anyone would like to admit.
+
 ### Available Actions
 
 | Action | Description |

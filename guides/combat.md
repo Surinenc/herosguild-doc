@@ -43,9 +43,9 @@ Every round resolves in the same four phases, in the same order, without excepti
 
 ### When a Fight Runs Out of Time
 
-An unsupervised contract is settled without you, and the resolver is not permitted to sit there all week: a mission fight is allowed **100 turns** and is then stopped where it stands. If every enemy is dead, or more heroes are left standing than enemies, it is scored a win; otherwise the party falls back. The combat log says as much in plain words and names whoever is still upright, with the health they had left — so an ordinary hit landing just before the word *Victory* is not mistaken for the blow that finished anything.
+An unsupervised contract is settled without you, and the resolver is not permitted to sit there all week: a mission fight is allowed **200 actions** — individual turns rather than rounds, so something like sixteen to twenty rounds for a full party — and is then stopped where it stands. Only a field with every enemy dead counts as a win. If anything is still upright when the time runs out, the heroes fall back and the fight is lost. The combat log says as much in plain words and names whoever is still standing, with the health they had left — so an ordinary hit landing just before the word *Victory* is not mistaken for the blow that finished anything.
 
-A hundred turns is a great many turns. Reaching the limit means two sides swinging at one another to no particular effect, which in practice means a party badly short of damage for the work, and is worth reading the report over rather than shrugging at. **Supervised** expeditions, dungeon runs and Spire climbs have no such limit: you are standing there, and the fight lasts exactly as long as it lasts.
+Two hundred actions is a great many actions. Reaching the limit means two sides swinging at one another to no particular effect, which in practice means a party badly short of damage for the work — and it costs more than the one fight, because **a lost fight ends the contract where it stands**. Whatever else was on the docket goes unattempted and the party comes home. The mission board's success estimate plays it the same way, so the odds you read before dispatching already have the clock in them. **Supervised** expeditions, dungeon runs and Spire climbs have no such limit: you are standing there, and the fight lasts exactly as long as it lasts.
 
 ### Who Gets the Kill
 
@@ -159,12 +159,28 @@ The heroes themselves are under no such handicap. When a hero picks a skill, eac
 ### Armor and Damage Reduction
 
 ```
-Armor Reduction = sqrt(Armor × 2) × 100 / (50 + Enemy Level × 0.5)
+Armor Reduction = Armor / (Armor + K),  where K = 0.11 × (50 + Enemy Level ÷ 2)²
 ```
 
-Capped at 95%. Minimum damage dealt is always 1. The square root in the formula ensures diminishing returns, which is the universe's way of telling Warriors that a third piece of plate armor is not, in fact, the answer to everything.
+Armour is for **physical** damage and nothing else. A fireball is the resistances' problem; the breastplate's contribution there is to keep it warm.
 
-This is the hero side of the ledger. Enemy armour runs on the same saturation curve as hero resistances — `Armor / (Armor + 100)` — so armour-shredding effects pay off most against the heavily plated and barely register on a goblin.
+Minimum damage dealt is always 1, and the reduction needs no cap because it can never arrive at one — the curve climbs towards total immunity in the manner of a tax threshold, forever approaching and never quite reaching.
+
+K is the enemy's half of the arithmetic, and it grows with the square of their level. The same plate therefore buys steadily less as the opposition gets bigger:
+
+| Armor | vs level 10 | vs level 50 | vs level 100 |
+|------:|------------:|------------:|-------------:|
+| 200 | 38% | 24% | 15% |
+| 400 | 55% | 39% | 27% |
+| 800 | 71% | 56% | 42% |
+| 1,600 | 83% | 72% | 59% |
+| 3,200 | 91% | 84% | 74% |
+
+Doubling the armour never doubles the protection, which is the universe's way of telling Warriors that a third piece of plate is not, in fact, the answer to everything. You needn't work the curve yourself: the Armor row on a hero's Stats tab prints the rating and the percentage it currently buys, and where the game knows which fight you are asking about, the level it measured that against.
+
+Armour, an ascendancy's damage reduction, the matching resistance and the passive tree's physical reduction are **multiplied together** rather than added, so each layer eats a share of whatever the last one let through. Four separate 50% effects still let 6% of the hit through, which is not the same thing as none of it.
+
+This is the hero side of the ledger. Enemy armour runs the same curve with the constant pinned at 100 — `Armor / (Armor + 100)` — instead of scaled to the attacker's level, so armour-shredding effects pay off most against the heavily plated and barely register on a goblin.
 
 **Defense Modifiers:**
 - Defending: 50% damage reduction
@@ -676,7 +692,7 @@ All heroes knocked out. The dungeon has, in the technical sense, won:
 
 ### Fled
 
-Retreat — the tactical decision the Guild Clerk officially discourages and quietly recommends. Heroes do not run away on their own initiative; leaving is one of the few things you decide for them, either with the Retreat button or by spending command points on a Tactical Retreat:
+Retreat — the tactical decision the Guild Clerk officially discourages and quietly recommends. Heroes do not run away on their own initiative; leaving is one of the few things you decide for them, and the Retreat button costs nothing but the floors you walk away from:
 
 - Party exits alive
 - Loot and experience already earned are kept — partially, and the Clerk declines to be more specific

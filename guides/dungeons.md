@@ -177,19 +177,20 @@ The common material always; from monster level **15** there is a **20%** chance 
 
 ## Expedition Types
 
+There are two, and which one you are doing is decided by the door you went through rather than by a setting. The **dungeon menu** runs dungeons, which you lead in person. The **Mission Board** posts contracts, which you hand to a party and read about in the morning. Nothing on either screen offers to swap one for the other.
+
 **A dungeon run ends the day.** Clearing the place or pulling out of it both roll the night over, so a run is a day's work and not an errand squeezed in before supper — the Dungeon Board's first tip says so, and it is worth believing the first time rather than the third. A **wipe** is the exception: after a wipe the day does not turn, there being nobody left to notice the sun going down.
 
 **The report comes before the night.** When the party gets back you read the **Dungeon Report** first; the evening — the Infirmary, the Nightshift Ledger, whatever scenes the day produced — waits behind it and arrives when you leave, by any route but the main menu. The dead are counted before the living are put to bed, which is the correct order and the Guild Clerk will hear no argument about it.
 
-### Supervised Expeditions
+### Dungeon Expeditions
 
-You watch the dungeon crawl in real-time (one per night). It's like being there, except you can't be hurt. The ideal management position.
+The expedition you lead yourself. You start it from the dungeon menu with **⚔️ Start Expedition**, and from then on you pick the room, you watch the fight and you decide when to leave. A dungeon is always played this way — there is no option to post one off and there is no box to tick. You get one a day, because a run ends the day.
 
-**Benefits:** The advantages of watching things go wrong in real time rather than reading about it afterwards:
-- +25% XP bonus
-- +20 to injury rolls (safer)
-- +10 to death saves — see [Death Saves](heroes.md#death-save-modifiers)
-- Can order retreat to save heroes — the option an unsupervised run does not have
+**What being there is worth:** The advantages of watching things go wrong in real time rather than reading about it afterwards:
+- **+20 to the injury roll** of any hero who falls, which is roughly the difference between a fortnight in the Infirmary and a few days of complaining
+- **+10 to their death save** — see [Death Saves](heroes.md#death-save-modifiers)
+- Can order retreat to save heroes — the option a dispatched party does not have
 - Use Command Points for interventions when the heroes' own judgment proves insufficient
 - **You set the tactical preset, and can change it mid-fight**
 
@@ -220,11 +221,11 @@ The preset is the standing instruction your heroes fight by. It decides how they
 
 The last column is the same five times, and that is not a misprint. Whatever the preset, a hero's blow goes to an enemy it can kill — the healthiest of those, so a big hit isn't squandered on a sliver — and when nothing is near enough to dying, to whoever needs the fewest blows. Armour, magic resistance and the creature's own resistances all go into that count, so the Fire Elemental that halves every spell is left standing a while longer while the Mage deals with something a spell actually hurts. The preset decides what your heroes reach for; arithmetic decides who gets it.
 
-### Unsupervised Expeditions
+### Board Contracts
 
-Auto-resolved on the strength of the party and nothing else. You send them in, go to bed, and hope for the best — which is, frankly, how most guild management works.
+The expedition you do not attend. A contract taken from the [Mission Board](#mission-board) and sent off with **Dispatch** is settled overnight on the strength of the party and nothing else. You send them in, go to bed, and hope for the best — which is, frankly, how most guild management works.
 
-Worth knowing before you rely on it: an unsupervised party **always fights as Balanced**. The preset is a supervised-run control and is not offered for missions, so a roster you have carefully tuned for an aggressive push will quietly fight an even-handed fight while you sleep. Combined with the lost XP, injury and death-save bonuses above, the absent night is more expensive than it looks.
+Worth knowing before you rely on it: a dispatched party **always fights as Balanced**. The preset is a control on the dungeon-run screen and the Board has nowhere to set it, so a roster you have carefully tuned for an aggressive push will quietly fight an even-handed fight while you sleep. Add the injury and death-save margin the party does not get, and the absent night is more expensive than it looks.
 
 ---
 
@@ -308,7 +309,6 @@ The dungeon doesn't open itself up for inspection. Knowledge costs movement:
 - At start, the entrance and all rooms **directly connected to the entrance** are revealed; rooms beyond that one-hop radius stay dark until you reach them
 - Rooms reveal as you explore, which is both discovery and commitment
 - Creates tension and the occasional navigational dispute
-- Supervised mode helps scouting; Rangers help more
 
 ---
 
@@ -482,7 +482,6 @@ Axis shifts accumulate along three axes — Valor ↔ Cunning, Wealth ↔ Glory,
 |--------|-------|
 | Higher star rating | Better tier chance |
 | Higher monster level | Better drops |
-| Supervised expedition | +20% quality |
 | High LCK stat | % better drops |
 | Secret rooms | +1 tier bonus |
 
@@ -513,7 +512,7 @@ A **death save** determines survival (see [Heroes Guide](heroes.md) for full det
 ```
 Base: 50% (clamped 5-95%)
 + Cleric in party: +15%
-+ Supervised mission: +10%
++ You are there (any dungeon run): +10%
 + Is a Cleric (Divine Favor): +10%
 + Lucky trait: +5%
 + VIT: +1% per 5 VIT (max +5%)
@@ -568,7 +567,7 @@ Mission slots come from two sources:
 - **Guild Hall level** — L1=2 slots, L2=4, L3=6, L4=8, L5=10
 - **Guild rank bonus** — F/E=+0, D/C=+1, B/A=+2, S=+3
 
-Add the two together to get your slot count. So a rank C guild with a level 3 Guild Hall has 6 + 1 = 7 slots; a rank S guild with a level 5 Legendary Hall caps out at 10 + 3 = 13. Only one expedition can be supervised per night regardless of slot count.
+Add the two together to get your slot count. So a rank C guild with a level 3 Guild Hall has 6 + 1 = 7 slots; a rank S guild with a level 5 Legendary Hall caps out at 10 + 3 = 13. The slots are for **contracts** — a dungeon you lead takes none of them, and there is only ever one of those in a day in any case.
 
 ---
 
@@ -636,14 +635,14 @@ Access the rotation from Mission Board → Heroic filter (🔥), which counts do
 ### Mid Game
 
 - Match hero level to monster level; sending level 20 heroes into level 40 monsters is an advanced topic in injury management
-- Use supervised mode for difficult runs — the +25% XP and retreat option are worth one night's focus
+- Take the dangerous work into a dungeon yourself rather than dispatching it — the retreat order, the Command Points and the mid-fight preset change are only on that screen
 - Save command points for emergencies; spending all three on the first encounter is a decision with consequences by the third floor
 - Farm specific environments for materials — the dungeon type determines what you bring home
 
 ### Late Game
 
 - Tackle ⭐⭐⭐⭐⭐ dungeons for best rewards; the risk scales with the stars, and so do the returns
-- Use parallel expeditions to maximize resources — every unsupervised slot running overnight compounds Guild income
+- Use parallel expeditions to maximize resources — every contract slot running overnight compounds Guild income
 - Build specialized teams for environments — fire resistance teams for Volcano, Cleric-heavy teams for Crypts, Rogue-forward teams for Ruins
 - Prepare for Heroic Dungeons (see [Heroic Dungeons Guide](heroic-dungeons.md)); the modifiers require specific builds, and finding out mid-dungeon is the educational approach
 

@@ -296,11 +296,15 @@ Costs scale with the total level of heroes present (Σ hero levels). Mood effect
 | Activity | Cost | Mood Effect (baseline) | Cooldown |
 |----------|------|------------------------|----------|
 | Buy Rounds | 5g × Σ hero levels | +2 mood, and only to heroes who enjoy drinking | None (blackout risk daily) |
-| Grand Feast | 50g + 10g × Σ hero levels | +10 mood, **+8 recreation to everyone** | 1 day |
+| Grand Feast | 50g + 10g × Σ hero levels | +4 mood, and **half of everyone's health back** | 1 day |
 | Gambling | Bet 50–500g | +5 mood (win or lose) | None |
-| Bard Night | 7.5g × Σ hero levels | +8 mood | 3 days |
+| Bard Night | 7.5g × Σ hero levels | +3 mood, and only to heroes who enjoy music | 3 days |
 
 The sums add up faster than they look: a feast for thirty-five level-58 heroes comes to a little over 20,000 gold, which is a great deal of gold and also, the Guild Clerk points out, a great many heroes. Morale is worth paying for. It is worth knowing the price first.
+
+**A feast is the guild's cheapest field hospital.** Every hero present gets **50% of their maximum HP** back, and a hero in the Injured state who reaches full health on a plate of roast goose is discharged on the spot, provided they aren't having a mental break about something. On top of that: **+20 social**, **+10 energy**, **+8 recreation** and two drinks each, whether they wanted them or not. The mood is **+4** — **+8** for the Greedy and the Passionate, and flatly **0** for an Ascetic, who attends on principle and enjoys nothing. There is no bond handed out for attending; the friendships a feast produces come from its own social events, which is to say from the evening rather than from the catering.
+
+**Bard Night only reaches people who like music.** Everybody present recovers **+15 social** for sitting there, but the recreation and the mood land solely on heroes who hold **Music** as a pastime: **+3 for three days**, or **+6** for the Passionate and the Cheerful. For everyone else it is a long evening spent next to a lute. The bard also introduces people — **up to three random pairs** gain **+3 opinion** of each other, and there is a **50%** chance the night leaves one **Attracted** bond behind it, which is rather more than the guild was paying for.
 
 **Buy Rounds pays nobody who didn't want a drink.** The mood only lands on heroes who hold Drinking as a pastime, and it lands as **+2 for two days** — rising to **+6** for the Gregarious, falling to **-1** for the Reserved, and to **-3** for an Ascetic, whose principles outrank both. Everybody present gets the five points of drunk regardless, out of politeness, and gains nothing from it but the headache.
 
@@ -1007,6 +1011,20 @@ Traveling merchants visit your guild periodically, offering items and services. 
 **Merchant Types:** Armorer, Alchemist, Jeweler, Exotic Goods, Black Market, Collector, Wanderer, and Master Crafter. Higher guild reputation attracts rarer merchants (Master Crafter at 5,000+ rep, Exotic Goods at 2,000+).
 
 **Services:** Repair equipment, sharpen weapons, identify items, custom brewing, gem socketing, item upgrading, and more — costs vary by merchant type.
+
+**Caravans sell. They do not buy.** Whatever the Collector and the Black Market may look like they are for, there is no selling anything to a caravan; the Materials Market and the Guild Shop are where goods turn back into gold.
+
+**The mood is a price, not a stock list.** Every caravan arrives in one of five moods, printed on its card, and the mood multiplies everything it is asking:
+
+| Mood | What you pay |
+|---|---|
+| 😰 Desperate | about **40% off** — something has gone badly wrong for them, and it is not your business to ask what |
+| 😊 Friendly | about **10% off**, and they will chat |
+| 🎭 Mysterious | roughly the going rate, wandering a little either way |
+| 🤨 Shrewd | about **10% more**; they watch the scale |
+| 💰 Greedy | about **40% more**, with a smile that costs extra |
+
+The goods are the same whichever mood turned up — a Greedy caravan has no better stock than a Desperate one, only better margins. Every purchase you make from a caravan shaves a further **1%** off its prices for the rest of its stay, so a big order is cheapest placed in one visit and in several trips. The price on a ware's tooltip is what **this** caravan wants for it, not what the Guild Shop considers it worth, which are two different numbers and only one of them is on offer.
 
 ---
 

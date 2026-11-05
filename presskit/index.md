@@ -98,7 +98,7 @@ Most management games model buildings and supply chains. Hero's Guild models
   cleared by its author first and carries a proof bound to the dungeon's layout
 
 Every system above is fully documented in the public
-[player guide](../) — twenty-one guides, written and kept current against the
+[player guide](../) — twenty-two guides, written and kept current against the
 build.
 
 ## Features

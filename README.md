@@ -11,6 +11,7 @@ Welcome to the official documentation for **Hero's Guild**, a tactical guild man
 ### Getting Started
 - [Quick Start Guide](guides/getting-started.md) - Your first steps in Hero's Guild
 - [Interface Overview](guides/interface.md) - Understanding the game UI
+- [Custom Difficulty](guides/custom-difficulty.md) - Sandbox Mode: twenty-one dials, and the one-way door you go through to reach them
 
 ### Core Systems
 - [Heroes & Classes](guides/heroes.md) - The 6 hero classes and their abilities

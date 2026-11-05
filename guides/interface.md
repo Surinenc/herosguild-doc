@@ -414,6 +414,8 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 The game files all of this, along with Fullscreen and Resolution, under **The View**.
 
+Settings carries two tabs while a game is loaded: **⚙ General**, everything below, and **⚖ Sandbox**, the guild's twenty-one difficulty dials. The Sandbox tab shows them all at their defaults before you commit to anything, and committing is permanent — see [Custom Difficulty](custom-difficulty.md).
+
 **Settings do not take effect until you keep them.** The bar at the foot of the screen carries **Save settings**, and if you try to leave with something changed — Back, Cancel, or either of the doors below — the game asks first: **Stay**, **Discard** or **Save**. Discard puts back what was saved, the volume and the window's size and fullscreen state included, so a slider you dragged while listening and then thought better of leaves no trace.
 
 ### Gameplay

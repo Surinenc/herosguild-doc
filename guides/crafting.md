@@ -255,6 +255,8 @@ When crafting completes, quality is rolled:
 - A hero carrying the **Master's Hand** inspiration adds **+15**, which is the largest single modifier on this list and lasts three days. It arrives by its own route — see [Inspirations](relationships.md#inspirations) — and cannot be arranged on demand, which the Guild Clerk considers the whole point of inspiration
 - An assistant adds nothing to quality; they hold things, and the things are held
 
+**Potions and food skip the roll entirely.** Anything that comes out of the Alchemy Lab or the Kitchen as a consumable is Normal, every time: no quality in the completion line, no quality bonus in its sell value, and no Masterwork entry to put in the ledger. A potion's printed effect is its real effect — see [Item Quality](equipment.md#item-quality) — so a level-100 alchemist brews the same bottle as a beginner, only faster and without setting fire to anything. What the skill buys at that bench is throughput and the recipe list, not a better drink.
+
 ### Crafting Failures
 
 Low skill crafters can fail, with consequences ranging from "mildly disappointing" to "where did the Forge go?":
@@ -285,6 +287,8 @@ Quality bonus is a percentage of total material cost:
 | Superior | +20% |
 | Exceptional | +30% |
 | Masterwork | +50% |
+
+Potions and food, having no quality, always sell at the Normal line.
 
 Material cost is calculated using the sell anchor per tier: Common 100g, Uncommon 1,000g, Rare 10,000g, Epic 100,000g, Legendary 1,000,000g. A Masterwork Legendary item sells for considerably more than its component materials cost — which is, finally, a financial argument for patience.
 
@@ -543,7 +547,7 @@ Workshop levels 2–10 take 10% per level above 1 off the gold cost of **Reroll 
 
 ### Late Game
 
-1. **Masterwork Crafters** - Skill level 100 guarantees quality rolls of 50+, which eliminates Poor and Normal outcomes entirely
+1. **Masterwork Crafters** - Skill level 100 guarantees quality rolls of 50+, which eliminates Poor and Normal outcomes entirely — on gear, at least; there is no better bottle to roll for
 2. **Farm World Bosses** - The only reliable source of ⭐⭐⭐⭐⭐ recipes; no amount of research substitutes for this
 3. **Enchant Everything** - Bare high-tier gear is leaving performance on the table
 4. **Prosthetics** - Enchanted prosthetics at 125% efficiency outperform the original body part; this is, technically, a reason to be optimistic

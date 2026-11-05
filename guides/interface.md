@@ -40,6 +40,7 @@ The top bar answers the three questions you are always asking: how much money yo
 - **Day** - Current game day; the number that determines how long you have been getting into trouble
 - **Guild Rank** - Your reputation rank (F through S); the number that determines what trouble is available. Hover the cell, or tab to it, and it lays out the current rank and what it grants — roster space, mission slots, better recruits — then the next rank, the reputation still owed, and what that one grants. It will not tell you which stories open up there, on the grounds that spoiling them would be rude
 - **Settings** - Access options
+- **⏻ Quit game** - desktop builds only. It opens the same confirmation Settings does, so leaving is one click from anywhere rather than a trip through the options
 
 Above **100,000** the gold and vault figures are written short, in K and M, so the row keeps to one line at any text size; resting the pointer on a cell gives the exact sum, for those occasions when the exact sum is the point.
 
@@ -54,6 +55,8 @@ Your roster at a glance. The Guild Clerk designed this panel to answer the quest
 - **Illness badge** — appears when the hero is sick, coloured by severity (green under 30, amber 30-70, red past 70). The list of afflictions is on their History tab
 - **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Chosen once a day from their personality traits, so the same hero says roughly the same thing all day and something different tomorrow, much like everyone you have ever worked with
 - **Break chips** — a red **Break Risk** chip appears the moment mood falls under 25, and its tooltip names the mood and the line it has crossed rather than leaving you to guess. Should the roll go badly it is replaced by a **Mental Break** chip naming the break and the days left on it, which outranks every other social chip on the card, as these things tend to
+
+**Filtering the roster.** Three dropdowns narrow the list: **status** (Idle, In the Infirmary, Sick, Day Off, Training, On Mission, Resting, Crafting, Injured, Departing), **class**, and **stars** (1 to 5), each either *all* or one value, with **Reset filters** to clear the lot. A filter survives you walking off to the Vault and back, which is the point of it, but it is never written into the save: loading a game — the same one included — or starting a new one begins with every hero shown. A roster of forty is a different proposition once you can ask it who is merely idle.
 
 Click a hero to see details.
 
@@ -73,6 +76,8 @@ Changes based on what you've selected. The Guild Clerk considers this the most u
 - Selected hero details
 - Facility information
 - Mission details
+
+The **Chronicle** panel here carries two buttons worth knowing about: **Reports**, and beside it **Quillsworth's Handbook**. The Handbook collects every tutorial note you have already been shown, filed by topic — *Getting started, Heroes, Contracts, Dungeons raids and the Spire, Training and health, Crafting and trade, Guild life* — plus a **Common questions** section answering the five things players ask most, among them why heroes don't heal on their own and what a training cycle is. It holds **only** what you have already seen. Nothing ahead of you is given away, and Quillsworth would like credit for the restraint.
 
 ### Story Moment Scenes
 
@@ -104,6 +109,8 @@ Once the moment queues have drained, the day closes on a **summary** — everyth
 11. **Elsewhere** — what each absent hero claimed to be doing and what it cost them, plus anyone who bought what they were saving for or retired on the strength of it ([Purse & Ambition](heroes.md#purse--ambition))
 
 Fatal news goes at the top and routine record-keeping at the bottom, on the principle that the ward report should not have to compete with a funeral.
+
+**None of it is gone once dismissed.** The **Guild Events** screen keeps two tabs for reading it again: **Notices** — the pop-ups the day threw at you, new recipes, a named item found or equipped, an achievement — and **Past nights**, the Nightshift Ledger of every night that had something to report. Closing a summary too quickly is therefore a recoverable mistake, which is more than can be said for most of them.
 
 ---
 
@@ -190,6 +197,8 @@ It is the screen to open before deciding who to send, who to retire, and which o
 When you select a hero, you get a comprehensive view of everything they are, everything they own, and everything they've done. It is, in the Guild Clerk's opinion, the most informative screen in the game.
 
 Down the right-hand side, beneath Active Effects, the **Mood** panel shows its working: every thought the hero is carrying, sorted by how much it weighs, each with its stack count, its days remaining (or *ongoing*), and its signed value — and a footer doing the sum out loud, `Base 50 · Thoughts ±N · Title ±N = mood`, with *(capped)* appended when the arithmetic ran off either end of the 0–100 scale. A hero with nothing on their mind gets the line *"No active thoughts. The head is, briefly, an empty hall."*
+
+Across the top sits a headline row of five pills — **STR / DEX / INT / VIT / LCK** — reading the hero's attributes **with their gear counted**, which are the same figures the Stats tab reports rather than the bare numbers their class and level would give. The recruit window at the Tavern shows the same five, with **Max HP** among them. Neither offers a single overall combat score, on the grounds that no honest one exists.
 
 The tabs:
 
@@ -316,6 +325,8 @@ When exploring dungeons:
 
 Central storage for all items — a carefully catalogued system that heroes will bypass in favor of whatever's shiniest. The vault offers seven type filters: **All / Weapons / Armor / Accessory / Consumables / Materials / Runes**, plus bulk actions.
 
+The **Armor** filter means armour in the broad sense — chest pieces, helmets, shields, boots and gloves — rather than the chest slot alone, and the Guild Shop's item picker groups them the same way, so the two surfaces agree about what a suit of armour consists of.
+
 **Materials** is the odd one out: it is not a list of items at all but the guild's crafting stock, grouped by tier in their rarity colours with the quantities held, the Workshop's crafting currencies after them, and, on hover, where each thing is found. Nothing held means no row, so the tab is a statement of what you have rather than a catalogue of what exists. The **Runes** tab holds the Vault's own Material items, runes being things a hero can be given rather than things a forge consumes.
 
 ### Item Actions
@@ -367,6 +378,8 @@ The **Custom Dungeon editor** is the exception, being a place where people do ac
 
 The raid screen is the other exception: number keys **1–6** select groups and **Escape** cancels the selected group's queued order — see [World Boss Raids](raids.md#the-raid-interface). A few other screens hide right-click shortcuts (Mission Board, Passive Tree, Dungeon Menu), for those who like to poke things and see what happens.
 
+On the Steam desktop build, Steam's own keys work over the game: **Shift+Tab** opens the overlay and **F12** takes a Steam screenshot. The game does not claim either of them for itself.
+
 The **short notices** that report what you just sold, equipped, crafted or auto-equipped stay up for as long as they take to read — a longer sentence gets longer on screen, to a ceiling of eight seconds, so the Vault's account of twelve items equipped on eight heroes stays long enough to be an account rather than a rumour. If you have read it already, click the notice or its **×** and it leaves at once. The Mission Board's and the Workshop's notices let clicks pass straight through to the buttons underneath, on the reasonable grounds that a notice standing in front of the very button it is discussing has misunderstood its job; those two take the × only.
 
 ---
@@ -401,6 +414,8 @@ Small things that make a significant difference, provided for heroes who prefer 
 
 The game files all of this, along with Fullscreen and Resolution, under **The View**.
 
+**Settings do not take effect until you keep them.** The bar at the foot of the screen carries **Save settings**, and if you try to leave with something changed — Back, Cancel, or either of the doors below — the game asks first: **Stay**, **Discard** or **Save**. Discard puts back what was saved, the volume and the window's size and fullscreen state included, so a slider you dragged while listening and then thought better of leaves no trace.
+
 ### Gameplay
 
 - Skip Intro Video (skip the opening cinematic on New Game — the Guild Clerk takes no position on this, but does note that the intro was expensive to produce)
@@ -409,7 +424,7 @@ The game files all of this, along with Fullscreen and Resolution, under **The Vi
 
 ### Leaving
 
-Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. The two confirmations do not offer the same choices. Returning to the main menu lets you **Save and return** or **Return without saving**, the second leaving the last autosave precisely as it was — which is what you want when you loaded an old save purely to look at it. Quitting offers only **Save and quit**, on the reasoning that someone closing the game for the night rarely means to throw the evening away. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. The two confirmations do not offer the same choices. Returning to the main menu lets you **Save and return** or **Return without saving**, the second leaving the last autosave precisely as it was — which is what you want when you loaded an old save purely to look at it. Quitting offers **Save and quit** or **Quit without saving**, the second leaving the last autosave untouched. Both doors are also reachable from the ⏻ button in the top bar, which asks the same question in the same words. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
 
 **When the game saves without being asked.** At the end of each day, when you close the game, on the way into and out of a dungeon, raid or Spire run, and otherwise **every five minutes** if anything has changed since the last save. It does not save on the main menu or in the middle of a run, where there is nothing settled to copy. Clicking about a screen does not itself trigger a save, which is why a guild four thousand days old stays responsive while you read it.
 

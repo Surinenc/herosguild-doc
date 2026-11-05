@@ -151,7 +151,7 @@ Missions at 2★ and higher can carry an **environmental hazard** ([Environmenta
 
 The **success chance** shown beside the party is not an estimate in the loose sense. The realm runs the fight **20 times** through the very same resolution the dispatch will use, and reports how many of those runs came home. It is therefore as honest a number as anyone could ask for, which is not at all the same as a comforting one — a hero who dies in fourteen of twenty rehearsals will not be persuaded otherwise by the fifteenth.
 
-The unsupervised/supervised distinction (and Command Point spending) is set on the dungeon-menu side of expedition launches, not on the Mission Board itself.
+Command Points and the tactical preset belong to the dungeon side of the guild. The Mission Board has neither: a dispatched party fights Balanced and settles its own evening. See [Expedition Types](dungeons.md#expedition-types).
 
 ---
 
@@ -255,7 +255,7 @@ The hero's static identity — who this person is, before any of the bonds, achi
 
 ## Combat Screen
 
-During supervised expeditions, everything important is visible at once. The Guild Clerk designed this screen on the assumption that things would be happening quickly, and was correct.
+During a dungeon expedition, everything important is visible at once. The Guild Clerk designed this screen on the assumption that things would be happening quickly, and was correct.
 
 ### Turn Order (Top)
 
@@ -274,7 +274,7 @@ The fight itself, laid out clearly so there are no excuses:
 
 ### Combat is AI-driven
 
-Hero's Guild combat has no Attack / Skill / Defend / Flee buttons. Once the fight starts, the heroes choose their own skills, guided by their tactical presets and their own judgement, which is about what you'd expect. Your influence is everything you did *before* the first swing — party composition, equipment, tactics, supervision — and the Guild Clerk notes that this is also how real management works. The bar along the bottom of Hero Details (Passive Tree / Spec / Body / Food / Rest / Dismiss) looks a bit like a combat bar and is nothing of the sort: it manages heroes, not fights.
+Hero's Guild combat has no Attack / Skill / Defend / Flee buttons. Once the fight starts, the heroes choose their own skills, guided by their tactical presets and their own judgement, which is about what you'd expect. Your influence is everything you did *before* the first swing — party composition, equipment, tactics, and whether you went in with them — and the Guild Clerk notes that this is also how real management works. The bar along the bottom of Hero Details (Passive Tree / Spec / Body / Food / Rest / Dismiss) looks a bit like a combat bar and is nothing of the sort: it manages heroes, not fights.
 
 ### Combat Log (Side)
 
@@ -286,7 +286,7 @@ A record of what just happened, in case you weren't watching closely enough:
 
 ### Command Points
 
-Command Points are a dungeon-exploration resource (visible on the Dungeon screen, not the Combat screen) that the Guild Master spends to issue interventions during a supervised expedition. They do not appear on the per-fight combat panel.
+Command Points are a dungeon-exploration resource (visible on the Dungeon screen, not the Combat screen) that the Guild Master spends to issue interventions during a dungeon expedition. They do not appear on the per-fight combat panel.
 
 ---
 

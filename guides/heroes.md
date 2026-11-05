@@ -328,7 +328,7 @@ When an injury occurs, a roll determines severity. Higher rolls are better, and 
 - VIT stat: +1 per point
 - Cleric in party: +10 per cleric
 - Infirmary level: +5 per level
-- Supervised mission: +20
+- In a dungeon you are leading: +20
 - Hardy trait: +10
 - HP below 25%: -20
 - Cursed trait: -10
@@ -480,7 +480,7 @@ Survival Chance = 50% (base)
 |----------|-------|
 | Cleric in party | +15% |
 | Veteran rank | +5% to +25% (see [Veteran Status](#veteran-status)) |
-| Supervised mission | +10% |
+| In a dungeon you are leading | +10% |
 | Is a Cleric (Divine Favor) | +10% |
 | Survival gear equipped | +5% (see below) |
 | Lucky trait | +5% |
@@ -503,7 +503,7 @@ It does not help with a destroyed organ. A fatal wound skips the save altogether
 50% (base) + 15% (cleric) + 5% (VIT) + 3% (LCK) = 73% survival
 ```
 
-**Same hero on a supervised mission:**
+**Same hero falling in a dungeon you are leading:**
 ```
 50% + 15% + 10% + 5% + 3% = 83% survival
 ```
@@ -785,7 +785,6 @@ High-level heroes gain reduced XP from content, slowing the final push. The univ
 | 99 | 70% |
 
 **XP Bonuses:**
-- Supervised mission: +25%
 - Mentor in party: +50%
 - Quick Learner trait: +25%
 - Library (per level): +5%

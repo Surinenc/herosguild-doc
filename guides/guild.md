@@ -1090,8 +1090,8 @@ The day proceeds in five phases, with or without your attention — though your 
 1. **Dawn** - Expedition results return; loot distributed, injuries and deaths resolved
 2. **Morning** - Guild management, healing, social events, recruitment at the Tavern
 3. **Midday** - Mission board refreshes, merchants arrive, the shop opens to customers
-4. **Afternoon** - Form parties, equip heroes, assign tactics, choose which expedition to supervise
-5. **Night** - All expeditions run; supervised = full control, unsupervised = auto-resolved
+4. **Afternoon** - Form parties, equip heroes, assign tactics, dispatch contracts, pick the dungeon you will walk into yourself
+5. **Night** - The dungeon you lead, you play; the contracts you dispatched settle themselves and report at dawn
 
 ### Weekly Cycle
 

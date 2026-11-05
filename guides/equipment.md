@@ -204,6 +204,10 @@ Both use continuous scaling — a rare ring at L50 will roll something modest, t
 
 Items heroes use mid-combat when the situation has become urgent — which, in the Guild Clerk's experience, it always does. Pack them. Heroes who forget consumables tend to generate paperwork.
 
+A Consumable slot holds a **stack**, not a single bottle, up to whatever that item stacks to. A hero drinks one and the rest stay where they are; the slot empties only when the last one is gone. That holds for every automatic use there is — health potions, mana flasks, antidotes and the Phylactery Elixir alike.
+
+Consumables have no **quality**. Every potion, flask, antidote and tonic is Normal, whether bought, found or brewed at the bench, which means the figure on the tooltip is the figure the hero gets: a potion that says 40% heals 40%. There is no Fine or Masterwork bottle to go hunting for, which saves a certain amount of shopping.
+
 ### Health Potions
 
 | Name | Rarity | Healing | Min Level | Stack |
@@ -267,7 +271,9 @@ Each is used at most once per hero per combat, and they are tried in that order,
 
 ### Elixirs
 
-Elixirs are percentage-based stat buffs equipped in the two Consumable slots. They come in four tiers — Uncommon through Legendary — with escalating stat budgets and decreasing stack sizes. Unlike potions, elixirs are not auto-consumed; they provide passive bonuses for as long as they're equipped.
+Elixirs are percentage-based stat buffs equipped in the two Consumable slots. They come in four tiers — Uncommon through Legendary — with escalating stat budgets and decreasing stack sizes. Unlike potions, elixirs are not auto-consumed; they provide passive bonuses for as long as they're equipped. The bottle is never drunk and never runs out, so an elixir is a permanent stat line rather than a per-fight expense — the cheapest arrangement in the game, and the one most players discover last.
+
+Two bottles in the family do both jobs and say so on the label. The **Endurance Elixir** sits there as a bonus until the hero's HP crosses the auto health-potion threshold, at which point it is drunk for 40% HP and the bonus goes with it. **Mage's Clarity Potion** does the same at the mana-flask threshold, for 55% mana. Everything else in the family stays corked.
 
 | Tier | Example | Stack | Level Range |
 |------|---------|-------|-------------|
@@ -280,11 +286,13 @@ Legendary elixirs carry a per-turn HP regeneration bonus that ticks in every fig
 
 ### Buff Potions
 
-| Name | Effect | Duration |
-|------|--------|----------|
-| Strength Tonic | +10% STR | 1 combat |
-| Defense Potion | +15% Armor | 1 combat |
-| Haste Potion | +8% Crit Chance | 1 combat |
+| Name | Effect | Lasts |
+|------|--------|-------|
+| Strength Tonic | +10% STR | while slotted |
+| Defense Potion | +15% Armor | while slotted |
+| Haste Potion | +8% Crit Chance | while slotted |
+
+Despite the heading, none of these are drunk. The bonus applies while the bottle occupies a Consumable slot and stops the moment it doesn't, which makes a tonic closer to a very small piece of jewellery than to a drink.
 
 ---
 
@@ -446,7 +454,7 @@ Beyond rarity, items have quality ratings that affect their stats. A Masterwork 
 | Exceptional | +30% | Ornate |
 | Masterwork | +50% | Legendary appearance |
 
-Quality is determined by crafting skill or random drop luck.
+Quality is determined by crafting skill or random drop luck, and applies to **gear only**. Consumables sit outside the table entirely: a potion is a potion, and no amount of alchemical pride will make it a Masterwork one.
 
 ---
 

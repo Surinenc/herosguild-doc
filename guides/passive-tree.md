@@ -130,6 +130,8 @@ Mid-path keystones have **bypass paths** — adjacent non-keystone nodes connect
 
 ### Penalty Patterns
 
+**Not all penalties cost the same.** The ones written in *damage* — damage, attack damage, spell damage, physical damage — run at **4% to 6%**, which on a hero who is doing a great deal of damage is a rounding error with a frown on it. The ones written in *max life, armor or crit* run at **15% to 25%**, and those are the ones that actually hurt. When you are weighing a keystone, read which currency the bill is in before you read the number.
+
 Keystone penalties tend to track each class's defensive profile, with **notable exceptions** — the pattern is a tendency, not a guarantee:
 
 - **Warrior / Cleric** keystones usually penalize damage or crit (armor is their primary defense). Exception: Berserker Mastery penalizes max life
@@ -140,13 +142,13 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 
 | Keystone | Bonuses | Penalty |
 |----------|---------|---------|
-| Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -20% Damage |
+| Tank Mastery (Warrior) | +22% Armor, +30% Max Life | -5% Damage |
 | Berserker Mastery (Warrior) | +5% Physical Damage, +30% Life Leech | -20% Max Life |
 | Sharpshooter Mastery (Ranger) | +17% Projectile Damage, +9% Crit Chance | -20% Max Life |
 | Lich Mastery (Necromancer) | +9% Chaos Damage, +7% Spell Damage | -25% Max Life |
-| Summoner Mastery (Necromancer) | +12% Minion Damage, +33% Minion Life | -25% Damage |
+| Summoner Mastery (Necromancer) | +12% Minion Damage, +33% Minion Life | -5% Damage |
 | Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |
-| Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -15% Damage |
+| Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -4% Damage |
 
 Each of the two keystones at the end of a branch now carries **its own name**. The tank branch finishes in either **Tank Mastery** or **Undying Bulwark**, the lich branch in **Lich Mastery** or **Mortality Optional**, the assassin branch in **Assassin Mastery** or **Glass Cannon**. The table above gives the first of each pair; the second is generally the one whose name tells you what it intends to cost you.
 

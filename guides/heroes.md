@@ -284,6 +284,10 @@ Heroes can be in various states that affect what they can do. Think of it as a v
 
 Only a rest **you** ordered can be ended this way. Detox, a bed in the Infirmary under a Cleric's eye and a mental break all put a hero into the same Resting state, and each keeps its own way out — none of which is a button.
 
+**Training does not end itself.** A hero sent to the yard stays at the yard, drawing the same daily gain indefinitely, until you take them out of it. There is no completion, no graduation and no certificate; a drill set a month ago is still a drill, with a hero in it, and the hero has not thought to mention it. The Training Yard's level sets the pace. One other thing pays at that pace: the tavern's **sparring** option gives both partners an extra day's worth of progress on top of the day they already had — but only if they were in training to begin with, since a hero who is not training has nothing for the day to be added to. And in a guild that holds **Freedom** among its values, heroes occasionally decline to turn up at all; a skipped day costs them nothing and gains them nothing. Nobody there tells anyone when to get up.
+
+**Dismissing a hero takes their gear, if you let it.** The Dismiss confirmation carries a tick-box for stripping their equipment into the Vault, and it is ticked by default. What goes in goes in **rarity order, best first**, limited by the shelves you have free — anything that won't fit leaves on the hero, so a full Vault is an expensive place to fire somebody from. **Soulbound** items go with them regardless; they were never really the guild's. The roster notices which it was. A plain dismissal costs the departed hero's friends **-6 mood for seven days** and cheers their enemies by **+3 for three**; one where the guild kept the boots costs the friends **-10 for ten days** and cheers the enemies by **+5 for five**. *"The guild threw them out, and kept their boots"* is a sentence that gets repeated. Whether a spare breastplate is worth four extra points of gloom across everyone who liked them is your sum to do, and the Vault will not do it for you.
+
 ---
 
 ## Body & Injury System

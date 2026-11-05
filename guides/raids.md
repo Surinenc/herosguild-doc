@@ -62,17 +62,19 @@ A traditional sort of monster. Front-row pressure, sweeping area attacks, and a 
 **Phases:**
 - **Grounded** (100 → 75% HP) — opening posture
 - **Enraged** (75 → 50% HP) — phase transition at 75% HP
-- **Flying** (50 → 25% HP) — phase transition at 50% HP
+- **Flying** (50 → 25% HP) — the Dragon takes to the air, where melee cannot follow
 - **Dying Rage** (≤25% HP) — the polite phase ends here
 
 **Signature mechanics:**
 - **Dragon Claw** — strikes a hero, with cleave that spills 50% damage onto every other hero in the same zone. The simplest argument against zone-stacking ever made.
 - **Dragon Bite** — heavy single-target damage.
 - **Fire Bolt** — ranged hit with a burning DoT attached.
-- **Fire Breath** (Cone telegraph) — front-row sweep.
+- **Fire Breath** (Cone telegraph) — front-row sweep. The burning patch it leaves on each cone zone runs **6 turns**, twice as long as anything else the realm drops on a tile, so a hero who stands in it can walk out carrying six stacks.
 - **Tail Sweep** (Row telegraph) — strikes a random occupied row (F/M/U/L).
 - **Wing Buffet** (Column telegraph) — strikes a random occupied column (1–5).
 - **Inferno Wave** (Spread telegraph) — multiple scattered impacts; spread your groups out.
+
+While the Dragon is airborne only magic and ranged attacks can touch it at all. A Warrior standing beneath a flying dragon may shake a fist; the rules decline to count this as hitting it. Melee heroes are not idle in that phase, mind — they go after whatever Fire Whelps are on the board, which is the phase the Dragon spawns them in, and is as near to a plan as the arrangement gets. A party built entirely of swords will nonetheless spend a quarter of this fight watching.
 
 **Resistances:** fire-resistant, ice-weak. Bring cold.
 
@@ -116,7 +118,7 @@ The forced-movement fight. The Titan does not want you where you are, and the Ti
 - **Mind Flay** (SpotSoak telegraph) — single-tile soak; move out.
 - **Reality Tear** (Column telegraph) — empties a column.
 - **Fractured Mind** (Spread telegraph) — scattered impacts that hit harder the more clustered you are. On Heroic, every shared-zone hit also stacks **Voidmarked** on the affected heroes (see below), turning the cluster from a one-cycle problem into a fight-long one.
-- **Void Implosion** (Stack telegraph) — the fight's signature mechanic. The safe zone is **fixed at the M-row centre triplet — M2, M3, M4**, and it never moves, which is the only courtesy the Titan extends. Converge there, *or die.* Every hero caught outside the safe zone takes the damage *and* gains a **Voidmarked** stack. No second draft of this.
+- **Void Implosion** (Stack telegraph) — the fight's signature mechanic. The safe zone is **fixed at the M-row centre triplet — M2, M3, M4**, and it never moves, which is the only courtesy the Titan extends. Converge there, *or die.* Every hero caught outside the safe zone takes the damage, a **Voidmarked** stack *and* a Wounded mark, which is three charges for one piece of inattention. The damage is **physical**, so armour argues with it and Dark Resistance does not. No second draft of this.
 
 This is the fight where standing orders pay for themselves, because manual movement against the forced-relocation cadence wastes order points you don't have.
 
@@ -126,18 +128,30 @@ The Dragon and the Lich share a hard enrage threshold at **turn 250**; the Void 
 
 The shape is linear, not compounding — but the practical message is the same: raids are not endurance contests. If you are not winning before the enrage turn, you are losing on the one after.
 
-### Wounded — The Cleave Tax
+### Wounded — The Miss Tax
 
-Every time a hero is in the affected zone of a dodgeable cleave (Cone, Row Sweep, or Column Sweep) when it resolves, they take the damage *and* gain a **Wounded** stack. Wounded does two unpleasant things:
+Every hit a hero takes from something the raid was meant to handle leaves a **Wounded** mark: a cleave they were still standing in, a raid-wide hit nobody interrupted, a dodge zone they hadn't left, a soak nobody took. Wounded does two unpleasant things:
 
-- **+20% damage on every subsequent telegraph hit** to that hero (the multiplier compounds: at N stacks, the next telegraph deals `× (1 + 0.2 × N)`)
-- **+30% to all damage taken** by that hero, permanently for the fight
+- **+20% damage on each telegraph hit, per mark already carried** (at N marks the next one lands at `× (1 + 0.2 × N)`, before defences)
+- **Damage taken doubles with every mark** — +30% at one mark, +60% at two, +120% at three, +240% at four, and onward in that style, with no ceiling
 
 Both effects stack with additional Wounded marks. Both are permanent within an attempt — no decay, no time-out, no priest can cleanse them — and both are cleared the moment the attempt **ends**, on victory, wipe or retreat alike, rather than lingering on the roster until the next raid happens to start. A save loaded with stale marks on it has them stripped too, a raid being incapable of being in progress across a load.
 
-The avoidance check is **deterministic and positional.** A hero who moved out of the telegraphed zone before resolution takes no damage and gains no Wounded stack. A hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
+For the zone-shaped telegraphs the avoidance check is **deterministic and positional.** A hero who moved out before resolution takes no damage and gains no mark; a hero who didn't gets both. There is no dodge roll. The Guild Clerk approves of this — it makes the heroes' movement orders *matter* in a way that random saving throws never quite did.
 
-SpotSoak and Spread telegraphs do not apply Wounded. The risk is specifically in the column- and row-shaped cleaves.
+A Spread is the exception, since it reaches every living hero wherever they are standing. An interrupt is the only way to refuse one, and the back rows the only way to pay less.
+
+Which telegraphs mark, then:
+
+| Telegraph | Who gets a mark |
+|---|---|
+| Cone, Row Sweep, Column Sweep, Stack | every hero caught in an affected zone |
+| Spread | every living hero; the interrupt is the only counter |
+| A soak zone that harms nobody if left empty — Death Touch, Mind Flay | every hero standing in it |
+| A soak zone nobody took, where an empty tile punishes the raid — Ice Tomb | everyone the miss strikes, which is everyone |
+| A soak zone correctly taken | nobody at all |
+
+The last row is the one to read twice. A soak taken deliberately is the only hit in a raid that costs nothing but health — the mark is the charge for a mistake, and doing the job on purpose is not one.
 
 ### Voidmarked — The Void Titan Tax
 
@@ -145,12 +159,12 @@ A parallel debuff system to Wounded, exclusive to the Void Titan. Heroes caught 
 
 Each stack does one unpleasant thing, but does it relentlessly:
 
-- **+15% damage taken** per stack on every subsequent hit (additive — ten stacks is +150%, which is a number, and also a eulogy)
+- **Damage taken doubles with every stack** — +15% at one, +30% at two, +60% at three, and +960% by the seventh, which is a number, and also a eulogy
 - **No stack ceiling** — stacks accumulate without bound, the Void having never been introduced to the concept of *enough*
 - **Permanent within the attempt** — no decay, no time-out
 - **Cleared on attempt reset** — a wipe and retry resets the slate
 
-The avoidance check, like Wounded, is positional and deterministic. A hero who reached the M-row centre triplet before Void Implosion resolved takes no damage and gains no stack. A hero who did not gets both, and the next Implosion will hit them 15% harder, and the one after that 30%, and so on, until the Void Titan stops being a fight and starts being a budget.
+The avoidance check, like Wounded, is positional and deterministic. A hero who reached the M-row centre triplet before Void Implosion resolved takes no damage and gains no stack. A hero who did not gets both, and the next Implosion will hit them 15% harder, and the one after that 30%, and the one after that 60%, doubling all the way until the Void Titan stops being a fight and starts being a budget.
 
 On Normal, only Void Implosion applies Voidmarked; the Fractured Mind shared-zone trigger requires the amplification to exceed 1.0×, which it does only on Heroic. The Guild Clerk has filed this under "things that get worse when you select Heroic," a category she now keeps a dedicated drawer for.
 
@@ -227,7 +241,7 @@ A few things worth knowing about the cadence:
 - **Turn 0 is setup-only.** Nothing fights, nothing spawns, nothing telegraphs, and nothing ticks — the boss is, for one brief turn, merely looking at you. Use it to position groups before the boss starts swinging.
 - **Telegraphs are announced one turn before they resolve.** A telegraph that appears this turn fires *next* turn — that's your window to move out of it or interrupt the cast.
 - **Add waves run on a 3-turn cadence, but the guest list varies by boss.** The Ancient Dragon brings 3 Fire Whelps per wave, the Lich King 2 Skeletons, and the Void Titan 2 Wraiths — each boss, in its own way, believing in family. Boss-scripted waves (e.g. the Lich's add-summon abilities) layer on top of this cadence.
-- **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile. Every patch runs for **3 turns**, a hero standing in one picks up **a stack per turn**, and each stack ticks **30% of the telegraph's base damage** — so three turns of inattention becomes nine turns of compounding damage, carried out of the patch with you. The Burning badge spent some time advertising 15%, which was half the truth and twice as reassuring.
+- **Ground effects linger.** Burning patches, frost zones, and the Ice Tomb hazard remain on the board after they land and stack with anything else dropped on the same tile. Most patches run for **3 turns** — the Dragon's Fire Breath cone burns for **6** — a hero standing in one picks up **a stack per turn**, and each stack ticks **30% of the telegraph's base damage** — so three turns of inattention becomes nine turns of compounding damage, carried out of the patch with you. In the Dragon's fire the same inattention costs four times that.
 - **Unspent order points do not carry over.** Each turn refreshes the 5-point budget.
 - **Heroes recover between rounds**, as they do anywhere else: mana regenerates, skill cooldowns tick down (gem skills carry their [cooldowns](skills.md#cooldowns) from round to round, a raid being one very long fight), and per-turn HP regeneration — food buffs, Alchemy regen, equipped-item regen, the Champion's own Regeneration node — applies. Sustain you have stacked for the rest of the game does not politely stand down because the enemy is enormous.
 - **Call Retreat** has its own button outside the order budget; pressing it ends the raid immediately, and with slightly more dignity than the alternative.

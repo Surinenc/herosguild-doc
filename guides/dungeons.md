@@ -100,21 +100,29 @@ Monster level determines enemy strength:
 
 The gold column multiplies **combat gold** — what enemies drop — and leaves the value of loot alone, an item being worth what it is worth regardless of how many rooms you walked through to find it. Both multipliers apply to dungeon runs as well as missions, the stars being no respecters of paperwork. **Boss rooms** also pay out their own treasure, gems included, once per boss.
 
-**The great beasts keep to contracts of their own size.** A final boss appears only from **3★** up, and then it is drawn only from the bosses those stars permit — so the star rating tells you the worst thing that can be waiting at the end:
+**A final boss appears only from 3★ up** — and from that star onward the draw is the whole roster: the Goblin Chieftain, the Spider Queen, the Skeleton King, the Chimera, the Death Knight, the Primordial, the Balor and the Elder Dragon, with no tier holding any of them back.
 
-| Stars | The boss may be |
-|---|---|
-| ⭐⭐⭐ | The Goblin Chieftain, the Spider Queen, the Skeleton King, the Chimera, the Death Knight or the Primordial |
-| ⭐⭐⭐⭐ | …or the Balor |
-| ⭐⭐⭐⭐⭐ | …or the Elder Dragon |
-
-A three-star contract will not end with an Elder Dragon, however badly the week has been going. The **Abyssal Spire** makes no such promise — it draws from the whole list at every height, which is part of what the Spire is for.
+So the stars tell you how hard the fight will be and nothing whatsoever about what is standing at the end of it. A three-star contract may close with an Elder Dragon, an arrangement the dragon finds extremely convenient and nobody else does. Any party sent at 3★ or above wants to be able to survive the worst name on that list, because you do not learn which one you drew until it is standing in front of them. The **Abyssal Spire** draws from the same list at every height, which is part of what the Spire is for.
 
 ---
 
 ## Dungeon Environments
 
 Distinct environments, each with unique enemies and atmosphere. The dungeon doesn't care about your party composition — but you should. ([Environmental Hazards](#environmental-hazards) are the exception: they don't care where they are, and any of them can turn up in any 2★+ dungeon.)
+
+**A clean clear pays a material.** Finish the place and it settles its account in whatever it has lying about, which is mostly the walls — the same arrangement a contract in that sort of country makes:
+
+| Environment | Pays | And sometimes |
+|---|---|---|
+| Forest | Wood | Hardwood |
+| Cave | Stone | Marble |
+| Ruins | Stone | Marble |
+| Crypt | Bone | Bone, the crypt having only the one idea |
+| Swamp | Herbs | Rare Herbs |
+| Tower | Cloth | Silk |
+| Volcano | Iron Ore | Silver Ore |
+
+The common material always; from monster level **15** there is a **20%** chance of the better one in its place. Quantity goes by stars — **1** at 1–2★, **2** at 3–4★, **3** at 5★ — and unlike almost everything else about a dungeon it is guaranteed.
 
 ### Forest
 
@@ -195,7 +203,6 @@ You watch the dungeon crawl in real-time (one per night). It's like being there,
 | ✨ Rallying Cry | 2 | Cleanse debuffs + heal all heroes |
 | ⚔️ Heroic Strike | 2 | All party attacks crit next turn |
 | 💎 Treasure Hunt | 3 | +1 bonus item drop this combat |
-| 🚪 Tactical Retreat | 3 | Exit dungeon, keep loot and XP |
 
 Start with 3 CP per floor. Maximum 3 CP.
 
@@ -284,12 +291,14 @@ The 🏪 room is somebody who has set up a stall underground, on purpose, and wo
 
 | Ware | Price | Effect |
 |------|-------|--------|
-| Field Bandage | 0.8 × one fight's gold | Restore 20% of max HP to all heroes |
-| Elixir of Vigor | 1.4 × one fight's gold | Restore 35% of max HP to all heroes |
-| Phoenix Draught | 2.4 × one fight's gold | Restore 60% of max HP to all heroes |
+| Field Bandage | 0.8 × one fight's gold | Restore 20% of max HP to every hero still standing |
+| Elixir of Vigor | 1.4 × one fight's gold | Restore 35% of max HP to every hero still standing |
+| Phoenix Draught | 2.4 × one fight's gold | Restore 60% of max HP to every hero still standing |
 | Material bundles | Market price × **1.5** | The material, carried down to you |
 
 Prices are a multiple of the average gold an **ordinary** (non-boss) fight in this dungeon pays, rounded to two significant figures, so the potions cost what the dungeon is worth rather than what a label says. Materials are the Market's current price with a mark-up for the carrying: convenience, never a bargain, and the merchant will not pretend otherwise.
+
+**Still standing** is the operative phrase. A hero already at nothing gets nothing from any of the three, so a draught bought to save somebody who has already gone down is gold spent on the people either side of them. Buy before the floor, not after it.
 
 **A stall's prices are set when you reach it and stay there** however long you stand about weighing them up. Another stall, later, prices its own stock from scratch.
 

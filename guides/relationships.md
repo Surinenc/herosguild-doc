@@ -100,6 +100,8 @@ Which is to say a failed mission fought by two enemies has an **80%** chance of 
 
 **Who talks to whom.** Every hero takes part in up to **two interactions a day**. The partner is **opinion-weighted** rather than drawn flat across the roster: a hero's chance of being somebody's company is their opinion value plus 100, floored at 15. Friends seek each other out; enemies are unlikely company rather than impossible company, which is how you get the occasional bracing surprise.
 
+**The other party feels it less.** A meeting's opinion change lands in full on the hero it happened to and at **80%** on the other one, rounded toward zero. A +3 afternoon is +3 one way and +2 the other; a -3 one is -3 and -2. Gains and losses shrink by the same amount, so nothing about the arithmetic quietly favours grudges over friendships — which it would, given the chance.
+
 **How it goes depends on how things already stand.** Good days beget good days:
 
 | The pair | Good | Bad | Unremarkable |
@@ -301,6 +303,8 @@ All arcs share:
 - **Play it cool** — nothing happens. The realm files it away. Reroll is possible after the cooldown.
 - **Break it off** — both heroes gain the **Scorned** bond and take a 30-day mood penalty. The Guild Clerk recommends only doing this if you have a very good reason and a very strong sense of theatre.
 
+**Attracted is spent when it lands.** A confession that goes well clears the **Attracted** bond from both sides — they are together now, and the bond that got them there has done its work. A pair already partnered cannot hold Attracted toward each other at all, which is the mechanism that stops two married heroes from confessing to one another and ending up **Scorned** over a conversation they had already had.
+
 #### Mentorship
 
 **Triggers:** the two heroes share a class, the veteran is level 30+, the rookie is below level 10, and they've completed at least 2 missions together.
@@ -474,6 +478,8 @@ That **+17** is worth reading against the bill. Recreation drains **12** a day o
 
 This is why a hero can be sent to the tavern every night and stay miserable. If they don't like drinking, the tavern is a room full of noise they didn't ask for. A Cleric with Faith and Quiet days wants the chapel and an afternoon by a window; a Warrior with Training wants the yard. Missions, training, crafting, quiet days, chapel visits, tavern activities, gatherings and even absences each map to a pastime, and only a match counts. Pastimes are **discovered** in play, not shown up front — the first time one restores a hero it earns a Chronicle line and appears under *Personality* on their Social tab.
 
+**The night a party gets back still counts as a mission night.** A dungeon run that ends, or a contract that finishes, leaves the heroes marked Ready — but for that evening's accounting they were away: their pastime is **Adventure**, they take the mission's energy drain rather than the gentler one for a day at home, and nothing at the guild counts for them. No hobby, no club night, no chapel. They have had their day out, and the ledger says so.
+
 **Heroes spend their own money on it.** A hero under **60 recreation** counts as bored, and a bored hero buys an evening they enjoy out of their own [purse](heroes.md#purse--ambition): a drink at **5 gold × their level**, an evening with their partner at **20 × level each** (both pay), or a bet.
 
 **Drinking and gambling are habits**, each with the same five addiction levels, and each rolled every night the hero is at the guild — out of your hands entirely.
@@ -627,7 +633,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Inspiring | An aura: **+5 mood** to their immediate neighbours, simply by existing nearby |
 | Peacemaker | Their presence opens the *Mediate Conflict* option for feuding pairs, Enemies included |
 | Diplomatic | Takes relationship damage at 0.7× rate; everyone meets them at **+5** |
-| Approachable | **+20%** to positive social events finding them |
+| Approachable | **+10 points** on the chance a meeting of theirs goes well |
 | Forgiving | Takes relationship damage at half rate and lets grudges decay — one point toward zero every third day |
 | Cheerful | Relationships build 1.2× faster, and an aura worth **+8 mood** to those nearby |
 | Trustworthy | Everyone meets them at **+10**, the largest first impression in the realm |
@@ -648,7 +654,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Greedy | Grows attached to equipment at double speed |
 | Lazy | Takes personal days more often |
 | Vindictive | Takes relationship damage at 1.5× and holds grudges — it also cancels Forgiving, if by some administrative accident they hold both |
-| Paranoid | **+20%** to negative social events finding them, which they had of course predicted |
+| Paranoid | **+12 points** on the chance a meeting of theirs goes badly, which they had of course predicted |
 | Annoying Voice | Everyone meets them at **-10**, before they have said anything of substance |
 | Volatile | Relationships build *and* break at 2×; the fastest friendships and the shortest |
 | Misanthrope | Starts at **-5** toward everybody. Not a first impression they make — a first impression they arrive holding |

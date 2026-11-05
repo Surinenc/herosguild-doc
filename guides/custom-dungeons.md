@@ -104,7 +104,7 @@ The Gallery is where you find dungeons to run. It has three sections, and the di
 
 - **My Dungeons** — your own, drafts and published alike
 - **Community Dungeons** — the nine that ship with the game, bylined *Community*. These are always there, with or without a working connection
-- **Published Dungeons** — fetched from the server: what other Guild Masters have actually published, shown with the architect's name or persona
+- **Published Dungeons** — fetched from the server: what other Guild Masters have actually published, shown with the architect's name or persona and badged **Player** rather than *Community*, so you can tell a stranger's work from the house's without reading the byline
 
 **Templates** are not a gallery section. They are starting layouts offered by the *editor* when you begin a new dungeon — a scaffold to build on, not something you raid. **Seasons** likewise has its own screen, reached from the gallery's navigation rather than listed among the dungeons.
 

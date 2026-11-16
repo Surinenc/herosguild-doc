@@ -308,8 +308,8 @@ Each tier-set covers a coordinated set of slots and grants set bonuses at 2, 4, 
 | Set | 2-piece | 4-piece | 5-piece |
 |-----|---------|---------|---------|
 | Wyrmscale | +40 DEX, +30 Fire Resist | +40 Fire Damage, +8% Crit Chance | +100 Fire Resist, +200 HP, +30 DEX |
-| Litany of Bones | +40 INT, +30 Dark Resist | +50 Magic Damage, +200 Mana | +25 Life Steal, +100 Dark Resist, +30 INT |
-| Cosmic Discord | +40 INT, +30 Dark Resist | +50 Crit Damage, +25 Mana Regen | +40 Magic Damage, +8% Crit Chance, +75 Crit Damage |
+| Litany of Bones | +40 INT, +30 Dark Resist | +50 INT, +200 Mana | +25 Life Steal, +100 Dark Resist, +30 INT |
+| Cosmic Discord | +40 INT, +30 Dark Resist | +50 Crit Damage, +25 Mana Regen | +40 INT, +8% Crit Chance, +75 Crit Damage |
 | Titanslayer | +40 STR, +200 HP | +100 Armor, +40 Crit Damage | +60 STR, +400 HP, +10% Crit Chance, +80 Crit Damage |
 
 ---

@@ -490,6 +490,10 @@ Heroes may comment on equipment based on their personality:
 
 Personality is not the only thing at work. Heroes also **keep a private tally** of every forge whose gear they've carried into a fight, and eventually pick a favorite: after about ten missions with a given forge's kit, there's roughly a one-in-three chance they quietly develop a preference for it. Sentimental gifts from close friends can lock in that preference in one stroke. From then on, wearing equipment from a **rival** forge produces a daily mood drip and the occasional pointed remark; wearing gear from a **merely different** forge produces a smaller version of the same. Three critical crafting failures at the same forge, meanwhile, can convince a hero to **boycott** it — refusing to accept its output from the Vault until they get over themselves, which they may not.
 
+**Some heroes also care how it looks.** Every forge works in one of six styles — **dark**, **elegant**, **practical**, **flashy**, **natural** or **ornate** — and a hero who has a taste in these things objects to anything in a different one. The objection is mild: **−2 mood**, charged when you press **Equip Anyway**, with a complaint naming the style. Auto Equip does not argue the point at all; it simply leaves the offending piece in the Vault. Taste tends to come from where a hero grew up — a noble leans elegant, a soldier practical, a cultist dark, an outlander natural, a scholar ornate — which is as close to an explanation as anyone has managed.
+
+**What a hero thinks of a forge is on the item, not in the folklore.** Hovering a forge preference in the Vault or on Hero Details says exactly what it costs. Gear from the favourite's **rival** goes on only if you insist, at **−3 mood** for as long as it is worn, and Auto Equip will not touch it; any **other branded** forge costs **−1**; and a **boycotted** forge's gear they will not wear at all, at **−5** while worn if it ends up on them regardless. A forge in the middle of a scandal shows **how many days the scandal has left to run** — in the item tooltip, on the Vault's forge line and in the refusal itself — so waiting it out is a plan you can actually time.
+
 ---
 
 ## Managing Equipment
@@ -501,6 +505,14 @@ All items go to the central Guild Vault. From there you can:
 - **Sell** items for gold
 - **Salvage** items for crafting materials — **accessories always salvage**, whatever their rarity. Every ring and amulet breaks down into the same material, so even a humble Bone Charm gives something back, which is more than can be said for most of the people who wore one
 - **Enchant** items with magical properties
+
+**Reading what an item says.** Two lines on a tooltip mean less than they look like they do until you know the convention:
+
+- **Magic damage is Intelligence.** A piece that raises a hero's spell damage says **INT**, flat or percentage, because that is the stat it moves. Potion, recipe and set texts agree with it.
+- **Resistances are points, not percentages.** *+12 Fire Resist* is twelve points on the [saturation curve](combat.md#resistances), and the tooltip says beside it what those twelve actually block — about 11%. A hero's Resistances bars fill to the real share rather than to the raw number, which is why 100 points reads as half and not as *nearly done*.
+- **A stack says how many.** Vault cards, the paper doll, Hero Details and the tooltip all carry **×N** for a stacked item, with the **quality** next to the grade — Normal quality is left unsaid, on the grounds that saying it adds nothing.
+
+**Gear you cannot change, and why.** A hero out on a contract, otherwise away, or dead is locked: the Vault, Auto Equip, Auto Equip All and the Workshop all decline, and the item page says which it is, in words — *"Lucinda has 'things to do.'"* rather than a code in brackets. Auto Equip on Hero Details reports what it actually did rather than leaving you to compare two paper dolls. When it is ranking weapons it goes by a weapon's **average damage** rather than its top end, so a wild axe does not beat a steady sword on the strength of its best day.
 
 ### Tips
 

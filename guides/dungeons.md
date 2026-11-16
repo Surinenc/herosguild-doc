@@ -353,7 +353,7 @@ Each hazard type names the class (or pair of classes) that resolves it cleanly:
 | **Collapsing Ceiling** | Ranger |
 | **Cursed Altar** | Warrior or Cleric |
 | **Pitch-Dark Corridor** | Ranger or Warrior |
-| **Icy or Flooded Passage** | Mage or Ranger |
+| **Icy Flooded Passage** | Mage or Ranger |
 | **Pressure Plate** | Rogue |
 | **Alarm Bell** | Rogue or Ranger |
 
@@ -374,6 +374,23 @@ When a hazard fires, the realm looks at your party for the required class, and i
 - Mission rewards are reduced 5–20%
 - The mission still completes as a Success — hazards don't fail missions
 - An orange narrative line appears in the mission report
+
+**In a dungeon, pushing through leaves a mark.** Every living hero picks up a lingering effect that follows them for the next **two or three rooms** — the hazard's own, named and explained on the hero card and in the run log:
+
+| Effect | Left by | What it costs |
+|---|---|---|
+| **Gas in the Lungs** | Toxic Gas Cloud | takes 5% more damage |
+| **Seal-Burn** | Magic Seal | −5% damage |
+| **Concussed** | Collapsing Ceiling | −5% DEX |
+| **Lingering Curse** | Cursed Altar | −4% crit chance |
+| **Night-Blind** | Pitch-Dark Corridor | −4% crit chance |
+| **Soaked to the Bone** | Icy Flooded Passage | −10% armor |
+| **Bruised** | Pressure Plate | takes 5% more damage |
+| **Ringing Ears** | Alarm Bell | −5% DEX |
+
+The dungeon menu's hazard tooltip names the effect before you set out, so the cost of going short-handed is readable from the door. **Contracts are exempt** — a dispatched party walks it off on the road home, the effect being counted in rooms and a contract having none.
+
+**The log says what it cost.** After the hazard's story, the run log prints one line per actual cost: the HP each hero lost, the mood, and the lingering effect with the number of rooms left on it — in the same words the results screen uses, so the two accounts of the same afternoon agree.
 
 ### Mitigation
 
@@ -427,6 +444,38 @@ Each event offers three options. Consequences are immediate or persistent:
 | **Chronicle Entry** | Adds a permanent line to the hero's history |
 | **Axis Shift** | Changes your guild's position on the Valor/Wealth/Order axes (see Guild Identity) |
 | **Consequence Chain** | Schedules a follow-up event 2–30 dungeons later (per-event range) |
+
+### What a Blessing Does
+
+The **Buff** row is the one most often taken on trust, so here is the arithmetic. A blessing from a dungeon event goes to **every hero in the party** for the rooms the option names, and comes in three sizes:
+
+| Effect | Minor | Standard | Major |
+|---|---|---|---|
+| Damage | +5% | +10% | +15% |
+| Crit chance | +4% | +8% | — |
+| Damage taken | −5% | −10% | — |
+| Resistance (one element) | +15 | +25 | +40 |
+| Healing each turn | 1% max HP | 2% | 3% |
+| Armor | +10% | +15% | — |
+| DEX | +5% | +10% | — |
+| Magic find | +10 | +20 | — |
+
+A **Major** blessing carries one Minor stat alongside its headline — a fire god's favour is +15% damage *and* a fire resist. Where an event offers poisoned blades instead, every hit poisons for **10% a turn**.
+
+**The cursed powers charge for themselves.** Five of them — the black gem, the thing from another world, the mirror, the drained prisoner, and the blood pact — pay a Major's damage and then take **10% more damage** for as long as they last. The story is honest about this, and so is the hero card.
+
+**Two of them do nothing at all.** A Nature's Blessing is a pleasant glow and a Phoenix Tear is a keepsake. Their previews say as much and they keep their word, which is more than most things found in a crypt manage.
+
+### What the Run Tells You Afterwards
+
+A dungeon keeps its own minutes, and they are specific:
+
+- **The room tells the right story.** Walk into a room where an event fires and the description at the top of the screen is that event's own, names filled in. A room where nothing happens keeps its ordinary description, which is how you learn to read the difference.
+- **The log says what happened, not what was offered.** After a choice, the run log prints the effects as applied — the HP actually lost or recovered after clamping, the mood, the bond, the blessing, the map revealed, and to whom — rather than repeating the hint you read before you picked.
+- **The fight is the creature in the story.** When a choice starts a fight with something the text described, that is what comes through the door: the mother bear is a bear, the poachers are bandits, the stone golem is a stone golem. Ambushes the story left vague remain a surprise, which is their job.
+- **The report has a Choices section.** Every choice of the run, what it did, the shift it put on the guild's leaning by name, a no-spoiler note where the business is not finished, the hazards and what each cost which hero, and — since a choice can move a hero as well as a guild — lines like *Bram's values: Freedom +0.8* for heroes whose own convictions drifted. A hero sacrificed in an event is counted among the dead in Hero Results and Casualties, where they belong.
+
+The guild keeps the **last twenty dungeon reports** in the save, their combat logs compressed the same way mission reports are, so a run you want to argue about is still there a fortnight later.
 
 ### Hero-Specific Events
 
@@ -545,6 +594,16 @@ Roll is modified by VIT, Cleric presence, Infirmary level, and traits. See [Hero
 | Success | 100% | 100% | 100% |
 | Partial Success | 50% | 70% | 50% |
 | Failure | 0% | 30% | -30% |
+
+A Partial Success halves the materials as well. A Failure pays none of them.
+
+**Which one you get is not a roll.** Two facts decide it, and the contract card's Combat Outlook hovers the rule in case you forget:
+
+- **Every fight won and every hero still standing** — a **Success**. Standing means above 0 HP when the last fight ends; being carried home on a stretcher counts, being carried home on a plank does not.
+- **Every fight won and at least half the party standing** — a **Partial Success**, at half pay.
+- **A fight lost, or fewer than half standing** — a **Failure**, however well the fighting went. A party that wins every engagement and comes home with three of eight upright has failed the contract, and the report says so in as many words rather than leaving you to work out which clause you fell foul of.
+
+The only die rolled anywhere in this is the one that turns a Success into a **Critical Success** — a flat **10%**, nudged upward by a Chapel blessing of Courage. There is no "does the contract succeed" roll at all; the outcome is whatever the fights actually produced. Bravery cannot win the fight for you, but it can make the win look intended.
 
 ### What You Earn
 

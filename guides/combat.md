@@ -148,7 +148,7 @@ A representative sample:
 | Imps, Hellhounds | Holy, Ice |
 | Animated Armor, Stone Golems | Lightning |
 | Iron Golems | Lightning (Physical/Fire/Ice resistant) |
-| Elder Dragons | Ice, Dragonslayer (Fire/Physical resistant) |
+| Elder Dragons | Ice, Dragonslayer (Fire-resistant) |
 
 The exact list is broader than this; the principle is that monsters tend to be weak to their natural counter — undead to Holy and fire, constructs to Lightning, ice creatures to Fire, dragons to whatever the next dragon over uses. The Guild Clerk maintains a more complete reference but considers it "obvious if you've been paying attention."
 

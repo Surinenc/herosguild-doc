@@ -43,9 +43,11 @@ Every round resolves in the same four phases, in the same order, without excepti
 
 ### When a Fight Runs Out of Time
 
-A dispatched contract is settled without you, and the resolver is not permitted to sit there all week: a mission fight is allowed **200 actions** — individual turns rather than rounds, so something like sixteen to twenty rounds for a full party — and is then stopped where it stands. Only a field with every enemy dead counts as a win. If anything is still upright when the time runs out, the heroes fall back and the fight is lost. The combat log says as much in plain words and names whoever is still standing, with the health they had left — so an ordinary hit landing just before the word *Victory* is not mistaken for the blow that finished anything.
+A dispatched contract is settled without you, and the resolver is not permitted to sit there all week: a mission fight is allowed **400 actions** — individual turns rather than rounds, so something like thirty-three rounds with a full field on both sides — and is then stopped where it stands. Only a field with every enemy dead counts as a win. If anything is still upright when the time runs out, the heroes fall back and the fight is lost. The combat log says as much in plain words and names whoever is still standing, with the health they had left — so an ordinary hit landing just before the word *Victory* is not mistaken for the blow that finished anything.
 
-Two hundred actions is a great many actions. Reaching the limit means two sides swinging at one another to no particular effect, which in practice means a party badly short of damage for the work — and it costs more than the one fight, because **a lost fight ends the contract where it stands**. Whatever else was on the docket goes unattempted and the party comes home. The mission board's success estimate plays it the same way, so the odds you read before dispatching already have the clock in them. Dungeon runs and Spire climbs have no such limit: you are standing there, and the fight lasts exactly as long as it lasts.
+Four hundred actions is a great many actions. Reaching the limit means two sides swinging at one another to no particular effect, which in practice means a party badly short of damage for the work — and it costs more than the one fight, because **a lost fight ends the contract where it stands**. Whatever else was on the docket goes unattempted and the party comes home. The mission board's success estimate plays it the same way, so the odds you read before dispatching already have the clock in them. Dungeon runs and Spire climbs have no such limit: you are standing there, and the fight lasts exactly as long as it lasts.
+
+**A contract's monsters are not a dungeon's monsters.** The same creature at the same level is a different proposition depending on where you meet it, because contracts re-scale what they send. An ordinary blow lands well under its listed damage in the early twenties, climbs back to parity somewhere in the middle thirties, and by the time the realm is offering things in the nineties it arrives at several times the number on the page. Area attacks are scaled on a curve of their own and run heavier on contracts throughout, which is why the party's healer and its archers come home in worse condition than the person standing at the front. Monster health is nudged about in the low twenties too, so that a young party's fight ends before the clock does. Dungeons, the Abyssal Spire, Ascendancy Trials and raids take the creature exactly as written — a dungeon at monster level 25 is not the gentler errand the contract board makes of it.
 
 ### Who Gets the Kill
 
@@ -461,7 +463,7 @@ Every hero starts with a set of class skills before any gem customization. These
 - Prayer of Healing - AoE healing, 4-turn cooldown
 
 **Mage:** *Prefers not to be touched while working.*
-- Staff Strike - 60% damage basic attack
+- Arcane Bolt - 80% damage basic attack, arcane: armour does not stop it, only magic resistance
 - Fireball - 130% damage with 30% ignite chance, 2-turn cooldown
 - Frost Nova - 60% AoE damage with 25% freeze chance, 3-turn cooldown
 
@@ -482,7 +484,7 @@ Every hero starts with a set of class skills before any gem customization. These
 
 **Note:** Berserker and Gladiator ascendancies lose Taunt and Shield Wall, keeping only Strike, Power Attack, and Cleave. Paladin ascendancy replaces Heal and Prayer of Healing with Divine Strike (120% damage) and Consecrate.
 
-**What a cooldown number means.** A skill with a cooldown of N sits out the next N rounds and comes round again on the one after — a 2-turn cooldown is every third turn, a 3-turn cooldown every fourth, and Prayer of Healing's 4 is every fifth. Class skills and [gem skills](skills.md#cooldowns) are counted by the same rule. Proficiency's cooldown reduction and the Archmage's Regalia −20% apply to that number and are **rounded to the nearest round**, never below 1: full proficiency on a 2-turn skill leaves it at 2, and only the robes on top of that bring the wait down to every other turn. In between, a hero falls back on the basic attack, which has no cooldown at all — which is why Strike, Smite, Stab, Arrow Shot, Staff Strike and Dark Touch appear in the log far more often than their damage numbers suggest they ought to.
+**What a cooldown number means.** A skill with a cooldown of N sits out the next N rounds and comes round again on the one after — a 2-turn cooldown is every third turn, a 3-turn cooldown every fourth, and Prayer of Healing's 4 is every fifth. Class skills and [gem skills](skills.md#cooldowns) are counted by the same rule. Proficiency's cooldown reduction and the Archmage's Regalia −20% apply to that number and are **rounded to the nearest round**, never below 1: full proficiency on a 2-turn skill leaves it at 2, and only the robes on top of that bring the wait down to every other turn. In between, a hero falls back on the basic attack, which has no cooldown at all — which is why Strike, Smite, Stab, Arrow Shot, Arcane Bolt and Dark Touch appear in the log far more often than their damage numbers suggest they ought to.
 
 ### Skill Gems
 

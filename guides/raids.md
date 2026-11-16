@@ -53,7 +53,7 @@ A group is the unit you actually pilot during the raid. Each group is assigned a
 
 The realm rotates between three bosses, each with its own pattern of pain. The Guild Clerk has prepared a brief on each, mostly out of self-defence.
 
-The raid board announces them rather more formally than the headings below: **The Skeletal Lich** — *Vexcrael, Hollow of the Ninth Crypt*; **The Ancient Dragon** — *Sovereign of Ashpeaks, Eldest of the Burning*; and **The Void Titan** — *Harbinger of the Sundered Rift*. The Lich answers to either name, titles being cheap in a place with nine crypts.
+The raid board announces them rather more formally than the headings below: **Lich King** — *Vexcrael, Hollow of the Ninth Crypt*; **Ancient Dragon** — *Sovereign of Ashpeaks, Eldest of the Burning*; and **Void Titan** — *Harbinger of the Sundered Rift*. Titles are cheap in a place with nine crypts, but the short name is the one every screen uses.
 
 ### Ancient Dragon
 
@@ -263,6 +263,8 @@ A raid ends in one of three ways.
 ### What Happens to Fallen Heroes
 
 Nothing, in the way the Guild Clerk finds most surprising. Unlike regular dungeon defeats — which trigger death-saves, injury rolls, and Infirmary stays — a raid has nothing waiting at the bottom of the fall, and this is **deliberate rather than an oversight**: a raid never kills a hero, full stop. Heroes who fall come out of the fight at **0 HP, in Ready state, with no injury, no infirmary time, and no permadeath risk.** Rest them at the Guild and they recover normally.
+
+The screens say so in their own words, which saves a great deal of panic: a failed attempt reads *"The party was beaten back"*, and a hero who went down is listed **Knocked out** rather than anything more final. Phases are numbered from **1**, cone attacks are labelled **Cone** whichever boss threw them, and a world boss shows the level it is actually fighting at. The raid view's **Telegraphs** tab is a plain field guide to what each boss does and when.
 
 Equipment is not lost. The raid is, in this one specific sense, oddly forgiving.
 

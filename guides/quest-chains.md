@@ -145,6 +145,10 @@ Your options during the grace period:
 - **Dismiss a hero voluntarily** — your choice who leaves
 - **Do nothing** — on day 13 the game shows a modal naming the hero with the lowest mood (who will be the one to leave), and on day 14 that hero departs automatically
 
+**The countdown is on the Guild screen, every day it is running.** A notice gives the beds, the number of living heroes and how many day-changes are left, coloured yellow, then orange, then red as the timer warms up. On the second-to-last day the window opens of its own accord and names the hero who would go, so there is still time to upgrade the Barracks or pick somebody else.
+
+**The dead do not count.** A hero awaiting their funeral takes no bunk: they neither start the timer, nor keep it running, nor can be the one it sends away. The guild is overcrowded by the living or not at all.
+
 The Guild Clerk notes that heroes who leave this way are not angry, exactly. They just read the room.
 
 ---

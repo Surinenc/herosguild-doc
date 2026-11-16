@@ -147,6 +147,8 @@ Heroes sleeping in the Barracks take their **comfort** from how full it is, and 
 
 The level's comfort bonus is added on top, and the mood lasts exactly as long as the crowding does. Upgrading therefore pays twice: more beds lower the occupancy, and better ones raise the comfort. Nine heroes in a level-1 Barracks are three-quarters full and each carries **-5**; the same nine in a level-2 Barracks are under half full at +5 comfort, earn **+6** for it, and lose 2 of that to the building — **+4** each. Nine points of mood per hero, every day, for 2,000 gold, two days and some wood — which is the cheapest happiness the guild will ever buy.
 
+**Going over capacity is survivable, briefly.** A roster larger than the bed count starts a 14-day timer, and the Guild screen carries a daily notice saying how many beds there are, how many living heroes, and how long is left before the unhappiest of them leaves — see [Barracks Overflow](quest-chains.md#special-hero-rewards--barracks-overflow). Heroes awaiting a funeral are not counted, having no further use for a bed.
+
 The **Mood** column is a separate flat opinion of the building itself (*"Quarters: cramped"* or *"Quarters: comfortable"*). Its complaints only speak up when comfort isn't already complaining — one cramped room, one grievance, the Guild Clerk being firm about double-counting — but its praise is offered regardless. A level-3 Barracks has no opinion of itself at all, which in a building is a kind of serenity.
 
 ### Hero Quarters
@@ -252,7 +254,8 @@ Two heroes you have bunked together for reasons of your own take no penalty for 
 **The nightly pass.** Every day-advance, before upkeep is charged, the Guild reconciles who is living with whom. Separations run first, so the rooms they free are available to the couples moving in on the same night:
 
 - **Splits move out.** A pair carrying **Divorced**, **Ex**, **Ex-Partner**, **Scorned**, **Estranged** or **Cheated** — and no surviving romance — is separated. One of them takes the first free private room; if there isn't one, they go back to the Barracks, which is its own commentary.
-- **Couples move in.** A hero's strongest current partner (Married outranks Lovers, which outranks Partner, which outranks Dating) is moved in with them. Where both already hold private rooms, the **better-tiered room wins** and the other hero packs. Where the destination already holds two, nobody moves.
+- **Couples move in.** A hero with one partner is settled with them. Where both already hold private rooms, the **better-tiered room wins** and the other hero packs. Where the destination already holds two, nobody moves.
+- **A hero with more than one partner picks one, by drawing lots.** Every partner is equally likely, rank and seniority counting for nothing at all; that couple is settled for the night and the others sleep alone and hope. Where the draw lands on the room the hero is already in, nobody moves and nothing is announced. A hero who drew someone else is not pulled into a second room by a second partner, which is the rule that keeps the day summary from reporting the same hero moving in twice before breakfast.
 - **Couples both in the Barracks are left alone.** Moving them into a private room would spend your gold and add upkeep without asking, so the Guild declines to be helpful. Assign them yourself from the Quarters screen.
 
 Every move is narrated in the day summary and written into both heroes' chronicles, so you will find out about the divorce at the same time as the ledger does.
@@ -287,7 +290,7 @@ The number column is the **quality range** of the recruits on offer, not how man
 
 **Tavern Activities:**
 
-**Who counts as present.** Heroes who are **away** — a day off, a hangover, mourning, a pilgrimage, any absence at all — are not at the tavern either, and the Heroes at Bar list does not pretend otherwise. They are left out of the activities and out of the bill for them, which is the only part of being absent that has ever pleased a guildmaster.
+**Who counts as present.** Heroes who are **away** — a day off, a hangover, mourning, a pilgrimage, any absence at all — are not at the tavern either, and nor is anyone in the Infirmary, held in the ward until cured, or drying out in detox. The Heroes at Bar list does not pretend otherwise. They are left out of the activities and out of the bill for them, which is the only part of being absent that has ever pleased a guildmaster.
 
 Heroes who are **injured, occupying an Infirmary bed, or kept in the ward** are not at the tavern — nor, in the ward-kept case, available for any party at all: the mission board, the dungeon menu, the raid picker and the Spire alike show them unavailable and refuse the dispatch, because quarantine that a contract can override is not quarantine. At the tavern they are left out of activities, out of the cost those activities are billed at, out of the nightly drinking roll, out of the scouting scene and out of the Tonight options. A feast's *healing* still reaches them, on the grounds that somebody carries them a plate. Tonight's tavern is rolled only once the ward has been settled, so confirming your treatments reassigns the beds before the evening is decided.
 
@@ -318,7 +321,7 @@ Intervention **costs Attention Points from the same budget the Tonight tab spend
 
 #### Nightly Decisions
 
-Each night, the Tavern presents **up to 8** situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. Eight is the ceiling, not the expectation: the list is built from what your roster has actually produced, so a settled guild on a dull evening may offer only two or three, and the Clerk counts that a good night rather than a shortage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Each resolved decision is written up in the **Last Night's Notes** panel the following morning — a short after-action record of which options you picked and how they landed, so the previous evening isn't quite as lost to the fog as it once was.
+Each night, the Tavern presents **up to 8** situations requiring your attention — heroes in conflict, milestones to celebrate, gossip to manage, or romances to encourage. Eight is the ceiling, not the expectation: the list is built from what your roster has actually produced, so a settled guild on a dull evening may offer only two or three, and the Clerk counts that a good night rather than a shortage. These appear in the **Tonight** tab (the Tavern screen has two tabs: **Tavern** for recruitment and activities, and **Tonight** for nightly decisions). You spend **Attention Points** to address them. Each hero's icon in the list wears their **mood** as the colour of its ring, and says the figure on hover, so a night of limited attention can be spent on the people nearest the edge rather than on whoever happens to be first in the list. Ignoring certain situations carries penalties, because problems left unsupervised in a room full of alcohol tend to get worse. Each resolved decision is written up in the **Last Night's Notes** panel the following morning — a short after-action record of which options you picked and how they landed, so the previous evening isn't quite as lost to the fog as it once was.
 
 **Attention Points per Night:**
 
@@ -608,15 +611,17 @@ Event options can trigger a range of effects — sometimes immediately, sometime
 - **Recruit heroes** — new heroes join the guild, occasionally as a direct consequence of your having a reputation for being worth joining
 - **Chain events** — some decisions trigger follow-up events days later; the game has written the next chapter regardless of whether you were paying attention
 
-### Shop Discounts
+### What Wealth Does to Your Prices
 
-A guild strongly aligned with Wealth earns shop discounts:
+In the [Guild Shop](#guild-shop) the guild is the **seller**, and a guild known for money is assumed to know what things are worth. Customers pay accordingly:
 
-| Wealth Axis | Price Modifier |
+| Wealth Axis | Guild Shop prices |
 |------------|---------------|
-| 60+ | 10% discount |
-| 30+ | 5% discount |
-| Below 30 | Standard prices |
+| 60+ | ×1.10 |
+| 30+ | ×1.05 |
+| Below 30 | as written |
+
+It is a markup on the guild's own shelf, not a discount at anyone else's counter — the Materials Market, the caravans and the forges charge a Wealth guild exactly what they charge everyone. A reputation for money is worth something only where you are the one holding the ledger.
 
 ---
 
@@ -731,6 +736,17 @@ The eternal struggle between "we need more heroes" and "we need to pay the heroe
 | Recruitment | Scales with level and quality (50g – 100,000g+) | Per hire |
 | Infirmary costs | Variable | Per treatment |
 | Crisis levy | A share of the treasury | When a crisis demands tribute |
+
+### Prices Grow With the Guild
+
+A number written into an event, a crisis, a quest purse, the Tavern's Share the Loot, a broken club chair or a caravan's prosthetics is written for a **new** guild. It does not stay there. Every such figure is grown to the guild's own level before it reaches you, on the same curve a contract's pay follows — so a merchant who wanted 300 gold from a guild of beginners wants something nearer twelve thousand from a guild of level-25 veterans, and says so, in the text, before you agree to it.
+
+**The guild's level, for this purpose, is the average level of its best eight living heroes** — the same figure a weekly bounty is fought at (see [Quest Chains](quest-chains.md)). Two consequences worth holding on to:
+
+- Recruiting a stable of low-level heroes does not make the realm cheaper. Only the top eight count, so the realm prices the guild by its best, which is roughly how reputations work everywhere else.
+- Amounts are rounded to **two leading digits** — 24,523 becomes 25,000, 146,406 becomes 150,000 — so prices continue to look like prices rather than like the output of a sum.
+
+At level 1 everything is exactly the number that was written. The scaling cuts both ways: a gift, a fine, a reward and a ransom all grow together, and a guild that has outgrown a 500-gold problem has also outgrown a 500-gold windfall.
 
 ### The Warehouse Ceiling
 

@@ -344,6 +344,20 @@ When an injury occurs, a roll determines severity. Higher rolls are better, and 
 | Prosthetic (Standard) | 80% | Metal mechanical replacements |
 | Prosthetic (Enchanted) | 125% | Magically enhanced, better than original |
 
+**A smaller hero is never a hero with HP to spare.** Anything that lowers a maximum brings the current figure down with it — an injury that weakens the body, an illness setting in, a lasting ailment left behind by one, a reroll at the Workshop, a blessing or a meal running out. HP and mana are each measured against their own ceiling, and only a ceiling that actually fell does any trimming: clearing a debuff leaves both exactly where they were, and a maximum that rises hands out nothing. In the Abyssal Spire an injury keeps the Spire's own maximum, so a hero does not get quietly shrunk to their everyday size halfway up the stairs.
+
+**Which parts carry which stat.** The body is filed into six groups, and each stat is the average of the group or groups that do its work:
+
+| Stat | Runs on | The arithmetic |
+|---|---|---|
+| **STR** | Manipulation — shoulders, arms, hands | the two arm chains, averaged; a chain is only as good as its weakest link |
+| **DEX** | Manipulation, Movement **and Sight** | all three averaged — aim is a matter of seeing the thing first |
+| **INT** | Cognition — the brain | straight through |
+| **VIT** | Vitality — heart, lungs, liver, kidneys, stomach, jaw, nose | all of them averaged |
+| **LCK** | Hearing — the ears | at half weight: `(1 + hearing) ÷ 2`, so losing both ears halves it |
+
+Movement is the spine multiplied by the average of the two leg chains, which is why a spine is worth more attention than it usually gets. The practical reading: a lost eye costs a Ranger a third of whatever that eye was worth in DEX, and a hero who cannot hear the trap click is, in the realm's accounting, genuinely less lucky.
+
 ### Fatal Injuries
 
 Certain injuries cause instant death — which is why the vital-organ prosthetic window exists. Install the replacement *before* the organ is Destroyed, because afterwards there is nobody to install it on:
@@ -355,6 +369,8 @@ Certain injuries cause instant death — which is why the vital-organ prosthetic
 A fatal wound is final in a way that ordinary falling over is not. A hero whose heart or liver goes in a fight drops to 0 HP on the spot, and there is **no death save** — the dice are for heroes who might live. A hero who *passes* a death save and then takes an injury that destroys a vital organ dies of the wound anyway, which the Guild Clerk records as the cruellest sentence in the medical ledger.
 
 The **brain** is the exception that keeps everyone humble: it can be damaged, badly, but never destroyed. A hero survives any blow to the head — impaired, slower to learn, and repeating themselves at dinner, but alive.
+
+**Losing a part is itself an injury.** A hero who comes home a limb or an eye short goes on the injured list for **7 days**, less the Infirmary's injury reduction and never below one, and the loss is written into their Chronicle under Injuries by name — *left arm*, *right eye*. The clock starts when they are actually back at the guild rather than when it happened, a longer injury they already carry is kept instead, and a full heal still lets them off early, as with any injury. Raids are the exception: nobody loses a part to a world boss, on the grounds that nobody dies there either.
 
 ### Prosthetics
 
@@ -454,9 +470,15 @@ Each card also carries an **Until Cured** toggle, which exists because a bed onl
 
 **It also does something rather more useful than saving clicks: it quarantines.** A hero flagged Until Cured, still ill, occupying a bed, and not out on a mission is **isolated** — they neither pass their strains to anyone nor catch anything new. Every one of those four conditions is load-bearing. A single night's bed without the flag does not achieve it; by morning that hero is back among the guild, breathing on everyone. The flag without a bed achieves nothing whatsoever, a ward being unable to isolate somebody it has not admitted. And neither arrangement isolates a hero who has already recovered. Quarantine, like the ward itself, is for the sick.
 
+**A bed also mends the body it is holding.** A hero kept in the ward Until Cured — or drying out in detox — gets HP back every night at the **Resting rate**, multiplied by the Infirmary's healing speed. What they do not get is the quarters bonus a hero sleeping in their own room would collect, the Infirmary not being anybody's room. Nothing else about a rest applies either: the bed has its own rules about when you may leave it.
+
+**And it holds them in it.** A hero in the ward or in detox takes no personal day, cannot be talked into one, and cannot be carried off on a romantic escape by a partner with ideas. They do not read as **Ready** anywhere — not on the roster, not in its count, not on a party picker's card, where the reason is given as the guild's note rather than dressed up as something the hero said. Training stops the day they are admitted, and nothing is gained from the days they spend there.
+
 ### Chronic Traits
 
 If a hero's peak severity crossed the illness's chronic-recovery threshold before immunity finished the race, they recover with a **chronic trait** — a permanent scar with modest but permanent stat and mood costs. A survivor of The Long Cough carries **The Wheeze** for life; a Grey Weep survivor picks up **Hollow Blood**; Vampire Anaemia leaves **Slow Blood**; Chimney Ash Lung leaves **Ash Lung**. The Guild Clerk enters these into the record with the polite understatement of someone who has, per custom, seen a great deal — "the lungs, per medical record, remember the fight. They will not, per record, forget it."
+
+**Slow Blood is the one that changes the daily arithmetic.** A Vampire Anaemia survivor regenerates at **60%** of everyone else's rate, and regeneration here means every kind the hero does for themselves: the overnight mend while Resting or Injured, the dungeon's rest room, and the per-turn ticks from food, Alchemy, elixirs and Champion Regeneration. A heal somebody else casts on them lands in full — a Cleric's prayer is not their blood's business. It is also the only chronic trait that sits outside the −30% per-stat floor, on the grounds that the floor exists to stop several scars piling onto one number, and nothing else in the cabinet touches this one.
 
 The full list of a hero's chronic traits appears on the **History tab** of the Hero Details modal, each one a short bureaucratic obituary of a fight the hero came back from.
 
@@ -487,6 +509,8 @@ Survival Chance = 50% (base)
 | LCK stat | +1% per 5 LCK (max +5%) |
 | VIT stat | +1% per 5 VIT (max +5%) |
 | Cursed trait | -10% |
+
+**VIT and LCK here are the effective figures** — the numbers the Stats tab shows, with gear, passives, paragon and whatever the hero had for breakfast already folded in. The same is true of the injury roll that follows a save, and it is true on a contract and in a dungeon alike. An amulet worn for its Luck is worth exactly as much at the worst moment of a hero's life as it is at any other.
 
 **Survival gear** is not a category the smiths recognise; it is a keyword search. An equipped item qualifies if its **name** contains *survival*, *lifesaving*, *protection*, *guardian*, *phoenix* or *resurrection*, or if one of its **enchantments** mentions *death save*, *survival* or *last stand*. This is exactly as literal as it sounds — the Amulet of the Phoenix qualifies on the strength of being called that. Read the names on your accessories before you sell them: somewhere in the Vault is a +5% chance of living, filed under a word somebody chose for flavour.
 
@@ -679,7 +703,8 @@ Heroes killed in combat get a memorial in the Chapel. When a hero dies, the real
 
 - Generates an **obituary** — a short, Chronicle-flavoured three-paragraph piece drawn from the hero's background, career, relationships, and the manner of their death. The Guild Clerk has standing instructions not to read these aloud at staff meetings, having tried it once
 - Preserves any **earned titles** the hero held; the memorial card shows the first two, and a modest *+N* for the rest
-- Marks the hero as dead and removes them from the active roster permanently — their equipment goes with them. Gear cannot be pulled from a corpse during the burial grace period; the loadout is buried alongside the hero. The Vault will not let you select a dead hero's items, however briefly they linger on the books
+- Marks the hero as dead. They stay on the roster until the funeral, faded and labelled **Dead** with the days counting down, and cannot be fed or dismissed in the meantime — a dismissal would file them as having left alive, and the Chapel keeps a different list for that
+- **They are buried in their gear, unless you decide otherwise.** Their page carries **Before the funeral…**, which lifts what it can into the Vault on exactly the same plan as a stripped dismissal: rarity order, best first, as far as the free shelves reach. **Soulbound** pieces and anything that will not fit go into the ground with them. Their friends take it the way they take any stripping — **−10 mood for ten days**, with enemies cheered **+5 for five**. Auto Equip will not dress the dead, and no rune goes onto a dead hero's sword
 
 Memorial cards are visible from the Chapel screen. The cards persist indefinitely; the realm does not forget. The Guild Clerk, asked whether the memorial should ever be cleared, has replied only "no" on each of the seven occasions the question has come up.
 
@@ -733,13 +758,16 @@ Heroes earn titles by achieving specific milestones tracked in their Chronicle. 
 | **Oathbound** | Form an Oath Sworn bond | +8% damage with oath partner |
 | **Master Artisan** | Craft 3 Masterwork items | +10 crafting quality |
 | **Shield Brother** | Save 10 allies via Intervene | +15% Intervene chance |
-| **Nemesis Hunter** | End a Blood Feud | +10% damage vs Humanoids |
+| **Nemesis Hunter** | Kill a humanoid boss | +10% damage vs Humanoids |
 | **Survivor** | Recover from a mental break | -20% negative mood impact |
 | **Legend** | Accumulate 50+ chronicle entries | +8% to all stats |
 | **Trial-Master** | Complete all 4 ascendancy trials | +5% to all stats |
 | **Old Guard** | Serve 500 days in the Guild | +5% XP aura to nearby allies |
 | **Whisperer** | Maintain bonds with 5 different heroes | +5% damage when partied with a bonded ally |
 | **Phoenix** | Recover from 3 mental breaks | -25% negative mood impact |
+| **Old Patient** | Spend 60 days in a ward bed | +20% recovery from illness; falls ill 15% more often |
+
+**Old Patient is the only title that charges for itself.** Sixty days of illness in an Infirmary bed teaches a body something: immunity builds a fifth faster ever after, and the hero also catches things **15%** more readily, having apparently acquired the habit. Whether that is a reward is left to the reader.
 
 Titles stack — a hero can hold multiple titles simultaneously, with one exception: Survivor and Phoenix both soften negative mood, and a hero holding both gets the larger reduction rather than 45% off their troubles. The Legend title (+8% all stats) is particularly valuable as a long-term goal, and Heartbroken (+8% all damage) is the sort of bonus that makes you feel guilty for appreciating it. Trial-Master is the only title that requires the [Ascendancy](ascendancy.md) trial path; Old Guard rewards heroes who simply refuse to retire.
 

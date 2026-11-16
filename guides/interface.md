@@ -72,7 +72,7 @@ A **tag** is a name of up to 20 characters and one of **eight colours**. You mak
 
 Each hero also takes one **note**, a single line of up to 120 characters, which appears as a small ✎ on their row and says what it says when hovered.
 
-None of it is read by the game. No tag changes a hero's behaviour, no note is ever seen by the hero it is about, and nothing in the realm reacts to being filed under *Probably Expendable*. It is bookkeeping for the person doing the managing, which is the one participant the guild had never previously catered for.
+None of it is read by the game. No tag changes a hero's behaviour, no note is ever seen by the hero it is about, and nothing in the realm reacts to being filed under *Probably Expendable*. It is bookkeeping for the person doing the managing, who is the one participant in the whole enterprise with a filing problem.
 
 ### Facility Panel (Center)
 

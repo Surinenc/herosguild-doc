@@ -115,7 +115,7 @@ Shops appear after floors 15, 30, 45, etc. The Spire merchant's prices are, in t
 
 The reference floor is always a **regular** one — a boss floor nearby would inflate the whole stall — and the sum is rounded to two significant figures, merchants being disinclined to quote anything that sounds calculated. **A stall's prices are set when it appears and do not move however many times you look at them.** The next stall prices its wares afresh, which is as close to haggling as the Spire gets.
 
-Every heal is a share of the hero's own maximum, gear and passives included, so the potions keep pace with the heroes drinking them. A level-100 Warrior on floor 90 is not going to be impressed by fifty hit points, and the merchant knows it. Neither, as the price makes clear, is the merchant.
+Every heal is a share of the hero's own maximum, gear and passives included, so the potions keep pace with the heroes drinking them. Inside the Spire that maximum is the **Spire** maximum — the tower-only set bonuses below are part of it — so heals, potions and regeneration all fill to the larger figure rather than cutting a Spirebreaker back to their everyday ceiling halfway up a heal. An injury taken on the stairs is measured against the same larger number. A level-100 Warrior on floor 90 is not going to be impressed by fifty hit points, and the merchant knows it. Neither, as the price makes clear, is the merchant.
 
 ---
 

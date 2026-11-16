@@ -206,12 +206,16 @@ The **◔ Stats** button opens the guild's own filing cabinet: a set of tabs, ea
 | ⚔ **Combat** | Damage out and in, healing out and in, kills, boss kills, DPS and missions, per hero |
 | 🏆 **Feats** | Knock-outs, close calls, biggest hit, allies saved, boss kills, Paragon and days served |
 | ✚ **Health** | Body parts damaged and lost, prosthetics fitted, illnesses, chronic conditions and Infirmary days |
-| 👥 **Social** | Mood, friends, rivals, drinks taken, days off, addiction and background |
+| 👥 **Social** | Mood, friends, dislikes, drinks taken, days off, addiction and background |
 | 💰 **Life** | Purse, gambling losses, partner, current dream, guild rank and keepsakes |
 | 🎲 **Hobbies & Clubs** | Hobbies and clubs per hero, then a club ledger: hobby, members, nights held, rank and cost a day — see [Hobbies & Clubs](clubs.md) |
 | ⚖ **Identity** | Where the guild's values actually sit, and how each hero fits them |
 
-The **biggest hit** record is taken from everywhere a hero fights — contracts, raids, the Spire and ascendancy trials alike — so the name on it belongs to whoever genuinely hit hardest, wherever they happened to be standing at the time.
+The **biggest hit** record is taken from everywhere a hero fights — contracts, raids, the Spire and ascendancy trials alike — so the name on it belongs to whoever genuinely hit hardest, wherever they happened to be standing at the time. **Best DPS** is a narrower reading: the best damage *per turn* from each hero's most recent contract, which is a measure of current form rather than of a good afternoon three hundred days ago.
+
+The Social tab's **Friends** and **Dislikes** columns count on the [relationship tiers](relationships.md#relationship-levels) and nothing else: Friends is every guildmate at Friends or better, Dislikes is everyone at Disliked or worse. The hover lists, the sorting and the *Most friends* record all follow the same line, so the number in the column and the names behind it agree.
+
+Healing received and healing done cannot go below zero. A hero topped up past their maximum by a meal is simply not healed for the overflow, rather than being booked a negative.
 
 It is the screen to open before deciding who to send, who to retire, and which of your heroes has quietly accumulated four prosthetics without anybody mentioning it.
 

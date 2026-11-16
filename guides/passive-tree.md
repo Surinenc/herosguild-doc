@@ -4,6 +4,8 @@ The Passive Tree is the single largest system in Hero's Guild and, by a comforta
 
 Each hero begins at their class starting node and works outward, spending one passive point per level. By level 100, a hero will have allocated roughly a quarter of the tree — enough to feel powerful, not enough to feel safe.
 
+The ‹ and › beside the hero's name step to the previous or next hero in roster order without leaving the tree, which is how a roster of thirty gets reviewed in one sitting. **Back** then opens the details of whoever you are looking at, not whoever you arrived with.
+
 ---
 
 ## Contents
@@ -17,6 +19,7 @@ Each hero begins at their class starting node and works outward, spending one pa
 - [Core Hub Mana Cluster](#core-hub-mana-cluster)
 - [Stat Modifier Stacking](#stat-modifier-stacking)
 - [Respec](#respec)
+- [Build Templates](#build-templates)
 - [Pathing Rules](#pathing-rules)
 - [Strategy Tips](#strategy-tips)
 
@@ -150,6 +153,8 @@ Keystone penalties tend to track each class's defensive profile, with **notable 
 | Frost Mastery (Mage) | +8% Spell Damage, +30% Max Mana | -15% Crit Chance |
 | Inquisitor Mastery (Cleric) | +33% Spell Damage, +30% Crit Chance | -4% Damage |
 
+**Some keystones charge in damage taken instead.** The berserker branch's second keystone, **Berserker's Abandon**, hands over +4% attack damage and +8% crit chance and asks for **10% more damage taken** — not a smaller sword but a thinner skin. It feeds the same damage-taken total as everything else that raises it, and the tree's auto-spend counts it as a cost rather than a bonus, so a hero spending their own points will not wander into it by accident.
+
 Each of the two keystones at the end of a branch now carries **its own name**. The tank branch finishes in either **Tank Mastery** or **Undying Bulwark**, the lich branch in **Lich Mastery** or **Mortality Optional**, the assassin branch in **Assassin Mastery** or **Glass Cannon**. The table above gives the first of each pair; the second is generally the one whose name tells you what it intends to cost you.
 
 Keystone damage is a garnish rather than the meal — single-digit to high-teens percentages on most of them — because the tree's damage all lands in one shared pool (see [Combat](combat.md#hero-damage)), and a keystone that doubled it would make every other node decorative. Each class has two keystones per branch — one at the end of each branch path. Penalties vary by class: STR-based classes trade damage or crit, while DEX and INT classes trade armor or max life. Glass cannons, the Guild Clerk observes, make for excellent leaderboard entries and very short obituaries, frequently for the same hero.
@@ -243,6 +248,22 @@ Heroes can fully respec their passive tree at any time. A full respec deallocate
 **Partial respec** is also available — you can deallocate individual nodes one level at a time, provided removing the node doesn't break your tree's connectivity. The tree enforces that all allocated nodes must remain connected to the starting node through other allocated nodes. No orphaned branches allowed.
 
 Unpicking the nodes that were holding up a hero's maximum HP does not leave them at some alarming percentage of it: current HP keeps its share of whatever the new maximum turns out to be, downwards as cheerfully as up — see [Hero Stats](heroes.md#derived-stats).
+
+---
+
+## Build Templates
+
+Having worked out a good Warrior tree once, you are not obliged to work it out again.
+
+**Save template** writes the hero's current tree down under a name of up to forty characters — every allocated node, at the levels they are at, together with the travel-node stat choices, the class it belongs to and the ascendancy the hero had at the time. Templates live in the save, and there is no limit worth mentioning on how many you keep.
+
+**Load template** lays one onto any hero of the **same class**. The list carries a filter for *Only <ascendancy>*, since a build written for an Occultist is usually wasted on a Battlemage. Loading resets the tree first — it is a replacement, not an overlay.
+
+**A hero short of points gets the build in the right order.** The template is followed outward from the class start node, nearest first, each node taken to its template level before the next is considered. So a level-20 hero loading a level-70 build buys the core of it and stops, rather than acquiring three disconnected extremities and nothing to connect them with.
+
+**And it keeps going.** A tree that could not be finished today **remembers the template**: each morning the hero's new points go to the build's next nodes, and they go on doing so until it is complete. The tree says which build it is following. Three things stop it — finishing, a **Respec**, or deleting the template. The ascendancy is not part of any of this: it is a separate tree with no respec, so a template carries the passive tree alone.
+
+The practical shape of it: work out one good tree per class, save it, and every recruit of that class thereafter grows into it by themselves while you get on with the guild.
 
 ---
 

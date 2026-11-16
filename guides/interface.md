@@ -56,9 +56,23 @@ Your roster at a glance. The Guild Clerk designed this panel to answer the quest
 - **Today's thought** — a small italic strip beneath mood, showing one line of what the hero is currently mulling over. Chosen once a day from their personality traits, so the same hero says roughly the same thing all day and something different tomorrow, much like everyone you have ever worked with
 - **Break chips** — a red **Break Risk** chip appears the moment mood falls under 25, and its tooltip names the mood and the line it has crossed rather than leaving you to guess. Should the roll go badly it is replaced by a **Mental Break** chip naming the break and the days left on it, which outranks every other social chip on the card, as these things tend to
 
-**Filtering the roster.** Three dropdowns narrow the list: **status** (Idle, In the Infirmary, Sick, Day Off, Training, On Mission, Resting, Crafting, Injured, Departing), **class**, and **stars** (1 to 5), each either *all* or one value, with **Reset filters** to clear the lot. A filter survives you walking off to the Vault and back, which is the point of it, but it is never written into the save: loading a game — the same one included — or starting a new one begins with every hero shown. A roster of forty is a different proposition once you can ask it who is merely idle.
+**Filtering the roster.** Four dropdowns narrow the list: **status** (Idle, In the Infirmary, Sick, Day Off, Away, Training, On Mission, Resting, Crafting, Injured, Departing, Dead), **class**, **stars** (1 to 5) and **tag**, each either *all* or one value, with **Reset filters** to clear the lot. Every option carries its own count — *Warrior (5)*, *3★ (2)* — so the dropdown answers the question before you pick anything. The tag list appears only once the guild has made a tag, and carries **No tag** at the end for the unlabelled. A filter survives you walking off to the Vault and back, which is the point of it, but it is never written into the save: loading a game — the same one included — or starting a new one begins with every hero shown. A roster of forty is a different proposition once you can ask it who is merely idle.
+
+**The roster remembers where you were.** Open a hero, come back, and the list is scrolled where you left it rather than snapped to the top — which matters at the point where the roster is long enough that finding the same hero twice is itself a task. Hovering a row gives a line on what that hero is actually up to: idle, training, resting, away, in the Infirmary, out on a contract, or working through a mental break.
+
+**The dead stay on the list.** A hero who has died keeps their row until the funeral, faded, tagged **Dead** in grey, with *Funeral in Nd* counting down. The status strip grows a Dead column while anyone is waiting and loses it again afterwards. They cannot be fed or dismissed — their page still opens, and their trees still read — because a dismissal would file them as having left the guild alive, and the Chapel keeps a different list for that.
 
 Click a hero to see details.
+
+### Tags and Notes
+
+The guild's own filing system, invented by you and understood by nobody in it.
+
+A **tag** is a name of up to 20 characters and one of **eight colours**. You make them, you put any number of them on any hero, and they show up wherever heroes are listed: the roster, the party pickers, Training, the Infirmary and the Vault. The roster filters by them. A tag can be **pinned**, and heroes carrying a pinned tag lead the roster — everyone else keeps hiring order behind them, so *Dragon team* at the top is one click rather than a scroll.
+
+Each hero also takes one **note**, a single line of up to 120 characters, which appears as a small ✎ on their row and says what it says when hovered.
+
+None of it is read by the game. No tag changes a hero's behaviour, no note is ever seen by the hero it is about, and nothing in the realm reacts to being filed under *Probably Expendable*. It is bookkeeping for the person doing the managing, which is the one participant the guild had never previously catered for.
 
 ### Facility Panel (Center)
 
@@ -147,9 +161,20 @@ Missions at 2★ and higher can carry an **environmental hazard** ([Environmenta
 
 1. Select a mission
 2. Form your party (drag heroes onto the slots)
-3. Press **Dispatch**
+3. Press **Run Simulation** and read the Combat Outlook
+4. Press **Dispatch**
 
-The **success chance** shown beside the party is not an estimate in the loose sense. The realm runs the fight **20 times** through the very same resolution the dispatch will use, and reports how many of those runs came home. It is therefore as honest a number as anyone could ask for, which is not at all the same as a comforting one — a hero who dies in fourteen of twenty rehearsals will not be persuaded otherwise by the fifteenth.
+The **Combat Outlook** block arrives empty — three dashes and a button. Press **Run Simulation** and the realm fights the contract **100 times** through the very same resolution the dispatch will use, in batches of ten with the tally climbing on the button, and reports what happened. Nobody is hurt and nothing is spent; the rehearsals are entirely imaginary, which is more than can be said for the performance.
+
+Three lines come back:
+
+- **Success chance** — the share of the hundred that came home whole, held between 5% and 95%, with the **likely range** beside it (*"64% (likely 56–71%)"*) and the number of trial fights it rests on. The range is the honest part. A hundred fights still leave several points of slack either way, and a party chosen because its number looked good is usually a party that caught a kind afternoon.
+- **Partial success** — the share that won every fight and still came back short-handed.
+- **Risk of failing** — the same information with the arithmetic taken out, for the days when you would rather not do sums.
+
+Hovering any of the three gives the rule the whole block is measuring against: every fight won and every hero standing is a success; every fight won with at least half standing is a partial, at half pay; a fight lost, or fewer than half standing, is a failure however well the fighting went. The same answer lives in Quillsworth's Handbook, and at greater length under [Mission Results](dungeons.md#mission-results).
+
+**The party picker's hover card** is where the small print lives. Hovering a hero while you build a party — here, on the dungeon menu, or at the Spire — gives their name and stars, whatever tags and note you have hung on them, class and level, their ascendancy, then ♥ HP, ✦ MP and **◈ Energy**, which is the number that decides whether tonight is the night or tomorrow morning is. Underneath, a line on whether they can come: *Ready for assignment*, *Away, but can be called back*, or *Cannot join a party for now*. When the answer is no, the reason is headed **Why** and written as the guild's note; when the hero is merely unhappy about something, it is headed with their name and given in their own words. A hero in a sickbed does not get to editorialise.
 
 Command Points and the tactical preset belong to the dungeon side of the guild. The Mission Board has neither: a dispatched party fights Balanced and settles its own evening. See [Expedition Types](dungeons.md#expedition-types).
 
@@ -424,9 +449,15 @@ Settings carries two tabs while a game is loaded: **⚙ General**, everything be
 - Show Advisor Tips (Quillsworth provides tips as you discover game systems — recommend leaving this on unless you enjoy learning things the hard way)
 - Online Features — leaderboards, news, shared custom dungeons, bug reports and anonymous play statistics, all by way of a server in another time zone. Switched **off**, the game sends nothing at all. **Steam Cloud is a separate arrangement**: it keeps copies of your saves whatever this toggle says, because it belongs to Steam and not to the Guild Clerk, who would like that on the record
 
+### Community
+
+- 💬 **Join the Discord** — opens the guild's server in your browser (a new tab in the browser build, the system browser on the desktop). It is the only place in the game the invitation is offered, and it is also where a save that will not load can be sent to be looked at.
+
 ### Leaving
 
 Settings also holds the doors out: **⏏ Return to main menu** and, on the desktop build, **⏻ Quit game**, each behind a confirmation. The two confirmations do not offer the same choices. Returning to the main menu lets you **Save and return** or **Return without saving**, the second leaving the last autosave precisely as it was — which is what you want when you loaded an old save purely to look at it. Quitting offers **Save and quit** or **Quit without saving**, the second leaving the last autosave untouched. Both doors are also reachable from the ⏻ button in the top bar, which asks the same question in the same words. **📥 Save game** appears only while a game is actually in progress, there being nothing to save from the main menu but your dignity. And **New Game** asks before it writes over your autosave, which is the sort of question one only learns to appreciate after the one time nobody asked it.
+
+**One copy at a time.** On the desktop build, starting the game while it is already running does not open a second window: the copy already in progress is restored and brought to the front instead. Two copies sharing one save folder is a way to lose an afternoon's guild, and the lock is claimed after the Steam check so that Steam's own relaunch is never the thing that gets turned away.
 
 **When the game saves without being asked.** At the end of each day, when you close the game, on the way into and out of a dungeon, raid or Spire run, and otherwise **every five minutes** if anything has changed since the last save. It does not save on the main menu or in the middle of a run, where there is nothing settled to copy. Clicking about a screen does not itself trigger a save, which is why a guild four thousand days old stays responsive while you read it.
 

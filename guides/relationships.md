@@ -40,6 +40,22 @@ Heroes form bonds with each other over time, because apparently you can't put pe
 
 The negative bands are exact mirrors of the positive ones — Enemy is as narrow as Devoted, Dislike as wide as Friend. Hatred costs exactly what love costs, which is one of the few fair prices in the realm.
 
+**One table, one vocabulary.** Every screen that has an opinion about a pair reads this table and prints the same word for it: Party Chemistry before a dispatch, the combat log during the fight, the Bonds & Rivalries cards on a hero's Social tab, the Hall of Bonds and Guild Stats. A pair the game calls **Close Friends** in one place is Close Friends in all of them. The words it prints are **Enemies, Hostile, Rivals, Disliked, Annoyed, Strangers, Friendly, Friends, Close Friends, Best Friends** and **Devoted** — so *Strangers* on a card means Neutral and nothing more sinister, and two heroes who merely dislike each other are not promoted to Rivals by the screen that happens to be describing them.
+
+**The thread drawn between two heroes follows the same reading.** A named bond decides it first — a Life debt, a Romance, a Blood feud, a Mentorship, a Rivalry bond — and where there is none, the tier does the deciding:
+
+| What is drawn | When |
+|---|---|
+| **Devoted bond** | Close Friends and above |
+| **Friendship** | Friendly or Friends |
+| **Neutral** | Strangers — a faint line, but a line |
+| **Friction** | Annoyed or Disliked |
+| **Rivalry** | Rivals and below |
+
+A **Blood feud** is only ever drawn for an actual Blood Feud bond. A bitter pair who never swore one are a Rivalry, which is quite bad enough.
+
+In **Guild Stats**, the Social tab's ledger counts on the same scale: **Friends** is every guildmate at Friends or better, and the **Dislikes** column is everyone at Disliked or worse. The hover lists, the sorting and the *Most friends* card all follow that one rule.
+
 ---
 
 ## Building Relationships
@@ -650,7 +666,7 @@ Heroes have personality traits that affect relationships. These traits are, regr
 | Gossip | Spreads information, accurately or otherwise |
 | Loner | Social need decays at 0.3× rate and they never complain about being left alone — the cheapest hero in the guild to ignore |
 | Psychopath | Relationship effects simply do not apply to them |
-| Coward | Refuses dangerous missions |
+| Coward | Refuses **4★ and 5★** contracts. You can send them anyway; the party picker shows the full mood cost first — being overruled, plus a few days of remembering that you agreed it was too dangerous and sent them regardless |
 | Greedy | Grows attached to equipment at double speed |
 | Lazy | Takes personal days more often |
 | Vindictive | Takes relationship damage at 1.5× and holds grudges — it also cancels Forgiving, if by some administrative accident they hold both |
@@ -802,7 +818,7 @@ Repeated drinking builds addiction (0-100 scale). Each drink adds its **Addictio
 
 The penalties land on any night the hero goes **without** a drink — that is the withdrawal, and an Addicted hero denied one is miserable, shaking, and refusing work two nights in five. Recovery itself is the **1.5 a day** described above, paid only on sober nights, so climbing down from Addicted is a matter of weeks rather than days — and weeks during which the hero is being actively unpleasant about it.
 
-**The promise.** At the tavern you can ask a hero to quit — the option appears from **Regular** upward, there being nothing much to promise below it — and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
+**The promise.** At the tavern, **Ask to stop drinking** puts it to them — the option appears from **Regular** upward, there being nothing much to promise below it, and the game sets out what the promise is and what breaks it before it lets you make it — and a hero who has sworn off **stops drinking on their own** — the nightly autonomous tipple goes to zero. What the promise does not do is make them refuse a drink you buy them: a bought round breaks it, and a broken promise builds addiction at **double** the usual rate, along with the observation that another promise has been broken. The Guild Clerk has filed this under *things the management could simply not do*.
 
 ### Detox
 

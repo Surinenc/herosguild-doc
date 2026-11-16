@@ -233,6 +233,8 @@ When it gets bad enough, the complaint arrives on the events screen with four an
 - **Ask them to keep it down** — **half** nuisance for **14 days**, and **−3 mood** to every member, who sulk
 - **Do nothing**, and let the complainant go on minding
 
+**The walls are offered once.** A room whose soundproofing you have already paid for shows the walls as no longer possible, and the complaint comes back with moving the club as the only structural cure left. A guild that has bought walls at tier 2 is not asked to buy them again at tier 3 prices on the same room, which the Guild Clerk regards as the minimum standard for a builder's quote.
+
 ## Clubs and Each Other
 
 Two clubs in the same building will, given time, find something to disagree about. Each pair holds a score:
@@ -291,6 +293,8 @@ The chair may also **name a successor** from the membership — worth doing, bec
 Glory is **+6 mood**; humiliation is **−4** and costs reputation instead of earning it. **Declining** an invitation is **−3 mood** and a grudge. And the tour has a tail you should read twice: **15%** per member of coming back *changed*, and **5%** of **not coming back at all**. A hero can walk out of your guild because the coast circuit was more interesting than you were.
 
 A **rival** club good enough to have been asked, and not asked, minds at **−2**.
+
+**Each occasion comes round once in 300 days.** A particular fair, wedding, opera or tour is offered to *some* club and then goes quiet for the better part of a year, whichever club went — and there are more of them than there used to be, so the same funeral is no longer the social event of three consecutive weeks.
 
 **The Master's big day.** A Master has a **3%** weekly chance of asking for their hobby's great occasion — two days away, entirely for themselves. Letting them go is **+6 mood**. Refusing is **−5**. It is two days of one hero's time against the difference between those two numbers, and the arithmetic is rarely in your favour.
 

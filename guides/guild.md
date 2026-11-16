@@ -581,9 +581,13 @@ Starting from day 10, moral events arrive on a daily roll of **1 in 7, 8 or 9** 
 | Resource Decisions | How to spend or allocate guild resources |
 | External Threats | Outside forces demanding a response |
 
-Events have deadlines — ignore them and the default option resolves automatically. Same events won't repeat for 10 days.
+Events have deadlines — ignore them and the default option resolves automatically.
 
-**Viewing Events:** Open the Guild Events screen to see two tabs — **Active** (pending events awaiting your decision) and **History** (a log of all past decisions). The history shows the day, your chosen option, which heroes were involved, axis shifts with colour-coded badges, gold changes, and whether the event was auto-resolved because you ignored it.
+**No event comes round twice inside 300 days.** The guild's decision log keeps every one it has ever handed you, and an event that has been decided waits the better part of a year before it is eligible again. The same wait governs the quarrels, romances, mentorships and debts of honour a **pair** of heroes can bring you — once a pair has had their arc, that pair is done for 300 days — and a second decision of the *same kind* from any pair waits **30 days** on top of that. Other heroes falling out, or falling for each other, in the meantime still happens; it arrives as news rather than as a decision.
+
+**A choice that costs gold needs the gold.** Every option carrying a price is checked against the treasury before you can take it — matching a noble's offer, sending money to a hero's family, returning the cursed crypt gold, the trapper's apology cheese. The one exception is money already gambled away, which counts against the treasury whichever way you answer, on the grounds that it has gone either way.
+
+**Viewing Events:** Open the Guild Events screen to see two tabs — **Active** (pending events awaiting your decision) and **History** (a log of all past decisions). While a decision is waiting, the three identity bars — Cunning–Valor, Glory–Wealth, Freedom–Order — sit above it, so you can see which way the guild already leans before you lean it further, without a trip to Guild Stats. The history shows the day, your chosen option, which heroes were involved, axis shifts with colour-coded badges, gold changes, and whether the event was auto-resolved because you ignored it.
 
 ### Hero Reactions
 

@@ -24,7 +24,8 @@ This guide covers when crises happen, how they progress, what each one does to t
 Crises are gated, the realm having concluded that a guild drowned in its first fortnight provides no entertainment for anybody. It therefore respects:
 
 - **Day Gate** — no crisis fires before **day 45.** Before that, the Guild Clerk's only emergencies are the financial ones.
-- **Cooldown** — a **30-day cooldown** after any crisis ends before another can fire.
+- **Cooldown** — **60 days** of peace after any crisis ends before another can fire.
+- **And not the same trouble twice.** The next crisis is never the kind that just ended, and never a kind that started within the last **300 days** — the same rule every other repeating event in the realm follows. If every kind has been seen inside that window, the realm reaches for whichever it has not used in longest, which is the closest the Guild Clerk gets to an apology.
 - **Trigger probability** — once eligible, the daily roll is **5% + 2% per day past the cooldown**, capped at **60%.** The longer you go without one, the more likely the next one becomes.
 
 When a crisis fires, the realm picks a type, picks a duration — 8 to 20 days, depending on how thorough it intends to be — and announces the fact in a modal you cannot argue with. From that morning the crisis is simply a feature of the world, like weather, and about as negotiable.

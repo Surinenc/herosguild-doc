@@ -2,7 +2,7 @@
 
 A workshop where Guild Masters design their own dungeons, publish them to the realm, and run other Guild Masters' dungeons in return. The Guild Clerk filed three complaints about the naming — there was already a Workshop, and that Workshop makes belts — and has now, after a career of being told the matter is closed, won one: the bottom-nav button (🗝) reads **Custom Dungeons**.
 
-This guide covers the two halves of the system: designing and publishing dungeons (the **author loop**), and raiding the community's published dungeons (the **raid loop**). They share an interface and a name; otherwise they are quite separate.
+This guide covers the two halves of the system: designing and publishing dungeons (the **author loop**), and running the community's published dungeons (the **run loop**). They share an interface and a name; otherwise they are quite separate.
 
 ---
 
@@ -11,7 +11,7 @@ This guide covers the two halves of the system: designing and publishing dungeon
 - [Where to Find It](#where-to-find-it)
 - [The Two Loops](#the-two-loops)
 - [The Author Loop](#the-author-loop)
-- [The Raid Loop](#the-raid-loop)
+- [The Run Loop](#the-run-loop)
 - [Scoring & Seasons](#scoring--seasons)
 - [Architect Rewards](#architect-rewards)
 - [Related Guides](#related-guides)
@@ -31,9 +31,9 @@ The app does two quite different jobs, both from the same home screen, and most 
 | Loop | What you do | Where it lives |
 |------|-------------|----------------|
 | **Author** | Design rooms, validate, test, publish your own dungeon | Editor + Test Modal + Publish Modal |
-| **Raid** | Browse community dungeons, deploy a party, run the dungeon | Gallery + Raid screen |
+| **Run** | Browse community dungeons, deploy a party, run the dungeon | Gallery + run screen |
 
-You can be a full-time architect, a full-time raider, or both. Most Guild Masters end up both, because the architect rewards are paid out when *other* people run your dungeons, and the runners need dungeons to run.
+You can be a full-time architect, a full-time runner, or both. Most Guild Masters end up both, because the architect rewards are paid out when *other* people run your dungeons, and the runners need dungeons to run.
 
 ---
 
@@ -61,7 +61,7 @@ The validator runs whenever you save or attempt to publish. It surfaces errors a
 - **Minimap overlap** — the minimap representation collides with another room's. Move one.
 - **Unreachable entrance/exit** — pathfinding can't connect them. Add corridors.
 - **Empty room set** — you have to put rooms in the dungeon.
-- **Key behind its own door** — a locked door whose key sits in a room only that door opens. The validator walks the dungeon the way a raider must, opening a locked door only once the key's room is reachable *without* it, and the same for a hidden door and its trigger. Locking the key inside the vault is a perfectly consistent design and an entirely unplayable one, and the validator will say so
+- **Key behind its own door** — a locked door whose key sits in a room only that door opens. The validator walks the dungeon the way a runner must, opening a locked door only once the key's room is reachable *without* it, and the same for a hidden door and its trigger. Locking the key inside the vault is a perfectly consistent design and an entirely unplayable one, and the validator will say so
 - **A key or trigger pointing at nothing** — delete the room holding a key and the door is quietly told it no longer has one. Dangling references are scrubbed as you edit, so no door gets to claim a key that stopped existing three edits ago
 
 The validator is direct rather than polite. The Guild Clerk approves of this and has asked whether the validator could be redeployed to staff meetings.
@@ -82,7 +82,7 @@ You can iterate the editor → test loop as many times as you like. Nothing abou
 
 ### Publish Modal
 
-When you're satisfied, the Publish Modal commits your dungeon to the realm. Publishing is **versioned** — every publish stamps a version number, so you can edit and re-publish without overwriting your live edition mid-raid.
+When you're satisfied, the Publish Modal commits your dungeon to the realm. Publishing is **versioned** — every publish stamps a version number, so you can edit and re-publish without overwriting your live edition mid-run.
 
 **Two-Stage Publishing.** Fresh publishes land as **Draft** by default. A Draft is visible only to you; nobody else sees it in the gallery yet. The dungeon auto-promotes to **Public** once it has been cleared **10 times** on the current version — at which point the gallery starts showing it to the wider realm. You can short-circuit this by ticking the "publish as public" option at publish time, or by promoting manually from your architect tools.
 
@@ -92,11 +92,11 @@ Re-publishing an existing dungeon bumps its version number, resets the clear cou
 
 **Narrator-Hero Lock.** During publishing, you may optionally lock a specific hero from your own guild as the dungeon's **narrator**. That hero is then temporarily unavailable to your own missions for **3 days** while they tour the realm telling the story of your dungeon. The lock is optional — you can publish anonymously — but a narrator-hero earns the dungeon's audience some flavour and improves the listing.
 
-Published dungeons appear in the community gallery for other Guild Masters to find. **Once published, a dungeon is raid-only for everyone except you** — you can still edit it from your own architect tools, but other Guild Masters cannot open its editor view. They can only run it.
+Published dungeons appear in the community gallery for other Guild Masters to find. **Once published, a dungeon is run-only for everyone except you** — you can still edit it from your own architect tools, but other Guild Masters cannot open its editor view. They can only run it.
 
 ---
 
-## The Raid Loop
+## The Run Loop
 
 ### The Gallery
 
@@ -106,15 +106,15 @@ The Gallery is where you find dungeons to run. It has three sections, and the di
 - **Community Dungeons** — the nine that ship with the game, bylined *Community*. These are always there, with or without a working connection
 - **Published Dungeons** — fetched from the server: what other Guild Masters have actually published, shown with the architect's name or persona and badged **Player** rather than *Community*, so you can tell a stranger's work from the house's without reading the byline
 
-**Templates** are not a gallery section. They are starting layouts offered by the *editor* when you begin a new dungeon — a scaffold to build on, not something you raid. **Seasons** likewise has its own screen, reached from the gallery's navigation rather than listed among the dungeons.
+**Templates** are not a gallery section. They are starting layouts offered by the *editor* when you begin a new dungeon — a scaffold to build on, not something you run. **Seasons** likewise has its own screen, reached from the gallery's navigation rather than listed among the dungeons.
 
 The nine that ship with the game are **named starter dungeons**, doubling as ongoing community content — *The Sunken Cellar, The Library That Watches, Goblin Snare-Maze, Patrol Tower of Sighs, Endless Stair of the Lich, The Demon's Bargain, The Warden's Round, The Iron Menagerie,* and *The Drowned Cathedral.* They range from short Apprentice-tier layouts to multi-floor Master-tier crawls, and they exist partly as content, partly as worked examples of what an architect can do with the editor.
 
-Each card shows the dungeon's name, the architect's name (or "Anonymous"), the elegance score, observed difficulty from previous raid attempts, and a **⚔ Raid This Dungeon** button. Press it and you commit a party.
+Each card shows the dungeon's name, the architect's name (or "Anonymous"), the elegance score, observed difficulty from previous attempts, and a **⚔ Run This Dungeon** button. Press it and you commit a party.
 
 ### Picking a Party
 
-A raid opens with a party picker. The hero must be **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day — and must not be held by one of the four standing excuses the guild recognises everywhere: a **mental break**, a **stay in the ward** under Until Cured, a **detox**, or an **absence** such as a personal day or a hangover. The mission board, the dungeon menu, the Spire and this picker all ask those same four questions, so a hero you cannot send on a contract is a hero you cannot send down somebody else's stairs either. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
+A run opens with a party picker. The hero must be **Ready** — alive, unassigned, uninjured, untraining, uncrafting and unscheduled, which is a longer list of conditions than most heroes meet on a good day — and must not be held by one of the four standing excuses the guild recognises everywhere: a **mental break**, a **stay in the ward** under Until Cured, a **detox**, or an **absence** such as a personal day or a hangover. The mission board, the dungeon menu, the Spire and this picker all ask those same four questions, so a hero you cannot send on a contract is a hero you cannot send down somebody else's stairs either. No level cap, no class restrictions. A narrator hero you've locked to one of your own published dungeons stays out of the picker for 3 days regardless.
 
 ### The Run
 
@@ -122,13 +122,13 @@ A run proceeds the way all dungeon runs proceed in the ballads: the party enters
 
 **Rewind.** At any point in a run — and most urgently when the whole party is lying on the floor — you can press **Rewind**, pick any point you've already explored on the saga tree, and roll the run back to it as though the unpleasantness never happened. Rewinds are free and unlimited. They are not, however, *forgotten*: every one is counted and printed on your results screen, a quiet record of how many times history had to be asked nicely. The future you abandoned stays on the tree as a ghost branch, which is either instructive or haunting depending on how it ended.
 
-### Raid Mechanics
+### Run Mechanics
 
-Custom Dungeon raids have their own toolkit, distinct from regular dungeon combat. The key pieces:
+A custom-dungeon run has its own toolkit, distinct from regular dungeon combat. The key pieces:
 
 #### Per-Class Session Abilities
 
-Each class brings a session-scoped raid ability with limited charges. Charges refresh only at the start of the next run, not between rooms:
+Each class brings a session-scoped ability with limited charges. Charges refresh only at the start of the next run, not between rooms:
 
 | Class | Ability | Charges | Effect |
 |-------|---------|---------|--------|
@@ -146,9 +146,11 @@ Hazards that none of your classes can handle become problems you walk through an
 
 #### Run-Trauma — Hazards Carry Across Rooms
 
-Custom Dungeon raids keep a **trauma** ledger: every point of HP damage a hero takes from a hazard accumulates as a permanent debuff that **reduces that hero's effective max HP for the rest of the run.** A Cleric's heal cannot lift a hero above their trauma-reduced max — the heal clamps to whatever cap the trauma has left them.
+A custom-dungeon run keeps a **trauma** ledger: every point of HP damage a hero takes from a hazard accumulates as a permanent debuff that **reduces that hero's effective max HP for the rest of the run.** A Cleric's heal cannot lift a hero above their trauma-reduced max — the heal clamps to whatever cap the trauma has left them.
 
 A hero whose accumulated trauma reaches their original max HP **falls.** Trauma persists across rooms within a single run, and resets only when the run ends (cleared, wiped, or forfeited).
+
+Because that damage is permanent for the run, a hazard you push through states its **HP cost** on the choice itself rather than leaving you to find out. The run's top bar counts the room's real exits, which is the other number worth reading before you commit to a direction.
 
 **Max HP here means the full one** — armour, passives and every other bonus counted in, not the bare figure a hero's class and level would give unaided. A hazard that takes a share of HP takes a share of *that*, and the trauma ledger fills toward *that*. A tank's plate therefore buys them extra hazard rooms as well as extra sword blows, which is very nearly the first good thing anyone has said about wearing plate down a sewer.
 
@@ -170,7 +172,7 @@ Architects can place **patrol entities** that walk through dungeon rooms on a se
 
 Combat in a room also broadcasts noise. Patrols within earshot — a set number of rooms, chosen by the architect — will redirect toward that room on subsequent turns — the dungeon equivalent of "the watchman heard the screams." Architects who place patrols in noise range of likely combat rooms are doing so deliberately.
 
-### Rewards (for the raider)
+### Rewards (for the runner)
 
 Custom Dungeon rewards are concentrated in the **first clear**: when you clear a community dungeon for the first time, the realm pays out gold + XP, with the gold drawn from the regular mission gold range for the dungeon's observed difficulty stars and scaled by average party level. Subsequent clears of the same dungeon do **not** repeat the first-clear payout — they still record your run for League standings and personal best, but no fresh gold drop.
 
@@ -202,7 +204,7 @@ The League panel shows the current month's metric, your standing, and the top pe
 
 The **Seasons** page shows the rolling monthly league standings, the Hall of Notorious, and an archive of leagues past. It holds no themed rotations or special events — the season is a calendar, not a festival.
 
-The **Watcher Journal** is a log browser: your raids plus raids of your published dungeons, sortable by date / attempts / outcome / depth, with a scrubbable timeline. It is closer to a chronological log viewer than an achievements page.
+The **Watcher Journal** is a log browser: your runs plus runs of your published dungeons, sortable by date / attempts / outcome / depth, with a scrubbable timeline. It is closer to a chronological log viewer than an achievements page.
 
 ---
 
@@ -218,12 +220,12 @@ When other Guild Masters across the realm clear *your* published dungeon, the re
 - The rewards scale with the observed difficulty of your dungeon and the cleared status
 
 **What does not:**
-- Wipes by raiders — your dungeon paying you for killing other people's parties would create perverse incentives
+- Wipes by other people's parties — your dungeon paying you for killing other people's parties would create perverse incentives
 - Your own test-runs of your own dungeon
 
-**Fame Decay (Dungeon Archival).** Fame decays here in the old-fashioned way: by being forgotten. A published dungeon that goes **60 days** without being raided is archived out of the main browse list, like a play nobody has bought a ticket to since spring. Pending architect rewards do not shrink while they wait — you collect every coin and every point of reputation in full, however late you turn up. To keep a dungeon visible and earning, it has to keep being run.
+**Fame Decay (Dungeon Archival).** Fame decays here in the old-fashioned way: by being forgotten. A published dungeon that goes **60 days** without being run is archived out of the main browse list, like a play nobody has bought a ticket to since spring. Pending architect rewards do not shrink while they wait — you collect every coin and every point of reputation in full, however late you turn up. To keep a dungeon visible and earning, it has to keep being run.
 
-The **Architect Page** shows your published dungeons, lifetime architect rewards earned, recent clears with raider names and outcomes, and your seasonal standing. Most architects discover that one specific dungeon outearns all their others combined, and respond by quietly trying to figure out which feature of that dungeon is doing the work.
+The **Architect Page** shows your published dungeons, lifetime architect rewards earned, recent clears with runner names and outcomes, and your seasonal standing. Most architects discover that one specific dungeon outearns all their others combined, and respond by quietly trying to figure out which feature of that dungeon is doing the work.
 
 ---
 
@@ -231,7 +233,7 @@ The **Architect Page** shows your published dungeons, lifetime architect rewards
 
 - [Dungeons](dungeons.md) - Regular dungeons (the realm's, not yours)
 - [Guild Management](guild.md) - The Workshop facility — the one with hammers
-- [World Boss Raids](raids.md) - A different "raid" system entirely
+- [World Boss Raids](raids.md) - The realm's actual raids, which are a different system entirely
 - [Combat System](combat.md) - The combat the custom dungeons inherit
 
 ---
